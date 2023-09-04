@@ -2,4 +2,4 @@
 scoreboard players reset *
 
 # Then setup scoreboard with required objectives and fake-players
-function of:setup
+function omega-flowey:setup

@@ -1,7 +1,7 @@
 ## Sets up objectives, fake players, entities, and teams required for the map to run.
 
 # Debugging
-execute if entity @a[scores={debug=1}] run say DEBUG: function of:setup
+execute if entity @a[scores={debug=1}] run say DEBUG: function omega-flowey:setup
 
 # Add teams
 team add player
