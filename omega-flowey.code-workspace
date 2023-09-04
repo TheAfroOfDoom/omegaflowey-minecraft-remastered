@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "name": "Omega Flowey Remastered",
+      "path": "."
+    },
+    {
+      "name": "minecraft",
+      "path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft"
+    }
+  ],
+  "settings": {
+    "datapack.env.include": [
+      // "./datapacks/omega-flowey"
+    ],
+    "datapack.lint.blockStateTrailingComma": true,
+
+    "editor.tabSize": 2,
+
+    "files.exclude": {
+      "**/versions": true
+    },
+    "search.exclude": {
+      "./omega-flowey/data/math": true,
+      "./minecraft/**": true,
+      "./versions": true
+    }
+  }
+}
