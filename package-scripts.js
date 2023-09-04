@@ -15,22 +15,30 @@ module.exports = {
       resourcepack: 'watch --wait=1 "nps sync.resourcepack" resourcepack',
     },
     sync: {
-      datapacks:
-        "echo syncing datapacks && nps delete.datapacks copy.datapacks && echo finished datapacks",
-      resourcepack:
-        "echo syncing resourcepack && nps delete.resourcepack copy.resourcepack && echo finished resourcepack",
+      datapacks: series(
+        "echo syncing datapacks",
+        "nps delete.datapacks",
+        "nps copy.datapacks",
+        "echo finished datapacks"
+      ),
+      resourcepack: series(
+        "echo syncing resourcepack",
+        "nps delete.resourcepack",
+        "nps copy.resourcepack",
+        "echo finished resourcepack"
+      ),
       world: series(
         "rimraf world.zip",
         `bestzip world.zip ${minecraftWorldPath}/*`
       ),
     },
     copy: {
-      datapacks: `cpy 'datapacks/**/*' '${minecraftWorldPath}/datapacks'`,
-      resourcepack: `cpy 'resourcepack/**/*' '${minecraftResourcePackPath}'`,
+      datapacks: `cpy datapacks/**/* ${minecraftWorldPath}/datapacks`,
+      resourcepack: `cpy resourcepack/**/* ${minecraftResourcePackPath}`,
     },
     delete: {
-      datapacks: `rimraf --glob '${minecraftWorldPath}/datapacks/*'`,
-      resourcepacks: `rimraf --glob '${minecraftResourcePackPath}/*'`,
+      datapacks: `yarn rimraf --glob ${minecraftWorldPath}/datapacks/**/*`,
+      resourcepacks: `yarn rimraf --glob ${minecraftResourcePackPath}/**/*`,
     },
   },
 };
