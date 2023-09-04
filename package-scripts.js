@@ -1,4 +1,4 @@
-const { concurrent } = require("nps-utils");
+const { concurrent, series } = require("nps-utils");
 
 const minecraftPath = "C:/Users/afro/AppData/Roaming/.minecraft";
 const worldName = "omega-flowey-remastered";
@@ -19,6 +19,10 @@ module.exports = {
         "echo syncing datapacks && nps delete.datapacks copy.datapacks && echo finished datapacks",
       resourcepack:
         "echo syncing resourcepack && nps delete.resourcepack copy.resourcepack && echo finished resourcepack",
+      world: series(
+        "rimraf world.zip",
+        `bestzip world.zip ${minecraftWorldPath}/*`
+      ),
     },
     copy: {
       datapacks: `cpy 'datapacks/**/*' '${minecraftWorldPath}/datapacks'`,

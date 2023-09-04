@@ -2,11 +2,12 @@
   "name": "omega-flowey-minecraft-remastered",
   "packageManager": "yarn@3.6.3",
   "scripts": {
-    "start": "nps"
+    "start": "nps",
+    "sync": "nps sync.world"
   },
   "devDependencies": {
+    "bestzip": "1.1.6",
     "cpy-cli": "5.0.0",
-    "npm-run-all": "4.1.5",
     "nps": "5.10.0",
     "nps-utils": "1.7.0",
     "rimraf": "5.0.1",
