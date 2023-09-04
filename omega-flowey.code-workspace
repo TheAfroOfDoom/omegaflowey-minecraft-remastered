@@ -10,7 +10,7 @@
     }
   ],
   "settings": {
-    "datapack.env.include": ["./datapacks"],
+    "datapack.env.include": ["./datapacks/**/*"],
     "datapack.lint.blockStateTrailingComma": true,
     "datapack.trace.server": "messages",
 
@@ -23,6 +23,9 @@
       "./omega-flowey/data/math": true,
       "./minecraft/**": true,
       "./versions": true
+    },
+    "datapack.snippets": {
+      "consoleLog": "tellraw @a [{\"text\": \"${1:variable}: \"}, {\"score\": {\"name\": \"@s\", \"objective\": \"${1:variable}\"}}]"
     }
   }
 }
