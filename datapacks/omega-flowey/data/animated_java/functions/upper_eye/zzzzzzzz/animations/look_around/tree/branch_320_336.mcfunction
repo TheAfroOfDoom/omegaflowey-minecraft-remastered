@@ -1,0 +1,3 @@
+execute if score @s aj.anim_time matches 320..327 run function animated_java:upper_eye/zzzzzzzz/animations/look_around/tree/branch_320_327
+execute if score @s aj.anim_time matches 328..335 run function animated_java:upper_eye/zzzzzzzz/animations/look_around/tree/branch_328_335
+execute if score @s aj.anim_time matches 336 run function animated_java:upper_eye/zzzzzzzz/animations/look_around/tree/leaf_336
