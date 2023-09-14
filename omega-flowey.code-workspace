@@ -10,8 +10,29 @@
     }
   ],
   "settings": {
-    "datapack.env.include": ["./datapacks"],
+    "datapack.env.dataVersion": "Latest snapshot",
+    "datapack.env.include": ["./datapacks/**/*"],
+    "datapack.lint.blockStateBracketSpacing": {
+      "inside": 1
+    },
+    "datapack.lint.blockStateCommaSpacing": {
+      "before": 0,
+      "after": 1
+    },
+    "datapack.lint.blockStateSortKeys": true,
     "datapack.lint.blockStateTrailingComma": true,
+    "datapack.lint.idOmitDefaultNamespace": false,
+    "datapack.lint.nbtArrayBracketSpacing": {
+      "inside": 1
+    },
+    "datapack.lint.nbtBoolean": true,
+    "datapack.lint.nbtCompoundBracketSpacing": {
+      "inside": 1
+    },
+    "datapack.lint.timeOmitTickUnit": true,
+    "datapack.snippets": {
+      "consoleLog": "tellraw @a [{\"text\": \"${1:variable}: \"}, {\"score\": {\"name\": \"@s\", \"objective\": \"${1:variable}\"}}]"
+    },
     "datapack.trace.server": "messages",
 
     "editor.tabSize": 2,

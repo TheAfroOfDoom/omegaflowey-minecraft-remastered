@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.upper_eye.root] run function animated_java:upper_eye/zzzzzzzz/tick_as_root

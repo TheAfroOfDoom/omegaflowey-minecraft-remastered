@@ -1,0 +1,1 @@
+tag @s remove aj.upper_eye.animation.look_around
