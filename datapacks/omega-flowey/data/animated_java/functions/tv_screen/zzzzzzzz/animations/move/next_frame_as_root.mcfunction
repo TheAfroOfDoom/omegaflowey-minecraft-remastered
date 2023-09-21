@@ -1,0 +1,1 @@
+function animated_java:tv_screen/zzzzzzzz/animations/move/tick_animation
