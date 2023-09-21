@@ -47,6 +47,16 @@
 				"default": true,
 				"affectedBonesIsAWhitelist": false,
 				"affectedBones": []
+			},
+			{
+				"name": "warning",
+				"textureMap": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "69769926-e76c-4d11-b4f8-82ddedcfad5e"
+				},
+				"uuid": "585fe02c-c7d9-99ae-1095-3e2099d4a99d",
+				"boneConfig": {},
+				"affectedBonesIsAWhitelist": false,
+				"affectedBones": []
 			}
 		]
 	},
@@ -370,7 +380,7 @@
 			"origin": [5, 0, 36],
 			"faces": {
 				"north": {
-					"uv": [0, 0, 16, 16],
+					"uv": [1.14286, 1.02857, 14.51429, 16],
 					"texture": 1
 				},
 				"east": {
@@ -436,7 +446,20 @@
 						"dc7fb4e7-a030-e3c7-9fc2-e5ba66c3cff5"
 					]
 				},
-				"08b7d234-49c3-0d44-e451-e9e53c703b21"
+				{
+					"name": "screen",
+					"origin": [5, 0, 36],
+					"color": 0,
+					"nbt": "{}",
+					"uuid": "45a8a5ff-3119-128b-1359-00ba45ae630e",
+					"export": true,
+					"mirror_uv": false,
+					"isOpen": true,
+					"locked": false,
+					"visibility": true,
+					"autouv": 0,
+					"children": ["08b7d234-49c3-0d44-e451-e9e53c703b21"]
+				}
 			]
 		}
 	],
@@ -458,6 +481,7 @@
 			"mode": "bitmap",
 			"saved": true,
 			"uuid": "370b8b73-4e6c-b936-26ae-cafa974e6fc9",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.2-pre1/1.20.2-pre1/assets/minecraft/textures/block/netherite_block.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWpJREFUOE+Fk09Lw0AQxWehoUnTiEawB0tQVFBv9tzv/wEEKYKCLb3kEqVr/rGByNt2trMS6FyS7M789r2ZjVouFn1ZNxRHIZ0KmYd3XZakXp6e+9k8ozRNT9WT3mlKzhKbh/fV2yspKMgeHmm9WVMy3W8Go8DBqrqiIAho1Bm71h32kOMB8jz3ElU4sQWmMw7YNxXVPVHTNpSepz6gKAoyxlCkiFCMZIawHMCQ0+6+aXp5RR/vq6MFVsAQSIVMeIZfDlhiQL7d+ABOgmfZB0CgkEP/atsvTwFbYH//R8LyAQdgsAfyVG4gT4WnAYs4BAo8C+yTPaNAWkKhhR0UOAAu0vzmziVz9yUAmzgVodraPi9m1/4YoYCL8cQU4BURjkMPoKuastv7PYAVFD+Fu4nW/8GrBOB0FCMGAUjox5GzIwvkVJJJZC1svz6PCjAm1zTxL8irLCFYt/cAFvBbeifEsf2U68nAGnL+AK7IFKyaYaryAAAAAElFTkSuQmCC"
 		},
 		{
@@ -477,7 +501,28 @@
 			"mode": "bitmap",
 			"saved": true,
 			"uuid": "32717bc3-fe35-1fc8-9bbf-54407fe854d1",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.2-pre1/1.20.2-pre1/assets/minecraft/textures/block/black_concrete.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPtJREFUOE99k9kSwiAMRUv7oK2Oy/9/a4tzooeJyMhLINwkN1s5b/c6z/PE2fd9KqXEHXkcx+Qfd3T5v9Y6le36rBguy9IMeHM0BqhTZBiW8pYwUIkTwUTkLSv1P4zWy6PqEUc91Qj9SQlcxsb9tN5qzqsHE9EUM5uWAjUwsqnkfBswFfeLKQyIAtDicUdnF5DWwDqhi0A4yMpR2wTr1A61LvQ1sJAWUCbORsYHg+zZnPsZEOM/0SN12mikvkUA0GVGGoptbezT0FAndsh3wzsHUhuN7Gg2WitJ4R9FC+gU5smM5eodjLbQOXFjfUdgi5jn3LXNi5W7ox75AoSGFC+2epdnAAAAAElFTkSuQmCC"
+		},
+		{
+			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\warning.png",
+			"name": "warning",
+			"folder": "",
+			"namespace": "",
+			"id": "2",
+			"particle": false,
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"mode": "bitmap",
+			"saved": true,
+			"uuid": "69769926-e76c-4d11-b4f8-82ddedcfad5e",
+			"relative_path": "../../../../../../../../warning.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAABkCAYAAABU19jRAAAAAXNSR0IArs4c6QAABERJREFUeF7tmkGSFDEMBNkvcOa4J/7/Fk58Ab4AsUtMRIfDtlTdM7U7RXLhMHJXq5SW5YaXX99e/3zhDw40HXgBmKZThL07ADCAIDkAMJJdBAMMDEgOAIxkF8EAAwOSAwAj2UUwwMCA5ADASHYRDDAwIDkAMJJdBAMMDEgOAIxkF8EAAwOSAwAj2UUwwMCA5ADASHYRDDAwIDkAMJJdBAMMDEgOAIxkF8EAAwOSAwAj2UUwwMCA5ADASHYRDDAwIDkAMJJd/4K//vj5/vfv768nVutLbnrjSpf+UfdpgTma6DZuBOYKQG9rd++/guVWRHfuFmAUQzuxMxNXxim7s6M96zBn4e2sq4Bxdro3rU8FzFUDR2gqs3fx3V1/i+vCdmzv4/tV73/8vVqrH3y9FU8FjALADr6V2d0izJ595piq9KoNVP3eQ0CLigLm2J47O35V5Go+cABTwXR7x06eGhL76IcDo+wCtSvsZpmOkaNeZzaqutN4RO1mjB0Uim/3BKJ61lMCMyvK2BU6wIwD7OrI68wOZ7oVwEzw7BbuWLzZrlztuGrHd3f4GxSPBKbKafz9v+8w1feC6sy+AkzVZncda9W5qo52Bb5q81T5PPJ325GkAKNcdzsdZmdgddxUc87qWr1aV+mNw6zamR4Ji+U7TPdIUgbeDgCdHT57zu4GNItXgZnd5Ga3MtWPakPeC6QP6TAziFSDVgYox0sXmPGIOK7rAjMO2LNnrrpP5yMiwByqosC0AmYcajv/lLA7PpQZZnXVvsctqdvBn67DzFrxrCCzQj4CmNXtSdHa5VQN6bNbGR3m8F8Bzph7ZQCc7d7ZXHNlwD6T02q2GgHuXKs7MffqLLfn2GaYM+Z2gBlngd2RtJpFVtAox9buw13VNauh90w3vDcoHwJMJ4nK3O7v3flgVoxqLtjdpFbzyph71e3OfpfqeHwl5uEdptsBVrtotf6YdDUv7KD4KGA63XN3fB3zd92Q3jQ/DTCdq6PampUB9qrp6pE0AtM5/mad4ep7q93GAoz6UrP46pi4hwbPqB14GmDqVIhwOAAwDpeDNAAmqJiOVADG4XKQBsAEFdORCsA4XA7SAJigYjpSARiHy0EaABNUTEcqAONwOUgDYIKK6UgFYBwuB2kATFAxHakAjMPlIA2ACSqmIxWAcbgcpAEwQcV0pAIwDpeDNAAmqJiOVADG4XKQBsAEFdORCsA4XA7SAJigYjpSARiHy0EaABNUTEcqAONwOUgDYIKK6UgFYBwuB2kATFAxHakAjMPlIA2ACSqmIxWAcbgcpAEwQcV0pAIwDpeDNAAmqJiOVADG4XKQBsAEFdORCsA4XA7SAJigYjpSARiHy0EaABNUTEcqAONwOUgDYIKK6UgFYBwuB2kATFAxHakAjMPlIA2ACSqmIxWAcbgcpAEwQcV0pAIwDpeDNAAmqJiOVADG4XKQxl8dwojCQZPkRQAAAABJRU5ErkJggg=="
 		}
 	],
 	"animations": [
