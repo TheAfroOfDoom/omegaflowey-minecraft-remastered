@@ -20,7 +20,19 @@
 			"predicate": {
 				"custom_model_data": 3
 			},
-			"model": "animated_java:item/tv_screen/root"
+			"model": "animated_java:item/tv_screen/screen"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "animated_java:item/tv_screen/warning/box"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "animated_java:item/tv_screen/warning/screen"
 		}
 	],
 	"animated_java": {
@@ -28,7 +40,9 @@
 			"tv_screen": {
 				"used_ids": [
 					2,
-					3
+					3,
+					4,
+					5
 				]
 			}
 		}
