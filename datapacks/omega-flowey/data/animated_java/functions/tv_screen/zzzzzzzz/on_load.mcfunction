@@ -1,0 +1,2 @@
+scoreboard players set @s aj.tv_screen.rig_loaded 1
+execute unless score @s aj.tv_screen.export_version = aj.tv_screen.export_version aj.i at @s run function animated_java:tv_screen/zzzzzzzz/mark_outdated_rig
