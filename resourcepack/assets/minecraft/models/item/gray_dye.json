@@ -1,0 +1,36 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "minecraft:item/gray_dye"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "item/animated_java_empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "animated_java:item/tv_screen/box"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "animated_java:item/tv_screen/root"
+		}
+	],
+	"animated_java": {
+		"rigs": {
+			"tv_screen": {
+				"used_ids": [
+					2,
+					3
+				]
+			}
+		}
+	}
+}
