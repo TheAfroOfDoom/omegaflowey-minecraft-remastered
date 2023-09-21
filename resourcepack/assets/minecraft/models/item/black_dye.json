@@ -1,0 +1,78 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "minecraft:item/black_dye"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "item/animated_java_empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "animated_java:item/lower_eye/sclera"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "animated_java:item/lower_eye/dark"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "animated_java:item/lower_eye/light"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "animated_java:item/lower_eye/diag"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 6
+			},
+			"model": "animated_java:item/lower_eye/pupil"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 7
+			},
+			"model": "animated_java:item/lower_eye/iris"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 8
+			},
+			"model": "animated_java:item/lower_eye/black"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 9
+			},
+			"model": "animated_java:item/lower_eye/outer_lid"
+		}
+	],
+	"animated_java": {
+		"rigs": {
+			"lower_eye": {
+				"used_ids": [
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			}
+		}
+	}
+}
