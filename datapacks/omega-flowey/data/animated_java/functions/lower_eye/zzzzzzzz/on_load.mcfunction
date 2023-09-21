@@ -1,0 +1,2 @@
+scoreboard players set @s aj.lower_eye.rig_loaded 1
+execute unless score @s aj.lower_eye.export_version = aj.lower_eye.export_version aj.i at @s run function animated_java:lower_eye/zzzzzzzz/mark_outdated_rig
