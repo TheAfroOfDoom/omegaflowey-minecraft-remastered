@@ -1,0 +1,1 @@
+tag @s remove aj.nose.animation.move
