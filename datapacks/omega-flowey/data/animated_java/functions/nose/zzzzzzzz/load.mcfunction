@@ -13,6 +13,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.nose.export_version aj.i -578764838
+scoreboard players set aj.nose.export_version aj.i -314695857
 scoreboard players reset * aj.nose.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.nose.root] run function animated_java:nose/zzzzzzzz/on_load
