@@ -1,0 +1,1 @@
+function animated_java:nose/zzzzzzzz/animations/move/tick_animation

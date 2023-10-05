@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nose.animation.move] run function animated_java:nose/zzzzzzzz/animations/move/tick
