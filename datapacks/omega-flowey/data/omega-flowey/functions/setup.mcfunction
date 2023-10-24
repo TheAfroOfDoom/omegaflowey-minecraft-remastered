@@ -12,13 +12,21 @@ team modify player seeFriendlyInvisibles false
 # Add objectives
 # Dummy
 scoreboard objectives add attack.bullets dummy
+scoreboard objectives add attack.bullets.remaining dummy
 scoreboard objectives add attack.clock dummy
 scoreboard objectives add attack.cone dummy
+scoreboard objectives add attack.length dummy
 scoreboard objectives add attack.indicator.yaw dummy
 scoreboard objectives add attack.theta dummy
 scoreboard objectives add attack.d-theta dummy
 scoreboard objectives add attack.phi dummy
 scoreboard objectives add attack.d-phi dummy
+scoreboard objectives add attack.rate dummy
+scoreboard objectives add attack.rate.i dummy
+
+scoreboard objectives add attack.speed.x dummy
+scoreboard objectives add attack.speed.y dummy
+scoreboard objectives add attack.speed.z dummy
 
 scoreboard objectives add constant dummy
 
