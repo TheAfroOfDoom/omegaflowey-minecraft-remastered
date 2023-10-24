@@ -19,3 +19,5 @@ function animated_java:upper_eye/remove/all
 execute positioned -15.5 46 -4 rotated 160 -20 run function animated_java:upper_eye/summon
 # Left-eye
 execute positioned 16.5 46 -4 rotated 20 20 run function animated_java:upper_eye/summon
+
+execute as @e[type=minecraft:item_display] run data modify entity @s teleport_duration set value 1
