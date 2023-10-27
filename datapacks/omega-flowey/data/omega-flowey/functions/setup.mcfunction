@@ -13,9 +13,10 @@ team modify player seeFriendlyInvisibles false
 # Dummy
 scoreboard objectives add attack.bullets dummy
 scoreboard objectives add attack.bullets.remaining dummy
-scoreboard objectives add attack.clock dummy
+scoreboard objectives add attack.clock.delay dummy
+scoreboard objectives add attack.clock.i dummy
+scoreboard objectives add attack.clock.length dummy
 scoreboard objectives add attack.cone dummy
-scoreboard objectives add attack.length dummy
 scoreboard objectives add attack.indicator.yaw dummy
 scoreboard objectives add attack.theta dummy
 scoreboard objectives add attack.d-theta dummy
