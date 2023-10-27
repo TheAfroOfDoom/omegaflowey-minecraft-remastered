@@ -20,14 +20,14 @@ module.exports = {
         "nps delete.datapacks",
         "nps copy.datapacks",
         "echo finished datapacks",
-        "mpg123 -q ./temp/anyway.mp3 || echo mpg123 not found on your system -- cannot play notification sound"
+        "mpg123 -f -5000 -q ./temp/anyway.mp3 || echo mpg123 not found on your system -- cannot play notification sound"
       ),
       resourcepack: series(
         "echo syncing resourcepack",
         "nps delete.resourcepack",
         "nps copy.resourcepack",
         "echo finished resourcepack",
-        "mpg123 -q ./temp/fnaf.mp3 || echo mpg123 not found on your system -- cannot play notification sound"
+        "mpg123 -f -5000 -q ./temp/fnaf.mp3 || echo mpg123 not found on your system -- cannot play notification sound"
       ),
       world: series(
         "rimraf world.zip",
