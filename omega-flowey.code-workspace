@@ -29,6 +29,7 @@
     "datapack.lint.nbtCompoundBracketSpacing": {
       "inside": 1
     },
+    "datapack.lint.strictStorageCheck": false,
     "datapack.lint.timeOmitTickUnit": true,
     "datapack.snippets": {
       "consoleLog": "tellraw @a [{\"text\": \"${1:variable}: \"}, {\"score\": {\"name\": \"@s\", \"objective\": \"${1:variable}\"}}]"
@@ -44,6 +45,8 @@
       "./omega-flowey/data/math": true,
       "./minecraft/**": true,
       "./versions": true
-    }
+    },
+
+    "terminal.integrated.defaultLocation": "editor"
   }
 }
