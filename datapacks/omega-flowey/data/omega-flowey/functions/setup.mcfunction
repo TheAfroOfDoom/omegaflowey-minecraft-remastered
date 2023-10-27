@@ -31,6 +31,7 @@ scoreboard objectives add attack.speed.z dummy
 scoreboard objectives add constant dummy
 
 scoreboard objectives add math.0 dummy
+scoreboard objectives add math.1 dummy
 
 # Set fake-players (constants and attack properties)
 scoreboard players set #2 constant 2
