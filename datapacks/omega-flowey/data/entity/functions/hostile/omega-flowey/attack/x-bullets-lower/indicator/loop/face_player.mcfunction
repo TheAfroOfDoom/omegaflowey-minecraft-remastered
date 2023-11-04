@@ -1,9 +1,9 @@
 ## Faces closest player and summons `x-bullets-lower` bullets using `attack.cone` and `attack.bullets`
 
 # TODO this needs to NOT be a distance check
-execute as @e[tag=aj.lower_eye.bone.pupil,sort=nearest,limit=1] run function entity:utils/get_bone_position
+execute as @e[tag=aj.lower_eye.locator.pupil,sort=nearest,limit=1] run function entity:utils/store_position
 
-function entity:utils/face_closest_player with storage aj:bone.position
+function entity:utils/face_closest_player with storage entity:position
 
 execute store result score @s attack.indicator.yaw run data get entity @s Rotation[0]
 execute store result score @s attack.theta run data get entity @s Rotation[1]
@@ -35,4 +35,4 @@ scoreboard players operation @s[scores={random=0}] attack.phi += @s math.0
 # Initialize attack.bullets.remaining
 scoreboard players operation @s attack.bullets.remaining = @s attack.bullets
 
-function entity:hostile/omega-flowey/attack/x-bullets-lower/indicator/loop/summon_bullet with storage aj:bone.position
+function entity:hostile/omega-flowey/attack/x-bullets-lower/indicator/loop/summon_bullet with storage entity:position

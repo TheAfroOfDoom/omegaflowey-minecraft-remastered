@@ -22,4 +22,4 @@ scoreboard players remove @s attack.bullets.remaining 1
 tag @e[tag=attack-bullet-new] remove attack-bullet-new
 
 # Summon next bullet if `attack.bullets.remaining` > 0
-execute unless entity @s[scores={attack.bullets.remaining=..0}] run function entity:hostile/omega-flowey/attack/x-bullets-lower/indicator/loop/summon_bullet with storage aj:bone.position
+execute unless entity @s[scores={attack.bullets.remaining=..0}] run function entity:hostile/omega-flowey/attack/x-bullets-lower/indicator/loop/summon_bullet with storage entity:position
