@@ -9,7 +9,8 @@ scoreboard objectives add aj.upper_eye.animation.look_around.local_anim_time dum
 scoreboard objectives add aj.upper_eye.animation.look_around.loop_mode dummy
 scoreboard players set $aj.upper_eye.animation.look_around aj.id 0
 scoreboard players set $aj.upper_eye.variant.default aj.id 0
-scoreboard players set $aj.upper_eye.variant.colorful aj.id 1
+scoreboard players set $aj.upper_eye.variant.bright aj.id 1
+scoreboard players set $aj.upper_eye.variant.colorful aj.id 2
 scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
