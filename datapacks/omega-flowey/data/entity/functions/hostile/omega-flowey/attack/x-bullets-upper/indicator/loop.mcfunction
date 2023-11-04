@@ -6,16 +6,14 @@ scoreboard players add @s attack.clock.i 1
 execute if score @s attack.clock.i matches ..-1 run return 0
 
 # Pause upper_eye animations
-# TODO: this has duplicate pause calls unnecessarily...
-# shouldnt cause any bugs but is pretty silly and should rethink how we select the corresponding
-# AJ upper_eye entity
 # TODO this needs to NOT be a distance check
 execute if score @s attack.clock.i matches 0 as @e[tag=aj.upper_eye.root,sort=nearest,limit=1] run function entity:hostile/omega-flowey/attack/x-bullets-upper/indicator/loop/pause_eye
 
-# Attack every `attack.rate` ticks
-scoreboard players operation @s attack.rate.i = @s attack.clock.i
-scoreboard players operation @s attack.rate.i %= @s attack.rate
+# Summon another bullet each tick if `attack.bullets.remaining` is positive
+execute if score @s attack.bullets.remaining matches 1.. run function entity:hostile/omega-flowey/attack/x-bullets-upper/indicator/loop/presummon_bullet
 
-execute if score @s attack.rate.i matches 0 run function entity:hostile/omega-flowey/attack/x-bullets-upper/indicator/loop/face_player
+# Attack every `attack.bullets.clock.delay + attack.bullets.total` ticks
+execute unless score @s attack.bullets.remaining matches 1.. run scoreboard players add @s attack.bullets.clock.i 1
+execute unless score @s attack.bullets.remaining matches 1.. if score @s attack.bullets.clock.i = @s attack.bullets.clock.delay run function entity:hostile/omega-flowey/attack/x-bullets-upper/indicator/loop/face_player
 
 execute if score @s attack.clock.i = @s attack.clock.length run function entity:hostile/omega-flowey/attack/x-bullets-upper/indicator/terminate
