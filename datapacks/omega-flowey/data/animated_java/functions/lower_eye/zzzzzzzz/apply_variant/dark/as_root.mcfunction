@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:lower_eye/zzzzzzzz/apply_variant/dark/as_bone

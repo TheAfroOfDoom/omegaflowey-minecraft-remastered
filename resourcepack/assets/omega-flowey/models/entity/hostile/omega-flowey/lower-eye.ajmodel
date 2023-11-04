@@ -66,6 +66,26 @@
 				"boneConfig": {},
 				"affectedBonesIsAWhitelist": false,
 				"affectedBones": []
+			},
+			{
+				"name": "dark",
+				"textureMap": {
+					"43c7499b-810c-e305-aa49-1e7c13c77d34": "d47619a9-94ae-577b-9b1c-5212504c43a5",
+					"a75f7ba5-2c99-eae1-002e-541b5f3809a4": "a75f7ba5-2c99-eae1-002e-541b5f3809a4",
+					"f7bef88d-4048-d096-0656-8254abd952c0": "f7bef88d-4048-d096-0656-8254abd952c0",
+					"aff1612c-e069-f3fa-76b8-d53c474570a6": "d47619a9-94ae-577b-9b1c-5212504c43a5",
+					"91f4647e-d482-ceca-1b5c-12a72e28cad1": "7af71311-1188-adbb-0391-ffa2173d1081",
+					"d47619a9-94ae-577b-9b1c-5212504c43a5": "d47619a9-94ae-577b-9b1c-5212504c43a5",
+					"d24c4edd-98f9-71e3-31f3-bc89d06b79ba": "d24c4edd-98f9-71e3-31f3-bc89d06b79ba",
+					"6a66d687-6cf4-c706-b428-fa07ee115882": "6a66d687-6cf4-c706-b428-fa07ee115882",
+					"93b990c3-7be9-b673-c2d7-00afd4bb1ccb": "d47619a9-94ae-577b-9b1c-5212504c43a5",
+					"729fda25-7578-9986-de5e-72ed4d8b1fb3": "d47619a9-94ae-577b-9b1c-5212504c43a5",
+					"7af71311-1188-adbb-0391-ffa2173d1081": "7af71311-1188-adbb-0391-ffa2173d1081"
+				},
+				"uuid": "b91ac4d2-5302-2bde-859e-84985699299b",
+				"boneConfig": {},
+				"affectedBonesIsAWhitelist": false,
+				"affectedBones": []
 			}
 		]
 	},
@@ -981,7 +1001,7 @@
 			"origin": [-24.85, 16.2, 1.35],
 			"faces": {
 				"north": {
-					"uv": [8, 1, 1, 3],
+					"uv": [2, 14, 0, 16],
 					"rotation": 90,
 					"texture": 4
 				},
@@ -991,8 +1011,8 @@
 					"texture": 4
 				},
 				"south": {
-					"uv": [8, 1, 1, 3],
-					"rotation": 270,
+					"uv": [2, 14, 0, 16],
+					"rotation": 90,
 					"texture": 4
 				},
 				"west": {
@@ -2328,7 +2348,7 @@
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\animated_java\\textures\\item\\lower_eye\\bright_light_gray_concrete.png",
-			"name": "bright_light_gray_concrete.png",
+			"name": "bright_light_gray_concrete",
 			"folder": "",
 			"namespace": "",
 			"id": "6",
@@ -2348,7 +2368,7 @@
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\animated_java\\textures\\item\\lower_eye\\bright_quartz_block_side.png",
-			"name": "bright_quartz_block_side.png",
+			"name": "bright_quartz_block_side",
 			"folder": "",
 			"namespace": "",
 			"id": "7",
@@ -2371,7 +2391,7 @@
 			"name": "light_gray_terracotta_inner_eye",
 			"folder": "",
 			"namespace": "",
-			"id": "1",
+			"id": "8",
 			"particle": false,
 			"render_mode": "default",
 			"render_sides": "auto",
@@ -2390,7 +2410,7 @@
 			"name": "white_terracotta_inner_eye",
 			"folder": "",
 			"namespace": "",
-			"id": "2",
+			"id": "9",
 			"particle": false,
 			"render_mode": "default",
 			"render_sides": "auto",
@@ -2403,6 +2423,26 @@
 			"saved": false,
 			"uuid": "729fda25-7578-9986-de5e-72ed4d8b1fb3",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAcBJREFUOE9NU1ty2zAMXICUmt7/Arbz34wnmVwjY7eHaSUC6CxAOdaPRAoE9kW5Xc/hHjgehUC6QrsgLDDMsKwNEYDvBren2iYQNhAAujSAHwZ4KMJ3AFUsTaBNs8n4Z2jKQsA82OASA4GeW4FEw3MCqH4fzOb85YCsAAaLHHL/uIRowcVwWESdF8GiAn/gIExAuDGHsVLu75fQVpDC6zBhChEkfoUjsL4URtusBnCoO+TP52tQGE5Mgbg5OT6U5Qf3as6kEmiLQn5/XII/yS1pwNkjhVIo3I26ph5CCk2TBrH67mzwGmEESQGBviRwjN3Rf6SpWTh1LQRsRo6kwgYTFcY20BqnOlSrURY1xdOyLKI22/6MgPQPiSUh01JSmb7MZjWZg5gLuV9PfNGQ5IsQrD9L8fF3g/RemaBTQTpW9vgM0tevU7TDRu7PqYewbSn1g71nMomuRHfI7e0cZXi5lOFg96l8XxeIDexW7rBUuiSCFJNBOvyl/0SQud9GZj3tc2CHp61tuqAvmlPkfj1HkAIX+4DN/IvHAwWxybxrzIrB0VwgDBIvEwOSVs6kpfuaoUREpbSuouea6OkCKfwHgmUYZj07wgMAAAAASUVORK5CYII="
+		},
+		{
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.2-pre1\\1.20.2-pre1\\assets\\minecraft\\textures\\block\\redstone_block.png",
+			"name": "redstone_block.png",
+			"folder": "",
+			"namespace": "",
+			"id": "10",
+			"particle": false,
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"mode": "bitmap",
+			"saved": true,
+			"uuid": "7af71311-1188-adbb-0391-ffa2173d1081",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.2-pre1/1.20.2-pre1/assets/minecraft/textures/block/redstone_block.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQBJREFUOE+lkyESwjAQRbcziIgKRA0OJJIrILkO5+hVkEiugKzEgalAVFQwA/Ob/GS7mXaGaU3SJvv69+9u8dy6ryx4CgCaANiLCPevPlE3zu/1Od8zwC0E3rteDmWIVAoBAxwrgCMAD5rOUx4Btguc9coJwSMALkM6AO9PCkYggzTkqIRFBQzmX6d8PVdOkGaWwrX1OUPBFIQqBgNLlzwAUUufqyrTwh2kMqRA5yELBv6tgAaCeFEV0Clp+TA288BWgGnAtLr1lbHy8S3rA1tG2wvsj1OlTGQK/Csh1kxI1080kY0EA3EJB7YybOvZVuaAEIiVQ8WB0griLCyYZvkBEBqf4WyNTFoAAAAASUVORK5CYII="
 		}
 	],
 	"animations": [

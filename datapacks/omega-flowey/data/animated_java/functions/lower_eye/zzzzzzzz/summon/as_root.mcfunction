@@ -9,6 +9,7 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:lower_eye/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.lower_eye.variant.default aj.id run function animated_java:lower_eye/zzzzzzzz/apply_variant/default/as_root
 execute if score #variant aj.i = $aj.lower_eye.variant.bright aj.id run function animated_java:lower_eye/zzzzzzzz/apply_variant/bright/as_root
+execute if score #variant aj.i = $aj.lower_eye.variant.dark aj.id run function animated_java:lower_eye/zzzzzzzz/apply_variant/dark/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.lower_eye.animation.look_around aj.id run function animated_java:lower_eye/zzzzzzzz/animations/look_around/apply_frame_as_root
 execute if score #animation aj.i = $aj.lower_eye.animation.look_around aj.id run scoreboard players operation @s aj.lower_eye.animation.look_around.local_anim_time = #frame aj.i
