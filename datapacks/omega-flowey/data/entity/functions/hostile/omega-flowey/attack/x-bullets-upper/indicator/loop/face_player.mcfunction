@@ -13,7 +13,7 @@ execute store result score @s attack.theta run data get entity @s Rotation[1]
 # Store angle to left-most bullet in attack.phi
 scoreboard players operation @s attack.phi = @s attack.indicator.yaw
 scoreboard players operation @s math.0 = @s attack.cone
-scoreboard players operation @s math.0 /= #2 constant
+scoreboard players operation @s math.0 /= #2 mathf.const
 scoreboard players operation @s attack.phi -= @s math.0
 
 # Store angle between bullets in attack.d-phi

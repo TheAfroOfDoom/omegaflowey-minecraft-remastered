@@ -31,16 +31,11 @@ scoreboard objectives add attack.speed.x dummy
 scoreboard objectives add attack.speed.y dummy
 scoreboard objectives add attack.speed.z dummy
 
-scoreboard objectives add constant dummy
-
 scoreboard objectives add math.0 dummy
 scoreboard objectives add math.1 dummy
 
 scoreboard objectives add random dummy
 scoreboard objectives add random.min dummy
 scoreboard objectives add random.range dummy
-
-# Set fake-players (constants and attack properties)
-scoreboard players set #2 constant 2
 
 function entity:setup
