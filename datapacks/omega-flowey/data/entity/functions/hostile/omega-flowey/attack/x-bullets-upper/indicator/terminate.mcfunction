@@ -1,4 +1,3 @@
-# Pause upper_eye animations
 # TODO: this has duplicate resume calls unnecessarily...
 # shouldnt cause any bugs but is pretty silly and should rethink how we select the corresponding
 # AJ upper_eye entity
