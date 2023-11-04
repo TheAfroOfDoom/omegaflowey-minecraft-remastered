@@ -1,18 +1,20 @@
-## Sets up objectives, fake players, entities, and teams required for the map to run.
+### Sets up objectives, fake players, entities, and teams required for the map to run.
 
-# Debugging
-execute if entity @a[scores={debug=1}] run say DEBUG: function omega-flowey:setup
-
-# Add teams
+## Add teams
 team add player
 team modify player color blue
 team modify player friendlyFire false
 team modify player seeFriendlyInvisibles false
 
-# Add objectives
-# Dummy
-scoreboard objectives add attack.bullets dummy
+## Add dummy objectives
+# delay (in ticks) to wait after finished summoning bullets before summoning next set of bullets
+scoreboard objectives add attack.bullets.clock.delay dummy
+# time ticker for bullet-summoning logic
+scoreboard objectives add attack.bullets.clock.i dummy
+# number of bullets left to summon in a set
 scoreboard objectives add attack.bullets.remaining dummy
+# total number of bullets to summon each set
+scoreboard objectives add attack.bullets.total dummy
 scoreboard objectives add attack.clock.delay dummy
 scoreboard objectives add attack.clock.i dummy
 scoreboard objectives add attack.clock.length dummy
@@ -22,14 +24,12 @@ scoreboard objectives add attack.theta dummy
 scoreboard objectives add attack.d-theta dummy
 scoreboard objectives add attack.phi dummy
 scoreboard objectives add attack.d-phi dummy
-scoreboard objectives add attack.rate dummy
-scoreboard objectives add attack.rate.i dummy
-
+scoreboard objectives add attack.position.x dummy
+scoreboard objectives add attack.position.y dummy
+scoreboard objectives add attack.position.z dummy
 scoreboard objectives add attack.speed.x dummy
 scoreboard objectives add attack.speed.y dummy
 scoreboard objectives add attack.speed.z dummy
-
-scoreboard objectives add constant dummy
 
 scoreboard objectives add math.0 dummy
 scoreboard objectives add math.1 dummy
@@ -37,8 +37,5 @@ scoreboard objectives add math.1 dummy
 scoreboard objectives add random dummy
 scoreboard objectives add random.min dummy
 scoreboard objectives add random.range dummy
-
-# Set fake-players (constants and attack properties)
-scoreboard players set #2 constant 2
 
 function entity:setup
