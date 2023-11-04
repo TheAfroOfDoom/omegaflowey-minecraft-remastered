@@ -35,4 +35,4 @@ scoreboard players operation @s[scores={random=0}] attack.phi += @s math.0
 # Initialize attack.bullets.remaining
 scoreboard players operation @s attack.bullets.remaining = @s attack.bullets
 
-function entity:hostile/omega-flowey/attack/x-bullets-lower/indicator/loop/summon_bullets with storage aj:bone.position
+function entity:hostile/omega-flowey/attack/x-bullets-lower/indicator/loop/summon_bullet with storage aj:bone.position
