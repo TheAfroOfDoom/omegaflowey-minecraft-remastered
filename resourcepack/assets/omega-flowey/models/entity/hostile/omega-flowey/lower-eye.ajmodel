@@ -1985,6 +1985,18 @@
 			},
 			"type": "cube",
 			"uuid": "13d23bf4-4e3b-bebe-ed67-ac74a8932963"
+		},
+		{
+			"name": "pupil",
+			"position": [-24.85, 16.2, 0.35],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"entity_type": "minecraft:marker",
+			"nbt": "{}",
+			"uuid": "49f3d396-14a1-9064-26d7-32b47055e719",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -2081,7 +2093,7 @@
 					"uuid": "880e6759-b6fb-7278-fe5e-7aef4153a88a",
 					"export": true,
 					"mirror_uv": false,
-					"isOpen": false,
+					"isOpen": true,
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
@@ -2120,7 +2132,7 @@
 							"locked": false,
 							"visibility": true,
 							"autouv": 0,
-							"children": ["b3075a4c-28a7-4cf3-bc4d-e2511a4418d7"]
+							"children": ["b3075a4c-28a7-4cf3-bc4d-e2511a4418d7", "49f3d396-14a1-9064-26d7-32b47055e719"]
 						}
 					]
 				},
@@ -2132,7 +2144,7 @@
 					"uuid": "8762d93c-9910-956b-1cb8-18d4d7378ff6",
 					"export": true,
 					"mirror_uv": false,
-					"isOpen": true,
+					"isOpen": false,
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
