@@ -2,7 +2,7 @@
 
 scoreboard players add @s attack.clock.i 1
 
-# Ignore `attack.rate` logic while `attack.clock.i` is negative
+# Ignore bullet summoning logic while `attack.clock.i` is negative
 execute if score @s attack.clock.i matches ..-1 run return 0
 
 # Pause upper_eye animations
