@@ -1,0 +1,1 @@
+tag @s remove aj.projectile_star.animation.spin_and_grow

@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:projectile_star/zzzzzzzz/animations/spin_and_grow/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:projectile_star/zzzzzzzz/animations/spin_and_grow/tick_animation
