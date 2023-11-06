@@ -1,0 +1,36 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "minecraft:item/golden_sword"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "item/animated_java_empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "animated_java:item/projectile_star/white"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "animated_java:item/projectile_star/black"
+		}
+	],
+	"animated_java": {
+		"rigs": {
+			"projectile_star": {
+				"used_ids": [
+					2,
+					3
+				]
+			}
+		}
+	}
+}
