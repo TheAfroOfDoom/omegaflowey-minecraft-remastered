@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.projectile_star.bone.white] run data modify entity @s item.tag.CustomModelData set value 2
+execute if entity @s[tag=aj.projectile_star.bone.black] run data modify entity @s item.tag.CustomModelData set value 3

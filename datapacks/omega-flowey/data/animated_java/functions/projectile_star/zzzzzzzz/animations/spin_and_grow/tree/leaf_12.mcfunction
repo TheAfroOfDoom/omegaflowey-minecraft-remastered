@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:projectile_star/zzzzzzzz/animations/spin_and_grow/tree/leaf_12_as_bone
+execute unless entity @s[tag=aj.projectile_star.disable_command_keyframes] at @s run function animated_java:projectile_star/animations/spin/play
