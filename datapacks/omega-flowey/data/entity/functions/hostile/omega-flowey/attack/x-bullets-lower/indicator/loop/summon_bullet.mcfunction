@@ -27,6 +27,3 @@ scoreboard players operation @s attack.phi -= @s attack.d-phi
 
 # Decrement number of bullets left to summon
 scoreboard players remove @s attack.bullets.remaining 1
-
-# Remove "new" status of latest bullet
-tag @e[tag=attack-bullet-new] remove attack-bullet-new
