@@ -1,1 +1,1 @@
-function entity:hostile/omega-flowey/attack/x-bullets-lower/start
+function entity:hostile/omega-flowey/attack/friendliness-pellets/start
