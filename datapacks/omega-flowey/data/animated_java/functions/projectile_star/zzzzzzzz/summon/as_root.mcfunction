@@ -9,8 +9,6 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:projectile_star/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.projectile_star.variant.default aj.id run function animated_java:projectile_star/zzzzzzzz/apply_variant/default/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.projectile_star.animation.spin aj.id run function animated_java:projectile_star/zzzzzzzz/animations/spin/apply_frame_as_root
-execute if score #animation aj.i = $aj.projectile_star.animation.spin aj.id run scoreboard players operation @s aj.projectile_star.animation.spin.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.projectile_star.animation.spin_and_grow aj.id run function animated_java:projectile_star/zzzzzzzz/animations/spin_and_grow/apply_frame_as_root
 execute if score #animation aj.i = $aj.projectile_star.animation.spin_and_grow aj.id run scoreboard players operation @s aj.projectile_star.animation.spin_and_grow.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:projectile_star/on_summon/as_root

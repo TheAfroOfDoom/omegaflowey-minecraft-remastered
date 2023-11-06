@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..24 run function animated_java:projectile_star/zzzzzzzz/animations/spin/tree/branch_0_24

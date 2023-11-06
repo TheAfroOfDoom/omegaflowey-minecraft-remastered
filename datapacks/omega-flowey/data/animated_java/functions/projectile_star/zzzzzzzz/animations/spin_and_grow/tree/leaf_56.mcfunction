@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:projectile_star/zzzzzzzz/animations/spin_and_grow/tree/leaf_56_as_bone
