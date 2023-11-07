@@ -1,1 +1,1 @@
-kill @s
+function animated_java:friendliness_pellet/remove/this

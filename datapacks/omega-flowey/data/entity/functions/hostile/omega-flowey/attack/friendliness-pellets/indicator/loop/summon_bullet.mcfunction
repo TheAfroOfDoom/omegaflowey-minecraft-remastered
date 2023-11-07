@@ -1,7 +1,7 @@
 ## summons a single bullet and increments `attack.bullets.count`
 
 # Summon bullet
-$execute positioned ~ ~1 ~ positioned ^ ^ ^$(radius) run summon minecraft:item_display ~ ~ ~ {CustomName:"\"Friendliness-Pellets Bullet\"",Tags:["omega-flowey-remastered","hostile","omega-flowey","attack","attack-bullet","attack-bullet-new"],teleport_duration:1,item_display:"head",item:{id:"minecraft:quartz_block",Count:1b}}
+$execute positioned ~ ~1 ~ positioned ^ ^ ^$(radius) run function animated_java:friendliness_pellet/summon
 
 # Store `group.id` for next bullet
 execute store result storage group id int 1 run scoreboard players get @s group.id

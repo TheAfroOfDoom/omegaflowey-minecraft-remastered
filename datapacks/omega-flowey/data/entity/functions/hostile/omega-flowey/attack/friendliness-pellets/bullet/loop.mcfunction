@@ -10,5 +10,5 @@ function entity:utils/move_forward with storage utils:move
 data merge storage utils:damage {damage: 2, radius: 1.5}
 function entity:utils/damage with storage utils:damage
 
-# Terminate after 2 seconds
-execute if score @s attack.clock.i matches 40.. run function entity:hostile/omega-flowey/attack/friendliness-pellets/bullet/terminate
+# Terminate after 3 seconds
+execute if score @s attack.clock.i matches 60.. run function entity:hostile/omega-flowey/attack/friendliness-pellets/bullet/terminate
