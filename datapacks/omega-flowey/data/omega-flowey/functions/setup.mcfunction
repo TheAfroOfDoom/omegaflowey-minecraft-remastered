@@ -31,6 +31,9 @@ scoreboard objectives add attack.speed.x dummy
 scoreboard objectives add attack.speed.y dummy
 scoreboard objectives add attack.speed.z dummy
 
+scoreboard objectives add group.id dummy
+scoreboard objectives add group.id.tree.level dummy
+
 scoreboard objectives add math.0 dummy
 scoreboard objectives add math.1 dummy
 
@@ -39,3 +42,6 @@ scoreboard objectives add random.min dummy
 scoreboard objectives add random.range dummy
 
 function entity:setup
+
+# Reset next group ID if there are no `groupable` entities
+execute unless entity @e[tag=groupable] run scoreboard players set #group.id.next group.id 0
