@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.friendliness_pellet.animation.spin] run function animated_java:friendliness_pellet/zzzzzzzz/animations/spin/tick

@@ -1,0 +1,1 @@
+tag @s remove aj.friendliness_pellet.animation.spin
