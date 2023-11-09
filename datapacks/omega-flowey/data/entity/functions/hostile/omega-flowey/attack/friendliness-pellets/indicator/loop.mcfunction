@@ -25,4 +25,5 @@ execute if score @s attack.bullets.count < @s attack.bullets.total run function 
 execute if score @s attack.bullets.count = @s attack.bullets.total run scoreboard players add @s attack.bullets.clock.i 1
 
 # After `attack.bullets.clock.delay` ticks, terminate (and activate all bullets)
+# TODO: this could be off by one tick (might need to be `attack.bullets.clock.delay - 1`?)
 execute if score @s attack.bullets.clock.i = @s attack.bullets.clock.delay run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/terminate
