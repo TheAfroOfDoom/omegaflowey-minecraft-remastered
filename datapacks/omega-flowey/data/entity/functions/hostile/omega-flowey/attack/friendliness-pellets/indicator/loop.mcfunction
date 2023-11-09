@@ -7,6 +7,9 @@ execute if score @s attack.clock.i = @s attack.indicator.animation.index run fun
 execute if score @s attack.clock.i = @s attack.indicator.animation.index as @e[tag=friendliness-pellet-ring,scores={group.id=0}] run function animated_java:friendliness_pellet_ring/apply_variant/finished_blinking
 execute if score @s attack.clock.i = @s attack.indicator.animation.index run function entity:group/end
 
+# Play blinking sound before we summon bullets
+execute if score @s attack.clock.i matches ..-1 run playsound omega-flowey:attack.friendliness-pellets.blinking hostile @a ~ ~ ~ 3 1 1
+
 # Ignore bullet summoning logic while `attack.clock.i` is negative
 execute if score @s attack.clock.i matches ..-1 run return 0
 

@@ -1,6 +1,3 @@
-# TODO replace this sound
-playsound minecraft:block.comparator.click hostile @a[team=player] ~ ~ ~ 3 1 1
-
 # Inputted scores
 scoreboard players set @s attack.clock.i -1
 scoreboard players operation @s attack.clock.i -= #attack-friendliness-pellets attack.clock.delay
