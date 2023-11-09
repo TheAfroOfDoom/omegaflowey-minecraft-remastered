@@ -24,6 +24,7 @@ scoreboard objectives add attack.cone dummy
 scoreboard objectives add attack.executor.clock.length dummy
 # how often (in ticks) an attack-executor summons an attack-indicator
 scoreboard objectives add attack.executor.rate dummy
+scoreboard objectives add attack.indicator.animation.index dummy
 # radius (in blocks) at which to summon bullets around attack-indicator
 scoreboard objectives add attack.indicator.radius dummy
 scoreboard objectives add attack.indicator.yaw dummy

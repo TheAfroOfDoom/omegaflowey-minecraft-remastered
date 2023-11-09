@@ -2,8 +2,18 @@
 
 scoreboard players add @s attack.clock.i 1
 
+# Change ring variant at tick index
+execute if score @s attack.clock.i = @s attack.indicator.animation.index run function entity:group/start
+execute if score @s attack.clock.i = @s attack.indicator.animation.index as @e[tag=friendliness-pellet-ring,scores={group.id=0}] run function animated_java:friendliness_pellet_ring/apply_variant/finished_blinking
+execute if score @s attack.clock.i = @s attack.indicator.animation.index run function entity:group/end
+
 # Ignore bullet summoning logic while `attack.clock.i` is negative
 execute if score @s attack.clock.i matches ..-1 run return 0
+
+# Delete ring when we start summoning bullets
+execute if score @s attack.clock.i matches 0 run function entity:group/start
+execute if score @s attack.clock.i matches 0 as @e[tag=friendliness-pellet-ring,scores={group.id=0}] run function animated_java:friendliness_pellet_ring/remove/this
+execute if score @s attack.clock.i matches 0 run function entity:group/end
 
 # Summon a bullet each tick that `attack.bullets.count` is less than `attack.bullets.total`
 execute if score @s attack.bullets.count < @s attack.bullets.total run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/presummon_bullet

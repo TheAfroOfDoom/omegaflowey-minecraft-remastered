@@ -1,8 +1,6 @@
 # TODO replace this sound
 playsound minecraft:block.comparator.click hostile @a[team=player] ~ ~ ~ 3 1 1
 
-# TODO summon blinking circle animation
-
 # Inputted scores
 scoreboard players set @s attack.clock.i -1
 scoreboard players operation @s attack.clock.i -= #attack-friendliness-pellets attack.clock.delay
@@ -11,6 +9,7 @@ scoreboard players set @s attack.bullets.clock.i -1
 scoreboard players set @s attack.bullets.count 0
 scoreboard players operation @s attack.bullets.clock.delay = #attack-friendliness-pellets attack.bullets.clock.delay
 scoreboard players operation @s attack.bullets.total = #attack-friendliness-pellets attack.bullets.total
+scoreboard players operation @s attack.indicator.animation.index = #attack-friendliness-pellets attack.indicator.animation.index
 scoreboard players operation @s attack.indicator.radius = #attack-friendliness-pellets attack.indicator.radius
 
 # Calculated scores
@@ -19,6 +18,16 @@ scoreboard players operation @s attack.d-phi /= @s attack.bullets.total
 
 # Set group ID
 function entity:group/set
+
+# Summon blinking-ring
+function animated_java:friendliness_pellet_ring/summon
+# TODO shouldn't need this custom tag adding stuff. fix when Blockbench exports custom tags correctly..
+tag @e[tag=aj.friendliness_pellet_ring.root,tag=!friendliness-pellet-ring-new] add friendliness-pellet-ring-new
+tag @e[tag=friendliness-pellet-ring-new] add groupable
+execute store result storage group id int 1 run scoreboard players get @s group.id
+execute as @e[tag=friendliness-pellet-ring-new] run function entity:group/copy with storage group
+tag @e[tag=friendliness-pellet-ring-new] add friendliness-pellet-ring
+tag @e[tag=friendliness-pellet-ring-new] remove friendliness-pellet-ring-new
 
 # Randomize initial yaw
 execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
