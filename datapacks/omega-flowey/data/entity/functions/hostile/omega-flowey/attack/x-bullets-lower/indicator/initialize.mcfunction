@@ -1,7 +1,7 @@
 # Play eye sheen particles
 particle minecraft:explosion ~ ~ ~ 0 0 0 10 1 force
 
-playsound omega-flowey:attack.start hostile @a[team=player] ~ ~ ~ 3 1 1
+playsound omega-flowey:attack.x-bullets.start hostile @a ~ ~ ~ 3 1 1
 
 # Set scores
 scoreboard players set @s attack.clock.i -1
