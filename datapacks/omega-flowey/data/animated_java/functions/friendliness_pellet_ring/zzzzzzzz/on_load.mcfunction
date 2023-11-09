@@ -1,0 +1,2 @@
+scoreboard players set @s aj.friendliness_pellet_ring.rig_loaded 1
+execute unless score @s aj.friendliness_pellet_ring.export_version = aj.friendliness_pellet_ring.export_version aj.i at @s run function animated_java:friendliness_pellet_ring/zzzzzzzz/mark_outdated_rig
