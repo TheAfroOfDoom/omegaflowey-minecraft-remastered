@@ -1,6 +1,6 @@
 # activate all associated bullets
 function entity:group/start
-tag @e[tag=attack-bullet,tag=friendliness-pellets,scores={group.id=0}] remove inactive
+tag @e[tag=attack-bullet,tag=friendliness-pellets,scores={group.id=0}] remove stationary
 function entity:group/end
 
 # Play activate sound

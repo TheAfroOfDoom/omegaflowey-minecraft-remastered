@@ -10,7 +10,7 @@ execute store result entity @s Rotation[0] float 0.01 run data get storage bulle
 # Add tags
 tag @s add friendliness-pellets
 tag @s add groupable
-tag @s add inactive
+tag @s add stationary
 
 # Remove tags
 tag @s remove attack-bullet-new
