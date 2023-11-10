@@ -1,0 +1,1 @@
+function animated_java:friendliness_pellet/zzzzzzzz/animations/spin/pause_as_root

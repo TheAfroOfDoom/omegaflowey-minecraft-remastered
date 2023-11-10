@@ -1,0 +1,1 @@
+function animated_java:friendliness_pellet_ring/zzzzzzzz/apply_variant/default/as_bone

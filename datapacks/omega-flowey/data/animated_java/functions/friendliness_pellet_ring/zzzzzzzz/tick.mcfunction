@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.friendliness_pellet_ring.root] run function animated_java:friendliness_pellet_ring/zzzzzzzz/tick_as_root

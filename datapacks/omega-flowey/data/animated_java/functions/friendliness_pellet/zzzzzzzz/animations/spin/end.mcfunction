@@ -1,0 +1,3 @@
+execute if score @s aj.friendliness_pellet.animation.spin.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:friendliness_pellet/zzzzzzzz/animations/spin/end_loop
+execute if score @s aj.friendliness_pellet.animation.spin.loop_mode = $aj.loop_mode.once aj.i run function animated_java:friendliness_pellet/animations/spin/stop
+execute if score @s aj.friendliness_pellet.animation.spin.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:friendliness_pellet/animations/spin/pause

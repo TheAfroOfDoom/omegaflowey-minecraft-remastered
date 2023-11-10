@@ -7,5 +7,5 @@ function animated_java:projectile_star/animations/spin_and_grow/play
 # Add tag
 tag @s add x-bullets-lower
 
-# Remove Tags
+# Remove tags
 tag @s remove attack-bullet-new

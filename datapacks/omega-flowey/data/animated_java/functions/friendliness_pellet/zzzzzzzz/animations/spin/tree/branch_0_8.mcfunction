@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 0..7 run function animated_java:friendliness_pellet/zzzzzzzz/animations/spin/tree/branch_0_7
+execute if score @s aj.anim_time matches 8 run function animated_java:friendliness_pellet/zzzzzzzz/animations/spin/tree/leaf_8
