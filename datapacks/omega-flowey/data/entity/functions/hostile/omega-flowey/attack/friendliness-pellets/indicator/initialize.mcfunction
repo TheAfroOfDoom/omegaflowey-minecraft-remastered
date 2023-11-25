@@ -29,5 +29,5 @@ tag @e[tag=aj.friendliness_pellet_ring.root,tag=!friendliness-pellet-ring-initia
 execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
 execute store result score @s math.0 run data get entity @s Rotation[0] 100
 
-# Remove Tags
+# Remove tags
 tag @s remove attack-indicator-new

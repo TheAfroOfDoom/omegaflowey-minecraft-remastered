@@ -1,4 +1,4 @@
-# Remove Tags
+# Remove tags
 tag @s remove attack-indicator-new
 
 # Randomize x-coordinate to summon bullet at [-15.00..15.00]
