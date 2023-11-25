@@ -1,5 +1,5 @@
 {
-  "attack.x-bullets.start": {
+  "attack.generic.charge-up": {
     "sounds": [
       {
         "name": "omega-flowey:mus_sfx_segapower",
@@ -23,6 +23,14 @@
         "name": "omega-flowey:mus_sfx_a_target",
         "volume": 1,
         "pitch": 1
+      }
+    ]
+  },
+  "attack.x-bullets.start": {
+    "sounds": [
+      {
+        "name": "omega-flowey:attack.generic.charge-up",
+        "type": "event"
       }
     ]
   }
