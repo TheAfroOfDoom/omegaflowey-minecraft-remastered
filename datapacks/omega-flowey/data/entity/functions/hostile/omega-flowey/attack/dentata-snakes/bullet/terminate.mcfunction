@@ -1,0 +1,2 @@
+## Terminate bullet
+kill @s
