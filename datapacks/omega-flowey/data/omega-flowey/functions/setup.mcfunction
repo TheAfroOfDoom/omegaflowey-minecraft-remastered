@@ -44,10 +44,14 @@ scoreboard objectives add group.id.tree.level dummy
 
 scoreboard objectives add math.0 dummy
 scoreboard objectives add math.1 dummy
+scoreboard objectives add math.2 dummy
 
 scoreboard objectives add random dummy
 scoreboard objectives add random.min dummy
 scoreboard objectives add random.range dummy
+
+scoreboard objectives add player.shake.pitch dummy
+scoreboard objectives add player.shake.yaw dummy
 
 function entity:setup
 
