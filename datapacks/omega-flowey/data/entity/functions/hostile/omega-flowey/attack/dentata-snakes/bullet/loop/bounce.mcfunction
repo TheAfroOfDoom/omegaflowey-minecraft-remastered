@@ -27,5 +27,6 @@ execute store result entity @s Rotation[0] float 1 run scoreboard players get @s
 
 # If `math.0 != math.1`, we bounced
 # If we bounced, play bounce sound
-execute unless score @s math.0 = @s math.1 run playsound omega-flowey:attack.dentata-snakes.bounce hostile @a ~ ~ ~ 5 1
-execute unless score @s math.0 = @s math.1 as @a unless entity @s[team=!player,team=!dead,team=!spectator] at @s run function entity:utils/shake_screen
+# Only the bullet-head makes bounce sounds/shakes the player's screen
+execute unless score @s math.0 = @s math.1 if entity @s[tag=attack-bullet-head] run playsound omega-flowey:attack.dentata-snakes.bounce hostile @a ~ ~ ~ 5 1
+execute unless score @s math.0 = @s math.1 if entity @s[tag=attack-bullet-head] as @a unless entity @s[team=!player,team=!dead,team=!spectator] at @s run function entity:utils/shake_screen
