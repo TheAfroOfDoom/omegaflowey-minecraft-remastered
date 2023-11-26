@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.dentata_snake_ball.bone.spikes] run data modify entity @s {} merge value {transformation:[-0.5905838333333333f,0f,7.232566011198406e-17f,0f,0f,0.5905838333333333f,0f,0.3f,-7.232566011198406e-17f,0f,-0.5905838333333333f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.dentata_snake_ball.bone.root] run data modify entity @s {} merge value {transformation:[-0.4f,0f,4.898587196589413e-17f,0f,0f,0.4f,0f,0.5f,-4.898587196589413e-17f,0f,-0.4f,0f,0f,0f,0f,1f],start_interpolation:0}
