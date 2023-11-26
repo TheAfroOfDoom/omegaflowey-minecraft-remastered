@@ -3005,5 +3005,107 @@
 			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/azalea_top.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAT9JREFUOE99k71Kg0EQRXcl/kGwkICFFmkFLcQX8SFsBAvxCXwGX842hRZCsJCIxgRXzsj5GBZ1m82GmXvv3Dtfvbg6adPjWjizh1Ymu9tlZ++rjPbXZTHbKuPp56/3/H0ZPVUAimnkfLxuDCDrl1GAcT8+rwpk/PbUy9vzRiNNHJEttJkbhUcHm0MtffXm/rTRiAKaHQcWQB1BElXSg6JQ0LM6AgUweqNCMgFDgWxZgYpowFhPNjhGUAFMzpv9oLkHFiRS0AMe2XFjdLw+3mEEU8hu9/Izo7sxxKgC2d0HjFN+9oBU3An+r9d3Z824/ouur1FVmGjWLlJeIiX3G6knscomkOUD4lt2NjGDRwqOwANZeXaLASANWX1DHAA6mvc9fzhGmj82ep7mi5+v0W3769PVeZmpX76tyuFkXL4BTrBPGRr2AzwAAAAASUVORK5CYII="
 		}
+	],
+	"animations": [
+		{
+			"uuid": "6fcea6ec-8961-64e6-af81-396c2d999153",
+			"name": "roll_scale_36",
+			"loop": "loop",
+			"override": false,
+			"length": 1.3,
+			"snapping": 20,
+			"selected": true,
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "",
+			"affected_bones": [],
+			"affected_bones_is_a_whitelist": false,
+			"animators": {
+				"97616a2b-9d30-02d1-9941-e0fc81ca0417": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "6be7babe-f791-c62d-9ce6-bc0cf0d7e407",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"bezier_linked": true,
+							"bezier_left_time": [-0.1, -0.1, -0.1],
+							"bezier_left_value": [0, 0, 0],
+							"bezier_right_time": [0.1, 0.1, 0.1],
+							"bezier_right_value": [0, 0, 0]
+						},
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "180",
+									"y": 0,
+									"z": 0
+								}
+							],
+							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
+							"time": 0.65,
+							"color": -1,
+							"interpolation": "linear",
+							"bezier_linked": true,
+							"bezier_left_time": [-0.1, -0.1, -0.1],
+							"bezier_left_value": [0, 0, 0],
+							"bezier_right_time": [0.1, 0.1, 0.1],
+							"bezier_right_value": [0, 0, 0]
+						},
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "360",
+									"y": 0,
+									"z": 0
+								}
+							],
+							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
+							"time": 1.3,
+							"color": -1,
+							"interpolation": "linear",
+							"bezier_linked": true,
+							"bezier_left_time": [-0.1, -0.1, -0.1],
+							"bezier_left_value": [0, 0, 0],
+							"bezier_right_time": [0.1, 0.1, 0.1],
+							"bezier_right_value": [0, 0, 0]
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.36",
+									"y": "0.36",
+									"z": "0.36"
+								}
+							],
+							"uuid": "91215591-39da-cfb9-160d-2af863537d5b",
+							"time": 0,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"bezier_linked": true,
+							"bezier_left_time": [-0.1, -0.1, -0.1],
+							"bezier_left_value": [0, 0, 0],
+							"bezier_right_time": [0.1, 0.1, 0.1],
+							"bezier_right_value": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
 	]
 }
