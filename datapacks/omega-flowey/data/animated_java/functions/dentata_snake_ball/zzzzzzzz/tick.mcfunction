@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.dentata_snake_ball.root] run function animated_java:dentata_snake_ball/zzzzzzzz/tick_as_root

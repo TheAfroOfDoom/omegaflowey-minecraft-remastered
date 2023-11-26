@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.dentata_snake_ball.bone.spikes] run data modify entity @s item.tag.CustomModelData set value 28
+execute if entity @s[tag=aj.dentata_snake_ball.bone.root] run data modify entity @s item.tag.CustomModelData set value 29
