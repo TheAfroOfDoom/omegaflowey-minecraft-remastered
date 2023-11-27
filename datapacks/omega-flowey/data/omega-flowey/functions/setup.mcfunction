@@ -17,6 +17,8 @@ scoreboard objectives add attack.bullets.count dummy
 scoreboard objectives add attack.bullets.position.x dummy
 # z-coordinate for indicator to summon bullet at
 scoreboard objectives add attack.bullets.position.z dummy
+# storage score to hold calculated radius of a bullet for damaging-purposes
+scoreboard objectives add attack.bullets.radius dummy
 # number of bullets left to summon in a set
 scoreboard objectives add attack.bullets.remaining dummy
 # visual scale at which bullet is summoned
