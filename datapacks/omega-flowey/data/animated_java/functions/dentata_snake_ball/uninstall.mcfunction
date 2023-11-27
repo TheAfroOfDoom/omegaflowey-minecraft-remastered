@@ -6,5 +6,15 @@ scoreboard objectives remove aj.life_time
 scoreboard objectives remove aj.dentata_snake_ball.export_version
 scoreboard objectives remove aj.dentata_snake_ball.rig_loaded
 scoreboard objectives remove aj.dentata_snake_ball.animation.roll_bite.local_anim_time
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_89.local_anim_time
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_81.local_anim_time
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_72.local_anim_time
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_63.local_anim_time
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_56.local_anim_time
 scoreboard objectives remove aj.dentata_snake_ball.animation.roll_bite.loop_mode
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_89.loop_mode
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_81.loop_mode
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_72.loop_mode
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_63.loop_mode
+scoreboard objectives remove aj.dentata_snake_ball.animation.roll_scale_56.loop_mode
 tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The dentata_snake_ball Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]

@@ -12,6 +12,16 @@ execute if score #variant aj.i = $aj.dentata_snake_ball.variant.tail aj.id run f
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_bite aj.id run function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_bite/apply_frame_as_root
 execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_bite aj.id run scoreboard players operation @s aj.dentata_snake_ball.animation.roll_bite.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_89 aj.id run function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_89/apply_frame_as_root
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_89 aj.id run scoreboard players operation @s aj.dentata_snake_ball.animation.roll_scale_89.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_81 aj.id run function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_81/apply_frame_as_root
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_81 aj.id run scoreboard players operation @s aj.dentata_snake_ball.animation.roll_scale_81.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_72 aj.id run function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_72/apply_frame_as_root
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_72 aj.id run scoreboard players operation @s aj.dentata_snake_ball.animation.roll_scale_72.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_63 aj.id run function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_63/apply_frame_as_root
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_63 aj.id run scoreboard players operation @s aj.dentata_snake_ball.animation.roll_scale_63.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_56 aj.id run function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_56/apply_frame_as_root
+execute if score #animation aj.i = $aj.dentata_snake_ball.animation.roll_scale_56 aj.id run scoreboard players operation @s aj.dentata_snake_ball.animation.roll_scale_56.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:dentata_snake_ball/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
