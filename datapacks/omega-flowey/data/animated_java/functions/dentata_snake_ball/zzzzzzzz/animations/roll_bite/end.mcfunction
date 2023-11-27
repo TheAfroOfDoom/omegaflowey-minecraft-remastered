@@ -1,0 +1,3 @@
+execute if score @s aj.dentata_snake_ball.animation.roll_bite.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_bite/end_loop
+execute if score @s aj.dentata_snake_ball.animation.roll_bite.loop_mode = $aj.loop_mode.once aj.i run function animated_java:dentata_snake_ball/animations/roll_bite/stop
+execute if score @s aj.dentata_snake_ball.animation.roll_bite.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:dentata_snake_ball/animations/roll_bite/pause

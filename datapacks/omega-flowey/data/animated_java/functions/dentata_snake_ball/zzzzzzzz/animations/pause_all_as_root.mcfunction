@@ -2,3 +2,4 @@ function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_36/paus
 function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_40/pause_as_root
 function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_44/pause_as_root
 function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_50/pause_as_root
+function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_bite/pause_as_root
