@@ -8,7 +8,7 @@ function entity:utils/damage with storage utils:damage
 execute unless entity @s[x=-21,dx=42,z=-3,dz=21] run function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/bounce
 
 # Move forward at defined `attack.speed.z` velocity
-execute store result storage utils:move z float 0.01 run scoreboard players get #attack-dentata-snakes attack.speed.z
+execute store result storage utils:move z float 0.01 run scoreboard players get @s attack.speed.z
 function entity:utils/move_forward with storage utils:move
 
 # TODO: validate/determine a value for how long the dentata-snakes can bounce

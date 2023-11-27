@@ -1,5 +1,6 @@
 # Set scores
 scoreboard players set @s attack.clock.i -1
+scoreboard players operation @s attack.speed.z = #attack-dentata-snakes attack.speed.z
 
 # Update yaw from indicator
 $data merge entity @s { Rotation: [$(bullet_yaw)f, 0.0f] }
