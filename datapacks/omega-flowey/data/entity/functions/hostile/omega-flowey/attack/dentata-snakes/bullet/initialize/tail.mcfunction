@@ -4,3 +4,6 @@ execute store result storage attack:dentata-snakes scale_rounded int 1 run score
 
 # Begin animation
 function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/initialize/tail_macro with storage attack:dentata-snakes
+
+# Common initialization shared between head and tail
+function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/initialize with storage attack:dentata-snakes
