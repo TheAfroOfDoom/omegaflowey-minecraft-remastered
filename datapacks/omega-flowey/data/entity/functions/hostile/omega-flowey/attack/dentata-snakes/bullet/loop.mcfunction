@@ -11,8 +11,10 @@ execute unless entity @s[x=-21,dx=42,z=-3,dz=21] run function entity:hostile/ome
 execute store result storage utils:move z float 0.01 run scoreboard players get #attack-dentata-snakes attack.speed.z
 function entity:utils/move_forward with storage utils:move
 
+# TODO: validate/determine a value for how long the dentata-snakes can bounce
 # Allow bullet to escape arena after X seconds
 execute if score @s attack.clock.i matches 100 run tag @s add can-escape-arena
 
+# TODO: validate/determine a value for how long until the dentata-snakes terminate
 # Terminate after X seconds
 execute if score @s attack.clock.i matches 200.. run function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/terminate
