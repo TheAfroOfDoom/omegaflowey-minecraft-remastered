@@ -13,5 +13,5 @@ scoreboard players operation @s attack.bullets.total = #attack-x-bullets-upper a
 scoreboard players operation @s attack.clock.length = #attack-x-bullets-upper attack.clock.length
 scoreboard players operation @s attack.cone = #attack-x-bullets-upper attack.cone
 
-# Remove Tags
+# Remove tags
 tag @s remove attack-indicator-new
