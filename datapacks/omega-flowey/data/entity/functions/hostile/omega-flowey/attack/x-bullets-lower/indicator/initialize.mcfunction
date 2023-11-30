@@ -5,7 +5,7 @@ playsound omega-flowey:attack.x-bullets.start hostile @a ~ ~ ~ 3 1 1
 
 # Set scores
 scoreboard players set @s attack.clock.i -1
-scoreboard players operation @s attack.clock.i -= #attack-x-bullets-lower attack.clock.delay
+scoreboard players operation @s attack.clock.i -= #attack-x-bullets-lower attack.indicator.clock.delay
 
 scoreboard players set @s attack.bullets.clock.i -1
 scoreboard players operation @s attack.bullets.clock.delay = #attack-x-bullets-lower attack.bullets.clock.delay
