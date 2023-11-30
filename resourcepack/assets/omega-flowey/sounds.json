@@ -25,6 +25,15 @@
       }
     ]
   },
+  "attack.generic.beep": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_sfx_a_target",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
   "attack.generic.charge-up": {
     "sounds": [
       {
@@ -46,9 +55,8 @@
   "attack.friendliness-pellets.blinking": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_sfx_a_target",
-        "volume": 1,
-        "pitch": 1
+        "name": "omega-flowey:attack.generic.beep",
+        "type": "event"
       }
     ]
   },
