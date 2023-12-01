@@ -1,0 +1,2 @@
+## Terminate indicator
+kill @s
