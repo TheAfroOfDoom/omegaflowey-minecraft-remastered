@@ -1,1 +1,1 @@
-function entity:hostile/omega-flowey/attack/homing-vines/start
+function _:attack/homing-vines
