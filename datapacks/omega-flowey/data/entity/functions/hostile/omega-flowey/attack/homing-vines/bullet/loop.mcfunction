@@ -1,6 +1,8 @@
 scoreboard players add @s attack.clock.i 1
 
 # TODO: this hitbox is inaccurate -- needs to be a bounding box that is NOT axis aligned
+# > make some functions to represent the shape and check if the player's coordinates pass the function checks
+# inputs: { rectangle_width, current_position, initial_position (bullet summon position) }
 data merge storage utils:damage { damage: 2, radius: 1 }
 function entity:utils/damage with storage utils:damage
 
