@@ -1,1 +1,1 @@
-function entity:hostile/omega-flowey/attack/dentata-snakes/start
+function entity:hostile/omega-flowey/attack/homing-vines/start
