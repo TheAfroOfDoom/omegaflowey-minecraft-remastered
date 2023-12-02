@@ -1,5 +1,5 @@
 # Summon blinking-lane
-summon minecraft:item_display ~ ~ ~ { CustomName: '"Homing-Vines Blinking Lane"', Tags:["omega-flowey-remastered","groupable","hostile","omega-flowey","attack","homing-vines","homing-vines-blinking-lane","homing-vines-blinking-lane-new"], interpolation_duration:1, item_display:"head", item:{id:"minecraft:red_wool",Count:1b} }
+function animated_java:homing_vine_blinking_lane/summon
 
 # Copy yaw to blinking-lane
 $teleport @s ~ ~ ~ facing $(x) $(y) $(z)
