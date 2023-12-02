@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.homing_vine_blinking_lane.root] run function animated_java:homing_vine_blinking_lane/zzzzzzzz/remove/as_root
+kill @e[tag=aj.homing_vine_blinking_lane.rig_entity]
