@@ -1,0 +1,1 @@
+tag @s remove aj.homing_vine.animation.default
