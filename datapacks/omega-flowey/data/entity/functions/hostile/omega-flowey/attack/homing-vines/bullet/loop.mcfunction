@@ -12,6 +12,3 @@ execute if entity @s[x=-25,dx=50,y=30,dy=10,z=-5,dz=23] run function entity:host
 # TODO: validate/determine a value for how long until the homing-vines bullets terminate
 # Terminate after X seconds
 execute if score @s attack.clock.i matches 20.. run function entity:hostile/omega-flowey/attack/homing-vines/bullet/terminate
-
-# TODO: change homing-vine model to not have any thorn cubes, instead just add thorns to the moss_block texture
-# should be way more performant
