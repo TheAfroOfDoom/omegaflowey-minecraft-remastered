@@ -1,2 +1,2 @@
 ## Terminate bullet
-kill @s
+function animated_java:homing_vine/remove/this
