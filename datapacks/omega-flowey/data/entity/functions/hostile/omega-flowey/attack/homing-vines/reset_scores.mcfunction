@@ -6,4 +6,4 @@ scoreboard players set #attack-homing-vines attack.executor.rate 1
 scoreboard players set #attack-homing-vines attack.executor.repeat.count.total 1
 scoreboard players set #attack-homing-vines attack.executor.repeat.delay 12
 scoreboard players set #attack-homing-vines attack.indicator.clock.delay 5
-scoreboard players set #attack-homing-vines attack.speed.z 300
+scoreboard players set #attack-homing-vines attack.speed.z 500

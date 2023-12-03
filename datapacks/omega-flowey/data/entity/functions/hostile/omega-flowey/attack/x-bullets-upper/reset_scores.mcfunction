@@ -4,4 +4,4 @@ scoreboard players set #attack-x-bullets-upper attack.bullets.total 3
 scoreboard players set #attack-x-bullets-upper attack.clock.length 55
 scoreboard players set #attack-x-bullets-upper attack.cone 39
 scoreboard players set #attack-x-bullets-upper attack.indicator.clock.delay 8
-scoreboard players set #attack-x-bullets-upper attack.speed.z 130
+scoreboard players set #attack-x-bullets-upper attack.speed.z 200
