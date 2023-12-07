@@ -22,8 +22,8 @@ execute positioned 16.5 46 -4 rotated 20 20 run function animated_java:upper_eye
 
 # Right-upper-eye pipe
 function animated_java:pipe_upper_eye/remove/all
-execute positioned -14 46.5 -6 rotated -20 20 run function animated_java:pipe_upper_eye/summon
+execute positioned -14 46 -6 rotated -20 20 run function animated_java:pipe_upper_eye/summon
 # Left-upper-eye pipe
-execute positioned 14 46.5 -6 rotated -160 -20 run function animated_java:pipe_upper_eye/summon
+execute positioned 14 46 -6 rotated -160 -20 run function animated_java:pipe_upper_eye/summon
 
 execute as @e[type=minecraft:item_display] run data modify entity @s teleport_duration set value 1
