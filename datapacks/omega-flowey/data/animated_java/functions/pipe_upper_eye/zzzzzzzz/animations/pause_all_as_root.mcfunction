@@ -1,1 +1,2 @@
 function animated_java:pipe_upper_eye/zzzzzzzz/animations/float_and_pulsate/pause_as_root
+function animated_java:pipe_upper_eye/zzzzzzzz/animations/pulsate2/pause_as_root

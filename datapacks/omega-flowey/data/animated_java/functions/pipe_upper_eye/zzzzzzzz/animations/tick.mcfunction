@@ -1,1 +1,2 @@
 execute if entity @s[tag=aj.pipe_upper_eye.animation.float_and_pulsate] run function animated_java:pipe_upper_eye/zzzzzzzz/animations/float_and_pulsate/tick
+execute if entity @s[tag=aj.pipe_upper_eye.animation.pulsate2] run function animated_java:pipe_upper_eye/zzzzzzzz/animations/pulsate2/tick
