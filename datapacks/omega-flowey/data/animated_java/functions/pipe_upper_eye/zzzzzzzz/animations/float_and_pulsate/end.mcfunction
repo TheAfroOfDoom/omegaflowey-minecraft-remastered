@@ -1,0 +1,3 @@
+execute if score @s aj.pipe_upper_eye.animation.float_and_pulsate.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:pipe_upper_eye/zzzzzzzz/animations/float_and_pulsate/end_loop
+execute if score @s aj.pipe_upper_eye.animation.float_and_pulsate.loop_mode = $aj.loop_mode.once aj.i run function animated_java:pipe_upper_eye/animations/float_and_pulsate/stop
+execute if score @s aj.pipe_upper_eye.animation.float_and_pulsate.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:pipe_upper_eye/animations/float_and_pulsate/pause

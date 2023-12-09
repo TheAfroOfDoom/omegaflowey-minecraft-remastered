@@ -1,282 +1,587 @@
 {
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "minecraft:item/white_dye"
-	},
-	"overrides": [
-		{
-			"predicate": {
-				"custom_model_data": 1
-			},
-			"model": "item/animated_java_empty"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 2
-			},
-			"model": "animated_java:item/upper_eye/sclera"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 3
-			},
-			"model": "animated_java:item/upper_eye/dark"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 4
-			},
-			"model": "animated_java:item/upper_eye/light"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 5
-			},
-			"model": "animated_java:item/upper_eye/diag"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 6
-			},
-			"model": "animated_java:item/upper_eye/pupil"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 7
-			},
-			"model": "animated_java:item/upper_eye/iris"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 8
-			},
-			"model": "animated_java:item/upper_eye/bright/sclera"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 9
-			},
-			"model": "animated_java:item/upper_eye/bright/dark"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 10
-			},
-			"model": "animated_java:item/upper_eye/bright/light"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 11
-			},
-			"model": "animated_java:item/upper_eye/bright/diag"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 12
-			},
-			"model": "animated_java:item/upper_eye/bright/pupil"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 13
-			},
-			"model": "animated_java:item/upper_eye/bright/iris"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 14
-			},
-			"model": "animated_java:item/upper_eye/colorful/sclera"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 15
-			},
-			"model": "animated_java:item/upper_eye/colorful/dark"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 16
-			},
-			"model": "animated_java:item/upper_eye/colorful/light"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 17
-			},
-			"model": "animated_java:item/upper_eye/colorful/diag"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 18
-			},
-			"model": "animated_java:item/upper_eye/colorful/pupil"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 19
-			},
-			"model": "animated_java:item/upper_eye/colorful/iris"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 20
-			},
-			"model": "animated_java:item/upper_eye/dark/sclera"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 21
-			},
-			"model": "animated_java:item/upper_eye/dark/dark"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 22
-			},
-			"model": "animated_java:item/upper_eye/dark/light"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 23
-			},
-			"model": "animated_java:item/upper_eye/dark/diag"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 24
-			},
-			"model": "animated_java:item/upper_eye/dark/pupil"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 25
-			},
-			"model": "animated_java:item/upper_eye/dark/iris"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 26
-			},
-			"model": "animated_java:item/friendliness_pellet_ring/root"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 27
-			},
-			"model": "animated_java:item/friendliness_pellet_ring/finished_blinking/root"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 28
-			},
-			"model": "animated_java:item/dentata_snake_ball/spikes"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 29
-			},
-			"model": "animated_java:item/dentata_snake_ball/root"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 30
-			},
-			"model": "animated_java:item/dentata_snake_ball/lower"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 31
-			},
-			"model": "animated_java:item/dentata_snake_ball/upper"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 32
-			},
-			"model": "animated_java:item/dentata_snake_ball/mouth"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 33
-			},
-			"model": "animated_java:item/dentata_snake_ball/tail/spikes"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 34
-			},
-			"model": "animated_java:item/dentata_snake_ball/tail/root"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 35
-			},
-			"model": "animated_java:item/dentata_snake_ball/tail/lower"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 36
-			},
-			"model": "animated_java:item/dentata_snake_ball/tail/upper"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 37
-			},
-			"model": "animated_java:item/dentata_snake_ball/tail/mouth"
-		}
-	],
-	"animated_java": {
-		"rigs": {
-			"upper_eye": {
-				"used_ids": [
-					2,
-					3,
-					4,
-					5,
-					6,
-					7,
-					8,
-					9,
-					10,
-					11,
-					12,
-					13,
-					14,
-					15,
-					16,
-					17,
-					18,
-					19,
-					20,
-					21,
-					22,
-					23,
-					24,
-					25
-				]
-			},
-			"friendliness_pellet_ring": {
-				"used_ids": [
-					26,
-					27
-				]
-			},
-			"dentata_snake_ball": {
-				"used_ids": [
-					28,
-					29,
-					30,
-					31,
-					32,
-					33,
-					34,
-					35,
-					36,
-					37
-				]
-			}
-		}
-	}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft:item/white_dye"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "item/animated_java_empty"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "animated_java:item/upper_eye/sclera"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "animated_java:item/upper_eye/dark"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "animated_java:item/upper_eye/light"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "animated_java:item/upper_eye/diag"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "animated_java:item/upper_eye/pupil"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7
+      },
+      "model": "animated_java:item/upper_eye/iris"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "animated_java:item/upper_eye/bright/sclera"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 9
+      },
+      "model": "animated_java:item/upper_eye/bright/dark"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10
+      },
+      "model": "animated_java:item/upper_eye/bright/light"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 11
+      },
+      "model": "animated_java:item/upper_eye/bright/diag"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 12
+      },
+      "model": "animated_java:item/upper_eye/bright/pupil"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 13
+      },
+      "model": "animated_java:item/upper_eye/bright/iris"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 14
+      },
+      "model": "animated_java:item/upper_eye/colorful/sclera"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 15
+      },
+      "model": "animated_java:item/upper_eye/colorful/dark"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 16
+      },
+      "model": "animated_java:item/upper_eye/colorful/light"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 17
+      },
+      "model": "animated_java:item/upper_eye/colorful/diag"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 18
+      },
+      "model": "animated_java:item/upper_eye/colorful/pupil"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 19
+      },
+      "model": "animated_java:item/upper_eye/colorful/iris"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20
+      },
+      "model": "animated_java:item/upper_eye/dark/sclera"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 21
+      },
+      "model": "animated_java:item/upper_eye/dark/dark"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22
+      },
+      "model": "animated_java:item/upper_eye/dark/light"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 23
+      },
+      "model": "animated_java:item/upper_eye/dark/diag"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 24
+      },
+      "model": "animated_java:item/upper_eye/dark/pupil"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 25
+      },
+      "model": "animated_java:item/upper_eye/dark/iris"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 26
+      },
+      "model": "animated_java:item/friendliness_pellet_ring/root"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 27
+      },
+      "model": "animated_java:item/friendliness_pellet_ring/finished_blinking/root"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 28
+      },
+      "model": "animated_java:item/dentata_snake_ball/spikes"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 29
+      },
+      "model": "animated_java:item/dentata_snake_ball/root"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 30
+      },
+      "model": "animated_java:item/dentata_snake_ball/lower"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 31
+      },
+      "model": "animated_java:item/dentata_snake_ball/upper"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 32
+      },
+      "model": "animated_java:item/dentata_snake_ball/mouth"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 33
+      },
+      "model": "animated_java:item/dentata_snake_ball/tail/spikes"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 34
+      },
+      "model": "animated_java:item/dentata_snake_ball/tail/root"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 35
+      },
+      "model": "animated_java:item/dentata_snake_ball/tail/lower"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 36
+      },
+      "model": "animated_java:item/dentata_snake_ball/tail/upper"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 37
+      },
+      "model": "animated_java:item/dentata_snake_ball/tail/mouth"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 38
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 40
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 41
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 42
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone4"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 43
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone5"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 44
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone6"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 45
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone7"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 46
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone8"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 47
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone9"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 48
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone10"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 49
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone11"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 50
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone12"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 51
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone13"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 52
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone14"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 53
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone15"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 54
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone16"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 55
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone17"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 56
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone18"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 57
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone19"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 58
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone20"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 59
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone21"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 60
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone22"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 61
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone23"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 62
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone24"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 63
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone25"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 64
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone26"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 65
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone27"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 66
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone28"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 67
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone29"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 68
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone30"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 69
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone31"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 70
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone32"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 71
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone33"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 72
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone34"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 73
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone35"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 74
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone36"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 75
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone37"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 76
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone38"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 77
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone39"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 78
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone40"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 79
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone41"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 80
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone42"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 81
+      },
+      "model": "animated_java:item/pipe_upper_eye/bone43"
+    }
+  ],
+  "animated_java": {
+    "rigs": {
+      "upper_eye": {
+        "used_ids": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      },
+      "friendliness_pellet_ring": {
+        "used_ids": [
+          26,
+          27
+        ]
+      },
+      "dentata_snake_ball": {
+        "used_ids": [
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ]
+      },
+      "pipe_upper_eye": {
+        "used_ids": [
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ]
+      }
+    }
+  }
 }

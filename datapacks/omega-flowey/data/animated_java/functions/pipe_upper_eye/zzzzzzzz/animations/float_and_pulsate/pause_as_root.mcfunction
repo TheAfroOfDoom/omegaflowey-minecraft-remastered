@@ -1,0 +1,1 @@
+tag @s remove aj.pipe_upper_eye.animation.float_and_pulsate
