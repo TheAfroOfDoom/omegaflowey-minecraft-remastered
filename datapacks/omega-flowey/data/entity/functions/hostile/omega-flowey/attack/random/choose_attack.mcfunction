@@ -12,6 +12,10 @@ scoreboard players operation @s math.0 -= #attack-friendliness-pellets attack.we
 execute if score #attack-friendliness-pellets attack.weight matches 1.. if score @s math.0 matches ..0 run function entity:hostile/omega-flowey/attack/friendliness-pellets/start
 execute if score #attack-friendliness-pellets attack.weight matches 1.. if score @s math.0 matches ..0 run return 0
 
+scoreboard players operation @s math.0 -= #attack-homing-vines attack.weight
+execute if score #attack-homing-vines attack.weight matches 1.. if score @s math.0 matches ..0 run function entity:hostile/omega-flowey/attack/homing-vines/start
+execute if score #attack-homing-vines attack.weight matches 1.. if score @s math.0 matches ..0 run return 0
+
 scoreboard players operation @s math.0 -= #attack-x-bullets-lower attack.weight
 execute if score #attack-x-bullets-lower attack.weight matches 1.. if score @s math.0 matches ..0 run function entity:hostile/omega-flowey/attack/x-bullets-lower/start
 execute if score #attack-x-bullets-lower attack.weight matches 1.. if score @s math.0 matches ..0 run return 0
