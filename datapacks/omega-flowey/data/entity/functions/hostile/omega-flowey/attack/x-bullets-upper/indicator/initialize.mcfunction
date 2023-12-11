@@ -15,3 +15,5 @@ scoreboard players operation @s attack.cone = #attack-x-bullets-upper attack.con
 
 # Remove tags
 tag @s remove attack-indicator-new
+
+# TODO: convert `x-bullets-lower` to use an executor

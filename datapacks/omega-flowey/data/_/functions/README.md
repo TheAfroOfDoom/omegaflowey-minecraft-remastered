@@ -5,6 +5,7 @@ This directory contains convenience functions for developers for quicker calls t
 ## Functions
 
 - `attack`: runs the pre-defined attack's `start` function
+- `boss_fight`: starts the vanilla boss fight
 - `heal`: heals the executing player to full and fills the hunger bar
 - `reset_scores`: resets the `omega-flowey` boss's attack score parameters
 - `reset`: calls `omega-flowey:reset`
