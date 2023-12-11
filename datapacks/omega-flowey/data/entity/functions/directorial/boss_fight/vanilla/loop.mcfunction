@@ -2,3 +2,4 @@
 
 # Run loop logic based on what phase the boss_fight is in
 execute if entity @s[tag=boss_fight.phase.attack] run function entity:directorial/boss_fight/vanilla/phase/attack/loop
+execute if entity @s[tag=boss_fight.phase.warn] run function entity:directorial/boss_fight/vanilla/phase/warn/loop

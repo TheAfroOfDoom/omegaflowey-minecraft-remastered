@@ -50,8 +50,8 @@ scoreboard objectives add boss-fight.attack.delay dummy
 scoreboard objectives add boss-fight.attack.phase.i dummy
 # total number of attack phases before we wrap the index
 scoreboard objectives add boss-fight.attack.phase.total dummy
-scoreboard objectives add boss-fight.progress.phase.i dummy
-scoreboard objectives add boss-fight.progress.phase.total dummy
+scoreboard objectives add boss-fight.warn.clock.i dummy
+scoreboard objectives add boss-fight.warn.clock.total dummy
 
 scoreboard objectives add group.id dummy
 scoreboard objectives add group.id.tree.level dummy
