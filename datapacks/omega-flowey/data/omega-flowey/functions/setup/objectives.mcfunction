@@ -17,7 +17,6 @@ scoreboard objectives add attack.bullets.remaining dummy
 scoreboard objectives add attack.bullets.scale dummy
 # total number of bullets to summon each set
 scoreboard objectives add attack.bullets.total dummy
-scoreboard objectives add attack.clock.delay dummy
 scoreboard objectives add attack.clock.i dummy
 scoreboard objectives add attack.clock.length dummy
 scoreboard objectives add attack.cone dummy
