@@ -25,6 +25,15 @@
       }
     ]
   },
+  "attack.generic.beep": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_sfx_a_target",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
   "attack.generic.charge-up": {
     "sounds": [
       {
@@ -46,7 +55,23 @@
   "attack.friendliness-pellets.blinking": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_sfx_a_target",
+        "name": "omega-flowey:attack.generic.beep",
+        "type": "event"
+      }
+    ]
+  },
+  "attack.homing-vines.blinking": {
+    "sounds": [
+      {
+        "name": "omega-flowey:attack.generic.beep",
+        "type": "event"
+      }
+    ]
+  },
+  "attack.homing-vines.summon": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_sfx_yowl",
         "volume": 1,
         "pitch": 1
       }

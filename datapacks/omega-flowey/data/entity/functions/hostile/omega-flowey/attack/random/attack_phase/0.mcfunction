@@ -2,6 +2,7 @@
 
 # Set influences to defaults for random_phase_0
 scoreboard players set #attack-friendliness-pellets attack.weight 1
+scoreboard players set #attack-homing-vines attack.weight 1
 scoreboard players set #attack-x-bullets-lower attack.weight 1
 scoreboard players set #attack-x-bullets-upper attack.weight 1
 

@@ -1,6 +1,6 @@
 # Inputted scores
 scoreboard players set @s attack.clock.i -1
-scoreboard players operation @s attack.clock.i -= #attack-friendliness-pellets attack.clock.delay
+scoreboard players operation @s attack.clock.i -= #attack-friendliness-pellets attack.indicator.clock.delay
 
 scoreboard players set @s attack.bullets.clock.i -1
 scoreboard players set @s attack.bullets.count 0

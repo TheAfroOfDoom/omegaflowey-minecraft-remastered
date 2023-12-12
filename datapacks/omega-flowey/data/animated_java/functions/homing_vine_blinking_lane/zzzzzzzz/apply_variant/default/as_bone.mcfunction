@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.homing_vine_blinking_lane.bone.root] run data modify entity @s item.tag.CustomModelData set value 39

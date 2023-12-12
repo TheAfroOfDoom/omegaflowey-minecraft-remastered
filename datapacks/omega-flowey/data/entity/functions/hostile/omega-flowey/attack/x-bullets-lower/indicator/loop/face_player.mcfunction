@@ -30,13 +30,11 @@ execute if entity @e[tag=aj.lower_eye.bone.pupil,distance=..2,y_rotation=169..17
 # Flip `attack.d-phi` for one of the eyes
 scoreboard players operation @s[scores={math.0=1}] attack.d-phi *= #-1 mathf.const
 
-# Randomly offset `attack.cone` by half `attack.d-phi` to increase entropy of attack pattern
-scoreboard players set @s random.range 2
-scoreboard players set @s random.min 0
-function omega-flowey:rng
-scoreboard players operation @s[scores={random=0}] math.0 = @s attack.d-phi
-scoreboard players operation @s[scores={random=0}] math.0 /= #2 mathf.const
-scoreboard players operation @s[scores={random=0}] attack.phi += @s math.0
+# Randomly offset `attack.cone` by half `attack.d-phi` to increase entropy of attack pattern (50% chance)
+execute store result score @s math.1 run random value 0..1
+scoreboard players operation @s[scores={math.1=0}] math.0 = @s attack.d-phi
+scoreboard players operation @s[scores={math.1=0}] math.0 /= #2 mathf.const
+scoreboard players operation @s[scores={math.1=0}] attack.phi += @s math.0
 
 # Initialize `attack.bullets.remaining`
 scoreboard players operation @s attack.bullets.remaining = @s attack.bullets.total

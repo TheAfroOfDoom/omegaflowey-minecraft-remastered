@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.homing_vine_blinking_lane.root] run function animated_java:homing_vine_blinking_lane/zzzzzzzz/tick_as_root
