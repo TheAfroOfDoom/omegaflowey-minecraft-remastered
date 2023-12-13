@@ -16,12 +16,14 @@ scoreboard players operation @s attack.d-phi /= @s attack.bullets.total
 # Set group ID
 function entity:group/set
 
+# Store `group.id` for blinking-ring
+execute store result storage group id int 1 run scoreboard players get @s group.id
+
 # Summon blinking-ring
 function animated_java:friendliness_pellet_ring/summon
-tag @e[tag=friendliness-pellet-ring-new] add groupable
-execute store result storage group id int 1 run scoreboard players get @s group.id
-execute as @e[tag=friendliness-pellet-ring-new] run function entity:group/copy with storage group
-tag @e[tag=friendliness-pellet-ring-new] remove friendliness-pellet-ring-new
+
+# Initialize blinking-ring
+execute as @e[tag=friendliness-pellet-ring-new] run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/initialize/friendliness-pellet-ring
 
 # Randomize initial yaw
 execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
