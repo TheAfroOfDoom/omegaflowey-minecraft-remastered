@@ -18,12 +18,10 @@ function entity:group/set
 
 # Summon blinking-ring
 function animated_java:friendliness_pellet_ring/summon
-# TODO shouldn't need this custom tag adding stuff. fix when Blockbench exports custom tags correctly..
-tag @e[tag=aj.friendliness_pellet_ring.root,tag=!friendliness-pellet-ring-initialized] add groupable
+tag @e[tag=friendliness-pellet-ring-new] add groupable
 execute store result storage group id int 1 run scoreboard players get @s group.id
-execute as @e[tag=aj.friendliness_pellet_ring.root,tag=!friendliness-pellet-ring-initialized] run function entity:group/copy with storage group
-tag @e[tag=aj.friendliness_pellet_ring.root,tag=!friendliness-pellet-ring-initialized] add friendliness-pellet-ring
-tag @e[tag=aj.friendliness_pellet_ring.root,tag=!friendliness-pellet-ring-initialized] add friendliness-pellet-ring-initialized
+execute as @e[tag=friendliness-pellet-ring-new] run function entity:group/copy with storage group
+tag @e[tag=friendliness-pellet-ring-new] remove friendliness-pellet-ring-new
 
 # Randomize initial yaw
 execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
