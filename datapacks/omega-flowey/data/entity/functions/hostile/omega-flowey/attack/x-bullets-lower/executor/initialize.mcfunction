@@ -1,4 +1,3 @@
-# TODO this needs to NOT be a distance check
 execute at @e[tag=aj.lower_eye.locator.pupil] run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
 
 # Set scores
