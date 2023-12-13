@@ -2,8 +2,7 @@
 
 scoreboard players set @s attack.bullets.clock.i -1
 
-# TODO this needs to NOT be a distance check
-execute as @e[tag=aj.upper_eye.locator.pupil,sort=nearest,limit=1] run function entity:utils/store_position
+function entity:utils/store_position
 # Save bone position to score
 execute store result score @s attack.position.x run data get storage entity:position x
 execute store result score @s attack.position.y run data get storage entity:position y
@@ -25,6 +24,3 @@ scoreboard players operation @s attack.d-phi = @s attack.cone
 scoreboard players operation @s math.0 = @s attack.bullets.total
 scoreboard players remove @s math.0 1
 scoreboard players operation @s attack.d-phi /= @s math.0
-
-# Initialize `attack.bullets.remaining`
-scoreboard players operation @s attack.bullets.remaining = @s attack.bullets.total

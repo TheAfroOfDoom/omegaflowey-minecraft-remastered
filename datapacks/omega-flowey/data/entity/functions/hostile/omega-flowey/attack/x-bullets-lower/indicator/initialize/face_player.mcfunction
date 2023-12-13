@@ -1,9 +1,6 @@
 ## Faces closest player and summons `x-bullets-lower` bullets using `attack.cone` and `attack.bullets`
 
-scoreboard players set @s attack.bullets.clock.i -1
-
-# TODO this needs to NOT be a distance check
-execute as @e[tag=aj.lower_eye.locator.pupil,sort=nearest,limit=1] run function entity:utils/store_position
+function entity:utils/store_position
 # Save bone position to score
 execute store result score @s attack.position.x run data get storage entity:position x
 execute store result score @s attack.position.y run data get storage entity:position y
@@ -35,6 +32,3 @@ execute store result score @s math.1 run random value 0..1
 scoreboard players operation @s[scores={math.1=0}] math.0 = @s attack.d-phi
 scoreboard players operation @s[scores={math.1=0}] math.0 /= #2 mathf.const
 scoreboard players operation @s[scores={math.1=0}] attack.phi += @s math.0
-
-# Initialize `attack.bullets.remaining`
-scoreboard players operation @s attack.bullets.remaining = @s attack.bullets.total
