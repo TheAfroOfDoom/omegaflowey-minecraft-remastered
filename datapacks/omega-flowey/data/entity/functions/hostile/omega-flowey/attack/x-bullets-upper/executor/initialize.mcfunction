@@ -4,7 +4,7 @@ execute at @e[tag=aj.upper_eye.locator.pupil] run function entity:hostile/omega-
 scoreboard players set @s attack.clock.i -1
 scoreboard players operation @s attack.clock.i -= #attack-x-bullets-upper attack.executor.clock.delay
 
-scoreboard players operation @s attack.clock.length = #attack-x-bullets-upper attack.clock.length
+scoreboard players operation @s attack.executor.clock.length = #attack-x-bullets-upper attack.executor.clock.length
 scoreboard players operation @s attack.executor.rate = #attack-x-bullets-upper attack.executor.rate
 scoreboard players operation @s attack.indicator.total = #attack-x-bullets-upper attack.indicator.total
 
