@@ -1,7 +1,7 @@
 scoreboard players add @s attack.clock.i 1
 
 data merge storage utils:damage { damage: 2, radius: 1 }
-function entity:utils/damage with storage utils:damage
+execute positioned ~ ~-1 ~ run function entity:utils/damage with storage utils:damage
 
 # Move forward
 function entity:hostile/omega-flowey/attack/finger-guns/bullet/loop/move
