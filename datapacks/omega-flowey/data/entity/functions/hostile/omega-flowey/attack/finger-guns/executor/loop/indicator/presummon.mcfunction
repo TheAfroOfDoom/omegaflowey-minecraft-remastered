@@ -14,10 +14,11 @@ scoreboard players set @s attack.position.y 3300
 execute store result score @s attack.position.z run random value -35..195
 
 # Store new position and yaw
-execute store result entity @s Pos[0] double 0.01 run scoreboard players get @s attack.position.x
-execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s attack.position.y
-execute store result entity @s Pos[2] double 0.1 run scoreboard players get @s attack.position.z
-
-execute store result entity @s Rotation[0] float 0.01 run scoreboard players get @s attack.indicator.yaw
+execute store result storage attack:finger-guns x double 0.01 run scoreboard players get @s attack.position.x
+execute store result storage attack:finger-guns y double 0.01 run scoreboard players get @s attack.position.y
+execute store result storage attack:finger-guns z double 0.1 run scoreboard players get @s attack.position.z
+execute store result storage attack:finger-guns yaw float 0.01 run scoreboard players get @s attack.indicator.yaw
 # flat pitch
-data modify entity @s Rotation[1] set value 0
+data merge storage attack:finger-guns { pitch: 0.0f }
+
+function entity:hostile/omega-flowey/attack/finger-guns/executor/loop/indicator/summon with storage attack:finger-guns

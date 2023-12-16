@@ -1,6 +1,6 @@
 # Bullet summoning setup
-execute store result storage attack:finger-guns x double 0.01 run scoreboard players get @s attack.position.x
-execute store result storage attack:finger-guns z double 0.1 run scoreboard players get @s attack.position.z
+execute store result storage attack:finger-guns x double 0.01 run data get entity @s Pos[0] 100
+execute store result storage attack:finger-guns z double 0.01 run data get entity @s Pos[2] 100
 
 # Terminate associated laser
 function entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/terminate

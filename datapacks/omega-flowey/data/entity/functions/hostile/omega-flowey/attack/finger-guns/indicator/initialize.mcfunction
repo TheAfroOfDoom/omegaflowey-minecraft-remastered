@@ -4,9 +4,6 @@ scoreboard players operation @s attack.clock.i -= #attack-finger-guns attack.ind
 
 scoreboard players operation @s attack.indicator.clock.length = #attack-finger-guns attack.indicator.clock.length
 
-# Randomize position we spawn at
-function entity:hostile/omega-flowey/attack/finger-guns/indicator/initialize/randomize_position
-
 # Set group ID
 function entity:group/set
 

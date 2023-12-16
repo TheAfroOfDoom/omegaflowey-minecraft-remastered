@@ -8,7 +8,7 @@ playsound minecraft:entity.snowball.throw master @a ~ ~ ~ 3 1
 
 # Set pitch and yaw from input
 execute store result entity @s Rotation[0] float 0.01 run data get storage attack:finger-guns yaw
-data modify entity @s Rotation[1] set value 0.0f
+execute store result entity @s Rotation[1] float 0.01 run data get storage attack:finger-guns pitch
 
 # Start animation (just a hack to further lengthen the vine)
 # function animated_java:homing_vine/animations/default/play
