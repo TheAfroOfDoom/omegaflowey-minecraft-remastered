@@ -1,4 +1,8 @@
-const { concurrent, series } = require('nps-utils');
+const { concurrent, series } = require("nps-utils");
+const {
+  datapacksGlob,
+  resourcepackGlob,
+} = require("./package-scripts/shared-consts");
 
 const minecraftPath = 'C:/Users/afro/AppData/Roaming/.minecraft';
 const worldName = 'omega-flowey-remastered';
@@ -7,12 +11,14 @@ const resourcePackName = 'omega-flowey-remastered-resourcepack';
 const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 const minecraftResourcePackPath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
 
+const watchExcludeFilter = "./package-scripts/watch-filter";
+
 module.exports = {
   scripts: {
     default: concurrent.nps('watch.datapacks', 'watch.resourcepack'),
     watch: {
-      datapacks: 'watch --wait=1 "nps sync.datapacks" datapacks',
-      resourcepack: 'watch --wait=1 "nps sync.resourcepack" resourcepack',
+      datapacks: `watch --wait=1 --filter=${watchExcludeFilter} "nps sync.datapacks" datapacks`,
+      resourcepack: `watch --wait=1 --filter=${watchExcludeFilter} "nps sync.resourcepack" resourcepack`,
     },
     sync: {
       datapacks: series(
@@ -35,8 +41,8 @@ module.exports = {
       ),
     },
     copy: {
-      datapacks: `cpy datapacks/**/* ${minecraftWorldPath}/datapacks`,
-      resourcepack: `cpy resourcepack/**/* ${minecraftResourcePackPath}`,
+      datapacks: `cpy ${datapacksGlob} ${minecraftWorldPath}/datapacks`,
+      resourcepack: `cpy ${resourcepackGlob} ${minecraftResourcePackPath}`,
     },
     delete: {
       datapacks: `yarn rimraf --glob ${minecraftWorldPath}/datapacks/**/*`,
