@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: CarbonSmasher/packtest_runner@e2cab04a758a802a6ebcee979fe40fb0140df3de
+      - uses: CarbonSmasher/packtest_runner@9d13d673bf9d3f2fad2b833d036e5e12ff65e056
         with:
           packs: 'datapacks/omega-flowey'
