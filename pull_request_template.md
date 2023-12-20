@@ -7,6 +7,13 @@ what is the primary purpose of this PR?
 
 ---
 
+## Test plan
+<!--
+does this PR include any unit tests for its new code?
+if yes, briefly describe them.
+if no, explain why.
+-->
+
 ## Reproducing in-game
 <!--
 how to view the thing you added in-game (Minecraft), if applicable.
