@@ -1,0 +1,12 @@
+name: Run tests
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: CarbonSmasher/packtest_runner@82535200a0a3870ef2b337b0cd3ad34c1acbeb61
+        with:
+          packs: 'datapacks/omega-flowey'
