@@ -1,6 +1,4 @@
 # @batch omega-flowey:setup
-# @optional
-# TODO this test can't run until we update to `packtest@v1.0.0-beta5`
 
 ## should wipe any preexisting scores
 
