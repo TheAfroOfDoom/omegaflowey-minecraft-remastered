@@ -4,8 +4,7 @@
 data remove storage utils:math.vector.dot u
 data remove storage utils:math.vector.dot v
 data remove storage utils:math.vector.dot out
-scoreboard players reset *
-function omega-flowey:setup
+function omega-flowey:reset
 
 ## cases
 # 0-vectors
