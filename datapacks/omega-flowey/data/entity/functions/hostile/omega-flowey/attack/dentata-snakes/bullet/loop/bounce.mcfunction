@@ -1,6 +1,7 @@
 ## Bounces the dentata-snake against the walls of the arena (flips x-direction/y-direction as necessary)
 
-# TODO: adjust arena bounds based on new animated java model (visually, it clips into the wall right now)
+# TODO(42): adjust arena bounds based on new animated java model (visually, it clips into the wall right now)
+
 # Don't bounce if we've already escaped the arena (past top wall)
 execute if entity @s[x=-1000,dx=2000,y=30,dy=10,z=-4,dz=-1000,tag=can-escape-arena] run return 0
 

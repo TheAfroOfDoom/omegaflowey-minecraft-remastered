@@ -1,4 +1,5 @@
-# Set fake player scores back to defaults (if they were changed by a pre-initialize attack function)
+## Set fake player scores back to defaults (if they were changed by a pre-initialize attack function)
+# TODO(46): validate these attack parameters
 scoreboard players set #attack-x-bullets-lower attack.bullets.clock.delay 1
 scoreboard players set #attack-x-bullets-lower attack.bullets.total 7
 scoreboard players set #attack-x-bullets-lower attack.clock.length 56
