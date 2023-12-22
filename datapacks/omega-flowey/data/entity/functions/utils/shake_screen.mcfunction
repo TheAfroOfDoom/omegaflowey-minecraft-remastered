@@ -1,4 +1,4 @@
-# TODO parameterize this function's yaw/pitch ranges
+# TODO(38) parameterize this function's yaw/pitch ranges
 # TODO evaluate if these ranges (0.5..5 deg yaw, 0.5..2 deg pitch) are too little/too much screen shake
 # Shake player yaw anywhere from 0.5..5.0 degrees (can also be negative)
 execute store result score @s math.0 run random value 5..50
