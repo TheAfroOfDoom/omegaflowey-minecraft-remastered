@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: CarbonSmasher/packtest_runner@9d13d673bf9d3f2fad2b833d036e5e12ff65e056
+      - uses: CarbonSmasher/packtest_runner@86d606f25d2bd2faa08b017326fe99964ac3aa5c
         with:
           packs: 'datapacks/omega-flowey'
+          packtest-url: 'https://github.com/misode/packtest/releases/download/v1.0.0-beta5/packtest-1.0.0-beta5.jar'
