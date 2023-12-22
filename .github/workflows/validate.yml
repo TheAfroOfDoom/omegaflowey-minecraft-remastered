@@ -2,7 +2,7 @@ name: validate
 
 on: [push, workflow_dispatch]
 
-# TODO: add linting
+# TODO(37): add linting
 jobs:
   test:
     runs-on: ubuntu-latest
