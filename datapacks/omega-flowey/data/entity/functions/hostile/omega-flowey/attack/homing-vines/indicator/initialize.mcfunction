@@ -9,7 +9,7 @@ scoreboard players operation @s attack.bullets.total = #attack-homing-vines atta
 playsound omega-flowey:attack.homing-vines.blinking hostile @a ~ ~ ~ 3 1 1
 
 # Randomize delta-x position to summon bullet at (x: player.Position.x, dx: [-15.00..15.00])
-# TODO: validate this dx range
+# TODO(41): validate this dx range
 execute store result score @s attack.position.x run data get entity @s Pos[0] 100
 execute store result score @s math.0 run random value -1500..1500
 scoreboard players operation @s attack.position.x += @s math.0
