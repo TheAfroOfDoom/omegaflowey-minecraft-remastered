@@ -45,7 +45,7 @@ module.exports = {
     lint: {
       default: 'nps lint.check',
       check: series('nps lint.prettier.check', 'nps lint.eslint.check'),
-      fix: series('nps lint.prettier.fix', 'nps lint.eslint.fix'),
+      fix: series("nps lint.prettier.fix", 'nps lint.eslint.fix'),
       eslint: {
         default: 'nps lint.eslint.check',
         check: 'eslint .',
