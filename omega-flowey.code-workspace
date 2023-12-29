@@ -36,6 +36,8 @@
     },
     "datapack.trace.server": "messages",
 
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
     "editor.tabSize": 2,
 
     "files.exclude": {
@@ -48,6 +50,8 @@
       "./minecraft/**": true,
       "./versions": true
     },
+
+    "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
 
     "terminal.integrated.defaultLocation": "editor"
   }
