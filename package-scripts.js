@@ -44,8 +44,18 @@ module.exports = {
     },
     lint: {
       default: 'nps lint.check',
-      check: 'prettier --check .',
-      fix: 'prettier --write .',
+      check: series('nps lint.prettier.check', 'nps lint.eslint.check'),
+      fix: series('nps lint.prettier.fix', 'nps lint.eslint.fix'),
+      eslint: {
+        default: 'nps lint.eslint.check',
+        check: 'eslint .',
+        fix: 'eslint --fix .',
+      },
+      prettier: {
+        default: 'nps lint.prettier.check',
+        check: 'prettier --check .',
+        fix: 'prettier --write .',
+      },
     },
   },
 };
