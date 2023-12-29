@@ -42,5 +42,10 @@ module.exports = {
       datapacks: `yarn rimraf --glob ${minecraftWorldPath}/datapacks/**/*`,
       resourcepacks: `yarn rimraf --glob ${minecraftResourcePackPath}/**/*`,
     },
+    lint: {
+      default: 'nps lint.check',
+      check: 'prettier --check .',
+      fix: 'prettier --write .',
+    },
   },
 };
