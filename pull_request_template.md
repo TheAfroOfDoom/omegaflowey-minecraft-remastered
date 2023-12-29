@@ -1,4 +1,5 @@
 # Summary
+
 <!--
 what is the primary purpose of this PR?
 - does it address any existing tickets?
@@ -8,6 +9,7 @@ what is the primary purpose of this PR?
 ---
 
 ## Test plan
+
 <!--
 does this PR include any unit tests for its new code?
 if yes, briefly describe them.
@@ -15,6 +17,7 @@ if no, explain why.
 -->
 
 ## Reproducing in-game
+
 <!--
 how to view the thing you added in-game (Minecraft), if applicable.
 - are there certain commands to run?
@@ -29,18 +32,22 @@ function entity:hostile/omega-flowey/attack/x-bullets-lower/start
 -->
 
 ## Preview
+
 <!--
 provide visuals (GIFs preferred) showing a before/after of your PR's purpose.
 contrasts between in-game (Minecraft) and Undertale are also great.
 -->
+
 | in-game -- before | in-game -- after | undertale |
-|-|-|-|
-| | | |
+| ----------------- | ---------------- | --------- |
+|                   |                  |           |
+
 <!-- `in-game -- before` can be `N/A` if this is a new addition to the map -->
 
 ---
 
 ## Supplemental changes
+
 <!--
 describe what other changes this PR makes which aren't specific to its main purpose.
 - does it contain a world backup? (recommended)
