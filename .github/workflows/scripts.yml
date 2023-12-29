@@ -7,14 +7,35 @@ on:
       - main
 
 jobs:
-  prettier:
+  format:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Run Prettier
-        uses: creyD/prettier_action@v4.3
+      - uses: actions/checkout@v4
+      - name: Install Yarn 3.6.3
+        run: corepack enable
+      - name: Setup cache
+        uses: actions/setup-node@v4
         with:
-          dry: True
-          prettier_options: '--check .'
-          prettier_version: 3.1.1
+          cache: 'yarn'
+          cache-dependency-path: yarn.lock
+          node-version-file: package.json
+      - run: yarn
+      - name: Run Prettier
+        run: yarn start lint.prettier.check
+
+  lint:
+    runs-on: ubuntu-latest
+    needs: format
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Yarn 3.6.3
+        run: corepack enable
+      - name: Setup cache
+        uses: actions/setup-node@v4
+        with:
+          cache: 'yarn'
+          cache-dependency-path: yarn.lock
+          node-version-file: package.json
+      - run: yarn
+      - name: Run ESLint
+        run: yarn start lint.eslint.check
