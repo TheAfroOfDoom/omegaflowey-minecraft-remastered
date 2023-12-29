@@ -5,7 +5,7 @@ const worldName = 'omega-flowey-remastered';
 const resourcePackName = 'omega-flowey-remastered-resourcepack';
 
 const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
-var minecraftResourcePackPath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
+const minecraftResourcePackPath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
 
 module.exports = {
   scripts: {
