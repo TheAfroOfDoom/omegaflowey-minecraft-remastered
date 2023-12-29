@@ -1,10 +1,6 @@
 name: datapack
 
-on:
-  pull_request:
-  push:
-    branches:
-      - main
+on: [push]
 
 # TODO(37): add linting
 jobs:
