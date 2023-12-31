@@ -2,14 +2,21 @@
   "name": "omega-flowey-minecraft-remastered",
   "packageManager": "yarn@3.6.3",
   "scripts": {
+    "lint": "nps lint",
+    "lint.fix": "nps lint.fix",
     "start": "nps",
     "sync": "nps sync.world"
+  },
+  "engines": {
+    "node": ">=16.10"
   },
   "devDependencies": {
     "bestzip": "1.1.6",
     "cpy-cli": "5.0.0",
+    "eslint": "8.56.0",
     "nps": "5.10.0",
     "nps-utils": "1.7.0",
+    "prettier": "3.1.1",
     "rimraf": "5.0.1",
     "watch": "1.0.2"
   }

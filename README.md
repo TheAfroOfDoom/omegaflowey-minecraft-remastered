@@ -11,6 +11,15 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 
 ### Setup
 
+#### Workspace
+
+<!-- TODO upgrade to yarn 4? -->
+
+1. Install [`Node.js >= 16.10`](https://nodejs.org/en/download)
+1. Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
+1. Initialize the repo by running `yarn`
+1. Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
+
 #### Testing
 
 1. Download the [Fabric mod loader](https://fabricmc.net/) and install a new profile to your Minecraft launcher
