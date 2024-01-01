@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.bomb.root] run function animated_java:bomb/zzzzzzzz/tick_as_root
