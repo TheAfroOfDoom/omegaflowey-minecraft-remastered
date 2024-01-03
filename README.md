@@ -16,9 +16,9 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 <!-- TODO upgrade to yarn 4? -->
 
 1. Install [`Node.js >= 16.10`](https://nodejs.org/en/download)
-1. Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
-1. Initialize the repo by running `yarn`
-1. Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
+2. Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
+3. Initialize the repo by running `yarn`
+4. Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
 
 #### Testing
 
