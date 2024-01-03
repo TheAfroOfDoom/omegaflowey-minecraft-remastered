@@ -56,7 +56,7 @@ Install the following apps:
 
 When finished, ensure you partition commits into the following categories:
 
-   1. `.ajmodel` + custom texture files ([example](https://github.com/TheAfroOfDoom/omega-flowey-minecraft-remastered/pull/55/commits/344c6da2d0676d2a6d358d5bf30df2e419458b77))
-   2. automated export files when clicking `Animated Java > Export Project` ([example](https://github.com/TheAfroOfDoom/https://github.com/TheAfroOfDoom/omega-flowey-minecraft-remastered/pull/55/commits/ee471449e7e131b6c38129ddffb492769bf8064d))
+1. `.ajmodel` + custom texture files ([example](https://github.com/TheAfroOfDoom/omega-flowey-minecraft-remastered/pull/55/commits/344c6da2d0676d2a6d358d5bf30df2e419458b77))
+2. automated export files when clicking `Animated Java > Export Project` ([example](https://github.com/TheAfroOfDoom/https://github.com/TheAfroOfDoom/omega-flowey-minecraft-remastered/pull/55/commits/ee471449e7e131b6c38129ddffb492769bf8064d))
 
 This ensures we split commits by what's 100% required (new custom textures + the `.ajmodel` files) and by what's automatically generated (`Export Project` files).
