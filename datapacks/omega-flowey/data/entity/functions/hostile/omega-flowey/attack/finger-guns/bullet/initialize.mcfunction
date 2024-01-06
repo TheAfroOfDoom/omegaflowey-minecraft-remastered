@@ -3,7 +3,6 @@ scoreboard players set @s attack.clock.i -1
 scoreboard players operation @s attack.speed.z = #attack-finger-guns attack.speed.z
 
 # Play bullet shoot sound
-# TODO: this is really loud... need to decrease the volume of the file itself
 playsound omega-flowey:attack.finger-guns.shoot hostile @a ~ ~ ~ 5 1
 
 # Set pitch and yaw from input
