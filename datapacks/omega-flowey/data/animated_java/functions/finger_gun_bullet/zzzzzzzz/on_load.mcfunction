@@ -1,0 +1,2 @@
+scoreboard players set @s aj.finger_gun_bullet.rig_loaded 1
+execute unless score @s aj.finger_gun_bullet.export_version = aj.finger_gun_bullet.export_version aj.i at @s run function animated_java:finger_gun_bullet/zzzzzzzz/mark_outdated_rig

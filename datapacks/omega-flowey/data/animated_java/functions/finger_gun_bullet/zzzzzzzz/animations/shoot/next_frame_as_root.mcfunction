@@ -1,0 +1,1 @@
+function animated_java:finger_gun_bullet/zzzzzzzz/animations/shoot/tick_animation
