@@ -1,5 +1,5 @@
 # Summon bullet
-$execute positioned $(x) 34.5 $(z) run function animated_java:finger_gun_bullet/summon
+$execute positioned $(x) 35 $(z) run function animated_java:finger_gun_bullet/summon
 
 # Copy yaw to bullet
 execute store result storage attack:finger-guns yaw float 1 run data get entity @s Rotation[0] 100
