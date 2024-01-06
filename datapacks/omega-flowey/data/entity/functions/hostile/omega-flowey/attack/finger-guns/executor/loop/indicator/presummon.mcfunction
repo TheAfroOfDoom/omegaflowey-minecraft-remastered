@@ -1,5 +1,5 @@
-# x-position will summon at either x: -22.00 or x: +22.00
-scoreboard players set @s attack.position.x 2200
+# x-position will summon at either x: -21.00 or x: +21.00
+scoreboard players set @s attack.position.x 2100
 execute store result score @s math.0 run random value -1..0
 execute if score @s math.0 matches -1 run scoreboard players operation @s attack.position.x *= @s math.0
 

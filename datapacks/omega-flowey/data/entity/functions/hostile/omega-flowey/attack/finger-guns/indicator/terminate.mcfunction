@@ -1,1 +1,1 @@
-kill @s
+function animated_java:finger_gun/remove/this
