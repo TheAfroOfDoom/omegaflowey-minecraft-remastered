@@ -30,7 +30,8 @@ Install the following apps:
    1. In Blockbench, go to `File > Plugins` and install `Animated Java`
    2. Tip: use [blockcolors.app](https://blockcolors.app/) to get a representative vanilla block texture for a desired color
 2. [paint.net](https://www.getpaint.net/download.html) -- for image editing
-3. [DaVinci Resolve](https://www.blackmagicdesign.com/event/davinciresolvedownload) -- for video editing / frame-by-frame video analysis (of the original fight in Undertale)
+3. [ScreenToGif](https://www.screentogif.com/) -- lightweight GIF recorder
+4. [DaVinci Resolve](https://www.blackmagicdesign.com/event/davinciresolvedownload) -- for video editing / frame-by-frame video analysis (of the original fight in Undertale)
 
 #### Testing
 
