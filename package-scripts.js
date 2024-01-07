@@ -1,8 +1,8 @@
-const { concurrent, series } = require("nps-utils");
+const { concurrent, series } = require('nps-utils');
 const {
   datapacksGlob,
   resourcepackGlob,
-} = require("./package-scripts/shared-consts");
+} = require('./package-scripts/shared-consts');
 
 const minecraftPath = 'C:/Users/afro/AppData/Roaming/.minecraft';
 const worldName = 'omega-flowey-remastered';
@@ -11,7 +11,7 @@ const resourcePackName = 'omega-flowey-remastered-resourcepack';
 const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 const minecraftResourcePackPath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
 
-const watchExcludeFilter = "./package-scripts/watch-filter";
+const watchExcludeFilter = './package-scripts/watch-filter';
 
 module.exports = {
   scripts: {
