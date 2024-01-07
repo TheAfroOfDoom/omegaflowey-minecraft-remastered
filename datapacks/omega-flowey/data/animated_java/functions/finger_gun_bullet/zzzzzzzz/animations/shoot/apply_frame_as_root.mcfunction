@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..15 run function animated_java:finger_gun_bullet/zzzzzzzz/animations/shoot/tree/branch_0_15

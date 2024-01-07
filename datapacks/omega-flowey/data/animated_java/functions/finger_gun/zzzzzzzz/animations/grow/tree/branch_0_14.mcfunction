@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 0..7 run function animated_java:finger_gun/zzzzzzzz/animations/grow/tree/branch_0_7
+execute if score @s aj.anim_time matches 8..14 run function animated_java:finger_gun/zzzzzzzz/animations/grow/tree/branch_8_14

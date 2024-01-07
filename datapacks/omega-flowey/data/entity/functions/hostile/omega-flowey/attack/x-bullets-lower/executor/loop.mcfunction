@@ -14,4 +14,4 @@ scoreboard players operation @s math.0 %= @s attack.executor.rate
 execute if score @s math.0 matches 0 if score @s attack.indicator.remaining matches 1.. run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/loop/summon_indicator
 
 # Terminate
-execute if score @s attack.clock.i >= @s attack.clock.length run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/terminate
+execute if score @s attack.clock.i >= @s attack.executor.clock.length run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/terminate

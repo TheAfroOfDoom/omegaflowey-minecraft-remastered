@@ -18,10 +18,10 @@ scoreboard objectives add attack.bullets.scale dummy
 # total number of bullets to summon each set
 scoreboard objectives add attack.bullets.total dummy
 scoreboard objectives add attack.clock.i dummy
-scoreboard objectives add attack.clock.length dummy
 scoreboard objectives add attack.cone dummy
 # delay (in ticks) before an attack-executor begins summoning indicators
 scoreboard objectives add attack.executor.clock.delay dummy
+# length an attack-executor will exist
 scoreboard objectives add attack.executor.clock.length dummy
 # how often (in ticks) an attack-executor summons an attack-indicator
 scoreboard objectives add attack.executor.rate dummy
@@ -34,6 +34,8 @@ scoreboard objectives add attack.executor.repeat.delay dummy
 scoreboard objectives add attack.indicator.animation.index dummy
 # delay (in ticks) before an attack-indicator begins summoning bullets
 scoreboard objectives add attack.indicator.clock.delay dummy
+# length an attack-indicator will exist
+scoreboard objectives add attack.indicator.clock.length dummy
 # radius (in blocks) at which to summon bullets around attack-indicator
 scoreboard objectives add attack.indicator.radius dummy
 # number of indicators left to summon in a set

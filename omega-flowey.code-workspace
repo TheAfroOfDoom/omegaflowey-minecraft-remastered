@@ -34,7 +34,8 @@
     "datapack.lint.strictStorageCheck": false,
     "datapack.lint.timeOmitTickUnit": true,
     "datapack.snippets": {
-      "consoleLog": "tellraw @a [{\"text\": \"${1:variable}: \"}, {\"score\": {\"name\": \"@s\", \"objective\": \"${1:variable}\"}}]"
+      "consoleLogScore": "tellraw @a [{\"text\": \"${1:variable}: \"}, {\"score\": {\"name\": \"@s\", \"objective\": \"${1:variable}\"}}]",
+      "consoleLogStorage": "tellraw @a [{\"text\": \"${1:storage}.${2:path}: \"}, {\"nbt\": \"${2:path}\", \"storage\": \"${1:storage}\"}]"
     },
     "datapack.trace.server": "messages",
 

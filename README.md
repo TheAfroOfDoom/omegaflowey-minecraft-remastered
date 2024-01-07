@@ -13,8 +13,6 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 
 #### Workspace
 
-<!-- TODO upgrade to yarn 4? -->
-
 1. Install [`Node.js >= 16.10`](https://nodejs.org/en/download)
 2. Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
 3. Initialize the repo by running `yarn`
@@ -30,7 +28,8 @@ Install the following apps:
    1. In Blockbench, go to `File > Plugins` and install `Animated Java`
    2. Tip: use [blockcolors.app](https://blockcolors.app/) to get a representative vanilla block texture for a desired color
 2. [paint.net](https://www.getpaint.net/download.html) -- for image editing
-3. [DaVinci Resolve](https://www.blackmagicdesign.com/event/davinciresolvedownload) -- for video editing / frame-by-frame video analysis (of the original fight in Undertale)
+3. [ScreenToGif](https://www.screentogif.com/) -- lightweight GIF recorder
+4. [DaVinci Resolve](https://www.blackmagicdesign.com/event/davinciresolvedownload) -- for video editing / frame-by-frame video analysis (of the original fight in Undertale)
 
 #### Testing
 
