@@ -2,6 +2,9 @@
 execute if entity @s[tag=attack.random.previous_attack.dentata-snakes] run scoreboard players remove #attack-dentata-snakes attack.weight 1
 execute if entity @s[tag=attack.random.previous_attack.dentata-snakes] run tag @s remove attack.random.previous_attack.dentata-snakes
 
+execute if entity @s[tag=attack.random.previous_attack.finger-guns] run scoreboard players remove #attack-finger-guns attack.weight 1
+execute if entity @s[tag=attack.random.previous_attack.finger-guns] run tag @s remove attack.random.previous_attack.finger-guns
+
 execute if entity @s[tag=attack.random.previous_attack.friendliness-pellets] run scoreboard players remove #attack-friendliness-pellets attack.weight 1
 execute if entity @s[tag=attack.random.previous_attack.friendliness-pellets] run tag @s remove attack.random.previous_attack.friendliness-pellets
 
