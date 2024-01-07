@@ -7,7 +7,6 @@ execute if score @s attack.clock.i matches ..-1 run return 0
 execute if score @s attack.clock.i matches 0 run function entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/presummon
 
 # Summon a bullet
-# TODO pull this clock index out into a score?
 execute if score @s attack.clock.i matches 5 run function entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/bullet/presummon
 
 # Terminate after finger-gun shoot animation finishes

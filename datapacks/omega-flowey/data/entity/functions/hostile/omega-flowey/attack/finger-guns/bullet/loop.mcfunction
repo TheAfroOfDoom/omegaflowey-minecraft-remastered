@@ -6,6 +6,6 @@ execute positioned ~ ~-1.5 ~ run function entity:utils/damage with storage utils
 # Move forward
 function entity:hostile/omega-flowey/attack/finger-guns/bullet/loop/move
 
-# TODO: validate/determine a value for how long until the finger-guns bullets terminate
+# TODO(60): validate/determine a value for how long until the finger-guns bullets terminate
 # Terminate after X seconds
 execute if score @s attack.clock.i matches 60.. run function entity:hostile/omega-flowey/attack/finger-guns/bullet/terminate
