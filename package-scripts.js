@@ -62,6 +62,7 @@ module.exports = {
         check: 'prettier --check .',
         fix: 'prettier --write .',
       },
+      resourcepack: `node ./package-scripts/run-linting-rules --glob "${resourcepackGlob}"`,
     },
   },
 };

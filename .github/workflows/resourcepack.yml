@@ -1,0 +1,20 @@
+name: resourcepack
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Yarn 3.6.3
+        run: corepack enable
+      - name: Setup cache
+        uses: actions/setup-node@v4
+        with:
+          cache: 'yarn'
+          cache-dependency-path: yarn.lock
+          node-version-file: package.json
+      - run: yarn
+      - name: Run lint scripts on resourcepack
+        run: yarn start lint.resourcepack
