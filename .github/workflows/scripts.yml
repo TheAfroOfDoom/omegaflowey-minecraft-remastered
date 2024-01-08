@@ -17,7 +17,7 @@ jobs:
           node-version-file: package.json
       - run: yarn
       - name: Run Prettier
-        run: yarn start lint.prettier.check
+        run: yarn start lint.scripts.prettier.check
 
   lint:
     runs-on: ubuntu-latest
@@ -34,4 +34,4 @@ jobs:
           node-version-file: package.json
       - run: yarn
       - name: Run ESLint
-        run: yarn start lint.eslint.check
+        run: yarn start lint.scripts.eslint.check

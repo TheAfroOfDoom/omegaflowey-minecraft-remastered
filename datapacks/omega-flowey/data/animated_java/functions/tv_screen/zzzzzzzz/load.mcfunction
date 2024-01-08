@@ -14,6 +14,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.tv_screen.export_version aj.i -928173904
+scoreboard players set aj.tv_screen.export_version aj.i -41562086
 scoreboard players reset * aj.tv_screen.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.tv_screen.root] run function animated_java:tv_screen/zzzzzzzz/on_load
