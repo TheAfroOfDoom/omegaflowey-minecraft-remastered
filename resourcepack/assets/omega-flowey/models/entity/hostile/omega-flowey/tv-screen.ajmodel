@@ -51,7 +51,9 @@
 			{
 				"name": "warning",
 				"textureMap": {
-					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "69769926-e76c-4d11-b4f8-82ddedcfad5e"
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "69769926-e76c-4d11-b4f8-82ddedcfad5e",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "370b8b73-4e6c-b936-26ae-cafa974e6fc9",
+					"69769926-e76c-4d11-b4f8-82ddedcfad5e": "69769926-e76c-4d11-b4f8-82ddedcfad5e"
 				},
 				"uuid": "585fe02c-c7d9-99ae-1095-3e2099d4a99d",
 				"boneConfig": {},
@@ -380,28 +382,31 @@
 			"origin": [5, 0, 36],
 			"faces": {
 				"north": {
-					"uv": [1.14286, 1.02857, 14.51429, 16],
+					"uv": [1.14286, 0, 14.51429, 11.31429],
 					"texture": 1
 				},
 				"east": {
-					"uv": [0, 0, 16, 16],
+					"uv": [0, 0, 16, 11.31429],
+					"rotation": 180,
 					"texture": 1
 				},
 				"south": {
-					"uv": [0, 0, 16, 16],
+					"uv": [0, 0, 16, 11.31429],
+					"rotation": 180,
 					"texture": 1
 				},
 				"west": {
-					"uv": [0, 0, 16, 16],
+					"uv": [0, 0, 16, 11.31429],
+					"rotation": 180,
 					"texture": 1
 				},
 				"up": {
-					"uv": [0, 0, 16, 16],
+					"uv": [0, 0, 16, 11.31429],
 					"rotation": 180,
 					"texture": 1
 				},
 				"down": {
-					"uv": [0, 0, 16, 16],
+					"uv": [0, 0, 16, 11.31429],
 					"rotation": 180,
 					"texture": 1
 				}
@@ -470,7 +475,13 @@
 			"folder": "",
 			"namespace": "",
 			"id": "0",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
 			"particle": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
 			"frame_time": 1,
@@ -478,11 +489,12 @@
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"mode": "bitmap",
+			"internal": false,
 			"saved": true,
 			"uuid": "370b8b73-4e6c-b936-26ae-cafa974e6fc9",
 			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.2-pre1/1.20.2-pre1/assets/minecraft/textures/block/netherite_block.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWpJREFUOE+Fk09Lw0AQxWehoUnTiEawB0tQVFBv9tzv/wEEKYKCLb3kEqVr/rGByNt2trMS6FyS7M789r2ZjVouFn1ZNxRHIZ0KmYd3XZakXp6e+9k8ozRNT9WT3mlKzhKbh/fV2yspKMgeHmm9WVMy3W8Go8DBqrqiIAho1Bm71h32kOMB8jz3ElU4sQWmMw7YNxXVPVHTNpSepz6gKAoyxlCkiFCMZIawHMCQ0+6+aXp5RR/vq6MFVsAQSIVMeIZfDlhiQL7d+ABOgmfZB0CgkEP/atsvTwFbYH//R8LyAQdgsAfyVG4gT4WnAYs4BAo8C+yTPaNAWkKhhR0UOAAu0vzmziVz9yUAmzgVodraPi9m1/4YoYCL8cQU4BURjkMPoKuastv7PYAVFD+Fu4nW/8GrBOB0FCMGAUjox5GzIwvkVJJJZC1svz6PCjAm1zTxL8irLCFYt/cAFvBbeifEsf2U68nAGnL+AK7IFKyaYaryAAAAAElFTkSuQmCC"
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWpJREFUOE+Fk09Lw0AQxWehoUnTiEawB0tQVFBv9tzv/wEEKYKCLb3kEqVr/rGByNt2trMS6FyS7M789r2ZjVouFn1ZNxRHIZ0KmYd3XZakXp6e+9k8ozRNT9WT3mlKzhKbh/fV2yspKMgeHmm9WVMy3W8Go8DBqrqiIAho1Bm71h32kOMB8jz3ElU4sQWmMw7YNxXVPVHTNpSepz6gKAoyxlCkiFCMZIawHMCQ0+6+aXp5RR/vq6MFVsAQSIVMeIZfDlhiQL7d+ABOgmfZB0CgkEP/atsvTwFbYH//R8LyAQdgsAfyVG4gT4WnAYs4BAo8C+yTPaNAWkKhhR0UOAAu0vzmziVz9yUAmzgVodraPi9m1/4YoYCL8cQU4BURjkMPoKuastv7PYAVFD+Fu4nW/8GrBOB0FCMGAUjox5GzIwvkVJJJZC1svz6PCjAm1zTxL8irLCFYt/cAFvBbeifEsf2U68nAGnL+AK7IFKyaYaryAAAAAElFTkSuQmCC",
+			"mode": "bitmap"
 		},
 		{
 			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.2-pre1\\1.20.2-pre1\\assets\\minecraft\\textures\\block\\black_concrete.png",
@@ -490,7 +502,13 @@
 			"folder": "",
 			"namespace": "",
 			"id": "1",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
 			"particle": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
 			"frame_time": 1,
@@ -498,19 +516,26 @@
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"mode": "bitmap",
+			"internal": false,
 			"saved": true,
 			"uuid": "32717bc3-fe35-1fc8-9bbf-54407fe854d1",
 			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.2-pre1/1.20.2-pre1/assets/minecraft/textures/block/black_concrete.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPtJREFUOE99k9kSwiAMRUv7oK2Oy/9/a4tzooeJyMhLINwkN1s5b/c6z/PE2fd9KqXEHXkcx+Qfd3T5v9Y6le36rBguy9IMeHM0BqhTZBiW8pYwUIkTwUTkLSv1P4zWy6PqEUc91Qj9SQlcxsb9tN5qzqsHE9EUM5uWAjUwsqnkfBswFfeLKQyIAtDicUdnF5DWwDqhi0A4yMpR2wTr1A61LvQ1sJAWUCbORsYHg+zZnPsZEOM/0SN12mikvkUA0GVGGoptbezT0FAndsh3wzsHUhuN7Gg2WitJ4R9FC+gU5smM5eodjLbQOXFjfUdgi5jn3LXNi5W7ox75AoSGFC+2epdnAAAAAElFTkSuQmCC"
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPtJREFUOE99k9kSwiAMRUv7oK2Oy/9/a4tzooeJyMhLINwkN1s5b/c6z/PE2fd9KqXEHXkcx+Qfd3T5v9Y6le36rBguy9IMeHM0BqhTZBiW8pYwUIkTwUTkLSv1P4zWy6PqEUc91Qj9SQlcxsb9tN5qzqsHE9EUM5uWAjUwsqnkfBswFfeLKQyIAtDicUdnF5DWwDqhi0A4yMpR2wTr1A61LvQ1sJAWUCbORsYHg+zZnPsZEOM/0SN12mikvkUA0GVGGoptbezT0FAndsh3wzsHUhuN7Gg2WitJ4R9FC+gU5smM5eodjLbQOXFjfUdgi5jn3LXNi5W7ox75AoSGFC+2epdnAAAAAElFTkSuQmCC",
+			"mode": "bitmap"
 		},
 		{
-			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\warning.png",
-			"name": "warning",
+			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\animated_java\\textures\\item\\tv_screen\\warning.png",
+			"name": "warning.png",
 			"folder": "",
 			"namespace": "",
 			"id": "2",
+			"width": 140,
+			"height": 280,
+			"uv_width": 16,
+			"uv_height": 16,
 			"particle": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
 			"frame_time": 1,
@@ -518,11 +543,12 @@
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"mode": "bitmap",
+			"internal": false,
 			"saved": true,
 			"uuid": "69769926-e76c-4d11-b4f8-82ddedcfad5e",
-			"relative_path": "../../../../../../../../warning.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAABkCAYAAABU19jRAAAAAXNSR0IArs4c6QAABERJREFUeF7tmkGSFDEMBNkvcOa4J/7/Fk58Ab4AsUtMRIfDtlTdM7U7RXLhMHJXq5SW5YaXX99e/3zhDw40HXgBmKZThL07ADCAIDkAMJJdBAMMDEgOAIxkF8EAAwOSAwAj2UUwwMCA5ADASHYRDDAwIDkAMJJdBAMMDEgOAIxkF8EAAwOSAwAj2UUwwMCA5ADASHYRDDAwIDkAMJJdBAMMDEgOAIxkF8EAAwOSAwAj2UUwwMCA5ADASHYRDDAwIDkAMJJd/4K//vj5/vfv768nVutLbnrjSpf+UfdpgTma6DZuBOYKQG9rd++/guVWRHfuFmAUQzuxMxNXxim7s6M96zBn4e2sq4Bxdro3rU8FzFUDR2gqs3fx3V1/i+vCdmzv4/tV73/8vVqrH3y9FU8FjALADr6V2d0izJ595piq9KoNVP3eQ0CLigLm2J47O35V5Go+cABTwXR7x06eGhL76IcDo+wCtSvsZpmOkaNeZzaqutN4RO1mjB0Uim/3BKJ61lMCMyvK2BU6wIwD7OrI68wOZ7oVwEzw7BbuWLzZrlztuGrHd3f4GxSPBKbKafz9v+8w1feC6sy+AkzVZncda9W5qo52Bb5q81T5PPJ325GkAKNcdzsdZmdgddxUc87qWr1aV+mNw6zamR4Ji+U7TPdIUgbeDgCdHT57zu4GNItXgZnd5Ga3MtWPakPeC6QP6TAziFSDVgYox0sXmPGIOK7rAjMO2LNnrrpP5yMiwByqosC0AmYcajv/lLA7PpQZZnXVvsctqdvBn67DzFrxrCCzQj4CmNXtSdHa5VQN6bNbGR3m8F8Bzph7ZQCc7d7ZXHNlwD6T02q2GgHuXKs7MffqLLfn2GaYM+Z2gBlngd2RtJpFVtAox9buw13VNauh90w3vDcoHwJMJ4nK3O7v3flgVoxqLtjdpFbzyph71e3OfpfqeHwl5uEdptsBVrtotf6YdDUv7KD4KGA63XN3fB3zd92Q3jQ/DTCdq6PampUB9qrp6pE0AtM5/mad4ep7q93GAoz6UrP46pi4hwbPqB14GmDqVIhwOAAwDpeDNAAmqJiOVADG4XKQBsAEFdORCsA4XA7SAJigYjpSARiHy0EaABNUTEcqAONwOUgDYIKK6UgFYBwuB2kATFAxHakAjMPlIA2ACSqmIxWAcbgcpAEwQcV0pAIwDpeDNAAmqJiOVADG4XKQBsAEFdORCsA4XA7SAJigYjpSARiHy0EaABNUTEcqAONwOUgDYIKK6UgFYBwuB2kATFAxHakAjMPlIA2ACSqmIxWAcbgcpAEwQcV0pAIwDpeDNAAmqJiOVADG4XKQBsAEFdORCsA4XA7SAJigYjpSARiHy0EaABNUTEcqAONwOUgDYIKK6UgFYBwuB2kATFAxHakAjMPlIA2ACSqmIxWAcbgcpAEwQcV0pAIwDpeDNAAmqJiOVADG4XKQxl8dwojCQZPkRQAAAABJRU5ErkJggg=="
+			"relative_path": "../../../../../../animated_java/textures/item/tv_screen/warning.png",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
 		}
 	],
 	"animations": [
