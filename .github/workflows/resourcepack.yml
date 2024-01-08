@@ -18,3 +18,5 @@ jobs:
       - run: yarn
       - name: Run lint scripts on resourcepack
         run: yarn start lint.resourcepack
+        env:
+          FORCE_COLOR: 2
