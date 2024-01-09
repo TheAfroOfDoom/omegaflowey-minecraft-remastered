@@ -1,1 +1,1 @@
-function animated_java:bomb/remove/this
+kill @s

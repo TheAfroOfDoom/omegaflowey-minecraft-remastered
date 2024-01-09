@@ -1,2 +1,1 @@
-## Terminate bullet
-function animated_java:bomb_bullet/remove/this
+function animated_java:bomb/remove/this
