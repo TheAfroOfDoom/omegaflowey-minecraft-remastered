@@ -5,8 +5,5 @@ execute store result storage attack:bomb z double 0.01 run data get entity @s Po
 # Terminate associated laser
 function entity:hostile/omega-flowey/attack/bomb/indicator/loop/laser/terminate
 
-# Play shoot animation
-function animated_java:bomb/animations/shoot/play
-
 # Summon bullet
 function entity:hostile/omega-flowey/attack/bomb/indicator/loop/bullet/summon with storage attack:bomb

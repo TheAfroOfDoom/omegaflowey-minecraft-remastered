@@ -7,8 +7,5 @@ scoreboard players operation @s attack.indicator.clock.length = #attack-bomb att
 # Set group ID
 function entity:group/set
 
-# Start animation
-function animated_java:bomb/animations/grow/play
-
 # Remove tags
 tag @s remove attack-indicator-new

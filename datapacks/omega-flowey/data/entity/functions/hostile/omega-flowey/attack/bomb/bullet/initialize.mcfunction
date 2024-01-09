@@ -9,8 +9,5 @@ playsound omega-flowey:attack.bomb.shoot hostile @a ~ ~ ~ 5 1
 execute store result entity @s Rotation[0] float 0.01 run data get storage attack:bomb yaw
 execute store result entity @s Rotation[1] float 0.01 run data get storage attack:bomb pitch
 
-# Start animation
-function animated_java:bomb_bullet/animations/shoot/play
-
 # Remove tags
 tag @s remove attack-bullet-new
