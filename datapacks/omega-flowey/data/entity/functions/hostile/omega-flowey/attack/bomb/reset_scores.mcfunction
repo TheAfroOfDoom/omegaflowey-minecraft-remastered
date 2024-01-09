@@ -4,6 +4,5 @@
 scoreboard players set #attack-bomb attack.executor.clock.length 66
 scoreboard players set #attack-bomb attack.executor.rate 3
 scoreboard players set #attack-bomb attack.indicator.clock.delay 14
-# lifespan of indicator after summoning laser
 scoreboard players set #attack-bomb attack.indicator.clock.length 40
 scoreboard players set #attack-bomb attack.speed.z 110
