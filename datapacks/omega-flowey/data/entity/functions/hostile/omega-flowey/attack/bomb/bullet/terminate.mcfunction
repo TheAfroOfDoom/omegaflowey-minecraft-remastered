@@ -1,2 +1,2 @@
 ## Terminate bullet
-function animated_java:finger_gun_bullet/remove/this
+function animated_java:bomb_bullet/remove/this

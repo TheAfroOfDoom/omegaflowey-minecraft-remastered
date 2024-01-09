@@ -1,1 +1,1 @@
-function animated_java:finger_gun/remove/this
+function animated_java:bomb/remove/this
