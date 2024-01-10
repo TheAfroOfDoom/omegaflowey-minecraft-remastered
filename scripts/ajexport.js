@@ -30,9 +30,9 @@ const exportNextFile = () => {
   }
   consoleLogJson({ file });
   if (file.includes('ajmodel')) {
-    let content = readFileSync(dir.concat(file), 'utf-8');
-    let name = file.split('/').pop();
-    let fileObj = {
+    const content = readFileSync(dir.concat(file), 'utf-8');
+    const name = file.split('/').pop();
+    const fileObj = {
       path: file,
       content: injectModelPackPaths(content, paths),
       name: name,
@@ -44,7 +44,7 @@ const exportNextFile = () => {
 exportNextFile();
 
 function injectModelPackPaths(modelContent, paths) {
-  let f = JSON.parse(modelContent);
+  const f = JSON.parse(modelContent);
   f.animated_java.settings.resource_pack_mcmeta = paths[0];
   f.animated_java.exporter_settings[
     'animated_java:datapack_exporter'
