@@ -43,28 +43,6 @@ const exportNextFile = () => {
 };
 exportNextFile();
 
-/*
-function getModelPackPaths(modelContent) {
-  var f = JSON.parse(modelContent);
-  var resourcePackPath = f.animated_java.settings.resource_pack_mcmeta;
-  var dataPackPath =
-    f.animated_java.exporter_settings['animated_java:datapack_exporter']
-      .datapack_mcmeta;
-  return [resourcePackPath, dataPackPath];
-}
-*/
-
-/*
-function writeModelPackPaths(modelContent, modelFile, paths) {
-  var f = JSON.parse(modelContent);
-  f.animated_java.settings.resource_pack_mcmeta = paths[0];
-  f.animated_java.exporter_settings[
-    'animated_java:datapack_exporter'
-  ].datapack_mcmeta = paths[1];
-  fs.writeFileSync(modelFile, JSON.stringify(f));
-}
-*/
-
 function injectModelPackPaths(modelContent, paths) {
   let f = JSON.parse(modelContent);
   f.animated_java.settings.resource_pack_mcmeta = paths[0];
