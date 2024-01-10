@@ -13,7 +13,9 @@
   ],
   "settings": {
     "datapack.env.dataVersion": "Latest snapshot",
-    "datapack.env.include": ["./datapacks/**/*"],
+    "datapack.env.include": [
+      "./datapacks/**/*"
+    ],
     "datapack.lint.blockStateBracketSpacing": {
       "inside": 1
     },
@@ -38,11 +40,9 @@
       "consoleLogStorage": "tellraw @a [{\"text\": \"${1:storage}.${2:path}: \"}, {\"nbt\": \"${2:path}\", \"storage\": \"${1:storage}\"}]"
     },
     "datapack.trace.server": "messages",
-
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
-
     "files.exclude": {
       "**/versions": true
     },
@@ -51,7 +51,9 @@
       "./minecraft/**": true,
       "./versions": true
     },
-
-    "terminal.integrated.defaultLocation": "editor"
+    "terminal.integrated.defaultLocation": "editor",
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
   }
 }
