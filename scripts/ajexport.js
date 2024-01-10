@@ -54,22 +54,11 @@ function injectModelPackPaths(modelContent, paths) {
     if (texture.path.includes('.minecraft')) {
       const x = texture.path.split('assets')[1];
       const newPath = `${paths[2]}/assets${x}`;
-      // consoleLogJson({
-      //     texturePath: texture.path,
-      //     afterAssets: x,
-      //     newPath,
-      // });
       texture.path = newPath;
     } else if (texture.path.includes('resourcepack/assets')) {
       const x = texture.path.split('resourcepack/assets')[1];
       const resourcePackBase = paths[0].split('resourcepack')[0];
       const newPath = `${resourcePackBase}resourcepack/assets${x}`;
-      // consoleLogJson({
-      //     texturePath: texture.path,
-      //     resourcePackBase,
-      //     afterAssets: x,
-      //     newPath,
-      // });
       texture.path = newPath;
     }
   }
