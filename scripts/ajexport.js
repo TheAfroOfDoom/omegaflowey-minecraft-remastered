@@ -1,4 +1,5 @@
-// With thanks to elenterius on discord for troubleshooting ideas
+// With thanks to elenterius on discord for troubleshooting
+// https://discord.com/channels/314078526104141834/1189404550986211329/1189517519262855229
 
 /*
 global Project, fs, loadModelFile, AnimatedJava
