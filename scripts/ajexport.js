@@ -67,9 +67,9 @@ function injectModelPackPaths(modelContent, paths) {
 
 function getConfigPaths(configFile) {
   const f = JSON.parse(readFileSync(configFile).toString());
-  let resourcePackPath = f.resource_pack_mcmeta;
-  let dataPackPath = f.datapack_mcmeta;
-  let assetsPath = f.assets_path;
-  let ajmodelPath = f.ajmodel_folder;
+  const resourcePackPath = f.resource_pack_mcmeta;
+  const dataPackPath = f.datapack_mcmeta;
+  const assetsPath = f.assets_path;
+  const ajmodelPath = f.ajmodel_folder;
   return [resourcePackPath, dataPackPath, assetsPath, ajmodelPath];
 }
