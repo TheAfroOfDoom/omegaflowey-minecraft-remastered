@@ -1,5 +1,9 @@
 // With thanks to fetchbot on discord for the code
 
+/*
+global BBPlugin, electron, window
+*/
+
 BBPlugin.register('bb-cli', {
   title: 'Blockbench CLI',
   author: 'aiTan',
@@ -9,7 +13,7 @@ BBPlugin.register('bb-cli', {
   variant: 'both',
   onload() {
     console.log('BB-CLI loading...');
-    let [blockbenchPath, ...ARGV] = electron.getGlobal('process').argv;
+    let [...ARGV] = electron.getGlobal('process').argv;
     let scriptIndicator = ARGV.indexOf('--bb-cli');
     if (scriptIndicator !== -1) {
       const scriptPath = ARGV[scriptIndicator + 1];

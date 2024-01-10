@@ -1,5 +1,9 @@
 // With thanks to elenterius on discord for troubleshooting ideas
 
+/*
+global Project, fs, loadModelFile, AnimatedJava
+*/
+
 const consoleLogJson = (args) => {
   console.log(JSON.stringify(args));
 };
@@ -7,8 +11,6 @@ const consoleLogJson = (args) => {
 if (typeof AnimatedJava === 'undefined') {
   throw new Error('Failed to load Animated Java plugin before CLI plugin');
 }
-let [blockbenchPath, ...ARGV] = electron.getGlobal('process').argv;
-const scriptIndicator = ARGV.indexOf('--bb-cli');
 const paths = getConfigPaths(
   'C:\\Users\\Aidan\\Documents\\Media_Storage\\active_projects\\flowey_remaster\\omega-flowey-minecraft-remastered\\scripts\\config.json',
 );
@@ -38,6 +40,7 @@ const exportNextFile = () => {
 };
 exportNextFile();
 
+/*
 function getModelPackPaths(modelContent) {
   var f = JSON.parse(modelContent);
   var resourcePackPath = f.animated_java.settings.resource_pack_mcmeta;
@@ -46,7 +49,9 @@ function getModelPackPaths(modelContent) {
       .datapack_mcmeta;
   return [resourcePackPath, dataPackPath];
 }
+*/
 
+/*
 function writeModelPackPaths(modelContent, modelFile, paths) {
   var f = JSON.parse(modelContent);
   f.animated_java.settings.resource_pack_mcmeta = paths[0];
@@ -55,9 +60,10 @@ function writeModelPackPaths(modelContent, modelFile, paths) {
   ].datapack_mcmeta = paths[1];
   fs.writeFileSync(modelFile, JSON.stringify(f));
 }
+*/
 
 function injectModelPackPaths(modelContent, paths) {
-  var f = JSON.parse(modelContent);
+  let f = JSON.parse(modelContent);
   f.animated_java.settings.resource_pack_mcmeta = paths[0];
   f.animated_java.exporter_settings[
     'animated_java:datapack_exporter'
