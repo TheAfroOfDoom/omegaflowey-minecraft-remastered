@@ -27,8 +27,8 @@ jobs:
 
       - name: Copy packs to world
         run: |
-          mkdir -p world/datapacks
-          cp -r datapacks world/datapacks
+          mkdir -p world
+          cp -r datapacks world
 
       - name: Run test server
         run: |
