@@ -17,9 +17,9 @@ if (typeof AnimatedJava === 'undefined') {
 const paths = getConfigPaths(
   'C:\\Users\\Aidan\\Documents\\Media_Storage\\active_projects\\flowey_remaster\\omega-flowey-minecraft-remastered\\scripts\\config.json',
 );
-const dir = paths[3].concat('/');
+const model_dir = paths.ajmodelPath.concat('/');
 console.log('Target paths: ', paths);
-const files = readdirSync(dir).filter((file) => file.includes('ajmodel'));
+const files = readdirSync(model_dir).filter((file) => file.includes('ajmodel'));
 const exportNextFile = () => {
   if (Project) {
     Project.close();
@@ -30,7 +30,7 @@ const exportNextFile = () => {
   }
   consoleLogJson({ file });
   if (file.includes('ajmodel')) {
-    const content = readFileSync(dir.concat(file), 'utf-8');
+    const content = readFileSync(model_dir.concat(file), 'utf-8');
     const name = file.split('/').pop();
     const fileObj = {
       path: file,
@@ -45,19 +45,19 @@ exportNextFile();
 
 function injectModelPackPaths(modelContent, paths) {
   const f = JSON.parse(modelContent);
-  f.animated_java.settings.resource_pack_mcmeta = paths[0];
+  f.animated_java.settings.resource_pack_mcmeta = paths.resourcePackPath;
   f.animated_java.exporter_settings[
     'animated_java:datapack_exporter'
-  ].datapack_mcmeta = paths[1];
+  ].datapack_mcmeta = paths.dataPackPath;
   for (const texture of f.textures) {
     texture.path = texture.path.replaceAll('\\', '/');
     if (texture.path.includes('.minecraft')) {
       const x = texture.path.split('assets')[1];
-      const newPath = `${paths[2]}/assets${x}`;
+      const newPath = `${paths.assetsPath}/assets${x}`;
       texture.path = newPath;
     } else if (texture.path.includes('resourcepack/assets')) {
       const x = texture.path.split('resourcepack/assets')[1];
-      const resourcePackBase = paths[0].split('resourcepack')[0];
+      const resourcePackBase = paths.resourcePackPath.split('resourcepack')[0];
       const newPath = `${resourcePackBase}resourcepack/assets${x}`;
       texture.path = newPath;
     }
@@ -71,5 +71,5 @@ function getConfigPaths(configFile) {
   const dataPackPath = f.datapack_mcmeta;
   const assetsPath = f.assets_path;
   const ajmodelPath = f.ajmodel_folder;
-  return [resourcePackPath, dataPackPath, assetsPath, ajmodelPath];
+  return { resourcePackPath, dataPackPath, assetsPath, ajmodelPath };
 }
