@@ -13,9 +13,7 @@
   ],
   "settings": {
     "datapack.env.dataVersion": "Latest snapshot",
-    "datapack.env.include": [
-      "./datapacks/**/*"
-    ],
+    "datapack.env.include": ["./datapacks/**/*"],
     "datapack.lint.blockStateBracketSpacing": {
       "inside": 1
     },
@@ -53,6 +51,9 @@
     },
     "terminal.integrated.defaultLocation": "editor",
     "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
   }
