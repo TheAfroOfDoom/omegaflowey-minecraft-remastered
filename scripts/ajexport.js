@@ -51,7 +51,6 @@ function injectModelPackPaths(modelContent, paths) {
   ].datapack_mcmeta = paths[1];
   for (const texture of f.textures) {
     texture.path = texture.path.replaceAll('\\', '/');
-    // TODO this should maybe be regex?
     if (texture.path.includes('.minecraft')) {
       const x = texture.path.split('assets')[1];
       const newPath = `${paths[2]}/assets${x}`;
