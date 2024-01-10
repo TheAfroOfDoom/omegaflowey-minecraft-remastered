@@ -2,8 +2,10 @@
 // https://discord.com/channels/314078526104141834/1189404550986211329/1189517519262855229
 
 /*
-global Project, fs, loadModelFile, AnimatedJava
+global Project, loadModelFile, AnimatedJava
 */
+
+const { readdirSync, readFileSync } = require('fs');
 
 const consoleLogJson = (args) => {
   console.log(JSON.stringify(args));
@@ -17,7 +19,7 @@ const paths = getConfigPaths(
 );
 const dir = paths[3].concat('/');
 console.log('Target paths: ', paths);
-const files = fs.readdirSync(dir).filter((file) => file.includes('ajmodel'));
+const files = readdirSync(dir).filter((file) => file.includes('ajmodel'));
 const exportNextFile = () => {
   if (Project) {
     Project.close();
@@ -28,7 +30,7 @@ const exportNextFile = () => {
   }
   consoleLogJson({ file });
   if (file.includes('ajmodel')) {
-    let content = fs.readFileSync(dir.concat(file), 'utf-8');
+    let content = readFileSync(dir.concat(file), 'utf-8');
     let name = file.split('/').pop();
     let fileObj = {
       path: file,
@@ -98,7 +100,7 @@ function injectModelPackPaths(modelContent, paths) {
 }
 
 function getConfigPaths(configFile) {
-  const f = JSON.parse(fs.readFileSync(configFile).toString());
+  const f = JSON.parse(readFileSync(configFile).toString());
   let resourcePackPath = f.resource_pack_mcmeta;
   let dataPackPath = f.datapack_mcmeta;
   let assetsPath = f.assets_path;
