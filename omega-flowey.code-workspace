@@ -38,9 +38,15 @@
       "consoleLogStorage": "tellraw @a [{\"text\": \"${1:storage}.${2:path}: \"}, {\"nbt\": \"${2:path}\", \"storage\": \"${1:storage}\"}]"
     },
     "datapack.trace.server": "messages",
+
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
+    "[json, jsonc]": {
+      // unclear why necessary
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
     "files.exclude": {
       "**/versions": true
     },
@@ -50,11 +56,5 @@
       "./versions": true
     },
     "terminal.integrated.defaultLocation": "editor",
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
   }
 }
