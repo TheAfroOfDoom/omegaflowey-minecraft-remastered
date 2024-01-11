@@ -8,7 +8,7 @@ BBPlugin.register('bb-cli', {
   title: 'Blockbench CLI',
   author: 'aiTan',
   icon: 'icon',
-  description: 'Blockbench CLI plugin (in testing)',
+  description: 'Blockbench CLI plugin',
   version: '1.0.0',
   variant: 'both',
   onload() {
