@@ -1,1 +1,1 @@
-function _:attack/finger-guns
+function _:attack/bomb
