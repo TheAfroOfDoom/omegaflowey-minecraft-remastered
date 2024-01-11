@@ -1,3 +1,4 @@
+function entity:hostile/omega-flowey/attack/bomb/reset_scores
 function entity:hostile/omega-flowey/attack/dentata-snakes/reset_scores
 function entity:hostile/omega-flowey/attack/finger-guns/reset_scores
 function entity:hostile/omega-flowey/attack/friendliness-pellets/reset_scores
