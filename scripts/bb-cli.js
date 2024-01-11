@@ -19,7 +19,6 @@ BBPlugin.register('bb-cli', {
       const scriptPath = argv[scriptIndicator + 1];
       console.log('Importing...', scriptPath);
       const script = import(scriptPath);
-      console.log(script);
       script
         .then(async (module) => {
           await new Promise((resolve) => setTimeout(resolve, 1000));
