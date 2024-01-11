@@ -1,30 +1,27 @@
 // With thanks to elenterius on discord for troubleshooting
 // https://discord.com/channels/314078526104141834/1189404550986211329/1189517519262855229
 
-/*
-global Project, loadModelFile, AnimatedJava
-*/
+/* global Project, loadModelFile, AnimatedJava */
 
 const { readdirSync, readFileSync } = require('fs');
 
-if (typeof AnimatedJava === 'undefined') {
-  throw new Error('Failed to load Animated Java plugin before CLI plugin');
-}
-const paths = getConfigPaths(
-  'C:\\Users\\Aidan\\Documents\\Media_Storage\\active_projects\\flowey_remaster\\omega-flowey-minecraft-remastered\\scripts\\config.json',
-);
-const modelDir = paths.ajmodelPath.concat('/');
-console.log('Target paths: ', paths);
-const files = readdirSync(modelDir).filter((file) => file.includes('ajmodel'));
-const exportNextFile = () => {
-  if (Project) {
-    Project.close();
+export async function script() {
+  if (typeof AnimatedJava === 'undefined') {
+    throw new Error('Failed to load Animated Java plugin before CLI plugin');
   }
-  const file = files.pop();
-  if (typeof file === 'undefined') {
-    return;
-  }
-  if (file.includes('ajmodel')) {
+  const paths = getConfigPaths(
+    'C:\\Users\\Aidan\\Documents\\Media_Storage\\active_projects\\flowey_remaster\\omega-flowey-minecraft-remastered\\scripts\\config.json',
+  );
+  const modelDir = paths.ajmodelPath.concat('/');
+  console.log('Target paths: ', paths);
+  const files = readdirSync(modelDir).filter((file) =>
+    file.includes('ajmodel'),
+  );
+
+  for (const file of files) {
+    if (Project) {
+      Project.close();
+    }
     const content = readFileSync(modelDir.concat(file), 'utf-8');
     const name = file.split('/').pop();
     const fileObj = {
@@ -33,10 +30,9 @@ const exportNextFile = () => {
       name: name,
     };
     loadModelFile(fileObj);
-    AnimatedJava.API.safeExportProject(exportNextFile);
+    await AnimatedJava.API.safeExportProject();
   }
-};
-exportNextFile();
+}
 
 function injectModelPackPaths(modelContent, paths) {
   const model = JSON.parse(modelContent);

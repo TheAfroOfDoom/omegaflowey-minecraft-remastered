@@ -42,10 +42,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
-    "[json, jsonc]": {
-      // unclear why necessary
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
 
     "files.exclude": {
       "**/versions": true
@@ -55,6 +51,7 @@
       "./minecraft/**": true,
       "./versions": true
     },
+
     "terminal.integrated.defaultLocation": "editor"
   }
 }
