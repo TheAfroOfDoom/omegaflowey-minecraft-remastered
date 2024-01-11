@@ -7,7 +7,6 @@ global Project, loadModelFile, AnimatedJava
 
 const { readdirSync, readFileSync } = require('fs');
 
-
 if (typeof AnimatedJava === 'undefined') {
   throw new Error('Failed to load Animated Java plugin before CLI plugin');
 }
