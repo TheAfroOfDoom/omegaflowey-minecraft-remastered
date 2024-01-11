@@ -17,9 +17,9 @@ if (typeof AnimatedJava === 'undefined') {
 const paths = getConfigPaths(
   'C:\\Users\\Aidan\\Documents\\Media_Storage\\active_projects\\flowey_remaster\\omega-flowey-minecraft-remastered\\scripts\\config.json',
 );
-const model_dir = paths.ajmodelPath.concat('/');
+const modelDir = paths.ajmodelPath.concat('/');
 console.log('Target paths: ', paths);
-const files = readdirSync(model_dir).filter((file) => file.includes('ajmodel'));
+const files = readdirSync(modelDir).filter((file) => file.includes('ajmodel'));
 const exportNextFile = () => {
   if (Project) {
     Project.close();
@@ -30,7 +30,7 @@ const exportNextFile = () => {
   }
   consoleLogJson({ file });
   if (file.includes('ajmodel')) {
-    const content = readFileSync(model_dir.concat(file), 'utf-8');
+    const content = readFileSync(modelDir.concat(file), 'utf-8');
     const name = file.split('/').pop();
     const fileObj = {
       path: file,
