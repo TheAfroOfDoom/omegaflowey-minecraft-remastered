@@ -1,0 +1,2 @@
+function animated_java:bomb/zzzzzzzz/animations/summon/pause_as_root
+function animated_java:bomb/zzzzzzzz/animations/explode/pause_as_root

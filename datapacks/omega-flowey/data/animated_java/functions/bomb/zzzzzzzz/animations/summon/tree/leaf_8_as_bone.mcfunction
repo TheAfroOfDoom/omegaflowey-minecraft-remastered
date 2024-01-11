@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.bomb.bone.bomb] run data modify entity @s {} merge value {transformation:[-2f,0f,2.4492935982947064e-16f,-0.049999999999999996f,0f,2f,0f,-3.1f,-2.4492935982947064e-16f,0f,-2f,-0.05000000000000001f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.bomb.bone.fire] run data modify entity @s {} merge value {transformation:[-1.6f,0f,1.9594348786357652e-16f,0f,0f,1.6f,0f,0f,-1.9594348786357652e-16f,0f,-1.6f,0f,0f,0f,0f,1f],start_interpolation:0}

@@ -506,7 +506,7 @@
 			"predicate": {
 				"custom_model_data": 84
 			},
-			"model": "animated_java:item/bomb/bone"
+			"model": "animated_java:item/bomb/bomb"
 		},
 		{
 			"predicate": {
@@ -639,6 +639,24 @@
 				"custom_model_data": 106
 			},
 			"model": "animated_java:item/finger_gun/cocked/flame"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 107
+			},
+			"model": "animated_java:item/bomb/fire"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 108
+			},
+			"model": "animated_java:item/bomb/explode/bomb"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 109
+			},
+			"model": "animated_java:item/bomb/explode/fire"
 		}
 	],
 	"animated_java": {
@@ -751,7 +769,10 @@
 			},
 			"bomb": {
 				"used_ids": [
-					84
+					84,
+					107,
+					108,
+					109
 				]
 			},
 			"finger_gun": {
