@@ -27,7 +27,6 @@ BBPlugin.register('bb-cli', {
         })
         .catch((err) => {
           console.log(err);
-          //window.close();
         });
     }
   },
