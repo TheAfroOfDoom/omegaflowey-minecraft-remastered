@@ -13,10 +13,10 @@ BBPlugin.register('bb-cli', {
   variant: 'both',
   onload() {
     console.log('BB-CLI loading...');
-    let [...ARGV] = electron.getGlobal('process').argv;
-    let scriptIndicator = ARGV.indexOf('--bb-cli');
+    let [...argv] = electron.getGlobal('process').argv;
+    let scriptIndicator = argv.indexOf('--bb-cli');
     if (scriptIndicator !== -1) {
-      const scriptPath = ARGV[scriptIndicator + 1];
+      const scriptPath = argv[scriptIndicator + 1];
       console.log('Importing...', scriptPath);
       const script = import(scriptPath);
       console.log(script);
