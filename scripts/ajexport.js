@@ -44,12 +44,12 @@ const exportNextFile = () => {
 exportNextFile();
 
 function injectModelPackPaths(modelContent, paths) {
-  const f = JSON.parse(modelContent);
-  f.animated_java.settings.resource_pack_mcmeta = paths.resourcePackPath;
-  f.animated_java.exporter_settings[
+  const model = JSON.parse(modelContent);
+  model.animated_java.settings.resource_pack_mcmeta = paths.resourcePackPath;
+  model.animated_java.exporter_settings[
     'animated_java:datapack_exporter'
   ].datapack_mcmeta = paths.dataPackPath;
-  for (const texture of f.textures) {
+  for (const texture of model.textures) {
     texture.path = texture.path.replaceAll('\\', '/');
     if (texture.path.includes('.minecraft')) {
       const x = texture.path.split('assets')[1];
@@ -62,7 +62,7 @@ function injectModelPackPaths(modelContent, paths) {
       texture.path = newPath;
     }
   }
-  return JSON.stringify(f);
+  return JSON.stringify(model);
 }
 
 function getConfigPaths(configFile) {
