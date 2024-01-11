@@ -9,7 +9,6 @@ export async function script() {
   if (typeof AnimatedJava === 'undefined') {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
   }
-  console.log(process.cwd());
   const paths = getConfigPaths('./package-scripts/modules/config.json');
   const modelDir = paths.ajmodelPath.concat('/');
   console.log('Target paths: ', paths);
