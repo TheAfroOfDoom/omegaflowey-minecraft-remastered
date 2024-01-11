@@ -7,9 +7,6 @@ global Project, loadModelFile, AnimatedJava
 
 const { readdirSync, readFileSync } = require('fs');
 
-const consoleLogJson = (args) => {
-  console.log(JSON.stringify(args));
-};
 
 if (typeof AnimatedJava === 'undefined') {
   throw new Error('Failed to load Animated Java plugin before CLI plugin');
@@ -28,7 +25,6 @@ const exportNextFile = () => {
   if (typeof file === 'undefined') {
     return;
   }
-  consoleLogJson({ file });
   if (file.includes('ajmodel')) {
     const content = readFileSync(modelDir.concat(file), 'utf-8');
     const name = file.split('/').pop();
