@@ -1,8 +1,8 @@
 // With thanks to fetchbot on discord for the code
 
-/*
-global BBPlugin, electron, window
-*/
+/* eslint-env browser */
+/* global BBPlugin, electron */
+
 
 BBPlugin.register('bb-cli', {
   title: 'Blockbench CLI',
