@@ -4,7 +4,6 @@
 /* eslint-env browser */
 /* global BBPlugin, electron */
 
-
 BBPlugin.register('bb-cli', {
   title: 'Blockbench CLI',
   author: 'aiTan',
