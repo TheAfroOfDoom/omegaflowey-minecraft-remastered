@@ -9,9 +9,8 @@ export async function script() {
   if (typeof AnimatedJava === 'undefined') {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
   }
-  const paths = getConfigPaths(
-    'C:\\Users\\Aidan\\Documents\\Media_Storage\\active_projects\\flowey_remaster\\omega-flowey-minecraft-remastered\\scripts\\config.json',
-  );
+  console.log(process.cwd());
+  const paths = getConfigPaths('./package-scripts/modules/config.json');
   const modelDir = paths.ajmodelPath.concat('/');
   console.log('Target paths: ', paths);
   const files = readdirSync(modelDir).filter((file) =>
