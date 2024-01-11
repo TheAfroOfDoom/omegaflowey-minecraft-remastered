@@ -66,10 +66,10 @@ function injectModelPackPaths(modelContent, paths) {
 }
 
 function getConfigPaths(configFile) {
-  const f = JSON.parse(readFileSync(configFile).toString());
-  const resourcePackPath = f.resource_pack_mcmeta;
-  const dataPackPath = f.datapack_mcmeta;
-  const assetsPath = f.assets_path;
-  const ajmodelPath = f.ajmodel_folder;
+  const config = JSON.parse(readFileSync(configFile), 'utf-8');
+  const resourcePackPath = config.resource_pack_mcmeta;
+  const dataPackPath = config.datapack_mcmeta;
+  const assetsPath = config.assets_path;
+  const ajmodelPath = config.ajmodel_folder;
   return { resourcePackPath, dataPackPath, assetsPath, ajmodelPath };
 }
