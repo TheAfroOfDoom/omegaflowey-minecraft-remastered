@@ -25,7 +25,7 @@ export async function script() {
     const fileObj = {
       path: file,
       content: injectModelPackPaths(content, paths),
-      name: name,
+      name,
     };
     loadModelFile(fileObj);
     await AnimatedJava.API.safeExportProject();
