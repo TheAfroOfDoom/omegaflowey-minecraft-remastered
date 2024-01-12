@@ -26,6 +26,7 @@ BBPlugin.register('bb-cli', {
           window.close();
         })
         .catch((err) => {
+          // consider a finally block that closes window in future and logs if error
           console.log(err);
         });
     }
