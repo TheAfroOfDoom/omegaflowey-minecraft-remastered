@@ -13,7 +13,7 @@ export async function script() {
   const modelDir = paths.ajmodelPath.concat('/');
   console.log('Target paths: ', paths);
   const files = readdirSync(modelDir).filter((file) =>
-    file.includes('ajmodel'),
+    file.endsWith('.ajmodel'),
   );
 
   for (const file of files) {
