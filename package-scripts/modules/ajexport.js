@@ -12,7 +12,7 @@ export async function script() {
   const paths = getConfigPaths('./package-scripts/modules/config.json');
   const modelDir = paths.ajmodelPath.concat('/');
   console.log('Target paths: ', paths);
-  const files = readdirSync(modelDir).filter((file) =>
+  const files = readdirSync(modelDir, { recursive: true }).filter((file) =>
     file.endsWith('.ajmodel'),
   );
 
