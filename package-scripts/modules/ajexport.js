@@ -9,8 +9,8 @@ export async function script() {
   if (typeof AnimatedJava === 'undefined') {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
   }
-  const paths = getConfigPaths('./package-scripts/modules/config.json');
-  const modelDir = paths.ajmodelPath.concat('/');
+  const paths = parseConfigPaths('./package-scripts/modules/config.json');
+  const modelDir = paths.ajmodelDir.concat('/');
   console.log('Target paths: ', paths);
   const files = readdirSync(modelDir, { recursive: true }).filter((file) =>
     file.endsWith('.ajmodel'),
@@ -34,10 +34,10 @@ export async function script() {
 
 function injectModelPackPaths(modelContent, paths) {
   const model = JSON.parse(modelContent);
-  model.animated_java.settings.resource_pack_mcmeta = paths.resourcePackPath;
+  model.animated_java.settings.resource_pack_mcmeta = paths.resourcepack;
   model.animated_java.exporter_settings[
     'animated_java:datapack_exporter'
-  ].datapack_mcmeta = paths.dataPackPath;
+  ].datapack_mcmeta = paths.datapack;
   for (const texture of model.textures) {
     texture.path = texture.path.replaceAll('\\', '/');
     if (texture.path.includes('.minecraft')) {
@@ -46,19 +46,21 @@ function injectModelPackPaths(modelContent, paths) {
       texture.path = newPath;
     } else if (texture.path.includes('resourcepack/assets')) {
       const relativePath = texture.path.split('resourcepack/assets')[1];
-      const resourcePackBase = paths.resourcePackPath.split('resourcepack')[0];
-      const newPath = `${resourcePackBase}resourcepack/assets${relativePath}`;
+      const resourcepackBase = paths.resourcepack.split('resourcepack')[0];
+      const newPath = `${resourcepackBase}resourcepack/assets${relativePath}`;
       texture.path = newPath;
     }
   }
   return JSON.stringify(model);
 }
 
-function getConfigPaths(configFile) {
+function parseConfigPaths(configFile) {
   const config = JSON.parse(readFileSync(configFile), 'utf-8');
-  const resourcePackPath = config.resourcePackMCMeta;
-  const dataPackPath = config.datapackMCMeta;
-  const assetsPath = config.assetsPath;
-  const ajmodelPath = config.ajmodelPath;
-  return { resourcePackPath, dataPackPath, assetsPath, ajmodelPath };
+  const {
+    ajmodelDir,
+    assetsDir,
+    datapackMcmeta: datapack,
+    resourcepackMcmeta: resourcepack,
+  } = config;
+  return { ajmodelDir, assetsDir, datapack, resourcepack };
 }
