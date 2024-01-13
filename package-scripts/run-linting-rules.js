@@ -1,4 +1,5 @@
 const chalk = require('chalk');
+const { lstatSync } = require('fs');
 const { globSync } = require('glob');
 const minimist = require('minimist');
 
@@ -14,7 +15,8 @@ const main = () => {
   }
 
   let errorCount = 0;
-  const files = globSync(argv.glob);
+  const paths = globSync(argv.glob);
+  const files = paths.filter((path) => lstatSync(path).isFile());
 
   for (const file of files) {
     const errors = [];
