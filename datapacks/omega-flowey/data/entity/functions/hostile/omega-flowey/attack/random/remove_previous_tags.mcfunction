@@ -1,3 +1,4 @@
+tag @s remove attack.random.previous_attack.bomb
 tag @s remove attack.random.previous_attack.dentata-snakes
 tag @s remove attack.random.previous_attack.finger-guns
 tag @s remove attack.random.previous_attack.friendliness-pellets
