@@ -3,7 +3,7 @@
 scoreboard players set @s boss-fight.attack.clock.total 503
 
 # Play music
-playsound omega-flowey:music.phase.1 record @a ~ ~ ~ 10 1
+playsound omega-flowey:music.phase.0 record @a ~ ~ ~ 10 1
 
 ## Add tags
 # Use logic to decrease chance of repeating attacks during `attack/random`
