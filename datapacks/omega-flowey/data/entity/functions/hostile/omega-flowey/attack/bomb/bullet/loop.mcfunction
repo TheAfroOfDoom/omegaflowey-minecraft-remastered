@@ -3,6 +3,7 @@ scoreboard players add @s attack.clock.i 1
 # this is a rect volume, size is 18x(28+36)x18
 # y-bound is -28 to +36
 data merge storage utils:damage { damage: 2, radius: 1.8 }
+execute positioned ~ ~-4 ~ run function entity:utils/damage with storage utils:damage
 execute positioned ~ ~-2 ~ run function entity:utils/damage with storage utils:damage
 execute positioned ~ ~ ~ run function entity:utils/damage with storage utils:damage
 execute positioned ~ ~2 ~ run function entity:utils/damage with storage utils:damage
