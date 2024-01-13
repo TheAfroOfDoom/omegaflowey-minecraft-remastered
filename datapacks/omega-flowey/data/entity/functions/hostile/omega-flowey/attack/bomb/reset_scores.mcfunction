@@ -2,3 +2,4 @@
 # TODO(): validate these attack parameters
 scoreboard players set #attack-bomb attack.executor.clock.length 54
 scoreboard players set #attack-bomb attack.executor.rate 6
+scoreboard players set #attack-bomb attack.indicator.clock.length 2
