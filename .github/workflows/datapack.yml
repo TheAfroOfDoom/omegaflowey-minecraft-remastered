@@ -7,10 +7,28 @@ env:
   FABRIC_SERVER: https://meta.fabricmc.net/v2/versions/loader/1.20.4/0.15.3/0.11.2/server/jar
   PACKTEST: https://cdn.modrinth.com/data/XsKUhp45/versions/Gq3rUEy6/packtest-1.3-mc1.20.4.jar
 
-# TODO(37): add linting
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Yarn 3.6.3
+        run: corepack enable
+      - name: Setup cache
+        uses: actions/setup-node@v4
+        with:
+          cache: 'yarn'
+          cache-dependency-path: yarn.lock
+          node-version-file: package.json
+      - run: yarn
+      - name: Run lint scripts on datapacks
+        run: yarn start lint.custom.datapacks
+        env:
+          FORCE_COLOR: 2
+
   test:
     runs-on: ubuntu-latest
+    needs: lint
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4

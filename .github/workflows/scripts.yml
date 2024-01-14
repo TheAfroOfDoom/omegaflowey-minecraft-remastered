@@ -35,3 +35,5 @@ jobs:
       - run: yarn
       - name: Run ESLint
         run: yarn start lint.scripts.eslint.check
+      - name: Run custom lint scripts on non-datapacks, non-resourcepack files
+        run: yarn start lint.custom.other
