@@ -37,3 +37,5 @@ jobs:
         run: yarn start lint.scripts.eslint.check
       - name: Run custom lint scripts on non-datapacks, non-resourcepack files
         run: yarn start lint.custom.other
+        env:
+          FORCE_COLOR: 2

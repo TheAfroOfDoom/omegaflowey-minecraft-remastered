@@ -35,19 +35,16 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-
       - name: Download server files
         run: |
           curl -o server.jar $FABRIC_SERVER
           mkdir mods
           curl -o mods/fabric-api.jar $FABRIC_API
           curl -o mods/packtest.jar $PACKTEST
-
       - name: Copy packs to world
         run: |
           mkdir -p world
           cp -r datapacks world
-
       - name: Run test server
         run: |
           java -Xmx2G -Dpacktest.auto -jar server.jar nogui

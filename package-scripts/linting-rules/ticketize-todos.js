@@ -31,9 +31,10 @@ const ticketizeTodos = (file) => {
         const expectedTodoFormat = chalk.blueBright('TODO(<ticket>):');
         const formattedLineNumber = chalk.bold(`line ${lineNumber}`);
         const formattedFullLine = chalk.red(line);
+        const formattedTodo = chalk.yellow(todo);
 
         let error = `invalid TODO format on ${formattedLineNumber}:`;
-        error += `'${todo}'. TODOs must be of the form ${expectedTodoFormat}`;
+        error += ` '${formattedTodo}'. TODOs must be of the form ${expectedTodoFormat}`;
         error += `\n\t\t full line: ${formattedFullLine}`;
 
         errors.push(error);
