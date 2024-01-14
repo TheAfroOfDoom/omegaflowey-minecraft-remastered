@@ -72,7 +72,7 @@ module.exports = {
           fix: 'prettier --write .',
         },
       },
-      resourcepack: `node ./package-scripts/run-linting-rules --glob "${resourcepackGlob}"`,
+        resourcepack: `node ./package-scripts/run-linting-rules --include "${resourcepackGlob}"`,
     },
   },
 };

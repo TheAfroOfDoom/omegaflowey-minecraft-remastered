@@ -10,12 +10,15 @@ const rules = globSync('./package-scripts/linting-rules/*.js').map((rulePath) =>
 );
 
 const main = () => {
-  if (typeof argv.glob === 'undefined') {
-    throw new Error('No glob provided for files to run linting rules on');
+  const { include } = argv;
+  if (typeof include === 'undefined') {
+    throw new Error(
+      'No include glob provided for files to run linting rules on',
+    );
   }
 
   let errorCount = 0;
-  const paths = globSync(argv.glob);
+  const paths = globSync(include);
   const files = paths.filter((path) => lstatSync(path).isFile());
 
   for (const file of files) {
@@ -39,9 +42,11 @@ const main = () => {
   }
 
   if (errorCount === 0) {
-    console.log(
-      chalk.greenBright(`No linting errors found for glob '${argv.glob}'!`),
+    const pattern = `--include ${include}`;
+    const success = chalk.greenBright(
+      `No linting errors found for pattern: '${pattern}'!`,
     );
+    console.log(success);
   }
   process.exit(errorCount);
 };
