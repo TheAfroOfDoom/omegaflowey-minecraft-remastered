@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:bomb/zzzzzzzz/animations/explode/tree/leaf_10_as_bone

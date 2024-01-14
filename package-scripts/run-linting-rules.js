@@ -1,4 +1,5 @@
 const chalk = require('chalk');
+const { lstatSync } = require('fs');
 const { globSync } = require('glob');
 const minimist = require('minimist');
 
@@ -9,12 +10,17 @@ const rules = globSync('./package-scripts/linting-rules/*.js').map((rulePath) =>
 );
 
 const main = () => {
-  if (typeof argv.glob === 'undefined') {
-    throw new Error('No glob provided for files to run linting rules on');
+  const { exclude, include } = argv;
+  if (typeof include === 'undefined') {
+    throw new Error(
+      'No include glob provided for files to run linting rules on',
+    );
   }
 
   let errorCount = 0;
-  const files = globSync(argv.glob);
+  const excludePatterns = exclude?.split(',') ?? [];
+  const paths = globSync(include, { ignore: excludePatterns });
+  const files = paths.filter((path) => lstatSync(path).isFile());
 
   for (const file of files) {
     const errors = [];
@@ -37,9 +43,14 @@ const main = () => {
   }
 
   if (errorCount === 0) {
-    console.log(
-      chalk.greenBright(`No linting errors found for glob '${argv.glob}'!`),
+    let pattern = `--include ${include}`;
+    if (typeof exclude !== 'undefined') {
+      pattern += ` --exclude ${exclude}`;
+    }
+    const success = chalk.greenBright(
+      `No linting errors found for pattern: '${pattern}'!`,
     );
+    console.log(success);
   }
   process.exit(errorCount);
 };

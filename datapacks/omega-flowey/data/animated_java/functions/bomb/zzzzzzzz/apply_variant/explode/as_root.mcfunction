@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:bomb/zzzzzzzz/apply_variant/explode/as_bone

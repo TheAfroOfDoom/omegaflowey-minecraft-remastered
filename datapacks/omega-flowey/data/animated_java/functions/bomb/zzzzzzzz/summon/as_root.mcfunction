@@ -6,9 +6,14 @@ scoreboard players set @s aj.bomb.rig_loaded 1
 scoreboard players operation @s aj.bomb.export_version = aj.bomb.export_version aj.i
 execute store result score @s aj.id run scoreboard players add .aj.last_id aj.id 1
 tp @s ~ ~ ~ ~ ~
-execute at @s run function animated_java:bomb/zzzzzzzz/summon/as_rig_entities
+execute at @s on passengers run function animated_java:bomb/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.bomb.variant.default aj.id run function animated_java:bomb/zzzzzzzz/apply_variant/default/as_root
+execute if score #variant aj.i = $aj.bomb.variant.explode aj.id run function animated_java:bomb/zzzzzzzz/apply_variant/explode/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.bomb.animation.summon aj.id run function animated_java:bomb/zzzzzzzz/animations/summon/apply_frame_as_root
+execute if score #animation aj.i = $aj.bomb.animation.summon aj.id run scoreboard players operation @s aj.bomb.animation.summon.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.bomb.animation.explode aj.id run function animated_java:bomb/zzzzzzzz/animations/explode/apply_frame_as_root
+execute if score #animation aj.i = $aj.bomb.animation.explode aj.id run scoreboard players operation @s aj.bomb.animation.explode.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:bomb/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

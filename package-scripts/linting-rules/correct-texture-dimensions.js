@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 const sizeOf = require('image-size');
 
 const name = 'correct-image-dimensions';
@@ -18,11 +19,14 @@ const correctTextureDimensions = (file) => {
 
   const { width, height } = sizeOf(file);
 
+  const errorTemplate = (dimension, actualValue) =>
+    `image ${dimension} must be divisible by 16 (was ${actualValue})`;
+
   if (width % 16 !== 0) {
-    errors.push(`image width must be divisible by 16 (was ${width})`);
+    errors.push(errorTemplate('width', chalk.brightYellow(width)));
   }
   if (height % 16 !== 0) {
-    errors.push(`image height must be divisible by 16 (was ${height})`);
+    errors.push(errorTemplate('height', chalk.brightYellow(height)));
   }
 
   return errors;

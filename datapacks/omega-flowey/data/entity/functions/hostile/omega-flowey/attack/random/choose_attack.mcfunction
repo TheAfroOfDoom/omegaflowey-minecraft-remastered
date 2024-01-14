@@ -4,6 +4,10 @@
 # = = = #
 # if random < 0, attack has been ran already
 
+scoreboard players operation @s math.0 -= #attack-bomb attack.weight
+execute if score #attack-bomb attack.weight matches 1.. if score @s math.0 matches ..0 run function entity:hostile/omega-flowey/attack/random/choose_attack/bomb
+execute if score #attack-bomb attack.weight matches 1.. if score @s math.0 matches ..0 run return 0
+
 scoreboard players operation @s math.0 -= #attack-dentata-snakes attack.weight
 execute if score #attack-dentata-snakes attack.weight matches 1.. if score @s math.0 matches ..0 run function entity:hostile/omega-flowey/attack/random/choose_attack/dentata-snakes
 execute if score #attack-dentata-snakes attack.weight matches 1.. if score @s math.0 matches ..0 run return 0

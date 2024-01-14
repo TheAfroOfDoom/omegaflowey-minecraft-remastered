@@ -49,18 +49,15 @@ module.exports = {
       resourcepacks: `yarn rimraf --glob ${minecraftResourcePackPath}/**/*`,
     },
     lint: {
-      default: 'nps lint.resourcepack lint.scripts',
+      default: 'nps lint.custom.resourcepack lint.scripts',
       fix: 'nps lint.scripts.fix',
       scripts: {
         default: 'nps lint.scripts.check',
-        check: series(
-          'nps lint.scripts.prettier.check',
-          'nps lint.scripts.eslint.check',
+        check: series.nps(
+          'lint.scripts.prettier.check',
+          'lint.scripts.eslint.check',
         ),
-        fix: series(
-          'nps lint.scripts.prettier.fix',
-          'nps lint.scripts.eslint.fix',
-        ),
+        fix: series.nps('lint.scripts.prettier.fix', 'lint.scripts.eslint.fix'),
         eslint: {
           default: 'nps lint.scripts.eslint.check',
           check: 'eslint .',
@@ -72,7 +69,17 @@ module.exports = {
           fix: 'prettier --write .',
         },
       },
-      resourcepack: `node ./package-scripts/run-linting-rules --glob "${resourcepackGlob}"`,
+      custom: {
+        default: 'nps lint.custom.all',
+        all: series.nps(
+          'lint.custom.datapacks',
+          'lint.custom.resourcepack',
+          'lint.custom.other',
+        ),
+        datapacks: `node ./package-scripts/run-linting-rules --include "${datapacksGlob}"`,
+        resourcepack: `node ./package-scripts/run-linting-rules --include "${resourcepackGlob}"`,
+        other: `node ./package-scripts/run-linting-rules --include "**/*" --exclude "${resourcepackGlob},${datapacksGlob}"`,
+      },
     },
   },
 };

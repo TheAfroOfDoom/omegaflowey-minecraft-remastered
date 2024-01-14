@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.bomb.animation.summon] run function animated_java:bomb/zzzzzzzz/animations/summon/tick
+execute if entity @s[tag=aj.bomb.animation.explode] run function animated_java:bomb/zzzzzzzz/animations/explode/tick
