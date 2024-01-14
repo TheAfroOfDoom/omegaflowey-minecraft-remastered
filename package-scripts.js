@@ -53,14 +53,11 @@ module.exports = {
       fix: 'nps lint.scripts.fix',
       scripts: {
         default: 'nps lint.scripts.check',
-        check: series(
-          'nps lint.scripts.prettier.check',
-          'nps lint.scripts.eslint.check',
+        check: series.nps(
+          'lint.scripts.prettier.check',
+          'lint.scripts.eslint.check',
         ),
-        fix: series(
-          'nps lint.scripts.prettier.fix',
-          'nps lint.scripts.eslint.fix',
-        ),
+        fix: series.nps('lint.scripts.prettier.fix', 'lint.scripts.eslint.fix'),
         eslint: {
           default: 'nps lint.scripts.eslint.check',
           check: 'eslint .',
