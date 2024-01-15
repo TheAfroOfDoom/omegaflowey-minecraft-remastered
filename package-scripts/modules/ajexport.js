@@ -3,7 +3,7 @@
 
 /* global Project, loadModelFile, AnimatedJava */
 
-const { readdirSync, readFileSync } = require('fs');
+const { existsSync, readdirSync, readFileSync, writeFileSync } = require('fs');
 const { resolve } = require('path');
 
 export async function script() {
@@ -17,18 +17,41 @@ export async function script() {
     file.endsWith('.ajmodel'),
   );
 
+  const lastExportedPath = `${paths.ajmodelDir}/last_exported_hashes.json`;
+  const lastExported = existsSync(lastExportedPath)
+    ? JSON.parse(readFileSync(lastExportedPath, 'utf8'))
+    : {};
+
   for (const file of files) {
     const content = readFileSync(file, 'utf-8');
     const name = file.split('/').pop();
+
+    // Only export project if hash of model file is different than that found
+    // in `last_exported_hashes.json`
+    const model = JSON.parse(content);
+    const { uuid } = model.meta;
+    const currentHash = await hash(content);
+    if (lastExported[uuid]?.hash === currentHash) {
+      continue;
+    }
+
+    const injectedModel = injectModelPackPaths(content, paths);
     const fileObj = {
       path: file,
-      content: injectModelPackPaths(content, paths),
+      content: injectedModel,
       name,
     };
     loadModelFile(fileObj);
     await AnimatedJava.API.safeExportProject();
+    lastExported[uuid] = {
+      hash: currentHash,
+      name: model.animated_java.settings.project_namespace,
+    };
     Project.close();
   }
+
+  // Update `last_exported_hashes.json`
+  writeFileSync(lastExportedPath, JSON.stringify(lastExported, undefined, 2));
 }
 
 /**
@@ -44,6 +67,20 @@ async function getFiles(dir) {
     }),
   );
   return Array.prototype.concat(...files);
+}
+
+/**
+ * Generates a hash of an input
+ * https://stackoverflow.com/a/57385857/13789724
+ */
+async function hash(m) {
+  const msgUint8 = new TextEncoder().encode(m);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('');
+  return hashHex;
 }
 
 function injectModelPackPaths(modelContent, paths) {
