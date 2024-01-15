@@ -13,12 +13,12 @@ export async function script() {
   const paths = parseConfigPaths('./package-scripts/modules/config.json');
   const modelDir = paths.ajmodelDir.concat('/');
   console.log('Target paths: ', paths);
-  const files = readdirSync(modelDir).filter((file) =>
+  const files = (await getFiles(modelDir)).filter((file) =>
     file.endsWith('.ajmodel'),
   );
 
   for (const file of files) {
-    const content = readFileSync(modelDir.concat(file), 'utf-8');
+    const content = readFileSync(file, 'utf-8');
     const name = file.split('/').pop();
     const fileObj = {
       path: file,
