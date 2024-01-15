@@ -1,8 +1,8 @@
 # Set scores
 scoreboard players set @s attack.clock.i -1
-scoreboard players operation @s attack.clock.i -= #attack-finger-guns attack.indicator.clock.delay
+scoreboard players operation @s attack.clock.i -= #attack-flies attack.indicator.clock.delay
 
-scoreboard players operation @s attack.indicator.clock.length = #attack-finger-guns attack.indicator.clock.length
+scoreboard players operation @s attack.indicator.clock.length = #attack-flies attack.indicator.clock.length
 
 # Set group ID
 function entity:group/set
