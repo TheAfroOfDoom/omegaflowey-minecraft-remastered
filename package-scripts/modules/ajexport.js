@@ -49,8 +49,9 @@ export async function script() {
     loadModelFile(fileObj);
     await AnimatedJava.API.safeExportProject();
     lastExported[uuid] = {
-      hash: currentHash,
       name: model.animated_java.settings.project_namespace,
+      hash: currentHash,
+      date: new Date().toISOString(),
     };
     Project.close();
   }
