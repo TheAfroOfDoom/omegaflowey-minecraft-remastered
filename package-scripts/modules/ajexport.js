@@ -17,9 +17,6 @@ export async function script() {
   );
 
   for (const file of files) {
-    if (Project) {
-      Project.close();
-    }
     const content = readFileSync(modelDir.concat(file), 'utf-8');
     const name = file.split('/').pop();
     const fileObj = {
@@ -29,6 +26,7 @@ export async function script() {
     };
     loadModelFile(fileObj);
     await AnimatedJava.API.safeExportProject();
+    Project.close();
   }
 }
 
