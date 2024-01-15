@@ -18,18 +18,28 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 3. Initialize the repo by running `yarn`
 4. Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
 
-#### Recommended Tools
+#### Required Tools
+
+1. [Blockbench](https://www.blockbench.net/downloads) -- for 3D modelling
+   1. Install our Blockbench CLI plugin:
+      1. Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `bb-cli.js` file from your local `omega-flowey-remastered` repo (`omega-flowey-remastered/package-scripts/modules/bb-cli.js`).
+   2. Build and install our custom fork of Animated Java:
+      1. Clone the repository to your local machine: https://github.com/aidant19/animated-java/
+      2. Run `yarn install` to install dependencies
+      3. Run `yarn build:prod` to generate the `animated-java.js` in the `dist` directory
+      4. Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `animated_java.js` file from your local `animated-java` repo (`animated-java/dist/animated-java.js`)
+
+#### Recommended Tools (Optional)
 
 <!-- TODO(8): update this README with installation steps for the custom plugins when they are done -->
 
 Install the following apps:
 
-1. [Blockbench](https://www.blockbench.net/downloads) -- for 3D modelling
-   1. In Blockbench, go to `File > Plugins` and install `Animated Java`
-   2. Tip: use [blockcolors.app](https://blockcolors.app/) to get a representative vanilla block texture for a desired color
-2. [paint.net](https://www.getpaint.net/download.html) -- for image editing
-3. [ScreenToGif](https://www.screentogif.com/) -- lightweight GIF recorder
-4. [DaVinci Resolve](https://www.blackmagicdesign.com/event/davinciresolvedownload) -- for video editing / frame-by-frame video analysis (of the original fight in Undertale)
+1. [paint.net](https://www.getpaint.net/download.html) -- for image editing
+2. [ScreenToGif](https://www.screentogif.com/) -- lightweight GIF recorder
+3. [DaVinci Resolve](https://www.blackmagicdesign.com/event/davinciresolvedownload) -- for video editing / frame-by-frame video analysis (of the original fight in Undertale)
+
+We also recommend using [blockcolors.app](https://blockcolors.app/) to get a representative vanilla block texture for a desired color while texturing models.
 
 #### Testing
 
