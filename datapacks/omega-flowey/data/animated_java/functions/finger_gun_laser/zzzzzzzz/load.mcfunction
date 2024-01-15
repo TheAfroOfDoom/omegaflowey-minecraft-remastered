@@ -10,6 +10,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.finger_gun_laser.export_version aj.i -1321270361
+scoreboard players set aj.finger_gun_laser.export_version aj.i 955761690
 scoreboard players reset * aj.finger_gun_laser.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.finger_gun_laser.root] run function animated_java:finger_gun_laser/zzzzzzzz/on_load
