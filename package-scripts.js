@@ -1,4 +1,6 @@
 const { concurrent, series } = require('nps-utils');
+const { resolve } = require('path');
+
 const {
   datapacksGlob,
   resourcepackGlob,
@@ -10,6 +12,10 @@ const resourcePackName = 'omega-flowey-remastered-resourcepack';
 
 const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 const minecraftResourcePackPath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
+
+const blockbenchPath =
+  'C:/Users/afro/AppData/Local/Programs/Blockbench/Blockbench.exe';
+const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
 
 const watchExcludeFilter = './package-scripts/watch-filter';
 
@@ -81,5 +87,6 @@ module.exports = {
         other: `node ./package-scripts/run-linting-rules --include "**/*" --exclude "${resourcepackGlob},${datapacksGlob}"`,
       },
     },
+    export: `${blockbenchPath} --bb-cli "${ajexportScriptPath}"`,
   },
 };
