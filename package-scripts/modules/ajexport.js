@@ -69,7 +69,25 @@ function injectModelPackPaths(modelContent, paths) {
   return JSON.stringify(model);
 }
 
+function assertEnvironmentVariables(names) {
+  for (const envVariableName of names) {
+    const envVariable = process.env[envVariableName];
+    if (typeof envVariable === 'undefined') {
+      let error = `Failed to find environment variable '${envVariableName}'.`;
+      error +=
+        '\nMake sure you specify it in your `.env` (did you forget to copy-paste and rename `.env.EXAMPLE`?)';
+      throw new Error(error);
+    }
+  }
+}
+
 function parseEnv() {
+  assertEnvironmentVariables([
+    'AJMODEL_DIR',
+    'ASSETS_DIR',
+    'DATAPACK_MCMETA',
+    'RESOURCEPACK_MCMETA',
+  ]);
   const {
     AJMODEL_DIR: ajmodelDir,
     ASSETS_DIR: assetsDir,

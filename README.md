@@ -17,6 +17,11 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 2. Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
 3. Initialize the repo by running `yarn`
 4. Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
+5. Copy-paste `.env.EXAMPLE` and rename it to `.env`
+
+   1. Replace all the paths in there with paths on your local machine -- e.g. replacing `afro` with `<YOUR_USERNAME>`.
+
+      Most of these variables are pretty straightforward except for `ASSETS_DIR` -- you'll want to follow this [reddit post](https://www.reddit.com/r/Minecraft/comments/wdx9mk/how_do_i_find_the_assets_folder_in_minecraft/iikxx3d/) to extract a vanilla assets folder that you can point `ASSETS_DIR` to
 
 #### Required Tools
 

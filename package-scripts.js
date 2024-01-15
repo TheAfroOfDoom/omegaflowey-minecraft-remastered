@@ -9,6 +9,24 @@ const {
 
 dotenv.config();
 
+const assertEnvironmentVariables = (names) => {
+  for (const envVariableName of names) {
+    const envVariable = process.env[envVariableName];
+    if (typeof envVariable === 'undefined') {
+      let error = `Failed to find environment variable '${envVariableName}'.`;
+      error +=
+        '\nMake sure you specify it in your `.env` (did you forget to copy-paste and rename `.env.EXAMPLE`?)';
+      throw new Error(error);
+    }
+  }
+};
+assertEnvironmentVariables([
+  'BLOCKBENCH_PATH',
+  'MINECRAFT_PATH',
+  'RESOURCEPACK_NAME',
+  'WORLD_NAME',
+]);
+
 const blockbenchPath = process.env.BLOCKBENCH_PATH;
 const minecraftPath = process.env.MINECRAFT_PATH;
 const resourcePackName = process.env.RESOURCEPACK_NAME;
