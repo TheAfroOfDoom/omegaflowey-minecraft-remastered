@@ -3,7 +3,7 @@
 
 /* global Project, loadModelFile, AnimatedJava */
 
-const { readdir, readdirSync, readFileSync } = require('fs');
+const { readdirSync, readFileSync } = require('fs');
 const { resolve } = require('path');
 
 export async function script() {
@@ -33,10 +33,10 @@ export async function script() {
 
 /**
  * Recursively walks a directory path and returns a list of files.
- * https://stackoverflow.com/a/45130990/13789724
+ * Slighty modified version of https://stackoverflow.com/a/45130990/13789724
  */
 async function getFiles(dir) {
-  const dirents = await readdir(dir, { withFileTypes: true });
+  const dirents = readdirSync(dir, { withFileTypes: true });
   const files = await Promise.all(
     dirents.map((dirent) => {
       const res = resolve(dir, dirent.name);
