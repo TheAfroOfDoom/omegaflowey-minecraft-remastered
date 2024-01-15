@@ -1,1 +1,0 @@
-tag @s remove aj.tv_screen.animation.move

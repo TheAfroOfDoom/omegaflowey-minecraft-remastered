@@ -1,3 +1,0 @@
-execute if score @s aj.finger_gun.animation.grow.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:finger_gun/zzzzzzzz/animations/grow/end_loop
-execute if score @s aj.finger_gun.animation.grow.loop_mode = $aj.loop_mode.once aj.i run function animated_java:finger_gun/animations/grow/stop
-execute if score @s aj.finger_gun.animation.grow.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:finger_gun/animations/grow/pause

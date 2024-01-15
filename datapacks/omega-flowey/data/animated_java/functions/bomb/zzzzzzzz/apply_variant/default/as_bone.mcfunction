@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.bomb.bone.bomb] run data modify entity @s item.tag.CustomModelData set value 84
-execute if entity @s[tag=aj.bomb.bone.fire] run data modify entity @s item.tag.CustomModelData set value 107

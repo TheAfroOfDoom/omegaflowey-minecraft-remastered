@@ -1,2 +1,0 @@
-scoreboard players set @s aj.dentata_snake_ball.rig_loaded 1
-execute unless score @s aj.dentata_snake_ball.export_version = aj.dentata_snake_ball.export_version aj.i at @s run function animated_java:dentata_snake_ball/zzzzzzzz/mark_outdated_rig

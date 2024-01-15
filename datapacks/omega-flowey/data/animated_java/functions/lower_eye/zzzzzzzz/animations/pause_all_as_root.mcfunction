@@ -1,1 +1,0 @@
-function animated_java:lower_eye/zzzzzzzz/animations/look_around/pause_as_root

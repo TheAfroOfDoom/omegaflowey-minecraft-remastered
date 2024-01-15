@@ -1,3 +1,0 @@
-execute if score @s aj.projectile_star.animation.spin_and_grow.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:projectile_star/zzzzzzzz/animations/spin_and_grow/end_loop
-execute if score @s aj.projectile_star.animation.spin_and_grow.loop_mode = $aj.loop_mode.once aj.i run function animated_java:projectile_star/animations/spin_and_grow/stop
-execute if score @s aj.projectile_star.animation.spin_and_grow.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:projectile_star/animations/spin_and_grow/pause

@@ -1,1 +1,0 @@
-function animated_java:tv_screen/zzzzzzzz/animations/move/pause_as_root

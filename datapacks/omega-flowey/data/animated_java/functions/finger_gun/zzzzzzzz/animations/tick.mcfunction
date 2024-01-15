@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.finger_gun.animation.grow] run function animated_java:finger_gun/zzzzzzzz/animations/grow/tick
-execute if entity @s[tag=aj.finger_gun.animation.shoot] run function animated_java:finger_gun/zzzzzzzz/animations/shoot/tick

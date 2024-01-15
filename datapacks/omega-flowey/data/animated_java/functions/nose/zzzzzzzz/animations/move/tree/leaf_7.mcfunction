@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:nose/zzzzzzzz/animations/move/tree/leaf_7_as_bone

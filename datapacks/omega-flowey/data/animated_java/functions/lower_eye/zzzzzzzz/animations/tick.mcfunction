@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.lower_eye.animation.look_around] run function animated_java:lower_eye/zzzzzzzz/animations/look_around/tick

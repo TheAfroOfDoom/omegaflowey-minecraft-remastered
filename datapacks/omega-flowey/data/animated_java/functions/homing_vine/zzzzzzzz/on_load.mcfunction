@@ -1,2 +1,0 @@
-scoreboard players set @s aj.homing_vine.rig_loaded 1
-execute unless score @s aj.homing_vine.export_version = aj.homing_vine.export_version aj.i at @s run function animated_java:homing_vine/zzzzzzzz/mark_outdated_rig

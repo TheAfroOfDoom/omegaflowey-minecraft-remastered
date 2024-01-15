@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.projectile_star.animation.spin_and_grow] run function animated_java:projectile_star/zzzzzzzz/animations/spin_and_grow/tick

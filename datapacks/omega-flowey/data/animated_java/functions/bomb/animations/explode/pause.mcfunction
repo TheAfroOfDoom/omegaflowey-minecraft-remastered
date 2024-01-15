@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.bomb.root] run function animated_java:bomb/zzzzzzzz/animations/explode/pause_as_root
-execute if entity @s[tag=!aj.bomb.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:bomb/animations/explode/pause ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

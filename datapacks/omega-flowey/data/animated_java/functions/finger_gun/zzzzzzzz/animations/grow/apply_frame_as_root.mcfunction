@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..14 run function animated_java:finger_gun/zzzzzzzz/animations/grow/tree/branch_0_14

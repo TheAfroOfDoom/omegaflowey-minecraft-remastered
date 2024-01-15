@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:dentata_snake_ball/zzzzzzzz/apply_variant/default/as_bone

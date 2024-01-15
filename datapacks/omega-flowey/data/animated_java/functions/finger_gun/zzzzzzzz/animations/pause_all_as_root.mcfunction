@@ -1,2 +1,0 @@
-function animated_java:finger_gun/zzzzzzzz/animations/grow/pause_as_root
-function animated_java:finger_gun/zzzzzzzz/animations/shoot/pause_as_root

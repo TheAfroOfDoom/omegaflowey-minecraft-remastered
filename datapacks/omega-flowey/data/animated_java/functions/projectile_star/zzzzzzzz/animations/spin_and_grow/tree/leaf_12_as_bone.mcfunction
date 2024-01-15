@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.projectile_star.bone.white] run data modify entity @s {} merge value {transformation:[1.5f,0f,-3.6739403974420594e-16f,0f,0f,1.5f,0f,-0.125f,3.6739403974420594e-16f,0f,1.5f,0f,0f,0f,0f,1f],start_interpolation:0}
-execute if entity @s[tag=aj.projectile_star.bone.black] run data modify entity @s {} merge value {transformation:[1.6666666666666667f,0f,-4.082155997157844e-16f,0f,0f,1.6666666666666667f,0f,-0.125f,4.082155997157844e-16f,0f,1.6666666666666667f,0f,0f,0f,0f,1f],start_interpolation:0}
