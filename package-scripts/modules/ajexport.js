@@ -6,6 +6,9 @@
 const { existsSync, readdirSync, readFileSync, writeFileSync } = require('fs');
 const { resolve } = require('path');
 
+const MODEL_FILE_EXTENSION = '.ajmodel';
+const DEV_MODEL_FLAG = '_dev';
+
 export async function script() {
   if (typeof AnimatedJava === 'undefined') {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
@@ -13,9 +16,11 @@ export async function script() {
   const paths = parseEnv();
   const modelDir = paths.ajmodelDir.concat('/');
   console.log('Target paths: ', paths);
-  const files = (await getFiles(modelDir)).filter((file) =>
-    file.endsWith('.ajmodel'),
-  );
+  const files = (await getFiles(modelDir))
+    .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))
+    .filter(
+      (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
+    ); // ignore ajmodels with `_dev` in name e.g. `housefly_dev.ajmodel`
 
   const lastExportedPath = `${paths.ajmodelDir}/last_exported_hashes.json`;
   const lastExported = existsSync(lastExportedPath)
