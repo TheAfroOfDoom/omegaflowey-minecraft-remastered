@@ -12,6 +12,7 @@ export async function script() {
   }
   const paths = parseConfigPaths('./package-scripts/modules/config.json');
   const modelDir = paths.ajmodelDir.concat('/');
+  // TODO(69): `console.log`s aren't showing up in the terminal that we start Blockbench in
   console.log('Target paths: ', paths);
   const files = (await getFiles(modelDir)).filter((file) =>
     file.endsWith('.ajmodel'),
