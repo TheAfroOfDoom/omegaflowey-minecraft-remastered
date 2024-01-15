@@ -2,6 +2,12 @@ name: scripts
 
 on: [push]
 
+env:
+  BLOCKBENCH_PATH: null
+  MINECRAFT_PATH: null
+  RESOURCEPACK_NAME: omega-flowey-remastered-resourcepack
+  WORLD_NAME: omega-flowey-remastered
+
 jobs:
   format:
     runs-on: ubuntu-latest
