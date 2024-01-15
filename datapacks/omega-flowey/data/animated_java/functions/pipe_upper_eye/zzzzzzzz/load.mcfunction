@@ -16,6 +16,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.pipe_upper_eye.export_version aj.i -211314907
+scoreboard players set aj.pipe_upper_eye.export_version aj.i 1551175456
 scoreboard players reset * aj.pipe_upper_eye.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.pipe_upper_eye.root] run function animated_java:pipe_upper_eye/zzzzzzzz/on_load

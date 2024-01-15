@@ -16,6 +16,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.lower_eye.export_version aj.i -1633697410
+scoreboard players set aj.lower_eye.export_version aj.i 437163670
 scoreboard players reset * aj.lower_eye.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.lower_eye.root] run function animated_java:lower_eye/zzzzzzzz/on_load
