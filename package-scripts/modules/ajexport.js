@@ -10,7 +10,7 @@ export async function script() {
   if (typeof AnimatedJava === 'undefined') {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
   }
-  const paths = parseConfigPaths('./package-scripts/modules/config.json');
+  const paths = parseEnv();
   const modelDir = paths.ajmodelDir.concat('/');
   // TODO(69): `console.log`s aren't showing up in the terminal that we start Blockbench in
   console.log('Target paths: ', paths);
@@ -69,13 +69,12 @@ function injectModelPackPaths(modelContent, paths) {
   return JSON.stringify(model);
 }
 
-function parseConfigPaths(configFile) {
-  const config = JSON.parse(readFileSync(configFile), 'utf-8');
+function parseEnv() {
   const {
-    ajmodelDir,
-    assetsDir,
-    datapackMcmeta: datapack,
-    resourcepackMcmeta: resourcepack,
-  } = config;
+    AJMODEL_DIR: ajmodelDir,
+    ASSETS_DIR: assetsDir,
+    DATAPACK_MCMETA: datapack,
+    RESOURCEPACK_MCMETA: resourcepack,
+  } = process.env;
   return { ajmodelDir, assetsDir, datapack, resourcepack };
 }

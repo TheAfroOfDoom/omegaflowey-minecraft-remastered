@@ -1,3 +1,4 @@
+const dotenv = require('dotenv');
 const { concurrent, series } = require('nps-utils');
 const { resolve } = require('path');
 
@@ -6,15 +7,16 @@ const {
   resourcepackGlob,
 } = require('./package-scripts/shared-consts');
 
-const minecraftPath = 'C:/Users/afro/AppData/Roaming/.minecraft';
-const worldName = 'omega-flowey-remastered';
-const resourcePackName = 'omega-flowey-remastered-resourcepack';
+dotenv.config();
+
+const blockbenchPath = process.env.BLOCKBENCH_PATH;
+const minecraftPath = process.env.MINECRAFT_PATH;
+const resourcePackName = process.env.RESOURCEPACK_NAME;
+const worldName = process.env.WORLD_NAME;
 
 const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 const minecraftResourcePackPath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
 
-const blockbenchPath =
-  'C:/Users/afro/AppData/Local/Programs/Blockbench/Blockbench.exe';
 const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
 
 const watchExcludeFilter = './package-scripts/watch-filter';
