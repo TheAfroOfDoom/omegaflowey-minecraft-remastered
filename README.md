@@ -36,8 +36,6 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 
 #### Recommended Tools (Optional)
 
-<!-- TODO(8): update this README with installation steps for the custom plugins when they are done -->
-
 Install the following apps:
 
 1. [paint.net](https://www.getpaint.net/download.html) -- for image editing
