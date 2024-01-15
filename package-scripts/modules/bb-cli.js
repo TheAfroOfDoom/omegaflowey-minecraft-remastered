@@ -23,13 +23,12 @@ BBPlugin.register('bb-cli', {
         .then(async (module) => {
           await new Promise((resolve) => setTimeout(resolve, 1000));
           await module.script();
-          // TODO(69): move this `window.close()` into a `finally` block once we
-          // fix the inconvenient `console.log` issue
-          window.close();
         })
         .catch((err) => {
-          // consider a finally block that closes window in future and logs if error
           console.log(err);
+        })
+        .finally(() => {
+          window.close();
         });
     }
   },
