@@ -50,6 +50,21 @@
       }
     ]
   },
+  "attack.flies.buzzing": {
+    "sounds": [
+      {
+        "name": "omega-flowey:snd_buzzing"
+      }
+    ]
+  },
+  "attack.flies.summon": {
+    "sounds": [
+      {
+        "name": "omega-flowey:attack.generic.summon",
+        "type": "event"
+      }
+    ]
+  },
   "attack.friendliness-pellets.activate": {
     "sounds": [
       {
@@ -80,6 +95,13 @@
       }
     ]
   },
+  "attack.generic.summon": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_sfx_yowl"
+      }
+    ]
+  },
   "attack.homing-vines.blinking": {
     "sounds": [
       {
@@ -91,7 +113,8 @@
   "attack.homing-vines.summon": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_sfx_yowl"
+        "name": "omega-flowey:attack.generic.summon",
+        "type": "event"
       }
     ]
   },
