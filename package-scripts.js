@@ -36,15 +36,21 @@ const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 const minecraftResourcePackPath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
 
 const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
-
+const ajmodelDirectory = 'resourcepack/assets/omega-flowey/models';
 const watchExcludeFilter = './package-scripts/watch-filter';
 
 module.exports = {
   scripts: {
-    default: concurrent.nps('watch.datapacks', 'watch.resourcepack'),
+    default: 'nps watch',
     watch: {
+      default: concurrent.nps(
+        'watch.datapacks',
+        'watch.resourcepack',
+        'watch.models',
+      ),
       datapacks: `watch --wait=1 --filter=${watchExcludeFilter} "nps sync.datapacks" datapacks`,
       resourcepack: `watch --wait=1 --filter=${watchExcludeFilter} "nps sync.resourcepack" resourcepack`,
+      models: `watch --wait=10 --filter=${watchExcludeFilter} "nps export" ${ajmodelDirectory}`,
     },
     sync: {
       datapacks: series(
@@ -107,6 +113,9 @@ module.exports = {
         other: `node ./package-scripts/run-linting-rules --include "**/*" --exclude "${resourcepackGlob},${datapacksGlob}"`,
       },
     },
-    export: `${blockbenchPath} --bb-cli "${ajexportScriptPath}"`,
+    export: series(
+      `yarn exec "${blockbenchPath}" --bb-cli "${ajexportScriptPath}"`,
+      'echo finished exporting ajmodels',
+    ),
   },
 };
