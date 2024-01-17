@@ -13,6 +13,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.projectile_star.export_version aj.i 771353784
+scoreboard players set aj.projectile_star.export_version aj.i 201982198
 scoreboard players reset * aj.projectile_star.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.projectile_star.root] run function animated_java:projectile_star/zzzzzzzz/on_load
