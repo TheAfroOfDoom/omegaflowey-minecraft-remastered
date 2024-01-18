@@ -3,7 +3,13 @@
 
 /* global Project, loadModelFile, AnimatedJava */
 
-const { existsSync, readdirSync, readFileSync, writeFileSync } = require('fs');
+const {
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  writeFileSync,
+} = require('fs');
 const { resolve } = require('path');
 
 const MODEL_FILE_EXTENSION = '.ajmodel';
@@ -26,6 +32,13 @@ export async function script() {
   const lastExported = existsSync(lastExportedPath)
     ? JSON.parse(readFileSync(lastExportedPath, 'utf8'))
     : {};
+
+  // Ensure we have a `data` folder inside the `animated_java` datapack, else
+  // the exporter will error
+  const datapackDir = paths.datapack.replace('pack.mcmeta', '');
+  if (!existsSync(datapackDir)) {
+    mkdirSync(`${datapackDir}/data`);
+  }
 
   for (const file of files) {
     const content = readFileSync(file, 'utf-8');
