@@ -21,12 +21,14 @@ const assertEnvironmentVariables = (names) => {
   }
 };
 assertEnvironmentVariables([
+  'AJMODEL_DIR',
   'BLOCKBENCH_PATH',
   'MINECRAFT_PATH',
   'RESOURCEPACK_NAME',
   'WORLD_NAME',
 ]);
 
+const ajmodelDir = process.env.AJMODEL_DIR;
 const blockbenchPath = process.env.BLOCKBENCH_PATH;
 const minecraftPath = process.env.MINECRAFT_PATH;
 const resourcePackName = process.env.RESOURCEPACK_NAME;
@@ -113,9 +115,15 @@ module.exports = {
         other: `node ./package-scripts/run-linting-rules --include "**/*" --exclude "${resourcepackGlob},${datapacksGlob}"`,
       },
     },
-    export: series(
-      `yarn exec "${blockbenchPath}" --bb-cli "${ajexportScriptPath}"`,
-      'echo finished exporting ajmodels',
-    ),
+    export: {
+      default: series(
+        `yarn exec "${blockbenchPath}" --bb-cli "${ajexportScriptPath}"`,
+        'echo finished exporting ajmodels',
+      ),
+      force: series(
+        `rimraf ${ajmodelDir}/last_exported_hashes.json`,
+        'nps export',
+      ),
+    },
   },
 };
