@@ -20,15 +20,15 @@ export async function script() {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
   }
   const paths = parseEnv();
-  const modelDir = paths.ajmodelDir.concat('/');
+  const ajmodelDir = 'resourcepack/assets/omega-flowey/models';
   console.log('Target paths: ', paths);
-  const files = (await getFiles(modelDir))
+  const files = (await getFiles(ajmodelDir))
     .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))
     .filter(
       (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
     ); // ignore ajmodels with `_dev` in name e.g. `housefly_dev.ajmodel`
 
-  const lastExportedPath = `${paths.ajmodelDir}/last_exported_hashes.json`;
+  const lastExportedPath = `${ajmodelDir}/last_exported_hashes.json`;
   const lastExported = existsSync(lastExportedPath)
     ? JSON.parse(readFileSync(lastExportedPath, 'utf8'))
     : {};
@@ -138,16 +138,14 @@ function assertEnvironmentVariables(names) {
 
 function parseEnv() {
   assertEnvironmentVariables([
-    'AJMODEL_DIR',
     'ASSETS_DIR',
     'DATAPACK_MCMETA',
     'RESOURCEPACK_MCMETA',
   ]);
   const {
-    AJMODEL_DIR: ajmodelDir,
     ASSETS_DIR: assetsDir,
     DATAPACK_MCMETA: datapack,
     RESOURCEPACK_MCMETA: resourcepack,
   } = process.env;
-  return { ajmodelDir, assetsDir, datapack, resourcepack };
+  return { assetsDir, datapack, resourcepack };
 }

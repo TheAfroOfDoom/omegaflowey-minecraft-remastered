@@ -11,14 +11,12 @@ const { assertEnvironmentVariables } = require('./package-scripts/utils');
 dotenv.config();
 
 assertEnvironmentVariables([
-  'AJMODEL_DIR',
   'BLOCKBENCH_PATH',
   'MINECRAFT_PATH',
   'RESOURCEPACK_NAME',
   'WORLD_NAME',
 ]);
 
-const ajmodelDir = process.env.AJMODEL_DIR;
 const blockbenchPath = process.env.BLOCKBENCH_PATH;
 const minecraftPath = process.env.MINECRAFT_PATH;
 const resourcePackName = process.env.RESOURCEPACK_NAME;
@@ -28,7 +26,7 @@ const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 const minecraftResourcePackPath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
 
 const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
-const ajmodelDirectory = 'resourcepack/assets/omega-flowey/models';
+const ajmodelDir = 'resourcepack/assets/omega-flowey/models';
 const watchExcludeFilter = './package-scripts/watch-filter';
 
 module.exports = {
