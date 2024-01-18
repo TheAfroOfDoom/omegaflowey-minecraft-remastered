@@ -6,20 +6,10 @@ const {
   datapacksGlob,
   resourcepackGlob,
 } = require('./package-scripts/shared-consts');
+const { assertEnvironmentVariables } = require('./package-scripts/utils');
 
 dotenv.config();
 
-const assertEnvironmentVariables = (names) => {
-  for (const envVariableName of names) {
-    const envVariable = process.env[envVariableName];
-    if (typeof envVariable === 'undefined') {
-      let error = `Failed to find environment variable '${envVariableName}'.`;
-      error +=
-        '\nMake sure you specify it in your `.env` (did you forget to copy-paste and rename `.env.EXAMPLE`?)';
-      throw new Error(error);
-    }
-  }
-};
 assertEnvironmentVariables([
   'AJMODEL_DIR',
   'BLOCKBENCH_PATH',
