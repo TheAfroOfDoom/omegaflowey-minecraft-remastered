@@ -105,7 +105,7 @@ module.exports = {
     },
     export: {
       default: series(
-        `yarn exec "${blockbenchPath}" --bb-cli "${ajexportScriptPath}"`,
+        `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}"`,
         'echo finished exporting ajmodels',
       ),
       force: series(
