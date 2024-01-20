@@ -49,7 +49,7 @@ module.exports = {
       ),
     },
     lint: {
-      default: 'nps lint.custom.resourcepack lint.scripts',
+      default: 'nps lint.custom lint.scripts',
       fix: 'nps lint.scripts.fix',
       scripts: {
         default: 'nps lint.scripts.check',
