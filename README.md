@@ -11,19 +11,27 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 
 ### Setup
 
-#### Workspace
+---
 
-1. Install [`Node.js >= 16.10`](https://nodejs.org/en/download)
-2. Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
-3. Initialize the repo by running `yarn`
-4. Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
-5. Copy-paste `.env.EXAMPLE` and rename it to `.env`
+<details>
+  <summary><strong>Workspace</strong></summary>
 
-   1. Replace all the paths in there with paths on your local machine -- e.g. replacing `afro` with `<YOUR_USERNAME>`.
+1.  Install [`Node.js >= 16.10`](https://nodejs.org/en/download)
+2.  Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
+3.  Initialize the repo by running `yarn`
+4.  Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
+5.  Copy-paste `.env.EXAMPLE` and rename it to `.env`
 
-      Most of these variables are pretty straightforward except for `ASSETS_DIR` -- you'll want to follow this [reddit post](https://www.reddit.com/r/Minecraft/comments/wdx9mk/how_do_i_find_the_assets_folder_in_minecraft/iikxx3d/) to extract a vanilla assets folder that you can point `ASSETS_DIR` to
+    1.  Replace all the paths in there with paths on your local machine -- e.g. replacing `afro` with `<YOUR_USERNAME>`.
 
-#### Required Tools
+    Most of these variables are pretty straightforward except for `ASSETS_DIR` -- you'll want to follow this [reddit post](https://www.reddit.com/r/Minecraft/comments/wdx9mk/how_do_i_find_the_assets_folder_in_minecraft/iikxx3d/) to extract a vanilla assets folder that you can point `ASSETS_DIR` to
+
+</details>
+
+---
+
+<details>
+  <summary><strong>Required Tools</strong></summary>
 
 1. [Blockbench](https://www.blockbench.net/downloads) -- for 3D modelling
    1. Install our Blockbench CLI plugin:
@@ -34,7 +42,12 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
       3. Run `yarn build:prod` to generate the `animated-java.js` in the `dist` directory
       4. Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `animated_java.js` file from your local `animated-java` repo (`animated-java/dist/animated-java.js`)
 
-#### Recommended Tools (Optional)
+</details>
+
+---
+
+<details>
+  <summary><strong>Recommended Tools (Optional)</strong></summary>
 
 Install the following apps:
 
@@ -44,7 +57,12 @@ Install the following apps:
 
 We also recommend using [blockcolors.app](https://blockcolors.app/) to get a representative vanilla block texture for a desired color while texturing models.
 
-#### Testing
+</details>
+
+---
+
+<details>
+  <summary><strong>Testing</strong></summary>
 
 1. Download the [Fabric mod loader](https://fabricmc.net/) and install a new profile to your Minecraft launcher
 2. Download the [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files) jar
@@ -54,6 +72,8 @@ We also recommend using [blockcolors.app](https://blockcolors.app/) to get a rep
 5. Run the new profile in your Minecraft launcher to launch a (lightly) modded instance that's able to run `packtest`'s new commands designed for testing
    1. Try: `test runall`
    2. See `packtest`'s [README](https://github.com/misode/packtest) for full command documentation
+
+</details>
 
 ---
 
