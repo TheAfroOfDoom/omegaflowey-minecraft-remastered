@@ -27,7 +27,6 @@ export async function script() {
   }
   const paths = parseEnv();
   const ajmodelDir = 'resourcepack/assets/omega-flowey/models';
-  console.log('Target paths: ', paths);
 
   const lastExportedPath = `${ajmodelDir}/last_exported_hashes.json`;
   const lastExported = existsSync(lastExportedPath)
