@@ -11,15 +11,19 @@ const { assertEnvironmentVariables } = require('./package-scripts/utils');
 dotenv.config();
 
 assertEnvironmentVariables([
+  'ASSETS_DIR',
   'BLOCKBENCH_PATH',
+  'DATAPACK_MCMETA',
   'MINECRAFT_PATH',
-  'RESOURCEPACK_NAME',
+  'RESOURCEPACK_MCMETA',
   'WORLD_NAME',
 ]);
 
+const assetsDir = process.env.ASSETS_DIR;
 const blockbenchPath = process.env.BLOCKBENCH_PATH;
+const datapackMcmeta = process.env.DATAPACK_MCMETA;
 const minecraftPath = process.env.MINECRAFT_PATH;
-const resourcePackName = process.env.RESOURCEPACK_NAME;
+const resourcePackMcmeta = process.env.RESOURCEPACK_MCMETA;
 const worldName = process.env.WORLD_NAME;
 
 const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
@@ -104,10 +108,8 @@ module.exports = {
       },
     },
     export: {
-      default: series(
-        `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}"`,
-        'echo finished exporting ajmodels',
-      ),
+      default: series('nps export.run', 'echo finished exporting ajmodels'),
+      run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack-mcmeta="${datapackMcmeta}" --resourcepack-mcmeta="${resourcePackMcmeta}"`,
       force: series(
         `rimraf ${ajmodelDir}/last_exported_hashes.json`,
         'nps export',
