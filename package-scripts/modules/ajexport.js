@@ -1,7 +1,7 @@
 // With thanks to elenterius on discord for troubleshooting
 // https://discord.com/channels/314078526104141834/1189404550986211329/1189517519262855229
 
-/* global Project, loadModelFile, AnimatedJava */
+/* global Project, loadModelFile, AnimatedJava, electron */
 
 const {
   existsSync,
@@ -11,6 +11,12 @@ const {
   writeFileSync,
 } = require('fs');
 const { resolve } = require('path');
+
+const getArg = (argName) => {
+  const { argv } = electron.getGlobal('process');
+  const arg = argv.find((arg) => arg.startsWith(argName));
+  return arg?.replace(argName, '')?.replaceAll('\\', '/');
+};
 
 const MODEL_FILE_EXTENSION = '.ajmodel';
 const DEV_MODEL_FLAG = '_dev';
@@ -22,11 +28,6 @@ export async function script() {
   const paths = parseEnv();
   const ajmodelDir = 'resourcepack/assets/omega-flowey/models';
   console.log('Target paths: ', paths);
-  const files = (await getFiles(ajmodelDir))
-    .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))
-    .filter(
-      (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
-    ); // ignore ajmodels with `_dev` in name e.g. `housefly_dev.ajmodel`
 
   const lastExportedPath = `${ajmodelDir}/last_exported_hashes.json`;
   const lastExported = existsSync(lastExportedPath)
@@ -39,6 +40,20 @@ export async function script() {
   if (!existsSync(datapackDir)) {
     mkdirSync(datapackDir);
   }
+
+  const getAllModelFiles = async () =>
+    (await getFiles(ajmodelDir))
+      .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))
+      .filter(
+        (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
+      ); // ignore ajmodels with `_dev` in name e.g. `housefly_dev.ajmodel`
+
+  const ajmodelPathsDontOpenSuffix = '_DONT_OPEN_ME';
+  const modelPathsArg = getArg('--ajexport-models=');
+  const files =
+    typeof modelPathsArg === 'undefined'
+      ? await getAllModelFiles()
+      : modelPathsArg.replaceAll(ajmodelPathsDontOpenSuffix, '').split(',');
 
   for (const file of files) {
     const content = readFileSync(file, 'utf-8');
