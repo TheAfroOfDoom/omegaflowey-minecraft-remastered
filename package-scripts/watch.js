@@ -60,7 +60,15 @@ const watchDatapacks = async (showVerbose) => {
   await remove(`${worldPath}/datapacks`);
   await copy('datapacks', `${worldPath}/datapacks`, { filter: copyFilter });
 
-  const watcher = watch('datapacks', { ignored, ignoreInitial: true });
+  const awaitWriteFinish = {
+    stabilityThreshold: 200,
+    pollInterval: 100,
+  };
+  const watcher = watch('datapacks', {
+    awaitWriteFinish,
+    ignored,
+    ignoreInitial: true,
+  });
 
   watcher.on('ready', async () => {
     log('initialized');
