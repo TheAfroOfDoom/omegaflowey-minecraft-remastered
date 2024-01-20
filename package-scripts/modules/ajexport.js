@@ -35,9 +35,9 @@ export async function script() {
 
   // Ensure we have a `data` folder inside the `animated_java` datapack, else
   // the exporter will error
-  const datapackDir = paths.datapack.replace('pack.mcmeta', '');
+  const datapackDir = `${paths.datapack.replace('pack.mcmeta', '')}/data`;
   if (!existsSync(datapackDir)) {
-    mkdirSync(`${datapackDir}/data`);
+    mkdirSync(datapackDir);
   }
 
   for (const file of files) {
