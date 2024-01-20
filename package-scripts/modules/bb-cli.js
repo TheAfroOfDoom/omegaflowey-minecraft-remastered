@@ -23,9 +23,6 @@ BBPlugin.register('bb-cli', {
           await new Promise((resolve) => setTimeout(resolve, 1000));
           await module.script();
         })
-        .catch((err) => {
-          console.log(err);
-        })
         .finally(() => {
           window.close();
         });

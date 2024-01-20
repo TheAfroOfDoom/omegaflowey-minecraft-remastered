@@ -71,6 +71,12 @@ export async function script() {
 
   const lastExported = parseLastExportedHashes(ajmodelDir);
 
+  // We catch `console.error` since `safeExportProject` doesn't actually throw an error itself
+  console.error = (data) => {
+    log(data);
+    throw new Error(data);
+  };
+
   const getAllModelFiles = async () =>
     (await getFiles(ajmodelDir))
       .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))

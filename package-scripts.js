@@ -27,10 +27,20 @@ const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 
 const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
 
+const allAnimatedJavaExportFiles = [
+  'datapacks/animated_java/data',
+  'datapacks/animated_java/datapack.ajmeta',
+  'resourcepack/assets/animated_java',
+  'resourcepack/assets/minecraft/models/item/animated_java_empty.json',
+  'resourcepack/assets/minecraft/models/item/white_dye.json',
+  'resourcepack/resourcepack.ajmeta',
+  `${ajmodelDir}/last_exported_hashes.json`,
+];
+
 module.exports = {
   scripts: {
     default: 'nps watch',
-    watch: '',
+    watch: 'node ./package-scripts/watch',
     sync: {
       default: 'nps sync.world',
       world: series(
@@ -76,7 +86,7 @@ module.exports = {
       run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack-mcmeta="${datapackMcmeta}" --resourcepack-mcmeta="${resourcePackMcmeta}"`,
       // forcibly purge the `animated_java` export-cache
       force: series(
-        `rimraf ${ajmodelDir}/last_exported_hashes.json`,
+        `rimraf ${allAnimatedJavaExportFiles.join(' ')}`,
         'nps export',
       ),
     },
