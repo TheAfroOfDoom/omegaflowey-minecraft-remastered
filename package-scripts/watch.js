@@ -239,18 +239,20 @@ const watchModels = async () => {
 
   let lastExportQueuePolledLength;
   let exportQueue = [];
+  let intervalId;
   const addToExportQueue = async (path) => {
     exportQueue.push(path);
     // If the BB-CLI process is not already running, start polling for
     // (no) changes to the export queue after 0.5s before starting a new
     // process to run the auto-exporter
     const processExists = await bbCLIProcessExists();
-    if (exportQueue.length === 1 && !processExists) {
-      const intervalId = setInterval(() => {
+    if (typeof intervalId === 'undefined' && !processExists) {
+      intervalId = setInterval(() => {
         if (lastExportQueuePolledLength === exportQueue.length) {
           runModelExporter();
           lastExportQueuePolledLength = undefined;
           clearInterval(intervalId);
+          intervalId = undefined;
         } else {
           lastExportQueuePolledLength = exportQueue.length;
         }
