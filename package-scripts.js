@@ -76,9 +76,14 @@ module.exports = {
           'lint.custom.resourcepack',
           'lint.custom.other',
         ),
-        datapacks: `node ./package-scripts/run-linting-rules --include "datapacks/**/*"`,
-        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*"`,
-        other: `node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"`,
+        datapacks: `node ./package-scripts/run-linting-rules --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFiles.join(
+          ',',
+        )}"`,
+        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFiles.join(
+          ',',
+        )}"`,
+        other:
+          'node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"',
       },
     },
     export: {
