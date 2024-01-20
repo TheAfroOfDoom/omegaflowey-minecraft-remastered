@@ -10,11 +10,16 @@ const requireWithCwd = (cwd = '') => {
   const { hash, parseLastExportedHashes, updateLastExportedHashes } = require(
     resolve(`${cwd}/package-scripts/utils`),
   );
-  const { ajmodelDir, ajmodelPathsDontOpenSuffix } = require(
-    resolve(`${cwd}/package-scripts/shared-consts`),
-  );
+  const {
+    ajExporterPassthroughFlagEnd,
+    ajExporterPassthroughFlagStart,
+    ajmodelDir,
+    ajmodelPathsDontOpenSuffix,
+  } = require(resolve(`${cwd}/package-scripts/shared-consts`));
 
   return {
+    ajExporterPassthroughFlagEnd,
+    ajExporterPassthroughFlagStart,
     ajmodelDir: `${cwd}/${ajmodelDir}`,
     ajmodelPathsDontOpenSuffix,
     hash,
@@ -38,12 +43,23 @@ export async function script() {
   }
   const cwd = getArg('--cwd=');
   const {
+    ajExporterPassthroughFlagEnd,
+    ajExporterPassthroughFlagStart,
     ajmodelDir,
     ajmodelPathsDontOpenSuffix,
     hash,
     parseLastExportedHashes,
     updateLastExportedHashes,
   } = requireWithCwd(cwd);
+
+  const log = (...args) => {
+    console.log(
+      ajExporterPassthroughFlagStart,
+      ...args,
+      ajExporterPassthroughFlagEnd,
+    );
+  };
+
   const paths = parseEnv();
 
   // Ensure we have a `data` folder inside the `animated_java` datapack, else
@@ -89,13 +105,15 @@ export async function script() {
     };
     loadModelFile(fileObj);
     await AnimatedJava.API.safeExportProject();
+    const modelName = model.animated_java.settings.project_namespace;
     lastExported[uuid] = {
-      name: model.animated_java.settings.project_namespace,
+      name: modelName,
       hash: currentHash,
       date: new Date().toISOString(),
       path: file.replaceAll('\\', '/'),
     };
     Project.close();
+    log(`exported ${modelName}`);
   }
 
   updateLastExportedHashes(ajmodelDir, lastExported);
