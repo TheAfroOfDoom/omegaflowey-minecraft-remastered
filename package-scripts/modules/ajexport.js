@@ -3,14 +3,25 @@
 
 /* global Project, loadModelFile, AnimatedJava, electron */
 
-const {
-  existsSync,
-  mkdirSync,
-  readdirSync,
-  readFileSync,
-  writeFileSync,
-} = require('fs');
+const { existsSync, mkdirSync, readdirSync, readFileSync } = require('fs');
 const { resolve } = require('path');
+
+const requireWithCwd = (cwd = '') => {
+  const { hash, parseLastExportedHashes, updateLastExportedHashes } = require(
+    resolve(`${cwd}/package-scripts/utils`),
+  );
+  const { ajmodelDir, ajmodelPathsDontOpenSuffix } = require(
+    resolve(`${cwd}/package-scripts/shared-consts`),
+  );
+
+  return {
+    ajmodelDir: `${cwd}/${ajmodelDir}`,
+    ajmodelPathsDontOpenSuffix,
+    hash,
+    parseLastExportedHashes,
+    updateLastExportedHashes,
+  };
+};
 
 const getArg = (argName) => {
   const { argv } = electron.getGlobal('process');
@@ -25,13 +36,15 @@ export async function script() {
   if (typeof AnimatedJava === 'undefined') {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
   }
+  const cwd = getArg('--cwd=');
+  const {
+    ajmodelDir,
+    ajmodelPathsDontOpenSuffix,
+    hash,
+    parseLastExportedHashes,
+    updateLastExportedHashes,
+  } = requireWithCwd(cwd);
   const paths = parseEnv();
-  const ajmodelDir = 'resourcepack/assets/omega-flowey/models';
-
-  const lastExportedPath = `${ajmodelDir}/last_exported_hashes.json`;
-  const lastExported = existsSync(lastExportedPath)
-    ? JSON.parse(readFileSync(lastExportedPath, 'utf8'))
-    : {};
 
   // Ensure we have a `data` folder inside the `animated_java` datapack, else
   // the exporter will error
@@ -40,6 +53,8 @@ export async function script() {
     mkdirSync(datapackDir);
   }
 
+  const lastExported = parseLastExportedHashes(ajmodelDir);
+
   const getAllModelFiles = async () =>
     (await getFiles(ajmodelDir))
       .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))
@@ -47,7 +62,6 @@ export async function script() {
         (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
       ); // ignore ajmodels with `_dev` in name e.g. `housefly_dev.ajmodel`
 
-  const ajmodelPathsDontOpenSuffix = '_DONT_OPEN_ME';
   const modelPathsArg = getArg('--ajexport-models=');
   const files =
     typeof modelPathsArg === 'undefined'
@@ -84,8 +98,7 @@ export async function script() {
     Project.close();
   }
 
-  // Update `last_exported_hashes.json`
-  writeFileSync(lastExportedPath, JSON.stringify(lastExported, undefined, 2));
+  updateLastExportedHashes(ajmodelDir, lastExported);
 }
 
 /**
@@ -101,20 +114,6 @@ async function getFiles(dir) {
     }),
   );
   return Array.prototype.concat(...files);
-}
-
-/**
- * Generates a hash of an input
- * https://stackoverflow.com/a/57385857/13789724
- */
-async function hash(m) {
-  const msgUint8 = new TextEncoder().encode(m);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  const hashHex = hashArray
-    .map((b) => b.toString(16).padStart(2, '0'))
-    .join('');
-  return hashHex;
 }
 
 function injectModelPackPaths(modelContent, paths) {
