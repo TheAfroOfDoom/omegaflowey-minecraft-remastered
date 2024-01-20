@@ -65,6 +65,7 @@ export async function script() {
       name: model.animated_java.settings.project_namespace,
       hash: currentHash,
       date: new Date().toISOString(),
+      path: file.replaceAll('\\', '/'),
     };
     Project.close();
   }
