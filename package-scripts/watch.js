@@ -35,6 +35,11 @@ const worldPath = `${minecraftPath}/saves/${worldName}`;
 const resourcePackBasePath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
 const regexDotFiles = /(^|[/\\])\../;
 
+const awaitWriteFinish = {
+  stabilityThreshold: 200,
+  pollInterval: 100,
+};
+
 const watchDatapacks = async (showVerbose) => {
   const log = (...args) => {
     const prefix = chalk.bgBlue(chalk.bold('[datapacks]'));
@@ -60,10 +65,6 @@ const watchDatapacks = async (showVerbose) => {
   await remove(`${worldPath}/datapacks`);
   await copy('datapacks', `${worldPath}/datapacks`, { filter: copyFilter });
 
-  const awaitWriteFinish = {
-    stabilityThreshold: 200,
-    pollInterval: 100,
-  };
   const watcher = watch('datapacks', {
     awaitWriteFinish,
     ignored,
@@ -117,7 +118,11 @@ const watchResourcepack = async (showVerbose) => {
   await remove(resourcePackBasePath);
   await copy('resourcepack', resourcePackBasePath, { filter: copyFilter });
 
-  const watcher = watch('resourcepack', { ignored, ignoreInitial: true });
+  const watcher = watch('resourcepack', {
+    awaitWriteFinish,
+    ignored,
+    ignoreInitial: true,
+  });
 
   watcher.on('ready', async () => {
     log('initialized');
