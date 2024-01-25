@@ -1,8 +1,5 @@
-# Set scores
-scoreboard players set @s attack.clock.i -1
-
-scoreboard players operation @s attack.executor.clock.length = #attack-flies attack.executor.clock.length
-scoreboard players operation @s attack.executor.rate = #attack-flies attack.executor.rate
+# the attack-flies executor only summon a single indicator that represents the venus fly trap,
+# so we don't need to run a clock
 
 # Remove tags
 tag @s remove attack-executor-new
