@@ -26,7 +26,7 @@ const ticketizeTodos = (file) => {
        * valid `TODO(32):`
        * invalid: `TODO`, `TODO:`, `TODO()`, `TODO():`, `TODO(32)
        */
-      const matchTicketNumber = todo.match(/TODO\((\d+)\)/);
+      const matchTicketNumber = todo.match(/TODO\((\d+)\):/);
       if (matchTicketNumber === null) {
         const expectedTodoFormat = chalk.blueBright('TODO(<ticket>):');
         const formattedLineNumber = chalk.bold(`line ${lineNumber}`);
