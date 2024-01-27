@@ -25,7 +25,9 @@ const worldName = process.env.WORLD_NAME;
 
 const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 
+// we have to resolve this path so we can use it with Blockbench
 const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
+const watchScriptPath = './package-scripts/watch.js';
 
 const allAnimatedJavaExportFiles = [
   'datapacks/animated_java/data',
@@ -40,7 +42,10 @@ const allAnimatedJavaExportFiles = [
 module.exports = {
   scripts: {
     default: 'nps watch',
-    watch: 'node ./package-scripts/watch',
+    watch: {
+      default: `node ${watchScriptPath}`,
+      experimental: `node ${watchScriptPath} --experimental`,
+    },
     sync: {
       default: 'nps sync.world',
       world: series(

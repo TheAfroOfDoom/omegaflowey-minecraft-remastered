@@ -5,6 +5,7 @@ const findProcess = require('find-process');
 const { copy, remove, readFile, writeFile } = require('fs-extra');
 const { glob } = require('glob');
 const { difference, findKey, uniq } = require('lodash');
+const minimist = require('minimist');
 const { spawn } = require('node:child_process');
 const { resolve, parse } = require('path');
 
@@ -427,12 +428,16 @@ const deleteStaleExportFiles = async () => {
 };
 
 const main = async () => {
+  const argv = minimist(process.argv.slice(2));
+
   await deleteStaleExportFiles();
 
   const SHOW_VERBOSE = false;
   watchDatapacks(SHOW_VERBOSE);
   watchResourcepack(SHOW_VERBOSE);
-  watchModels();
+  if (argv.experimental) {
+    watchModels();
+  }
 };
 
 main();
