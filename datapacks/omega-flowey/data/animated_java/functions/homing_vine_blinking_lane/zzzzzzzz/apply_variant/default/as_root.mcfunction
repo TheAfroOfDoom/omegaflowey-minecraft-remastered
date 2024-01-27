@@ -1,1 +1,0 @@
-function animated_java:homing_vine_blinking_lane/zzzzzzzz/apply_variant/default/as_bone

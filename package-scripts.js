@@ -1,61 +1,60 @@
-const { concurrent, series } = require('nps-utils');
+const dotenv = require('dotenv');
+const { series } = require('nps-utils');
 const { resolve } = require('path');
 
-const {
-  datapacksGlob,
-  resourcepackGlob,
-} = require('./package-scripts/shared-consts');
+const { ajmodelDir } = require('./package-scripts/shared-consts');
+const { assertEnvironmentVariables } = require('./package-scripts/utils');
 
-const minecraftPath = 'C:/Users/afro/AppData/Roaming/.minecraft';
-const worldName = 'omega-flowey-remastered';
-const resourcePackName = 'omega-flowey-remastered-resourcepack';
+dotenv.config();
+
+assertEnvironmentVariables([
+  'ASSETS_DIR',
+  'BLOCKBENCH_PATH',
+  'DATAPACK_MCMETA',
+  'MINECRAFT_PATH',
+  'RESOURCEPACK_MCMETA',
+  'WORLD_NAME',
+]);
+
+const assetsDir = process.env.ASSETS_DIR;
+const blockbenchPath = process.env.BLOCKBENCH_PATH;
+const datapackMcmeta = process.env.DATAPACK_MCMETA;
+const minecraftPath = process.env.MINECRAFT_PATH;
+const resourcePackMcmeta = process.env.RESOURCEPACK_MCMETA;
+const worldName = process.env.WORLD_NAME;
 
 const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
-const minecraftResourcePackPath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
 
-const blockbenchPath =
-  'C:/Users/afro/AppData/Local/Programs/Blockbench/Blockbench.exe';
+// we have to resolve this path so we can use it with Blockbench
 const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
+const watchScriptPath = './package-scripts/watch.js';
 
-const watchExcludeFilter = './package-scripts/watch-filter';
+const allAnimatedJavaExportFiles = [
+  'datapacks/animated_java/data',
+  'datapacks/animated_java/datapack.ajmeta',
+  'resourcepack/assets/animated_java',
+  'resourcepack/assets/minecraft/models/item/animated_java_empty.json',
+  'resourcepack/assets/minecraft/models/item/white_dye.json',
+  'resourcepack/resourcepack.ajmeta',
+  `${ajmodelDir}/last_exported_hashes.json`,
+];
 
 module.exports = {
   scripts: {
-    default: concurrent.nps('watch.datapacks', 'watch.resourcepack'),
+    default: 'nps watch',
     watch: {
-      datapacks: `watch --wait=1 --filter=${watchExcludeFilter} "nps sync.datapacks" datapacks`,
-      resourcepack: `watch --wait=1 --filter=${watchExcludeFilter} "nps sync.resourcepack" resourcepack`,
+      default: `node ${watchScriptPath}`,
+      experimental: `node ${watchScriptPath} --experimental`,
     },
     sync: {
-      datapacks: series(
-        'echo syncing datapacks',
-        'nps delete.datapacks',
-        'nps copy.datapacks',
-        'echo finished datapacks',
-        'mpg123 -f -5000 -q ./temp/anyway.mp3 || echo mpg123 not found on your system -- cannot play notification sound',
-      ),
-      resourcepack: series(
-        'echo syncing resourcepack',
-        'nps delete.resourcepack',
-        'nps copy.resourcepack',
-        'echo finished resourcepack',
-        'mpg123 -f -5000 -q ./temp/fnaf.mp3 || echo mpg123 not found on your system -- cannot play notification sound',
-      ),
+      default: 'nps sync.world',
       world: series(
         'rimraf world.zip',
         `bestzip world.zip ${minecraftWorldPath}/*`,
       ),
     },
-    copy: {
-      datapacks: `cpy ${datapacksGlob} ${minecraftWorldPath}/datapacks`,
-      resourcepack: `cpy ${resourcepackGlob} ${minecraftResourcePackPath}`,
-    },
-    delete: {
-      datapacks: `yarn rimraf --glob ${minecraftWorldPath}/datapacks/**/*`,
-      resourcepacks: `yarn rimraf --glob ${minecraftResourcePackPath}/**/*`,
-    },
     lint: {
-      default: 'nps lint.custom.resourcepack lint.scripts',
+      default: 'nps lint.custom lint.scripts',
       fix: 'nps lint.scripts.fix',
       scripts: {
         default: 'nps lint.scripts.check',
@@ -82,11 +81,24 @@ module.exports = {
           'lint.custom.resourcepack',
           'lint.custom.other',
         ),
-        datapacks: `node ./package-scripts/run-linting-rules --include "${datapacksGlob}"`,
-        resourcepack: `node ./package-scripts/run-linting-rules --include "${resourcepackGlob}"`,
-        other: `node ./package-scripts/run-linting-rules --include "**/*" --exclude "${resourcepackGlob},${datapacksGlob}"`,
+        datapacks: `node ./package-scripts/run-linting-rules --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFiles.join(
+          ',',
+        )}"`,
+        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFiles.join(
+          ',',
+        )}"`,
+        other:
+          'node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"',
       },
     },
-    export: `${blockbenchPath} --bb-cli "${ajexportScriptPath}"`,
+    export: {
+      default: series('nps export.run', 'echo finished exporting ajmodels'),
+      run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack-mcmeta="${datapackMcmeta}" --resourcepack-mcmeta="${resourcePackMcmeta}"`,
+      // forcibly purge the `animated_java` export-cache
+      force: series(
+        `rimraf ${allAnimatedJavaExportFiles.join(' ')}`,
+        'nps export',
+      ),
+    },
   },
 };

@@ -1,1 +1,0 @@
-function animated_java:homing_vine/zzzzzzzz/animations/default/tick_animation

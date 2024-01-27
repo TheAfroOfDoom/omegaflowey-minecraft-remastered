@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.nose.root] run function animated_java:nose/zzzzzzzz/tick_as_root

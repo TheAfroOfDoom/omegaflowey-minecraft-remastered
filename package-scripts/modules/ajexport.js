@@ -1,35 +1,128 @@
 // With thanks to elenterius on discord for troubleshooting
 // https://discord.com/channels/314078526104141834/1189404550986211329/1189517519262855229
 
-/* global Project, loadModelFile, AnimatedJava */
+/* global Project, loadModelFile, AnimatedJava, electron */
 
-const { readdirSync, readFileSync } = require('fs');
+const { existsSync, mkdirSync, readdirSync, readFileSync } = require('fs');
 const { resolve } = require('path');
+
+const requireWithCwd = (cwd = '') => {
+  const { hash, parseLastExportedHashes, updateLastExportedHashes } = require(
+    resolve(`${cwd}/package-scripts/utils`),
+  );
+  const {
+    ajExporterPassthroughFlagEnd,
+    ajExporterPassthroughFlagStart,
+    ajmodelDir,
+    ajmodelPathsDontOpenSuffix,
+  } = require(resolve(`${cwd}/package-scripts/shared-consts`));
+
+  return {
+    ajExporterPassthroughFlagEnd,
+    ajExporterPassthroughFlagStart,
+    ajmodelDir: `${cwd}/${ajmodelDir}`,
+    ajmodelPathsDontOpenSuffix,
+    hash,
+    parseLastExportedHashes,
+    updateLastExportedHashes,
+  };
+};
+
+const getArg = (argName) => {
+  const { argv } = electron.getGlobal('process');
+  const arg = argv.find((arg) => arg.startsWith(argName));
+  return arg?.replace(argName, '')?.replaceAll('\\', '/');
+};
+
+const MODEL_FILE_EXTENSION = '.ajmodel';
+const DEV_MODEL_FLAG = '_dev';
 
 export async function script() {
   if (typeof AnimatedJava === 'undefined') {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
   }
-  const paths = parseConfigPaths('./package-scripts/modules/config.json');
-  const modelDir = paths.ajmodelDir.concat('/');
-  // TODO(69): `console.log`s aren't showing up in the terminal that we start Blockbench in
-  console.log('Target paths: ', paths);
-  const files = (await getFiles(modelDir)).filter((file) =>
-    file.endsWith('.ajmodel'),
-  );
+  const cwd = getArg('--cwd=');
+  const {
+    ajExporterPassthroughFlagEnd,
+    ajExporterPassthroughFlagStart,
+    ajmodelDir,
+    ajmodelPathsDontOpenSuffix,
+    hash,
+    parseLastExportedHashes,
+    updateLastExportedHashes,
+  } = requireWithCwd(cwd);
+
+  const log = (...args) => {
+    console.log(
+      ajExporterPassthroughFlagStart,
+      ...args,
+      ajExporterPassthroughFlagEnd,
+    );
+  };
+
+  const paths = parseEnv();
+
+  // Ensure we have a `data` folder inside the `animated_java` datapack, else
+  // the exporter will error
+  const datapackDir = `${paths.datapack.replace('pack.mcmeta', '')}/data`;
+  if (!existsSync(datapackDir)) {
+    mkdirSync(datapackDir);
+  }
+
+  const lastExported = parseLastExportedHashes(ajmodelDir);
+
+  // We catch `console.error` since `safeExportProject` doesn't actually throw an error itself
+  console.error = (data) => {
+    log(data);
+    throw new Error(data);
+  };
+
+  const getAllModelFiles = async () =>
+    (await getFiles(ajmodelDir))
+      .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))
+      .filter(
+        (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
+      ); // ignore ajmodels with `_dev` in name e.g. `housefly_dev.ajmodel`
+
+  const modelPathsArg = getArg('--ajexport-models=');
+  const files =
+    typeof modelPathsArg === 'undefined'
+      ? await getAllModelFiles()
+      : modelPathsArg.replaceAll(ajmodelPathsDontOpenSuffix, '').split(',');
 
   for (const file of files) {
     const content = readFileSync(file, 'utf-8');
     const name = file.split('/').pop();
+
+    // Only export project if hash of model file is different than that found
+    // in `last_exported_hashes.json`
+    const model = JSON.parse(content);
+    const { uuid } = model.meta;
+    const currentHash = await hash(content);
+    if (lastExported[uuid]?.hash === currentHash) {
+      continue;
+    }
+
+    const injectedModel = injectModelPackPaths(content, paths);
     const fileObj = {
       path: file,
-      content: injectModelPackPaths(content, paths),
+      content: injectedModel,
       name,
     };
     loadModelFile(fileObj);
     await AnimatedJava.API.safeExportProject();
+    const modelName = model.animated_java.settings.project_namespace;
+    lastExported[uuid] = {
+      name: modelName,
+      hash: currentHash,
+      date: new Date().toISOString(),
+      path: file.replaceAll('\\', '/'),
+    };
     Project.close();
+    log(`exported ${modelName}`);
   }
+
+  updateLastExportedHashes(ajmodelDir, lastExported);
 }
 
 /**
@@ -69,13 +162,13 @@ function injectModelPackPaths(modelContent, paths) {
   return JSON.stringify(model);
 }
 
-function parseConfigPaths(configFile) {
-  const config = JSON.parse(readFileSync(configFile), 'utf-8');
-  const {
-    ajmodelDir,
+function parseEnv() {
+  const assetsDir = getArg('--assets-dir=');
+  const datapackMcmeta = getArg('--datapack-mcmeta=');
+  const resourcePackMcmeta = getArg('--resourcepack-mcmeta=');
+  return {
     assetsDir,
-    datapackMcmeta: datapack,
-    resourcepackMcmeta: resourcepack,
-  } = config;
-  return { ajmodelDir, assetsDir, datapack, resourcepack };
+    datapack: datapackMcmeta,
+    resourcepack: resourcePackMcmeta,
+  };
 }

@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.finger_gun_bullet.animation.shoot] run function animated_java:finger_gun_bullet/zzzzzzzz/animations/shoot/tick

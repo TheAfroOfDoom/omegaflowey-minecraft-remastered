@@ -1,2 +1,0 @@
-scoreboard players set @s aj.finger_gun_laser.rig_loaded 1
-execute unless score @s aj.finger_gun_laser.export_version = aj.finger_gun_laser.export_version aj.i at @s run function animated_java:finger_gun_laser/zzzzzzzz/mark_outdated_rig

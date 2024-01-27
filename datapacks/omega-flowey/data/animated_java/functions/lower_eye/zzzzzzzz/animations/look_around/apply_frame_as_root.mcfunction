@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..120 run function animated_java:lower_eye/zzzzzzzz/animations/look_around/tree/branch_0_120

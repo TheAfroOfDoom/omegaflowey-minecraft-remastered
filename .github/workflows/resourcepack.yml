@@ -2,6 +2,14 @@ name: resourcepack
 
 on: [push]
 
+env:
+  ASSETS_DIR: null
+  BLOCKBENCH_PATH: null
+  DATAPACK_MCMETA: null
+  MINECRAFT_PATH: null
+  RESOURCEPACK_MCMETA: null
+  WORLD_NAME: omega-flowey-remastered
+
 jobs:
   lint:
     runs-on: ubuntu-latest

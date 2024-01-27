@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.finger_gun_bullet.root] run function animated_java:finger_gun_bullet/zzzzzzzz/tick_as_root

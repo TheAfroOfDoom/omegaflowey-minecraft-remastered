@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:finger_gun/zzzzzzzz/animations/grow/tree/leaf_14_as_bone

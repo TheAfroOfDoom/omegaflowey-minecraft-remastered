@@ -1,1 +1,0 @@
-function animated_java:bomb/zzzzzzzz/animations/summon/tick_animation

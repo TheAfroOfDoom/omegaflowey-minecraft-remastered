@@ -1,1 +1,0 @@
-function animated_java:dentata_snake_ball/zzzzzzzz/animations/roll_scale_72/tick_animation

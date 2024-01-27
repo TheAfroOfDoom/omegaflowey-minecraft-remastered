@@ -1,1 +1,0 @@
-tag @s remove aj.finger_gun_bullet.animation.shoot

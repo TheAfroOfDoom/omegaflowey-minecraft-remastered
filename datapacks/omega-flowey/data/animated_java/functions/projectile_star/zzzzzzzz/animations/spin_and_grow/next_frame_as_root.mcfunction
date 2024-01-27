@@ -1,1 +1,0 @@
-function animated_java:projectile_star/zzzzzzzz/animations/spin_and_grow/tick_animation

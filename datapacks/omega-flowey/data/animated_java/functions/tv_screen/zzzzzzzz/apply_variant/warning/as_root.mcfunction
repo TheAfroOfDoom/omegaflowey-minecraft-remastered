@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:tv_screen/zzzzzzzz/apply_variant/warning/as_bone

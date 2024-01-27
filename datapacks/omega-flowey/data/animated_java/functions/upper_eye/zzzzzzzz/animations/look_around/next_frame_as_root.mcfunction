@@ -1,1 +1,0 @@
-function animated_java:upper_eye/zzzzzzzz/animations/look_around/tick_animation

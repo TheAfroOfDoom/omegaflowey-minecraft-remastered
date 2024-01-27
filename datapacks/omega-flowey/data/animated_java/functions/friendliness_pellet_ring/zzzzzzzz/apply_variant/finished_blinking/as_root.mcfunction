@@ -1,1 +1,0 @@
-function animated_java:friendliness_pellet_ring/zzzzzzzz/apply_variant/finished_blinking/as_bone

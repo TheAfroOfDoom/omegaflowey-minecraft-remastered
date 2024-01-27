@@ -1,2 +1,0 @@
-scoreboard players set @s aj.projectile_star.rig_loaded 1
-execute unless score @s aj.projectile_star.export_version = aj.projectile_star.export_version aj.i at @s run function animated_java:projectile_star/zzzzzzzz/mark_outdated_rig

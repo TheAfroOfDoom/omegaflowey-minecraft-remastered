@@ -1,4 +1,0 @@
-summon minecraft:marker ~ ~ ~ {Tags:["aj.upper_eye.locator","aj.upper_eye.locator.pupil","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"upper_eye\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"pupil\",\"color\":\"yellow\"},\"]\"]]"}
-execute as @e[type=minecraft:marker,tag=aj.upper_eye.locator.pupil,tag=aj.new,limit=1,distance=..1] run function animated_java:upper_eye/zzzzzzzz/summon/locator_pupil/as_entity
-data modify entity @s Owner set from storage animated_java Owner
-data remove storage animated_java Owner

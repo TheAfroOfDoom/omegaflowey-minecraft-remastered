@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.tv_screen.bone.box] run data modify entity @s item.tag.CustomModelData set value 2
-execute if entity @s[tag=aj.tv_screen.bone.screen] run data modify entity @s item.tag.CustomModelData set value 3

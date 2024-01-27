@@ -1,2 +1,0 @@
-execute if score @s aj.tween_time matches 1.. run function animated_java:pipe_upper_eye/zzzzzzzz/animations/float_and_pulsate/tick_tween
-execute unless score @s aj.tween_time matches 1.. run function animated_java:pipe_upper_eye/zzzzzzzz/animations/float_and_pulsate/tick_animation

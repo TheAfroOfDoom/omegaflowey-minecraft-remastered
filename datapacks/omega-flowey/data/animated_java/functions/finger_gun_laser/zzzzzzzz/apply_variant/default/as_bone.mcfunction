@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.finger_gun_laser.bone.root] run data modify entity @s item.tag.CustomModelData set value 103

@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:upper_eye/zzzzzzzz/apply_variant/bright/as_bone
