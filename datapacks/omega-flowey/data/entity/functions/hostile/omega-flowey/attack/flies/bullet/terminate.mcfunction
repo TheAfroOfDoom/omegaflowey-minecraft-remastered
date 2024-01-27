@@ -1,6 +1,3 @@
-# Play sound
-playsound omega-flowey:attack.flies.swallow hostile @a ~ ~ ~ 5 1 1
-
 kill @s
 
 # Check if indicator should terminate
