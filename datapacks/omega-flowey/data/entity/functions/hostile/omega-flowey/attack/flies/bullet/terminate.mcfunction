@@ -1,4 +1,4 @@
-kill @s
+function animated_java:housefly/remove/this
 
 # Check if indicator should terminate
 function entity:group/start
