@@ -1,1 +1,1 @@
-function _:attack/bomb
+function _:attack/flies
