@@ -1,4 +1,4 @@
-# x: 23.00
+# x: -23.00
 scoreboard players set @s attack.position.x -2300
 execute if entity @s[tag=is_flipped] run scoreboard players operation @s attack.position.x *= #-1 mathf.const
 
