@@ -2,3 +2,4 @@
 scoreboard players set #attack-flies attack.bullets.total 25
 scoreboard players set #attack-flies attack.indicator.clock.delay 12
 scoreboard players set #attack-flies attack.indicator.rate 2
+scoreboard players set #attack-flies attack.speed.z 100
