@@ -1,10 +1,10 @@
 execute store result score @s math.0 run random value 0..99
-# 50% chance the bullet spawns along the top wall
-execute if score @s math.0 matches 0..49 run function entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_top
-# 21% chance the bullet spawns along the wall across from the indicator
-execute if score @s math.0 matches 50..70 run function entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_side
-# otherwise (29% chance) the bullet spawns along the bottom wall
-execute if score @s math.0 matches 71..99 run function entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_bottom
+# 47% chance the bullet spawns along the top wall
+execute if score @s math.0 matches 0..46 run function entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_top
+# 49% chance the bullet spawns along the wall across from the indicator
+execute if score @s math.0 matches 47..95 run function entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_side
+# otherwise (4% chance) the bullet spawns along the bottom wall
+execute if score @s math.0 matches 96..99 run function entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_bottom
 
 # y: 33.00
 scoreboard players set @s attack.position.y 3400
