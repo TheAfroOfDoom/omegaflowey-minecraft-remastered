@@ -4,3 +4,5 @@ function entity:hostile/omega-flowey/attack/flies/executor/initialize/indicator/
 
 # Remove tags
 tag @s remove attack-executor-new
+
+function entity:hostile/omega-flowey/attack/flies/executor/terminate
