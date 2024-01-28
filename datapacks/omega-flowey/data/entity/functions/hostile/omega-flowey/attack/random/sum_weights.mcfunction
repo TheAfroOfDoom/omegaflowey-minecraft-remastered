@@ -3,6 +3,7 @@ scoreboard players set @s math.0 0
 scoreboard players operation @s math.0 += #attack-bomb attack.weight
 scoreboard players operation @s math.0 += #attack-dentata-snakes attack.weight
 scoreboard players operation @s math.0 += #attack-finger-guns attack.weight
+scoreboard players operation @s math.0 += #attack-flies attack.weight
 scoreboard players operation @s math.0 += #attack-friendliness-pellets attack.weight
 scoreboard players operation @s math.0 += #attack-homing-vines attack.weight
 scoreboard players operation @s math.0 += #attack-x-bullets-lower attack.weight

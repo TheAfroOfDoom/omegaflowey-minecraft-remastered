@@ -4,6 +4,7 @@
 scoreboard players set #attack-bomb attack.weight 3
 scoreboard players set #attack-dentata-snakes attack.weight 3
 scoreboard players set #attack-finger-guns attack.weight 3
+scoreboard players set #attack-flies attack.weight 3
 scoreboard players set #attack-homing-vines attack.weight 3
 
 # Run base `start` function
