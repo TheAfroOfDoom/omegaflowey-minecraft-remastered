@@ -41,6 +41,9 @@ const awaitWriteFinish = {
   pollInterval: 100,
 };
 
+/** Converts a path's `\` to `/` */
+const normalizePath = (path) => path.replaceAll('\\', '/');
+
 const watchDatapacks = async (showVerbose) => {
   const log = (...args) => {
     const prefix = chalk.bgBlue(chalk.bold('[datapacks]'));
@@ -77,15 +80,15 @@ const watchDatapacks = async (showVerbose) => {
   });
   watcher.on('add', async (path) => {
     await copy(path, `${worldPath}/${path}`);
-    logPath(chalk.green('add:'), path);
+    logPath(chalk.green('add:'), normalizePath(path));
   });
   watcher.on('change', async (path) => {
     await copy(path, `${worldPath}/${path}`);
-    logPath(chalk.yellow('change:'), path);
+    logPath(chalk.yellow('change:'), normalizePath(path));
   });
   watcher.on('unlink', async (path) => {
     await remove(`${worldPath}/${path}`);
-    logPath(chalk.red('delete:'), path);
+    logPath(chalk.red('delete:'), normalizePath(path));
   });
 };
 
@@ -132,15 +135,15 @@ const watchResourcepack = async (showVerbose) => {
     `${resourcePackBasePath}/${path.replace(/^resourcepack[/\\]/, '')}`;
   watcher.on('add', async (path) => {
     await copy(path, dest(path));
-    logPath(chalk.green('add:'), path);
+    logPath(chalk.green('add:'), normalizePath(path));
   });
   watcher.on('change', async (path) => {
     await copy(path, dest(path));
-    logPath(chalk.yellow('change:'), path);
+    logPath(chalk.yellow('change:'), normalizePath(path));
   });
   watcher.on('unlink', async (path) => {
     await remove(dest(path));
-    logPath(chalk.red('delete:'), path);
+    logPath(chalk.red('delete:'), normalizePath(path));
   });
 };
 
@@ -374,7 +377,7 @@ const watchModels = async () => {
 
   /** Converts a path's `\` to `/` and removes the `ajmodelDir` prefix */
   const formatPath = (path) =>
-    path.replaceAll('\\', '/').replace(`${ajmodelDir}/`, '');
+    normalizePath(path).replace(`${ajmodelDir}/`, '');
 
   watcher.on('ready', () => {
     log('initialized');
