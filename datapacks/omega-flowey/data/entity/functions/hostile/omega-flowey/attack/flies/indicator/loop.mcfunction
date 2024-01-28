@@ -7,6 +7,9 @@ scoreboard players add @s attack.clock.i 1
 # Ignore bullet summoning logic while `attack.clock.i` is negative
 execute if score @s attack.clock.i matches ..-1 run return 0
 
+# Play buzzing sound when we begin summoning bullets
+execute if score @s attack.clock.i matches 0 run playsound omega-flowey:attack.flies.buzzing hostile @a ~ ~ ~ 5 1 1
+
 # Summon a bullet every `attack.indicator.rate` ticks
 scoreboard players operation @s math.0 = @s attack.clock.i
 scoreboard players operation @s math.0 %= @s attack.indicator.rate
