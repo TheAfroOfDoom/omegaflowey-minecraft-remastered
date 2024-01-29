@@ -15,7 +15,7 @@ const getDefaultVariantTextures = (ajmodel) => {
     // side = 'north', 'south', etc.
     for (const side of Object.keys(element.faces)) {
       const textureIdx = element.faces[side].texture;
-      if (typeof textureIdx !== 'undefined') {
+      if (typeof textureIdx !== 'undefined' && textureIdx !== null) {
         defaultVariantTextureIdxs.push(textureIdx);
       }
     }
