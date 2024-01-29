@@ -10,5 +10,8 @@ function entity:group/start
 teleport @s ~ ~ ~ facing entity @e[tag=attack-indicator,tag=flies,scores={group.id=0},limit=1]
 function entity:group/end
 
+# Flatten pitch
+execute at @s run teleport @s ~ ~ ~ ~ 0
+
 # Remove tags
 tag @s remove attack-bullet-new

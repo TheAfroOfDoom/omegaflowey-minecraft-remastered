@@ -6,8 +6,8 @@ execute if score @s math.0 matches 47..95 run function entity:hostile/omega-flow
 # otherwise (4% chance) the bullet spawns along the bottom wall
 execute if score @s math.0 matches 96..99 run function entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_bottom
 
-# y: 33.00
-scoreboard players set @s attack.position.y 3400
+# y: 34.50
+scoreboard players set @s attack.position.y 3450
 
 execute store result storage attack:flies x double 0.01 run scoreboard players get @s attack.position.x
 execute store result storage attack:flies y double 0.01 run scoreboard players get @s attack.position.y
