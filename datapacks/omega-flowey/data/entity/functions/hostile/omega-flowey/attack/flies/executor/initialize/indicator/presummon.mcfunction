@@ -1,16 +1,19 @@
-# x-position will summon at either x: -20.00 or x: +20.00
-scoreboard players set @s attack.position.x 2000
-execute store result score @s math.0 run random value -1..0
-execute if score @s math.0 matches -1 run scoreboard players operation @s attack.position.x *= @s math.0
+# check for pre-existence of flipped/non-flipped indicators
+scoreboard players set #attack.flies.flipped_exists math.0 0
+execute if entity @e[tag=attack-indicator,tag=flies,tag=is_flipped] run scoreboard players set #attack.flies.flipped_exists math.0 1
+scoreboard players set #attack.flies.nonflipped_exists math.0 0
+execute if entity @e[tag=attack-indicator,tag=flies,tag=!is_flipped] run scoreboard players set #attack.flies.nonflipped_exists math.0 1
 
-# face east if at -20.00, face west if at +20.00
-scoreboard players set @s attack.indicator.yaw 9000
-execute if score @s math.0 matches -1 run scoreboard players operation @s attack.indicator.yaw *= @s math.0
+# throw an error if both indicators (flipped + non-flipped) already exist
+execute if score #attack.flies.nonflipped_exists math.0 matches 1 if score #attack.flies.flipped_exists math.0 matches 1 run function entity:hostile/omega-flowey/attack/flies/executor/initialize/indicator/error
+execute if score #attack.flies.nonflipped_exists math.0 matches 1 if score #attack.flies.flipped_exists math.0 matches 1 run return fail
 
-# y-position will summon at y: 33.00
-scoreboard players set @s attack.position.y 3300
-# z-position will summon at z: 17.00
-scoreboard players set @s attack.position.z 1700
+# if a flipped indicator already exists, summon a non-flipped one (and vice-versa)
+execute if score #attack.flies.nonflipped_exists math.0 matches 0 if score #attack.flies.flipped_exists math.0 matches 1 run function entity:hostile/omega-flowey/attack/flies/executor/initialize/indicator/presummon/normal
+execute if score #attack.flies.nonflipped_exists math.0 matches 1 if score #attack.flies.flipped_exists math.0 matches 0 run function entity:hostile/omega-flowey/attack/flies/executor/initialize/indicator/presummon/flipped
+
+# if neither exist, randomly pick one (50-50)
+execute if score #attack.flies.nonflipped_exists math.0 matches 0 if score #attack.flies.flipped_exists math.0 matches 0 run function entity:hostile/omega-flowey/attack/flies/executor/initialize/indicator/presummon/random
 
 # Store new position and yaw
 execute store result storage attack:flies x double 0.01 run scoreboard players get @s attack.position.x
