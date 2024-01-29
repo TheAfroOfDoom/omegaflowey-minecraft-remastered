@@ -3,6 +3,7 @@ const sizeOf = require('image-size');
 
 const name = 'correct-image-dimensions';
 const applicableExtensions = ['.png'];
+const exclude = /scratch\//;
 
 /**
  * If a texture's dimensions aren't minimum powers of 16, Minecraft outputs a warning
@@ -12,6 +13,10 @@ const applicableExtensions = ['.png'];
 const correctTextureDimensions = (file) => {
   // Return early if file does not match any applicable extension
   if (applicableExtensions.every((extension) => !file.endsWith(extension))) {
+    return [];
+  }
+  // Return early if file matches exclude pattern
+  if (exclude.test(file.replaceAll('\\', '/'))) {
     return [];
   }
 
