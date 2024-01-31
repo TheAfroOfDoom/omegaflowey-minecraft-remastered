@@ -1,11 +1,11 @@
 data merge storage utils:damage { damage: 2, radius: 1.5 }
 execute positioned ~ ~-0.5 ~ run function entity:utils/damage with storage utils:damage
 
-# Move forward
-function entity:hostile/omega-flowey/attack/flies/bullet/loop/move
-
 execute if entity @s[tag=is_terminating] run function entity:hostile/omega-flowey/attack/flies/bullet/loop/terminating
 execute if entity @s[tag=is_terminating] run return 0
+
+# Move forward
+function entity:hostile/omega-flowey/attack/flies/bullet/loop/move
 
 # Begin terminating after reaching the venus fly trap's mouth
 function entity:group/start
