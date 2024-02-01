@@ -1,4 +1,18 @@
 {
+  "attack.bomb.explode": {
+    "sounds": [
+      {
+        "name": "omega-flowey:snd_bombsplosion"
+      }
+    ]
+  },
+  "attack.bomb.fall": {
+    "sounds": [
+      {
+        "name": "omega-flowey:snd_bombfall"
+      }
+    ]
+  },
   "attack.dentata-snakes.bounce": {
     "sounds": [
       {
@@ -21,35 +35,6 @@
       }
     ]
   },
-  "attack.generic.beep": {
-    "sounds": [
-      {
-        "name": "omega-flowey:mus_sfx_a_target"
-      }
-    ]
-  },
-  "attack.generic.charge-up": {
-    "sounds": [
-      {
-        "name": "omega-flowey:mus_sfx_segapower",
-        "pitch": 1.2
-      }
-    ]
-  },
-  "attack.bomb.explode": {
-    "sounds": [
-      {
-        "name": "omega-flowey:snd_bombsplosion"
-      }
-    ]
-  },
-  "attack.bomb.fall": {
-    "sounds": [
-      {
-        "name": "omega-flowey:snd_bombfall"
-      }
-    ]
-  },
   "attack.finger-guns.laser": {
     "sounds": [
       {
@@ -62,6 +47,28 @@
     "sounds": [
       {
         "name": "omega-flowey:mus_sfx_a_bullet"
+      }
+    ]
+  },
+  "attack.flies.buzzing": {
+    "sounds": [
+      {
+        "name": "omega-flowey:snd_buzzing"
+      }
+    ]
+  },
+  "attack.flies.summon": {
+    "sounds": [
+      {
+        "name": "omega-flowey:attack.generic.summon",
+        "type": "event"
+      }
+    ]
+  },
+  "attack.flies.swallow": {
+    "sounds": [
+      {
+        "name": "omega-flowey:snd_swallow"
       }
     ]
   },
@@ -80,6 +87,28 @@
       }
     ]
   },
+  "attack.generic.beep": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_sfx_a_target"
+      }
+    ]
+  },
+  "attack.generic.charge-up": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_sfx_segapower",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "attack.generic.summon": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_sfx_yowl"
+      }
+    ]
+  },
   "attack.homing-vines.blinking": {
     "sounds": [
       {
@@ -91,7 +120,8 @@
   "attack.homing-vines.summon": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_sfx_yowl"
+        "name": "omega-flowey:attack.generic.summon",
+        "type": "event"
       }
     ]
   },

@@ -38,6 +38,8 @@ scoreboard objectives add attack.indicator.clock.delay dummy
 scoreboard objectives add attack.indicator.clock.length dummy
 # radius (in blocks) at which to summon bullets around attack-indicator
 scoreboard objectives add attack.indicator.radius dummy
+# how often (in ticks) an attack-indicator summons an attack-bullet
+scoreboard objectives add attack.indicator.rate dummy
 # number of indicators left to summon in a set
 scoreboard objectives add attack.indicator.remaining dummy
 # total number of indicators an attack-executor will summon

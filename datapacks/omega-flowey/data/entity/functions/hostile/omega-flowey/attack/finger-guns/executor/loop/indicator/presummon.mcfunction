@@ -10,7 +10,7 @@ execute if score @s math.0 matches -1 run scoreboard players operation @s attack
 # y-position will summon at y: 33.00
 scoreboard players set @s attack.position.y 3300
 
-# Randomize z-position to summon bullet at (z: [-3.5..19.5])
+# Randomize z-position to summon indicator at (z: [-3.5..19.5])
 execute store result score @s attack.position.z run random value -35..195
 
 # Store new position and yaw
