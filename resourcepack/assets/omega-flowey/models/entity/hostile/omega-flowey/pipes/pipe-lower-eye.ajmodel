@@ -2,11 +2,11 @@
 	"meta": {
 		"format": "animated_java/ajmodel",
 		"format_version": "0.4.6",
-		"uuid": "2d31b9db-c641-46e6-a875-94380ff05f63"
+		"uuid": "0a67fc8d-a3ef-3cc4-dff1-42715f75494e"
 	},
 	"animated_java": {
 		"settings": {
-			"project_namespace": "lower_eye",
+			"project_namespace": "pipe_lower_eye",
 			"project_resolution": [16, 16],
 			"target_minecraft_version": "1.20+",
 			"rig_item": "minecraft:white_dye",
@@ -22,7 +22,7 @@
 			"animated_java:datapack_exporter": {
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\omega-flowey\\pack.mcmeta",
 				"outdated_rig_warning": true,
-				"root_entity_nbt": "{Tags:[\"omega-flowey-remastered\", \"omega-flowey\", \"omega-flowey-lower-eye\"]}",
+				"root_entity_nbt": "{Tags:[\"omega-flowey-remastered\", \"omega-flowey\", \"omega-flowey-pipe\",\"omega-flowey-pipe-lower-eye\"]}",
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -1755,14 +1755,14 @@
 	],
 	"outliner": [
 		{
-			"name": "root",
+			"name": "lower_eye_reference",
 			"origin": [0, 0, 2.95],
 			"color": 0,
 			"nbt": "{}",
 			"uuid": "f13c55d0-8667-840d-3540-9fdda50cfc40",
 			"export": true,
 			"mirror_uv": false,
-			"isOpen": true,
+			"isOpen": false,
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
@@ -1789,7 +1789,7 @@
 					"uuid": "b68d2836-80d9-27aa-0d3a-124ba44fce75",
 					"export": true,
 					"mirror_uv": false,
-					"isOpen": true,
+					"isOpen": false,
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
