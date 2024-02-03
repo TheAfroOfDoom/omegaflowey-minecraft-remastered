@@ -11,9 +11,9 @@ execute positioned 5 44 -7 rotated 10 20 run function animated_java:lower_eye/su
 
 ## Lower-eye pipes
 # Right-lower-eye pipe
-execute positioned -4 45 -11 rotated 170 -20 run function animated_java:pipe_lower_eye/summon
+execute positioned -9 45 -11 rotated -10 20 run function animated_java:pipe_lower_eye/summon
 # Left-lower-eye pipe
-execute positioned 4 45 -11 rotated 10 20 run function animated_java:pipe_lower_eye/summon
+execute positioned 9 45 -11 rotated -170 -20 run function animated_java:pipe_lower_eye/summon
 
 ## TV-screen
 execute positioned 0 51 -6 rotated 0 45 run function animated_java:tv_screen/summon
