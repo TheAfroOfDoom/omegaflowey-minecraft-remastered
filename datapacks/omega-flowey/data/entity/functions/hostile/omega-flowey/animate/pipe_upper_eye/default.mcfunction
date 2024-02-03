@@ -1,0 +1,2 @@
+function animated_java:pipe_upper_eye/animations/float_and_pulsate/play
+function animated_java:pipe_upper_eye/apply_variant/default

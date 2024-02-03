@@ -12,8 +12,10 @@ execute positioned 5 44 -7 rotated 10 20 run function animated_java:lower_eye/su
 ## Lower-eye pipes
 # Right-lower-eye pipe
 execute positioned -9 45 -11 rotated -10 20 run function animated_java:pipe_lower_eye/summon
+tag @e[tag=aj.pipe_lower_eye.root] add pipe_lower_eye.right
 # Left-lower-eye pipe
 execute positioned 9 45 -11 rotated -170 -20 run function animated_java:pipe_lower_eye/summon
+tag @e[tag=aj.pipe_lower_eye.root,tag=!pipe_lower_eye.right] add pipe_lower_eye.left
 
 ## TV-screen
 execute positioned 0 51 -6 rotated 0 45 run function animated_java:tv_screen/summon
@@ -27,7 +29,9 @@ execute positioned 16.5 50 -4 rotated 20 40 run function animated_java:upper_eye
 ## Upper-eye pipes
 # Right-upper-eye pipe
 execute positioned -14 50 -6.5 rotated -20 40 run function animated_java:pipe_upper_eye/summon
+tag @e[tag=aj.pipe_upper_eye.root] add pipe_upper_eye.right
 # Left-upper-eye pipe
 execute positioned 14 50 -6.5 rotated -160 -40 run function animated_java:pipe_upper_eye/summon
+tag @e[tag=aj.pipe_upper_eye.root,tag=!pipe_upper_eye.right] add pipe_upper_eye.left
 
 execute as @e[type=minecraft:item_display] run data modify entity @s teleport_duration set value 1

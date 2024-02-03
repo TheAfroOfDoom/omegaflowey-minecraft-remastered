@@ -14,7 +14,7 @@ scoreboard players set @s boss-fight.attack.delay -1
 scoreboard players set @s boss-fight.attack.phase.i 0
 scoreboard players set @s boss-fight.attack.phase.total 6
 scoreboard players set @s boss-fight.progress.phase.i 0
-scoreboard players set @s boss-fight.progress.phase.total 8
+scoreboard players set @s boss-fight.progress.phase.total 6
 
 # Add tags
 tag @s add boss_fight.phase.attack
