@@ -1,1 +1,1 @@
-execute as @e[tag=aj.pipe_upper_eye.root,tag=pipe_upper_eye.right] run function animated_java:pipe_upper_eye/apply_variant/soul_2
+execute as @e[tag=aj.petal_pipe_middle.root,tag=petal_pipe_middle.right] run function animated_java:petal_pipe_middle/apply_variant/soul_2

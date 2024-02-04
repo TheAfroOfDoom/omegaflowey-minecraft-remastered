@@ -9,13 +9,13 @@ execute positioned -5 44 -7 rotated 170 -20 run function animated_java:lower_eye
 # Left-eye
 execute positioned 5 44 -7 rotated 10 20 run function animated_java:lower_eye/summon
 
-## Lower-eye pipes
-# Right-lower-eye pipe
-execute positioned -9 45 -11 rotated -10 20 run function animated_java:pipe_lower_eye/summon
-tag @e[tag=aj.pipe_lower_eye.root] add pipe_lower_eye.right
-# Left-lower-eye pipe
-execute positioned 9 45 -11 rotated -170 -20 run function animated_java:pipe_lower_eye/summon
-tag @e[tag=aj.pipe_lower_eye.root,tag=!pipe_lower_eye.right] add pipe_lower_eye.left
+## Lower petal pipes
+# Right-lower petal pipe
+execute positioned -9 45 -11 rotated -10 20 run function animated_java:petal_pipe_lower/summon
+tag @e[tag=aj.petal_pipe_lower.root] add petal_pipe_lower.right
+# Left-lower petal pipe
+execute positioned 9 45 -11 rotated -170 -20 run function animated_java:petal_pipe_lower/summon
+tag @e[tag=aj.petal_pipe_lower.root,tag=!petal_pipe_lower.right] add petal_pipe_lower.left
 
 ## TV-screen
 execute positioned 0 51 -6 rotated 0 45 run function animated_java:tv_screen/summon
@@ -26,12 +26,12 @@ execute positioned -15.5 50 -4 rotated 160 -40 run function animated_java:upper_
 # Left-eye
 execute positioned 16.5 50 -4 rotated 20 40 run function animated_java:upper_eye/summon
 
-## Upper-eye pipes
-# Right-upper-eye pipe
-execute positioned -14 50 -6.5 rotated -20 40 run function animated_java:pipe_upper_eye/summon
-tag @e[tag=aj.pipe_upper_eye.root] add pipe_upper_eye.right
-# Left-upper-eye pipe
-execute positioned 14 50 -6.5 rotated -160 -40 run function animated_java:pipe_upper_eye/summon
-tag @e[tag=aj.pipe_upper_eye.root,tag=!pipe_upper_eye.right] add pipe_upper_eye.left
+## Middle petal pipes
+# Right-middle petal pipe
+execute positioned -14 50 -6.5 rotated -20 40 run function animated_java:petal_pipe_middle/summon
+tag @e[tag=aj.petal_pipe_middle.root] add petal_pipe_middle.right
+# Left-middle petal pipe
+execute positioned 14 50 -6.5 rotated -160 -40 run function animated_java:petal_pipe_middle/summon
+tag @e[tag=aj.petal_pipe_middle.root,tag=!petal_pipe_middle.right] add petal_pipe_middle.left
 
 execute as @e[type=minecraft:item_display] run data modify entity @s teleport_duration set value 1
