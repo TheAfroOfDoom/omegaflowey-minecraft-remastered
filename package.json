@@ -2,6 +2,7 @@
   "name": "omega-flowey-minecraft-remastered",
   "packageManager": "yarn@3.6.3",
   "scripts": {
+    "down": "nps sync.world.down",
     "lint": "nps lint",
     "lint.fix": "nps lint.fix",
     "start": "nps",
@@ -16,6 +17,7 @@
     "chokidar": "3.5.3",
     "dotenv": "16.3.1",
     "eslint": "8.56.0",
+    "extract-zip": "2.0.1",
     "find-process": "1.4.7",
     "fs-extra": "11.2.0",
     "glob": "10.3.10",
