@@ -38,6 +38,8 @@ const allAnimatedJavaExportFiles = [
   'resourcepack/resourcepack.ajmeta',
   `${ajmodelDir}/last_exported_hashes.json`,
 ];
+const allAnimatedJavaExportFilesFormatted =
+  allAnimatedJavaExportFiles.join(',');
 
 module.exports = {
   scripts: {
@@ -81,12 +83,8 @@ module.exports = {
           'lint.custom.resourcepack',
           'lint.custom.other',
         ),
-        datapacks: `node ./package-scripts/run-linting-rules --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFiles.join(
-          ',',
-        )}"`,
-        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFiles.join(
-          ',',
-        )}"`,
+        datapacks: `node ./package-scripts/run-linting-rules --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
+        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
         other:
           'node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"',
       },
