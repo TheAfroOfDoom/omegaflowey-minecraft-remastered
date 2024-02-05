@@ -1,3 +1,13 @@
+# **LOOKING FOR CONTRIBUTORS**
+
+If you have experience with or are looking to get into Minecraft mapmaking and are interested in contributing to the map, reach out to us! we're looking for people to help with the following items, in order of priority:
+
+1. **Blockbench modelling**
+2. Animating Java
+3. Datapacks
+
+---
+
 # Omega Flowey in Minecraft - Remastered
 
 Back in early 2016 I released `Omega Flowey in Minecraft`.

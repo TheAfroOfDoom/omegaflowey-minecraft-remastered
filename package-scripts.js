@@ -11,19 +11,13 @@ assertEnvironmentVariables([
   'ASSETS_DIR',
   'BLOCKBENCH_PATH',
   'DATAPACK_MCMETA',
-  'MINECRAFT_PATH',
   'RESOURCEPACK_MCMETA',
-  'WORLD_NAME',
 ]);
 
 const assetsDir = process.env.ASSETS_DIR;
 const blockbenchPath = process.env.BLOCKBENCH_PATH;
 const datapackMcmeta = process.env.DATAPACK_MCMETA;
-const minecraftPath = process.env.MINECRAFT_PATH;
 const resourcePackMcmeta = process.env.RESOURCEPACK_MCMETA;
-const worldName = process.env.WORLD_NAME;
-
-const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 
 // we have to resolve this path so we can use it with Blockbench
 const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
@@ -38,6 +32,8 @@ const allAnimatedJavaExportFiles = [
   'resourcepack/resourcepack.ajmeta',
   `${ajmodelDir}/last_exported_hashes.json`,
 ];
+const allAnimatedJavaExportFilesFormatted =
+  allAnimatedJavaExportFiles.join(',');
 
 module.exports = {
   scripts: {
@@ -48,10 +44,11 @@ module.exports = {
     },
     sync: {
       default: 'nps sync.world',
-      world: series(
-        'rimraf world.zip',
-        `bestzip world.zip ${minecraftWorldPath}/*`,
-      ),
+      world: {
+        default: 'nps sync.world.up',
+        down: 'node ./package-scripts/sync-world --down',
+        up: 'node ./package-scripts/sync-world --up',
+      },
     },
     lint: {
       default: 'nps lint.custom lint.scripts',
@@ -81,12 +78,8 @@ module.exports = {
           'lint.custom.resourcepack',
           'lint.custom.other',
         ),
-        datapacks: `node ./package-scripts/run-linting-rules --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFiles.join(
-          ',',
-        )}"`,
-        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFiles.join(
-          ',',
-        )}"`,
+        datapacks: `node ./package-scripts/run-linting-rules --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
+        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
         other:
           'node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"',
       },
