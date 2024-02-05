@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const dotenv = require('dotenv');
 const extract = require('extract-zip');
 const { createWriteStream, remove, stat, mkdir, exists } = require('fs-extra');
+const { glob } = require('glob');
 const minimist = require('minimist');
 
 const { assertEnvironmentVariables } = require('./utils');
@@ -47,6 +48,23 @@ const backupWorld = async (dest, useColor = true) =>
     archive.finalize();
   });
 
+const deleteOldBackups = async () => {
+  // 1 week = stale
+  // https://stackoverflow.com/a/48821439/13789724
+  const STALE_DURATION = 604800000;
+  const tempBackups = await glob(`${tempBackupPath}/**`).then((paths) =>
+    paths.filter((path) => path.endsWith('.zip')),
+  );
+
+  for (const tempBackupPath of tempBackups) {
+    const modifiedTime = (await stat(tempBackupPath)).mtime;
+    if (Date.now() - modifiedTime > STALE_DURATION) {
+      console.log('Deleting stale backup:', tempBackupPath);
+      await remove(tempBackupPath);
+    }
+  }
+};
+
 /** Backup name will be the minecraft save directory's last modified date */
 const createTempWorldBackupName = async () => {
   const modifiedTime = (await stat(minecraftWorldPath)).mtime;
@@ -65,12 +83,15 @@ const syncDown = async () => {
     await mkdir(tempBackupPath, { recursive: true });
   }
 
+  await deleteOldBackups();
+
   console.log('Backing up your current world as a precautionary measure...');
   const name = await createTempWorldBackupName();
   const path = `${tempBackupPath}/${name}`;
   await backupWorld(path, false);
 
   await remove(minecraftWorldPath);
+  console.log('Extracting world backup to client saves directory...');
   await extract(worldBackupPath, { dir: minecraftWorldPath });
 
   const srcFormatted = chalk.blueBright(worldBackupPath);
