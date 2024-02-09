@@ -2,11 +2,15 @@ const chalk = require('chalk');
 const { lstatSync } = require('fs');
 const { globSync } = require('glob');
 const minimist = require('minimist');
+const { basename } = require('path');
 
 const argv = minimist(process.argv.slice(2));
 
-const rules = globSync('./package-scripts/linting-rules/*.js').map((rulePath) =>
-  require(`${process.cwd()}/${rulePath}`),
+const rules = globSync('./package-scripts/linting-rules/*.js').map(
+  (rulePath) => ({
+    name: basename(rulePath, '.js'),
+    ...require(`${process.cwd()}/${rulePath}`),
+  }),
 );
 
 const main = () => {

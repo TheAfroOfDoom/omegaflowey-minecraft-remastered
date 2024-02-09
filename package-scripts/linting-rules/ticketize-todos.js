@@ -1,8 +1,6 @@
 const chalk = require('chalk');
 const { readFileSync } = require('fs');
 
-const name = 'ticketize-todos';
-
 /**
  * Detects instances of TODOs that don't have an associated ticket number
  */
@@ -47,5 +45,4 @@ const ticketizeTodos = (file) => {
 
 module.exports = {
   function: ticketizeTodos,
-  name,
 };

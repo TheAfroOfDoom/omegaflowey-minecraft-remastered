@@ -1,7 +1,6 @@
 const chalk = require('chalk');
 const sizeOf = require('image-size');
 
-const name = 'correct-image-dimensions';
 const applicableExtensions = ['.png'];
 const exclude = /scratch\//;
 
@@ -39,5 +38,4 @@ const correctTextureDimensions = (file) => {
 
 module.exports = {
   function: correctTextureDimensions,
-  name,
 };

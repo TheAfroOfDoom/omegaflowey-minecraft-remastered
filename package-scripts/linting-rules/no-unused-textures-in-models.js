@@ -1,7 +1,6 @@
 const { readFileSync } = require('fs');
 const { differenceBy, uniq } = require('lodash');
 
-const name = 'no-unused-textures-in-models';
 const applicableExtensions = ['.ajmodel'];
 
 /**
@@ -85,5 +84,4 @@ const noUnusedTexturesInModels = (file) => {
 
 module.exports = {
   function: noUnusedTexturesInModels,
-  name,
 };
