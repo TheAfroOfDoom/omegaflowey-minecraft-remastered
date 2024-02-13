@@ -51,6 +51,3 @@ tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe_lower] add petal_pipe.right
 execute positioned 11 63 4 rotated -170 -45 run function animated_java:petal_pipe_circle/summon
 tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe_lower,tag=!petal_pipe.right] add petal_pipe.left
 tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe_lower] add petal_pipe_upper
-
-# TODO(): remove this?
-# execute as @e[type=minecraft:item_display] run data modify entity @s teleport_duration set value 1
