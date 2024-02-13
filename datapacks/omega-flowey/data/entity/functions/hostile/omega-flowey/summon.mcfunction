@@ -16,10 +16,10 @@ execute positioned 5 42 -7 rotated 10 20 run function animated_java:lower_eye/su
 
 ## Lower petal pipes
 # Right-lower petal pipe
-execute positioned -11 43 -11 rotated -10 20 run function animated_java:petal_pipe_circle/summon
+execute positioned -11 44 -12.5 rotated -10 20 run function animated_java:petal_pipe_circle/summon
 tag @e[tag=aj.petal_pipe_circle.root] add petal_pipe.right
 # Left-lower petal pipe
-execute positioned 11 43 -11 rotated -170 -20 run function animated_java:petal_pipe_circle/summon
+execute positioned 11 44 -12.5 rotated -170 -20 run function animated_java:petal_pipe_circle/summon
 tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe.right] add petal_pipe.left
 tag @e[tag=aj.petal_pipe_circle.root] add petal_pipe_lower
 
