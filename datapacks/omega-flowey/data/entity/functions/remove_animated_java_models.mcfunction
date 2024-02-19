@@ -17,3 +17,4 @@ function animated_java:venus_fly_trap/remove/all
 
 # Soul models
 function animated_java:soul/remove/all
+function animated_java:soul_0_sword/remove/all
