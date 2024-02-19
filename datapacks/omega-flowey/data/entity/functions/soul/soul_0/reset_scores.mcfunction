@@ -7,5 +7,5 @@ scoreboard players set #soul-0 soul.bullet.position.dz 350
 # if you set this to `-2150`, you'll see a non-uniform grid
 scoreboard players set #soul-0 soul.bullet.position.x -2151
 scoreboard players set #soul-0 soul.bullet.position.x.end 2250
-scoreboard players set #soul-0 soul.bullet.position.z -351
-scoreboard players set #soul-0 soul.bullet.position.z.end 1950
+scoreboard players set #soul-0 soul.bullet.position.z -7851
+scoreboard players set #soul-0 soul.bullet.position.z.end -5650
