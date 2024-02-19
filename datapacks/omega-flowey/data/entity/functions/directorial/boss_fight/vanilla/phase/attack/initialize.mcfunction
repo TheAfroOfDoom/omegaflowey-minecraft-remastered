@@ -4,3 +4,6 @@ execute if score @s boss-fight.attack.phase.i matches 1 run function entity:dire
 
 # Set scores
 scoreboard players set @s boss-fight.attack.clock.i -1
+
+# Add tags
+tag @s add boss_fight.phase.attack
