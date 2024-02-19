@@ -6,6 +6,9 @@ tag @s remove event_is_done
 # # Increment progress phase
 # scoreboard players add @s boss-fight.progress.phase.i 1
 
+# Next phase
+function entity:directorial/boss_fight/vanilla/phase/attack/initialize
+
 # Move players to main arena
 execute as @a at @s unless entity @s[team=!player,team=!spectator] run teleport @s ~ ~ ~75.0
 
