@@ -67,6 +67,9 @@ scoreboard objectives add boss-fight.attack.delay dummy
 scoreboard objectives add boss-fight.attack.phase.i dummy
 # total number of attack phases before we wrap the index
 scoreboard objectives add boss-fight.attack.phase.total dummy
+scoreboard objectives add boss-fight.progress.clock.i dummy
+# total duration (in ticks) of the progress phase
+scoreboard objectives add boss-fight.progress.clock.total dummy
 # index of the progress phase
 scoreboard objectives add boss-fight.progress.phase.i dummy
 # total number of progress phases in the boss fight
