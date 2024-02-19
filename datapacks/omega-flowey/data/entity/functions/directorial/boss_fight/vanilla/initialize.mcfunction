@@ -16,9 +16,6 @@ scoreboard players set @s boss-fight.attack.phase.total 6
 scoreboard players set @s boss-fight.progress.phase.i 0
 scoreboard players set @s boss-fight.progress.phase.total 6
 
-# Add tags
-tag @s add boss_fight.phase.attack
-
 # Remove tag
 tag @s remove boss_fight_new
 
