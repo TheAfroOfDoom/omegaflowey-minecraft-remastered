@@ -3,6 +3,7 @@ scoreboard players add @s boss-fight.attack.phase.i 1
 # Wrap around total phases (6)
 scoreboard players operation @s boss-fight.attack.phase.i %= @s boss-fight.attack.phase.total
 
+# Next phase
 function entity:directorial/boss_fight/vanilla/phase/warn/initialize
 
 # Remove tags
