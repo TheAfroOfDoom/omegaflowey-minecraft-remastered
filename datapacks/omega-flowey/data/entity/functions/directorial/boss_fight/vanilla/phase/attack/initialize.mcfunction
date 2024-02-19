@@ -7,3 +7,6 @@ scoreboard players set @s boss-fight.attack.clock.i -1
 
 # Add tags
 tag @s add boss_fight.phase.attack
+
+# Remove tv_screen.soul model(s) if they exist
+execute as @e[tag=aj.tv_screen.root,tag=tv_screen.soul] run function animated_java:tv_screen/remove/this

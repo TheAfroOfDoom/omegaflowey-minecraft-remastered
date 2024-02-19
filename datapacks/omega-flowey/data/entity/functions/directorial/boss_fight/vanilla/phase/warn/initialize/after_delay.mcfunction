@@ -7,3 +7,7 @@ function entity:hostile/omega-flowey/animate/tv-screen/warning
 # Set applicable petal-pipe to soul-color variant
 execute store result storage animate:pipe soul_index int 1 run scoreboard players get @s boss-fight.progress.phase.i
 function entity:hostile/omega-flowey/animate/pipe with storage animate:pipe
+
+# Summon and begin animating soul tv_screen in other arena
+function entity:hostile/omega-flowey/summon/soul
+execute as @e[tag=aj.tv_screen.root,tag=tv_screen.soul] run function entity:hostile/omega-flowey/animate/soul
