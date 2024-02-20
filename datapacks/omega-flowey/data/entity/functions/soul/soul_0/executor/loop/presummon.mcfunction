@@ -9,4 +9,4 @@ scoreboard players set @s math.bool 0
 execute if score @s soul.bullet.position.x matches 0..100 if score @s soul.bullet.position.z matches -9500..-9400 run scoreboard players set @s math.bool 1
 
 execute if score @s math.bool matches 0 run function entity:soul/soul_0/bullet/summon with storage soul:soul_0
-execute if score @s math.bool matches 1 run say 6th guy
+execute if score @s math.bool matches 1 run function entity:soul/soul_0/act_button/summon with storage soul:soul_0
