@@ -14,4 +14,4 @@ tag @s remove soul-executor-new
 
 # Play music
 # TODO: this shouldn't be here, probably? this should only be played by the boss-fight director
-playsound omega-flowey:music.soul.0 record @a ~ ~ ~ 10 1
+function entity:soul/soul_0/executor/play_music

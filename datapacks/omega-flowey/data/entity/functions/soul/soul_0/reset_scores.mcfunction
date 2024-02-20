@@ -1,5 +1,5 @@
 # TODO(): validate these soul parameters
-scoreboard players set #soul-0 soul.executor.clock.length 303
+scoreboard players set #soul-0 soul.executor.clock.length 365
 scoreboard players set #soul-0 soul.bullet.position.dx 525
 scoreboard players set #soul-0 soul.bullet.position.dz 525
 # x0/z0 are at e.g. -21.51 instead of -21.50 so that when we summon at something without a decimal (e.g. 3.0),
