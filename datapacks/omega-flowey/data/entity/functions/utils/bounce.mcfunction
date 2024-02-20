@@ -3,9 +3,6 @@
 
 # TODO(42): adjust arena bounds based on new animated java model (visually, it clips into the wall right now)
 
-# Don't bounce if we've already escaped the arena (past top wall)
-execute if entity @s[x=-1000,dx=2000,y=30,dy=10,z=-4,dz=-1000,tag=can-escape-arena] run return 0
-
 # Save initial yaw
 execute store result score @s util.bounce.yaw.initial run data get entity @s Rotation[0]
 scoreboard players operation @s util.bounce.yaw = @s util.bounce.yaw.initial
@@ -17,8 +14,7 @@ execute unless entity @s[x=-21,dx=50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_
 execute unless entity @s[x=21,dx=-50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_rotation=-180..0] run function entity:utils/bounce/x_positive
 
 # -Z wall
-# disable top-wall bouncing if has `can-escape-arena` tag
-execute unless entity @s[x=-25,dx=50,y=30,dy=10,z=-3,dz=25] unless entity @s[y_rotation=-90..90] unless entity @s[tag=can-escape-arena] run function entity:utils/bounce/z_negative
+execute unless entity @s[x=-25,dx=50,y=30,dy=10,z=-3,dz=25] unless entity @s[y_rotation=-90..90] run function entity:utils/bounce/z_negative
 
 # +Z wall
 execute unless entity @s[x=-1000,dx=2000,y=30,dy=10,z=18,dz=-25] if entity @s[y_rotation=-90..90] run function entity:utils/bounce/z_positive
