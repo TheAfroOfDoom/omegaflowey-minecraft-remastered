@@ -101,3 +101,8 @@ scoreboard objectives add soul.executor.clock.length dummy
 
 scoreboard objectives add player.shake.pitch dummy
 scoreboard objectives add player.shake.yaw dummy
+
+# the final yaw an entity has after running bounce calculations
+scoreboard objectives add util.bounce.yaw dummy
+# the initial yaw an entity starts with before running bounce calculations
+scoreboard objectives add util.bounce.yaw.initial dummy
