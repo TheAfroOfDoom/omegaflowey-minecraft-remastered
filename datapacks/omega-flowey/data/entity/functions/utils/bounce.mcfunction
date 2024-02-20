@@ -1,4 +1,5 @@
-## Bounces the dentata-snake against the walls of the arena (flips x-direction/y-direction as necessary)
+## Reflects an entity's facing direction (yaw only) against the walls of a specified bounding box
+# i.e. (flips x-direction/z-direction as necessary)
 
 # TODO(42): adjust arena bounds based on new animated java model (visually, it clips into the wall right now)
 
@@ -6,29 +7,29 @@
 execute if entity @s[x=-1000,dx=2000,y=30,dy=10,z=-4,dz=-1000,tag=can-escape-arena] run return 0
 
 # Save initial yaw
-execute store result score @s math.0 run data get entity @s Rotation[0]
-scoreboard players operation @s math.1 = @s math.0
+execute store result score @s util.bounce.yaw.initial run data get entity @s Rotation[0]
+scoreboard players operation @s util.bounce.yaw = @s util.bounce.yaw.initial
 
 # Left wall facing flowey
-execute unless entity @s[x=-21,dx=50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_rotation=0..180] run scoreboard players operation @s math.0 *= #-1 mathf.const
+execute unless entity @s[x=-21,dx=50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_rotation=0..180] run scoreboard players operation @s util.bounce.yaw *= #-1 mathf.const
 
 # Right wall facing flowey
-execute unless entity @s[x=21,dx=-50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_rotation=-180..0] run scoreboard players operation @s math.0 *= #-1 mathf.const
+execute unless entity @s[x=21,dx=-50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_rotation=-180..0] run scoreboard players operation @s util.bounce.yaw *= #-1 mathf.const
 
 # Top wall facing flowey
 # disable top-wall bouncing if has `can-escape-arena` tag
-execute unless entity @s[x=-25,dx=50,y=30,dy=10,z=-3,dz=25] unless entity @s[y_rotation=-90..90] unless entity @s[tag=can-escape-arena] run scoreboard players operation @s math.0 -= #180 mathf.const
-execute unless entity @s[x=-25,dx=50,y=30,dy=10,z=-3,dz=25] unless entity @s[y_rotation=-90..90] unless entity @s[tag=can-escape-arena] run scoreboard players operation @s math.0 *= #-1 mathf.const
+execute unless entity @s[x=-25,dx=50,y=30,dy=10,z=-3,dz=25] unless entity @s[y_rotation=-90..90] unless entity @s[tag=can-escape-arena] run scoreboard players operation @s util.bounce.yaw -= #180 mathf.const
+execute unless entity @s[x=-25,dx=50,y=30,dy=10,z=-3,dz=25] unless entity @s[y_rotation=-90..90] unless entity @s[tag=can-escape-arena] run scoreboard players operation @s util.bounce.yaw *= #-1 mathf.const
 
 # Bottom wall facing flowey
-execute unless entity @s[x=-1000,dx=2000,y=30,dy=10,z=18,dz=-25] if entity @s[y_rotation=-90..90] run scoreboard players operation @s math.0 -= #180 mathf.const
-execute unless entity @s[x=-1000,dx=2000,y=30,dy=10,z=18,dz=-25] if entity @s[y_rotation=-90..90] run scoreboard players operation @s math.0 *= #-1 mathf.const
+execute unless entity @s[x=-1000,dx=2000,y=30,dy=10,z=18,dz=-25] if entity @s[y_rotation=-90..90] run scoreboard players operation @s util.bounce.yaw -= #180 mathf.const
+execute unless entity @s[x=-1000,dx=2000,y=30,dy=10,z=18,dz=-25] if entity @s[y_rotation=-90..90] run scoreboard players operation @s util.bounce.yaw *= #-1 mathf.const
 
 # Store bounced angle
-execute store result entity @s Rotation[0] float 1 run scoreboard players get @s math.0
+execute store result entity @s Rotation[0] float 1 run scoreboard players get @s util.bounce.yaw
 
-# If `math.0 != math.1`, we bounced
+# If `util.bounce.yaw != util.bounce.yaw.initial`, we bounced
 # If we bounced, play bounce sound
 # Only the bullet-head makes bounce sounds/shakes the player's screen
-execute unless score @s math.0 = @s math.1 if entity @s[tag=attack-bullet-head] run playsound omega-flowey:attack.dentata-snakes.bounce hostile @a ~ ~ ~ 5 1
-execute unless score @s math.0 = @s math.1 if entity @s[tag=attack-bullet-head] as @a unless entity @s[team=!player,team=!dead,team=!spectator] at @s run function entity:utils/shake_screen
+execute unless score @s util.bounce.yaw = @s util.bounce.yaw.initial if entity @s[tag=attack-bullet-head] run playsound omega-flowey:attack.dentata-snakes.bounce hostile @a ~ ~ ~ 5 1
+execute unless score @s util.bounce.yaw = @s util.bounce.yaw.initial if entity @s[tag=attack-bullet-head] as @a unless entity @s[team=!player,team=!dead,team=!spectator] at @s run function entity:utils/shake_screen
