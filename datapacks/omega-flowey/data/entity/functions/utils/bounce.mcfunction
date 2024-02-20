@@ -23,7 +23,4 @@ execute unless entity @s[x=-1000,dx=2000,y=30,dy=10,z=18,dz=-25] if entity @s[y_
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s util.bounce.yaw
 
 # If `util.bounce.yaw != util.bounce.yaw.initial`, we bounced
-# If we bounced, play bounce sound
-# Only the bullet-head makes bounce sounds/shakes the player's screen
-execute unless score @s util.bounce.yaw = @s util.bounce.yaw.initial if entity @s[tag=attack-bullet-head] run playsound omega-flowey:attack.dentata-snakes.bounce hostile @a ~ ~ ~ 5 1
-execute unless score @s util.bounce.yaw = @s util.bounce.yaw.initial if entity @s[tag=attack-bullet-head] as @a unless entity @s[team=!player,team=!dead,team=!spectator] at @s run function entity:utils/shake_screen
+$execute unless score @s util.bounce.yaw = @s util.bounce.yaw.initial run $(command_after_bouncing)
