@@ -10,20 +10,18 @@ execute if entity @s[x=-1000,dx=2000,y=30,dy=10,z=-4,dz=-1000,tag=can-escape-are
 execute store result score @s util.bounce.yaw.initial run data get entity @s Rotation[0]
 scoreboard players operation @s util.bounce.yaw = @s util.bounce.yaw.initial
 
-# Left wall facing flowey
-execute unless entity @s[x=-21,dx=50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_rotation=0..180] run scoreboard players operation @s util.bounce.yaw *= #-1 mathf.const
+# -X wall
+execute unless entity @s[x=-21,dx=50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_rotation=0..180] run function entity:utils/bounce/x_negative
 
-# Right wall facing flowey
-execute unless entity @s[x=21,dx=-50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_rotation=-180..0] run scoreboard players operation @s util.bounce.yaw *= #-1 mathf.const
+# +X wall
+execute unless entity @s[x=21,dx=-50,y=30,dy=10,z=-1000,dz=2000] if entity @s[y_rotation=-180..0] run function entity:utils/bounce/x_positive
 
-# Top wall facing flowey
+# -Z wall
 # disable top-wall bouncing if has `can-escape-arena` tag
-execute unless entity @s[x=-25,dx=50,y=30,dy=10,z=-3,dz=25] unless entity @s[y_rotation=-90..90] unless entity @s[tag=can-escape-arena] run scoreboard players operation @s util.bounce.yaw -= #180 mathf.const
-execute unless entity @s[x=-25,dx=50,y=30,dy=10,z=-3,dz=25] unless entity @s[y_rotation=-90..90] unless entity @s[tag=can-escape-arena] run scoreboard players operation @s util.bounce.yaw *= #-1 mathf.const
+execute unless entity @s[x=-25,dx=50,y=30,dy=10,z=-3,dz=25] unless entity @s[y_rotation=-90..90] unless entity @s[tag=can-escape-arena] run function entity:utils/bounce/z_negative
 
-# Bottom wall facing flowey
-execute unless entity @s[x=-1000,dx=2000,y=30,dy=10,z=18,dz=-25] if entity @s[y_rotation=-90..90] run scoreboard players operation @s util.bounce.yaw -= #180 mathf.const
-execute unless entity @s[x=-1000,dx=2000,y=30,dy=10,z=18,dz=-25] if entity @s[y_rotation=-90..90] run scoreboard players operation @s util.bounce.yaw *= #-1 mathf.const
+# +Z wall
+execute unless entity @s[x=-1000,dx=2000,y=30,dy=10,z=18,dz=-25] if entity @s[y_rotation=-90..90] run function entity:utils/bounce/z_positive
 
 # Store bounced angle
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s util.bounce.yaw
