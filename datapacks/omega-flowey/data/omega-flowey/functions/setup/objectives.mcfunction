@@ -96,6 +96,7 @@ scoreboard objectives add soul.bullet.position.dx dummy
 scoreboard objectives add soul.bullet.position.dz dummy
 scoreboard objectives add soul.bullet.position.x dummy
 scoreboard objectives add soul.bullet.position.x.end dummy
+scoreboard objectives add soul.bullet.position.yaw dummy
 scoreboard objectives add soul.bullet.position.z dummy
 scoreboard objectives add soul.bullet.position.z.end dummy
 scoreboard objectives add soul.clock.i dummy
