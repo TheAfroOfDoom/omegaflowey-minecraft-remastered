@@ -13,8 +13,6 @@
 # * y/dy: generous y lower-bound + height for each bounding box
 #   (y/dy need to be generous because of target selectors being janky with volume selections)
 
-# TODO(42): adjust arena bounds based on new animated java model (visually, it clips into the wall right now)
-
 # Save initial yaw
 execute store result score @s util.bounce.yaw.initial run data get entity @s Rotation[0]
 scoreboard players operation @s util.bounce.yaw = @s util.bounce.yaw.initial
