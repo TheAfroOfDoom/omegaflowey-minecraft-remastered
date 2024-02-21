@@ -85,6 +85,9 @@ scoreboard objectives add math.1 dummy
 scoreboard objectives add math.2 dummy
 scoreboard objectives add math.bool dummy
 
+scoreboard objectives add player.shake.pitch dummy
+scoreboard objectives add player.shake.yaw dummy
+
 scoreboard objectives add random dummy
 scoreboard objectives add random.min dummy
 scoreboard objectives add random.range dummy
@@ -98,9 +101,6 @@ scoreboard objectives add soul.bullet.position.z.end dummy
 scoreboard objectives add soul.clock.i dummy
 # length an soul-executor will exist
 scoreboard objectives add soul.executor.clock.length dummy
-
-scoreboard objectives add player.shake.pitch dummy
-scoreboard objectives add player.shake.yaw dummy
 
 # the final yaw an entity has after running bounce calculations
 scoreboard objectives add util.bounce.yaw dummy
