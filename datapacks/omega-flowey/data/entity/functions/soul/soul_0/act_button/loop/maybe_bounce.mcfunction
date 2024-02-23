@@ -1,7 +1,7 @@
-data merge storage soul:soul_0.bounce { x_negative_x: -21, x_negative_dx: 50 }
-data merge storage soul:soul_0.bounce { x_positive_x: 21, x_positive_dx: -50 }
-data merge storage soul:soul_0.bounce { z_negative_z: -78, z_negative_dz: 100 }
-data merge storage soul:soul_0.bounce { z_positive_z: -57, z_positive_dz: -100 }
+data merge storage soul:soul_0.bounce { x_negative_x: -20, x_negative_dx: 50 }
+data merge storage soul:soul_0.bounce { x_positive_x: 20, x_positive_dx: -50 }
+data merge storage soul:soul_0.bounce { z_negative_z: -77, z_negative_dz: 100 }
+data merge storage soul:soul_0.bounce { z_positive_z: -58, z_positive_dz: -100 }
 data merge storage soul:soul_0.bounce { y: 30, dy: 10 }
 data merge storage soul:soul_0.bounce { command_after_bouncing: 'return 0' }
 
