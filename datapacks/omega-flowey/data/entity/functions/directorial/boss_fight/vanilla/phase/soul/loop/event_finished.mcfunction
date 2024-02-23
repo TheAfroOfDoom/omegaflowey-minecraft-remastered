@@ -1,4 +1,3 @@
-tag @s add event_is_done
-scoreboard players set @s boss-fight.progress.clock.i -26
+tag @s remove has_active_soul_event
 
 function entity:directorial/boss_fight/vanilla/phase/soul/static

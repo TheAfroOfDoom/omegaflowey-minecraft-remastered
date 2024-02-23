@@ -1,6 +1,5 @@
 # Remove tags
 tag @s remove boss_fight.phase.soul
-tag @s remove event_is_done
 
 # TODO: this should happen elsewhere, after the player grabs the ACT button
 # # Increment progress phase

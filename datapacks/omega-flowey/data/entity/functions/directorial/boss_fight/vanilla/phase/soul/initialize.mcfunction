@@ -4,6 +4,7 @@ execute if score @s boss-fight.progress.phase.i matches 0 run function entity:di
 ## Set scores
 # the negative time duration is how long the static length lasts (25 ticks)
 scoreboard players set @s boss-fight.progress.clock.i -26
+scoreboard players set @s boss-fight.progress.clock.total 27
 
 function entity:directorial/boss_fight/vanilla/phase/soul/static
 
