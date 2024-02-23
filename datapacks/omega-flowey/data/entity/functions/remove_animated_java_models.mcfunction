@@ -6,3 +6,6 @@ function animated_java:dentata_snake_ball/remove/all
 function animated_java:friendliness_pellet/remove/all
 function animated_java:friendliness_pellet_ring/remove/all
 function animated_java:projectile_star/remove/all
+
+# Soul models
+function animated_java:soul/remove/all
