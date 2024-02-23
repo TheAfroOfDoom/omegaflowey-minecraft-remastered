@@ -122,9 +122,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-2, 0, -1],
-			"to": [2, 2, 1],
-			"autouv": 1,
+			"from": [-4, 0, -2],
+			"to": [4, 4, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -163,9 +163,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-4, 2, -1],
-			"to": [4, 4, 1],
-			"autouv": 1,
+			"from": [-8, 4, -2],
+			"to": [8, 8, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -204,9 +204,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-6, 4, -1],
-			"to": [6, 6, 1],
-			"autouv": 1,
+			"from": [-12, 8, -2],
+			"to": [12, 12, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -245,9 +245,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-8, 6, -1],
-			"to": [8, 12, 1],
-			"autouv": 1,
+			"from": [-16, 12, -2],
+			"to": [16, 24, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -286,9 +286,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [1, 12, -1],
-			"to": [8, 14, 1],
-			"autouv": 1,
+			"from": [2, 24, -2],
+			"to": [16, 28, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -327,9 +327,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-8, 12, -1],
-			"to": [-1, 14, 1],
-			"autouv": 1,
+			"from": [-16, 24, -2],
+			"to": [-2, 28, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -368,9 +368,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-7, 14, -1],
-			"to": [-2, 15, 1],
-			"autouv": 1,
+			"from": [-14, 28, -2],
+			"to": [-4, 30, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -409,9 +409,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [2, 14, -1],
-			"to": [7, 15, 1],
-			"autouv": 1,
+			"from": [4, 28, -2],
+			"to": [14, 30, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -450,9 +450,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [4, 15, -1],
-			"to": [6, 16, 1],
-			"autouv": 1,
+			"from": [8, 30, -2],
+			"to": [12, 32, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -491,9 +491,9 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-6, 15, -1],
-			"to": [-4, 16, 1],
-			"autouv": 1,
+			"from": [-12, 30, -2],
+			"to": [-8, 32, 2],
+			"autouv": 0,
 			"color": 0,
 			"origin": [0, 0, 0],
 			"faces": {
@@ -752,7 +752,7 @@
 			"override": false,
 			"length": 0.45,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
@@ -788,7 +788,7 @@
 							"data_points": [
 								{
 									"x": 0,
-									"y": 2,
+									"y": "4",
 									"z": 0
 								}
 							],
@@ -806,8 +806,8 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": -1,
-									"y": 1,
+									"x": "-2",
+									"y": "2",
 									"z": 0
 								}
 							],
@@ -825,7 +825,7 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 1,
+									"x": "2",
 									"y": 0,
 									"z": 0
 								}
@@ -863,8 +863,8 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 1,
-									"y": 2,
+									"x": "2",
+									"y": "4",
 									"z": 0
 								}
 							],
@@ -882,8 +882,8 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 1,
-									"y": 1,
+									"x": "2",
+									"y": "2",
 									"z": 0
 								}
 							],
@@ -902,7 +902,7 @@
 							"data_points": [
 								{
 									"x": 0,
-									"y": 2,
+									"y": "4",
 									"z": 0
 								}
 							],
@@ -946,7 +946,7 @@
 			"override": false,
 			"length": 1.8,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
@@ -1001,7 +1001,7 @@
 							"data_points": [
 								{
 									"x": 0,
-									"y": "-4",
+									"y": "-8",
 									"z": 0
 								}
 							],
