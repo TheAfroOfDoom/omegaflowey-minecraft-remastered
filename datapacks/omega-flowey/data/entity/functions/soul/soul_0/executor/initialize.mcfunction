@@ -15,5 +15,4 @@ scoreboard players set #soul_0.saved soul.flag 0
 tag @s remove soul-executor-new
 
 # Play music
-# TODO: this shouldn't be here, probably? this should only be played by the boss-fight director
 function entity:soul/soul_0/executor/play_music

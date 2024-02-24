@@ -1,10 +1,6 @@
 # Remove tags
 tag @s remove boss_fight.phase.soul
 
-# TODO: this should happen elsewhere, after the player grabs the ACT button
-# # Increment progress phase
-# scoreboard players add @s boss-fight.progress.phase.i 1
-
 # Next phase
 function entity:directorial/boss_fight/vanilla/phase/attack/initialize
 

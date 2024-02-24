@@ -3,6 +3,10 @@ scoreboard players add @s soul.clock.i 1
 # Ignore logic while `soul.clock.i` is negative
 execute if score @s soul.clock.i matches ..-1 run return 0
 
+# Run new logic if the player grabs the act_button
+execute if score #soul_0.saved soul.flag matches 1 run function entity:soul/soul_0/executor/loop/saved
+execute if score #soul_0.saved soul.flag matches 1 run return 0
+
 # Summon a bullet grid at a random player once at `soul.clock.i == 0`
 execute if score @s soul.clock.i matches 0 run function entity:soul/soul_0/executor/initialize/pre_iterate_grid
 
