@@ -101,6 +101,8 @@ scoreboard objectives add soul.bullet.position.z.end dummy
 scoreboard objectives add soul.clock.i dummy
 # length an soul-executor will exist
 scoreboard objectives add soul.executor.clock.length dummy
+# boolean flags used to mark state changes during soul events
+scoreboard objectives add soul.flag dummy
 
 # the final yaw an entity has after running bounce calculations
 scoreboard objectives add util.bounce.yaw dummy
