@@ -1123,6 +1123,30 @@
 			},
 			"type": "cube",
 			"uuid": "ab0650b4-443d-0e0e-7df1-f6d35d484ad0"
+		},
+		{
+			"name": "hitbox",
+			"position": [-30.75, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"entity_type": "minecraft:marker",
+			"nbt": "{ data: { damage: 1d, radius: 1.921875f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"uuid": "96a47398-dc5a-1f3e-85bb-a6fe7a3932fc",
+			"type": "locator"
+		},
+		{
+			"name": "hitbox2",
+			"position": [30.75, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"entity_type": "minecraft:marker",
+			"nbt": "{ data: { damage: 1d, radius: 1.921875f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"uuid": "856dd22e-cb4f-7ea9-414c-66cb4df2e257",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -1163,7 +1187,9 @@
 				"6fb70017-dcd4-ce45-f6e0-e4b3b55ee7e1",
 				"ab0650b4-443d-0e0e-7df1-f6d35d484ad0",
 				"927d1190-5f81-15ba-0c7b-de7f972af9e1",
-				"d96bcb96-5d62-590c-3389-8f73d612f1cd"
+				"d96bcb96-5d62-590c-3389-8f73d612f1cd",
+				"96a47398-dc5a-1f3e-85bb-a6fe7a3932fc",
+				"856dd22e-cb4f-7ea9-414c-66cb4df2e257"
 			]
 		}
 	],
@@ -1231,7 +1257,7 @@
 			"override": false,
 			"length": 3,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
