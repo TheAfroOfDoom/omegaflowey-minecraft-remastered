@@ -6,6 +6,6 @@ scoreboard players set #soul-0 soul.bullet.position.dz 825
 # Minecraft doesn't auto center the coordinate.
 # if you set this to `-2150`, you'll see a non-uniform grid
 scoreboard players set #soul-0 soul.bullet.position.x -4951
-scoreboard players set #soul-0 soul.bullet.position.x.end 6000
+scoreboard players set #soul-0 soul.bullet.position.x.end 5175
 scoreboard players set #soul-0 soul.bullet.position.z -13001
 scoreboard players set #soul-0 soul.bullet.position.z.end -4000
