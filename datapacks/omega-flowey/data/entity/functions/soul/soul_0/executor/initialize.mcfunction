@@ -9,7 +9,7 @@ scoreboard players operation @s soul.bullet.position.x.end = #soul-0 soul.bullet
 scoreboard players operation @s soul.bullet.position.z = #soul-0 soul.bullet.position.z
 scoreboard players operation @s soul.bullet.position.z.end = #soul-0 soul.bullet.position.z.end
 
-scoreboard players set #soul_0.activated soul.flag 0
+scoreboard players set #soul_0.saved soul.flag 0
 
 # Remove tags
 tag @s remove soul-executor-new
