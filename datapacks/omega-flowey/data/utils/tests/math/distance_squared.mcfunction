@@ -1,4 +1,4 @@
-# @batch utils:math
+# @batch utils:math.distance
 
 # setup
 data remove storage utils:math.distance_squared x0
