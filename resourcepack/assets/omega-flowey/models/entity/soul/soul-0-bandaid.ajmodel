@@ -22,7 +22,7 @@
 			"animated_java:datapack_exporter": {
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
-				"root_entity_nbt": "{}",
+				"root_entity_nbt": "{ CustomName: \"'Soul 0 Bandaid'\", Tags: [\"omega-flowey-remastered\", \"soul\",\"bandaid\",\"bandaid-new\", \"soul_0\"], teleport_duration: 1 }",
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -1762,6 +1762,362 @@
 			},
 			"type": "cube",
 			"uuid": "154b361a-89b9-9193-1d36-f09c8da3980c"
+		},
+		{
+			"name": "hitbox",
+			"position": [-12, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"entity_type": "minecraft:marker",
+			"nbt": "{ data: { radius: 1.0625f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"uuid": "67f29c04-1852-b8cb-3831-2cb1ef258a65",
+			"type": "locator"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-13, 1, -17],
+			"to": [-11, 3, 17],
+			"autouv": 1,
+			"color": 0,
+			"visibility": false,
+			"export": false,
+			"origin": [0, -1, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 2, 2]
+				},
+				"east": {
+					"uv": [0, 0, 16, 2]
+				},
+				"south": {
+					"uv": [0, 0, 2, 2]
+				},
+				"west": {
+					"uv": [0, 0, 16, 2]
+				},
+				"up": {
+					"uv": [0, 0, 2, 16]
+				},
+				"down": {
+					"uv": [0, 0, 2, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "b0df660d-f08b-8fd4-8385-750de8397263"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-29, 1, -1],
+			"to": [5, 3, 1],
+			"autouv": 1,
+			"color": 0,
+			"visibility": false,
+			"export": false,
+			"origin": [-33, 2, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 2]
+				},
+				"east": {
+					"uv": [0, 0, 2, 2]
+				},
+				"south": {
+					"uv": [0, 0, 16, 2]
+				},
+				"west": {
+					"uv": [0, 0, 2, 2]
+				},
+				"up": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 270
+				},
+				"down": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 90
+				}
+			},
+			"type": "cube",
+			"uuid": "76005b56-cef3-fd0e-253e-9115fe9aef81"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-43, 1, -13],
+			"to": [-41, 3, 13],
+			"autouv": 1,
+			"color": 2,
+			"visibility": false,
+			"export": false,
+			"origin": [0, -1, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 2, 2]
+				},
+				"east": {
+					"uv": [0, 0, 16, 2]
+				},
+				"south": {
+					"uv": [0, 0, 2, 2]
+				},
+				"west": {
+					"uv": [0, 0, 16, 2]
+				},
+				"up": {
+					"uv": [0, 0, 2, 16]
+				},
+				"down": {
+					"uv": [0, 0, 2, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "6ee34bb7-a691-9e1e-c8f7-a3fb4e1ecc56"
+		},
+		{
+			"name": "hitbox2",
+			"position": [-42, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"entity_type": "minecraft:marker",
+			"nbt": "{ data: { radius: 0.8125f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"uuid": "71379208-f83a-69ce-b97b-99bd35350da8",
+			"type": "locator"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-55, 1, -1],
+			"to": [-29, 3, 1],
+			"autouv": 1,
+			"color": 1,
+			"visibility": false,
+			"export": false,
+			"origin": [-35, 2, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 2]
+				},
+				"east": {
+					"uv": [0, 0, 2, 2]
+				},
+				"south": {
+					"uv": [0, 0, 16, 2]
+				},
+				"west": {
+					"uv": [0, 0, 2, 2]
+				},
+				"up": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 90
+				},
+				"down": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 270
+				}
+			},
+			"type": "cube",
+			"uuid": "f2f2a57f-66ad-b6fa-a02b-405728c7c60d"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-5, 1, -1],
+			"to": [29, 3, 1],
+			"autouv": 1,
+			"color": 4,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 2, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 2]
+				},
+				"east": {
+					"uv": [0, 0, 2, 2]
+				},
+				"south": {
+					"uv": [0, 0, 16, 2]
+				},
+				"west": {
+					"uv": [0, 0, 2, 2]
+				},
+				"up": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 90
+				},
+				"down": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 270
+				}
+			},
+			"type": "cube",
+			"uuid": "1f9253f9-b048-e342-01e7-08e47d17e54e"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [29, 1, -1],
+			"to": [55, 3, 1],
+			"autouv": 1,
+			"color": 1,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 2, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 2]
+				},
+				"east": {
+					"uv": [0, 0, 2, 2]
+				},
+				"south": {
+					"uv": [0, 0, 16, 2]
+				},
+				"west": {
+					"uv": [0, 0, 2, 2]
+				},
+				"up": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 270
+				},
+				"down": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 90
+				}
+			},
+			"type": "cube",
+			"uuid": "d2cf7ee8-d6a9-0d27-3f95-8dd6390d74e2"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [41, 1, -13],
+			"to": [43, 3, 13],
+			"autouv": 1,
+			"color": 2,
+			"visibility": false,
+			"export": false,
+			"origin": [0, -1, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 2, 2]
+				},
+				"east": {
+					"uv": [0, 0, 16, 2]
+				},
+				"south": {
+					"uv": [0, 0, 2, 2]
+				},
+				"west": {
+					"uv": [0, 0, 16, 2]
+				},
+				"up": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 180
+				},
+				"down": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 180
+				}
+			},
+			"type": "cube",
+			"uuid": "299ba7c2-fe87-7879-8b81-97fb3faa2204"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [11, 1, -17],
+			"to": [13, 3, 17],
+			"autouv": 1,
+			"color": 4,
+			"visibility": false,
+			"export": false,
+			"origin": [0, -1, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 2, 2]
+				},
+				"east": {
+					"uv": [0, 0, 16, 2]
+				},
+				"south": {
+					"uv": [0, 0, 2, 2]
+				},
+				"west": {
+					"uv": [0, 0, 16, 2]
+				},
+				"up": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 180
+				},
+				"down": {
+					"uv": [0, 0, 2, 16],
+					"rotation": 180
+				}
+			},
+			"type": "cube",
+			"uuid": "f730c7c1-fb27-33a2-e6fc-39b6d72eb632"
+		},
+		{
+			"name": "hitbox3",
+			"position": [42, 0, 0],
+			"rotation": [0, -180, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"entity_type": "minecraft:marker",
+			"nbt": "{ data: { radius: 0.8125f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"uuid": "220c9731-e2eb-6c23-2ac7-bc7d80c0c240",
+			"type": "locator"
+		},
+		{
+			"name": "hitbox4",
+			"position": [12, 0, 0],
+			"rotation": [0, -180, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"entity_type": "minecraft:marker",
+			"nbt": "{ data: { radius: 1.0625f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"uuid": "ce21d3ac-5aca-3593-8959-dcee6b5764b2",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -1769,7 +2125,7 @@
 			"name": "root",
 			"origin": [0, -1, 0],
 			"color": 0,
-			"nbt": "{ CustomName: \"'Soul 0 Bandaid'\", Tags: [\"omega-flowey-remastered\", \"soul\",\"bandaid\",\"bandaid-new\", \"soul_0\"], teleport_duration: 1 }",
+			"nbt": "{ teleport_duration: 1 }",
 			"uuid": "c56a8f17-a8f9-7232-a027-2261a1570eb6",
 			"export": true,
 			"mirror_uv": false,
@@ -1817,7 +2173,19 @@
 				"5c79d0ee-8d9e-2076-0b67-58e1f627b313",
 				"154b361a-89b9-9193-1d36-f09c8da3980c",
 				"8ad9488a-7589-e0f7-e068-8cb28a93f35d",
-				"ee77c305-a2d2-f05c-9f63-ef9a738349af"
+				"ee77c305-a2d2-f05c-9f63-ef9a738349af",
+				"67f29c04-1852-b8cb-3831-2cb1ef258a65",
+				"71379208-f83a-69ce-b97b-99bd35350da8",
+				"b0df660d-f08b-8fd4-8385-750de8397263",
+				"6ee34bb7-a691-9e1e-c8f7-a3fb4e1ecc56",
+				"f2f2a57f-66ad-b6fa-a02b-405728c7c60d",
+				"76005b56-cef3-fd0e-253e-9115fe9aef81",
+				"ce21d3ac-5aca-3593-8959-dcee6b5764b2",
+				"220c9731-e2eb-6c23-2ac7-bc7d80c0c240",
+				"f730c7c1-fb27-33a2-e6fc-39b6d72eb632",
+				"299ba7c2-fe87-7879-8b81-97fb3faa2204",
+				"d2cf7ee8-d6a9-0d27-3f95-8dd6390d74e2",
+				"1f9253f9-b048-e342-01e7-08e47d17e54e"
 			]
 		}
 	],
