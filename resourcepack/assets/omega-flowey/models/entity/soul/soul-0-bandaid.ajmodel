@@ -2242,5 +2242,49 @@
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZPjP+J+BAsA4agDDaBgwjIYBw7AIAwC4PCAB5G/sPwAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		}
+	],
+	"animations": [
+		{
+			"uuid": "338210a4-3aa1-eee0-051d-d506a2110815",
+			"name": "empty",
+			"loop": "loop",
+			"override": false,
+			"length": 0.05,
+			"snapping": 20,
+			"selected": true,
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "",
+			"affected_bones": [],
+			"affected_bones_is_a_whitelist": false,
+			"animators": {
+				"c56a8f17-a8f9-7232-a027-2261a1570eb6": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "17256e37-438d-a0f2-e378-59cf969495f5",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"bezier_linked": true,
+							"bezier_left_time": [-0.1, -0.1, -0.1],
+							"bezier_left_value": [0, 0, 0],
+							"bezier_right_time": [0.1, 0.1, 0.1],
+							"bezier_right_value": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
 	]
 }
