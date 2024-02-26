@@ -16,8 +16,5 @@ execute store result storage soul:soul_0.bandaid gravity int 1 run scoreboard pl
 data merge storage soul:soul_0.bandaid { velocity_constant: 20, rotation_constant: -500 }
 function entity:soul/soul_0/bandaid/loop/pre_move with storage soul:soul_0.bandaid
 
-# TODO: this should use locators instead
-execute if entity @a[team=player,distance=..2] run function entity:soul/soul_0/bandaid/heal
-
 # TODO: looks ugly when the bandaid models overlap
 # TODO: should not be able to die from sword damage
