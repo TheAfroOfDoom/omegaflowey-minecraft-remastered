@@ -1,5 +1,5 @@
 # Play WARNING sound
-execute at @e[tag=aj.tv_screen.root,tag=tv_screen.boss_fight] run playsound omega-flowey:boss-fight.alarm hostile @a ~ ~ ~ 10 1
+execute at @e[tag=aj.tv_screen.root,tag=tv_screen.boss_fight] run playsound omega-flowey:boss-fight.alarm ambient @a ~ ~ ~ 10 1
 
 # Set tv screen to WARNING variant
 execute as @e[tag=aj.tv_screen.root,tag=tv_screen.boss_fight] run function entity:hostile/omega-flowey/animate/warning/tv_screen
