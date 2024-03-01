@@ -1123,6 +1123,30 @@
 			},
 			"type": "cube",
 			"uuid": "ab0650b4-443d-0e0e-7df1-f6d35d484ad0"
+		},
+		{
+			"name": "hitbox",
+			"position": [-30.75, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"entity_type": "minecraft:marker",
+			"nbt": "{ data: { damage: 1d, radius: 1.921875f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"uuid": "96a47398-dc5a-1f3e-85bb-a6fe7a3932fc",
+			"type": "locator"
+		},
+		{
+			"name": "hitbox2",
+			"position": [30.75, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"entity_type": "minecraft:marker",
+			"nbt": "{ data: { damage: 1d, radius: 1.921875f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"uuid": "856dd22e-cb4f-7ea9-414c-66cb4df2e257",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -1225,5 +1249,48 @@
 			"mode": "bitmap"
 		}
 	],
-	"animations": []
+	"animations": [
+		{
+			"uuid": "6b336c15-6436-5880-5727-2ff1ad9ca845",
+			"name": "empty",
+			"loop": "loop",
+			"override": false,
+			"length": 0.05,
+			"snapping": 20,
+			"selected": true,
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "",
+			"affected_bones": [],
+			"affected_bones_is_a_whitelist": false,
+			"animators": {
+				"b5db52a4-e634-0c9c-2adb-8528db483ca5": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "2d631884-4df1-d062-8fc0-a45c6cf961eb",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"bezier_linked": true,
+							"bezier_left_time": [-0.1, -0.1, -0.1],
+							"bezier_left_value": [0, 0, 0],
+							"bezier_right_time": [0.1, 0.1, 0.1],
+							"bezier_right_value": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	]
 }
