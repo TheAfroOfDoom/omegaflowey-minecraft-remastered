@@ -95,11 +95,16 @@ scoreboard objectives add soul.bullet.position.dx dummy
 scoreboard objectives add soul.bullet.position.dz dummy
 scoreboard objectives add soul.bullet.position.x dummy
 scoreboard objectives add soul.bullet.position.x.end dummy
+scoreboard objectives add soul.bullet.position.yaw dummy
 scoreboard objectives add soul.bullet.position.z dummy
 scoreboard objectives add soul.bullet.position.z.end dummy
 scoreboard objectives add soul.clock.i dummy
+# used as a reference score for when the player touches the ACT button
+scoreboard objectives add soul.clock.touched_act_button dummy
 # length an soul-executor will exist
 scoreboard objectives add soul.executor.clock.length dummy
+# boolean flags used to mark state changes during soul events
+scoreboard objectives add soul.flag dummy
 
 # the final yaw an entity has after running bounce calculations
 scoreboard objectives add util.bounce.yaw dummy
