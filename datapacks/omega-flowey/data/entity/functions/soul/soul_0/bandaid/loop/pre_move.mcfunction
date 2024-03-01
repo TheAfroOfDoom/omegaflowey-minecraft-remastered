@@ -1,6 +1,7 @@
 $execute store result storage soul:soul_0.bandaid velocity float 0.000001 run data get storage soul:soul_0.bandaid gravity $(velocity_constant)
 $execute store result storage soul:soul_0.bandaid rotation float 0.000001 run data get storage soul:soul_0.bandaid gravity $(rotation_constant)
 
+# TODO(88): validate bandaid rotation velocity bounds
 # rotation bounds: [-2, -10]
 data merge storage utils:math.min { a: -200 }
 execute store result storage utils:math.min b int 1 run data get storage soul:soul_0.bandaid rotation 100
@@ -13,6 +14,7 @@ function utils:math/max
 
 execute store result storage soul:soul_0.bandaid rotation float 0.01 run data get storage utils:math.max out
 
+# TODO(88): validate bandaid XY velocity bounds
 # velocity bounds: [0.1, 0.4]
 data merge storage utils:math.min { a: 40 }
 execute store result storage utils:math.min b int 1 run data get storage soul:soul_0.bandaid velocity 100

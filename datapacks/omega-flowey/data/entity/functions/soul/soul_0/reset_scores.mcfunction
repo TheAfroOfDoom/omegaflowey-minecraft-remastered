@@ -1,4 +1,4 @@
-# TODO(): validate these soul parameters
+# TODO(88): validate these soul parameters
 # length this soul event will last if the act button is never grabbed
 scoreboard players set #soul-0 soul.executor.clock.length 365
 # x/z spans of the bullet grid

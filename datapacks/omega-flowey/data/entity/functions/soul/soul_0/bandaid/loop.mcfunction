@@ -12,7 +12,8 @@ execute store result score @s math.1 run data get storage utils:math.distance_sq
 scoreboard players operation @s math.0 /= @s math.1
 execute store result storage soul:soul_0.bandaid gravity int 1 run scoreboard players get @s math.0
 
-# NOTE: tune these constants to tune the effect of "gravity" on how fast the bandaid rotates / moves towards the player
+# NOTE: you can tune these constants to tune the effect of "gravity" on how fast the bandaid rotates / moves towards the player
+# TODO(88): tune these velocity/rotation constants
 data merge storage soul:soul_0.bandaid { velocity_constant: 20, rotation_constant: -500 }
 function entity:soul/soul_0/bandaid/loop/pre_move with storage soul:soul_0.bandaid
 
