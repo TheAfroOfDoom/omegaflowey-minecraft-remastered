@@ -91,17 +91,21 @@ scoreboard objectives add random dummy
 scoreboard objectives add random.min dummy
 scoreboard objectives add random.range dummy
 
+# x/z spans of the bullet grid
 scoreboard objectives add soul.bullet.position.dx dummy
 scoreboard objectives add soul.bullet.position.dz dummy
+# x start/end points of the bullet grid
 scoreboard objectives add soul.bullet.position.x dummy
 scoreboard objectives add soul.bullet.position.x.end dummy
+# yaw bullets will summon at
 scoreboard objectives add soul.bullet.position.yaw dummy
+# z start/end points of the bullet grid
 scoreboard objectives add soul.bullet.position.z dummy
 scoreboard objectives add soul.bullet.position.z.end dummy
 scoreboard objectives add soul.clock.i dummy
 # used as a reference score for when the player touches the ACT button
 scoreboard objectives add soul.clock.touched_act_button dummy
-# length an soul-executor will exist
+# length an soul-executor will exist (length this soul event will last if the act button is never touched)
 scoreboard objectives add soul.executor.clock.length dummy
 # boolean flags used to mark state changes during soul events
 scoreboard objectives add soul.flag dummy
