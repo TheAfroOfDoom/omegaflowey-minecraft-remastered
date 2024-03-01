@@ -25,6 +25,9 @@ data merge storage utils:math.max { a: 10 }
 execute store result storage utils:math.max b int 1 run scoreboard players get @s math.0
 function utils:math/max
 
+# If there are no players alive, the bandaid will rotate at its minimum bound
+execute unless entity @a[team=player] run data merge storage soul:soul_0.bandaid { rotation: -2.0f }
+
 execute store result storage soul:soul_0.bandaid velocity float 0.01 run data get storage utils:math.max out
 
 function entity:soul/soul_0/bandaid/loop/move with storage soul:soul_0.bandaid
