@@ -6,6 +6,9 @@ execute if score @s soul.clock.i matches ..-1 run return 0
 # Summon a bullet grid at a random player once at `soul.clock.i == 0`
 execute if score @s soul.clock.i matches 0 run function entity:soul/soul_0/executor/initialize/pre_iterate_grid
 
+# Begin moving bullets after 20 ticks (1s)
+execute if score @s soul.clock.i matches 20 run function entity:soul/soul_0/executor/loop/start_moving_bullets
+
 # Replay song after it ends (only if we haven't yet started `saved` state)
 execute if score @s soul.clock.i matches 303 run function entity:soul/soul_0/executor/play_music
 
