@@ -1,3 +1,6 @@
+# Loop logic for players
+execute as @a[team=player] run function entity:soul/soul_0/executor/loop/as_player
+
 scoreboard players add @s soul.clock.i 1
 
 # Ignore logic while `soul.clock.i` is negative
