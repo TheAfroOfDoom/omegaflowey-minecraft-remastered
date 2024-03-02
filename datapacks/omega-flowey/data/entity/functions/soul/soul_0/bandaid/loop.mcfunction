@@ -17,4 +17,4 @@ execute store result storage soul:soul_0.bandaid gravity int 1 run scoreboard pl
 data merge storage soul:soul_0.bandaid { velocity_constant: 20, rotation_constant: -500 }
 function entity:soul/soul_0/bandaid/loop/pre_move with storage soul:soul_0.bandaid
 
-# TODO: looks ugly when the bandaid models overlap
+# TODO(89): looks ugly when the bandaid models overlap
