@@ -67,6 +67,8 @@ scoreboard objectives add boss-fight.attack.delay dummy
 scoreboard objectives add boss-fight.attack.phase.i dummy
 # total number of attack phases before we wrap the index
 scoreboard objectives add boss-fight.attack.phase.total dummy
+# boolean flags used to mark various states of the boss fight
+scoreboard objectives add boss-fight.flag dummy
 scoreboard objectives add boss-fight.progress.clock.i dummy
 # total duration (in ticks) of the progress phase
 scoreboard objectives add boss-fight.progress.clock.total dummy
