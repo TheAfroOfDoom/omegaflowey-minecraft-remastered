@@ -4,5 +4,6 @@ execute if entity @s[tag=finger-guns] run function entity:hostile/omega-flowey/a
 execute if entity @s[tag=flies] run function entity:hostile/omega-flowey/attack/flies/tick
 execute if entity @s[tag=friendliness-pellets] run function entity:hostile/omega-flowey/attack/friendliness-pellets/tick
 execute if entity @s[tag=homing-vines] run function entity:hostile/omega-flowey/attack/homing-vines/tick
+execute if entity @s[tag=homing-vines-save-states] run function entity:hostile/omega-flowey/attack/homing-vines-save-states/tick
 execute if entity @s[tag=x-bullets-lower] run function entity:hostile/omega-flowey/attack/x-bullets-lower/tick
 execute if entity @s[tag=x-bullets-upper] run function entity:hostile/omega-flowey/attack/x-bullets-upper/tick
