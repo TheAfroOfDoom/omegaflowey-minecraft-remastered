@@ -5,9 +5,6 @@ scoreboard players operation @s attack.clock.i -= #attack-homing-vines attack.in
 scoreboard players set @s attack.bullets.count 0
 scoreboard players operation @s attack.bullets.total = #attack-homing-vines attack.bullets.total
 
-# Play blinking sound once
-playsound omega-flowey:attack.homing-vines.blinking hostile @a ~ ~ ~ 3 1 1
-
 # Randomize delta-x-position to summon bullet at (x: player.Position.x, dx: [-15.00..15.00])
 # TODO(41): validate this dx range
 execute store result score @s attack.position.x run data get entity @s Pos[0] 100

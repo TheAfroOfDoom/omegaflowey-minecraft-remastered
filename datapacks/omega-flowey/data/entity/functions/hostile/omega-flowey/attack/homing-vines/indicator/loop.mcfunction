@@ -1,5 +1,8 @@
 scoreboard players add @s attack.clock.i 1
 
+# Visualize blinking lane 1 tick after it is summoned
+execute if score @s attack.clock.i matches -5 run function entity:hostile/omega-flowey/attack/homing-vines/indicator/loop/visualize_blinking_lane with entity @s data
+
 # Ignore bullet summoning logic while `attack.clock.i` is negative
 execute if score @s attack.clock.i matches ..-1 run return 0
 
