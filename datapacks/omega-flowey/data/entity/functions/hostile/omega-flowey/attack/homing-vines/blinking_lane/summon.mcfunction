@@ -10,4 +10,4 @@ execute store result storage attack:homing-vines pitch float 1 run data get enti
 execute store result storage group id int 1 run scoreboard players get @s group.id
 
 # Initialize blinking lane
-execute as @e[tag=homing-vines-blinking-lane-new] run function entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/blinking_lane with storage attack:homing-vines
+execute as @e[tag=homing-vines-blinking-lane-new] run function entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/initialize with storage attack:homing-vines

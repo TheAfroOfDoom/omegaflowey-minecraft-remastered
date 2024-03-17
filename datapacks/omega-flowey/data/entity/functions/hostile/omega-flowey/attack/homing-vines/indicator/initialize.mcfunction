@@ -37,7 +37,7 @@ function entity:group/set
 execute store result storage attack:homing-vines x float 0.01 run scoreboard players get @s attack.position.x
 execute store result storage attack:homing-vines y float 0.01 run scoreboard players get @s attack.position.y
 execute store result storage attack:homing-vines z float 0.01 run scoreboard players get @s attack.position.z
-function entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/summon_blinking_lane with storage attack:homing-vines
+function entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/summon with storage attack:homing-vines
 
 # Remove tags
 tag @s remove attack-indicator-new

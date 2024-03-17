@@ -1,3 +1,3 @@
 function entity:group/start
-execute as @e[tag=homing-vines-blinking-lane,scores={group.id=0}] run function animated_java:homing_vine_blinking_lane/remove/this
+execute as @e[tag=homing-vines-blinking-lane,scores={group.id=0}] run function entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/terminate
 function entity:group/end
