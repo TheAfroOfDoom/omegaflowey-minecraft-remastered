@@ -4,7 +4,7 @@ scoreboard players add @s attack.clock.i 1
 execute if score @s attack.clock.i matches ..-1 run return 0
 
 # Terminate blinking animation when we start summoning bullets
-execute if score @s attack.clock.i matches 0 run function entity:hostile/omega-flowey/attack/homing-vines/indicator/loop/terminate_blinking_lane
+execute if score @s attack.clock.i matches 0 run function entity:hostile/omega-flowey/attack/homing-vines/indicator/loop/terminate_blinking_lane with entity @s data
 
 # Summon a bullet each tick that `attack.bullets.count` is less than `attack.bullets.total`
 execute if score @s attack.bullets.count < @s attack.bullets.total run function entity:hostile/omega-flowey/attack/homing-vines/indicator/loop/presummon_bullet

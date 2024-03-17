@@ -30,9 +30,6 @@ execute store result score @s attack.position.y run random value 3400..4000
 # Set z-position to summon bullet at
 scoreboard players set @s attack.position.z -400
 
-# Set group ID
-function entity:group/set
-
 # Summon blinking-lane
 execute store result storage attack:homing-vines x float 0.01 run scoreboard players get @s attack.position.x
 execute store result storage attack:homing-vines y float 0.01 run scoreboard players get @s attack.position.y
