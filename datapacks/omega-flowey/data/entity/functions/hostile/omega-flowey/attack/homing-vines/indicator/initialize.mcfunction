@@ -5,6 +5,9 @@ scoreboard players operation @s attack.clock.i -= #attack-homing-vines attack.in
 scoreboard players set @s attack.bullets.count 0
 scoreboard players operation @s attack.bullets.total = #attack-homing-vines attack.bullets.total
 
+# Summon indicator in a range around the player
+function entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/randomize_indicator_position
+
 # Randomize delta-x-position to summon bullet at (x: player.Position.x, dx: [-15.00..15.00])
 # TODO(41): validate this dx range
 execute store result score @s attack.position.x run data get entity @s Pos[0] 100
@@ -31,7 +34,7 @@ scoreboard players set @s attack.position.z -400
 execute store result storage attack:homing-vines x float 0.01 run scoreboard players get @s attack.position.x
 execute store result storage attack:homing-vines y float 0.01 run scoreboard players get @s attack.position.y
 execute store result storage attack:homing-vines z float 0.01 run scoreboard players get @s attack.position.z
-function entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/summon with storage attack:homing-vines
+execute at @s run function entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/summon with storage attack:homing-vines
 
 # Remove tags
 tag @s remove attack-indicator-new
