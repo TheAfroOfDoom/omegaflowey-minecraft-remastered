@@ -31,6 +31,8 @@ scoreboard objectives add attack.executor.repeat.count.i dummy
 scoreboard objectives add attack.executor.repeat.count.total dummy
 # how long (in ticks) an attack-executor will wait until repeating its indicator-summong behavior
 scoreboard objectives add attack.executor.repeat.delay dummy
+# boolean flags used to mark various states of an attack
+scoreboard objectives add attack.flag dummy
 scoreboard objectives add attack.indicator.animation.index dummy
 # delay (in ticks) before an attack-indicator begins summoning bullets
 scoreboard objectives add attack.indicator.clock.delay dummy
@@ -86,6 +88,7 @@ scoreboard objectives add math.0 dummy
 scoreboard objectives add math.1 dummy
 scoreboard objectives add math.2 dummy
 
+scoreboard objectives add player.flag dummy
 scoreboard objectives add player.shake.pitch dummy
 scoreboard objectives add player.shake.yaw dummy
 
