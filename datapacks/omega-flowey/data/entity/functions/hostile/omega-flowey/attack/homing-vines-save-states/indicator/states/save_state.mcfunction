@@ -1,5 +1,6 @@
 # Initialize object
 data modify storage attack:homing-vines-save-states current_state set value {}
+data modify storage attack:homing-vines-save-states current_state.entity_specific_params set value {}
 data modify storage attack:homing-vines-save-states current_state.scores set value {}
 
 ## Data used to re-summon this entity ordered by priority
@@ -21,6 +22,12 @@ execute store result storage attack:homing-vines-save-states current_state.score
 execute store result storage attack:homing-vines-save-states current_state.scores.attack_position_x int 1 run scoreboard players get @s attack.position.x
 execute store result storage attack:homing-vines-save-states current_state.scores.attack_position_y int 1 run scoreboard players get @s attack.position.y
 execute store result storage attack:homing-vines-save-states current_state.scores.attack_position_z int 1 run scoreboard players get @s attack.position.z
+
+# Indicators have an associated blinking_lane (`data.blinking_lane_uuid`)
+function gu:generate
+data modify storage attack:homing-vines-save-states indicator_uuid set from storage gu:main out
+
+function entity:hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/save_state/check_for_blinking_lane with entity @s data
 
 # Append this entity's saved_state to the executor's NBT list
 $data modify entity $(executor_uuid) data.saved_states append from storage attack:homing-vines-save-states current_state
