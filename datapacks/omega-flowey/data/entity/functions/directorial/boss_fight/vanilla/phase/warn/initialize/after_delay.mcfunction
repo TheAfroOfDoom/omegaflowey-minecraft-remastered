@@ -16,3 +16,6 @@ execute as @e[tag=aj.soul.root,tag=soul.warning] run function entity:hostile/ome
 # Summon and begin animating soul tv_screen in other arena
 function entity:hostile/omega-flowey/summon/soul/tv_screen
 execute as @e[tag=aj.tv_screen.root,tag=tv_screen.soul] run function entity:hostile/omega-flowey/animate/soul/tv_screen
+
+# Play end-note at end of phase 2 (index score will be +1, so 3)
+execute if score @s boss-fight.attack.phase.i matches 3 run playsound omega-flowey:music.phase.repeat.end-note record @a ~ ~ ~ 10 1
