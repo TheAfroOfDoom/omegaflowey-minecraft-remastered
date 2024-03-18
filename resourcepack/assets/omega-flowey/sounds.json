@@ -163,6 +163,30 @@
       }
     ]
   },
+  "music.generic.boss-fight.repeat.0": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_repeat_1",
+        "stream": true
+      }
+    ]
+  },
+  "music.generic.boss-fight.repeat.1": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_repeat_2",
+        "stream": true
+      }
+    ]
+  },
+  "music.generic.boss-fight.end-note": {
+    "sounds": [
+      {
+        "name": "omega-flowey:mus_f_endnote",
+        "stream": true
+      }
+    ]
+  },
   "music.phase.0": {
     "sounds": [
       {
@@ -175,6 +199,30 @@
     "sounds": [
       {
         "name": "omega-flowey:music.generic.boss-fight.1",
+        "type": "event"
+      }
+    ]
+  },
+  "music.phase.repeat.0": {
+    "sounds": [
+      {
+        "name": "omega-flowey:music.generic.boss-fight.repeat.0",
+        "type": "event"
+      }
+    ]
+  },
+  "music.phase.repeat.1": {
+    "sounds": [
+      {
+        "name": "omega-flowey:music.generic.boss-fight.repeat.1",
+        "type": "event"
+      }
+    ]
+  },
+  "music.phase.repeat.end-note": {
+    "sounds": [
+      {
+        "name": "omega-flowey:music.generic.boss-fight.end-note",
         "type": "event"
       }
     ]
