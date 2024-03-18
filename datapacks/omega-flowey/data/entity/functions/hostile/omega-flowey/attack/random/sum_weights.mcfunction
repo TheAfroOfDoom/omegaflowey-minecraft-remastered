@@ -6,6 +6,7 @@ scoreboard players operation @s math.0 += #attack-finger-guns attack.weight
 scoreboard players operation @s math.0 += #attack-flies attack.weight
 scoreboard players operation @s math.0 += #attack-friendliness-pellets attack.weight
 scoreboard players operation @s math.0 += #attack-homing-vines attack.weight
+scoreboard players operation @s math.0 += #attack-homing-vines-save-states attack.weight
 scoreboard players operation @s math.0 += #attack-x-bullets-lower attack.weight
 scoreboard players operation @s math.0 += #attack-x-bullets-upper attack.weight
 
