@@ -4,6 +4,6 @@ execute as @e[tag=boss_fight] run function entity:hostile/omega-flowey/attack/ho
 # so explicitly remove them here
 execute as @e[tag=player-marker] run function entity:hostile/omega-flowey/attack/homing-vines-save-states/player/marker/terminate
 
-scoreboard players reset #homing-vine-save-states.did_player_take_damage attack.flag
+scoreboard players reset #homing-vines-save-states.did_player_take_damage attack.flag
 
 kill @s
