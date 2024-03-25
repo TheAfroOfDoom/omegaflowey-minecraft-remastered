@@ -1,1 +1,1 @@
-function entity:hostile/omega-flowey/attack/homing-vines/indicator/loop
+function entity:hostile/omega-flowey/attack/x-bullets-upper/indicator/loop

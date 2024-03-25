@@ -1,3 +1,3 @@
 tag @s add cant-damage
 
-function entity:hostile/omega-flowey/attack/homing-vines/bullet/terminate
+function entity:hostile/omega-flowey/attack/x-bullets-upper/bullet/terminate
