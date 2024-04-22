@@ -85,12 +85,20 @@ const syncDown = async () => {
 
   await deleteOldBackups();
 
-  console.log('Backing up your current world as a precautionary measure...');
-  const name = await createTempWorldBackupName();
-  const path = `${tempBackupPath}/${name}`;
-  await backupWorld(path, false);
+  /** We can only temp backup the current world if it already exists */
+  if (await exists(minecraftWorldPath)) {
+    console.log('Backing up your current world as a precautionary measure...');
+    const name = await createTempWorldBackupName();
+    const path = `${tempBackupPath}/${name}`;
+    await backupWorld(path, false);
 
-  await remove(minecraftWorldPath);
+    await remove(minecraftWorldPath);
+  } else {
+    console.log(
+      'No pre-existing world save to backup, moving straight to extraction',
+    );
+  }
+
   console.log('Extracting world backup to client saves directory...');
   await extract(worldBackupPath, { dir: minecraftWorldPath });
 
