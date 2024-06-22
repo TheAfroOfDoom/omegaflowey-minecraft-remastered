@@ -1,3 +1,11 @@
+# check for pre-existence of at least one lower_eye model
+scoreboard players set #attack.x-bullets-lower.lower_eye_exists attack.flag 0
+execute if entity @e[type=minecraft:item_display,tag=aj.lower_eye.root] run scoreboard players set #attack.x-bullets-lower.lower_eye_exists attack.flag 1
+
+# throw an error if no model exists
+execute if score #attack.x-bullets-lower.lower_eye_exists attack.flag matches 0 run function entity:hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "lower" }
+execute if score #attack.x-bullets-lower.lower_eye_exists attack.flag matches 0 run return fail
+
 execute at @e[tag=aj.lower_eye.locator.pupil] run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
 
 # Set scores
