@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "de143d69-7d25-8ad1-c9e8-f45f431753b9"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{Tags:[\"omega-flowey-remastered\", \"omega-flowey\", \"omega-flowey-tv-screen\"]}",
+				"use_component_system": false,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -512,6 +513,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -539,6 +541,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -566,6 +569,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -593,6 +597,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -618,7 +623,7 @@
 			"override": false,
 			"length": 0.6,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",

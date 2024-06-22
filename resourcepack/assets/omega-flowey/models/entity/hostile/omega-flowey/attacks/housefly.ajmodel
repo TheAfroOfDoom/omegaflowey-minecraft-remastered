@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "890a34a9-3930-0214-31a3-cabe57429bb9"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{ CustomName: '\"Flies Bullet\"', Tags: [\"omega-flowey-remastered\",\"hostile\",\"groupable\",\"omega-flowey\",\"attack\",\"attack-bullet\",\"attack-bullet-new\",\"flies\"], interpolation_duration: 1, teleport_duration: 1 }",
+				"use_component_system": false,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -3285,6 +3286,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -3312,6 +3314,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -3337,7 +3340,7 @@
 			"override": false,
 			"length": 0.45,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
@@ -3362,12 +3365,7 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "scale",
@@ -3382,12 +3380,7 @@
 							"time": 0.25,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -3408,12 +3401,7 @@
 							"time": 0.25,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "catmullrom",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "catmullrom"
 						},
 						{
 							"channel": "scale",
@@ -3428,12 +3416,7 @@
 							"time": 0.35,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "catmullrom",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "catmullrom"
 						},
 						{
 							"channel": "scale",
@@ -3448,12 +3431,7 @@
 							"time": 0.45,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "catmullrom",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "catmullrom"
 						}
 					]
 				}

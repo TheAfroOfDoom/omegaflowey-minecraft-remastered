@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "501d1aaa-ea51-86d3-3bf1-10e9f8004a5c"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{}",
+				"use_component_system": false,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -798,11 +799,12 @@
 			"folder": "",
 			"namespace": "",
 			"id": "0",
-			"width": 1,
-			"height": 2,
+			"width": 16,
+			"height": 32,
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -815,8 +817,8 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "ef720afa-3971-8de2-93f4-3da52c803b61",
-			"relative_path": "../../../../../../../animated_java/textures/item/attacks/friendliness-pellet-ring-blinking.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAAXNSR0IArs4c6QAAABJJREFUGFdjeHlzwn+GhYZG/wEdZwVV8K9IvQAAAABJRU5ErkJggg==",
+			"relative_path": "../../../../../../textures/custom/attacks/friendliness-pellet-ring-blinking.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADRJREFUSEtjfHlzwn8GCgDjqAEMo2HAMBoGDMMjDBYaGlFWHowawMA4GgajYQAqD4Z+OgAAVXFVYfqulm0AAAAASUVORK5CYII=",
 			"mode": "bitmap"
 		},
 		{
@@ -825,11 +827,12 @@
 			"folder": "",
 			"namespace": "",
 			"id": "1",
-			"width": 1,
-			"height": 1,
+			"width": 16,
+			"height": 16,
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -842,8 +845,8 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "559ff8c8-97ad-3b90-6075-35c83858b441",
-			"relative_path": "../../../../../../../animated_java/textures/item/attacks/friendliness-pellet-ring-finished.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjOL9/x38AB+0DRs8e5HYAAAAASUVORK5CYII=",
+			"relative_path": "../../../../../../textures/custom/attacks/friendliness-pellet-ring-finished.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jPL9/x38GCgDjqAEMo2HAMBoGDMMiDACMwDRhgxYSvAAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		}
 	]

@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "dd22041e-e017-2441-ed2c-b5068aac58e6"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{ CustomName: '\"Finger-Guns Bullet\"', Tags:[\"omega-flowey-remastered\",\"hostile\",\"omega-flowey\",\"attack\",\"attack-bullet\",\"attack-bullet-new\",\"finger-guns\"] }",
+				"use_component_system": false,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -1225,6 +1226,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1237,6 +1239,7 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "31fbddff-8507-451b-6c1a-64f260e72c3e",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/white_wool.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAnhJREFUOE89U9ly2kAQ7NV9ISHABzixk5f8/88kldgJxgGMMWBAB9Lq2tQMsfdFpdrZnu6eHnH/OFOWaaAoJTRNQ9QL0AsCPK9foWsaBv0IuqZjtlzCNAwM4z7o7PYHtG0Lsd5ulWVa/JBOVdeo6wbHNIVSCqeyRNM0cB2HAXaHAyzThOc6ME0TopRSaUJgvd1B13VcjYaMnOQ5iqJEPwxhWybKquIGvutCCIH8VKB5Z1CUJS4GA+5AQF3XwbYtDKIIT88ruLaNy+GAAfZJAqq/nUxQNw3E/pioU1ngVJQIAx+B7wNKYTpfMFDP99ELfKRZjlJK3H26YaD58+oM8OPhtyIqpOl2POaOp6JgzWRu3bT8Tx6Rmccsg+c4/NixbYiu6xQhyqrijmmec4e269gsYkDfJMuQ5SdMri75njyQdQUxWywYgDS9X7Rdy13oYrY4j4/MpS9NRSnA91yekkizXCkoLFYvTOnm+opN2rztYRkGM6GHRJkej+I+mqZlpgww/TtXRJEKqcuv6SMHKg5DeK7Lcx/F8UdOXjZbBL6HwPOYsZBVpWiuUv6fs+dycGRVg6W4Lnuz2b3BcWwYugFZSRySFHEUQvz8M1UUoGH/HNEkSyEgMBoOOFCr1w0zoljHUYT5asV1Ua+HMAggnhZL9uCYZlz47esXGLrOUkg3yaLdoFHalvVBneqX6zVEkmXqPTAkhR5VVY2ykihLibfjkVNKuh3Lwma/PzOM+zAMA6JtW0Vuklm0RBRZCgtppSBRoGjBaDvphL2Ac7E/HHk/xPf7B2VZFm4nYx4NrSl1Gl9e8HK9bLeo65qXisAoFyT18/gatIT/AP+8gBpu4GLUAAAAAElFTkSuQmCC",
 			"mode": "bitmap"
 		},
@@ -1251,6 +1254,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1263,6 +1267,7 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "634f2d64-2178-04fa-2de1-6e2b57fd0a2a",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/yellow_concrete.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAXFJREFUOE9VU116wzAIE/gM7Xb/A/TnZNv6DuyTMGmaFyexkYSE7fW4VBaAAsyA4jve774cqARsr30UxpU1BIAtVAUygbUcmalN1hJcwAn4WsgIuIuiiV7PrxqGjNRhFi03RBa8z8HMkFUq4z7/mzvs934pd0Pme1OqN0eQeYOymJ18gPzdL0XW4+GJ5kRliJlwbImgo0i+dQvX0s4+ZL6QGdqUD8sRkcdKgDGantjr+V3NBJnIlSBAipJ9nx+ng/rXqg4FRYPcUUQ5xfhRfe7UDKp5Pa5Ft+k6HaJ8mRrdmaIkZlvRkcqLTsloohgpuwJ0nY/wzm3tJM6JKCkqmHxZqBmY6QME2N/thdRy2LhBkp/bpSQf1VLJPgXGBELqJ+qJb0ClYAzkCNNlxbbHYQbqfBdIxAg5wZrE7Y+M4URK2nZcUe3sqeyQPuP2e+Mo7153qyw64t7yP7wYRLN9F2bIUYh4X6C5iVSmNresvkz97x+dRwp1VZrSmAAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
@@ -1277,6 +1282,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1289,6 +1295,7 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "1e6fe2f2-151f-6549-e256-3c171b520a8a",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/red_sandstone_top.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAShJREFUOE91U7uqwkAQnVUMETFXsRBBEMQ/srSxuqVfZWl12/sJfohYiBoRQ0RXzsJZJsM6TcjuPM5j1m2XQz8eDeVRvwTRzdoyyFtyKJ/hn1E/X5J12uEegXycub/1zOOQDdhEF1/vtfz0MsFXN8G/+/+deyQzid1TSDCxqu5S9IuI1u03Cw+4GhqnE5n+avhAExGwiNwwCdqkglRwFzSwvI+ns+R5L/IGfwh7qd6BKgLTYwNwQxKmW5VT5yikK263mnorzLdG2oWGjSl1v0GmoKgJFGAjupW3MthDClZUUNEREeg9QIIVzGqg96SBwHoNvtQmtQc8CxRSK4piWqmXZzbKG3YmV5kFdj/0g2NOXKRJ0Ymd7avTwtomoYF2wD4q/S5orXboA6nJJQKg3SgCAAAAAElFTkSuQmCC",
 			"mode": "bitmap"
 		},
@@ -1303,6 +1310,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1315,6 +1323,7 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "75ccc21d-f8a1-29ad-0e1b-df331e848b16",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/white_terracotta.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAcBJREFUOE9NU1ty2zAMXICUmt7/Arbz34wnmVwjY7eHaSUC6CxAOdaPRAoE9kW5Xc/hHjgehUC6QrsgLDDMsKwNEYDvBren2iYQNhAAujSAHwZ4KMJ3AFUsTaBNs8n4Z2jKQsA82OASA4GeW4FEw3MCqH4fzOb85YCsAAaLHHL/uIRowcVwWESdF8GiAn/gIExAuDGHsVLu75fQVpDC6zBhChEkfoUjsL4URtusBnCoO+TP52tQGE5Mgbg5OT6U5Qf3as6kEmiLQn5/XII/yS1pwNkjhVIo3I26ph5CCk2TBrH67mzwGmEESQGBviRwjN3Rf6SpWTh1LQRsRo6kwgYTFcY20BqnOlSrURY1xdOyLKI22/6MgPQPiSUh01JSmb7MZjWZg5gLuV9PfNGQ5IsQrD9L8fF3g/RemaBTQTpW9vgM0tevU7TDRu7PqYewbSn1g71nMomuRHfI7e0cZXi5lOFg96l8XxeIDexW7rBUuiSCFJNBOvyl/0SQud9GZj3tc2CHp61tuqAvmlPkfj1HkAIX+4DN/IvHAwWxybxrzIrB0VwgDBIvEwOSVs6kpfuaoUREpbSuouea6OkCKfwHgmUYZj07wgMAAAAASUVORK5CYII=",
 			"mode": "bitmap"
 		}
@@ -1327,7 +1336,7 @@
 			"override": false,
 			"length": 0.75,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
@@ -1352,12 +1361,7 @@
 							"time": 0,
 							"color": -1,
 							"uniform": false,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "scale",
@@ -1372,12 +1376,7 @@
 							"time": 0.75,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "scale",
@@ -1392,12 +1391,7 @@
 							"time": 0.1,
 							"color": -1,
 							"uniform": false,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						}
 					]
 				}

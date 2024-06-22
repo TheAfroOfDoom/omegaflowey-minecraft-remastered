@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "c523ec8c-2275-0b41-3dfe-72c0213741fe"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{CustomName:'\"X-Bullets-Upper Bullet\"', Tags:[\"omega-flowey-remastered\",\"hostile\",\"omega-flowey\",\"attack\",\"attack-bullet\",\"attack-bullet-new\",\"x-bullets\"], teleport_duration: 1}",
+				"use_component_system": false,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -1582,15 +1583,16 @@
 	"textures": [
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\black.png",
-			"name": "black.png",
+			"name": "black",
 			"folder": "",
 			"namespace": "",
 			"id": "1",
-			"width": 1,
-			"height": 1,
+			"width": 16,
+			"height": 16,
 			"uv_width": 32,
 			"uv_height": 32,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1603,21 +1605,22 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "37c077f1-8608-da77-ed64-708f12f17f23",
-			"relative_path": "../../../../../../../animated_java/textures/item/black.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjYGBg+A8AAQQBAHAgZQsAAAAASUVORK5CYII=",
+			"relative_path": "../../../../../../textures/custom/black.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\white.png",
-			"name": "white.png",
+			"name": "white",
 			"folder": "",
 			"namespace": "",
 			"id": "2",
-			"width": 1,
-			"height": 1,
+			"width": 16,
+			"height": 16,
 			"uv_width": 32,
 			"uv_height": 32,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1630,8 +1633,8 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "3f07a94e-952a-f3c7-f370-fddb8069067a",
-			"relative_path": "../../../../../../../animated_java/textures/item/white.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdj+P///38ACfsD/QVDRcoAAAAASUVORK5CYII=",
+			"relative_path": "../../../../../../textures/custom/white.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/P///38GCgDjqAEMo2HAMBoGDMMiDAAlHz/RG+BMbgAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		}
 	],
@@ -1673,12 +1676,7 @@
 							"uuid": "22f5cb0d-c3b0-30b2-571c-a5f6188fb4ea",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "rotation",
@@ -1692,12 +1690,7 @@
 							"uuid": "59292c22-74a8-135e-dd83-a6d6e23a3117",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "rotation",
@@ -1711,12 +1704,7 @@
 							"uuid": "4250ecab-ab8f-a992-9dc1-e77f1d5c16a5",
 							"time": 1.2,
 							"color": -1,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "rotation",
@@ -1730,12 +1718,7 @@
 							"uuid": "6c5ae4e8-b35d-f97e-9882-3552ece0a6c7",
 							"time": 1.8,
 							"color": -1,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "rotation",
@@ -1749,12 +1732,7 @@
 							"uuid": "abaabc77-0df9-7acc-cc56-bbb02b666f51",
 							"time": 2.4,
 							"color": -1,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "rotation",
@@ -1768,12 +1746,7 @@
 							"uuid": "63a37f19-e2b5-dffc-dec5-d42d76f0524d",
 							"time": 3,
 							"color": -1,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "scale",
@@ -1788,12 +1761,7 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "scale",
@@ -1808,12 +1776,7 @@
 							"time": 0.35,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -1832,12 +1795,7 @@
 							"uuid": "97a12fa2-35d0-6ed7-da97-4dbae6bedbb7",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						}
 					]
 				}

@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "be34281d-956c-1cd2-17a4-83f1c471a265"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{Tags:[\"omega-flowey-remastered\", \"omega-flowey\", \"omega-flowey-nose\"]}",
+				"use_component_system": false,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -812,7 +813,14 @@
 			"folder": "",
 			"namespace": "",
 			"id": "0",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
 			"frame_time": 1,
@@ -820,11 +828,12 @@
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"mode": "bitmap",
+			"internal": false,
 			"saved": true,
 			"uuid": "da3f0805-a312-9c45-8a17-34a6689c6ced",
 			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/polished_granite.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWJJREFUOE99U7tKA1EQnQVBza6oCVuKYpFaBYt0Vn6Cv2IpdrZWFv5GPiBdCEFNoRGCrNFUuiQq7kYFYeVMmOvJZsk0c/fuPM6cOddrXZxmQhYvrEn4+y7xx1jC1ZJ6GJ/Tt6H46xWB91Cge3svn18/GriyvKge3ziXgkDGSeJacBzOXv3yPIs7TQl3agIPQxKME/vxSLbC8gTNxqbEgydp3D38I7AWFmidDJUVfYmHDili3QjMg52RxAkcgwbDJBWvfnacta9vpBL4OnOeC0vC/XbtQKJmw/HkELTaHUeYza4J1arOWmT4fxUN5o+ADoasiFxFgBGiXk8R4AI2L8lGBDrkaYE8zCJNsEZ4Y6oDJqZwYNo9F59ZI8SEYtyNBcSdMeYUiUXqYz3wdqyBKtFIzL8DiGR/b9et0d4Gb6P7+DxLIgfao8oTaO9GEZwcHWb918n6YKP0W33ZX5q642+O+wNIixCo6WvjfQAAAABJRU5ErkJggg=="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWJJREFUOE99U7tKA1EQnQVBza6oCVuKYpFaBYt0Vn6Cv2IpdrZWFv5GPiBdCEFNoRGCrNFUuiQq7kYFYeVMmOvJZsk0c/fuPM6cOddrXZxmQhYvrEn4+y7xx1jC1ZJ6GJ/Tt6H46xWB91Cge3svn18/GriyvKge3ziXgkDGSeJacBzOXv3yPIs7TQl3agIPQxKME/vxSLbC8gTNxqbEgydp3D38I7AWFmidDJUVfYmHDili3QjMg52RxAkcgwbDJBWvfnacta9vpBL4OnOeC0vC/XbtQKJmw/HkELTaHUeYza4J1arOWmT4fxUN5o+ADoasiFxFgBGiXk8R4AI2L8lGBDrkaYE8zCJNsEZ4Y6oDJqZwYNo9F59ZI8SEYtyNBcSdMeYUiUXqYz3wdqyBKtFIzL8DiGR/b9et0d4Gb6P7+DxLIgfao8oTaO9GEZwcHWb918n6YKP0W33ZX5q642+O+wNIixCo6WvjfQAAAABJRU5ErkJggg==",
+			"mode": "bitmap"
 		},
 		{
 			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\coal_block.png",
@@ -832,7 +841,14 @@
 			"folder": "",
 			"namespace": "",
 			"id": "1",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
 			"frame_time": 1,
@@ -840,11 +856,12 @@
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"mode": "bitmap",
+			"internal": false,
 			"saved": true,
 			"uuid": "32d4af31-9048-91f1-6cfc-23cd06b2bb9a",
 			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/coal_block.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQlJREFUOE+FU0EKgzAQTA6CBgSt9WAP9v9/q+ApemuZhQmTxaIg0c3uZGd2Et/r+g0hhHwcWMJ5nqFtW/ve993WYRjKHvbxIAdvnOfZALQYSUwkAGMsTF1nNQbgC5ikXfAQdsP/2Pe9AWhbz2kKOedCi8mg5OnEpmmMgm+NmpAaDwGAdmwUFJmn+UKNK0XrAIHHOFaTIAC701XBDECF8WojGYqnlCpdmFcAyJE+QFcc1T89bIxeRAKgWM1FSq9lsThNVnyAE9WFVyLqCKlJhJWBSE4ck4qmY9MJoMtCQS2Lb0xFhVNq2Ce9CkDNhOLPtlUXyusC0EsnKiV1KedfORF3gddXExi7E/YHpAf5qSjgElwAAAAASUVORK5CYII="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQlJREFUOE+FU0EKgzAQTA6CBgSt9WAP9v9/q+ApemuZhQmTxaIg0c3uZGd2Et/r+g0hhHwcWMJ5nqFtW/ve993WYRjKHvbxIAdvnOfZALQYSUwkAGMsTF1nNQbgC5ikXfAQdsP/2Pe9AWhbz2kKOedCi8mg5OnEpmmMgm+NmpAaDwGAdmwUFJmn+UKNK0XrAIHHOFaTIAC701XBDECF8WojGYqnlCpdmFcAyJE+QFcc1T89bIxeRAKgWM1FSq9lsThNVnyAE9WFVyLqCKlJhJWBSE4ck4qmY9MJoMtCQS2Lb0xFhVNq2Ce9CkDNhOLPtlUXyusC0EsnKiV1KedfORF3gddXExi7E/YHpAf5qSjgElwAAAAASUVORK5CYII=",
+			"mode": "bitmap"
 		}
 	],
 	"animations": [
@@ -855,7 +872,7 @@
 			"override": false,
 			"length": 1.2,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
@@ -1051,12 +1068,7 @@
 							"time": 0.2,
 							"color": -1,
 							"uniform": false,
-							"interpolation": "step",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "step"
 						},
 						{
 							"channel": "scale",
@@ -1071,12 +1083,7 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "step",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "step"
 						},
 						{
 							"channel": "scale",
@@ -1091,12 +1098,7 @@
 							"time": 0.4,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "step",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "step"
 						},
 						{
 							"channel": "scale",
@@ -1111,12 +1113,7 @@
 							"time": 0.6,
 							"color": -1,
 							"uniform": false,
-							"interpolation": "step",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "step"
 						},
 						{
 							"channel": "scale",
@@ -1131,12 +1128,7 @@
 							"time": 0.8,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "step",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "step"
 						},
 						{
 							"channel": "scale",
@@ -1151,12 +1143,7 @@
 							"time": 1,
 							"color": -1,
 							"uniform": false,
-							"interpolation": "step",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "step"
 						},
 						{
 							"channel": "scale",
@@ -1171,12 +1158,7 @@
 							"time": 1.2,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "step",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "step"
 						}
 					]
 				},
