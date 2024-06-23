@@ -46,6 +46,8 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 1. [Blockbench](https://www.blockbench.net/downloads) -- for 3D modelling
    - Install our Blockbench CLI plugin:
      - Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `bb-cli.js` file from your local `omega-flowey-remastered` repo (`omega-flowey-remastered/package-scripts/modules/bb-cli.js`).
+2. [Animated Java 1.0.0 pre-release](https://discord.com/channels/785339959518953482/785500934092226580/1253042188363759666)
+   - see the AJ [docs](https://animated-java.github.io/docs/resources/installing-pre-releases) for how to install a pre-release.
 
 </details>
 
@@ -100,12 +102,14 @@ Read the descriptions of the following scripts and run them when it is recommend
 
 2. `yarn start`: this keeps your local repository's content synced with your `.minecraft` directory -- datapack/resourcepack changes will reflect in-game
 
+  <s>
    1. if you run `yarn start watch.experimental`, it also watches `.ajmodel` files and runs our auto-exporter on them -- this reads all `.ajmodel` files in your local repo and runs Animated Java's `Export Project` function on them.
       1. we specifically _do not_ commit AJ's exported files to the repo since they are _very large_
       2. the `watch.models` script _will not_ work if you already have Blockbench open, so don't expect it to do anything while that's the case
       3. its a little janky and experimental still, so \*\*we recommend manually running `yarn start export` if you run into issues relating to Animated Java export files (missing models, animations, attacks not playing properly)
+  </s>
 
-   We recommend keeping `yarn start` running at all times while working on the project.
+We recommend keeping `yarn start` running at all times while working on the project.
 
 3. `yarn sync`: zips your Minecraft world and copies it to the repo as (`world.zip`). This is how we handle version-control for the actual Minecraft world. This is especially important to run and commit if you make any _physical changes_ to the world like breaking/placing blocks.
 
@@ -113,7 +117,7 @@ Read the descriptions of the following scripts and run them when it is recommend
 
 #### Adding a new model/animation
 
-1. Create a new Animated Java Rig via `File > New > Animated Java Rig`
+1. Create a new Animated Java Rig via `File > New > Animated Java Blueprint`
 2. Enter inputs for the following required fields:
    1. `Project Name`
    2. `Resource Pack`: select the `pack.mcmeta` file located in the repository at `resourcepack/pack.mcmeta`
@@ -121,5 +125,5 @@ Read the descriptions of the following scripts and run them when it is recommend
 3. Save the file with `CTRL + S` to somewhere appropriate under `resourcepack/assets/omega-flowey/models`
    1. **While the model is still a work-in-progress, append `_dev` to the filename so our auto-export scripts skip it**
       1. e.g. `housefly_dev.ajmodel`
-4. Export your model/animations by clicking `Animated Java > Export Project` at the top
+4. Export your model/animations by clicking `Animated Java > Export` at the top
 5. When finished with the model, remove the `_dev` suffix from the filename (e.g. `housefly.ajmodel`)
