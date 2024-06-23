@@ -44,13 +44,8 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
   <summary><strong>Required Tools</strong></summary>
 
 1. [Blockbench](https://www.blockbench.net/downloads) -- for 3D modelling
-   1. Install our Blockbench CLI plugin:
-      1. Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `bb-cli.js` file from your local `omega-flowey-remastered` repo (`omega-flowey-remastered/package-scripts/modules/bb-cli.js`).
-   2. Build and install our custom fork of Animated Java:
-      1. Clone the repository to your local machine: https://github.com/aidant19/animated-java/
-      2. Run `yarn install` to install dependencies
-      3. Run `yarn build:prod` to generate the `animated-java.js` in the `dist` directory
-      4. Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `animated_java.js` file from your local `animated-java` repo (`animated-java/dist/animated-java.js`)
+   - Install our Blockbench CLI plugin:
+     - Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `bb-cli.js` file from your local `omega-flowey-remastered` repo (`omega-flowey-remastered/package-scripts/modules/bb-cli.js`).
 
 </details>
 
@@ -93,11 +88,15 @@ We also recommend using [blockcolors.app](https://blockcolors.app/) to get a rep
 
 Read the descriptions of the following scripts and run them when it is recommended to:
 
-1. `yarn start export`: run the AJ model export script
+1. **NOTE**: We are currently migrating to Animated Java 1.0.0. The AJ auto-exporter has not yet been updated to support this. You will have to update model export files by manually clicking `Export` in Blockbench until the auto-exporter is updated.
+
+   <s> `yarn start export`: run the AJ model export script
 
    1. add `ELECTRON_ENABLE_LOGGING=1` to your `.env` file to enable log-passthrough from Blockbench's renderer process to the main process. **Run this if your `watch.models` script (from `yarn start watch.experimental`) runs into an error while exporting AJ models.**
 
    We recommend running `yarn start export` at least once, and every time changes to `.ajmodel` files occur from new incoming commits.
+
+   </s>
 
 2. `yarn start`: this keeps your local repository's content synced with your `.minecraft` directory -- datapack/resourcepack changes will reflect in-game
 
