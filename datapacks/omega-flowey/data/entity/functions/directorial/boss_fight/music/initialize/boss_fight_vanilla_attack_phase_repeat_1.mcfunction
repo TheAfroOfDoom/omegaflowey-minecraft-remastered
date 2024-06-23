@@ -1,7 +1,0 @@
-scoreboard players set @s music.clock.total 100
-tag @s add looped_music.attack_phase_repeat_1
-data modify entity @s data.looped_music.playsound_command set value "playsound omega-flowey:music.phase.repeat.1 record @a ~ ~ ~ 10 1"
-data modify entity @s data.looped_music.stopsound_command set value "stopsound @a record omega-flowey:music.phase.repeat.1"
-
-# base initializations
-function entity:directorial/boss_fight/music/initialize with entity @s data.looped_music

@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "4c9c08dd-d6a5-e642-5c10-64b0cd42e8a6"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{ CustomName:\"'Bomb Bullet'\", Tags:[\"omega-flowey-remastered\",\"hostile\",\"omega-flowey\",\"attack\",\"attack-bullet\",\"attack-bullet-new\", \"bomb\"], teleport_duration: 1 }",
+				"use_component_system": true,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -51,11 +52,6 @@
 			{
 				"name": "explode",
 				"textureMap": {
-					"8ded621d-9c3e-a946-6010-753291279573": "8ded621d-9c3e-a946-6010-753291279573",
-					"2f705eac-1a87-f386-af77-596b55eb5f5d": "2f705eac-1a87-f386-af77-596b55eb5f5d",
-					"b5020612-5379-b097-fdf3-6a377e023e75": "b5020612-5379-b097-fdf3-6a377e023e75",
-					"eebc764f-ea01-096c-443f-08a46beae336": "eebc764f-ea01-096c-443f-08a46beae336",
-					"56273aa7-b01c-2100-1bc2-3d913f21dac3": "56273aa7-b01c-2100-1bc2-3d913f21dac3",
 					"4c080edb-a82c-80d9-36c5-0c84d94a67f0": "56273aa7-b01c-2100-1bc2-3d913f21dac3"
 				},
 				"uuid": "2362ef6f-0067-a732-b23d-ce831c32d448",
@@ -1242,6 +1238,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1269,6 +1266,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1296,6 +1294,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1323,6 +1322,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1335,7 +1335,7 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "eebc764f-ea01-096c-443f-08a46beae336",
-			"relative_path": "../../../../../../../animated_java/textures/item/attacks/flowery.png",
+			"relative_path": "../../../../../../textures/custom/attacks/flowery.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABHtJREFUeF7tW8FKa0EMtUVBFwX3pSi66C9041cppQhdKVIKLvw7XQhCl24KBRFa+h65kJJ77syc5t1b24fTjbaZm0lOTjLJVFs3Nzd/jhKvk5OTlPjo9PQ0KT8/P0/KmfD7+zu5BOX4frlcJp9vZQAyA3IKlGoA5jzmOMt5JseEZDnOagTTx2pCpQZkAKDqZwbAMccozuSMsl7KM33uFECFnU7HZZMXAKac6ZvP5yUVuB4BWCwWpfW0D8gAZAb8shTw9v4sR+vmOCtyTM76DNoH4AbeYzEDQBDwMohFlE2HaE5mAI7D7NhDhFkEmZylCJN77fn8/Ez3ARkAcu57Ef+VDHh/f9/Q7Pj4OMnifr9fyN/e3hjbC7mu18XegFRSYDAYJO8D2HiMVr++vpY+Go/HpfcCyGQyiTp7d3dXkeH66+vrzRo27KAyvCNsNQmARF42GI1Gxb5iuAKonyEj1DmVr1arks0o1/cKwsEAoLS/vb0tOSAA2AiylEAARJmCo4otCAcBgDovhiLFnp+fKymQSvZtAFB2yc9ut1tSx67BKymAfYAn55Xy1oLhcLihf8jR+/v7CkNwXaxGKMAh+eXlZRDXr6+vZHGlnWDsGNOoI6Lr9bqyoaVwu92mANgF6GwqwiEQdgJAjPJiLAKA+esFwNJdflcAYnUBQWgcAOu8NUij9vT0tAkgGikCAcBWdk05rPaxtLCnTGyNBaE2AHaTj4+P4lgLOYYVWteEKPsvAFgm2P3xVHl8fCxMiR2TCAitAQiAbWxSDc0uAbA2KQC2jxC7fgSAVPXeNQCxxkqO0b0BEKLpT6dAbQAwqrYvkBqgL40A9g1YzBQA+TxVO1SvLYqy3ub4toVSdOnQVPt7AXQQQYgBIEZgZ5iqGQgAUtw+GwLSyu3E2DgAaqgCgdMepoFNARZBeVZb5xgAKedxVBZ9OwNAlOuxWGn9zAc4HDEW4DHLxmfdKuT8VgDUHYft5YetDzHKCiOsDDtHnBVeXl5KdQcBlKJX536gkfsA7A5tGmDRZLODbZXF2bOzs0rhtfovLi5KBPSOx7UBCDkfAkCtxJRABthWWZ6JAaB77JUBKeftrZANkYcBCoDVhUWQtb7sfoAyYJu+wBqF572NcKgAxqbDWM+A+h8eHgoTdQBiDqM/PwpA6LSYTqelBol9OXvwAKCToQsSywRkQKivSB2ze2WA9gJY6a3BAkDq7L+6uir6CX0hA1KpIM8I5e3833gKMErKhrPZLBokjLDNV/kdr9ywr2BFs9frpQhSkdX+XgA1WoUhIASA2IVlCADUj1+0aEp5HVe9OwUgFArGIPbdobexYXTIAMCfz1eOQYYgiygijOu9zzN7Uim5zbMZAJwGGWreCGYGwB9fewFkAWk8BbwRYwawxoQBkppFtgGH7U9nAa+BuCEzwKvfu57tnwHwXokx2v33DGA51zQFGaBsPy/guB/tA5ouisxhFoC6RTcDAAhkBjTdCbKcZRRmKcKONfa8OwW8OZkBIP9tnhkACHgp7V3PUuIvHCk4leXAtWoAAAAASUVORK5CYII=",
 			"mode": "bitmap"
 		},
@@ -1350,6 +1350,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1377,6 +1378,7 @@
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -1389,7 +1391,7 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "4c080edb-a82c-80d9-36c5-0c84d94a67f0",
-			"relative_path": "../../../../../../../animated_java/textures/item/attacks/blank.png",
+			"relative_path": "../../../../../../textures/custom/attacks/blank.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII=",
 			"mode": "bitmap"
 		}
@@ -1402,7 +1404,7 @@
 			"override": false,
 			"length": 0.5,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
@@ -1427,12 +1429,7 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "scale",
@@ -1447,12 +1444,7 @@
 							"time": 0.5,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						}
 					]
 				}
@@ -1490,12 +1482,7 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "catmullrom",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "catmullrom"
 						}
 					]
 				},
@@ -1582,12 +1569,7 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "catmullrom",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "catmullrom"
 						}
 					]
 				},
@@ -1606,12 +1588,7 @@
 							"uuid": "0f7d9184-d7b0-6af3-e9ac-3fb896e1f631",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						}
 					]
 				}

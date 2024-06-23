@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "967dbae2-a1da-11ee-8c90-0242ac120002"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{}",
+				"use_component_system": true,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -118,15 +119,16 @@
 	"textures": [
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\attacks\\finger-gun-laser.png",
-			"name": "finger-gun-laser.png",
+			"name": "finger-gun-laser",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
-			"width": 1,
-			"height": 1,
+			"width": 16,
+			"height": 16,
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
 			"render_mode": "default",
@@ -139,8 +141,8 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
-			"relative_path": "../../../../../../../animated_java/textures/item/attacks/finger-gun-laser.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjWGho9B8ABH8CBOR1ltwAAAAASUVORK5CYII=",
+			"relative_path": "../../../../../../textures/custom/attacks/finger-gun-laser.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jXGho9J+BAsA4agDDaBgwjIYBw7AIAwBI6yBBLMQBkQAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		}
 	]

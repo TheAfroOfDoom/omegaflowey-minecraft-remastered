@@ -1,1 +1,0 @@
-function animated_java:venus_fly_trap/remove/this

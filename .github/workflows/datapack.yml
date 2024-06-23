@@ -3,9 +3,9 @@ name: datapack
 on: [push]
 
 env:
-  FABRIC_API: https://cdn.modrinth.com/data/P7dR8mSH/versions/JMCwDuki/fabric-api-0.92.0%2B1.20.4.jar
-  FABRIC_SERVER: https://meta.fabricmc.net/v2/versions/loader/1.20.4/0.15.3/0.11.2/server/jar
-  PACKTEST: https://cdn.modrinth.com/data/XsKUhp45/versions/Gq3rUEy6/packtest-1.3-mc1.20.4.jar
+  FABRIC_API: https://cdn.modrinth.com/data/P7dR8mSH/versions/HXzEJYgV/fabric-api-0.100.1%2B1.21.jar
+  FABRIC_SERVER: https://meta.fabricmc.net/v2/versions/loader/1.21/0.15.11/1.0.1/server/jar
+  PACKTEST: https://cdn.modrinth.com/data/XsKUhp45/versions/sQSunYHv/packtest-1.8-beta3-mc1.21.jar
 
   ASSETS_DIR: null
   BLOCKBENCH_PATH: null
@@ -40,7 +40,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '21'
       - name: Download server files
         run: |
           curl -o server.jar $FABRIC_SERVER
@@ -53,4 +53,4 @@ jobs:
           cp -r datapacks world
       - name: Run test server
         run: |
-          java -Xmx2G -Dpacktest.auto -jar server.jar nogui
+          java -Xmx2G -Dpacktest.auto -Dpacktest.auto.annotations -jar server.jar nogui

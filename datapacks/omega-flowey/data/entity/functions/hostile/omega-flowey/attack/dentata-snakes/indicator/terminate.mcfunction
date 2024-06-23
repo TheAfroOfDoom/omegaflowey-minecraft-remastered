@@ -1,2 +1,0 @@
-## Terminate indicator
-kill @s

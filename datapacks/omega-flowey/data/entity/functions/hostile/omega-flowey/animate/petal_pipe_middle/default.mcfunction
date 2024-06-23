@@ -1,2 +1,0 @@
-function animated_java:petal_pipe_middle/animations/float_and_pulsate/play
-function animated_java:petal_pipe_middle/apply_variant/default

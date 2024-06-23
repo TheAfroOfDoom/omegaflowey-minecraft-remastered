@@ -1,1 +1,0 @@
-function omega-flowey:reset

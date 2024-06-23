@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "36b84ded-f8a9-cbdc-bae4-05c4f6bdb170"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{CustomName: '\"Homing-Vines Bullet\"', Tags:[\"omega-flowey-remastered\",\"hostile\",\"omega-flowey\",\"attack\",\"attack-bullet\",\"attack-bullet-new\",\"homing-vines\"]}",
+				"use_component_system": true,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -2152,11 +2153,18 @@
 	"textures": [
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\attacks\\homing-vine.png",
-			"name": "homing-vine.png",
+			"name": "homing-vine",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
 			"frame_time": 1,
@@ -2164,11 +2172,12 @@
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"mode": "bitmap",
+			"internal": false,
 			"saved": true,
 			"uuid": "7d5e2671-4dbb-df40-7ea9-f4337a16a3f7",
-			"relative_path": "../../../../../../../animated_java/textures/item/attacks/homing-vine.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAbFJREFUOE9dk7tKA1EQhueEXDWkkEAKFUJEg0YFMa0W6dJZaGtlI1j5BD6DT2JnlydIJURRMATUQggWIRp3E7LyTZz1mGl291z+mfnmX9c8rUZrlQW570wkkwuF4Pv1fSzB51i/l4t56Y8C/W72prrWqmWkvOnEXVztRVyurKZltz3Qzbt6QfLlUB7boQSjtBSKkRRzGXnrD1X8ufulooRrnOxEZGbje5CQ7ksYV+JnziymZKWUiitDePfgV4AMxKDvdHHykVQxgtIbnSAuGxGCfSpyMLC+usdZLZvM1gLvHDQ2yaWJDHvpWNwdnW9H9EcmKoCFhX/Rb89EeSpEnzi9Wsk3pWwsiFi1ntbsBvu2nJhB3KollSyXqcKHykVrydhYewgqAy4yY/9JW9nCNIZJWybGOyJUowI+oN7D38zJbOU+NfLxCC2RMgAiozG68+DmM5tPjIcKcIgWMMf8FDhoo/WdatZ2Z5f7kW8WbGzEgWa2Zc3caCb61wKj5OewbADcaM0MxLjM6r44QgrRPM8IGSkbVEWYyRC3Mfri7vpwXRmQhTA49h/w5LJvX3iRFKEfGFFJPfB6UZcAAAAASUVORK5CYII="
+			"relative_path": "../../../../../../textures/custom/attacks/homing-vine.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAbFJREFUOE9dk7tKA1EQhueEXDWkkEAKFUJEg0YFMa0W6dJZaGtlI1j5BD6DT2JnlydIJURRMATUQggWIRp3E7LyTZz1mGl291z+mfnmX9c8rUZrlQW570wkkwuF4Pv1fSzB51i/l4t56Y8C/W72prrWqmWkvOnEXVztRVyurKZltz3Qzbt6QfLlUB7boQSjtBSKkRRzGXnrD1X8ufulooRrnOxEZGbje5CQ7ksYV+JnziymZKWUiitDePfgV4AMxKDvdHHykVQxgtIbnSAuGxGCfSpyMLC+usdZLZvM1gLvHDQ2yaWJDHvpWNwdnW9H9EcmKoCFhX/Rb89EeSpEnzi9Wsk3pWwsiFi1ntbsBvu2nJhB3KollSyXqcKHykVrydhYewgqAy4yY/9JW9nCNIZJWybGOyJUowI+oN7D38zJbOU+NfLxCC2RMgAiozG68+DmM5tPjIcKcIgWMMf8FDhoo/WdatZ2Z5f7kW8WbGzEgWa2Zc3caCb61wKj5OewbADcaM0MxLjM6r44QgrRPM8IGSkbVEWYyRC3Mfri7vpwXRmQhTA49h/w5LJvX3iRFKEfGFFJPfB6UZcAAAAASUVORK5CYII=",
+			"mode": "bitmap"
 		},
 		{
 			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\orange_shulker_box.png",
@@ -2176,7 +2185,14 @@
 			"folder": "",
 			"namespace": "",
 			"id": "1",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
 			"frame_time": 1,
@@ -2184,11 +2200,12 @@
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"mode": "bitmap",
+			"internal": false,
 			"saved": true,
 			"uuid": "01f91ea7-2bb8-43e5-c193-983fd538939e",
 			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/orange_shulker_box.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAbNJREFUOE91U9lOwzAQHCcB0jRNCxKXBHwYT4h34GcRL1yCIkEPodK0KSqODbPGrcvhF3tt787uzK7qnsK2Wxm43spK9iJ39qSaYa4ttoqlbYxdvD+/VlBv55m97VdYi4C9IhHH3lhjboDDjrNfxhofgc13C6CTAmp8kdnHQYXdIkGj2RSH2XQqe2gTOS9acj8tS/TLGs11QLGEdN05K6Vg6lo+RXEsO5e1FtaYlbtqMsH1UEPdn8DmaYIszxcOfx5UBGtccJ+lBCAH3eFqCcwkROc5vCM6eWh7Dh4GlRAoWagIsAa11ogTRyLLYkksxaOTWAngOUgbDagocjUb8+eZWTAId2Zx1dfLABtpukD06ROZQX36PoNfHDwOgxK+WfdoYf0enTL2ytr1wegstXeDdxy0YzRbTuf/1k8O8rAPvIz85EkLmQ9V8RyIjJ7ErFWIzuL0rYRvop8y0l40EluZMu7ksbQq0d9nMwFkVqFNpSgnnbsjje0MrpFuehUIzOFhCSRoXgNHm8vhYkDOC9fKMF0ew7IhtAGeJ67SgwJgL3bHzt7PgSQC7kaQqeU719PX+yeCixcOaG7iAAAAAABJRU5ErkJggg=="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAbNJREFUOE91U9lOwzAQHCcB0jRNCxKXBHwYT4h34GcRL1yCIkEPodK0KSqODbPGrcvhF3tt787uzK7qnsK2Wxm43spK9iJ39qSaYa4ttoqlbYxdvD+/VlBv55m97VdYi4C9IhHH3lhjboDDjrNfxhofgc13C6CTAmp8kdnHQYXdIkGj2RSH2XQqe2gTOS9acj8tS/TLGs11QLGEdN05K6Vg6lo+RXEsO5e1FtaYlbtqMsH1UEPdn8DmaYIszxcOfx5UBGtccJ+lBCAH3eFqCcwkROc5vCM6eWh7Dh4GlRAoWagIsAa11ogTRyLLYkksxaOTWAngOUgbDagocjUb8+eZWTAId2Zx1dfLABtpukD06ROZQX36PoNfHDwOgxK+WfdoYf0enTL2ytr1wegstXeDdxy0YzRbTuf/1k8O8rAPvIz85EkLmQ9V8RyIjJ7ErFWIzuL0rYRvop8y0l40EluZMu7ksbQq0d9nMwFkVqFNpSgnnbsjje0MrpFuehUIzOFhCSRoXgNHm8vhYkDOC9fKMF0ew7IhtAGeJ67SgwJgL3bHzt7PgSQC7kaQqeU719PX+yeCixcOaG7iAAAAAABJRU5ErkJggg==",
+			"mode": "bitmap"
 		}
 	],
 	"animations": [
@@ -2199,7 +2216,7 @@
 			"override": false,
 			"length": 0.05,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
@@ -2223,12 +2240,7 @@
 							"uuid": "81a53348-5365-8c55-a40a-225dff60b598",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						},
 						{
 							"channel": "scale",
@@ -2243,12 +2255,7 @@
 							"time": 0,
 							"color": -1,
 							"uniform": false,
-							"interpolation": "linear",
-							"bezier_linked": true,
-							"bezier_left_time": [-0.1, -0.1, -0.1],
-							"bezier_left_value": [0, 0, 0],
-							"bezier_right_time": [0.1, 0.1, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"interpolation": "linear"
 						}
 					]
 				}

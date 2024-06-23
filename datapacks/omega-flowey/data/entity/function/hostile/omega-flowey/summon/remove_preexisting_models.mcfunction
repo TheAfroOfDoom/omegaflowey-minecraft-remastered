@@ -1,0 +1,2 @@
+function entity:hostile/omega-flowey/summon/remove_preexisting_models/except_tv_screen
+function animated_java:tv_screen/remove/all

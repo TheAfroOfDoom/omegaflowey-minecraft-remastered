@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java/ajmodel",
-		"format_version": "0.4.6",
+		"format_version": "0.4.8",
 		"uuid": "548e36d4-c419-e5a0-7385-8f1062b9691f"
 	},
 	"animated_java": {
@@ -23,6 +23,7 @@
 				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
 				"outdated_rig_warning": true,
 				"root_entity_nbt": "{}",
+				"use_component_system": true,
 				"include_variant_summon_functions": true,
 				"include_apply_variant_functions": true,
 				"include_uninstall_function": true,
@@ -165,7 +166,14 @@
 			"folder": "",
 			"namespace": "",
 			"id": "0",
+			"width": 16,
+			"height": 32,
+			"uv_width": 16,
+			"uv_height": 16,
 			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
 			"frame_time": 1,
@@ -173,10 +181,12 @@
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"mode": "bitmap",
+			"internal": false,
 			"saved": true,
 			"uuid": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAAXNSR0IArs4c6QAAABJJREFUGFdjeHlzwn+GhYZG/wEdZwVV8K9IvQAAAABJRU5ErkJggg=="
+			"relative_path": "../../../../../../textures/custom/attacks/homing-vine-blinking-lane.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADRJREFUSEtjfHlzwn8GCgDjqAEMo2HAMBoGDMMjDBYaGlFWHowawMA4GgajYQAqD4Z+OgAAVXFVYfqulm0AAAAASUVORK5CYII=",
+			"mode": "bitmap"
 		}
 	]
 }

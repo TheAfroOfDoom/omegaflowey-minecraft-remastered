@@ -107,6 +107,7 @@ const watchResourcepack = async (showVerbose) => {
     regexDotFiles,
     /^resourcepack[/\\]assets[/\\]omega-flowey[/\\]models[/\\]last_exported_hashes\.json$/,
     /^resourcepack[/\\]resourcepack\.ajmeta$/,
+    /\.ajblueprint$/,
     /\.ajmodel$/,
     /\.pdn$/,
   ];
@@ -180,18 +181,17 @@ const deleteExportedFiles = async (path) => {
     await writeFile(path, JSON.stringify(json, null, 2));
   };
   const functionListPaths = [
-    'datapacks/animated_java/data/animated_java/tags/functions/rig_tick.json',
-    'datapacks/animated_java/data/minecraft/tags/functions/load.json',
+    'datapacks/animated_java/data/minecraft/tags/function/load.json',
   ];
   for (const path of functionListPaths) {
     await deleteFromValues(path);
   }
 
-  const datapackAjmetaPath = 'datapacks/animated_java/datapack.ajmeta';
-  const datapackAjmeta = JSON.parse(await readFile(datapackAjmetaPath, 'utf8'));
-  datapackAjmeta.projects[uuid] = undefined;
-  const content = JSON.stringify(datapackAjmeta, null, 2);
-  await writeFile(datapackAjmetaPath, content);
+  // const datapackAjmetaPath = 'datapacks/animated_java/datapack.ajmeta';
+  // const datapackAjmeta = JSON.parse(await readFile(datapackAjmetaPath, 'utf8'));
+  // datapackAjmeta.projects[uuid] = undefined;
+  // const content = JSON.stringify(datapackAjmeta, null, 2);
+  // await writeFile(datapackAjmetaPath, content);
 
   lastExported[uuid] = undefined;
   updateLastExportedHashes(ajmodelDir, lastExported);

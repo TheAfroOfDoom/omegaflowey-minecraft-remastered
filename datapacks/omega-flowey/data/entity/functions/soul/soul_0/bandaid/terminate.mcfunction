@@ -1,1 +1,0 @@
-function animated_java:soul_0_bandaid/remove/this
