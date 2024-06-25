@@ -1,5 +1,5 @@
 # Summon bullet
-$execute positioned $(x) 35 $(z) run function animated_java:finger_gun_bullet/summon { args: {} }
+$execute positioned $(x) 35 $(z) run function animated_java:finger_gun_bullet/summon { args: { animation: 'shoot', start_animation: true } }
 
 # Copy yaw to bullet
 execute store result storage attack:finger-guns yaw float 1 run data get entity @s Rotation[0] 100
