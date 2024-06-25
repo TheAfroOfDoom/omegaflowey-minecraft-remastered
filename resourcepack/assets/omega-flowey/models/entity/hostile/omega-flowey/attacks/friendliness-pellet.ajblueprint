@@ -1,55 +1,32 @@
 {
 	"meta": {
-		"format": "animated_java/ajmodel",
-		"format_version": "0.4.8",
-		"uuid": "38f101b2-d117-0908-0fe1-35225e73e0b4"
+		"format": "animated_java_blueprint",
+		"format_version": "0.5.3",
+		"uuid": "38f101b2-d117-0908-0fe1-35225e73e0b4",
+		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\friendliness-pellet.ajblueprint",
+		"last_used_export_namespace": "friendliness_pellet"
 	},
-	"animated_java": {
-		"settings": {
-			"project_namespace": "friendliness_pellet",
-			"project_resolution": [16, 16],
-			"target_minecraft_version": "1.20+",
-			"rig_item": "minecraft:white_dye",
-			"rig_item_model": "",
-			"rig_export_folder": "",
-			"texture_export_folder": "",
-			"enable_advanced_resource_pack_settings": false,
-			"resource_pack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\pack.mcmeta",
-			"verbose": true,
-			"exporter": "animated_java:datapack_exporter"
-		},
-		"exporter_settings": {
-			"animated_java:datapack_exporter": {
-				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
-				"outdated_rig_warning": true,
-				"root_entity_nbt": "{ Tags:[\"omega-flowey-remastered\",\"hostile\",\"omega-flowey\",\"attack\",\"attack-bullet\",\"attack-bullet-new\"] }",
-				"use_component_system": true,
-				"include_variant_summon_functions": true,
-				"include_apply_variant_functions": true,
-				"include_uninstall_function": true,
-				"include_pause_all_animations_function": true,
-				"include_remove_rigs_function": true,
-				"include_remove_all_function": true,
-				"include_on_load_function_tags": true,
-				"include_on_tick_function_tags": true,
-				"include_on_summon_function_tags": true,
-				"include_on_remove_function_tags": true
-			},
-			"animated_java:json_exporter": {
-				"output_file": ""
-			}
-		},
-		"variants": [
-			{
-				"name": "default",
-				"textureMap": {},
-				"uuid": "b128252d-506b-b1ab-6fba-5b09194d2ef5",
-				"boneConfig": {},
-				"default": true,
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			}
-		]
+	"project_settings": {
+		"export_namespace": "friendliness_pellet",
+		"show_bounding_box": false,
+		"auto_bounding_box": true,
+		"bounding_box": [48, 48],
+		"enable_plugin_mode": false,
+		"enable_resource_pack": true,
+		"enable_data_pack": true,
+		"display_item": "minecraft:white_dye",
+		"customModelDataOffset": 0,
+		"enable_advanced_resource_pack_settings": false,
+		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
+		"display_item_path": "",
+		"model_folder": "",
+		"texture_folder": "",
+		"enable_advanced_data_pack_settings": false,
+		"data_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\",
+		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-bullet\ntag @s add attack-bullet-new",
+		"interpolation_duration": 1,
+		"teleportation_duration": 1,
+		"use_storage_for_animation": false
 	},
 	"resolution": {
 		"width": 16,
@@ -513,7 +490,10 @@
 			"name": "root",
 			"origin": [0, -2, 0],
 			"color": 0,
-			"nbt": "{}",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
 			"uuid": "2387b058-a610-5161-cfff-b09d997e138d",
 			"export": true,
 			"mirror_uv": false,
@@ -526,7 +506,10 @@
 					"name": "white",
 					"origin": [0, -2.5, 0],
 					"color": 0,
-					"nbt": "{}",
+					"configs": {
+						"default": {},
+						"variants": {}
+					},
 					"uuid": "c5e49787-08d1-90a5-729d-32e56d83c27c",
 					"export": true,
 					"mirror_uv": false,
@@ -546,7 +529,10 @@
 					"name": "black",
 					"origin": [0, -2.5, 0],
 					"color": 0,
-					"nbt": "{}",
+					"configs": {
+						"default": {},
+						"variants": {}
+					},
 					"uuid": "d5596818-6da9-8cda-d985-85f4a45c9fe0",
 					"export": true,
 					"mirror_uv": false,
@@ -569,7 +555,7 @@
 	"textures": [
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\black.png",
-			"name": "black",
+			"name": "black.png",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
@@ -591,13 +577,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "8bde5a76-2be9-3d54-653b-96cb8018407c",
-			"relative_path": "../../../../../../textures/custom/black.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\white.png",
-			"name": "white",
+			"name": "white.png",
 			"folder": "",
 			"namespace": "",
 			"id": "1",
@@ -619,11 +604,20 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "12883b30-c952-cd29-e94c-88ca0ec0e9b0",
-			"relative_path": "../../../../../../textures/custom/white.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/P///38GCgDjqAEMo2HAMBoGDMMiDAAlHz/RG+BMbgAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		}
 	],
+	"variants": {
+		"default": {
+			"display_name": "default",
+			"name": "default",
+			"uuid": "b128252d-506b-b1ab-6fba-5b09194d2ef5",
+			"texture_map": {},
+			"excluded_bones": []
+		},
+		"list": []
+	},
 	"animations": [
 		{
 			"uuid": "71739944-ec9c-ba8b-664c-ad7f45128e96",
@@ -632,13 +626,14 @@
 			"override": false,
 			"length": 0.4,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
+			"saved": true,
+			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"affected_bones": [],
-			"affected_bones_is_a_whitelist": false,
+			"excluded_bones": [],
 			"animators": {
 				"2387b058-a610-5161-cfff-b09d997e138d": {
 					"name": "root",
@@ -656,7 +651,9 @@
 							"uuid": "3c865c39-1661-4bc4-4759-d21ef53100d6",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -670,7 +667,9 @@
 							"uuid": "4397cb02-182a-5bcf-bda9-d08ab4198ca2",
 							"time": 0.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -684,11 +683,14 @@
 							"uuid": "802cb053-daa5-7848-6377-41818cf8f0b2",
 							"time": 0.4,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
 			}
 		}
-	]
+	],
+	"animation_controllers": []
 }
