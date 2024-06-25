@@ -11,8 +11,5 @@ playsound omega-flowey:attack.homing-vines.summon hostile @a ~ ~ ~ 5 1
 execute store result entity @s Rotation[0] float 1 run data get storage attack:homing-vines bullet_yaw
 execute store result entity @s Rotation[1] float 1 run data get storage attack:homing-vines bullet_pitch
 
-# Start animation (just a hack to further lengthen the vine)
-function animated_java:homing_vine/animations/default/play
-
 # Remove tags
 tag @s remove attack-bullet-new
