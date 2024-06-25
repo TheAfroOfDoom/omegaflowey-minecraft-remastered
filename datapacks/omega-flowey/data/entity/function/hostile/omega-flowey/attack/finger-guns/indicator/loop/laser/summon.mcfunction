@@ -1,5 +1,5 @@
 # Summon laser
-$execute positioned 0.5 33.5 $(z) run function animated_java:finger_gun_laser/summon
+$execute positioned 0.5 33.5 $(z) run function animated_java:finger_gun_laser/summon { args: {} }
 
 # Copy group id to laser
 execute store result storage group id int 1 run scoreboard players get @s group.id

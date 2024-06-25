@@ -1,55 +1,32 @@
 {
 	"meta": {
-		"format": "animated_java/ajmodel",
-		"format_version": "0.4.8",
-		"uuid": "dd22041e-e017-2441-ed2c-b5068aac58e6"
+		"format": "animated_java_blueprint",
+		"format_version": "0.5.3",
+		"uuid": "dd22041e-e017-2441-ed2c-b5068aac58e6",
+		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\finger-gun-bullet.ajblueprint",
+		"last_used_export_namespace": "finger_gun_bullet"
 	},
-	"animated_java": {
-		"settings": {
-			"project_namespace": "finger_gun_bullet",
-			"project_resolution": [16, 16],
-			"target_minecraft_version": "1.20+",
-			"rig_item": "minecraft:white_dye",
-			"rig_item_model": "",
-			"rig_export_folder": "",
-			"texture_export_folder": "",
-			"enable_advanced_resource_pack_settings": false,
-			"resource_pack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\pack.mcmeta",
-			"verbose": true,
-			"exporter": "animated_java:datapack_exporter"
-		},
-		"exporter_settings": {
-			"animated_java:datapack_exporter": {
-				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
-				"outdated_rig_warning": true,
-				"root_entity_nbt": "{ CustomName: '\"Finger-Guns Bullet\"', Tags:[\"omega-flowey-remastered\",\"hostile\",\"omega-flowey\",\"attack\",\"attack-bullet\",\"attack-bullet-new\",\"finger-guns\"] }",
-				"use_component_system": true,
-				"include_variant_summon_functions": true,
-				"include_apply_variant_functions": true,
-				"include_uninstall_function": true,
-				"include_pause_all_animations_function": true,
-				"include_remove_rigs_function": true,
-				"include_remove_all_function": true,
-				"include_on_load_function_tags": true,
-				"include_on_tick_function_tags": true,
-				"include_on_summon_function_tags": true,
-				"include_on_remove_function_tags": true
-			},
-			"animated_java:json_exporter": {
-				"output_file": ""
-			}
-		},
-		"variants": [
-			{
-				"name": "default",
-				"textureMap": {},
-				"uuid": "25e1e5e0-12ee-3d0f-2141-2eddc2e101a4",
-				"boneConfig": {},
-				"default": true,
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			}
-		]
+	"project_settings": {
+		"export_namespace": "finger_gun_bullet",
+		"show_bounding_box": false,
+		"auto_bounding_box": true,
+		"bounding_box": [48, 48],
+		"enable_plugin_mode": false,
+		"enable_resource_pack": true,
+		"enable_data_pack": true,
+		"display_item": "minecraft:white_dye",
+		"customModelDataOffset": 0,
+		"enable_advanced_resource_pack_settings": false,
+		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
+		"display_item_path": "",
+		"model_folder": "",
+		"texture_folder": "",
+		"enable_advanced_data_pack_settings": false,
+		"data_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\",
+		"summon_commands": "data merge entity @s {CustomName:\"\\\"Finger-Guns Bullet\\\"\"}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-bullet\ntag @s add attack-bullet-new\ntag @s add finger-guns",
+		"interpolation_duration": 1,
+		"teleportation_duration": 1,
+		"use_storage_for_animation": false
 	},
 	"resolution": {
 		"width": 16,
@@ -1161,7 +1138,10 @@
 			"origin": [0, -11, 0],
 			"rotation": [0, -180, 0],
 			"color": 0,
-			"nbt": "{}",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
 			"uuid": "4082d603-9ecd-05d7-9e3f-67b2d47e6b2e",
 			"export": true,
 			"mirror_uv": false,
@@ -1174,7 +1154,10 @@
 					"name": "hack",
 					"origin": [0, -11, 0],
 					"color": 0,
-					"nbt": "{}",
+					"configs": {
+						"default": {},
+						"variants": {}
+					},
 					"uuid": "79ffd1f7-22da-593a-0214-9e1c7e2de085",
 					"export": true,
 					"mirror_uv": false,
@@ -1217,7 +1200,7 @@
 	"textures": [
 		{
 			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\white_wool.png",
-			"name": "white_wool",
+			"name": "white_wool.png",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
@@ -1239,13 +1222,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "31fbddff-8507-451b-6c1a-64f260e72c3e",
-			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/white_wool.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAnhJREFUOE89U9ly2kAQ7NV9ISHABzixk5f8/88kldgJxgGMMWBAB9Lq2tQMsfdFpdrZnu6eHnH/OFOWaaAoJTRNQ9QL0AsCPK9foWsaBv0IuqZjtlzCNAwM4z7o7PYHtG0Lsd5ulWVa/JBOVdeo6wbHNIVSCqeyRNM0cB2HAXaHAyzThOc6ME0TopRSaUJgvd1B13VcjYaMnOQ5iqJEPwxhWybKquIGvutCCIH8VKB5Z1CUJS4GA+5AQF3XwbYtDKIIT88ruLaNy+GAAfZJAqq/nUxQNw3E/pioU1ngVJQIAx+B7wNKYTpfMFDP99ELfKRZjlJK3H26YaD58+oM8OPhtyIqpOl2POaOp6JgzWRu3bT8Tx6Rmccsg+c4/NixbYiu6xQhyqrijmmec4e269gsYkDfJMuQ5SdMri75njyQdQUxWywYgDS9X7Rdy13oYrY4j4/MpS9NRSnA91yekkizXCkoLFYvTOnm+opN2rztYRkGM6GHRJkej+I+mqZlpgww/TtXRJEKqcuv6SMHKg5DeK7Lcx/F8UdOXjZbBL6HwPOYsZBVpWiuUv6fs+dycGRVg6W4Lnuz2b3BcWwYugFZSRySFHEUQvz8M1UUoGH/HNEkSyEgMBoOOFCr1w0zoljHUYT5asV1Ua+HMAggnhZL9uCYZlz47esXGLrOUkg3yaLdoFHalvVBneqX6zVEkmXqPTAkhR5VVY2ykihLibfjkVNKuh3Lwma/PzOM+zAMA6JtW0Vuklm0RBRZCgtppSBRoGjBaDvphL2Ac7E/HHk/xPf7B2VZFm4nYx4NrSl1Gl9e8HK9bLeo65qXisAoFyT18/gatIT/AP+8gBpu4GLUAAAAAElFTkSuQmCC",
 			"mode": "bitmap"
 		},
 		{
 			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\yellow_concrete.png",
-			"name": "yellow_concrete",
+			"name": "yellow_concrete.png",
 			"folder": "",
 			"namespace": "",
 			"id": "1",
@@ -1267,13 +1249,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "634f2d64-2178-04fa-2de1-6e2b57fd0a2a",
-			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/yellow_concrete.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAXFJREFUOE9VU116wzAIE/gM7Xb/A/TnZNv6DuyTMGmaFyexkYSE7fW4VBaAAsyA4jve774cqARsr30UxpU1BIAtVAUygbUcmalN1hJcwAn4WsgIuIuiiV7PrxqGjNRhFi03RBa8z8HMkFUq4z7/mzvs934pd0Pme1OqN0eQeYOymJ18gPzdL0XW4+GJ5kRliJlwbImgo0i+dQvX0s4+ZL6QGdqUD8sRkcdKgDGantjr+V3NBJnIlSBAipJ9nx+ng/rXqg4FRYPcUUQ5xfhRfe7UDKp5Pa5Ft+k6HaJ8mRrdmaIkZlvRkcqLTsloohgpuwJ0nY/wzm3tJM6JKCkqmHxZqBmY6QME2N/thdRy2LhBkp/bpSQf1VLJPgXGBELqJ+qJb0ClYAzkCNNlxbbHYQbqfBdIxAg5wZrE7Y+M4URK2nZcUe3sqeyQPuP2e+Mo7153qyw64t7yP7wYRLN9F2bIUYh4X6C5iVSmNresvkz97x+dRwp1VZrSmAAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\red_sandstone_top.png",
-			"name": "red_sandstone_top",
+			"name": "red_sandstone_top.png",
 			"folder": "",
 			"namespace": "",
 			"id": "2",
@@ -1295,13 +1276,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "1e6fe2f2-151f-6549-e256-3c171b520a8a",
-			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/red_sandstone_top.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAShJREFUOE91U7uqwkAQnVUMETFXsRBBEMQ/srSxuqVfZWl12/sJfohYiBoRQ0RXzsJZJsM6TcjuPM5j1m2XQz8eDeVRvwTRzdoyyFtyKJ/hn1E/X5J12uEegXycub/1zOOQDdhEF1/vtfz0MsFXN8G/+/+deyQzid1TSDCxqu5S9IuI1u03Cw+4GhqnE5n+avhAExGwiNwwCdqkglRwFzSwvI+ns+R5L/IGfwh7qd6BKgLTYwNwQxKmW5VT5yikK263mnorzLdG2oWGjSl1v0GmoKgJFGAjupW3MthDClZUUNEREeg9QIIVzGqg96SBwHoNvtQmtQc8CxRSK4piWqmXZzbKG3YmV5kFdj/0g2NOXKRJ0Ymd7avTwtomoYF2wD4q/S5orXboA6nJJQKg3SgCAAAAAElFTkSuQmCC",
 			"mode": "bitmap"
 		},
 		{
 			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\white_terracotta.png",
-			"name": "white_terracotta",
+			"name": "white_terracotta.png",
 			"folder": "",
 			"namespace": "",
 			"id": "3",
@@ -1323,11 +1303,20 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "75ccc21d-f8a1-29ad-0e1b-df331e848b16",
-			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/white_terracotta.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAcBJREFUOE9NU1ty2zAMXICUmt7/Arbz34wnmVwjY7eHaSUC6CxAOdaPRAoE9kW5Xc/hHjgehUC6QrsgLDDMsKwNEYDvBren2iYQNhAAujSAHwZ4KMJ3AFUsTaBNs8n4Z2jKQsA82OASA4GeW4FEw3MCqH4fzOb85YCsAAaLHHL/uIRowcVwWESdF8GiAn/gIExAuDGHsVLu75fQVpDC6zBhChEkfoUjsL4URtusBnCoO+TP52tQGE5Mgbg5OT6U5Qf3as6kEmiLQn5/XII/yS1pwNkjhVIo3I26ph5CCk2TBrH67mzwGmEESQGBviRwjN3Rf6SpWTh1LQRsRo6kwgYTFcY20BqnOlSrURY1xdOyLKI22/6MgPQPiSUh01JSmb7MZjWZg5gLuV9PfNGQ5IsQrD9L8fF3g/RemaBTQTpW9vgM0tevU7TDRu7PqYewbSn1g71nMomuRHfI7e0cZXi5lOFg96l8XxeIDexW7rBUuiSCFJNBOvyl/0SQud9GZj3tc2CHp61tuqAvmlPkfj1HkAIX+4DN/IvHAwWxybxrzIrB0VwgDBIvEwOSVs6kpfuaoUREpbSuouea6OkCKfwHgmUYZj07wgMAAAAASUVORK5CYII=",
 			"mode": "bitmap"
 		}
 	],
+	"variants": {
+		"default": {
+			"display_name": "default",
+			"name": "default",
+			"uuid": "25e1e5e0-12ee-3d0f-2141-2eddc2e101a4",
+			"texture_map": {},
+			"excluded_bones": []
+		},
+		"list": []
+	},
 	"animations": [
 		{
 			"uuid": "7c84df0f-e420-6ae4-8ae5-400e942c4963",
@@ -1336,13 +1325,14 @@
 			"override": false,
 			"length": 0.75,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
+			"saved": true,
+			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"affected_bones": [],
-			"affected_bones_is_a_whitelist": false,
+			"excluded_bones": [],
 			"animators": {
 				"4082d603-9ecd-05d7-9e3f-67b2d47e6b2e": {
 					"name": "root",
@@ -1361,7 +1351,9 @@
 							"time": 0,
 							"color": -1,
 							"uniform": false,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -1376,7 +1368,9 @@
 							"time": 0.75,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -1391,11 +1385,14 @@
 							"time": 0.1,
 							"color": -1,
 							"uniform": false,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
 			}
 		}
-	]
+	],
+	"animation_controllers": []
 }
