@@ -1,55 +1,32 @@
 {
 	"meta": {
-		"format": "animated_java/ajmodel",
-		"format_version": "0.4.8",
-		"uuid": "738b7804-b312-52bc-9340-268c67328f74"
+		"format": "animated_java_blueprint",
+		"format_version": "0.5.3",
+		"uuid": "738b7804-b312-52bc-9340-268c67328f74",
+		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\venus-fly-trap.ajblueprint",
+		"last_used_export_namespace": "venus_fly_trap"
 	},
-	"animated_java": {
-		"settings": {
-			"project_namespace": "venus_fly_trap",
-			"project_resolution": [16, 16],
-			"target_minecraft_version": "1.20+",
-			"rig_item": "minecraft:white_dye",
-			"rig_item_model": "",
-			"rig_export_folder": "",
-			"texture_export_folder": "",
-			"enable_advanced_resource_pack_settings": false,
-			"resource_pack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\pack.mcmeta",
-			"verbose": true,
-			"exporter": "animated_java:datapack_exporter"
-		},
-		"exporter_settings": {
-			"animated_java:datapack_exporter": {
-				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
-				"outdated_rig_warning": true,
-				"root_entity_nbt": "{ CustomName: '\"Flies Indicator\"', Tags: [\"omega-flowey-remastered\",\"hostile\",\"groupable\",\"omega-flowey\",\"attack\",\"attack-indicator\",\"attack-indicator-new\",\"flies\"] }",
-				"use_component_system": true,
-				"include_variant_summon_functions": true,
-				"include_apply_variant_functions": true,
-				"include_uninstall_function": true,
-				"include_pause_all_animations_function": true,
-				"include_remove_rigs_function": true,
-				"include_remove_all_function": true,
-				"include_on_load_function_tags": true,
-				"include_on_tick_function_tags": true,
-				"include_on_summon_function_tags": true,
-				"include_on_remove_function_tags": true
-			},
-			"animated_java:json_exporter": {
-				"output_file": ""
-			}
-		},
-		"variants": [
-			{
-				"name": "default",
-				"textureMap": {},
-				"uuid": "c0d926f5-2fce-7be5-1e89-439fe587d4f8",
-				"boneConfig": {},
-				"default": true,
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			}
-		]
+	"project_settings": {
+		"export_namespace": "venus_fly_trap",
+		"show_bounding_box": false,
+		"auto_bounding_box": true,
+		"bounding_box": [48, 48],
+		"enable_plugin_mode": false,
+		"enable_resource_pack": true,
+		"enable_data_pack": true,
+		"display_item": "minecraft:white_dye",
+		"customModelDataOffset": 0,
+		"enable_advanced_resource_pack_settings": false,
+		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
+		"display_item_path": "",
+		"model_folder": "",
+		"texture_folder": "",
+		"enable_advanced_data_pack_settings": false,
+		"data_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\",
+		"summon_commands": "data merge entity @s {CustomName:\"\\\"Flies Indicator\\\"\"}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add groupable\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-indicator\ntag @s add attack-indicator-new\ntag @s add flies",
+		"interpolation_duration": 1,
+		"teleportation_duration": 1,
+		"use_storage_for_animation": false
 	},
 	"resolution": {
 		"width": 16,
@@ -2154,7 +2131,10 @@
 			"origin": [0, 20, 0],
 			"rotation": [0, 90, 0],
 			"color": 0,
-			"nbt": "{}",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
 			"uuid": "9b9d3855-d682-8bfe-1162-2bb70b15c859",
 			"export": true,
 			"mirror_uv": false,
@@ -2167,7 +2147,10 @@
 					"name": "lower_lobe",
 					"origin": [-36.5, 20, 0],
 					"color": 0,
-					"nbt": "{}",
+					"configs": {
+						"default": {},
+						"variants": {}
+					},
 					"uuid": "5df3e100-8feb-f979-09c5-61d9aead3202",
 					"export": true,
 					"mirror_uv": false,
@@ -2209,7 +2192,10 @@
 					"origin": [-36.5, 26, 0],
 					"rotation": [0, 0, 20],
 					"color": 0,
-					"nbt": "{}",
+					"configs": {
+						"default": {},
+						"variants": {}
+					},
 					"uuid": "ba5ee458-f8b5-974c-c61f-c586dc675dac",
 					"export": true,
 					"mirror_uv": false,
@@ -2251,7 +2237,7 @@
 	"textures": [
 		{
 			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\lime_terracotta.png",
-			"name": "lime_terracotta",
+			"name": "lime_terracotta.png",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
@@ -2273,13 +2259,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "e81de70c-24e5-4a48-bff6-c9540a4b99a2",
-			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/lime_terracotta.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAdlJREFUOE9NU9GO2zAMoyQnvfueu/V+6LBs2J42FMW+fNfYkjbKaTcXKBLHIimKlu3ymp6J+zIIxAzNBOmJWww8tQaeGH1gRNRRAWCqEAJwY2ltYgQwIIjoEAILICowNUQCvQ+YshwgsWyXc+4ZWHgwszarTgATQTPDeOibBLKwmkoC8uV6TiJ6JNIdgzRIiCqeRNGr+GhRWTPZC4kKCNBUipV/DmDfO6iS5yGGkMTzQlqgj1FwJCChfP/1lmSV6pvyHUr9U8dDPH34f2UElmaQb9dzhkwFSfnppcKgWNhCjvkucpippT6QcCr4en3LCH/IP5kV0c0dJzJA0MuwEj5HqNw9ngnAXsnS+36MK6BSDtQ0RA1NgKxJ3TelRnooCGQmImdIWKX0BAkrIH4/GG0Cr6aVC9kuL0k5CYXHKJrn01JT+H37gLS1xDKZ/DY4hYk5g/T+4yXNZkdEJGujqTrNWliogNOmIw+VRCY2AvL552tN65jcNCunJ2zjtK5QH/hwhydKmRA05lRku56P7ng5pJKo7K/3SifHx7XDYfUjmcBWgzDW2+VTFixfxo5+5P+eygmgoJfVZgQ8Axww70ldppnZf4vSafZg3CuPLJ13hQnkrIx5+evTH197CDvWqhWdAAAAAElFTkSuQmCC",
 			"mode": "bitmap"
 		},
 		{
 			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\pink_terracotta.png",
-			"name": "pink_terracotta",
+			"name": "pink_terracotta.png",
 			"folder": "",
 			"namespace": "",
 			"id": "1",
@@ -2301,11 +2286,20 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "25a5846d-5ac6-51b0-7fc8-7257ad985a43",
-			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/pink_terracotta.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAd5JREFUOE89U+1ymzAQ3DsJu3m21Db1C9bjZKaP2Bh0t5k9IPgHBkm3n9jjciVJHJfB0FpDa4YksY6B89SRAMY6kKF/gBlg7jANcAB96jCtJDBoCK6ABhvQ3ODeIaB1WdFcJ4AgYY/rjSuJSadJMAnx0aO5obeGPF4Qxap1A4pJwj7mmdrISDACg5pDuDvO7hjadkh0wFk8AUbJso/bjQcKmYW+LCtcGmtnA414O031JE+Cm6zIhP273zkiYOYYmUDGj0buIw7TyrlCJyJZ5trnPFMLYqmJEAshmGOyhjUXBAxmVqjWHFYyE2OEBtyZMSDyOjj1tlMNTFODwzAiywffGVSEtiVRAzSytL+W6gClbY+qXFAvDJB/Qhdj/eSHfc5/mLkh6ODRElFWGso85ffuvrcN+dS8zLTn5TdFRzoVo7x/O2+Of72+4P1U3nX3YhljbLNyL9Lf9wvLHHVj70BXL8yRSZy6l4FyfRMKuNZVqkjY4/1KbKzqlkZ48sf5X6cTLAb+R1RLBVQyuIHa8zbTypnt41AXqljLUm1VS53EC4GOrlrVPldCGvK83pgFDbR1wWoOb1rMHxaCKpkgMsQu0Qh479vHdOQr+ro6vA4MSWFWqapgEVtaitabzMA3V6wtC94eusYAAAAASUVORK5CYII=",
 			"mode": "bitmap"
 		}
 	],
+	"variants": {
+		"default": {
+			"display_name": "default",
+			"name": "default",
+			"uuid": "c0d926f5-2fce-7be5-1e89-439fe587d4f8",
+			"texture_map": {},
+			"excluded_bones": []
+		},
+		"list": []
+	},
 	"animations": [
 		{
 			"uuid": "059e51fb-a50b-325d-93b0-74941af33254",
@@ -2314,13 +2308,14 @@
 			"override": false,
 			"length": 0.5,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
+			"saved": true,
+			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"affected_bones": [],
-			"affected_bones_is_a_whitelist": false,
+			"excluded_bones": [],
 			"animators": {
 				"5df3e100-8feb-f979-09c5-61d9aead3202": {
 					"name": "lower_lobe",
@@ -2338,7 +2333,9 @@
 							"uuid": "f80d1b1d-2819-5600-8e46-8443bb1a6baf",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "catmullrom",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -2352,7 +2349,9 @@
 							"uuid": "bbecb4f7-bfdf-869e-85db-1b54681cbacf",
 							"time": 0.4,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "catmullrom",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -2366,7 +2365,9 @@
 							"uuid": "8677127f-734f-f668-929e-9fb485616b5f",
 							"time": 0.5,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "catmullrom",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				},
@@ -2386,7 +2387,9 @@
 							"uuid": "286822eb-a379-81ec-b61d-9e65cf201d43",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "catmullrom",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -2400,7 +2403,9 @@
 							"uuid": "56316c4c-42ab-9279-14f9-58679372ce5c",
 							"time": 0.4,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "catmullrom",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -2414,11 +2419,14 @@
 							"uuid": "ad47eae0-4c08-131c-eee7-803f5f3b4ee3",
 							"time": 0.5,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "catmullrom",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
 			}
 		}
-	]
+	],
+	"animation_controllers": []
 }

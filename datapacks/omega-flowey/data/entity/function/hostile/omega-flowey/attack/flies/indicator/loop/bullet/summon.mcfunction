@@ -1,5 +1,5 @@
 # Summon bullet
-$execute positioned $(x) $(y) $(z) run function animated_java:housefly/summon
+$execute positioned $(x) $(y) $(z) run function animated_java:housefly/summon { args: {} }
 
 # Initialize bullet
 execute as @e[tag=attack-bullet-new] at @s run function entity:hostile/omega-flowey/attack/flies/bullet/initialize
