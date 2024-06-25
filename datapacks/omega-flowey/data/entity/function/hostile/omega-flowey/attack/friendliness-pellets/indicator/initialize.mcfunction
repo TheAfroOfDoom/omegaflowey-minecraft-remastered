@@ -20,7 +20,7 @@ function entity:group/set
 execute store result storage group id int 1 run scoreboard players get @s group.id
 
 # Summon blinking-ring
-function animated_java:friendliness_pellet_ring/summon
+function animated_java:friendliness_pellet_ring/summon { args: {} }
 
 # Initialize blinking-ring
 execute as @e[tag=friendliness-pellet-ring-new] run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/initialize/friendliness-pellet-ring
