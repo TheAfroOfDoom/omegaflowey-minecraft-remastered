@@ -1,7 +1,7 @@
 ## summons a single bullet and increments `attack.bullets.count`
 
 # Summon bullet
-$execute positioned ~ ~1 ~ positioned ^ ^ ^$(radius) run function animated_java:friendliness_pellet/summon
+$execute positioned ~ ~1 ~ positioned ^ ^ ^$(radius) run function animated_java:friendliness_pellet/summon { args: { animation: "spin", start_animation: true } }
 
 # Store `group.id` for next bullet
 execute store result storage group id int 1 run scoreboard players get @s group.id

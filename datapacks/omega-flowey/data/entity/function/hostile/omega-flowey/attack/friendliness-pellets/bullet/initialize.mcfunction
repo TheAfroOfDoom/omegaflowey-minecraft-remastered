@@ -1,9 +1,6 @@
 # Set scores
 scoreboard players set @s attack.clock.i -1
 
-# Begin animation
-function animated_java:friendliness_pellet/animations/spin/play
-
 # Set initial rotation
 execute store result entity @s Rotation[0] float 0.01 run data get storage bullet:new yaw 1
 
