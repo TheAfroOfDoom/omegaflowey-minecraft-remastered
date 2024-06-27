@@ -1,2 +1,2 @@
 function animated_java:petal_pipe_middle/animations/float_disabled/play
-function animated_java:petal_pipe_middle/apply_variant/disabled
+function animated_java:petal_pipe_middle/variants/disabled/apply
