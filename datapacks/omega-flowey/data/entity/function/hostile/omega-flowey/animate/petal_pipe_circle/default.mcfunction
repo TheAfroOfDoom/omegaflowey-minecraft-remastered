@@ -1,2 +1,2 @@
 function animated_java:petal_pipe_circle/animations/float_and_pulsate/play
-function animated_java:petal_pipe_circle/apply_variant/default
+function animated_java:petal_pipe_circle/variants/default/apply
