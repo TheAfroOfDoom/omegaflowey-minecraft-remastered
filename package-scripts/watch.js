@@ -3,8 +3,8 @@ const { watch } = require('chokidar');
 const dotenv = require('dotenv');
 const findProcess = require('find-process');
 const { copy, remove, readFile, writeFile } = require('fs-extra');
-const { glob } = require('glob');
-const { difference, findKey, uniq } = require('lodash');
+// const { glob } = require('glob');
+const { findKey, uniq } = require('lodash');
 const minimist = require('minimist');
 const { spawn } = require('node:child_process');
 const { resolve, parse } = require('path');
@@ -408,28 +408,28 @@ const watchModels = async () => {
  * Gets the list of the current `.ajmodel`s, the list of exported files (the cache; `last_exported_hashes.json`),
  * and deletes entries found in the cache whose corresponding `.ajmodel` files were not found
  */
-const deleteStaleExportFiles = async () => {
-  const log = (...args) => {
-    const prefix = chalk.bgYellow(chalk.bold('[initializing]'));
-    console.log(prefix, ...args);
-  };
+const deleteStaleExportFiles = async () => void 0;
+// TODO: this needs to be updated to the AJ v1.0 format
+// const log = (...args) => {
+//   const prefix = chalk.bgYellow(chalk.bold('[initializing]'));
+//   console.log(prefix, ...args);
+// };
 
-  const ajmodels = await glob(`${ajmodelDir}/**/*.ajmodel`);
-  const lastExported = Object.values(parseLastExportedHashes(ajmodelDir));
-  const validExportedModels = lastExported.filter(({ path }) =>
-    ajmodels.some((ajmodelPath) =>
-      path.endsWith(ajmodelPath.replaceAll('\\', '/')),
-    ),
-  );
-  const staleExportedModels = difference(lastExported, validExportedModels);
-  if (staleExportedModels.length > 0) {
-    const modelNames = staleExportedModels.map(({ path }) => parse(path).name);
-    log('deleting stale export files for:', modelNames);
-    await Promise.all(
-      staleExportedModels.map(({ path }) => deleteExportedFiles(path)),
-    );
-  }
-};
+// const ajmodels = await glob(`${ajmodelDir}/**/*.ajmodel`);
+// const lastExported = Object.values(parseLastExportedHashes(ajmodelDir));
+// const validExportedModels = lastExported.filter(({ path }) =>
+//   ajmodels.some((ajmodelPath) =>
+//     path.endsWith(ajmodelPath.replaceAll('\\', '/')),
+//   ),
+// );
+// const staleExportedModels = difference(lastExported, validExportedModels);
+// if (staleExportedModels.length > 0) {
+//   const modelNames = staleExportedModels.map(({ path }) => parse(path).name);
+//   log('deleting stale export files for:', modelNames);
+//   await Promise.all(
+//     staleExportedModels.map(({ path }) => deleteExportedFiles(path)),
+//   );
+// }
 
 const main = async () => {
   const argv = minimist(process.argv.slice(2));
