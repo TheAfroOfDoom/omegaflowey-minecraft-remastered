@@ -5,7 +5,7 @@ scoreboard players add @s attack.clock.i 1
 # TODO(45): refactor repeated `attack.clock.i` conditionals into separate functions
 # Change ring variant at tick index
 execute if score @s attack.clock.i = @s attack.indicator.animation.index run function entity:group/start
-execute if score @s attack.clock.i = @s attack.indicator.animation.index as @e[tag=friendliness-pellet-ring,scores={group.id=0}] run function animated_java:friendliness_pellet_ring/apply_variant/finished_blinking
+execute if score @s attack.clock.i = @s attack.indicator.animation.index as @e[tag=friendliness-pellet-ring,scores={group.id=0}] run function animated_java:friendliness_pellet_ring/variants/finished_blinking/apply
 execute if score @s attack.clock.i = @s attack.indicator.animation.index run function entity:group/end
 
 # Play blinking sound before we summon bullets
