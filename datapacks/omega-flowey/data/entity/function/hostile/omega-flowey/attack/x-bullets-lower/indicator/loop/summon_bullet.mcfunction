@@ -13,7 +13,7 @@ execute if score @s math.0 matches 0 as @e[tag=aj.lower_eye.root,sort=nearest,li
 execute if score @s math.0 matches 1 as @e[tag=aj.lower_eye.root,sort=nearest,limit=1] run function animated_java:lower_eye/variants/bright/apply
 
 # Summon bullet
-$execute positioned $(x) $(y) $(z) run function animated_java:projectile_star/summon
+$execute positioned $(x) $(y) $(z) run function animated_java:projectile_star/summon { args: {} }
 
 # Store pitch and yaw to latest bullet
 execute store result entity @e[limit=1,tag=attack-bullet-new] Rotation[0] float 1 run scoreboard players get @s attack.phi
