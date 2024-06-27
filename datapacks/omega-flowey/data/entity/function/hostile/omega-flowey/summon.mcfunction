@@ -40,9 +40,9 @@ tag @e[tag=aj.tv_screen.root,tag=!tv_screen.soul,tag=!tv_screen.boss_fight] add 
 
 ## Upper eyes
 # Right-eye
-execute positioned -15.5 48 -4 rotated 160 -40 run function animated_java:upper_eye/summon
+execute positioned -15.5 48 -4 rotated 160 -40 run function animated_java:upper_eye/summon { args: {} }
 # Left-eye
-execute positioned 16.5 48 -4 rotated 20 40 run function animated_java:upper_eye/summon
+execute positioned 16.5 48 -4 rotated 20 40 run function animated_java:upper_eye/summon { args: {} }
 
 ## Upper petal pipes
 # Right-upper petal pipe
