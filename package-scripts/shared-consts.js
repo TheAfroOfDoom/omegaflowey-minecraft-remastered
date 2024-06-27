@@ -1,11 +1,11 @@
+const ajblueprintDir = 'resourcepack/assets/omega-flowey/models';
+const ajblueprintPathsDontOpenSuffix = '_DONT_OPEN_ME';
 const ajExporterPassthroughFlagStart = '[[[AJ-AUTO-EXPORTER START]]]';
 const ajExporterPassthroughFlagEnd = '[[[AJ-AUTO-EXPORTER END]]]';
-const ajmodelDir = 'resourcepack/assets/omega-flowey/models';
-const ajmodelPathsDontOpenSuffix = '_DONT_OPEN_ME';
 
 module.exports = {
+  ajblueprintDir,
+  ajblueprintPathsDontOpenSuffix,
   ajExporterPassthroughFlagStart,
   ajExporterPassthroughFlagEnd,
-  ajmodelDir,
-  ajmodelPathsDontOpenSuffix,
 };

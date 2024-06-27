@@ -27,16 +27,16 @@ const hash = async (m) => {
   return hashHex;
 };
 
-const parseLastExportedHashes = (ajmodelDir) => {
-  const lastExportedPath = `${ajmodelDir}/last_exported_hashes.json`;
+const parseLastExportedHashes = (ajblueprintDir) => {
+  const lastExportedPath = `${ajblueprintDir}/last_exported_hashes.json`;
   const lastExported = existsSync(lastExportedPath)
     ? JSON.parse(readFileSync(lastExportedPath, 'utf8'))
     : {};
   return lastExported;
 };
 
-const updateLastExportedHashes = (ajmodelDir, lastExported) => {
-  const lastExportedPath = `${ajmodelDir}/last_exported_hashes.json`;
+const updateLastExportedHashes = (ajblueprintDir, lastExported) => {
+  const lastExportedPath = `${ajblueprintDir}/last_exported_hashes.json`;
   writeFileSync(lastExportedPath, JSON.stringify(lastExported, undefined, 2));
 };
 
