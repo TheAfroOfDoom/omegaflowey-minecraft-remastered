@@ -35,7 +35,7 @@ tag @e[tag=aj.petal_pipe_middle.root,tag=!petal_pipe.right] add petal_pipe.left
 execute positioned 0 37 -13 rotated 0 10 run function animated_java:nose/summon
 
 ## TV-screen
-execute positioned 0 49 -6 rotated 0 45 run function animated_java:tv_screen/summon
+execute positioned 0 49 -6 rotated 0 45 run function animated_java:tv_screen/summon { args: {} }
 tag @e[tag=aj.tv_screen.root,tag=!tv_screen.soul,tag=!tv_screen.boss_fight] add tv_screen.boss_fight
 
 ## Upper eyes

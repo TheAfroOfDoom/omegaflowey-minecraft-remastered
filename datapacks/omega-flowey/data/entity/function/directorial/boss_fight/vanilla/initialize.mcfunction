@@ -1,7 +1,7 @@
 ## Initializes the boss fight
 
 # Summon Omega Flowey entity if it doesn't exist
-execute unless entity @e[tag=aj.tv_screen.root] run function entity:hostile/omega-flowey/summon
+execute unless entity @e[tag=aj.tv_screen.root] run function entity:hostile/omega-flowey/summon { args: {} }
 
 # Set all attack parameters to default
 function entity:hostile/omega-flowey/attack/reset_scores
