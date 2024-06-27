@@ -32,7 +32,7 @@ execute positioned 14 48 -6.5 rotated -160 -40 run function animated_java:petal_
 tag @e[tag=aj.petal_pipe_middle.root,tag=!petal_pipe.right] add petal_pipe.left
 
 ## Nose
-execute positioned 0 37 -13 rotated 0 10 run function animated_java:nose/summon
+execute positioned 0 37 -13 rotated 0 10 run function animated_java:nose/summon { args: {} }
 
 ## TV-screen
 execute positioned 0 49 -6 rotated 0 45 run function animated_java:tv_screen/summon { args: {} }
