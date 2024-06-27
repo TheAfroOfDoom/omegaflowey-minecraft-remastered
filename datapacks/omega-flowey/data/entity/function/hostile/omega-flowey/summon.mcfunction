@@ -25,10 +25,10 @@ tag @e[tag=aj.petal_pipe_circle.root] add petal_pipe_lower
 
 ## Middle petal pipes
 # Right-middle petal pipe
-execute positioned -14 48 -6.5 rotated -20 40 run function animated_java:petal_pipe_middle/summon
+execute positioned -14 48 -6.5 rotated -20 40 run function animated_java:petal_pipe_middle/summon { args: {} }
 tag @e[tag=aj.petal_pipe_middle.root] add petal_pipe.right
 # Left-middle petal pipe
-execute positioned 14 48 -6.5 rotated -160 -40 run function animated_java:petal_pipe_middle/summon
+execute positioned 14 48 -6.5 rotated -160 -40 run function animated_java:petal_pipe_middle/summon { args: {} }
 tag @e[tag=aj.petal_pipe_middle.root,tag=!petal_pipe.right] add petal_pipe.left
 
 ## Nose
