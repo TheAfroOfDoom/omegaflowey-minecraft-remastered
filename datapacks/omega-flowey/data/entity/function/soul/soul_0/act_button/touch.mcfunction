@@ -2,7 +2,7 @@
 scoreboard players set #soul_0.touched soul.flag 1
 
 # Apply yellow-highlighted variant
-function animated_java:act_button/apply_variant/selected
+function animated_java:act_button/variants/selected/apply
 
 # TODO(82): this could be a lot cleaner visually
 say * You called for help...
