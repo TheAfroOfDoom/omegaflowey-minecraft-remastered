@@ -1,55 +1,32 @@
 {
 	"meta": {
-		"format": "animated_java/ajmodel",
-		"format_version": "0.4.8",
-		"uuid": "d318c8fb-b217-4cad-6290-d4e647b209f1"
+		"format": "animated_java_blueprint",
+		"format_version": "0.5.3",
+		"uuid": "d318c8fb-b217-4cad-6290-d4e647b209f1",
+		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-0-bandaid.ajblueprint",
+		"last_used_export_namespace": "soul_0_bandaid"
 	},
-	"animated_java": {
-		"settings": {
-			"project_namespace": "soul_0_bandaid",
-			"project_resolution": [16, 16],
-			"target_minecraft_version": "1.20+",
-			"rig_item": "minecraft:white_dye",
-			"rig_item_model": "",
-			"rig_export_folder": "",
-			"texture_export_folder": "",
-			"enable_advanced_resource_pack_settings": false,
-			"resource_pack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\pack.mcmeta",
-			"verbose": true,
-			"exporter": "animated_java:datapack_exporter"
-		},
-		"exporter_settings": {
-			"animated_java:datapack_exporter": {
-				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
-				"outdated_rig_warning": true,
-				"root_entity_nbt": "{ CustomName: \"'Soul 0 Bandaid'\", Tags: [\"omega-flowey-remastered\", \"soul\",\"bandaid\",\"bandaid-new\", \"soul_0\"], teleport_duration: 1 }",
-				"use_component_system": true,
-				"include_variant_summon_functions": true,
-				"include_apply_variant_functions": true,
-				"include_uninstall_function": true,
-				"include_pause_all_animations_function": true,
-				"include_remove_rigs_function": true,
-				"include_remove_all_function": true,
-				"include_on_load_function_tags": true,
-				"include_on_tick_function_tags": true,
-				"include_on_summon_function_tags": true,
-				"include_on_remove_function_tags": true
-			},
-			"animated_java:json_exporter": {
-				"output_file": ""
-			}
-		},
-		"variants": [
-			{
-				"name": "default",
-				"textureMap": {},
-				"uuid": "7aa2d550-0b70-6747-c95a-1e8a6e4f16c4",
-				"boneConfig": {},
-				"default": true,
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			}
-		]
+	"project_settings": {
+		"export_namespace": "soul_0_bandaid",
+		"show_bounding_box": false,
+		"auto_bounding_box": true,
+		"bounding_box": [48, 48],
+		"enable_plugin_mode": false,
+		"enable_resource_pack": true,
+		"enable_data_pack": true,
+		"display_item": "minecraft:white_dye",
+		"customModelDataOffset": 0,
+		"enable_advanced_resource_pack_settings": false,
+		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
+		"display_item_path": "",
+		"model_folder": "",
+		"texture_folder": "",
+		"enable_advanced_data_pack_settings": false,
+		"data_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\",
+		"summon_commands": "data merge entity @s {CustomName:\"'Soul 0 Bandaid'\",teleport_duration:1}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add bandaid\ntag @s add bandaid-new\ntag @s add soul_0",
+		"interpolation_duration": 1,
+		"teleportation_duration": 1,
+		"use_storage_for_animation": false
 	},
 	"resolution": {
 		"width": 16,
@@ -1771,8 +1748,11 @@
 			"ignore_inherited_scale": false,
 			"visibility": true,
 			"locked": false,
-			"entity_type": "minecraft:marker",
-			"nbt": "{ data: { radius: 1.2f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:1.2f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+			},
 			"uuid": "67f29c04-1852-b8cb-3831-2cb1ef258a65",
 			"type": "locator"
 		},
@@ -1896,8 +1876,11 @@
 			"ignore_inherited_scale": false,
 			"visibility": true,
 			"locked": false,
-			"entity_type": "minecraft:marker",
-			"nbt": "{ data: { radius: 1.1f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:1.1f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+			},
 			"uuid": "71379208-f83a-69ce-b97b-99bd35350da8",
 			"type": "locator"
 		},
@@ -2103,8 +2086,11 @@
 			"ignore_inherited_scale": false,
 			"visibility": true,
 			"locked": false,
-			"entity_type": "minecraft:marker",
-			"nbt": "{ data: { radius: 1.1f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:1.1f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+			},
 			"uuid": "220c9731-e2eb-6c23-2ac7-bc7d80c0c240",
 			"type": "locator"
 		},
@@ -2115,8 +2101,11 @@
 			"ignore_inherited_scale": false,
 			"visibility": true,
 			"locked": false,
-			"entity_type": "minecraft:marker",
-			"nbt": "{ data: { radius: 1.2f }, Tags: [\"omega-flowey-remastered\", \"soul\", \"soul-locator\", \"soul_0\"] }",
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:1.2f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+			},
 			"uuid": "ce21d3ac-5aca-3593-8959-dcee6b5764b2",
 			"type": "locator"
 		}
@@ -2126,7 +2115,13 @@
 			"name": "root",
 			"origin": [0, -1, 0],
 			"color": 0,
-			"nbt": "{ teleport_duration: 1 }",
+			"configs": {
+				"default": {
+					"nbt": "{ teleport_duration: 1 }",
+					"use_nbt": true
+				},
+				"variants": {}
+			},
 			"uuid": "c56a8f17-a8f9-7232-a027-2261a1570eb6",
 			"export": true,
 			"mirror_uv": false,
@@ -2193,7 +2188,7 @@
 	"textures": [
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\black.png",
-			"name": "black",
+			"name": "black.png",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
@@ -2215,13 +2210,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "8b56ef7d-ab41-5b95-e537-8aed4f2844d2",
-			"relative_path": "../../../../textures/custom/black.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\healing_item_green.png",
-			"name": "healing_item_green",
+			"name": "healing_item_green.png",
 			"folder": "",
 			"namespace": "",
 			"id": "1",
@@ -2243,11 +2237,20 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "75d0ab45-561f-bd28-0d5c-06156936278a",
-			"relative_path": "../../../../textures/custom/soul/healing_item_green.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZPjP+J+BAsA4agDDaBgwjIYBw7AIAwC4PCAB5G/sPwAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		}
 	],
+	"variants": {
+		"default": {
+			"display_name": "default",
+			"name": "default",
+			"uuid": "7aa2d550-0b70-6747-c95a-1e8a6e4f16c4",
+			"texture_map": {},
+			"excluded_bones": []
+		},
+		"list": []
+	},
 	"animations": [
 		{
 			"uuid": "338210a4-3aa1-eee0-051d-d506a2110815",
@@ -2256,13 +2259,14 @@
 			"override": false,
 			"length": 0.05,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
+			"saved": true,
+			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"affected_bones": [],
-			"affected_bones_is_a_whitelist": false,
+			"excluded_bones": [],
 			"animators": {
 				"c56a8f17-a8f9-7232-a027-2261a1570eb6": {
 					"name": "root",
@@ -2280,11 +2284,14 @@
 							"uuid": "17256e37-438d-a0f2-e378-59cf969495f5",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
 			}
 		}
-	]
+	],
+	"animation_controllers": []
 }
