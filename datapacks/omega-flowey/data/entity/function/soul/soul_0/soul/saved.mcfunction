@@ -1,1 +1,1 @@
-function animated_java:soul/apply_variant/1
+function animated_java:soul/variants/1/apply

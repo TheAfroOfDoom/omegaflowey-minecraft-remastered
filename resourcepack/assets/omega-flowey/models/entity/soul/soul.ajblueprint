@@ -1,115 +1,32 @@
 {
 	"meta": {
-		"format": "animated_java/ajmodel",
-		"format_version": "0.4.8",
-		"uuid": "953ff968-9e3b-f3b7-78d6-3e2254ba4dc0"
+		"format": "animated_java_blueprint",
+		"format_version": "0.5.3",
+		"uuid": "953ff968-9e3b-f3b7-78d6-3e2254ba4dc0",
+		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul.ajblueprint",
+		"last_used_export_namespace": "soul"
 	},
-	"animated_java": {
-		"settings": {
-			"project_namespace": "soul",
-			"project_resolution": [16, 16],
-			"target_minecraft_version": "1.20+",
-			"rig_item": "minecraft:white_dye",
-			"rig_item_model": "",
-			"rig_export_folder": "",
-			"texture_export_folder": "",
-			"enable_advanced_resource_pack_settings": false,
-			"resource_pack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\pack.mcmeta",
-			"verbose": true,
-			"exporter": "animated_java:datapack_exporter"
-		},
-		"exporter_settings": {
-			"animated_java:datapack_exporter": {
-				"datapack_mcmeta": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\pack.mcmeta",
-				"outdated_rig_warning": true,
-				"root_entity_nbt": "{}",
-				"use_component_system": true,
-				"include_variant_summon_functions": true,
-				"include_apply_variant_functions": true,
-				"include_uninstall_function": true,
-				"include_pause_all_animations_function": true,
-				"include_remove_rigs_function": true,
-				"include_remove_all_function": true,
-				"include_on_load_function_tags": true,
-				"include_on_tick_function_tags": true,
-				"include_on_summon_function_tags": true,
-				"include_on_remove_function_tags": true
-			},
-			"animated_java:json_exporter": {
-				"output_file": ""
-			}
-		},
-		"variants": [
-			{
-				"name": "red",
-				"textureMap": {},
-				"uuid": "b96f8c23-e688-b229-ca1c-42f9e4772d96",
-				"boneConfig": {},
-				"default": true,
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			},
-			{
-				"name": "0",
-				"textureMap": {
-					"61ede729-771f-ce98-20d5-0e50681503b6": "71b83403-9475-8224-4d71-936019b72efc"
-				},
-				"uuid": "a67a7e42-73ef-e4f9-3476-07dbda553c32",
-				"boneConfig": {},
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			},
-			{
-				"name": "1",
-				"textureMap": {
-					"61ede729-771f-ce98-20d5-0e50681503b6": "20857132-2359-cd1f-c374-a1e10c899efc"
-				},
-				"uuid": "58a0e3e2-69cc-de2f-e5f9-a44f8ca7c3c3",
-				"boneConfig": {},
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			},
-			{
-				"name": "2",
-				"textureMap": {
-					"61ede729-771f-ce98-20d5-0e50681503b6": "23f28e9d-4a41-0016-43c6-269dfe8c9211"
-				},
-				"uuid": "eb46b594-0d43-b2c4-8354-a660928f2397",
-				"boneConfig": {},
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			},
-			{
-				"name": "3",
-				"textureMap": {
-					"61ede729-771f-ce98-20d5-0e50681503b6": "116164df-82aa-638c-4fa3-59ec75f2d095"
-				},
-				"uuid": "2b04188d-3956-c012-0266-4ed796307c99",
-				"boneConfig": {},
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			},
-			{
-				"name": "4",
-				"textureMap": {
-					"61ede729-771f-ce98-20d5-0e50681503b6": "be3b75c5-fc98-9a4b-dc69-4f0f439c90d2"
-				},
-				"uuid": "ee070872-1e37-a8f7-a070-7a4bf67485ba",
-				"boneConfig": {},
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			},
-			{
-				"name": "5",
-				"textureMap": {
-					"61ede729-771f-ce98-20d5-0e50681503b6": "285cd4ae-b81f-154e-5a59-b8c6880699ca"
-				},
-				"uuid": "8f5d751b-ed19-bda0-ffd6-ae32f4cd81c2",
-				"boneConfig": {},
-				"affectedBonesIsAWhitelist": false,
-				"affectedBones": []
-			}
-		]
+	"project_settings": {
+		"export_namespace": "soul",
+		"show_bounding_box": false,
+		"auto_bounding_box": true,
+		"bounding_box": [48, 48],
+		"enable_plugin_mode": false,
+		"enable_resource_pack": true,
+		"enable_data_pack": true,
+		"display_item": "minecraft:white_dye",
+		"customModelDataOffset": 0,
+		"enable_advanced_resource_pack_settings": false,
+		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
+		"display_item_path": "",
+		"model_folder": "",
+		"texture_folder": "",
+		"enable_advanced_data_pack_settings": false,
+		"data_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\",
+		"summon_commands": "",
+		"interpolation_duration": 1,
+		"teleportation_duration": 1,
+		"use_storage_for_animation": false
 	},
 	"resolution": {
 		"width": 16,
@@ -532,7 +449,15 @@
 			"name": "root",
 			"origin": [0, 0, 0],
 			"color": 0,
-			"nbt": "{ brightness: { block: 15, sky: 0 } }",
+			"configs": {
+				"default": {
+					"override_brightness": true,
+					"brightness_override": 15,
+					"inherit_settings": false,
+					"nbt": ""
+				},
+				"variants": {}
+			},
 			"uuid": "8fdc5166-b2e8-19f7-aafd-e6b95edc7f55",
 			"export": true,
 			"mirror_uv": false,
@@ -557,7 +482,7 @@
 	"textures": [
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\soul_blue.png",
-			"name": "soul_blue",
+			"name": "soul_blue.png",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
@@ -579,13 +504,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "23f28e9d-4a41-0016-43c6-269dfe8c9211",
-			"relative_path": "../../../../textures/custom/soul/soul_blue.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZJCt/89AAWAcNYBhNAwYRsOAYViEAQA++RnBDKyUJQAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\soul_cyan.png",
-			"name": "soul_cyan",
+			"name": "soul_cyan.png",
 			"folder": "",
 			"namespace": "",
 			"id": "1",
@@ -607,13 +531,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "71b83403-9475-8224-4d71-936019b72efc",
-			"relative_path": "../../../../textures/custom/soul/soul_cyan.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jdPrz/z8DBYBx1ACG0TBgGA0DhmERBgBJyTPRPAO2iAAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\soul_green.png",
-			"name": "soul_green",
+			"name": "soul_green.png",
 			"folder": "",
 			"namespace": "",
 			"id": "2",
@@ -635,13 +558,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "be3b75c5-fc98-9a4b-dc69-4f0f439c90d2",
-			"relative_path": "../../../../textures/custom/soul/soul_green.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZDjA8J+BAsA4agDDaBgwjIYBw7AIAwAd1BwB7JEBagAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\soul_magenta.png",
-			"name": "soul_magenta",
+			"name": "soul_magenta.png",
 			"folder": "",
 			"namespace": "",
 			"id": "3",
@@ -663,13 +585,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "116164df-82aa-638c-4fa3-59ec75f2d095",
-			"relative_path": "../../../../textures/custom/soul/soul_magenta.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jvGp68z8DBYBx1ACG0TBgGA0DhmERBgA8FS4xIjaKdgAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\soul_orange.png",
-			"name": "soul_orange",
+			"name": "soul_orange.png",
 			"folder": "",
 			"namespace": "",
 			"id": "4",
@@ -691,13 +612,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "20857132-2359-cd1f-c374-a1e10c899efc",
-			"relative_path": "../../../../textures/custom/soul/soul_orange.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/LOM4T8DBYBx1ACG0TBgGA0DhmERBgCPJiohbWgtpQAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\soul_yellow.png",
-			"name": "soul_yellow",
+			"name": "soul_yellow.png",
 			"folder": "",
 			"namespace": "",
 			"id": "5",
@@ -719,13 +639,12 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "285cd4ae-b81f-154e-5a59-b8c6880699ca",
-			"relative_path": "../../../../textures/custom/soul/soul_yellow.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/P+f4T8DBYBx1ACG0TBgGA0DhmERBgDtai/htUkdAAAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		},
 		{
 			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\soul_red.png",
-			"name": "soul_red",
+			"name": "soul_red.png",
 			"folder": "",
 			"namespace": "",
 			"id": "6",
@@ -747,11 +666,75 @@
 			"internal": false,
 			"saved": true,
 			"uuid": "61ede729-771f-ce98-20d5-0e50681503b6",
-			"relative_path": "../../../../textures/custom/soul/soul_red.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/MPA8J+BAsA4agDDaBgwjIYBw7AIAwA+bB/BMzSWfAAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		}
 	],
+	"variants": {
+		"default": {
+			"display_name": "red",
+			"name": "red",
+			"uuid": "b96f8c23-e688-b229-ca1c-42f9e4772d96",
+			"texture_map": {},
+			"excluded_bones": []
+		},
+		"list": [
+			{
+				"display_name": "0",
+				"name": "0",
+				"uuid": "a67a7e42-73ef-e4f9-3476-07dbda553c32",
+				"texture_map": {
+					"61ede729-771f-ce98-20d5-0e50681503b6": "71b83403-9475-8224-4d71-936019b72efc"
+				},
+				"excluded_bones": []
+			},
+			{
+				"display_name": "1",
+				"name": "1",
+				"uuid": "58a0e3e2-69cc-de2f-e5f9-a44f8ca7c3c3",
+				"texture_map": {
+					"61ede729-771f-ce98-20d5-0e50681503b6": "20857132-2359-cd1f-c374-a1e10c899efc"
+				},
+				"excluded_bones": []
+			},
+			{
+				"display_name": "2",
+				"name": "2",
+				"uuid": "eb46b594-0d43-b2c4-8354-a660928f2397",
+				"texture_map": {
+					"61ede729-771f-ce98-20d5-0e50681503b6": "23f28e9d-4a41-0016-43c6-269dfe8c9211"
+				},
+				"excluded_bones": []
+			},
+			{
+				"display_name": "3",
+				"name": "3",
+				"uuid": "2b04188d-3956-c012-0266-4ed796307c99",
+				"texture_map": {
+					"61ede729-771f-ce98-20d5-0e50681503b6": "116164df-82aa-638c-4fa3-59ec75f2d095"
+				},
+				"excluded_bones": []
+			},
+			{
+				"display_name": "4",
+				"name": "4",
+				"uuid": "ee070872-1e37-a8f7-a070-7a4bf67485ba",
+				"texture_map": {
+					"61ede729-771f-ce98-20d5-0e50681503b6": "be3b75c5-fc98-9a4b-dc69-4f0f439c90d2"
+				},
+				"excluded_bones": []
+			},
+			{
+				"display_name": "5",
+				"name": "5",
+				"uuid": "8f5d751b-ed19-bda0-ffd6-ae32f4cd81c2",
+				"texture_map": {
+					"61ede729-771f-ce98-20d5-0e50681503b6": "285cd4ae-b81f-154e-5a59-b8c6880699ca"
+				},
+				"excluded_bones": []
+			}
+		]
+	},
 	"animations": [
 		{
 			"uuid": "224dda3b-91e9-6c15-43fe-071c08019bd6",
@@ -761,12 +744,13 @@
 			"length": 0.45,
 			"snapping": 20,
 			"selected": false,
+			"saved": true,
+			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"affected_bones": [],
-			"affected_bones_is_a_whitelist": false,
+			"excluded_bones": [],
 			"animators": {
 				"8fdc5166-b2e8-19f7-aafd-e6b95edc7f55": {
 					"name": "root",
@@ -784,7 +768,9 @@
 							"uuid": "84467b55-01d4-32d9-b149-69d2f9bed34c",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -798,7 +784,9 @@
 							"uuid": "5e579e52-998c-4458-44c2-77d8c644d877",
 							"time": 0.05,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -812,7 +800,9 @@
 							"uuid": "e5bf4a29-f312-6e56-a405-ab7e235b7440",
 							"time": 0.1,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -826,7 +816,9 @@
 							"uuid": "d89f6a40-3abc-0cee-bf91-4cc20a2de111",
 							"time": 0.15,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -840,7 +832,9 @@
 							"uuid": "5b1da53d-cd6f-e357-d5ae-d253a042eaf8",
 							"time": 0.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -854,7 +848,9 @@
 							"uuid": "b00a9fdc-6d55-57b6-c79e-c818373471c9",
 							"time": 0.25,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -868,7 +864,9 @@
 							"uuid": "140fae85-dc5e-85ac-ec4d-872584f5f492",
 							"time": 0.3,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -882,7 +880,9 @@
 							"uuid": "fde78132-f1ad-5f15-25a5-07b5baf06108",
 							"time": 0.35,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -896,7 +896,9 @@
 							"uuid": "2a4a4889-ee83-27e5-fa09-91a43eeb8d39",
 							"time": 0.45,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
@@ -909,13 +911,14 @@
 			"override": false,
 			"length": 1.7,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
+			"saved": true,
+			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"affected_bones": [],
-			"affected_bones_is_a_whitelist": false,
+			"excluded_bones": [],
 			"animators": {
 				"8fdc5166-b2e8-19f7-aafd-e6b95edc7f55": {
 					"name": "root",
@@ -938,7 +941,9 @@
 							"bezier_left_time": [-0.1, -0.22087, -0.1],
 							"bezier_left_value": [0, 0, 0],
 							"bezier_right_time": [0.1, 0.22087, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"bezier_right_value": [0, 0, 0],
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -957,7 +962,9 @@
 							"bezier_left_time": [-0.1, -0.22087, -0.1],
 							"bezier_left_value": [0, 0, 0],
 							"bezier_right_time": [0.1, 0.22087, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"bezier_right_value": [0, 0, 0],
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -976,11 +983,14 @@
 							"bezier_left_time": [-0.1, -0.22087, -0.1],
 							"bezier_left_value": [0, 0, 0],
 							"bezier_right_time": [0.1, 0.22087, 0.1],
-							"bezier_right_value": [0, 0, 0]
+							"bezier_right_value": [0, 0, 0],
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
 			}
 		}
-	]
+	],
+	"animation_controllers": []
 }
