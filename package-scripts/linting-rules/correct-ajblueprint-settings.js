@@ -1,17 +1,15 @@
 const chalk = require('chalk');
 const { readFileSync } = require('fs');
 
-const applicableExtensions = ['.ajmodel'];
+const applicableExtensions = ['.ajblueprint'];
 
-const checkDatapackMcmeta = (model) => {
-  const expected = /datapacks\/animated_java\/pack\.mcmeta$/;
-  const actual =
-    model.animated_java.exporter_settings['animated_java:datapack_exporter']
-      .datapack_mcmeta;
+const checkDatapack = (model) => {
+  const expected = /datapacks\/animated_java\/$/;
+  const actual = model.project_settings.data_pack;
   const match = expected.test(actual.replaceAll('\\', '/'));
   if (!match) {
-    let error = `incorrect datapack ${chalk.blue('pack.mcmeta')} file; `;
-    error += 'it should target the pack.mcmeta under ';
+    let error = `incorrect datapack ${chalk.blue('directory')}; `;
+    error += 'it should target ';
     error += `${chalk.yellow('datapacks/animated_java')}`;
     error += `\n\t\t found: ${chalk.red(actual)}`;
     return [error];
@@ -21,9 +19,9 @@ const checkDatapackMcmeta = (model) => {
 
 const checkRigItem = (model) => {
   const expected = 'minecraft:white_dye';
-  const actual = model.animated_java.settings.rig_item;
+  const actual = model.project_settings.display_item;
   if (actual !== 'minecraft:white_dye') {
-    let error = `incorrect ${chalk.blue('rig_item')}; `;
+    let error = `incorrect ${chalk.blue('display_item')}; `;
     error += `was \`${actual}\`, expected \`${expected}\``;
     return [error];
   }
@@ -44,7 +42,7 @@ const correctAjmodelSettings = (file) => {
 
   const errors = [];
 
-  const settingsChecks = [checkDatapackMcmeta, checkRigItem];
+  const settingsChecks = [checkDatapack, checkRigItem];
   for (const settingsCheck of settingsChecks) {
     errors.push(...settingsCheck(ajmodel));
   }
