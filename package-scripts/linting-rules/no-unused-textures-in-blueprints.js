@@ -34,12 +34,8 @@ const getDefaultVariantTextures = (ajblueprint) => {
  */
 const getAllowedVariantTextures = (ajblueprint, allowlist) => {
   const allowedVariantTextures = [];
-  for (const variant of ajblueprint.animated_java.variants) {
-    // Skip the default variant since that's what our allowlist consists of
-    if (variant.default) {
-      continue;
-    }
-    for (const [source, target] of Object.entries(variant.textureMap)) {
+  for (const variant of ajblueprint.variants.list) {
+    for (const [source, target] of Object.entries(variant.texture_map)) {
       if (allowlist.includes(source)) {
         allowedVariantTextures.push(
           ajblueprint.textures.find(({ uuid }) => uuid === target),
