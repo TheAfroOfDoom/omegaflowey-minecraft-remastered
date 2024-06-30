@@ -50,8 +50,8 @@ const getAllowedVariantTextures = (ajblueprint, allowlist) => {
   return uniq(allowedVariantTextures);
 };
 
-/** Errors for textures defined in a model file that aren't actually used by any cube's face (in any variant) */
-const noUnusedTexturesInModels = (file) => {
+/** Errors for textures defined in a blueprint file that aren't actually used by any cube's face (in any variant) */
+const noUnusedTexturesInBlueprints = (file) => {
   // Return early if file does not match any applicable extension
   if (applicableExtensions.every((extension) => !file.endsWith(extension))) {
     return [];
@@ -83,5 +83,5 @@ const noUnusedTexturesInModels = (file) => {
 };
 
 module.exports = {
-  function: noUnusedTexturesInModels,
+  function: noUnusedTexturesInBlueprints,
 };
