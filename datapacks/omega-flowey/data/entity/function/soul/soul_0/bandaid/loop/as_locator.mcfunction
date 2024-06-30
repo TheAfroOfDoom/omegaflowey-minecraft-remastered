@@ -1,1 +1,1 @@
-$execute positioned ~ ~-1 ~ if entity @p[distance=..$(radius),team=player] as $(root_uuid) at @s run function entity:soul/soul_0/bandaid/heal
+$execute at @s positioned ~ ~-1 ~ if entity @a[distance=..$(radius),team=player] run scoreboard players set #soul_0.bandaid_touched_player soul.flag 1
