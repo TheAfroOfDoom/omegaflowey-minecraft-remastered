@@ -29,27 +29,27 @@ const checkRigItem = (model) => {
 };
 
 /**
- * Errors for wrong settings values in .ajmodel files. Limited to trivial checks
+ * Errors for wrong settings values in .ajblueprint files. Limited to trivial checks
  * (like a setting's defined value not matching an exact pattern).
  */
-const correctAjmodelSettings = (file) => {
+const correctAjblueprintSettings = (file) => {
   // Return early if file does not match any applicable extension
   if (applicableExtensions.every((extension) => !file.endsWith(extension))) {
     return [];
   }
 
-  const ajmodel = JSON.parse(readFileSync(file, 'utf8'));
+  const ajblueprint = JSON.parse(readFileSync(file, 'utf8'));
 
   const errors = [];
 
   const settingsChecks = [checkDatapack, checkRigItem];
   for (const settingsCheck of settingsChecks) {
-    errors.push(...settingsCheck(ajmodel));
+    errors.push(...settingsCheck(ajblueprint));
   }
 
   return errors;
 };
 
 module.exports = {
-  function: correctAjmodelSettings,
+  function: correctAjblueprintSettings,
 };

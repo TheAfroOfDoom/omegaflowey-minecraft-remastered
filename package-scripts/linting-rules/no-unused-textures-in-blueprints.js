@@ -1,15 +1,15 @@
 const { readFileSync } = require('fs');
 const { differenceBy, uniq } = require('lodash');
 
-const applicableExtensions = ['.ajmodel'];
+const applicableExtensions = ['.ajblueprint'];
 
 /**
  * Iterates through each face of each cube (the model's default variant)
  * and returns a (deduplicated) list of found textures
  */
-const getDefaultVariantTextures = (ajmodel) => {
+const getDefaultVariantTextures = (ajblueprint) => {
   const defaultVariantTextureIdxs = [];
-  const cubes = ajmodel.elements.filter(({ type }) => type === 'cube');
+  const cubes = ajblueprint.elements.filter(({ type }) => type === 'cube');
   for (const element of cubes) {
     // side = 'north', 'south', etc.
     for (const side of Object.keys(element.faces)) {
@@ -21,7 +21,7 @@ const getDefaultVariantTextures = (ajmodel) => {
   }
   // Deduplicate and convert from texture-index to texture object
   const defaultTextures = uniq(defaultVariantTextureIdxs).map(
-    (idx) => ajmodel.textures[idx],
+    (idx) => ajblueprint.textures[idx],
   );
 
   return defaultTextures;
@@ -32,17 +32,13 @@ const getDefaultVariantTextures = (ajmodel) => {
  * iterates through a model's variants, and returns a list of (target) textures from
  * each variant's texture map whose source texture was found in the allowlist
  */
-const getAllowedVariantTextures = (ajmodel, allowlist) => {
+const getAllowedVariantTextures = (ajblueprint, allowlist) => {
   const allowedVariantTextures = [];
-  for (const variant of ajmodel.animated_java.variants) {
-    // Skip the default variant since that's what our allowlist consists of
-    if (variant.default) {
-      continue;
-    }
-    for (const [source, target] of Object.entries(variant.textureMap)) {
+  for (const variant of ajblueprint.variants.list) {
+    for (const [source, target] of Object.entries(variant.texture_map)) {
       if (allowlist.includes(source)) {
         allowedVariantTextures.push(
-          ajmodel.textures.find(({ uuid }) => uuid === target),
+          ajblueprint.textures.find(({ uuid }) => uuid === target),
         );
       }
     }
@@ -50,8 +46,8 @@ const getAllowedVariantTextures = (ajmodel, allowlist) => {
   return uniq(allowedVariantTextures);
 };
 
-/** Errors for textures defined in a model file that aren't actually used by any cube's face (in any variant) */
-const noUnusedTexturesInModels = (file) => {
+/** Errors for textures defined in a blueprint file that aren't actually used by any cube's face (in any variant) */
+const noUnusedTexturesInBlueprints = (file) => {
   // Return early if file does not match any applicable extension
   if (applicableExtensions.every((extension) => !file.endsWith(extension))) {
     return [];
@@ -59,18 +55,18 @@ const noUnusedTexturesInModels = (file) => {
 
   const errors = [];
 
-  const ajmodel = JSON.parse(readFileSync(file, 'utf8'));
+  const ajblueprint = JSON.parse(readFileSync(file, 'utf8'));
 
-  const defaultTextures = getDefaultVariantTextures(ajmodel);
+  const defaultTextures = getDefaultVariantTextures(ajblueprint);
   const defaultTextureUuids = defaultTextures.map(({ uuid }) => uuid);
   const variantTextures = getAllowedVariantTextures(
-    ajmodel,
+    ajblueprint,
     defaultTextureUuids,
   );
 
   const allSeenTextures = uniq(defaultTextures.concat(variantTextures));
   const unusedTextures = differenceBy(
-    ajmodel.textures,
+    ajblueprint.textures,
     allSeenTextures,
     'uuid',
   );
@@ -83,5 +79,5 @@ const noUnusedTexturesInModels = (file) => {
 };
 
 module.exports = {
-  function: noUnusedTexturesInModels,
+  function: noUnusedTexturesInBlueprints,
 };
