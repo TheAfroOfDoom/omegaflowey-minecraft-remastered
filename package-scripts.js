@@ -25,11 +25,9 @@ const watchScriptPath = './package-scripts/watch.js';
 
 const allAnimatedJavaExportFiles = [
   'datapacks/animated_java/data',
-  'datapacks/animated_java/datapack.ajmeta',
+  'datapacks/animated_java/.ajmeta',
   'resourcepack/assets/animated_java',
-  'resourcepack/assets/minecraft/models/item/animated_java_empty.json',
   'resourcepack/assets/minecraft/models/item/white_dye.json',
-  'resourcepack/resourcepack.ajmeta',
   `${ajmodelDir}/last_exported_hashes.json`,
 ];
 const allAnimatedJavaExportFilesFormatted =
