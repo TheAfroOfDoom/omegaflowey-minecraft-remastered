@@ -116,8 +116,8 @@ We recommend keeping `yarn start` running at all times while working on the proj
 1. Create a new Animated Java Rig via `File > New > Animated Java Blueprint`
 2. Enter inputs for the following required fields:
    1. `Project Name`
-   2. `Resource Pack`: select the `pack.mcmeta` file located in the repository at `resourcepack/pack.mcmeta`
-   3. `Data Pack`: select the `pack.mcmeta` file located in the repository at `datapacks/animated_java/pack.mcmeta`
+   2. `Resource Pack`: select the `resourcepack` directory located at the root of the repository
+   3. `Data Pack`: select the `datapacks/animated_java` directory starting from the root of the repository
 3. Save the file with `CTRL + S` to somewhere appropriate under `resourcepack/assets/omega-flowey/models`
    1. **While the model is still a work-in-progress, append `_dev` to the filename so our auto-export scripts skip it**
       1. e.g. `housefly_dev.ajblueprint`

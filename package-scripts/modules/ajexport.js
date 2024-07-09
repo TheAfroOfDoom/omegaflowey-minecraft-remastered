@@ -64,7 +64,7 @@ export async function script() {
 
   // Ensure we have a `data` folder inside the `animated_java` datapack, else
   // the exporter will error
-  const datapackDir = `${paths.datapack.replace('pack.mcmeta', '')}/data`;
+  const datapackDir = `${paths.datapack}/data`;
   if (!existsSync(datapackDir)) {
     mkdirSync(datapackDir);
   }
@@ -164,11 +164,11 @@ function injectModelPackPaths(modelContent, paths) {
 
 function parseEnv() {
   const assetsDir = getArg('--assets-dir=');
-  const datapackMcmeta = getArg('--datapack-mcmeta=');
-  const resourcePackMcmeta = getArg('--resourcepack-mcmeta=');
+  const datapack = getArg('--datapack=');
+  const resourcePack = getArg('--resourcepack=');
   return {
     assetsDir,
-    datapack: datapackMcmeta,
-    resourcepack: resourcePackMcmeta,
+    datapack,
+    resourcepack: resourcePack,
   };
 }
