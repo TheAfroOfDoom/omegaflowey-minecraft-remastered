@@ -1,21 +1,21 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "0.5.3",
+		"format_version": "0.5.10",
 		"uuid": "c8dfcd62-79a1-3ca4-b1b9-ab17e3ddbc3e",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\finger-gun.ajblueprint",
 		"last_used_export_namespace": "finger_gun"
 	},
-	"project_settings": {
+	"blueprint_settings": {
 		"export_namespace": "finger_gun",
 		"show_bounding_box": false,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
 		"enable_plugin_mode": false,
-		"enable_resource_pack": true,
-		"enable_data_pack": true,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
 		"display_item": "minecraft:white_dye",
-		"customModelDataOffset": 0,
+		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
 		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
 		"display_item_path": "",
@@ -26,7 +26,10 @@
 		"summon_commands": "data merge entity @s {CustomName:\"\\\"Finger-Guns Indicator\\\"\",teleport_duration:0}\ntag @s add omega-flowey-remastered\ntag @s add groupable\ntag @s add hostile\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-indicator\ntag @s add attack-indicator-new\ntag @s add finger-guns",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
-		"use_storage_for_animation": false
+		"use_storage_for_animation": false,
+		"baked_animations": true,
+		"json_file": "",
+		"customModelDataOffset": 0
 	},
 	"resolution": {
 		"width": 16,
@@ -2036,16 +2039,16 @@
 	],
 	"variants": {
 		"default": {
-			"display_name": "shot",
 			"name": "shot",
+			"display_name": "shot",
 			"uuid": "e3b2d1e5-5057-343d-365b-f3d698e91f2f",
 			"texture_map": {},
-			"excluded_bones": []
+			"excluded_nodes": []
 		},
 		"list": [
 			{
-				"display_name": "cocked",
 				"name": "cocked",
+				"display_name": "cocked",
 				"uuid": "eca00108-d1f0-541b-45d9-1f73127ea44f",
 				"texture_map": {
 					"690c2fbf-462d-2bb7-779f-225aaea2467c": "e7476f23-53f4-9cd4-bc8f-4277e210f0f3",
@@ -2054,7 +2057,7 @@
 					"71764876-12ba-6c1c-a79c-e4947485f8cd": "5e8e7a62-0ea9-0e56-febe-b0f1604ed79f",
 					"bbaf7410-f34a-4d6d-4d58-8840ef2f4fb5": "690c2fbf-462d-2bb7-779f-225aaea2467c"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			}
 		]
 	},
@@ -2073,7 +2076,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"86572ff8-472b-89ad-894e-61f0a0aaee71": {
 					"name": "hand",
@@ -4575,7 +4578,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"markers": [
 				{
 					"color": 0,

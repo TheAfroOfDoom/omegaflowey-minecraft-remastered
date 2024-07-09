@@ -1,21 +1,21 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "0.5.3",
+		"format_version": "0.5.10",
 		"uuid": "548e36d4-c419-e5a0-7385-8f1062b9691f",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\homing-vine-blinking-lane.ajblueprint",
 		"last_used_export_namespace": "homing_vine_blinking_lane"
 	},
-	"project_settings": {
+	"blueprint_settings": {
 		"export_namespace": "homing_vine_blinking_lane",
 		"show_bounding_box": false,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
 		"enable_plugin_mode": false,
-		"enable_resource_pack": true,
-		"enable_data_pack": true,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
 		"display_item": "minecraft:white_dye",
-		"customModelDataOffset": 0,
+		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
 		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
 		"display_item_path": "",
@@ -26,7 +26,10 @@
 		"summon_commands": "data merge entity @s {CustomName: '\"Homing-Vines Blinking Lane\"', view_range: 0 }\ntag @s add omega-flowey-remastered\ntag @s add groupable\ntag @s add hostile\ntag @s add omega-flowey\ntag @s add attack\ntag @s add homing-vines\ntag @s add homing-vines-blinking-lane\ntag @s add homing-vines-blinking-lane-new",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
-		"use_storage_for_animation": false
+		"use_storage_for_animation": false,
+		"baked_animations": true,
+		"json_file": "",
+		"customModelDataOffset": 0
 	},
 	"resolution": {
 		"width": 16,
@@ -173,11 +176,11 @@
 	],
 	"variants": {
 		"default": {
-			"display_name": "default",
 			"name": "default",
+			"display_name": "default",
 			"uuid": "216293ac-ba41-3ada-6f65-96eb22f315d7",
 			"texture_map": {},
-			"excluded_bones": []
+			"excluded_nodes": []
 		},
 		"list": []
 	},

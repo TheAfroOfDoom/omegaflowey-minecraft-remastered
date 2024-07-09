@@ -5,7 +5,7 @@ const applicableExtensions = ['.ajblueprint'];
 
 const checkDatapack = (model) => {
   const expected = /datapacks\/animated_java\/$/;
-  const actual = model.project_settings.data_pack;
+  const actual = model.blueprint_settings.data_pack;
   const match = expected.test(actual.replaceAll('\\', '/'));
   if (!match) {
     let error = `incorrect datapack ${chalk.blue('directory')}; `;
@@ -19,7 +19,7 @@ const checkDatapack = (model) => {
 
 const checkRigItem = (model) => {
   const expected = 'minecraft:white_dye';
-  const actual = model.project_settings.display_item;
+  const actual = model.blueprint_settings.display_item;
   if (actual !== 'minecraft:white_dye') {
     let error = `incorrect ${chalk.blue('display_item')}; `;
     error += `was \`${actual}\`, expected \`${expected}\``;
