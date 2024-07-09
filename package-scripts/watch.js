@@ -108,7 +108,6 @@ const watchResourcepack = async (showVerbose) => {
     /^resourcepack[/\\]assets[/\\]omega-flowey[/\\]models[/\\]last_exported_hashes\.json$/,
     /^resourcepack[/\\]resourcepack\.ajmeta$/,
     /\.ajblueprint$/,
-    /\.ajmodel$/,
     /\.pdn$/,
   ];
   /** silenced files are still watched, but aren't logged */
