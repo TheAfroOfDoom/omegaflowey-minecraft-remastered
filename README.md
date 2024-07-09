@@ -90,20 +90,16 @@ We also recommend using [blockcolors.app](https://blockcolors.app/) to get a rep
 
 Read the descriptions of the following scripts and run them when it is recommended to:
 
-1. **NOTE**: We are currently migrating to Animated Java 1.0.0. The AJ auto-exporter has not yet been updated to support this. You will have to update model export files by manually clicking `Export` in Blockbench until the auto-exporter is updated.
-
-   <s> `yarn start export`: run the AJ model export script
+1. `yarn start export`: run the AJ blueprint export script
 
    1. add `ELECTRON_ENABLE_LOGGING=1` to your `.env` file to enable log-passthrough from Blockbench's renderer process to the main process. **Run this if your `watch.models` script (from `yarn start watch.experimental`) runs into an error while exporting AJ models.**
 
-   We recommend running `yarn start export` at least once, and every time changes to `.ajmodel` files occur from new incoming commits.
-
-   </s>
+   We recommend running `yarn start export` at least once, and every time changes to `.ajblueprint` files occur from new incoming commits.
 
 2. `yarn start`: this keeps your local repository's content synced with your `.minecraft` directory -- datapack/resourcepack changes will reflect in-game
 
   <s>
-   1. if you run `yarn start watch.experimental`, it also watches `.ajmodel` files and runs our auto-exporter on them -- this reads all `.ajmodel` files in your local repo and runs Animated Java's `Export Project` function on them.
+   1. if you run `yarn start watch.experimental`, it also watches `.ajblueprint` files and runs our auto-exporter on them -- this reads all `.ajblueprint` files in your local repo and runs Animated Java's `Export Project` function on them.
       1. we specifically _do not_ commit AJ's exported files to the repo since they are _very large_
       2. the `watch.models` script _will not_ work if you already have Blockbench open, so don't expect it to do anything while that's the case
       3. its a little janky and experimental still, so \*\*we recommend manually running `yarn start export` if you run into issues relating to Animated Java export files (missing models, animations, attacks not playing properly)
@@ -124,6 +120,6 @@ We recommend keeping `yarn start` running at all times while working on the proj
    3. `Data Pack`: select the `pack.mcmeta` file located in the repository at `datapacks/animated_java/pack.mcmeta`
 3. Save the file with `CTRL + S` to somewhere appropriate under `resourcepack/assets/omega-flowey/models`
    1. **While the model is still a work-in-progress, append `_dev` to the filename so our auto-export scripts skip it**
-      1. e.g. `housefly_dev.ajmodel`
+      1. e.g. `housefly_dev.ajblueprint`
 4. Export your model/animations by clicking `Animated Java > Export` at the top
-5. When finished with the model, remove the `_dev` suffix from the filename (e.g. `housefly.ajmodel`)
+5. When finished with the model, remove the `_dev` suffix from the filename (e.g. `housefly.ajblueprint`)
