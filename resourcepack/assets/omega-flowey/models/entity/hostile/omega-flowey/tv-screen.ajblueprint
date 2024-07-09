@@ -1,21 +1,21 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "0.5.3",
+		"format_version": "0.5.10",
 		"uuid": "de143d69-7d25-8ad1-c9e8-f45f431753b9",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\tv-screen.ajblueprint",
 		"last_used_export_namespace": "tv_screen"
 	},
-	"project_settings": {
+	"blueprint_settings": {
 		"export_namespace": "tv_screen",
 		"show_bounding_box": false,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
 		"enable_plugin_mode": false,
-		"enable_resource_pack": true,
-		"enable_data_pack": true,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
 		"display_item": "minecraft:white_dye",
-		"customModelDataOffset": 0,
+		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
 		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
 		"display_item_path": "",
@@ -26,7 +26,10 @@
 		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add omega-flowey\ntag @s add omega-flowey-tv-screen",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
-		"use_storage_for_animation": false
+		"use_storage_for_animation": false,
+		"baked_animations": true,
+		"json_file": "",
+		"customModelDataOffset": 0
 	},
 	"resolution": {
 		"width": 16,
@@ -585,30 +588,30 @@
 	],
 	"variants": {
 		"default": {
-			"display_name": "default",
 			"name": "default",
+			"display_name": "default",
 			"uuid": "59805ee0-d249-bf4c-f01a-67b2cd10bd88",
 			"texture_map": {},
-			"excluded_bones": []
+			"excluded_nodes": []
 		},
 		"list": [
 			{
-				"display_name": "static",
 				"name": "static",
+				"display_name": "static",
 				"uuid": "45118c10-b51f-36c7-a1ca-37d0f846c2ed",
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "ace7b2d9-46d0-50f0-a1f8-0a1722e76aa2"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "warning",
 				"name": "warning",
+				"display_name": "warning",
 				"uuid": "585fe02c-c7d9-99ae-1095-3e2099d4a99d",
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "69769926-e76c-4d11-b4f8-82ddedcfad5e"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			}
 		]
 	},
@@ -627,7 +630,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"9afbce00-c281-2321-0204-49c52e10c4a5": {
 					"name": "root",

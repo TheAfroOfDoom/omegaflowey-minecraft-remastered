@@ -1,21 +1,21 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "0.5.3",
+		"format_version": "0.5.10",
 		"uuid": "25f5f2d3-a039-1127-7608-d1b5a35d1339",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\petal_pipes\\petal-pipe-middle.ajblueprint",
 		"last_used_export_namespace": "petal_pipe_middle"
 	},
-	"project_settings": {
+	"blueprint_settings": {
 		"export_namespace": "petal_pipe_middle",
 		"show_bounding_box": false,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
 		"enable_plugin_mode": false,
-		"enable_resource_pack": true,
-		"enable_data_pack": true,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
 		"display_item": "minecraft:white_dye",
-		"customModelDataOffset": 0,
+		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
 		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
 		"display_item_path": "",
@@ -26,7 +26,10 @@
 		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add omega-flowey\ntag @s add omega-flowey-petal-pipe\ntag @s add omega-flowey-petal-pipe-middle",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
-		"use_storage_for_animation": false
+		"use_storage_for_animation": false,
+		"baked_animations": true,
+		"json_file": "",
+		"customModelDataOffset": 0
 	},
 	"resolution": {
 		"width": 64,
@@ -5979,39 +5982,39 @@
 	],
 	"variants": {
 		"default": {
-			"display_name": "default",
 			"name": "default",
+			"display_name": "default",
 			"uuid": "d3b198f5-761c-b371-8166-506e011eccf0",
 			"texture_map": {},
-			"excluded_bones": []
+			"excluded_nodes": []
 		},
 		"list": [
 			{
-				"display_name": "disabled",
 				"name": "disabled",
+				"display_name": "disabled",
 				"uuid": "e09c0d5e-5928-451f-3c01-3c095414630f",
 				"texture_map": {
 					"68dd49eb-dea3-aa77-1253-12f293fdfc11": "5a6786c2-771a-fe82-d1ea-0556cdb243cb"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "soul_2",
 				"name": "soul_2",
+				"display_name": "soul_2",
 				"uuid": "a58bf3ba-f12a-8adb-634e-426f744663a2",
 				"texture_map": {
 					"68dd49eb-dea3-aa77-1253-12f293fdfc11": "ff229dfd-5092-69b1-be89-0ceba1344791"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "soul_3",
 				"name": "soul_3",
+				"display_name": "soul_3",
 				"uuid": "ede5a684-2113-39be-6476-a71f18282861",
 				"texture_map": {
 					"68dd49eb-dea3-aa77-1253-12f293fdfc11": "7dacec69-b42a-37a6-8364-2dde049a7da3"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			}
 		]
 	},
@@ -6030,7 +6033,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"16cff525-67ed-4c2b-ea7c-1119a98684bc": {
 					"name": "bone",
@@ -109980,7 +109983,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"16cff525-67ed-4c2b-ea7c-1119a98684bc": {
 					"name": "bone",

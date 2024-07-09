@@ -1,21 +1,21 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "0.5.3",
+		"format_version": "0.5.10",
 		"uuid": "2d31b9db-c641-46e6-a875-94380ff05f63",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\lower-eye.ajblueprint",
 		"last_used_export_namespace": "lower_eye"
 	},
-	"project_settings": {
+	"blueprint_settings": {
 		"export_namespace": "lower_eye",
 		"show_bounding_box": false,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
 		"enable_plugin_mode": false,
-		"enable_resource_pack": true,
-		"enable_data_pack": true,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
 		"display_item": "minecraft:white_dye",
-		"customModelDataOffset": 0,
+		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
 		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
 		"display_item_path": "",
@@ -26,7 +26,10 @@
 		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add omega-flowey\ntag @s add omega-flowey-lower-eye",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
-		"use_storage_for_animation": false
+		"use_storage_for_animation": false,
+		"baked_animations": true,
+		"json_file": "",
+		"customModelDataOffset": 0
 	},
 	"resolution": {
 		"width": 16,
@@ -2525,16 +2528,16 @@
 	],
 	"variants": {
 		"default": {
-			"display_name": "default",
 			"name": "default",
+			"display_name": "default",
 			"uuid": "6fde0b59-c952-3d58-4087-1bfa481a613d",
 			"texture_map": {},
-			"excluded_bones": []
+			"excluded_nodes": []
 		},
 		"list": [
 			{
-				"display_name": "bright",
 				"name": "bright",
+				"display_name": "bright",
 				"uuid": "0463c19a-d0e3-3f38-c2fa-9e3b26443e96",
 				"texture_map": {
 					"43c7499b-810c-e305-aa49-1e7c13c77d34": "6a66d687-6cf4-c706-b428-fa07ee115882",
@@ -2542,11 +2545,11 @@
 					"91f4647e-d482-ceca-1b5c-12a72e28cad1": "d24c4edd-98f9-71e3-31f3-bc89d06b79ba",
 					"430ffeff-a100-d7bc-2362-4a3980e59ff5": "d24c4edd-98f9-71e3-31f3-bc89d06b79ba"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "colorful",
 				"name": "colorful",
+				"display_name": "colorful",
 				"uuid": "6659e3dc-75cd-b379-5cc7-3bc2cc56a15a",
 				"texture_map": {
 					"43c7499b-810c-e305-aa49-1e7c13c77d34": "4c654000-464a-16cc-1468-37e092fa9283",
@@ -2554,11 +2557,11 @@
 					"91f4647e-d482-ceca-1b5c-12a72e28cad1": "ae3d3116-819d-9cbe-6043-ff4b64e46b3f",
 					"430ffeff-a100-d7bc-2362-4a3980e59ff5": "4c654000-464a-16cc-1468-37e092fa9283"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "dark",
 				"name": "dark",
+				"display_name": "dark",
 				"uuid": "b91ac4d2-5302-2bde-859e-84985699299b",
 				"texture_map": {
 					"43c7499b-810c-e305-aa49-1e7c13c77d34": "d47619a9-94ae-577b-9b1c-5212504c43a5",
@@ -2566,7 +2569,7 @@
 					"91f4647e-d482-ceca-1b5c-12a72e28cad1": "7af71311-1188-adbb-0391-ffa2173d1081",
 					"430ffeff-a100-d7bc-2362-4a3980e59ff5": "d47619a9-94ae-577b-9b1c-5212504c43a5"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			}
 		]
 	},
@@ -2585,7 +2588,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"f13c55d0-8667-840d-3540-9fdda50cfc40": {
 					"name": "root",
