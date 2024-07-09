@@ -1,21 +1,21 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "0.5.3",
+		"format_version": "0.5.10",
 		"uuid": "738b7804-b312-52bc-9340-268c67328f74",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\venus-fly-trap.ajblueprint",
 		"last_used_export_namespace": "venus_fly_trap"
 	},
-	"project_settings": {
+	"blueprint_settings": {
 		"export_namespace": "venus_fly_trap",
 		"show_bounding_box": false,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
 		"enable_plugin_mode": false,
-		"enable_resource_pack": true,
-		"enable_data_pack": true,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
 		"display_item": "minecraft:white_dye",
-		"customModelDataOffset": 0,
+		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
 		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
 		"display_item_path": "",
@@ -26,7 +26,10 @@
 		"summon_commands": "data merge entity @s {CustomName:\"\\\"Flies Indicator\\\"\"}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add groupable\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-indicator\ntag @s add attack-indicator-new\ntag @s add flies",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
-		"use_storage_for_animation": false
+		"use_storage_for_animation": false,
+		"baked_animations": true,
+		"json_file": "",
+		"customModelDataOffset": 0
 	},
 	"resolution": {
 		"width": 16,
@@ -2292,11 +2295,11 @@
 	],
 	"variants": {
 		"default": {
-			"display_name": "default",
 			"name": "default",
+			"display_name": "default",
 			"uuid": "c0d926f5-2fce-7be5-1e89-439fe587d4f8",
 			"texture_map": {},
-			"excluded_bones": []
+			"excluded_nodes": []
 		},
 		"list": []
 	},
@@ -2315,7 +2318,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"5df3e100-8feb-f979-09c5-61d9aead3202": {
 					"name": "lower_lobe",

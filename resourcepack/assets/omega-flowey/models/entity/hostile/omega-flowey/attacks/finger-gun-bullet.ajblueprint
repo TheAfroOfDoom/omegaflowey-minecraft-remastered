@@ -1,21 +1,21 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "0.5.3",
+		"format_version": "0.5.10",
 		"uuid": "dd22041e-e017-2441-ed2c-b5068aac58e6",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\finger-gun-bullet.ajblueprint",
 		"last_used_export_namespace": "finger_gun_bullet"
 	},
-	"project_settings": {
+	"blueprint_settings": {
 		"export_namespace": "finger_gun_bullet",
 		"show_bounding_box": false,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
 		"enable_plugin_mode": false,
-		"enable_resource_pack": true,
-		"enable_data_pack": true,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
 		"display_item": "minecraft:white_dye",
-		"customModelDataOffset": 0,
+		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
 		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
 		"display_item_path": "",
@@ -26,7 +26,10 @@
 		"summon_commands": "data merge entity @s {CustomName:\"\\\"Finger-Guns Bullet\\\"\"}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-bullet\ntag @s add attack-bullet-new\ntag @s add finger-guns",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
-		"use_storage_for_animation": false
+		"use_storage_for_animation": false,
+		"baked_animations": true,
+		"json_file": "",
+		"customModelDataOffset": 0
 	},
 	"resolution": {
 		"width": 16,
@@ -1309,11 +1312,11 @@
 	],
 	"variants": {
 		"default": {
-			"display_name": "default",
 			"name": "default",
+			"display_name": "default",
 			"uuid": "25e1e5e0-12ee-3d0f-2141-2eddc2e101a4",
 			"texture_map": {},
-			"excluded_bones": []
+			"excluded_nodes": []
 		},
 		"list": []
 	},
@@ -1332,7 +1335,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"4082d603-9ecd-05d7-9e3f-67b2d47e6b2e": {
 					"name": "root",

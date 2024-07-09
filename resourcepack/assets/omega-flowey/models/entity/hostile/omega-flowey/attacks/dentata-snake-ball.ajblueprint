@@ -1,21 +1,21 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "0.5.2",
+		"format_version": "0.5.10",
 		"uuid": "04f4fdec-cc4d-27b1-2266-45572d03dcd6",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\dentata-snake-ball.ajblueprint",
 		"last_used_export_namespace": "dentata_snake_ball"
 	},
-	"project_settings": {
+	"blueprint_settings": {
 		"export_namespace": "dentata_snake_ball",
 		"show_bounding_box": true,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
 		"enable_plugin_mode": false,
-		"enable_resource_pack": true,
-		"enable_data_pack": true,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
 		"display_item": "minecraft:white_dye",
-		"customModelDataOffset": 0,
+		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
 		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
 		"display_item_path": "",
@@ -26,7 +26,10 @@
 		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-bullet\ntag @s add attack-bullet-new\ntag @s add dentata-snakes",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
-		"use_storage_for_animation": false
+		"use_storage_for_animation": false,
+		"baked_animations": true,
+		"json_file": "",
+		"customModelDataOffset": 0
 	},
 	"resolution": {
 		"width": 16,
@@ -4800,16 +4803,16 @@
 	],
 	"variants": {
 		"default": {
-			"display_name": "default",
 			"name": "default",
+			"display_name": "default",
 			"uuid": "51dfed36-734d-a608-4607-6351aff7e069",
 			"texture_map": {},
-			"excluded_bones": []
+			"excluded_nodes": []
 		},
 		"list": [
 			{
-				"display_name": "tail",
 				"name": "tail",
+				"display_name": "tail",
 				"uuid": "20290bd4-0ab4-5cdd-d062-4c632d66e718",
 				"texture_map": {
 					"446aa129-839a-9cb1-9857-ba3d7414ddc7": "414cca79-8ba4-7d19-64dd-42056e4fd857",
@@ -4817,7 +4820,7 @@
 					"414cca79-8ba4-7d19-64dd-42056e4fd857": "245ffcf4-9444-c826-8a51-958cd97f8b6c",
 					"6cec6f87-078a-08eb-a808-21f0edec4a6e": "414cca79-8ba4-7d19-64dd-42056e4fd857"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			}
 		]
 	},
@@ -4836,7 +4839,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"97616a2b-9d30-02d1-9941-e0fc81ca0417": {
 					"name": "root",
@@ -4854,7 +4857,9 @@
 							"uuid": "6be7babe-f791-c62d-9ce6-bc0cf0d7e407",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -4868,7 +4873,9 @@
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -4882,7 +4889,9 @@
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
 							"time": 1.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -4897,7 +4906,9 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -4912,7 +4923,9 @@
 							"time": 0.3,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -4927,7 +4940,9 @@
 							"time": 0.6,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -4942,7 +4957,9 @@
 							"time": 1.2,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -4957,7 +4974,9 @@
 							"time": 0.9,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				},
@@ -4977,7 +4996,9 @@
 							"uuid": "4e574079-323b-cb77-1613-85697f15753d",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -4991,7 +5012,9 @@
 							"uuid": "873ea56b-b965-87f7-6da4-f7c1f8c5e792",
 							"time": 0.3,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -5005,7 +5028,9 @@
 							"uuid": "bcdaf186-fd25-a438-47f4-71050a6ec2ef",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -5019,7 +5044,9 @@
 							"uuid": "6421620f-6f75-87ce-6d95-740f7fd92898",
 							"time": 1.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -5033,7 +5060,9 @@
 							"uuid": "88961069-153f-10a0-a58c-207beec1093b",
 							"time": 0.9,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				},
@@ -5053,7 +5082,9 @@
 							"uuid": "1fe392ff-d9b8-5697-2ea8-6b933714317e",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -5067,7 +5098,9 @@
 							"uuid": "3e62338b-67f8-a631-654b-a48f0fa5ccaf",
 							"time": 0.3,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -5081,7 +5114,9 @@
 							"uuid": "2b7270fb-f430-5efd-e250-a356d4de38b6",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -5095,7 +5130,9 @@
 							"uuid": "381e904d-faec-75ff-5e83-5199689468bf",
 							"time": 1.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -5109,7 +5146,9 @@
 							"uuid": "0d28fc4c-70ed-d294-82e8-e153b4593033",
 							"time": 0.9,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
@@ -5129,7 +5168,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"97616a2b-9d30-02d1-9941-e0fc81ca0417": {
 					"name": "root",
@@ -5147,7 +5186,9 @@
 							"uuid": "6be7babe-f791-c62d-9ce6-bc0cf0d7e407",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5161,7 +5202,9 @@
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5175,7 +5218,9 @@
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
 							"time": 1.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5190,7 +5235,9 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5205,7 +5252,9 @@
 							"time": 0.3,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5220,7 +5269,9 @@
 							"time": 0.6,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5235,7 +5286,9 @@
 							"time": 1.2,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5250,7 +5303,9 @@
 							"time": 0.9,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
@@ -5270,7 +5325,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"97616a2b-9d30-02d1-9941-e0fc81ca0417": {
 					"name": "root",
@@ -5288,7 +5343,9 @@
 							"uuid": "6be7babe-f791-c62d-9ce6-bc0cf0d7e407",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5302,7 +5359,9 @@
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5316,7 +5375,9 @@
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
 							"time": 1.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5331,7 +5392,9 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5346,7 +5409,9 @@
 							"time": 0.3,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5361,7 +5426,9 @@
 							"time": 0.6,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5376,7 +5443,9 @@
 							"time": 1.2,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5391,7 +5460,9 @@
 							"time": 0.9,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
@@ -5411,7 +5482,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"97616a2b-9d30-02d1-9941-e0fc81ca0417": {
 					"name": "root",
@@ -5429,7 +5500,9 @@
 							"uuid": "6be7babe-f791-c62d-9ce6-bc0cf0d7e407",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5443,7 +5516,9 @@
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5457,7 +5532,9 @@
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
 							"time": 1.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5472,7 +5549,9 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5487,7 +5566,9 @@
 							"time": 0.3,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5502,7 +5583,9 @@
 							"time": 0.6,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5517,7 +5600,9 @@
 							"time": 1.2,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5532,7 +5617,9 @@
 							"time": 0.9,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
@@ -5552,7 +5639,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"97616a2b-9d30-02d1-9941-e0fc81ca0417": {
 					"name": "root",
@@ -5570,7 +5657,9 @@
 							"uuid": "6be7babe-f791-c62d-9ce6-bc0cf0d7e407",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5584,7 +5673,9 @@
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5598,7 +5689,9 @@
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
 							"time": 1.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5613,7 +5706,9 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5628,7 +5723,9 @@
 							"time": 0.3,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5643,7 +5740,9 @@
 							"time": 0.6,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5658,7 +5757,9 @@
 							"time": 1.2,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5673,7 +5774,9 @@
 							"time": 0.9,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
@@ -5686,14 +5789,14 @@
 			"override": false,
 			"length": 1.2,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
 			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"97616a2b-9d30-02d1-9941-e0fc81ca0417": {
 					"name": "root",
@@ -5711,7 +5814,9 @@
 							"uuid": "6be7babe-f791-c62d-9ce6-bc0cf0d7e407",
 							"time": 0,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5725,7 +5830,9 @@
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
 							"time": 0.6,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -5739,7 +5846,9 @@
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
 							"time": 1.2,
 							"color": -1,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5754,7 +5863,9 @@
 							"time": 0,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5769,7 +5880,9 @@
 							"time": 0.3,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5784,7 +5897,9 @@
 							"time": 0.6,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5799,7 +5914,9 @@
 							"time": 1.2,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "scale",
@@ -5814,7 +5931,9 @@
 							"time": 0.9,
 							"color": -1,
 							"uniform": true,
-							"interpolation": "linear"
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
