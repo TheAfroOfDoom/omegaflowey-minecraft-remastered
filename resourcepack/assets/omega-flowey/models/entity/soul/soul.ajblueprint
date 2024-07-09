@@ -1,21 +1,21 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "0.5.3",
+		"format_version": "0.5.10",
 		"uuid": "953ff968-9e3b-f3b7-78d6-3e2254ba4dc0",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul.ajblueprint",
 		"last_used_export_namespace": "soul"
 	},
-	"project_settings": {
+	"blueprint_settings": {
 		"export_namespace": "soul",
 		"show_bounding_box": false,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
 		"enable_plugin_mode": false,
-		"enable_resource_pack": true,
-		"enable_data_pack": true,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
 		"display_item": "minecraft:white_dye",
-		"customModelDataOffset": 0,
+		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
 		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
 		"display_item_path": "",
@@ -26,7 +26,10 @@
 		"summon_commands": "",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
-		"use_storage_for_animation": false
+		"use_storage_for_animation": false,
+		"baked_animations": true,
+		"json_file": "",
+		"customModelDataOffset": 0
 	},
 	"resolution": {
 		"width": 16,
@@ -672,66 +675,66 @@
 	],
 	"variants": {
 		"default": {
-			"display_name": "red",
 			"name": "red",
+			"display_name": "red",
 			"uuid": "b96f8c23-e688-b229-ca1c-42f9e4772d96",
 			"texture_map": {},
-			"excluded_bones": []
+			"excluded_nodes": []
 		},
 		"list": [
 			{
-				"display_name": "0",
 				"name": "0",
+				"display_name": "0",
 				"uuid": "a67a7e42-73ef-e4f9-3476-07dbda553c32",
 				"texture_map": {
 					"61ede729-771f-ce98-20d5-0e50681503b6": "71b83403-9475-8224-4d71-936019b72efc"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "1",
 				"name": "1",
+				"display_name": "1",
 				"uuid": "58a0e3e2-69cc-de2f-e5f9-a44f8ca7c3c3",
 				"texture_map": {
 					"61ede729-771f-ce98-20d5-0e50681503b6": "20857132-2359-cd1f-c374-a1e10c899efc"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "2",
 				"name": "2",
+				"display_name": "2",
 				"uuid": "eb46b594-0d43-b2c4-8354-a660928f2397",
 				"texture_map": {
 					"61ede729-771f-ce98-20d5-0e50681503b6": "23f28e9d-4a41-0016-43c6-269dfe8c9211"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "3",
 				"name": "3",
+				"display_name": "3",
 				"uuid": "2b04188d-3956-c012-0266-4ed796307c99",
 				"texture_map": {
 					"61ede729-771f-ce98-20d5-0e50681503b6": "116164df-82aa-638c-4fa3-59ec75f2d095"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "4",
 				"name": "4",
+				"display_name": "4",
 				"uuid": "ee070872-1e37-a8f7-a070-7a4bf67485ba",
 				"texture_map": {
 					"61ede729-771f-ce98-20d5-0e50681503b6": "be3b75c5-fc98-9a4b-dc69-4f0f439c90d2"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			},
 			{
-				"display_name": "5",
 				"name": "5",
+				"display_name": "5",
 				"uuid": "8f5d751b-ed19-bda0-ffd6-ae32f4cd81c2",
 				"texture_map": {
 					"61ede729-771f-ce98-20d5-0e50681503b6": "285cd4ae-b81f-154e-5a59-b8c6880699ca"
 				},
-				"excluded_bones": []
+				"excluded_nodes": []
 			}
 		]
 	},
@@ -750,7 +753,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"8fdc5166-b2e8-19f7-aafd-e6b95edc7f55": {
 					"name": "root",
@@ -918,7 +921,7 @@
 			"blend_weight": "",
 			"start_delay": "",
 			"loop_delay": "",
-			"excluded_bones": [],
+			"excluded_nodes": [],
 			"animators": {
 				"8fdc5166-b2e8-19f7-aafd-e6b95edc7f55": {
 					"name": "root",
