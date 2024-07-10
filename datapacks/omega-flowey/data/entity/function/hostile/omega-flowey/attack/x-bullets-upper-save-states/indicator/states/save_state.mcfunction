@@ -16,18 +16,15 @@ data modify storage attack:x-bullets-upper-save-states current_state.rotation_ya
 data modify storage attack:x-bullets-upper-save-states current_state.rotation_pitch set from entity @s Rotation[1]
 
 # Scores
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_bullets_count int 1 run scoreboard players get @s attack.bullets.count
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_bullets_total int 1 run scoreboard players get @s attack.bullets.total
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_bullets_remaining int 1 run scoreboard players get @s attack.bullets.remaining
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_clock_i int 1 run scoreboard players get @s attack.clock.i
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_x int 1 run scoreboard players get @s attack.position.x
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_y int 1 run scoreboard players get @s attack.position.y
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_z int 1 run scoreboard players get @s attack.position.z
-
-# Indicators have an associated blinking_lane (`data.blinking_lane_uuid`)
-function gu:generate
-data modify storage attack:x-bullets-upper-save-states indicator_uuid set from storage gu:main out
-
-function entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/indicator/states/save_state/check_for_blinking_lane with entity @s data
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_indicator_yaw int 1 run scoreboard players get @s attack.indicator.yaw
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_theta int 1 run scoreboard players get @s attack.theta
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_d_phi int 1 run scoreboard players get @s attack.d-phi
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_phi int 1 run scoreboard players get @s attack.phi
 
 # Append this entity's saved_state to the executor's NBT list
 $data modify entity $(executor_uuid) data.saved_states append from storage attack:x-bullets-upper-save-states current_state
