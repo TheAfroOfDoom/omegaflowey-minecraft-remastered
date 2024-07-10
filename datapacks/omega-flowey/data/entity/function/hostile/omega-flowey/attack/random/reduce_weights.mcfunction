@@ -27,3 +27,6 @@ execute if entity @s[tag=attack.random.previous_attack.x-bullets-lower] run tag 
 
 execute if entity @s[tag=attack.random.previous_attack.x-bullets-upper] run scoreboard players operation #attack-x-bullets-upper attack.weight -= @s attack.weight
 execute if entity @s[tag=attack.random.previous_attack.x-bullets-upper] run tag @s remove attack.random.previous_attack.x-bullets-upper
+
+execute if entity @s[tag=attack.random.previous_attack.x-bullets-upper-save-states] run scoreboard players operation #attack-x-bullets-upper-save-states attack.weight -= @s attack.weight
+execute if entity @s[tag=attack.random.previous_attack.x-bullets-upper-save-states] run tag @s remove attack.random.previous_attack.x-bullets-upper-save-states

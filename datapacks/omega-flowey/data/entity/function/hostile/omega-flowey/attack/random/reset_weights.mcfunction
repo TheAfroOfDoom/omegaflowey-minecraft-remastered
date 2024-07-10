@@ -8,3 +8,4 @@ scoreboard players reset #attack-homing-vines attack.weight
 scoreboard players reset #attack-homing-vines-save-states attack.weight
 scoreboard players reset #attack-x-bullets-lower attack.weight
 scoreboard players reset #attack-x-bullets-upper attack.weight
+scoreboard players reset #attack-x-bullets-upper-save-states attack.weight
