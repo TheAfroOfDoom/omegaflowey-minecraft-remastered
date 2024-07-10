@@ -5,4 +5,6 @@ function entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor
 
 execute as @e[type=minecraft:marker,tag=boss_fight] run function entity:directorial/boss_fight/music/toggle/boss_fight_vanilla_attack_phase_repeat
 
+function entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor/states/load_all_states/terminate_unwanted_entities
+
 function entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor/states/load_all_states/show_title
