@@ -7,3 +7,4 @@ tag @s remove attack.random.previous_attack.homing-vines
 tag @s remove attack.random.previous_attack.homing-vines-save-states
 tag @s remove attack.random.previous_attack.x-bullets-lower
 tag @s remove attack.random.previous_attack.x-bullets-upper
+tag @s remove attack.random.previous_attack.x-bullets-upper-save-states

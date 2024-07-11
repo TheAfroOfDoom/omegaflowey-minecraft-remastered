@@ -4,4 +4,4 @@ function entity:hostile/omega-flowey/attack/homing-vines/executor/initialize
 function gu:generate
 data modify storage attack:homing-vines-save-states executor_uuid set from storage gu:main out
 
-scoreboard players set #homing-vine-save-states.did_player_take_damage attack.flag 0
+scoreboard players set #homing-vines-save-states.did_player_take_damage attack.flag 0

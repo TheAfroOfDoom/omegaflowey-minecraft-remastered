@@ -20,7 +20,8 @@ execute store result entity @e[limit=1,tag=attack-bullet-new] Rotation[0] float 
 execute store result entity @e[limit=1,tag=attack-bullet-new] Rotation[1] float 1 run scoreboard players get @s attack.theta
 
 # Initialize bullet
-execute as @e[tag=attack-bullet-new] run function entity:hostile/omega-flowey/attack/x-bullets-upper/bullet/initialize
+execute if entity @s[tag=!x-bullets-upper-save-states] as @e[tag=attack-bullet-new] run function entity:hostile/omega-flowey/attack/x-bullets-upper/bullet/initialize
+execute if entity @s[tag=x-bullets-upper-save-states] as @e[tag=attack-bullet-new] run function entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/bullet/initialize/x-bullets-upper
 
 # Rotate yaw to be ready for next bullet
 scoreboard players operation @s attack.phi += @s attack.d-phi

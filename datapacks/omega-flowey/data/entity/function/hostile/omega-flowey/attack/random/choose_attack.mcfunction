@@ -39,3 +39,7 @@ execute if score #attack-x-bullets-lower attack.weight matches 1.. if score @s m
 scoreboard players operation @s math.0 -= #attack-x-bullets-upper attack.weight
 execute if score #attack-x-bullets-upper attack.weight matches 1.. if score @s math.0 matches ..0 run function entity:hostile/omega-flowey/attack/random/choose_attack/x-bullets-upper
 execute if score #attack-x-bullets-upper attack.weight matches 1.. if score @s math.0 matches ..0 run return 0
+
+scoreboard players operation @s math.0 -= #attack-x-bullets-upper-save-states attack.weight
+execute if score #attack-x-bullets-upper-save-states attack.weight matches 1.. if score @s math.0 matches ..0 run function entity:hostile/omega-flowey/attack/random/choose_attack/x-bullets-upper-save-states
+execute if score #attack-x-bullets-upper-save-states attack.weight matches 1.. if score @s math.0 matches ..0 run return 0

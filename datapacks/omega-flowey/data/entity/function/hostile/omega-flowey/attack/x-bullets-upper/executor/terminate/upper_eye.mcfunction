@@ -1,0 +1,2 @@
+function animated_java:upper_eye/animations/look_around/resume
+function animated_java:upper_eye/variants/default/apply
