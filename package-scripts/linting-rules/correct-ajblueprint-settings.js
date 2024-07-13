@@ -4,7 +4,7 @@ const { readFileSync } = require('fs');
 const applicableExtensions = ['.ajblueprint'];
 
 const checkDatapack = (model) => {
-  const expected = /datapacks\/animated_java\/$/;
+  const expected = /datapacks\/animated_java\/?$/;
   const actual = model.blueprint_settings.data_pack;
   const match = expected.test(actual.replaceAll('\\', '/'));
   if (!match) {
