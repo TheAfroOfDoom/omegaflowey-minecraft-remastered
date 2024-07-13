@@ -1,23 +1,14 @@
 const chalk = require('chalk');
 const { watch } = require('chokidar');
 const dotenv = require('dotenv');
-const findProcess = require('find-process');
 const { copy, remove, readFile, writeFile } = require('fs-extra');
 const { glob } = require('glob');
-const { difference, findKey, uniq } = require('lodash');
-const minimist = require('minimist');
-const { spawn } = require('node:child_process');
-const { resolve, parse } = require('path');
+const { difference, findKey } = require('lodash');
+const { parse } = require('path');
 
-const {
-  ajblueprintDir,
-  ajblueprintPathsDontOpenSuffix,
-  ajExporterPassthroughFlagEnd: flagEnd,
-  ajExporterPassthroughFlagStart: flagStart,
-} = require('./shared-consts');
+const { ajblueprintDir } = require('./shared-consts');
 const {
   assertEnvironmentVariables,
-  hash,
   parseLastExportedHashes,
   updateLastExportedHashes,
 } = require('./utils');
@@ -196,213 +187,6 @@ const deleteExportedFiles = async (path) => {
   updateLastExportedHashes(ajblueprintDir, lastExported);
 };
 
-const bbCLIProcessExists = async () =>
-  typeof (await findBBCLIProcess()) !== 'undefined';
-
-const findBBCLIProcess = async () =>
-  await findProcess('name', /blockbench/i).then((list) =>
-    list.find(({ cmd }) => cmd.includes('--script=')),
-  );
-
-const vanillaBlockbenchProcessExists = async () =>
-  typeof (await findVanillaBlockbenchProcess()) !== 'undefined';
-
-const findVanillaBlockbenchProcess = async () =>
-  await findProcess('name', /blockbench/i).then((list) =>
-    list.find(({ cmd }) => !cmd.includes('--script=')),
-  );
-
-const watchModels = async () => {
-  const log = (...args) => {
-    const prefix = chalk.bgGreen(chalk.bold('[models]'));
-    console.log(prefix, ...args);
-  };
-  const exporterLog = (...args) => {
-    const prefix = chalk.magenta('exporter:');
-    log(prefix, ...args);
-  };
-
-  if (await vanillaBlockbenchProcessExists()) {
-    log(
-      'vanilla blockbench process already running --',
-      chalk.red('not watching models'),
-    );
-    return;
-  }
-
-  const parseModel = async (path) => {
-    const modelString = await readFile(path, 'utf-8');
-    const model = JSON.parse(modelString);
-    const { uuid } = model.meta;
-    const name = model.animated_java.settings.project_namespace;
-    return {
-      model,
-      name,
-      modelString,
-      uuid,
-    };
-  };
-
-  /**
-   * Only export project if hash of model file is different than that found
-   * in `last_exported_hashes.json`
-   */
-  const shouldExport = async (path) => {
-    const lastExported = parseLastExportedHashes(ajblueprintDir);
-    const { modelString, uuid } = await parseModel(path);
-    const currentHash = await hash(modelString);
-    return lastExported[uuid]?.hash !== currentHash;
-  };
-
-  let lastExportQueuePolledLength;
-  let exportQueue = [];
-  let intervalId;
-  const addToExportQueue = async (path) => {
-    exportQueue.push(path);
-    // If the BB-CLI process is not already running, start polling for
-    // (no) changes to the export queue after 0.5s before starting a new
-    // process to run the auto-exporter
-    const processExists = await bbCLIProcessExists();
-    if (typeof intervalId === 'undefined' && !processExists) {
-      intervalId = setInterval(() => {
-        if (lastExportQueuePolledLength === exportQueue.length) {
-          runModelExporter();
-          lastExportQueuePolledLength = undefined;
-          clearInterval(intervalId);
-          intervalId = undefined;
-        } else {
-          lastExportQueuePolledLength = exportQueue.length;
-        }
-      }, 500);
-    }
-  };
-
-  const maybeRerunExporter = async () => {
-    if (exportQueue.length === 0) {
-      return;
-    }
-
-    const processExists = await bbCLIProcessExists();
-    if (!processExists) {
-      runModelExporter();
-    } else {
-      // Check to see if the bbcli process has ended every 1s
-      const check = async () => {
-        if (await bbCLIProcessExists()) {
-          setTimeout(check, 1000);
-        } else {
-          runModelExporter();
-        }
-      };
-      setTimeout(check, 1000);
-    }
-  };
-
-  const runModelExporter = async () => {
-    const modelPaths = uniq(exportQueue)
-      .map((path) => resolve(path))
-      .sort();
-    exportQueue = [];
-    exporterLog('starting auto export script (`yarn start export`)');
-    const vanillaProcessExists = await vanillaBlockbenchProcessExists();
-    if (vanillaProcessExists) {
-      exporterLog(
-        'found vanilla blockbench process --',
-        chalk.yellow('unable to output blockbench logs'),
-      );
-    }
-    exporterLog(
-      'models to export:',
-      modelPaths.map((path) => parse(path).name).sort(),
-    );
-
-    const modelPathsDontOpenFileHack = modelPaths.map(
-      (path) => `${path}${ajblueprintPathsDontOpenSuffix}`,
-    );
-    const modelPathsArg = modelPathsDontOpenFileHack.join(',');
-
-    const controller = new AbortController();
-    const exportProcess = spawn(
-      'yarn',
-      ['start', `"export.run --ajexport-models=${modelPathsArg}"`],
-      {
-        shell: true,
-        signal: controller.signal,
-      },
-    );
-    const errorPrefix = 'Error:';
-
-    const processLog = (data) => {
-      if (data.includes(flagStart)) {
-        const dataNoStartFlag = data.toString().split(`${flagStart} `)[1];
-        const dataNoEndFlag = dataNoStartFlag.split(` ${flagEnd}`)[0];
-        const prefix = chalk.blue('blockbench:');
-
-        if (dataNoEndFlag.startsWith(errorPrefix)) {
-          exporterLog(
-            prefix,
-            chalk.red(errorPrefix),
-            dataNoEndFlag.slice(errorPrefix.length + 1),
-          );
-          controller.abort();
-        } else {
-          exporterLog(prefix, dataNoEndFlag);
-        }
-      }
-    };
-    exportProcess.stderr.on('data', processLog);
-    exportProcess.on('error', () => {});
-    exportProcess.on('close', (code) => {
-      if (code === null) {
-        exporterLog('received error mid process -- aborting ');
-      } else {
-        if (!vanillaProcessExists) {
-          exporterLog('finished auto export script');
-        }
-        maybeRerunExporter();
-      }
-    });
-  };
-
-  const ignored = [
-    regexDotFiles,
-    /.*_dev\.ajblueprint$/,
-    /last_exported_hashes\.json$/,
-  ];
-  const awaitWriteFinish = {
-    stabilityThreshold: 50,
-    pollInterval: 50,
-  };
-  const watcher = watch(ajblueprintDir, { awaitWriteFinish, ignored });
-
-  /** Converts a path's `\` to `/` and removes the `ajblueprintDir` prefix */
-  const formatPath = (path) =>
-    normalizePath(path).replace(`${ajblueprintDir}/`, '');
-
-  watcher.on('ready', () => {
-    log('initialized');
-  });
-  watcher.on('add', async (path) => {
-    if (await shouldExport(path)) {
-      addToExportQueue(path);
-    }
-    const formattedPath = formatPath(path);
-    log(chalk.green('add:'), formattedPath);
-  });
-  watcher.on('change', async (path) => {
-    if (await shouldExport(path)) {
-      addToExportQueue(path);
-    }
-    const formattedPath = formatPath(path);
-    log(chalk.yellow('change:'), formattedPath);
-  });
-  watcher.on('unlink', async (path) => {
-    await deleteExportedFiles(path);
-    const formattedPath = formatPath(path);
-    log(chalk.red('delete:'), formattedPath);
-  });
-};
-
 /**
  * Gets the list of the current `.ajblueprint`s, the list of exported files (the cache; `last_exported_hashes.json`),
  * and deletes entries found in the cache whose corresponding `.ajblueprint` files were not found
@@ -431,16 +215,11 @@ const deleteStaleExportFiles = async () => {
 };
 
 const main = async () => {
-  const argv = minimist(process.argv.slice(2));
-
   await deleteStaleExportFiles();
 
   const SHOW_VERBOSE = false;
   watchDatapacks(SHOW_VERBOSE);
   watchResourcepack(SHOW_VERBOSE);
-  if (argv.experimental) {
-    watchModels();
-  }
 };
 
 main();

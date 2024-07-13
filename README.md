@@ -92,20 +92,11 @@ Read the descriptions of the following scripts and run them when it is recommend
 
 1. `yarn start export`: run the AJ blueprint export script
 
-   1. add `ELECTRON_ENABLE_LOGGING=1` to your `.env` file to enable log-passthrough from Blockbench's renderer process to the main process. **Run this if your `watch.models` script (from `yarn start watch.experimental`) runs into an error while exporting AJ models.**
-
    We recommend running `yarn start export` at least once, and every time changes to `.ajblueprint` files occur from new incoming commits.
 
 2. `yarn start`: this keeps your local repository's content synced with your `.minecraft` directory -- datapack/resourcepack changes will reflect in-game
 
-  <s>
-   1. if you run `yarn start watch.experimental`, it also watches `.ajblueprint` files and runs our auto-exporter on them -- this reads all `.ajblueprint` files in your local repo and runs Animated Java's `Export Project` function on them.
-      1. we specifically _do not_ commit AJ's exported files to the repo since they are _very large_
-      2. the `watch.models` script _will not_ work if you already have Blockbench open, so don't expect it to do anything while that's the case
-      3. its a little janky and experimental still, so \*\*we recommend manually running `yarn start export` if you run into issues relating to Animated Java export files (missing models, animations, attacks not playing properly)
-  </s>
-
-We recommend keeping `yarn start` running at all times while working on the project.
+   We recommend keeping `yarn start` running at all times while working on the project.
 
 3. `yarn sync`: zips your Minecraft world and copies it to the repo as (`world.zip`). This is how we handle version-control for the actual Minecraft world. This is especially important to run and commit if you make any _physical changes_ to the world like breaking/placing blocks.
 
