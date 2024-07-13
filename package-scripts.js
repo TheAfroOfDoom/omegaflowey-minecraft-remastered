@@ -39,7 +39,6 @@ module.exports = {
     default: 'nps watch',
     watch: {
       default: `node ${watchScriptPath}`,
-      experimental: `node ${watchScriptPath} --experimental`,
     },
     sync: {
       default: 'nps sync.world',
