@@ -3,17 +3,17 @@ const { watch } = require('chokidar');
 const dotenv = require('dotenv');
 const findProcess = require('find-process');
 const { copy, remove, readFile, writeFile } = require('fs-extra');
-// const { glob } = require('glob');
-const { findKey, uniq } = require('lodash');
+const { glob } = require('glob');
+const { difference, findKey, uniq } = require('lodash');
 const minimist = require('minimist');
 const { spawn } = require('node:child_process');
 const { resolve, parse } = require('path');
 
 const {
+  ajblueprintDir,
+  ajblueprintPathsDontOpenSuffix,
   ajExporterPassthroughFlagEnd: flagEnd,
   ajExporterPassthroughFlagStart: flagStart,
-  ajmodelDir,
-  ajmodelPathsDontOpenSuffix,
 } = require('./shared-consts');
 const {
   assertEnvironmentVariables,
@@ -108,7 +108,6 @@ const watchResourcepack = async (showVerbose) => {
     /^resourcepack[/\\]assets[/\\]omega-flowey[/\\]models[/\\]last_exported_hashes\.json$/,
     /^resourcepack[/\\]resourcepack\.ajmeta$/,
     /\.ajblueprint$/,
-    /\.ajmodel$/,
     /\.pdn$/,
   ];
   /** silenced files are still watched, but aren't logged */
@@ -149,11 +148,11 @@ const watchResourcepack = async (showVerbose) => {
   });
 };
 
-/** Deletes the exported AJ files associated with the input `.ajmodel` file path */
+/** Deletes the exported AJ files associated with the input `.ajblueprint` file path */
 const deleteExportedFiles = async (path) => {
   // We have to match the model's info from `last_exported_hashes` since
   // we can't parse the (non-existent) file anymore
-  const lastExported = parseLastExportedHashes(ajmodelDir);
+  const lastExported = parseLastExportedHashes(ajblueprintDir);
   const uuid = findKey(lastExported, (modelInfo) =>
     modelInfo.path.endsWith(path.replaceAll('\\', '/')),
   );
@@ -194,7 +193,7 @@ const deleteExportedFiles = async (path) => {
   // await writeFile(datapackAjmetaPath, content);
 
   lastExported[uuid] = undefined;
-  updateLastExportedHashes(ajmodelDir, lastExported);
+  updateLastExportedHashes(ajblueprintDir, lastExported);
 };
 
 const bbCLIProcessExists = async () =>
@@ -249,7 +248,7 @@ const watchModels = async () => {
    * in `last_exported_hashes.json`
    */
   const shouldExport = async (path) => {
-    const lastExported = parseLastExportedHashes(ajmodelDir);
+    const lastExported = parseLastExportedHashes(ajblueprintDir);
     const { modelString, uuid } = await parseModel(path);
     const currentHash = await hash(modelString);
     return lastExported[uuid]?.hash !== currentHash;
@@ -318,7 +317,7 @@ const watchModels = async () => {
     );
 
     const modelPathsDontOpenFileHack = modelPaths.map(
-      (path) => `${path}${ajmodelPathsDontOpenSuffix}`,
+      (path) => `${path}${ajblueprintPathsDontOpenSuffix}`,
     );
     const modelPathsArg = modelPathsDontOpenFileHack.join(',');
 
@@ -367,18 +366,18 @@ const watchModels = async () => {
 
   const ignored = [
     regexDotFiles,
-    /.*_dev\.ajmodel$/,
+    /.*_dev\.ajblueprint$/,
     /last_exported_hashes\.json$/,
   ];
   const awaitWriteFinish = {
     stabilityThreshold: 50,
     pollInterval: 50,
   };
-  const watcher = watch(ajmodelDir, { awaitWriteFinish, ignored });
+  const watcher = watch(ajblueprintDir, { awaitWriteFinish, ignored });
 
-  /** Converts a path's `\` to `/` and removes the `ajmodelDir` prefix */
+  /** Converts a path's `\` to `/` and removes the `ajblueprintDir` prefix */
   const formatPath = (path) =>
-    normalizePath(path).replace(`${ajmodelDir}/`, '');
+    normalizePath(path).replace(`${ajblueprintDir}/`, '');
 
   watcher.on('ready', () => {
     log('initialized');
@@ -405,31 +404,31 @@ const watchModels = async () => {
 };
 
 /**
- * Gets the list of the current `.ajmodel`s, the list of exported files (the cache; `last_exported_hashes.json`),
- * and deletes entries found in the cache whose corresponding `.ajmodel` files were not found
+ * Gets the list of the current `.ajblueprint`s, the list of exported files (the cache; `last_exported_hashes.json`),
+ * and deletes entries found in the cache whose corresponding `.ajblueprint` files were not found
  */
-const deleteStaleExportFiles = async () => void 0;
-// TODO(103): this needs to be updated to the AJ v1.0 format
-// const log = (...args) => {
-//   const prefix = chalk.bgYellow(chalk.bold('[initializing]'));
-//   console.log(prefix, ...args);
-// };
+const deleteStaleExportFiles = async () => {
+  const log = (...args) => {
+    const prefix = chalk.bgYellow(chalk.bold('[initializing]'));
+    console.log(prefix, ...args);
+  };
 
-// const ajmodels = await glob(`${ajmodelDir}/**/*.ajmodel`);
-// const lastExported = Object.values(parseLastExportedHashes(ajmodelDir));
-// const validExportedModels = lastExported.filter(({ path }) =>
-//   ajmodels.some((ajmodelPath) =>
-//     path.endsWith(ajmodelPath.replaceAll('\\', '/')),
-//   ),
-// );
-// const staleExportedModels = difference(lastExported, validExportedModels);
-// if (staleExportedModels.length > 0) {
-//   const modelNames = staleExportedModels.map(({ path }) => parse(path).name);
-//   log('deleting stale export files for:', modelNames);
-//   await Promise.all(
-//     staleExportedModels.map(({ path }) => deleteExportedFiles(path)),
-//   );
-// }
+  const ajblueprints = await glob(`${ajblueprintDir}/**/*.ajblueprint`);
+  const lastExported = Object.values(parseLastExportedHashes(ajblueprintDir));
+  const validExportedModels = lastExported.filter(({ path }) =>
+    ajblueprints.some((ajblueprintPath) =>
+      path.endsWith(ajblueprintPath.replaceAll('\\', '/')),
+    ),
+  );
+  const staleExportedModels = difference(lastExported, validExportedModels);
+  if (staleExportedModels.length > 0) {
+    const modelNames = staleExportedModels.map(({ path }) => parse(path).name);
+    log('deleting stale export files for:', modelNames);
+    await Promise.all(
+      staleExportedModels.map(({ path }) => deleteExportedFiles(path)),
+    );
+  }
+};
 
 const main = async () => {
   const argv = minimist(process.argv.slice(2));

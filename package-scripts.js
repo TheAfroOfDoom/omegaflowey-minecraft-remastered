@@ -2,7 +2,7 @@ const dotenv = require('dotenv');
 const { series } = require('nps-utils');
 const { resolve } = require('path');
 
-const { ajmodelDir } = require('./package-scripts/shared-consts');
+const { ajblueprintDir } = require('./package-scripts/shared-consts');
 const { assertEnvironmentVariables } = require('./package-scripts/utils');
 
 dotenv.config();
@@ -10,14 +10,14 @@ dotenv.config();
 assertEnvironmentVariables([
   'ASSETS_DIR',
   'BLOCKBENCH_PATH',
-  'DATAPACK_MCMETA',
-  'RESOURCEPACK_MCMETA',
+  'DATAPACK',
+  'RESOURCEPACK',
 ]);
 
 const assetsDir = process.env.ASSETS_DIR;
 const blockbenchPath = process.env.BLOCKBENCH_PATH;
-const datapackMcmeta = process.env.DATAPACK_MCMETA;
-const resourcePackMcmeta = process.env.RESOURCEPACK_MCMETA;
+const datapack = process.env.DATAPACK;
+const resourcePack = process.env.RESOURCEPACK;
 
 // we have to resolve this path so we can use it with Blockbench
 const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
@@ -29,7 +29,7 @@ const allAnimatedJavaExportFiles = [
   'resourcepack/assets.ajmeta',
   'resourcepack/assets/animated_java',
   'resourcepack/assets/minecraft/models/item/white_dye.json',
-  `${ajmodelDir}/last_exported_hashes.json`,
+  `${ajblueprintDir}/last_exported_hashes.json`,
 ];
 const allAnimatedJavaExportFilesFormatted =
   allAnimatedJavaExportFiles.join(',');
@@ -84,8 +84,8 @@ module.exports = {
       },
     },
     export: {
-      default: series('nps export.run', 'echo finished exporting ajmodels'),
-      run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack-mcmeta="${datapackMcmeta}" --resourcepack-mcmeta="${resourcePackMcmeta}"`,
+      default: series('nps export.run', 'echo finished exporting ajblueprints'),
+      run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
       // forcibly purge the `animated_java` export-cache
       force: series(
         `rimraf ${allAnimatedJavaExportFiles.join(' ')}`,

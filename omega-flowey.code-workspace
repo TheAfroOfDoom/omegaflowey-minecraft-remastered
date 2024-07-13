@@ -44,6 +44,9 @@
     "datapack.trace.server": "messages",
 
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
 
@@ -51,8 +54,7 @@
 
     "files.associations": {
       "*.ajblueprint": "json",
-      "*.ajmeta": "json",
-      "*.ajmodel": "json"
+      "*.ajmeta": "json"
     },
     "files.exclude": {
       "**/versions": true
