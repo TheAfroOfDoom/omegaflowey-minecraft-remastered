@@ -50,7 +50,7 @@ const watchDatapacks = async (showVerbose) => {
   const ignored = [
     regexDotFiles,
     /.*\.md$/,
-    /^datapacks[/\\]animated_java[/\\]datapack\.ajmeta$/,
+    /^datapacks[/\\]animated_java[/\\]data\.ajmeta$/,
   ];
   /** silenced files are still watched, but aren't logged */
   const silenced = [/^datapacks[/\\]animated_java/];
@@ -98,14 +98,13 @@ const watchResourcepack = async (showVerbose) => {
   const ignored = [
     regexDotFiles,
     /^resourcepack[/\\]assets[/\\]omega-flowey[/\\]models[/\\]last_exported_hashes\.json$/,
-    /^resourcepack[/\\]resourcepack\.ajmeta$/,
+    /^resourcepack[/\\]assets\.ajmeta$/,
     /\.ajblueprint$/,
     /\.pdn$/,
   ];
   /** silenced files are still watched, but aren't logged */
   const silenced = [
     /^resourcepack[/\\]assets[/\\]animated_java/,
-    /^resourcepack[/\\]assets[/\\]minecraft[/\\]models[/\\]item[/\\]animated_java_empty\.json$/,
     /^resourcepack[/\\]assets[/\\]minecraft[/\\]models[/\\]item[/\\]white_dye\.json$/,
   ];
   const isSilenced = (path) => silenced.some((pattern) => pattern.test(path));
