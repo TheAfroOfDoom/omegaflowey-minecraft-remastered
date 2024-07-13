@@ -9652,7 +9652,7 @@
 			"override": false,
 			"length": 0.3,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": false,
 			"path": "",
 			"anim_time_update": "",
@@ -9790,6 +9790,119 @@
 							"time": 0.15,
 							"color": -1,
 							"interpolation": "catmullrom",
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				}
+			}
+		},
+		{
+			"uuid": "8a6c73a8-6ca4-2f84-885c-974a3b5af08a",
+			"name": "in_out",
+			"loop": "loop",
+			"override": false,
+			"length": 0.55,
+			"snapping": 20,
+			"selected": true,
+			"saved": false,
+			"path": "",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [
+				{
+					"icon": "folder",
+					"name": "nose_reference",
+					"value": "9c035703-cee6-52af-50ef-9d02b5a5e81b"
+				},
+				{
+					"icon": "folder",
+					"name": "lower_eye_reference",
+					"value": "2644ab43-48b1-01a8-cc7c-c51557cc3f6d"
+				},
+				{
+					"icon": "folder",
+					"name": "lower_eye_reference2",
+					"value": "451ac05d-afb0-6160-8a73-1abf65e2fd98"
+				},
+				{
+					"icon": "anchor",
+					"name": "pupil",
+					"value": "a32987fe-d4b6-e75b-36c4-023cb0098a25"
+				},
+				{
+					"icon": "anchor",
+					"name": "pupil2",
+					"value": "6411e0f6-8bad-37f3-056a-6bcb9f80b61e"
+				}
+			],
+			"animators": {
+				"42351dff-f773-a8e0-2903-d9eb0d8253b7": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "1"
+								}
+							],
+							"uuid": "a00629a9-e470-66c7-e183-263ea71d6fce",
+							"time": 0.55,
+							"color": -1,
+							"interpolation": "bezier",
+							"bezier_linked": true,
+							"bezier_left_time": [-0.1, -0.1, -0.1],
+							"bezier_left_value": [0, 0, 0],
+							"bezier_right_time": [0.1, 0.1, 0.1],
+							"bezier_right_value": [0, 0, 0],
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": 0,
+									"y": 0,
+									"z": "1"
+								}
+							],
+							"uuid": "c8df71ce-cc4c-c7bb-f7e7-4772b28f344d",
+							"time": 0,
+							"color": -1,
+							"interpolation": "bezier",
+							"bezier_linked": true,
+							"bezier_left_time": [-0.1, -0.1, -0.1],
+							"bezier_left_value": [0, 0, 0],
+							"bezier_right_time": [0.1, 0.1, 0.1],
+							"bezier_right_value": [0, 0, 0],
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": 0,
+									"y": 0,
+									"z": -12
+								}
+							],
+							"uuid": "3adefae5-9421-dc82-58a4-89d580f51f9a",
+							"time": 0.25,
+							"color": -1,
+							"interpolation": "bezier",
+							"bezier_linked": true,
+							"bezier_left_time": [-0.1, -0.1, -0.17667],
+							"bezier_left_value": [0, 0, -0.00008],
+							"bezier_right_time": [0.1, 0.1, 0.17667],
+							"bezier_right_value": [0, 0, 0.00008],
 							"easing": "linear",
 							"easingArgs": []
 						}
