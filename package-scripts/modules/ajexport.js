@@ -110,15 +110,17 @@ export async function script() {
       name,
     };
     loadModelFile(fileObj);
-    await AnimatedJava.API.safeExportProject();
-    const modelName = model.animated_java.settings.project_namespace;
+    // `false` => don't save the blueprint to disk after exporting
+    await AnimatedJava.API.exportProject(false);
+    const modelName = model.blueprint_settings.export_namespace;
     lastExported[uuid] = {
       name: modelName,
       hash: currentHash,
       date: new Date().toISOString(),
       path: file.replaceAll('\\', '/'),
     };
-    Project.close();
+    // `true` => forcibly close the project tab since there will be unsaved changes
+    Project.close(true);
     log(`exported ${modelName}`);
   }
 
@@ -142,10 +144,11 @@ async function getFiles(dir) {
 
 function injectModelPackPaths(modelContent, paths) {
   const model = JSON.parse(modelContent);
-  model.animated_java.settings.resource_pack_mcmeta = paths.resourcepack;
-  model.animated_java.exporter_settings[
-    'animated_java:datapack_exporter'
-  ].datapack_mcmeta = paths.datapack;
+  model.meta.save_location = `${paths.resourcepack}${
+    model.meta.save_location.split('resourcepack')[1]
+  }`;
+  model.blueprint_settings.resource_pack = paths.resourcepack;
+  model.blueprint_settings.data_pack = paths.datapack;
   for (const texture of model.textures) {
     texture.path = texture.path.replaceAll('\\', '/');
     if (texture.path.includes('.minecraft')) {
@@ -166,6 +169,16 @@ function parseEnv() {
   const assetsDir = getArg('--assets-dir=');
   const datapack = getArg('--datapack=');
   const resourcePack = getArg('--resourcepack=');
+
+  const errorIfOutdatedEnv = (val, name) => {
+    if (val.endsWith('pack.mcmeta')) {
+      const err = `Your ${name} in \`.env\` is outdated -- remove \`pack.mcmeta\` from the path`;
+      throw new Error(err);
+    }
+  };
+  errorIfOutdatedEnv(datapack, 'datapack path');
+  errorIfOutdatedEnv(resourcePack, 'resourcepack path');
+
   return {
     assetsDir,
     datapack,
