@@ -31,6 +31,9 @@ tag @e[tag=aj.petal_pipe_middle.root] add petal_pipe.right
 execute positioned 14 48 -6.5 rotated -160 -40 run function animated_java:petal_pipe_middle/summon { args: {} }
 tag @e[tag=aj.petal_pipe_middle.root,tag=!petal_pipe.right] add petal_pipe.left
 
+## Mouth
+execute positioned 0 35.5 -3.15 rotated 0 9 run function animated_java:mouth/summon { args: {} }
+
 ## Nose
 execute positioned 0 37 -13 rotated 0 10 run function animated_java:nose/summon { args: {} }
 
