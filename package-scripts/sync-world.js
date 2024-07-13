@@ -2,9 +2,10 @@ const archiver = require('archiver');
 const chalk = require('chalk');
 const dotenv = require('dotenv');
 const extract = require('extract-zip');
-const { createWriteStream, remove, stat, mkdir, exists } = require('fs-extra');
+const { createWriteStream, stat, mkdir, exists } = require('fs-extra');
 const { glob } = require('glob');
 const minimist = require('minimist');
+const { rimraf } = require('rimraf');
 
 const { assertEnvironmentVariables } = require('./utils');
 
@@ -60,7 +61,7 @@ const deleteOldBackups = async () => {
     const modifiedTime = (await stat(tempBackupPath)).mtime;
     if (Date.now() - modifiedTime > STALE_DURATION) {
       console.log('Deleting stale backup:', tempBackupPath);
-      await remove(tempBackupPath);
+      await rimraf(tempBackupPath);
     }
   }
 };
@@ -73,7 +74,7 @@ const createTempWorldBackupName = async () => {
 };
 
 const syncUp = async () => {
-  await remove(worldBackupPath);
+  await rimraf(worldBackupPath);
   await backupWorld(worldBackupPath);
 };
 
@@ -92,7 +93,7 @@ const syncDown = async () => {
     const path = `${tempBackupPath}/${name}`;
     await backupWorld(path, false);
 
-    await remove(minecraftWorldPath);
+    await rimraf(minecraftWorldPath);
   } else {
     console.log(
       'No pre-existing world save to backup, moving straight to extraction',

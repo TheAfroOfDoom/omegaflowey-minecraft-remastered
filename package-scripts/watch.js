@@ -1,10 +1,11 @@
 const chalk = require('chalk');
 const { watch } = require('chokidar');
 const dotenv = require('dotenv');
-const { copy, remove, readFile, writeFile } = require('fs-extra');
+const { copy, readFile, writeFile } = require('fs-extra');
 const { glob } = require('glob');
 const { difference, findKey } = require('lodash');
 const { parse } = require('path');
+const { rimraf } = require('rimraf');
 
 const { ajblueprintDir } = require('./shared-consts');
 const {
@@ -57,7 +58,7 @@ const watchDatapacks = async (showVerbose) => {
   const copyFilter = (path) => ignored.every((regex) => !regex.test(path));
 
   // Clean copy datapacks on script start
-  await remove(`${worldPath}/datapacks`);
+  await rimraf(`${worldPath}/datapacks`);
   await copy('datapacks', `${worldPath}/datapacks`, { filter: copyFilter });
 
   const watcher = watch('datapacks', {
@@ -78,7 +79,7 @@ const watchDatapacks = async (showVerbose) => {
     logPath(chalk.yellow('change:'), normalizePath(path));
   });
   watcher.on('unlink', async (path) => {
-    await remove(`${worldPath}/${path}`);
+    await rimraf(`${worldPath}/${path}`);
     logPath(chalk.red('delete:'), normalizePath(path));
   });
 };
@@ -111,7 +112,7 @@ const watchResourcepack = async (showVerbose) => {
   const copyFilter = (path) => ignored.every((regex) => !regex.test(path));
 
   // Delete all contents of resourcepack folder on script start
-  await remove(resourcePackBasePath);
+  await rimraf(resourcePackBasePath);
   await copy('resourcepack', resourcePackBasePath, { filter: copyFilter });
 
   const watcher = watch('resourcepack', {
@@ -134,7 +135,7 @@ const watchResourcepack = async (showVerbose) => {
     logPath(chalk.yellow('change:'), normalizePath(path));
   });
   watcher.on('unlink', async (path) => {
-    await remove(dest(path));
+    await rimraf(dest(path));
     logPath(chalk.red('delete:'), normalizePath(path));
   });
 };
@@ -157,9 +158,9 @@ const deleteExportedFiles = async (path) => {
     `resourcepack/assets/animated_java/models/item/${name}`,
   ];
   for (const path of pathsToDeleteEntirely) {
-    remove(path);
+    rimraf(path);
     if (!path.startsWith('datapacks')) {
-      remove(`${resourcePackBasePath}/${path.replace('resourcepack/', '')}`);
+      rimraf(`${resourcePackBasePath}/${path.replace('resourcepack/', '')}`);
     }
   }
 
