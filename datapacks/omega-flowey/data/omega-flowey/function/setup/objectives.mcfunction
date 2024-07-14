@@ -95,10 +95,6 @@ scoreboard objectives add player.flag dummy
 scoreboard objectives add player.shake.pitch dummy
 scoreboard objectives add player.shake.yaw dummy
 
-scoreboard objectives add random dummy
-scoreboard objectives add random.min dummy
-scoreboard objectives add random.range dummy
-
 # x/z spans of the bullet grid
 scoreboard objectives add soul.bullet.position.dx dummy
 scoreboard objectives add soul.bullet.position.dz dummy
