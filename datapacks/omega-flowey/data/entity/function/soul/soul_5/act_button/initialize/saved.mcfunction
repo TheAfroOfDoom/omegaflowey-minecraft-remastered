@@ -1,1 +1,1 @@
-function entity:soul/soul_0/act_button/terminate
+function entity:soul/soul_5/act_button/terminate

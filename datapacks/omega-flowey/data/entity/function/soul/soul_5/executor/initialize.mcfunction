@@ -10,11 +10,11 @@ scoreboard players operation @s soul.bullet.position.z = #soul-0 soul.bullet.pos
 scoreboard players operation @s soul.bullet.position.z.end = #soul-0 soul.bullet.position.z.end
 
 scoreboard players reset @s soul.clock.touched_act_button
-scoreboard players set #soul_0.saved soul.flag 0
-scoreboard players set #soul_0.touched soul.flag 0
+scoreboard players set #soul_5.saved soul.flag 0
+scoreboard players set #soul_5.touched soul.flag 0
 
 # Remove tags
 tag @s remove soul-executor-new
 
 # Play music
-function entity:soul/soul_0/executor/play_music
+function entity:soul/soul_5/executor/play_music

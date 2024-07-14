@@ -1,1 +1,1 @@
-function animated_java:soul_0_sword/remove/this
+function animated_java:soul_5_sword/remove/this
