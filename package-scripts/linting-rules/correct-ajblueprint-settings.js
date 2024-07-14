@@ -28,6 +28,19 @@ const checkRigItem = (model) => {
   return [];
 };
 
+const checkSummonCommands = (model) => {
+  const summonCommands = model.blueprint_settings.summon_commands;
+  if (summonCommands !== '') {
+    return [];
+  }
+
+  let error = `invalid ${chalk.blue('summon_commands')} property; `;
+  error += `it should contain ${chalk.yellow(
+    '"tag @s add ..."',
+  )} commands at a minimum`;
+  return [error];
+};
+
 /**
  * Errors for wrong settings values in .ajblueprint files. Limited to trivial checks
  * (like a setting's defined value not matching an exact pattern).
@@ -42,7 +55,7 @@ const correctAjblueprintSettings = (file) => {
 
   const errors = [];
 
-  const settingsChecks = [checkDatapack, checkRigItem];
+  const settingsChecks = [checkDatapack, checkRigItem, checkSummonCommands];
   for (const settingsCheck of settingsChecks) {
     errors.push(...settingsCheck(ajblueprint));
   }
