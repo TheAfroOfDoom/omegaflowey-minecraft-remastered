@@ -7,25 +7,27 @@ const checkDatapack = (model) => {
   const expected = /datapacks\/animated_java\/?$/;
   const actual = model.blueprint_settings.data_pack;
   const match = expected.test(actual.replaceAll('\\', '/'));
-  if (!match) {
-    let error = `incorrect datapack ${chalk.blue('directory')}; `;
-    error += 'it should target ';
-    error += `${chalk.yellow('datapacks/animated_java')}`;
-    error += `\n\t\t found: ${chalk.red(actual)}`;
-    return [error];
+  if (match) {
+    return [];
   }
-  return [];
+
+  let error = `incorrect datapack ${chalk.blue('directory')}; `;
+  error += 'it should target ';
+  error += `${chalk.yellow('datapacks/animated_java')}`;
+  error += `\n\t\t found: ${chalk.red(actual)}`;
+  return [error];
 };
 
 const checkRigItem = (model) => {
   const expected = 'minecraft:white_dye';
   const actual = model.blueprint_settings.display_item;
-  if (actual !== 'minecraft:white_dye') {
-    let error = `incorrect ${chalk.blue('display_item')}; `;
-    error += `was \`${actual}\`, expected \`${expected}\``;
-    return [error];
+  if (actual === expected) {
+    return [];
   }
-  return [];
+
+  let error = `incorrect ${chalk.blue('display_item')}; `;
+  error += `was \`${actual}\`, expected \`${expected}\``;
+  return [error];
 };
 
 const checkSummonCommands = (model) => {
