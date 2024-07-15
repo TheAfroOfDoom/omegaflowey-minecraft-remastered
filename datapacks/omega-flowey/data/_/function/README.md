@@ -13,4 +13,5 @@ This directory contains convenience functions for developers for quicker calls t
 - `reset`: calls `omega-flowey:reset`
 - `soul/N`: starts soul N's phase
 - `summon`: summons the `omega-flowey` boss's Animated Java models and starts their animations
+  - `summon/remove`: removes the `omega-flowey` boss's Animated Java models
 - `tick`: runs once every tick (intentionally left blank to be customizable)
