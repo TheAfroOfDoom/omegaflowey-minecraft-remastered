@@ -5081,6 +5081,218 @@
 			},
 			"type": "cube",
 			"uuid": "041f8d60-dac1-92b3-f5ec-8a92c2558d97"
+		},
+		{
+			"name": "hitbox",
+			"position": [0, 8, 3],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"ticking_commands": ""
+			},
+			"uuid": "fcd181a9-f63a-3202-5df5-34657ec87c11",
+			"type": "locator"
+		},
+		{
+			"name": "hitbox_visualized",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-8, 0, -5],
+			"to": [8, 16, 11],
+			"autouv": 1,
+			"color": 0,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 8, 3],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "02998223-7081-2af4-3847-de42b51fdea9"
+		},
+		{
+			"name": "hitbox2_visualized",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-8, 16, -11],
+			"to": [8, 32, 5],
+			"autouv": 1,
+			"color": 0,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 24, -3],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "f7f859f0-f9df-3ee1-225a-97cd419e975d"
+		},
+		{
+			"name": "hitbox2",
+			"position": [0, 24, -3],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"ticking_commands": ""
+			},
+			"uuid": "753a7dc5-f918-4bb8-8b54-02d8f07d4e81",
+			"type": "locator"
+		},
+		{
+			"name": "hitbox3_visualized",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-8, 16, -27],
+			"to": [8, 32, -11],
+			"autouv": 1,
+			"color": 0,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 24, -19],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "dafb9786-0b74-837f-b40f-61a453dbf5d6"
+		},
+		{
+			"name": "hitbox3",
+			"position": [0, 24, -19],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"ticking_commands": ""
+			},
+			"uuid": "07371823-d65e-1a4c-98e2-ae89c98f852d",
+			"type": "locator"
+		},
+		{
+			"name": "hitbox4_visualized",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-8, 16, -43],
+			"to": [8, 32, -27],
+			"autouv": 1,
+			"color": 0,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 24, -35],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "89b17aff-e29f-ada9-d613-cdf41e27b0be"
+		},
+		{
+			"name": "hitbox4",
+			"position": [0, 24, -35],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"ticking_commands": ""
+			},
+			"uuid": "4ef915c0-5b3d-7e0f-a623-3811f0035469",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -5219,7 +5431,15 @@
 				"3237b19a-81b6-a9a4-b789-1a00f4052ece",
 				"796028bf-ac11-82ca-1186-184375d07226",
 				"60bcbe89-e559-ccb5-e97e-699923552b13",
-				"fc9364f9-53f5-d65c-670f-28b6746a4102"
+				"fc9364f9-53f5-d65c-670f-28b6746a4102",
+				"fcd181a9-f63a-3202-5df5-34657ec87c11",
+				"02998223-7081-2af4-3847-de42b51fdea9",
+				"753a7dc5-f918-4bb8-8b54-02d8f07d4e81",
+				"f7f859f0-f9df-3ee1-225a-97cd419e975d",
+				"07371823-d65e-1a4c-98e2-ae89c98f852d",
+				"dafb9786-0b74-837f-b40f-61a453dbf5d6",
+				"4ef915c0-5b3d-7e0f-a623-3811f0035469",
+				"89b17aff-e29f-ada9-d613-cdf41e27b0be"
 			]
 		}
 	],
