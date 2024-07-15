@@ -87,6 +87,7 @@ scoreboard objectives add group.id.tree.level dummy
 scoreboard objectives add math.0 dummy
 scoreboard objectives add math.1 dummy
 scoreboard objectives add math.2 dummy
+scoreboard objectives add math.const dummy
 
 scoreboard objectives add music.clock.i dummy
 scoreboard objectives add music.clock.total dummy
