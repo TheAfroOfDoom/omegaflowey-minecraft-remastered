@@ -16,13 +16,6 @@ scoreboard players operation @s math.const = @s math.1
 # math.1 = angle from current yaw to crosshair
 scoreboard players operation @s math.1 -= @s math.0
 
-# stop rotating + shoot a bullet if we are facing the crosshair (eps = 5 degrees)
-execute if score @s math.1 matches -5..5 run function entity:soul/soul_5/indicator/loop/shooting/shoot_bullet with storage soul:soul_5.indicator
-execute if score @s math.1 matches -5..5 run return 0
-
-# ---
-# else, rotate slightly more towards the crosshair
-
 # here, diff can be -360..360. we want to limit this to -180..180, so...
 # if Math.abs(diff) > 180, we actually want to rotate in the other direction (it is faster)
 # scoreboard players operation @s math.2 = @s math.1
@@ -44,6 +37,12 @@ execute if entity @s[tag=rotate_other_direction] run scoreboard players operatio
 
 execute if entity @s[tag=is_negative_diff] run scoreboard players operation @s math.1 *= #-1 mathf.const
 
+# stop rotating + shoot a bullet if we are facing the crosshair (eps = 5 degrees)
+execute if score @s math.1 matches -5..5 run function entity:soul/soul_5/indicator/loop/shooting/shoot_bullet with storage soul:soul_5.indicator
+execute if score @s math.1 matches -5..5 run return 0
+
+# ---
+# else, rotate slightly more towards the crosshair
 # TODO this is linear but in Undertale it's not so fix that
 # here, diff is -180..180
 execute unless score @s math.1 matches 1.. run teleport @s ~ ~ ~ ~-5 ~
