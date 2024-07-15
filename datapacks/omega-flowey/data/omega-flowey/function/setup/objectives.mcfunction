@@ -112,6 +112,9 @@ scoreboard objectives add soul.clock.i dummy
 scoreboard objectives add soul.clock.touched_act_button dummy
 # length an soul-executor will exist (length this soul event will last if the act button is never touched)
 scoreboard objectives add soul.executor.clock.length dummy
+# number of bullets left to summon in a set
+scoreboard objectives add soul.indicator.bullets.remaining dummy
+scoreboard objectives add soul.indicator.bullets.total dummy
 # boolean flags used to mark state changes during soul events
 scoreboard objectives add soul.flag dummy
 
