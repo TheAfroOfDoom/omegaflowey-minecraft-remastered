@@ -6,7 +6,7 @@ scoreboard players add @s attack.clock.i 1
 execute if score @s attack.clock.i matches ..-1 run return 0
 
 # Pause lower_eye animations
-execute if score @s attack.clock.i matches 0 as @e[tag=aj.lower_eye.root] run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/loop/pause_eye
+execute if score @s attack.clock.i matches 0 as @e[tag=aj.lower_eye.root] run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/loop/lower_eye/pause_animation
 
 # Summon indicators at each lower_eye every `attack.executor.rate` ticks
 scoreboard players operation @s math.0 = @s attack.clock.i
