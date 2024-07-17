@@ -15,6 +15,6 @@ assert score #group.id.next group.id matches 1
 kill @e[tag=test.setup.should-reset-group-ids]
 assert score #group.id.next group.id matches 1
 
-function omega-flowey:setup
+function omega-flowey:reset
 
 assert score #group.id.next group.id matches 0
