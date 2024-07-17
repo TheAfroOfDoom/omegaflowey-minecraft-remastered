@@ -10,5 +10,4 @@ function omega-flowey:setup/objectives
 
 function entity:setup
 
-# Reset next group ID if there are no `groupable` entities
-execute unless entity @e[tag=groupable] run scoreboard players set #group.id.next group.id 0
+function utils:log { text_component: '[{"color": "aqua", "text": "Datapack initialized"}]'}
