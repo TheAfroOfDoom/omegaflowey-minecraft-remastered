@@ -1,4 +1,4 @@
-# @batch omega-flowey:setup
+# @batch omega-flowey:reset
 
 ## should wipe any preexisting scores
 
