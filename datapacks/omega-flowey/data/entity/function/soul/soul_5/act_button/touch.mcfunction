@@ -8,4 +8,4 @@ function animated_java:act_button/variants/selected/apply
 say * You called for help...
 # TODO(36): transparent fade-out of `act_button` model?
 
-execute as @e[tag=soul_5,tag=soul-executor] run function entity:soul/soul_5/executor/initialize/touch
+$execute as $(executor_uuid) run function entity:soul/soul_5/executor/initialize/touch
