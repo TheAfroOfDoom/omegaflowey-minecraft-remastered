@@ -10184,7 +10184,7 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:0.3125f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"summon_commands": "data merge entity @s {data:{radius:0.4f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
 				"ticking_commands": ""
 			},
 			"uuid": "29ef4d2e-f582-9a19-5e9e-c7282e29e616",
@@ -10197,8 +10197,8 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-5, 19, -13],
-			"to": [5, 29, -3],
+			"from": [-6.5, 17.5, -14.5],
+			"to": [6.5, 30.5, -1.5],
 			"autouv": 1,
 			"color": 0,
 			"visibility": false,
@@ -10206,22 +10206,22 @@
 			"origin": [0, 24, -8],
 			"faces": {
 				"north": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"east": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"south": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"west": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"up": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"down": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				}
 			},
 			"type": "cube",
@@ -10234,8 +10234,8 @@
 			"locked": false,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-5, 19, -3],
-			"to": [5, 29, 7],
+			"from": [-6.5, 17.5, -3],
+			"to": [6.5, 30.5, 10],
 			"autouv": 1,
 			"color": 0,
 			"visibility": false,
@@ -10243,22 +10243,22 @@
 			"origin": [0, 24, 2],
 			"faces": {
 				"north": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"east": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"south": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"west": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"up": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				},
 				"down": {
-					"uv": [0, 0, 10, 10]
+					"uv": [0, 0, 13, 13]
 				}
 			},
 			"type": "cube",
@@ -10274,10 +10274,42 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:0.3125f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"summon_commands": "data merge entity @s {data:{radius:0.4f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
 				"ticking_commands": ""
 			},
 			"uuid": "0e11ab5a-7346-912c-72f0-290d64d8f828",
+			"type": "locator"
+		},
+		{
+			"name": "locator3",
+			"position": [0, 36.8, 2],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:0.4f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"ticking_commands": ""
+			},
+			"uuid": "5dbb03e8-40e4-814f-dfe6-59d2a4781ba0",
+			"type": "locator"
+		},
+		{
+			"name": "locator4",
+			"position": [0, 36.8, -8],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:0.4f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"ticking_commands": ""
+			},
+			"uuid": "3bae99b1-dfe6-c2e4-e3da-5f119b03ec60",
 			"type": "locator"
 		}
 	],
@@ -10424,6 +10456,8 @@
 				"29ef4d2e-f582-9a19-5e9e-c7282e29e616",
 				"fb4f2ed4-7087-0101-5911-7e12a643ce54",
 				"0e11ab5a-7346-912c-72f0-290d64d8f828",
+				"5dbb03e8-40e4-814f-dfe6-59d2a4781ba0",
+				"3bae99b1-dfe6-c2e4-e3da-5f119b03ec60",
 				"b8bfff45-a6d6-08c7-ea5d-ee746d405f0f"
 			]
 		},
