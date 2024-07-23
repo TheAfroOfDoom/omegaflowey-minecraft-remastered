@@ -1,5 +1,5 @@
-# Summon bandaid
-$execute positioned $(x) 34.5 $(z) rotated ~ 0 run function animated_java:soul_5_bandaid/summon { args: {} }
+# Summon flower
+$execute positioned $(x) ~ $(z) run function animated_java:soul_5_flower/summon { args: {} }
 
-# Initialize bandaid
-execute as @e[tag=bandaid-new] run function entity:soul/soul_5/bandaid/initialize
+# Initialize flower
+execute as @e[tag=soul-heal-new] run function entity:soul/soul_5/heal/initialize

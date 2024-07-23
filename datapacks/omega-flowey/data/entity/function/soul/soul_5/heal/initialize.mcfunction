@@ -1,1 +1,1 @@
-tag @s remove bandaid-new
+tag @s remove soul-heal-new
