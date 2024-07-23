@@ -1,5 +1,6 @@
-# randomize angle (0..2pi)
-execute store result storage soul:soul_5.indicator next_bullet_angle_from_player float 0.01 run random value 0..35999
+# randomize yaw (0..2pi) until the next crosshair would no longer summon too close to the indicator
+scoreboard players set @s math.trials -1
+function entity:soul/soul_5/indicator/loop/aiming/next_crosshair/randomize_yaw
 
 function entity:soul/soul_5/crosshair/summon with storage soul:soul_5.indicator
 
