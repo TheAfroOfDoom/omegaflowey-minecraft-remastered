@@ -10052,6 +10052,112 @@
 			},
 			"type": "cube",
 			"uuid": "57d2c1eb-e88e-2dec-10f8-3870abfa4768"
+		},
+		{
+			"name": "locator",
+			"position": [0, 24, -8],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:0.3125f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"ticking_commands": ""
+			},
+			"uuid": "29ef4d2e-f582-9a19-5e9e-c7282e29e616",
+			"type": "locator"
+		},
+		{
+			"name": "locator_hitbox",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-5, 19, -13],
+			"to": [5, 29, -3],
+			"autouv": 1,
+			"color": 0,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 24, -8],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 10, 10]
+				},
+				"east": {
+					"uv": [0, 0, 10, 10]
+				},
+				"south": {
+					"uv": [0, 0, 10, 10]
+				},
+				"west": {
+					"uv": [0, 0, 10, 10]
+				},
+				"up": {
+					"uv": [0, 0, 10, 10]
+				},
+				"down": {
+					"uv": [0, 0, 10, 10]
+				}
+			},
+			"type": "cube",
+			"uuid": "fb4f2ed4-7087-0101-5911-7e12a643ce54"
+		},
+		{
+			"name": "locator2_hitbox",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-5, 19, -3],
+			"to": [5, 29, 7],
+			"autouv": 1,
+			"color": 0,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 24, 2],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 10, 10]
+				},
+				"east": {
+					"uv": [0, 0, 10, 10]
+				},
+				"south": {
+					"uv": [0, 0, 10, 10]
+				},
+				"west": {
+					"uv": [0, 0, 10, 10]
+				},
+				"up": {
+					"uv": [0, 0, 10, 10]
+				},
+				"down": {
+					"uv": [0, 0, 10, 10]
+				}
+			},
+			"type": "cube",
+			"uuid": "b8bfff45-a6d6-08c7-ea5d-ee746d405f0f"
+		},
+		{
+			"name": "locator2",
+			"position": [0, 24, 2],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"summon_commands": "data merge entity @s {data:{radius:0.3125f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
+				"ticking_commands": ""
+			},
+			"uuid": "0e11ab5a-7346-912c-72f0-290d64d8f828",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -10065,7 +10171,7 @@
 			"uuid": "fd69cc10-48dd-8f06-3126-abefd9b1e5e6",
 			"export": true,
 			"mirror_uv": false,
-			"isOpen": false,
+			"isOpen": true,
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
@@ -10193,7 +10299,11 @@
 				"dffb9d60-37bd-888e-4818-4e2bc27f7c38",
 				"d23513f8-f42d-fdaf-e52a-e403c2564b48",
 				"000c80dc-1fb8-478a-a503-db36d23a3611",
-				"fd50af47-d4cb-dd73-7782-79b499152e03"
+				"fd50af47-d4cb-dd73-7782-79b499152e03",
+				"29ef4d2e-f582-9a19-5e9e-c7282e29e616",
+				"fb4f2ed4-7087-0101-5911-7e12a643ce54",
+				"0e11ab5a-7346-912c-72f0-290d64d8f828",
+				"b8bfff45-a6d6-08c7-ea5d-ee746d405f0f"
 			]
 		},
 		{
