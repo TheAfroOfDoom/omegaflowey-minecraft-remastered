@@ -1,5 +1,5 @@
 # Move forward
-teleport @s ^ ^ ^0.7
+teleport @s ^ ^ ^1.0
 
 ## Delete bullets once they visually escape the arena
 execute store result score @s soul.bullet.position.x run data get entity @s Pos[0] 100
