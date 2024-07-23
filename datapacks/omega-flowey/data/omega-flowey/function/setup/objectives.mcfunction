@@ -109,6 +109,7 @@ scoreboard objectives add soul.bullet.position.yaw dummy
 # z start/end points of the bullet grid
 scoreboard objectives add soul.bullet.position.z dummy
 scoreboard objectives add soul.bullet.position.z.end dummy
+scoreboard objectives add soul.clock.animation dummy
 scoreboard objectives add soul.clock.i dummy
 # used as a reference score for when the player touches the ACT button
 scoreboard objectives add soul.clock.touched_act_button dummy

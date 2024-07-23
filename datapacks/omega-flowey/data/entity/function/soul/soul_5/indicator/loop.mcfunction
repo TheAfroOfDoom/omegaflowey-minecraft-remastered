@@ -8,3 +8,6 @@ execute if score @s soul.clock.i matches ..-1 run return 0
 execute if entity @s[tag=soul_5.idle] run function entity:soul/soul_5/indicator/loop/idle
 execute if entity @s[tag=soul_5.aiming] run function entity:soul/soul_5/indicator/loop/aiming
 execute if entity @s[tag=soul_5.shooting] run function entity:soul/soul_5/indicator/loop/shooting
+
+# Shaking animation
+execute if entity @s[tag=shaking] run function entity:soul/soul_5/indicator/loop/shaking
