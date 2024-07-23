@@ -6,7 +6,7 @@ scoreboard players operation @s soul.indicator.bullets.remaining = @s soul.indic
 
 scoreboard players set @s soul.indicator.bullets.cumulative-total 0
 
-# Store this indicator's UUID to a global storage for later reference
+# Store this UUID to a global storage for later reference
 function gu:generate
 data modify storage soul:soul_5 indicator_uuid set from storage gu:main out
 data modify storage soul:soul_5.indicator indicator_uuid set from storage gu:main out
