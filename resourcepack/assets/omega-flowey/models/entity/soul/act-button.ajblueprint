@@ -4401,6 +4401,96 @@
 					]
 				}
 			}
+		},
+		{
+			"uuid": "37090907-4997-3d06-f7df-e6ec451ef506",
+			"name": "soul_5",
+			"loop": "hold",
+			"override": false,
+			"length": 0.75,
+			"snapping": 20,
+			"selected": true,
+			"saved": false,
+			"path": "",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [],
+			"animators": {
+				"e96625fa-5fd0-3b7e-324e-f76471232df3": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": 90,
+									"z": "0"
+								}
+							],
+							"uuid": "cbd172a8-d771-ff78-b1fe-bca67af32552",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": 24,
+									"z": "0"
+								}
+							],
+							"uuid": "54e8f936-f3d1-fcde-2089-32f0e378d441",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.2",
+									"y": "0.2",
+									"z": "0.2"
+								}
+							],
+							"uuid": "00be2247-4941-35ae-f73e-afb64a05158d",
+							"time": 0,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.5",
+									"y": "0.5",
+									"z": "0.5"
+								}
+							],
+							"uuid": "73f810ca-b2ee-e173-4bfc-640b98779623",
+							"time": 0.75,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "easeOutExpo",
+							"easingArgs": []
+						}
+					]
+				}
+			}
 		}
 	],
 	"animation_controllers": []
