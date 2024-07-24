@@ -26,15 +26,29 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 <details>
   <summary><strong>Workspace</strong></summary>
 
-1.  Install [`Node.js >= 16.10`](https://nodejs.org/en/download)
-2.  Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
-3.  Initialize the repo by running `yarn`
-4.  Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
-5.  Copy-paste `.env.EXAMPLE` and rename it to `.env`
+1. Install [`Node.js >= 16.10`](https://nodejs.org/en/download)
+2. Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
+3. Initialize the repo by running `yarn`
+4. Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
+5. Copy-paste `.env.EXAMPLE` and rename it to `.env`
 
-    1.  Replace all the paths in there with paths on your local machine -- e.g. replacing `afro` with `<YOUR_USERNAME>`.
+   1. Replace all the paths in your new `.env` with paths on your local machine -- e.g. replacing `afro` with `<YOUR_USERNAME>`.
 
-    Most of these variables are pretty straightforward except for `ASSETS_DIR` -- you'll want to follow this [reddit post](https://www.reddit.com/r/Minecraft/comments/wdx9mk/how_do_i_find_the_assets_folder_in_minecraft/iikxx3d/) to extract a vanilla assets folder that you can point `ASSETS_DIR` to
+   2. Replace `ASSETS_DIR` by following these steps:
+
+      1. Extract a vanilla assets folder for Blockbench to use by following this [reddit post](https://www.reddit.com/r/Minecraft/comments/wdx9mk/how_do_i_find_the_assets_folder_in_minecraft/iikxx3d/)
+
+         1. A typical `.minecraft` assets folder is found at `%appdata%/.minecraft/versions`
+
+         2. You will need some form of file extraction software -- e.g. [7-Zip](https://www.7-zip.org/)
+
+         3. The file context to extract the `.jar` will look something like `7-Zip > Extract to "1.21\"`
+
+      2. Set `ASSETS_DIR` to the path to your extracted version folder
+
+         1. **Make sure to point to the doubly nested folder** -- e.g. `.../versions/1.21/1.21`
+
+6. Run `yarn down` to extract the Minecraft world to your local Minecraft's `saves` directory (so you can open the world in-game)
 
 </details>
 
@@ -46,8 +60,9 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 1. [Blockbench](https://www.blockbench.net/downloads) -- for 3D modelling
    - Install our Blockbench CLI plugin:
      - Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `bb-cli.js` file from your local `omega-flowey-remastered` repo (`omega-flowey-remastered/package-scripts/modules/bb-cli.js`).
-2. [Animated Java 1.0.0 pre-release](https://discord.com/channels/785339959518953482/785500934092226580/1253042188363759666)
-   - see the AJ [docs](https://animated-java.github.io/docs/resources/installing-pre-releases) for how to install a pre-release.
+   - Install Animated Java from the Blockbench plugin store
+     - see the [docs](https://animated-java.dev/docs/getting-started/installing-animated-java#installing-animated-java) for a detailed guide on how to do this.
+   - Restart Blockbench after installing these plugins
 
 </details>
 
@@ -69,7 +84,7 @@ We also recommend using [blockcolors.app](https://blockcolors.app/) to get a rep
 ---
 
 <details>
-  <summary><strong>Testing</strong></summary>
+  <summary><strong>Local Unit Testing (Optional)</strong></summary>
 
 1. Download the [Fabric mod loader](https://fabricmc.net/) and install a new profile to your Minecraft launcher
 2. Download the [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files) jar
@@ -90,7 +105,7 @@ We also recommend using [blockcolors.app](https://blockcolors.app/) to get a rep
 
 Read the descriptions of the following scripts and run them when it is recommended to:
 
-1. `yarn start export`: run the AJ blueprint export script
+1. `yarn start export`: run the Animated Java (AJ) blueprint export script
 
    We recommend running `yarn start export` at least once, and every time changes to `.ajblueprint` files occur from new incoming commits.
 
@@ -98,9 +113,11 @@ Read the descriptions of the following scripts and run them when it is recommend
 
    We recommend keeping `yarn start` running at all times while working on the project.
 
-3. `yarn sync`: zips your Minecraft world and copies it to the repo as (`world.zip`). This is how we handle version-control for the actual Minecraft world. This is especially important to run and commit if you make any _physical changes_ to the world like breaking/placing blocks.
+3. `yarn down`: extracts the Minecraft world in the repo to your local Minecraft saves. This is important to run whenever there's changes to the world (see `yarn sync` above) or you want to hard-reset your world state, e.g. if you made any changes you want to discard.
 
-4. `yarn lint`: runs Prettier, ESLint, and our custom linting rules on our files. Run this prior to pushing commits to save on our workflow hours.
+4. `yarn sync`: zips your Minecraft world and copies it to the repo as (`world.zip`). This is how we handle version-control for the actual Minecraft world. This is especially important to run and commit if you make any _physical changes_ to the world like breaking/placing blocks.
+
+5. `yarn lint`: runs Prettier, ESLint, and our custom linting rules on our files. Run this prior to pushing commits to save on our workflow hours.
 
 #### Adding a new model/animation
 
