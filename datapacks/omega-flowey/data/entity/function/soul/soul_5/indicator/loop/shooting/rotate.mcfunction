@@ -43,7 +43,7 @@ execute if score @s math.1 matches -5..5 run return 0
 
 # ---
 # else, rotate slightly more towards the crosshair
-# TODO this is linear but in Undertale it's not so fix that
+# TODO(131): this is linear but in Undertale it's not so fix that
 # here, diff is -180..180
 execute unless score @s math.1 matches 1.. run teleport @s ~ ~ ~ ~-9 ~
 execute if score @s math.1 matches 1.. run teleport @s ~ ~ ~ ~9 ~
