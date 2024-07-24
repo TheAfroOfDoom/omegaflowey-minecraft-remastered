@@ -7,10 +7,9 @@ execute if score #soul_5.flower_touched_player soul.flag matches 1 run return 0
 # Move forward
 teleport @s ^ ^ ^1.0
 
-## Delete bullets once they visually escape the arena
-# TODO this should share code with `soul_5/bullet`
-execute store result score @s soul.bullet.position.x run data get entity @s Pos[0] 100
-execute store result score @s soul.bullet.position.z run data get entity @s Pos[2] 100
-execute unless score @s soul.bullet.position.x matches -3100..3200 run tag @s add should-terminate
-execute unless score @s soul.bullet.position.z matches -9600..-4600 run tag @s add should-terminate
-execute if entity @s[tag=should-terminate] run function entity:soul/soul_5/healer/terminate
+## Delete healers once they visually escape the arena
+function entity:soul/soul_5/shared/terminate_unless_in_region { \
+  x_score: 'soul.healer.position.x', \
+  z_score: 'soul.healer.position.z', \
+  terminate_command: 'function entity:soul/soul_5/healer/terminate' \
+}
