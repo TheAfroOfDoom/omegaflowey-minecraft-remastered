@@ -107,11 +107,19 @@ Read the descriptions of the following scripts and run them when it is recommend
 
 1. `yarn start export`: run the Animated Java (AJ) blueprint export script
 
-   We recommend running `yarn start export` at least once, and every time changes to `.ajblueprint` files occur from new incoming commits.
+    We recommend running `yarn start export` at least once, and every time changes to `.ajblueprint` files occur from new incoming commits.
+
+    1. `yarn start export.force`
+
+        Normally, `yarn start export` keeps track of what files have been exported on your local machine via each model's file hash.
+
+        Sometimes this gets out of sync (for various, usually rare, reasons); in this case you can run `yarn start export.force` to have the auto-exporter forcibly re-export every model in the repository.
+
+        This shouldn't be your default export script because it takes around a minute to run, but is completely safe to do if you're ever unconfident that your exported model files are correct.
 
 2. `yarn start`: this keeps your local repository's content synced with your `.minecraft` directory -- datapack/resourcepack changes will reflect in-game
 
-   We recommend keeping `yarn start` running at all times while working on the project.
+    We recommend keeping `yarn start` running at all times while working on the project.
 
 3. `yarn down`: extracts the Minecraft world in the repo to your local Minecraft saves. This is important to run whenever there's changes to the world (see `yarn sync` above) or you want to hard-reset your world state, e.g. if you made any changes you want to discard.
 
