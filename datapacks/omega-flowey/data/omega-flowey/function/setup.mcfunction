@@ -7,6 +7,7 @@ team modify player friendlyFire false
 team modify player seeFriendlyInvisibles false
 
 function omega-flowey:setup/objectives
+function omega-flowey:setup/const
 
 function entity:setup
 
