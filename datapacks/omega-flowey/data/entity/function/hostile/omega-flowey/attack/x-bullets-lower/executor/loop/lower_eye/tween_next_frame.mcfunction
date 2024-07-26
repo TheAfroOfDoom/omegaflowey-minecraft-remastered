@@ -8,6 +8,7 @@ execute if score @s math.0 matches 121.. run scoreboard players set @s math.0 1
 execute store result storage attack:x-bullets-lower to_frame int 1 run scoreboard players get @s math.0
 
 # tween to next frame over `tween_duration` seconds
-execute store result storage attack:x-bullets-lower duration int 1 run scoreboard players get #attack-x-bullets-lower.tween_duration math.const
+execute store result storage attack:x-bullets-lower duration int 1 \
+  run scoreboard players get #attack-x-bullets-lower.tween_duration math.const
 
 function animated_java:lower_eye/animations/look_around/tween with storage attack:x-bullets-lower
