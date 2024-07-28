@@ -1,9 +1,4 @@
-# Update state flag
-scoreboard players set #soul_0.touched soul.flag 1
-
-# Apply yellow-highlighted variant
-function animated_java:act_button/variants/selected/apply
-
+execute as @e[tag=act-button-new] at @s run \
 summon block_display -2.5 49.5 -34.0 \
     {Tags:["omega-flowey-remastered","soul","soul_0","call-for-help-display"], \
     Passengers:[ \
@@ -37,7 +32,3 @@ summon block_display -2.5 49.5 -34.0 \
           } \
         ] \
       }
-
-# TODO(36): transparent fade-out of `act_button` model?
-
-execute as @e[tag=soul_0,tag=soul-executor] run function entity:soul/soul_0/executor/initialize/touch
