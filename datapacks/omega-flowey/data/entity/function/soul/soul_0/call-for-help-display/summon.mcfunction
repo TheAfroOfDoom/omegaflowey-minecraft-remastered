@@ -1,4 +1,3 @@
-execute as @e[tag=act-button-new] at @s run \
 summon block_display -2.5 49.5 -34.0 \
     {Tags:["omega-flowey-remastered","soul","soul_0","call-for-help-display"], \
     Passengers:[ \
