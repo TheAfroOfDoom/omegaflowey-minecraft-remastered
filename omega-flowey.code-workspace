@@ -9,6 +9,10 @@
       "path": "./datapacks/omega-flowey/data/entity/function/hostile/omega-flowey"
     },
     {
+      "name": "entity:soul",
+      "path": "./datapacks/omega-flowey/data/entity/function/soul"
+    },
+    {
       "name": "minecraft",
       // TODO(2): dev agnostic minecraft assets path? ideally through `.env`, but not possible until
       // https://github.com/microsoft/vscode/issues/44755 is complete
@@ -49,6 +53,7 @@
     },
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
+    "editor.trimAutoWhitespace": true,
 
     "explorer.copyRelativePathSeparator": "/",
 
@@ -65,7 +70,6 @@
       "./versions": true
     },
 
-    "terminal.integrated.cwd": ".",
-    "terminal.integrated.defaultLocation": "editor"
+    "terminal.integrated.cwd": "."
   }
 }

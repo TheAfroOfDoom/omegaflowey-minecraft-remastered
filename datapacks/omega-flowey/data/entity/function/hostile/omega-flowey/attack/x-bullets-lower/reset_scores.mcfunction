@@ -8,3 +8,5 @@ scoreboard players set #attack-x-bullets-lower attack.executor.clock.length 56
 scoreboard players set #attack-x-bullets-lower attack.executor.rate 8
 scoreboard players set #attack-x-bullets-lower attack.indicator.total 7
 scoreboard players set #attack-x-bullets-lower attack.speed.z 150
+
+scoreboard players set #attack-x-bullets-lower.tween_duration math.const 3

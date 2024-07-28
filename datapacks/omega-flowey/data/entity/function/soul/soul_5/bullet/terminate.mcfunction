@@ -1,0 +1,1 @@
+function animated_java:soul_5_bullet/remove/this
