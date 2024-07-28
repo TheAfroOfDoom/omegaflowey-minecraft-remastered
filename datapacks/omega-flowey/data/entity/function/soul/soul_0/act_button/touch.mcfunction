@@ -11,7 +11,7 @@ summon block_display -2.5 49.5 -34.0 \
     Passengers:[ \ 
         {id:"minecraft:text_display", \
             Tags:[call-for-help-display], \ 
-            text:"{\"text\":\"* You Called For Help. . .\",\"color\":\"#FFFFFF\",\"font\":\"minecraft:uniform\"}", \ 
+            text:'{"text":"* You Called For Help. . .","color":"#FFFFFF","font":"minecraft:uniform"}', \ 
             text_opacity:255, \ 
             background:-1, \
             alignment:"center", \
@@ -25,7 +25,7 @@ summon block_display -2.5 49.5 -34.0 \
           }, \
         {id:"minecraft:text_display", \
             Tags:[call-for-help-display], \ 
-            text:"{\"text\":\"* You Called For Help. . .\",\"color\":\"#FFFFFF\",\"font\":\"minecraft:uniform\"}", \
+            text:'{"text":"* You Called For Help. . .","color":"#FFFFFF","font":"minecraft:uniform"}', \
             text_opacity:255, \
             background:-16777216, \
             alignment:"center", \
