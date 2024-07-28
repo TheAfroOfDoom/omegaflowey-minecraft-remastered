@@ -1,1 +1,1 @@
-kill @e[tag=call-for-help-display]
+kill @s[tag=call-for-help-display]
