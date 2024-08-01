@@ -2,7 +2,7 @@ summon block_display -2.5 49.5 -34.0 \
     {Tags:["omega-flowey-remastered","soul","soul_0","call-for-help-display"], \
     Passengers:[{id:"minecraft:text_display", \
             Tags:["omega-flowey-remastered","soul","soul_0","call-for-help-display"], \
-            text:'{"text":"  * You called for help. . . ","color":"#FFFFFF","font":"omega-flowey:determinationmono"}', \
+            text:'{"text":" * You called for help... ","color":"#FFFFFF","font":"omega-flowey:determinationmono"}', \
             text_opacity:255, \
             background:-16777216, \
             alignment:"center", \
