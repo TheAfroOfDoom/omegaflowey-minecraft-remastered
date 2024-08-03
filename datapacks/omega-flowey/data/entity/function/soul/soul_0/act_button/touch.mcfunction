@@ -5,7 +5,7 @@ scoreboard players set #soul_0.touched soul.flag 1
 function animated_java:act_button/variants/selected/apply
 
 # Summon call for help display
-function entity:soul/soul_0/call_for_help_display/summon
+function entity:soul/shared/call_for_help_display/summon
 
 # TODO(36): transparent fade-out of `act_button` model?
 
