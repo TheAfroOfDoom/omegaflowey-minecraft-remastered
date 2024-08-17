@@ -1,5 +1,6 @@
 const crypto = require('crypto');
-const { existsSync, readFileSync, writeFileSync } = require('fs');
+const { existsSync, readdirSync, readFileSync, writeFileSync } = require('fs');
+const { resolve } = require('path');
 
 const assertEnvironmentVariables = (names) => {
   for (const envVariableName of names) {
@@ -40,8 +41,34 @@ const updateLastExportedHashes = (ajblueprintDir, lastExported) => {
   writeFileSync(lastExportedPath, JSON.stringify(lastExported, undefined, 2));
 };
 
+const MODEL_FILE_EXTENSION = '.ajblueprint';
+const DEV_MODEL_FLAG = '_dev';
+
+/**
+ * Recursively walks a directory path and returns a list of files.
+ * Slighty modified version of https://stackoverflow.com/a/45130990/13789724
+ */
+async function getFiles(dir) {
+  const dirents = readdirSync(dir, { withFileTypes: true });
+  const files = await Promise.all(
+    dirents.map((dirent) => {
+      const res = resolve(dir, dirent.name);
+      return dirent.isDirectory() ? getFiles(res) : res;
+    }),
+  );
+  return Array.prototype.concat(...files);
+}
+
+const getAllModelFiles = async (ajblueprintDir) =>
+  (await getFiles(ajblueprintDir))
+    .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))
+    .filter(
+      (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
+    ); // ignore ajblueprints with `_dev` in name e.g. `housefly_dev.ajblueprint`
+
 module.exports = {
   assertEnvironmentVariables,
+  getAllModelFiles,
   hash,
   parseLastExportedHashes,
   updateLastExportedHashes,

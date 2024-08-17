@@ -3,13 +3,16 @@
 
 /* global Project, loadModelFile, AnimatedJava, electron */
 
-const { existsSync, mkdirSync, readdirSync, readFileSync } = require('fs');
+const { existsSync, mkdirSync, readFileSync } = require('fs');
 const { resolve } = require('path');
 
 const requireWithCwd = (cwd = '') => {
-  const { hash, parseLastExportedHashes, updateLastExportedHashes } = require(
-    resolve(`${cwd}/package-scripts/utils`),
-  );
+  const {
+    getAllModelFiles,
+    hash,
+    parseLastExportedHashes,
+    updateLastExportedHashes,
+  } = require(resolve(`${cwd}/package-scripts/utils`));
   const {
     ajblueprintDir,
     ajblueprintPathsDontOpenSuffix,
@@ -22,6 +25,7 @@ const requireWithCwd = (cwd = '') => {
     ajblueprintPathsDontOpenSuffix,
     ajExporterPassthroughFlagEnd,
     ajExporterPassthroughFlagStart,
+    getAllModelFiles,
     hash,
     parseLastExportedHashes,
     updateLastExportedHashes,
@@ -34,9 +38,6 @@ const getArg = (argName) => {
   return arg?.replace(argName, '')?.replaceAll('\\', '/');
 };
 
-const MODEL_FILE_EXTENSION = '.ajblueprint';
-const DEV_MODEL_FLAG = '_dev';
-
 export async function script() {
   if (typeof AnimatedJava === 'undefined') {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
@@ -47,6 +48,7 @@ export async function script() {
     ajblueprintPathsDontOpenSuffix,
     ajExporterPassthroughFlagEnd,
     ajExporterPassthroughFlagStart,
+    getAllModelFiles,
     hash,
     parseLastExportedHashes,
     updateLastExportedHashes,
@@ -77,17 +79,10 @@ export async function script() {
     throw new Error(data);
   };
 
-  const getAllModelFiles = async () =>
-    (await getFiles(ajblueprintDir))
-      .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))
-      .filter(
-        (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
-      ); // ignore ajblueprints with `_dev` in name e.g. `housefly_dev.ajblueprint`
-
   const modelPathsArg = getArg('--ajexport-models=');
   const files =
     typeof modelPathsArg === 'undefined'
-      ? await getAllModelFiles()
+      ? await getAllModelFiles(ajblueprintDir)
       : modelPathsArg.replaceAll(ajblueprintPathsDontOpenSuffix, '').split(',');
 
   for (const file of files) {
@@ -125,21 +120,6 @@ export async function script() {
   }
 
   updateLastExportedHashes(ajblueprintDir, lastExported);
-}
-
-/**
- * Recursively walks a directory path and returns a list of files.
- * Slighty modified version of https://stackoverflow.com/a/45130990/13789724
- */
-async function getFiles(dir) {
-  const dirents = readdirSync(dir, { withFileTypes: true });
-  const files = await Promise.all(
-    dirents.map((dirent) => {
-      const res = resolve(dir, dirent.name);
-      return dirent.isDirectory() ? getFiles(res) : res;
-    }),
-  );
-  return Array.prototype.concat(...files);
 }
 
 function injectModelPackPaths(modelContent, paths) {
