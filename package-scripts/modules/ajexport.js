@@ -8,6 +8,7 @@ const { resolve } = require('path');
 
 const requireWithCwd = (cwd = '') => {
   const {
+    didModelHashChange,
     getAllModelFiles,
     hash,
     parseLastExportedHashes,
@@ -25,6 +26,7 @@ const requireWithCwd = (cwd = '') => {
     ajblueprintPathsDontOpenSuffix,
     ajExporterPassthroughFlagEnd,
     ajExporterPassthroughFlagStart,
+    didModelHashChange,
     getAllModelFiles,
     hash,
     parseLastExportedHashes,
@@ -48,6 +50,7 @@ export async function script() {
     ajblueprintPathsDontOpenSuffix,
     ajExporterPassthroughFlagEnd,
     ajExporterPassthroughFlagStart,
+    didModelHashChange,
     getAllModelFiles,
     hash,
     parseLastExportedHashes,
@@ -91,13 +94,12 @@ export async function script() {
 
     // Only export project if hash of model file is different than that found
     // in `last_exported_hashes.json`
-    const model = JSON.parse(content);
-    const { uuid } = model.meta;
-    const currentHash = await hash(content);
-    if (lastExported[uuid]?.hash === currentHash) {
+    const didChange = await didModelHashChange(content, lastExported);
+    if (!didChange) {
       continue;
     }
 
+    const model = JSON.parse(content);
     const injectedModel = injectModelPackPaths(content, paths);
     const fileObj = {
       path: file,
@@ -108,9 +110,9 @@ export async function script() {
     // `false` => don't save the blueprint to disk after exporting
     await AnimatedJava.API.exportProject(false);
     const modelName = model.blueprint_settings.export_namespace;
-    lastExported[uuid] = {
+    lastExported[model.uuid] = {
       name: modelName,
-      hash: currentHash,
+      hash: await hash(content),
       date: new Date().toISOString(),
       path: file.replaceAll('\\', '/'),
     };

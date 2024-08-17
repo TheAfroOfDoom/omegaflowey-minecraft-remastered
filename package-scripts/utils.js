@@ -66,8 +66,22 @@ const getAllModelFiles = async (ajblueprintDir) =>
       (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
     ); // ignore ajblueprints with `_dev` in name e.g. `housefly_dev.ajblueprint`
 
+/**
+ * Returns whether or not a model's hash differs from the one
+ * found in `last_exported_hashes.json`
+ */
+const didModelHashChange = async (modelStr, lastExported) => {
+  // Only export project if hash of model file is different than that found
+  // in `last_exported_hashes.json`
+  const model = JSON.parse(modelStr);
+  const { uuid } = model.meta;
+  const currentHash = await hash(modelStr);
+  return lastExported[uuid]?.hash !== currentHash;
+};
+
 module.exports = {
   assertEnvironmentVariables,
+  didModelHashChange,
   getAllModelFiles,
   hash,
   parseLastExportedHashes,
