@@ -19,13 +19,35 @@ const assertEnvironmentVariables = (names) => {
  * https://stackoverflow.com/a/57385857/13789724
  */
 const hash = async (m) => {
+  m = 'test';
+  // console.log(crypto.subtle.digest);
+  console.log(process.version);
+  console.log('B');
   const msgUint8 = new TextEncoder().encode(m);
+  console.log('BB');
+  // const x = Array.from(
+  //   new Uint8Array(await crypto.subtle.digest('SHA-256', msgUint8)),
+  // );
+  // console.log(x);
+  // const x = crypto.subtle.digest('SHA-256', msgUint8);
+  // console.log({ x });
+  // x.then((res) => {
+  //   console.log(res);
+  // })
+  //   .catch((err) => console.error(err))
+  //   .finally(() => console.log('hiiii'));
+
   const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+  // console.log('BBB');
   const hashArray = Array.from(new Uint8Array(hashBuffer));
+  // console.log('BBBB');
   const hashHex = hashArray
     .map((b) => b.toString(16).padStart(2, '0'))
     .join('');
+  console.log('BBBBB', hashHex);
   return hashHex;
+  // console.log('hi');
+  // return 'hi';
 };
 
 const parseLastExportedHashes = (ajblueprintDir) => {
@@ -73,10 +95,17 @@ const getAllModelFiles = async (ajblueprintDir) =>
 const didModelHashChange = async (modelStr, lastExported) => {
   // Only export project if hash of model file is different than that found
   // in `last_exported_hashes.json`
+  console.log('A');
   const model = JSON.parse(modelStr);
+  console.log('AA');
   const { uuid } = model.meta;
-  const currentHash = await hash(modelStr);
-  return lastExported[uuid]?.hash !== currentHash;
+  console.log('AAA');
+  hash(modelStr);
+  // const currentHash = await hash(modelStr);
+  // console.log('AAAA');
+  // console.log({ currentHash, uuid });
+  // return lastExported[uuid]?.hash !== currentHash;
+  return false;
 };
 
 module.exports = {
