@@ -2,19 +2,14 @@ name: scripts
 
 on: [push]
 
-env:
-  ASSETS_DIR: null
-  BLOCKBENCH_PATH: null
-  DATAPACK: null
-  MINECRAFT_PATH: null
-  RESOURCEPACK: null
-  WORLD_NAME: omega-flowey-remastered
-
 jobs:
   format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: tw3lveparsecs/github-actions-set-variables@v0.2
+        with:
+          envFilePath: ./.github/variables/shared.env
       - name: Install Yarn 3.6.3
         run: corepack enable
       - name: Setup cache
@@ -32,6 +27,9 @@ jobs:
     needs: format
     steps:
       - uses: actions/checkout@v4
+      - uses: tw3lveparsecs/github-actions-set-variables@v0.2
+        with:
+          envFilePath: ./.github/variables/shared.env
       - name: Install Yarn 3.6.3
         run: corepack enable
       - name: Setup cache
