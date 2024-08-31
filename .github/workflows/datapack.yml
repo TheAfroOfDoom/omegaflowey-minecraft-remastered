@@ -7,18 +7,14 @@ env:
   FABRIC_SERVER: https://meta.fabricmc.net/v2/versions/loader/1.21/0.15.11/1.0.1/server/jar
   PACKTEST: https://cdn.modrinth.com/data/XsKUhp45/versions/sQSunYHv/packtest-1.8-beta3-mc1.21.jar
 
-  ASSETS_DIR: null
-  BLOCKBENCH_PATH: null
-  DATAPACK: null
-  MINECRAFT_PATH: null
-  RESOURCEPACK: null
-  WORLD_NAME: omega-flowey-remastered
-
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: tw3lveparsecs/github-actions-set-variables@v0.2
+        with:
+          envFilePath: ./.github/variables/shared.env
       - name: Install Yarn 3.6.3
         run: corepack enable
       - name: Setup cache
