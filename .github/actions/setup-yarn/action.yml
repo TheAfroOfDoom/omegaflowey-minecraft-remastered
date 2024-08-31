@@ -1,0 +1,20 @@
+name: Setup Yarn
+description: Common setup steps for most workflows in the Omega Flowey Remastered repository
+
+runs:
+  using: composite
+  steps:
+    - uses: tw3lveparsecs/github-actions-set-variables@v0.2
+      with:
+        envFilePath: ./.github/variables/shared.env
+    - name: Install Yarn 3.6.3
+      run: corepack enable
+      shell: bash
+    - name: Setup cache
+      uses: actions/setup-node@v4
+      with:
+        cache: 'yarn'
+        cache-dependency-path: yarn.lock
+        node-version-file: package.json
+    - run: yarn
+      shell: bash
