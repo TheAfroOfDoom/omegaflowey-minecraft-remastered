@@ -7,18 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: tw3lveparsecs/github-actions-set-variables@v0.2
-        with:
-          envFilePath: ./.github/variables/shared.env
-      - name: Install Yarn 3.6.3
-        run: corepack enable
-      - name: Setup cache
-        uses: actions/setup-node@v4
-        with:
-          cache: 'yarn'
-          cache-dependency-path: yarn.lock
-          node-version-file: package.json
-      - run: yarn
+      - uses: ./.github/actions/setup-yarn
       - name: Run lint scripts on resourcepack
         run: yarn start lint.custom.resourcepack
         env:
