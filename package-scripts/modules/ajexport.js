@@ -125,6 +125,8 @@ export async function script() {
   }
 
   updateLastExportedHashes(ajblueprintDir, lastExported);
+
+  log('Finished exporting ajblueprints');
 }
 
 /**

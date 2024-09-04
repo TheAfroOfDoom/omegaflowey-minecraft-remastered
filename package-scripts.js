@@ -83,7 +83,7 @@ module.exports = {
       },
     },
     export: {
-      default: series('nps export.run', 'echo finished exporting ajblueprints'),
+      default: 'nps export.run',
       run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
       // forcibly purge the `animated_java` export-cache
       force: series(
