@@ -11,7 +11,7 @@ runs:
     - uses: actions/cache/restore@v4
       id: cache-animated-java-exports
       with:
-        key: cache-animated-java-exports-vDEVTESTticket81-${{ env.BLOCKBENCH_URL }}-${{ env.ANIMATED_JAVA_URL }}-${{ hashFiles('resourcepack/assets/omega-flowey/models/**/*.ajblueprint')}}
+        key: cache-animated-java-exports-${{ env.BLOCKBENCH_URL }}-${{ env.ANIMATED_JAVA_URL }}-${{ hashFiles('resourcepack/assets/omega-flowey/models/**/*.ajblueprint')}}
         path: |
           datapacks/animated_java/data
           datapacks/animated_java/data.ajmeta
