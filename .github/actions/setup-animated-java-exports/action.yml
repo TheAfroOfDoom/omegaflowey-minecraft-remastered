@@ -13,8 +13,10 @@ runs:
       with:
         key: cache-animated-java-exports-${{ env.BLOCKBENCH_URL }}-${{ env.ANIMATED_JAVA_URL }}-${{ hashFiles('resourcepack/assets/omega-flowey/models/**/*.ajblueprint')}}
         path: |
-          datapacks/animated_java/data
           datapacks/animated_java/data.ajmeta
+          datapacks/animated_java/data/animated_java/function
+          datapacks/animated_java/data/animated_java/tags
+          datapacks/animated_java/data/minecraft
           resourcepack/assets.ajmeta
           resourcepack/assets/animated_java
           resourcepack/assets/minecraft/models/item/white_dye.json
@@ -26,8 +28,10 @@ runs:
       with:
         key: ${{ steps.cache-animated-java-exports.outputs.cache-primary-key }}
         path: |
-          datapacks/animated_java/data
           datapacks/animated_java/data.ajmeta
+          datapacks/animated_java/data/animated_java/function
+          datapacks/animated_java/data/animated_java/tags
+          datapacks/animated_java/data/minecraft
           resourcepack/assets.ajmeta
           resourcepack/assets/animated_java
           resourcepack/assets/minecraft/models/item/white_dye.json
