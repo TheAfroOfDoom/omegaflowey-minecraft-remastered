@@ -34,6 +34,12 @@ const allAnimatedJavaExportFiles = [
 const allAnimatedJavaExportFilesFormatted =
   allAnimatedJavaExportFiles.join(',');
 
+const floweyWorldSyncPath = './world.zip';
+const minecraftPath = process.env.MINECRAFT_PATH;
+const worldName = process.env.WORLD_NAME;
+const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
+const worldSyncArgs = `--backup-path="${floweyWorldSyncPath}" --world-path="${minecraftWorldPath}"`;
+
 module.exports = {
   scripts: {
     default: 'nps watch',
@@ -44,8 +50,8 @@ module.exports = {
       default: 'nps sync.world',
       world: {
         default: 'nps sync.world.up',
-        down: 'node ./package-scripts/sync-world --down',
-        up: 'node ./package-scripts/sync-world --up',
+        down: `node ./package-scripts/sync-world --down ${worldSyncArgs}`,
+        up: `node ./package-scripts/sync-world --up ${worldSyncArgs}"`,
       },
     },
     lint: {
