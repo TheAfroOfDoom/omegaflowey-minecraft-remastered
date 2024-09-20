@@ -111,8 +111,26 @@ const syncDown = async () => {
   console.log(successMessage);
 };
 
+const validateOptions = (options) => {
+  const { backupPath, worldPath } = options;
+
+  if (typeof backupPath !== 'string') {
+    throw new Error(`Invalid \`backupPath\` arg specified: ${backupPath}`);
+  }
+
+  if (typeof worldPath !== 'string') {
+    throw new Error(`Invalid \`worldPath\` arg specified: ${worldPath}`);
+  }
+};
+
 const main = async () => {
-  const { up, down } = minimist(process.argv.slice(2));
+  const { up, down, ...options } = minimist(process.argv.slice(2), {
+    alias: {
+      'backup-path': 'backupPath',
+      'world-path': 'worldPath',
+    },
+  });
+  validateOptions(options);
 
   if (up) {
     await syncUp();
