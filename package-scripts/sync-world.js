@@ -13,16 +13,12 @@ dotenv.config();
 
 assertEnvironmentVariables(['MINECRAFT_PATH', 'WORLD_NAME']);
 
-const minecraftPath = process.env.MINECRAFT_PATH;
-const worldName = process.env.WORLD_NAME;
-
-const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
-const worldBackupPath = './world.zip';
 const tempBackupPath = './tmp/world-backups';
 
-const backupWorld = async (dest, useColor = true) =>
+const backupWorld = async (options) =>
   new Promise((resolve, reject) => {
-    const output = createWriteStream(dest);
+    const { backupPath, worldPath, useColor = true } = options;
+    const output = createWriteStream(backupPath);
     const archive = archiver('zip');
 
     archive.on('error', function (err) {
@@ -39,13 +35,13 @@ const backupWorld = async (dest, useColor = true) =>
     output.on('close', function () {
       const prefix = 'Finished world backup to:';
       const prefixFormatted = useColor ? chalk.greenBright(prefix) : prefix;
-      const destFormatted = chalk.blueBright(dest);
+      const destFormatted = chalk.blueBright(backupPath);
       console.log(prefixFormatted, destFormatted);
       resolve();
     });
 
     archive.pipe(output);
-    archive.directory(minecraftWorldPath, false);
+    archive.directory(worldPath, false);
     archive.finalize();
   });
 
@@ -67,18 +63,19 @@ const deleteOldBackups = async () => {
 };
 
 /** Backup name will be the minecraft save directory's last modified date */
-const createTempWorldBackupName = async () => {
-  const modifiedTime = (await stat(minecraftWorldPath)).mtime;
+const createTempWorldBackupName = async (options) => {
+  const modifiedTime = (await stat(options.worldPath)).mtime;
   const formattedTime = modifiedTime.toISOString().replaceAll(':', '.');
   return `world-${formattedTime}.zip`;
 };
 
-const syncUp = async () => {
-  await rimraf(worldBackupPath);
-  await backupWorld(worldBackupPath);
+const syncUp = async (options) => {
+  await rimraf(options.backupPath);
+  await backupWorld(options);
 };
 
-const syncDown = async () => {
+const syncDown = async (options) => {
+  const { backupPath, worldPath } = options;
   // Create tmp/world-backups folder if it doesn't exist
   if (!(await exists(tempBackupPath))) {
     await mkdir(tempBackupPath, { recursive: true });
@@ -87,13 +84,13 @@ const syncDown = async () => {
   await deleteOldBackups();
 
   /** We can only temp backup the current world if it already exists */
-  if (await exists(minecraftWorldPath)) {
+  if (await exists(worldPath)) {
     console.log('Backing up your current world as a precautionary measure...');
     const name = await createTempWorldBackupName();
     const path = `${tempBackupPath}/${name}`;
-    await backupWorld(path, false);
+    await backupWorld({ ...options, backupPath: path, useColor: false });
 
-    await rimraf(minecraftWorldPath);
+    await rimraf(worldPath);
   } else {
     console.log(
       'No pre-existing world save to backup, moving straight to extraction',
@@ -101,10 +98,10 @@ const syncDown = async () => {
   }
 
   console.log('Extracting world backup to client saves directory...');
-  await extract(worldBackupPath, { dir: minecraftWorldPath });
+  await extract(backupPath, { dir: worldPath });
 
-  const srcFormatted = chalk.blueBright(worldBackupPath);
-  const destFormatted = chalk.blueBright(minecraftWorldPath);
+  const srcFormatted = chalk.blueBright(backupPath);
+  const destFormatted = chalk.blueBright(worldPath);
   const successMessage = chalk.greenBright(
     `Extracted ${srcFormatted} to ${destFormatted}`,
   );
@@ -133,9 +130,9 @@ const main = async () => {
   validateOptions(options);
 
   if (up) {
-    await syncUp();
+    await syncUp(options);
   } else if (down) {
-    await syncDown();
+    await syncDown(options);
   } else {
     throw new Error('Must provide either `--up` or `--down` argument');
   }
