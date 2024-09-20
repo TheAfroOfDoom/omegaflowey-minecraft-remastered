@@ -40,6 +40,10 @@ const worldName = process.env.WORLD_NAME;
 const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 const worldSyncArgs = `--backup-path="${floweyWorldSyncPath}" --world-path="${minecraftWorldPath}"`;
 
+const smithedSummitWorldSyncPath =
+  './bin/smithed-summit-2024/world/smithed-summit-2024-omega-flowey-plot.zip';
+const smithedSummitWorldSyncArgs = `--backup-path="${smithedSummitWorldSyncPath}" --world-path="${process.env.SMITHED_SUMMIT_WORLD_PATH}"`;
+
 module.exports = {
   scripts: {
     default: 'nps watch',
@@ -52,6 +56,11 @@ module.exports = {
         default: 'nps sync.world.up',
         down: `node ./package-scripts/sync-world --down ${worldSyncArgs}`,
         up: `node ./package-scripts/sync-world --up ${worldSyncArgs}"`,
+      },
+      summit: {
+        default: 'nps sync.summit.up',
+        down: `node ./package-scripts/sync-world --down ${smithedSummitWorldSyncArgs}`,
+        up: `node ./package-scripts/sync-world --up ${smithedSummitWorldSyncArgs}`,
       },
     },
     lint: {
