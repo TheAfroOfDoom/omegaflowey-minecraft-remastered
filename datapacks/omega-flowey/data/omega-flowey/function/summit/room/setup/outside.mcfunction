@@ -5,3 +5,11 @@ execute positioned -123.47 87.25 33.35 rotated -158.2 12.52 run \
   function animated_java:tv_screen/summon { args: { animation: 'move', start_animation: true, variant: 'smiling' } }
 execute as @e[type=minecraft:item_display, tag=omega-flowey-remastered, tag=aj.tv_screen.root, tag=tv-screen-new] run \
   function omega-flowey:summit/room/setup/outside/tv_screen
+
+# Surrounding petal pipes, very simplified models
+execute as @e[type=minecraft:item_display, tag=omega-flowey-remastered, tag=aj.summit_petal_pipe_right.root] run \
+  function animated_java:summit_petal_pipe_right/remove/this
+execute positioned -109.4375 90.0625 40.9375 rotated 200 15 run \
+  function animated_java:summit_petal_pipe_right/summon/default
+execute as @e[type=minecraft:item_display, tag=omega-flowey-remastered, tag=aj.summit_petal_pipe_right.root] run \
+  function omega-flowey:summit/room/setup/outside/summit_petal_pipe_right
