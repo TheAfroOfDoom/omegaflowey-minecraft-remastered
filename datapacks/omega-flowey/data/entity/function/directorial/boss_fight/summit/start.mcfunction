@@ -1,8 +1,18 @@
-## Summons the boss fight marker and initializes it
+## Summon and initialize the boss fight marker
 
 # Kill any pre-existing boss fights
-kill @e[tag=boss_fight]
+kill @e[type=minecraft:marker, tag=omega-flowey-remastered, tag=directorial, tag=boss_fight]
 
 # Summon and initialize boss fight director
-summon minecraft:marker 0 33 0 { CustomName:'"Summit Boss Fight Director"', Tags:["omega-flowey-remastered","directorial","boss_fight","boss_fight_new","boss_fight_summit"] }
+execute at @e[type=minecraft:marker, tag=omega-flowey-remastered, tag=origin.boss_fight] run \
+  summon minecraft:marker ~ ~ ~ { \
+    CustomName:'"Omega-Flowey Boss-fight Director"', \
+    Tags: [ \
+      "omega-flowey-remastered", \
+      "directorial", \
+      "boss_fight", \
+      "boss_fight_new", \
+      "boss_fight.", \
+    ] \
+  }
 execute as @e[tag=boss_fight_new] at @s run function entity:directorial/boss_fight/summit/initialize
