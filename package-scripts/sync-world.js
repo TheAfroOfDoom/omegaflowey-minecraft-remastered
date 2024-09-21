@@ -86,7 +86,7 @@ const syncDown = async (options) => {
   /** We can only temp backup the current world if it already exists */
   if (await exists(worldPath)) {
     console.log('Backing up your current world as a precautionary measure...');
-    const name = await createTempWorldBackupName();
+    const name = await createTempWorldBackupName(options);
     const path = `${tempBackupPath}/${name}`;
     await backupWorld({ ...options, backupPath: path, useColor: false });
 
