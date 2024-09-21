@@ -27,10 +27,10 @@ const correctTextureDimensions = (file) => {
     `image ${dimension} must be divisible by 16 (was ${actualValue})`;
 
   if (width % 16 !== 0) {
-    errors.push(errorTemplate('width', chalk.brightYellow(width)));
+    errors.push(errorTemplate('width', chalk.yellowBright(width)));
   }
   if (height % 16 !== 0) {
-    errors.push(errorTemplate('height', chalk.brightYellow(height)));
+    errors.push(errorTemplate('height', chalk.yellowBright(height)));
   }
 
   return errors;
