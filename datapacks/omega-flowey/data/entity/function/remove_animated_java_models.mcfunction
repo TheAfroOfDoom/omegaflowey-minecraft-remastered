@@ -20,3 +20,6 @@ function animated_java:act_button/remove/all
 function animated_java:soul/remove/all
 function animated_java:soul_0_bandaid/remove/all
 function animated_java:soul_0_sword/remove/all
+
+# Summit models
+function animated_java:summit_petal_pipe_right/remove/all
