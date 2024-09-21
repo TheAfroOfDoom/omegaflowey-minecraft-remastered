@@ -4,7 +4,7 @@ scoreboard players add @s boss-fight.attack.phase.i 1
 scoreboard players operation @s boss-fight.attack.phase.i %= @s boss-fight.attack.phase.total
 
 # Next phase
-function entity:directorial/boss_fight/vanilla/phase/warn/initialize
+function entity:directorial/boss_fight/summit/phase/warn/initialize
 
 # Remove tags
 tag @s remove attack.random.consider_previous_trials

@@ -29,4 +29,4 @@ function entity:hostile/omega-flowey/animate
 tag @s remove boss_fight_new
 
 # Initialize attack phase
-function entity:directorial/boss_fight/vanilla/phase/attack/initialize
+function entity:directorial/boss_fight/summit/phase/attack/initialize
