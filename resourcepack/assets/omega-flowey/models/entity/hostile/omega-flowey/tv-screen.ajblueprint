@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "1.3.0",
+		"format_version": "1.4.2",
 		"uuid": "de143d69-7d25-8ad1-c9e8-f45f431753b9",
 		"save_location": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\tv-screen.ajblueprint",
 		"last_used_export_namespace": "tv_screen"
@@ -17,13 +17,15 @@
 		"display_item": "minecraft:white_dye",
 		"custom_model_data_offset": 0,
 		"enable_advanced_resource_pack_settings": false,
-		"resource_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\",
+		"enable_advanced_resource_pack_folders": false,
+		"resource_pack": "G:/Coding/omega-flowey-minecraft-remastered/resourcepack",
 		"display_item_path": "",
 		"model_folder": "",
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java\\",
+		"data_pack": "G:/Coding/omega-flowey-minecraft-remastered/datapacks/animated_java",
 		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add omega-flowey\ntag @s add omega-flowey-tv-screen",
+		"ticking_commands": "",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
 		"use_storage_for_animation": false,
@@ -478,7 +480,7 @@
 	],
 	"textures": [
 		{
-			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.2-pre1\\1.20.2-pre1\\assets\\minecraft\\textures\\block\\netherite_block.png",
+			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/netherite_block.png",
 			"name": "netherite_block.png",
 			"folder": "",
 			"namespace": "",
@@ -505,7 +507,7 @@
 			"mode": "bitmap"
 		},
 		{
-			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.2-pre1\\1.20.2-pre1\\assets\\minecraft\\textures\\block\\black_concrete.png",
+			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/black_concrete.png",
 			"name": "black_concrete.png",
 			"folder": "",
 			"namespace": "",
@@ -532,7 +534,7 @@
 			"mode": "bitmap"
 		},
 		{
-			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\warning.png",
+			"path": "G:/Coding/omega-flowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/tv_screen/warning.png",
 			"name": "warning.png",
 			"folder": "",
 			"namespace": "",
@@ -548,8 +550,8 @@
 			"render_mode": "default",
 			"render_sides": "auto",
 			"frame_time": 1,
-			"frame_order_type": "loop",
-			"frame_order": "",
+			"frame_order_type": "custom",
+			"frame_order": "0:2 0:1 0:2 1:2 1:1 1:2",
 			"frame_interpolate": false,
 			"visible": true,
 			"internal": false,
@@ -559,7 +561,7 @@
 			"mode": "bitmap"
 		},
 		{
-			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\static.png",
+			"path": "G:/Coding/omega-flowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/tv_screen/static.png",
 			"name": "static.png",
 			"folder": "",
 			"namespace": "",
@@ -624,7 +626,7 @@
 			"override": false,
 			"length": 0.6,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
 			"saved": true,
 			"path": "",
 			"anim_time_update": "",
