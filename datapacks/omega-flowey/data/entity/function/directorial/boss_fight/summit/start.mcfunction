@@ -32,7 +32,7 @@ execute at @e[type=minecraft:marker, tag=omega-flowey-remastered, tag=origin.bos
       "directorial", \
       "boss_fight", \
       "boss_fight_new", \
-      "boss_fight.", \
+      "boss_fight.summit", \
     ] \
   }
 execute as @e[tag=boss_fight_new] at @s run function entity:directorial/boss_fight/summit/initialize
