@@ -11,8 +11,10 @@ tag @e[tag=aj.large_side_vine.root,tag=!large_side_vine.right] add large_side_vi
 ## Lower eyes
 # Right-eye
 execute positioned ^-4.5 ^5.5 ^6.5 rotated ~170 ~-20 run function animated_java:lower_eye/summon { args: {} }
+tag @e[type=minecraft:item_display, tag=aj.lower_eye.root] add lower_eye.right
 # Left-eye
 execute positioned ^5.5 ^5.5 ^6.5 rotated ~10 ~20 run function animated_java:lower_eye/summon { args: {} }
+tag @e[type=minecraft:item_display, tag=aj.lower_eye.root, tag=!lower_eye.right] add lower_eye.left
 
 ## Lower petal pipes
 # Right-lower petal pipe
