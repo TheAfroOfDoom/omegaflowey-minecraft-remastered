@@ -1,6 +1,3 @@
-# Face player's positioned when indicator was summoned
-$teleport @s ~ ~ ~ facing $(x) $(y) $(z)
-
 # Flip yaw that bullet will summon with
 execute store result score @s math.0 run data get entity @s Rotation[0] 100
 scoreboard players add @s math.0 18000
