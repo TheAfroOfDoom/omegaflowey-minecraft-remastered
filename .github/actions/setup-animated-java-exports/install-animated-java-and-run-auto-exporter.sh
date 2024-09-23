@@ -20,7 +20,7 @@ Xvfb $DISPLAY &
 echo Start Blockbench and wait until initialized
 # Use the export script to pass-in the CLI args automatically, the same way we do when we run
 # `yarn start export` locally (for reproducability)
-yarn start "export.run --enable-logging" &> blockbench.log & tail -f -n1 blockbench.log | grep -qe "Update for version"
+yarn start "export.run --enable-logging" &> blockbench.log & tail -f -n1 blockbench.log | grep -qe "Update for version" -e "downloadedFile: '/home/runner/"
 
 echo Open dev tools and show console
 xdotool key ctrl+shift+i
