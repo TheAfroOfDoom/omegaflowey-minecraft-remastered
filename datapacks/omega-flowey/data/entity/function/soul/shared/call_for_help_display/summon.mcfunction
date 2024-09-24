@@ -1,4 +1,4 @@
-summon block_display -2.5 49.5 -34.0 \
+summon block_display -175.0 79.5 84.0 \
     {Tags:["omega-flowey-remastered","soul","call-for-help-display","call-for-help-display-new"], \
     Passengers:[{id:"minecraft:text_display", \
             Tags:["omega-flowey-remastered","soul","call-for-help-display","call-for-help-display-new"], \
@@ -8,7 +8,7 @@ summon block_display -2.5 49.5 -34.0 \
             alignment:"center", \
             line_width:210, \
             default_background:false, \
-            Rotation:[-180f,0f], \
+            Rotation:[0f,0f], \
             transformation:[30.0000f,0.0000f,0.0000f,0.0000f, \
                             0.0000f,30.0000f,0.0000f,0.5000f, \
                             0.0000f,0.0000f,30.0000f,0.0000f, \

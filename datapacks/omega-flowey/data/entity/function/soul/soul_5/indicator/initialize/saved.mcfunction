@@ -2,4 +2,4 @@
 tag @s remove shaking
 
 # Return to starting position
-teleport @s 0 33.1 -68
+teleport @s -178.0 63.1 117.5
