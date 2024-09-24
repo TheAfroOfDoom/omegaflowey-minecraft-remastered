@@ -9,4 +9,3 @@ $teleport @s ~ ~ ~ facing entity $(indicator_uuid)
 tag @s remove soul-crosshair-new
 
 # TODO: fix crosshair summoning rotation desync
-# TODO: why is soul_5 saved showing blue soul? (soul 2)
