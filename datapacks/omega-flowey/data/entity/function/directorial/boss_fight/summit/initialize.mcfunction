@@ -1,9 +1,10 @@
 ## Initializes the boss fight
 
 # Summon Omega Flowey entity if it doesn't exist
-execute unless entity @e[type=minecraft:item_display, tag=aj.tv_screen.root, tag=!tv_screen.outside] \
-  at @e[type=minecraft:marker, tag=omega-flowey-remastered, tag=origin.boss_fight] rotated ~180 ~ run \
-  function entity:hostile/omega-flowey/summon/relative
+execute unless entity @e[type=minecraft:item_display, tag=aj.tv_screen.root, tag=!tv_screen.outside] run \
+  function entity:directorial/boss_fight/summit/origin/at { \
+    command: "function entity:hostile/omega-flowey/summon/relative" \
+  }
 
 # Set all attack parameters to default
 function entity:hostile/omega-flowey/attack/reset_scores

@@ -24,15 +24,18 @@ execute unless score #omega-flowey.flag math.const matches 1 run \
 execute unless score #omega-flowey.flag math.const matches 1 run return 1
 
 # Summon and initialize boss fight director
-execute at @e[type=minecraft:marker, tag=omega-flowey-remastered, tag=origin.boss_fight] run \
-  summon minecraft:marker ~ ~ ~ { \
-    CustomName:'"Omega-Flowey Boss-fight Director"', \
-    Tags: [ \
-      "omega-flowey-remastered", \
-      "directorial", \
-      "boss_fight", \
-      "boss_fight_new", \
-      "boss_fight.summit", \
-    ] \
-  }
+function entity:directorial/boss_fight/summit/origin/at { \
+  command: "\
+    summon minecraft:marker ~ ~ ~ { \
+      CustomName:'\"Omega-Flowey Boss-fight Director\"', \
+      Tags: [ \
+        'omega-flowey-remastered', \
+        'directorial', \
+        'boss_fight', \
+        'boss_fight_new', \
+        'boss_fight.summit', \
+      ] \
+    } \
+  " \
+}
 execute as @e[tag=boss_fight_new] at @s run function entity:directorial/boss_fight/summit/initialize
