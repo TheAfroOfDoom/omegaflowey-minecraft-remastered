@@ -1,5 +1,5 @@
 ## Reduce weight of attack if it was just ran
-scoreboard players set @s attack.weight 4
+scoreboard players set @s attack.weight 5
 
 execute if entity @s[tag=attack.random.previous_attack.bomb] run scoreboard players operation #attack-bomb attack.weight -= @s attack.weight
 execute if entity @s[tag=attack.random.previous_attack.bomb] run tag @s remove attack.random.previous_attack.bomb
