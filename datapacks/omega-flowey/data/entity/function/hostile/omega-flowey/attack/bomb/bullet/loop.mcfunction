@@ -18,7 +18,7 @@ execute if score @s attack.clock.i matches 20 run function entity:hostile/omega-
 execute if score @s attack.clock.i matches 20.. run teleport @s ~ ~-2.2 ~
 
 # Stop falling after bomb falls through floor
-execute at @s if entity @s[x=-100,dx=200,y=33,dy=-20,z=-100,dz=200] run function entity:hostile/omega-flowey/attack/bomb/bullet/loop/stop_falling
+execute at @s if entity @s[x=-77.5,dx=-200,y=63,dy=-20,z=150,dz=-200] run function entity:hostile/omega-flowey/attack/bomb/bullet/loop/stop_falling
 
 # TODO(68): validate/determine a value for how long until the bomb bullets terminate
 # Terminate after X seconds

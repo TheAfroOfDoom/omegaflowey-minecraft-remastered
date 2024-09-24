@@ -1,5 +1,5 @@
 # Keep consistent y-pos
-teleport @s ~ 33.0 ~
+teleport @s ~ 63.0 ~
 
 # Play animation if we just stopped falling
 execute unless entity @s[tag=is_done_falling] run function animated_java:bomb/animations/explode/play
