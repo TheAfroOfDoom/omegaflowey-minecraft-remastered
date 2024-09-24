@@ -13,6 +13,8 @@ execute as @a unless entity @s[team=!player,team=!spectator] at @s anchored eyes
 
 # Initialize other soul event models
 $execute as $(act_button_uuid) run function entity:soul/soul_5/act_button/initialize/saved
+execute as @e[tag=omega-flowey-remastered, tag=call-for-help-display] run \
+  function entity:soul/shared/call_for_help_display/terminate
 execute as @e[tag=soul_5,tag=soul-bullet] at @s run function entity:soul/soul_5/bullet/initialize/saved
 execute as @e[tag=soul_5,tag=soul-crosshair] at @s run function entity:soul/soul_5/crosshair/initialize/saved
 $execute as $(indicator_uuid) at @s run function entity:soul/soul_5/indicator/initialize/saved
