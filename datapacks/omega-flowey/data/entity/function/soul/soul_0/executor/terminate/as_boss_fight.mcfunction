@@ -1,1 +1,1 @@
-function entity:directorial/boss_fight/vanilla/phase/soul/loop/event_finished
+function entity:directorial/boss_fight/shared/phase/soul/loop/event_finished
