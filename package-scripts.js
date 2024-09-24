@@ -51,7 +51,7 @@ module.exports = {
       default: `node ${watchScriptPath}`,
     },
     sync: {
-      default: 'nps sync.world',
+      default: 'nps sync.summit',
       world: {
         default: 'nps sync.world.up',
         down: `node ./package-scripts/sync-world --down ${worldSyncArgs}`,
