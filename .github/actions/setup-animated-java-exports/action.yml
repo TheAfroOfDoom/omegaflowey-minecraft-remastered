@@ -12,12 +12,14 @@ runs:
       id: cache-animated-java-exports
       with:
         key: cache-animated-java-exports-${{ env.BLOCKBENCH_URL }}-${{ env.ANIMATED_JAVA_URL }}-${{ hashFiles('resourcepack/assets/omega-flowey/models/**/*.ajblueprint')}}
+        restore-keys: cache-animated-java-exports-${{ env.BLOCKBENCH_URL }}-${{ env.ANIMATED_JAVA_URL }}-
         path: |
           datapacks/animated_java/data
           datapacks/animated_java/data.ajmeta
           resourcepack/assets.ajmeta
           resourcepack/assets/animated_java
           resourcepack/assets/minecraft/models/item/white_dye.json
+          resourcepack/assets/omega-flowey/models/last_exported_hashes.json
     - run: bash ${{ github.action_path }}/install-animated-java-and-run-auto-exporter.sh
       if: ${{ steps.cache-animated-java-exports.outputs.cache-hit != 'true' }}
       shell: bash
@@ -31,3 +33,4 @@ runs:
           resourcepack/assets.ajmeta
           resourcepack/assets/animated_java
           resourcepack/assets/minecraft/models/item/white_dye.json
+          resourcepack/assets/omega-flowey/models/last_exported_hashes.json
