@@ -1,8 +1,8 @@
-# Randomize x-position to summon bullet at (x: [-22..22])
-execute store result score @s attack.position.x run random value -220..220
+# Randomize x-position to summon bullet
+execute store result score @s attack.position.x run random value -1995..-1555
 
-# Randomize z-position to summon bullet at (z: [-4..19])
-execute store result score @s attack.position.z run random value -40..190
+# Randomize z-position to summon bullet
+execute store result score @s attack.position.z run random value 310..540
 
 # Store position
 execute store result storage attack:bomb x double 0.1 run scoreboard players get @s attack.position.x
