@@ -18,3 +18,4 @@ execute as @e[tag=aj.tv_screen.root,tag=tv_screen.boss_fight] run function anima
 
 # Split on phase score
 execute if score @s boss-fight.progress.phase.i matches 0 run function entity:directorial/boss_fight/summit/phase/soul/initialize/0
+execute if score @s boss-fight.progress.phase.i matches 1 run function entity:directorial/boss_fight/summit/phase/soul/initialize/1

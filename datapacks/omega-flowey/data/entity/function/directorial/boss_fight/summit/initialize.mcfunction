@@ -15,7 +15,7 @@ scoreboard players set @s boss-fight.attack.delay -1
 scoreboard players set @s boss-fight.attack.phase.i 0
 scoreboard players set @s boss-fight.attack.phase.total 2
 scoreboard players set @s boss-fight.progress.phase.i 0
-scoreboard players set @s boss-fight.progress.phase.total 6
+scoreboard players set @s boss-fight.progress.phase.total 2
 
 # Flags that represent whether a soul event has been completed or not.
 # Used to determine what animation / variant to use for petal pipe models (default / disabled)
