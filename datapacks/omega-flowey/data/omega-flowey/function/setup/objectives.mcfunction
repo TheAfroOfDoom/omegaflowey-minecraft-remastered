@@ -81,6 +81,8 @@ scoreboard objectives add boss-fight.progress.phase.total dummy
 scoreboard objectives add boss-fight.warn.clock.i dummy
 scoreboard objectives add boss-fight.warn.clock.total dummy
 
+scoreboard objectives add global.flag dummy
+
 scoreboard objectives add group.id dummy
 scoreboard objectives add group.id.tree.level dummy
 
