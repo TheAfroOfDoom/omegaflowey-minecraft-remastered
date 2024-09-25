@@ -8,4 +8,4 @@ $teleport @s ~ ~ ~ facing entity $(indicator_uuid)
 # Remove tags
 tag @s remove soul-crosshair-new
 
-# TODO: fix crosshair summoning rotation desync
+# TODO(187): fix crosshair summoning rotation desync
