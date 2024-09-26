@@ -236,6 +236,7 @@ const getSummitResourcepackPaths = () => {
 const LOG_LEVEL = {
   VERBOSE: 'LOG_LEVEL.VERBOSE',
   INFO: 'LOG_LEVEL.INFO',
+  ERROR: 'LOG_LEVEL.ERROR',
 };
 
 const logVerbose = (...data) => {
@@ -243,6 +244,10 @@ const logVerbose = (...data) => {
 };
 const logInfo = (...data) => {
   console.log(chalk.yellow('[INFO]'), ...data);
+};
+const logError = (...data) => {
+  const xEmoji = '\u{274C}';
+  console.log(chalk.red('[ERROR]'), ...data, xEmoji);
 };
 
 const logLevel = (level, ...data) => {
@@ -252,6 +257,9 @@ const logLevel = (level, ...data) => {
       break;
     case LOG_LEVEL.INFO:
       logInfo(...data);
+      break;
+    case LOG_LEVEL.ERROR:
+      logError(...data);
       break;
     default:
       console.log(...data);
@@ -304,6 +312,9 @@ const compile = async ({
   const info = (...data) => {
     log(LOG_LEVEL.INFO, ...data);
   };
+  const error = (...data) => {
+    log(LOG_LEVEL.ERROR, ...data);
+  };
 
   const compiledPath = `${buildDir}/${compileDir}`;
 
@@ -320,7 +331,9 @@ const compile = async ({
   const copySrcToDest = async (src) => {
     const srcPathExists = await pathExists(src);
     if (!srcPathExists) {
-      throw new Error(`Source path does not exist: ${chalk.yellow(src)}`);
+      const errorMsg = `Source path does not exist: ${chalk.yellow(src)}`;
+      error(errorMsg);
+      throw new Error(errorMsg);
     }
 
     const srcProcessed = processSrc(src);
