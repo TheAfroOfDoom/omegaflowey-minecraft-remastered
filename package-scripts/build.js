@@ -233,11 +233,29 @@ const getSummitResourcepackPaths = () => {
   return { paths: resourcepackPaths, postProcessors };
 };
 
+const LOG_LEVEL = {
+  VERBOSE: 'LOG_LEVEL.VERBOSE',
+  INFO: 'LOG_LEVEL.INFO',
+};
+
 const logInfo = (...data) => {
   console.log(chalk.yellow('[INFO]'), ...data);
 };
 const logVerbose = (...data) => {
   console.log(chalk.magenta('[VERBOSE]'), ...data);
+};
+
+const logLevel = (level, ...data) => {
+  switch (level) {
+    case LOG_LEVEL.VERBOSE:
+      logVerbose(...data);
+      break;
+    case LOG_LEVEL.INFO:
+      logInfo(...data);
+      break;
+    default:
+      console.log(...data);
+  }
 };
 
 const prefixPaths = (prefix, paths) => paths.map((path) => `${prefix}${path}`);
@@ -268,17 +286,32 @@ const copyOptions = {
 };
 
 const compileDatapack = async () => {
+  const log = (...data) => {
+    const prefix = chalk.blue('[D]:');
+
+    // If first element is a log level
+    if (Object.values(LOG_LEVEL).includes(data[0])) {
+      data.splice(1, 0, prefix);
+    }
+
+    logLevel(...data);
+  };
+  const verbose = (...data) => {
+    log(LOG_LEVEL.VERBOSE, ...data);
+  };
+  const info = (...data) => {
+    log(LOG_LEVEL.INFO, ...data);
+  };
+
   const compiledPath = `${buildDir}/omegaFloweyDatapack`;
 
   await emptyDir(compiledPath);
 
-  const logPrefix = chalk.blue('[D]:');
-
   const { paths, postProcessors } = getDatapackCompilePaths();
   if (args.verbose) {
-    logVerbose(chalk.bold(chalk.blue('Datapack compile paths:')));
+    verbose(chalk.bold(chalk.blue('Datapack compile paths:')));
     for (const src of paths) {
-      logVerbose(logPrefix, src);
+      verbose(src);
     }
   }
 
@@ -293,32 +326,44 @@ const compileDatapack = async () => {
   };
 
   await Promise.all(paths.map(copySrcToDest));
-  logInfo(
-    logPrefix,
-    `Finished copying ${paths.length} ${chalk.blue('datapack')} paths`,
-  );
+  info(`Finished copying ${paths.length} datapack paths`);
 
   if (postProcessors.length > 0) {
-    logInfo(logPrefix, `Running ${postProcessors.length} post-processors`);
+    info(`Running ${postProcessors.length} post-processors`);
     await Promise.all(
       postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
     );
-    logInfo(logPrefix, `Finished post-processing`);
+    info(`Finished post-processing`);
   }
 };
 
 const compileResourcepack = async () => {
+  const log = (...data) => {
+    const prefix = chalk.magenta('[R]:');
+
+    // If first element is a log level
+    if (Object.values(LOG_LEVEL).includes(data[0])) {
+      data.splice(1, 0, prefix);
+    }
+
+    logLevel(...data);
+  };
+  const verbose = (...data) => {
+    log(LOG_LEVEL.VERBOSE, ...data);
+  };
+  const info = (...data) => {
+    log(LOG_LEVEL.INFO, ...data);
+  };
+
   const compiledPath = `${buildDir}/omegaFloweyResourcepack`;
 
   await emptyDir(compiledPath);
 
-  const logPrefix = chalk.magenta('[R]:');
-
   const { paths, postProcessors } = getResourcepackCompilePaths();
   if (args.verbose) {
-    logVerbose(chalk.bold(chalk.magenta('Resourcepack compile paths:')));
+    verbose(chalk.bold(chalk.magenta('Resourcepack compile paths:')));
     for (const src of paths) {
-      logVerbose(logPrefix, src);
+      verbose(src);
     }
   }
 
@@ -333,17 +378,14 @@ const compileResourcepack = async () => {
   };
 
   await Promise.all(paths.map(copySrcToDest));
-  logInfo(
-    logPrefix,
-    `Finished copying ${paths.length} ${chalk.magenta('resourcepack')} paths`,
-  );
+  info(`Finished copying ${paths.length} resourcepack paths`);
 
   if (postProcessors.length > 0) {
-    logInfo(logPrefix, `Running ${postProcessors.length} post-processors`);
+    info(`Running ${postProcessors.length} post-processors`);
     await Promise.all(
       postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
     );
-    logInfo(logPrefix, `Finished post-processing`);
+    info(`Finished post-processing`);
   }
 };
 
