@@ -25,6 +25,7 @@ const getSummitDatapackPaths = () => {
   const bossFightPaths = prefixPaths('directorial/boss_fight/', [
     'shared',
     'summit',
+    'tick.mcfunction',
   ]);
 
   const entityOmegaFloweyPaths = prefixPaths('omega-flowey/', [
