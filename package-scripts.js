@@ -106,5 +106,10 @@ module.exports = {
         'nps export',
       ),
     },
+    build: {
+      clean: 'rimraf ./build',
+      default: 'nps build.summit',
+      summit: 'node ./package-scripts/build',
+    },
   },
 };
