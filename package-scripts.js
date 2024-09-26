@@ -109,7 +109,7 @@ module.exports = {
     build: {
       clean: 'rimraf ./build',
       default: 'nps build.summit',
-      summit: 'node ./package-scripts/build --verbose',
+      summit: 'node ./package-scripts/build',
     },
   },
 };
