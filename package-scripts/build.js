@@ -238,11 +238,11 @@ const LOG_LEVEL = {
   INFO: 'LOG_LEVEL.INFO',
 };
 
-const logInfo = (...data) => {
-  console.log(chalk.yellow('[INFO]'), ...data);
-};
 const logVerbose = (...data) => {
   console.log(chalk.magenta('[VERBOSE]'), ...data);
+};
+const logInfo = (...data) => {
+  console.log(chalk.yellow('[INFO]'), ...data);
 };
 
 const logLevel = (level, ...data) => {
@@ -261,37 +261,39 @@ const logLevel = (level, ...data) => {
 const prefixPaths = (prefix, paths) => paths.map((path) => `${prefix}${path}`);
 const suffixPaths = (paths, suffix) => paths.map((path) => `${path}${suffix}`);
 
-const getDatapackCompilePaths = () => {
+const getCompilePaths = ({ getSummitPaths }) => {
   const { variant } = args;
   switch (variant) {
     case 'summit':
-      return getSummitDatapackPaths();
+      return getSummitPaths();
     default:
       throw new Error(`Invalid variant: ${variant}`);
   }
 };
 
-const getResourcepackCompilePaths = () => {
-  const { variant } = args;
-  switch (variant) {
-    case 'summit':
-      return getSummitResourcepackPaths();
-    default:
-      throw new Error(`Invalid variant: ${variant}`);
-  }
-};
+const getDatapackCompilePaths = () =>
+  getCompilePaths({ getSummitPaths: getSummitDatapackPaths });
+const getResourcepackCompilePaths = () =>
+  getCompilePaths({ getSummitPaths: getSummitResourcepackPaths });
 
 const copyOptions = {
   overwrite: false,
 };
 
-const compileDatapack = async () => {
-  const log = (...data) => {
-    const prefix = chalk.blue('[D]:');
+const compile = async ({
+  compileDir,
+  compilePaths,
+  logColor,
+  logPrefix,
+  packType,
+  processSrc,
+}) => {
+  processSrc ??= (path) => path;
 
+  const log = (...data) => {
     // If first element is a log level
     if (Object.values(LOG_LEVEL).includes(data[0])) {
-      data.splice(1, 0, prefix);
+      data.splice(1, 0, logColor(logPrefix));
     }
 
     logLevel(...data);
@@ -303,13 +305,13 @@ const compileDatapack = async () => {
     log(LOG_LEVEL.INFO, ...data);
   };
 
-  const compiledPath = `${buildDir}/omegaFloweyDatapack`;
+  const compiledPath = `${buildDir}/${compileDir}`;
 
   await emptyDir(compiledPath);
 
-  const { paths, postProcessors } = getDatapackCompilePaths();
+  const { paths, postProcessors } = compilePaths();
   if (args.verbose) {
-    verbose(chalk.bold(chalk.blue('Datapack compile paths:')));
+    verbose(chalk.bold(`${logColor(packType)} compile paths:`));
     for (const src of paths) {
       verbose(src);
     }
@@ -321,75 +323,44 @@ const compileDatapack = async () => {
       throw new Error(`Source path does not exist: ${chalk.yellow(src)}`);
     }
 
-    const dest = `${compiledPath}/${src}`;
+    const srcProcessed = processSrc(src);
+    const dest = `${compiledPath}/${srcProcessed}`;
     await copy(src, dest, { ...copyOptions });
   };
 
   await Promise.all(paths.map(copySrcToDest));
-  info(`Finished copying ${paths.length} datapack paths`);
+  const checkmark = '\u{2705}';
+  info(`Finished copying ${paths.length} paths ${checkmark}`);
 
   if (postProcessors.length > 0) {
     info(`Running ${postProcessors.length} post-processors`);
     await Promise.all(
       postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
     );
-    info(`Finished post-processing`);
+    info(`Finished post-processing ${checkmark}`);
   }
 };
 
-const compileResourcepack = async () => {
-  const log = (...data) => {
-    const prefix = chalk.magenta('[R]:');
+const compileDatapack = async () =>
+  compile({
+    compileDir: 'omegaFloweyDatapack',
+    compilePaths: getDatapackCompilePaths,
+    logColor: chalk.blue,
+    logPrefix: '[D]:',
+    packType: 'Datapack',
+  });
 
-    // If first element is a log level
-    if (Object.values(LOG_LEVEL).includes(data[0])) {
-      data.splice(1, 0, prefix);
-    }
+const compileResourcepack = async () =>
+  compile({
+    compileDir: 'omegaFloweyResourcepack',
+    compilePaths: getResourcepackCompilePaths,
+    logColor: chalk.magenta,
+    logPrefix: '[R]:',
+    packType: 'Resourcepack',
+    processSrc: (path) => path.replace(/^resourcepack\//, ''),
+  });
 
-    logLevel(...data);
-  };
-  const verbose = (...data) => {
-    log(LOG_LEVEL.VERBOSE, ...data);
-  };
-  const info = (...data) => {
-    log(LOG_LEVEL.INFO, ...data);
-  };
-
-  const compiledPath = `${buildDir}/omegaFloweyResourcepack`;
-
-  await emptyDir(compiledPath);
-
-  const { paths, postProcessors } = getResourcepackCompilePaths();
-  if (args.verbose) {
-    verbose(chalk.bold(chalk.magenta('Resourcepack compile paths:')));
-    for (const src of paths) {
-      verbose(src);
-    }
-  }
-
-  const copySrcToDest = async (src) => {
-    const srcPathExists = await pathExists(src);
-    if (!srcPathExists) {
-      throw new Error(`Source path does not exist: ${chalk.yellow(src)}`);
-    }
-
-    const dest = `${compiledPath}/${src.replace(/^resourcepack\//, '')}`;
-    await copy(src, dest, { ...copyOptions });
-  };
-
-  await Promise.all(paths.map(copySrcToDest));
-  info(`Finished copying ${paths.length} resourcepack paths`);
-
-  if (postProcessors.length > 0) {
-    info(`Running ${postProcessors.length} post-processors`);
-    await Promise.all(
-      postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
-    );
-    info(`Finished post-processing`);
-  }
-};
-
-const compile = async () => {
+const compileAll = async () => {
   await Promise.all([compileDatapack(), compileResourcepack()]);
 };
 
@@ -401,7 +372,7 @@ const main = async () => {
   };
   args = parseArgs(process.argv.slice(2), minimistOptions);
 
-  await compile();
+  await compileAll();
 
   process.exit(0);
 };
