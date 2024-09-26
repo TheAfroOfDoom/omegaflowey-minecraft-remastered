@@ -270,11 +270,13 @@ const compileDatapack = async () => {
 
   await emptyDir(compiledPath);
 
+  const logPrefix = chalk.blue('[D]:');
+
   const paths = getDatapackCompilePaths();
   if (args.verbose) {
     logVerbose(chalk.bold(chalk.blue('Datapack compile paths:')));
     for (const src of paths) {
-      logVerbose(chalk.blue('[D]:'), src);
+      logVerbose(logPrefix, src);
     }
   }
 
@@ -289,7 +291,10 @@ const compileDatapack = async () => {
   };
 
   await Promise.all(paths.map(copySrcToDest));
-  logInfo(`Finished copying ${paths.length} ${chalk.blue('datapack')} paths`);
+  logInfo(
+    logPrefix,
+    `Finished copying ${paths.length} ${chalk.blue('datapack')} paths`,
+  );
 };
 
 const compileResourcepack = async () => {
@@ -319,6 +324,7 @@ const compileResourcepack = async () => {
 
   await Promise.all(paths.map(copySrcToDest));
   logInfo(
+    logPrefix,
     `Finished copying ${paths.length} ${chalk.magenta('resourcepack')} paths`,
   );
 
