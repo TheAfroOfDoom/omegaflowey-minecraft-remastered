@@ -49,6 +49,35 @@ const getSummitDatapackPaths = () => {
   return datapackPaths;
 };
 
+const getSummitResourcepackPaths = () => {
+  // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
+  const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
+
+  // const soundPaths = prefixPaths('sounds/', []);
+
+  const omegaFloweyPaths = prefixPaths('omega-flowey/', [
+    'font',
+    'models/entity', // TODO probably none of these actually since it's all .ajblueprints
+    'sounds', // TODO not all them lol
+    'textures', // TODO not all them lol
+    'sounds.json', // TODO prune this file in dest location (automatically?)
+  ]);
+
+  const assetsPaths = prefixPaths('assets/', [
+    'animated_java',
+    ...minecraftPaths,
+    ...omegaFloweyPaths,
+  ]);
+
+  const resourcepackPaths = prefixPaths('resourcepack/', [
+    'pack.mcmeta',
+    'pack.png',
+    ...assetsPaths,
+  ]);
+
+  return resourcepackPaths;
+};
+
 const logInfo = (...data) => {
   console.log(chalk.yellow('[INFO]'), ...data);
 };
@@ -63,6 +92,16 @@ const getDatapackCompilePaths = () => {
   switch (variant) {
     case 'summit':
       return getSummitDatapackPaths();
+    default:
+      throw new Error(`Invalid variant: ${variant}`);
+  }
+};
+
+const getResourcepackCompilePaths = () => {
+  const { variant } = args;
+  switch (variant) {
+    case 'summit':
+      return getSummitResourcepackPaths();
     default:
       throw new Error(`Invalid variant: ${variant}`);
   }
@@ -95,8 +134,37 @@ const compileDatapack = async () => {
   logInfo(`Finished copying ${paths.length} ${chalk.blue('datapack')} paths`);
 };
 
+const compileResourcepack = async () => {
+  const compiledPath = `${buildDir}/omegaFloweyResourcepack`;
+
+  await emptyDir(compiledPath);
+
+  const paths = getResourcepackCompilePaths();
+  if (args.verbose) {
+    logVerbose(chalk.bold(chalk.magenta('Resourcepack compile paths:')));
+    for (const src of paths) {
+      logVerbose(chalk.magenta('[R]:'), src);
+    }
+  }
+
+  const copySrcToDest = async (src) => {
+    const srcPathExists = await pathExists(src);
+    if (!srcPathExists) {
+      throw new Error(`Source path does not exist: ${chalk.yellow(src)}`);
+    }
+
+    const dest = `${compiledPath}/${src}`;
+    await copy(src, dest);
+  };
+
+  await Promise.all(paths.map(copySrcToDest));
+  logInfo(
+    `Finished copying ${paths.length} ${chalk.magenta('resourcepack')} paths`,
+  );
+};
+
 const compile = async () => {
-  await Promise.all([compileDatapack()]);
+  await Promise.all([compileDatapack(), compileResourcepack()]);
 };
 
 let args;
