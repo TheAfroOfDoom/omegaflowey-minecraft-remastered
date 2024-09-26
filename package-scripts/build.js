@@ -49,7 +49,19 @@ const getSummitDatapackPaths = () => {
     'tick.mcfunction',
   ]);
 
-  // TODO: entity/utils
+  const entityUtilsPaths = prefixPaths('utils/', [
+    'bounce',
+    'bounce.mcfunction',
+    'damage.mcfunction',
+    'face_closest_player_macro.mcfunction',
+    'face_closest_player.mcfunction',
+    'move_directional.mcfunction',
+    'move_forward.mcfunction',
+    'shake_screen_macro.mcfunction',
+    'shake_screen.mcfunction',
+    'store_position.mcfunction',
+  ]);
+
   const entityPaths = prefixPaths('entity/function/', [
     ...bossFightPaths,
     'directorial/tick.mcfunction',
@@ -58,6 +70,7 @@ const getSummitDatapackPaths = () => {
     ...playerPaths,
     'remove_animated_java_models',
     ...soulPaths,
+    ...entityUtilsPaths,
     'remove_animated_java_models.mcfunction',
     'reset_scores.mcfunction',
     'reset.mcfunction',
