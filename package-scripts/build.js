@@ -24,10 +24,18 @@ const getSummitDatapackPaths = () => {
     'summit',
   ]);
 
+  const soulPaths = prefixPaths('soul/', [
+    'shared',
+    'soul_5',
+    'reset_scores.mcfunction',
+    'tick.mcfunction',
+  ]);
+
   const entityPaths = prefixPaths('entity/function/', [
     ...attackPaths,
     ...bossFightPaths,
     'directorial/tick.mcfunction',
+    ...soulPaths,
   ]);
 
   const utilsPaths = prefixPaths('utils/function/', [
@@ -64,15 +72,16 @@ const getSummitResourcepackPaths = () => {
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
-  // TODO: missing soul_event sounds
   const soundPaths = prefixPaths(
     'sounds/',
     suffixPaths(
       [
+        'mus_f_6s_6',
         'mus_f_alarm',
         'mus_f_noise',
         'mus_f_part1',
         'mus_f_part2',
+        'mus_f_saved',
         'mus_sfx_a_bullet',
         'mus_sfx_a_target',
         'mus_sfx_generate',
@@ -80,6 +89,8 @@ const getSummitResourcepackPaths = () => {
         'mus_sfx_yowl',
         'snd_bombfall',
         'snd_bombsplosion',
+        'snd_break2_c',
+        'snd_heal_c',
         'snd_impact',
         'snd_shakerbreaker',
       ],
@@ -104,10 +115,6 @@ const getSummitResourcepackPaths = () => {
       'music.phase.repeat.1',
       'music.phase.repeat.end-note',
       'music.soul.0',
-      'music.soul.5',
-      'soul.heal',
-      'soul.saved',
-      'soul.transition',
     ];
 
     for (const key of keysToPrune) {
