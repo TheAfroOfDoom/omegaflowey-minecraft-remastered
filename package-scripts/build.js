@@ -175,7 +175,7 @@ const compileResourcepack = async () => {
       throw new Error(`Source path does not exist: ${chalk.yellow(src)}`);
     }
 
-    const dest = `${compiledPath}/${src}`;
+    const dest = `${compiledPath}/${src.replace(/^resourcepack\//, '')}`;
     await copy(src, dest, { ...copyOptions });
   };
 
