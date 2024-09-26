@@ -1,5 +1,5 @@
 const chalk = require('chalk');
-const { copy, emptyDir, pathExists } = require('fs-extra');
+const { copy, emptyDir, pathExists, readJson, writeJson } = require('fs-extra');
 const parseArgs = require('minimist');
 
 const buildDir = './build';
@@ -50,6 +50,8 @@ const getSummitDatapackPaths = () => {
 };
 
 const getSummitResourcepackPaths = () => {
+  const postProcessors = [];
+
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
@@ -72,12 +74,44 @@ const getSummitResourcepackPaths = () => {
     ),
   );
 
+  // NOTE: this needs to be kept updated with the sounds we export above (`soundPaths`).
+  // Do this by loading the build pack in Minecraft and checking the log for `File ... does not exist` warnings
+  const pruneSoundsJson = async ({ compiledPath }) => {
+    const pathSoundsJson = `${compiledPath}/assets/omega-flowey/sounds.json`;
+    const soundsJson = await readJson(pathSoundsJson);
+
+    const keysToPrune = [
+      'attack.flies.buzzing',
+      'attack.flies.summon',
+      'attack.flies.swallow',
+      'boss-fight.alarm',
+      'boss-fight.static',
+      'music.generic.boss-fight.0',
+      'music.generic.boss-fight.1',
+      'music.generic.boss-fight.repeat.0',
+      'music.generic.boss-fight.repeat.1',
+      'music.generic.boss-fight.end-note',
+      'music.soul.0',
+      'music.soul.5',
+      'soul.heal',
+      'soul.saved',
+      'soul.transition',
+    ];
+
+    for (const key of keysToPrune) {
+      delete soundsJson[key];
+    }
+
+    await writeJson(pathSoundsJson, soundsJson, { spaces: 2 });
+  };
+  postProcessors.push(pruneSoundsJson);
+
   const omegaFloweyPaths = prefixPaths('omega-flowey/', [
     'font',
     'models/entity', // TODO probably none of these actually since it's all .ajblueprints
     ...soundPaths,
     'textures', // TODO not all them lol
-    'sounds.json', // TODO prune this file in dest location (automatically?)
+    'sounds.json',
   ]);
 
   const assetsPaths = prefixPaths('assets/', [
@@ -92,7 +126,7 @@ const getSummitResourcepackPaths = () => {
     ...assetsPaths,
   ]);
 
-  return resourcepackPaths;
+  return { paths: resourcepackPaths, postProcessors };
 };
 
 const logInfo = (...data) => {
@@ -161,11 +195,13 @@ const compileResourcepack = async () => {
 
   await emptyDir(compiledPath);
 
-  const paths = getResourcepackCompilePaths();
+  const logPrefix = chalk.magenta('[R]:');
+
+  const { paths, postProcessors } = getResourcepackCompilePaths();
   if (args.verbose) {
     logVerbose(chalk.bold(chalk.magenta('Resourcepack compile paths:')));
     for (const src of paths) {
-      logVerbose(chalk.magenta('[R]:'), src);
+      logVerbose(logPrefix, src);
     }
   }
 
@@ -183,6 +219,12 @@ const compileResourcepack = async () => {
   logInfo(
     `Finished copying ${paths.length} ${chalk.magenta('resourcepack')} paths`,
   );
+
+  logInfo(logPrefix, `Running ${postProcessors.length} post-processors`);
+  await Promise.all(
+    postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
+  );
+  logInfo(logPrefix, `Finished post-processing`);
 };
 
 const compile = async () => {
