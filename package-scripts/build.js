@@ -19,7 +19,16 @@ const getSummitDatapackPaths = () => {
     'tick.mcfunction',
   ]);
 
-  const entityPaths = prefixPaths('entity/function/', [...attackPaths]);
+  const bossFightPaths = prefixPaths('directorial/boss_fight/', [
+    'shared',
+    'summit',
+  ]);
+
+  const entityPaths = prefixPaths('entity/function/', [
+    ...attackPaths,
+    ...bossFightPaths,
+    'directorial/tick.mcfunction',
+  ]);
 
   const utilsPaths = prefixPaths('utils/function/', [
     'math/max.mcfunction',
@@ -55,11 +64,15 @@ const getSummitResourcepackPaths = () => {
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
-  // TODO: missing boss_fight / soul_event sounds
+  // TODO: missing soul_event sounds
   const soundPaths = prefixPaths(
     'sounds/',
     suffixPaths(
       [
+        'mus_f_alarm',
+        'mus_f_noise',
+        'mus_f_part1',
+        'mus_f_part2',
         'mus_sfx_a_bullet',
         'mus_sfx_a_target',
         'mus_sfx_generate',
@@ -84,13 +97,12 @@ const getSummitResourcepackPaths = () => {
       'attack.flies.buzzing',
       'attack.flies.summon',
       'attack.flies.swallow',
-      'boss-fight.alarm',
-      'boss-fight.static',
-      'music.generic.boss-fight.0',
-      'music.generic.boss-fight.1',
       'music.generic.boss-fight.repeat.0',
       'music.generic.boss-fight.repeat.1',
       'music.generic.boss-fight.end-note',
+      'music.phase.repeat.0',
+      'music.phase.repeat.1',
+      'music.phase.repeat.end-note',
       'music.soul.0',
       'music.soul.5',
       'soul.heal',
