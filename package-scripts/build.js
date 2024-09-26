@@ -107,6 +107,10 @@ const getResourcepackCompilePaths = () => {
   }
 };
 
+const copyOptions = {
+  overwrite: false,
+};
+
 const compileDatapack = async () => {
   const compiledPath = `${buildDir}/omegaFloweyDatapack`;
 
@@ -127,7 +131,7 @@ const compileDatapack = async () => {
     }
 
     const dest = `${compiledPath}/${src}`;
-    await copy(src, dest);
+    await copy(src, dest, { ...copyOptions });
   };
 
   await Promise.all(paths.map(copySrcToDest));
@@ -154,7 +158,7 @@ const compileResourcepack = async () => {
     }
 
     const dest = `${compiledPath}/${src}`;
-    await copy(src, dest);
+    await copy(src, dest, { ...copyOptions });
   };
 
   await Promise.all(paths.map(copySrcToDest));
