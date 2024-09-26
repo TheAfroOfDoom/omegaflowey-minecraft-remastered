@@ -108,7 +108,6 @@ const getSummitResourcepackPaths = () => {
 
   const omegaFloweyPaths = prefixPaths('omega-flowey/', [
     'font',
-    'models/entity', // TODO probably none of these actually since it's all .ajblueprints
     ...soundPaths,
     'textures', // TODO not all them lol
     'sounds.json',
