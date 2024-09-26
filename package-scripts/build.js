@@ -1,6 +1,7 @@
 const chalk = require('chalk');
 const { copy, emptyDir, pathExists, readJson, writeJson } = require('fs-extra');
 const parseArgs = require('minimist');
+const { rimraf } = require('rimraf');
 
 const buildDir = './build';
 
@@ -165,10 +166,53 @@ const getSummitResourcepackPaths = () => {
   };
   postProcessors.push(pruneSoundsJson);
 
+  const attackTexturePaths = prefixPaths('attacks/', [
+    ...suffixPaths(
+      [
+        'blank',
+        'blank_1',
+        'blank_2',
+        'finger-gun-laser',
+        'flowery',
+        'friendliness-pellet-ring-blinking',
+        'friendliness-pellet-ring-finished',
+        'homing-vine',
+        'homing-vine-blinking-lane',
+        'moss_block_1',
+      ],
+      '.png',
+    ),
+    ...suffixPaths(
+      ['friendliness-pellet-ring-blinking', 'homing-vine-blinking-lane'],
+      '.png.mcmeta',
+    ),
+  ]);
+
+  const texturePaths = prefixPaths('textures/custom/', [
+    ...attackTexturePaths,
+    'dentata_snake_ball',
+    'lower_eye',
+    'pipe',
+    'soul',
+    'tv_screen',
+    'upper_eye',
+    'black.png',
+    'white.png',
+  ]);
+
+  const deletePaintDotNetFiles = async ({ compiledPath }) => {
+    const compiledTexturesDir = `${compiledPath}/assets/omega-flowey/textures`;
+
+    const pdnGlob = `${compiledTexturesDir}/**/*.pdn`;
+
+    await rimraf(pdnGlob, { glob: true });
+  };
+  postProcessors.push(deletePaintDotNetFiles);
+
   const omegaFloweyPaths = prefixPaths('omega-flowey/', [
     'font',
     ...soundPaths,
-    'textures', // TODO not all them lol
+    ...texturePaths,
     'sounds.json',
   ]);
 
