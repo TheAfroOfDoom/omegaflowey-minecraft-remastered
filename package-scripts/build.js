@@ -53,12 +53,29 @@ const getSummitResourcepackPaths = () => {
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
-  // const soundPaths = prefixPaths('sounds/', []);
+  // TODO: missing boss_fight / soul_event sounds
+  const soundPaths = prefixPaths(
+    'sounds/',
+    suffixPaths(
+      [
+        'mus_sfx_a_bullet',
+        'mus_sfx_a_target',
+        'mus_sfx_generate',
+        'mus_sfx_segapower',
+        'mus_sfx_yowl',
+        'snd_bombfall',
+        'snd_bombsplosion',
+        'snd_impact',
+        'snd_shakerbreaker',
+      ],
+      '.ogg',
+    ),
+  );
 
   const omegaFloweyPaths = prefixPaths('omega-flowey/', [
     'font',
     'models/entity', // TODO probably none of these actually since it's all .ajblueprints
-    'sounds', // TODO not all them lol
+    ...soundPaths,
     'textures', // TODO not all them lol
     'sounds.json', // TODO prune this file in dest location (automatically?)
   ]);
@@ -86,6 +103,7 @@ const logVerbose = (...data) => {
 };
 
 const prefixPaths = (prefix, paths) => paths.map((path) => `${prefix}${path}`);
+const suffixPaths = (paths, suffix) => paths.map((path) => `${path}${suffix}`);
 
 const getDatapackCompilePaths = () => {
   const { variant } = args;
