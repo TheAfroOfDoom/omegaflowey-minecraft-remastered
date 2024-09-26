@@ -5,7 +5,7 @@ const parseArgs = require('minimist');
 const buildDir = './build';
 
 const getSummitDatapackPaths = () => {
-  const attackPaths = prefixPaths('hostile/omega-flowey/attack/', [
+  const attackPaths = prefixPaths('attack/', [
     'bomb',
     'dentata-snakes',
     'finger-guns',
@@ -24,6 +24,19 @@ const getSummitDatapackPaths = () => {
     'summit',
   ]);
 
+  const entityOmegaFloweyPaths = prefixPaths('omega-flowey/', [
+    'animate',
+    ...attackPaths,
+    'summon',
+    'animate.mcfunction',
+    'tick.mcfunction',
+  ]);
+
+  const hostilePaths = prefixPaths('hostile/', [
+    ...entityOmegaFloweyPaths,
+    'tick.mcfunction',
+  ]);
+
   const playerPaths = prefixPaths('player/', [
     'shake_screen.mcfunction',
     'tick.mcfunction',
@@ -36,13 +49,12 @@ const getSummitDatapackPaths = () => {
     'tick.mcfunction',
   ]);
 
-  // TODO: entity/hostile
   // TODO: entity/utils
   const entityPaths = prefixPaths('entity/function/', [
-    ...attackPaths,
     ...bossFightPaths,
     'directorial/tick.mcfunction',
     'group',
+    ...hostilePaths,
     ...playerPaths,
     'remove_animated_java_models',
     ...soulPaths,
