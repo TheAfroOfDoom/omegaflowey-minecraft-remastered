@@ -10,6 +10,9 @@ execute if score #omega-flowey.origin.error global.flag matches 1 run return fai
 # Set all attack parameters to default
 function entity:hostile/omega-flowey/attack/reset_scores
 
+# Reset soul event completion status flags
+function entity:directorial/boss_fight/shared/reset_scores
+
 # Set scores
 scoreboard players set @s boss-fight.attack.delay -1
 scoreboard players set @s boss-fight.attack.phase.i 0
@@ -17,9 +20,6 @@ scoreboard players set @s boss-fight.attack.phase.total 2
 scoreboard players set @s boss-fight.progress.phase.i 0
 scoreboard players set @s boss-fight.progress.phase.total 2
 
-# Flags that represent whether a soul event has been completed or not.
-# Used to determine what animation / variant to use for petal pipe models (default / disabled)
-scoreboard players set #boss-fight.soul_5.complete boss-fight.flag 0
 
 # Begin animating Omega Flowey entity
 function entity:hostile/omega-flowey/animate
