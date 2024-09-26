@@ -6,6 +6,8 @@ const { rimraf } = require('rimraf');
 const buildDir = './build';
 
 const getSummitDatapackPaths = () => {
+  const postProcessors = [];
+
   const attackPaths = prefixPaths('attack/', [
     'bomb',
     'dentata-snakes',
@@ -104,7 +106,7 @@ const getSummitDatapackPaths = () => {
     ...primaryDatapackPaths,
   ]);
 
-  return datapackPaths;
+  return { paths: datapackPaths, postProcessors };
 };
 
 const getSummitResourcepackPaths = () => {
@@ -272,7 +274,7 @@ const compileDatapack = async () => {
 
   const logPrefix = chalk.blue('[D]:');
 
-  const paths = getDatapackCompilePaths();
+  const { paths, postProcessors } = getDatapackCompilePaths();
   if (args.verbose) {
     logVerbose(chalk.bold(chalk.blue('Datapack compile paths:')));
     for (const src of paths) {
@@ -295,6 +297,14 @@ const compileDatapack = async () => {
     logPrefix,
     `Finished copying ${paths.length} ${chalk.blue('datapack')} paths`,
   );
+
+  if (postProcessors.length > 0) {
+    logInfo(logPrefix, `Running ${postProcessors.length} post-processors`);
+    await Promise.all(
+      postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
+    );
+    logInfo(logPrefix, `Finished post-processing`);
+  }
 };
 
 const compileResourcepack = async () => {
@@ -328,11 +338,13 @@ const compileResourcepack = async () => {
     `Finished copying ${paths.length} ${chalk.magenta('resourcepack')} paths`,
   );
 
-  logInfo(logPrefix, `Running ${postProcessors.length} post-processors`);
-  await Promise.all(
-    postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
-  );
-  logInfo(logPrefix, `Finished post-processing`);
+  if (postProcessors.length > 0) {
+    logInfo(logPrefix, `Running ${postProcessors.length} post-processors`);
+    await Promise.all(
+      postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
+    );
+    logInfo(logPrefix, `Finished post-processing`);
+  }
 };
 
 const compile = async () => {
