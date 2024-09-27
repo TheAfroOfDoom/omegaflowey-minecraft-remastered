@@ -1,6 +1,9 @@
 # Summon laser
-# TODO: TAG_SUMMIT_HARDCODED
-$execute positioned -178.0 63.5 $(z) run function animated_java:finger_gun_laser/summon { args: {} }
+$function entity:directorial/boss_fight/summit/origin/at/x { \
+  command: 'function entity:directorial/boss_fight/summit/origin/at/y { \
+    command: "execute positioned ~ ~-3.5 $(z) run function animated_java:finger_gun_laser/summon { args: {} }" \
+  }' \
+}
 
 # Copy group id to laser
 execute store result storage group id int 1 run scoreboard players get @s group.id

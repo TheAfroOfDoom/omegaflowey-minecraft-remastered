@@ -1,28 +1,25 @@
 # randomize x-position
-# TODO: TAG_SUMMIT_HARDCODED
-scoreboard players set @s attack.position.x -19850
+scoreboard players operation @s attack.position.x = #omega-flowey.bossfight.summit.origin.x global.flag
 execute store result score @s math.0 run random value 0..1
-# TODO: TAG_SUMMIT_HARDCODED
-execute if score @s math.0 matches 1 run scoreboard players set @s attack.position.x -15650
+execute if score @s math.0 matches 0 run scoreboard players remove @s attack.position.x 2100
+execute if score @s math.0 matches 1 run scoreboard players add @s attack.position.x 2100
 
-# TODO: TAG_SUMMIT_HARDCODED
-# face east if at -156.5, face west if at -198.5
+# set yaw based on randomized x-side of arena
 scoreboard players set @s attack.indicator.yaw -9000
 execute if score @s math.0 matches 1 run scoreboard players set @s attack.indicator.yaw 9000
 
 # y-position
-# TODO: TAG_SUMMIT_HARDCODED
-scoreboard players set @s attack.position.y 6300
+scoreboard players operation @s attack.position.y = #omega-flowey.bossfight.summit.origin.y global.flag
+scoreboard players remove @s attack.position.y 400
 
-# TODO: TAG_SUMMIT_HARDCODED
-# Randomize z-position to summon indicator at (z: [-3.5..19.5])
-# TODO: TAG_SUMMIT_HARDCODED
-execute store result score @s attack.position.z run random value 305..535
+# Randomize z-position to summon indicator at
+execute store result score @s attack.position.z run random value -3200..-900
+scoreboard players operation @s attack.position.z += #omega-flowey.bossfight.summit.origin.z global.flag
 
 # Store new position and yaw
 execute store result storage attack:finger-guns x double 0.01 run scoreboard players get @s attack.position.x
 execute store result storage attack:finger-guns y double 0.01 run scoreboard players get @s attack.position.y
-execute store result storage attack:finger-guns z double 0.1 run scoreboard players get @s attack.position.z
+execute store result storage attack:finger-guns z double 0.01 run scoreboard players get @s attack.position.z
 execute store result storage attack:finger-guns yaw float 0.01 run scoreboard players get @s attack.indicator.yaw
 # flat pitch
 data merge storage attack:finger-guns { pitch: 0.0f }
