@@ -3,6 +3,7 @@ const { readFileSync } = require('fs');
 
 const applicableExtensions = [
   'datapacks/omega-flowey/data/entity/function/directorial/boss_fight/summit/origin/setup.mcfunction',
+  'datapacks/omega-flowey/data/entity/function/directorial/boss_fight/summit/soul_origin/setup.mcfunction',
 ];
 
 /**
@@ -25,9 +26,12 @@ const originScoresEqual = (file) => {
     Number(`${raw.slice(0, -2)}.${raw.slice(-2)}`),
   );
 
+  const originType = fileNormalized.includes('soul_origin')
+    ? 'soul_origin'
+    : 'origin';
   const readOriginFunction = (subpath) =>
     readFileSync(
-      `datapacks/omega-flowey/data/entity/function/directorial/boss_fight/summit/origin/at/${subpath}.mcfunction`,
+      `datapacks/omega-flowey/data/entity/function/directorial/boss_fight/summit/${originType}/at/${subpath}.mcfunction`,
       'utf8',
     );
 
