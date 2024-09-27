@@ -17,9 +17,16 @@ execute if score @s attack.clock.i matches 20 run function entity:hostile/omega-
 # Move down faster during actual fall after a delay
 execute if score @s attack.clock.i matches 20.. run teleport @s ~ ~-2.2 ~
 
+# Check if below the floor
+scoreboard players set @s math.0 0
+function entity:directorial/boss_fight/summit/origin/at/position { \
+  command: "execute positioned ~100.0 ~-4.0 ~87.5 if entity @s[dx=-200,dy=-20,dz=-200] run \
+    scoreboard players set @s math.0 1\
+  " \
+}
+
 # Stop falling after bomb falls through floor
-# TODO: TAG_SUMMIT_HARDCODED
-execute at @s if entity @s[x=-77.5,dx=-200,y=63,dy=-20,z=150,dz=-200] run function entity:hostile/omega-flowey/attack/bomb/bullet/loop/stop_falling
+execute if score @s math.0 matches 1 run function entity:hostile/omega-flowey/attack/bomb/bullet/loop/stop_falling
 
 # TODO(68): validate/determine a value for how long until the bomb bullets terminate
 # Terminate after X seconds
