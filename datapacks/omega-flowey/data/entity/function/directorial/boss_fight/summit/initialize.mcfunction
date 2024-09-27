@@ -5,7 +5,6 @@ execute unless entity @e[type=minecraft:item_display, tag=aj.tv_screen.root, tag
   function entity:directorial/boss_fight/summit/origin/at { \
     command: "function entity:hostile/omega-flowey/summon/relative" \
   }
-execute if score #omega-flowey.origin.error global.flag matches 1 run return fail
 
 # Set all attack parameters to default
 function entity:hostile/omega-flowey/attack/reset_scores

@@ -16,5 +16,4 @@ function entity:directorial/boss_fight/summit/origin/at { \
       ] \
     }" \
 }
-execute if score #omega-flowey.origin.error global.flag matches 1 run return fail
 execute as @e[tag=boss_fight_new] at @s run function entity:directorial/boss_fight/summit/initialize
