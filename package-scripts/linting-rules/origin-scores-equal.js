@@ -18,10 +18,12 @@ const originScoresEqual = (file) => {
   }
 
   const errors = [];
-  const content = readFileSync(file, 'utf8');
-  const lines = content.split('\n').filter((line) => line !== '');
+  const lines = readFileSync(file, 'utf8').split('\n');
+  const scoreLines = lines.filter((line) => line.includes('global.flag'));
 
-  const scoresRaw = lines.map((line) => line.match(/global\.flag (-?\d+)/)[1]);
+  const scoresRaw = scoreLines.map(
+    (line) => line.match(/global\.flag (-?\d+)/)[1],
+  );
   const scores = scoresRaw.map((raw) =>
     Number(`${raw.slice(0, -2)}.${raw.slice(-2)}`),
   );
