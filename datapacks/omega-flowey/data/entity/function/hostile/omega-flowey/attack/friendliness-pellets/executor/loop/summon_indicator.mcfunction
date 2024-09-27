@@ -1,9 +1,9 @@
 ## summons an indicator at a player
 
 # Summon indicator
-# NOTE: this is -4 blocks from origin's Y coordinate
-# TODO: TAG_SUMMIT_HARDCODED
-execute at @r[team=player] positioned ~ 63.0 ~ run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/summon
+execute at @r[team=player] run function entity:directorial/boss_fight/summit/origin/at/y { \
+  command: "execute positioned ~ ~-4.0 ~ run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/summon" \
+}
 
 # TODO(43): this is so unbelievably hacky
 # first indicator is 6 ticks slower before it starts summoning bullets
