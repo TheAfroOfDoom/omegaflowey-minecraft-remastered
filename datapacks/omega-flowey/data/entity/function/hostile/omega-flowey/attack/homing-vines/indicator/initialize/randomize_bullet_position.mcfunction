@@ -5,19 +5,23 @@ execute store result score @s math.0 run random value -1500..1500
 scoreboard players operation @s attack.position.x += @s math.0
 
 # Bound `attack.position.x` within arena
+# TODO: TAG_SUMMIT_HARDCODED
 data merge storage utils:math.max { a: -19900 }
 execute store result storage utils:math.max b int 1 run scoreboard players get @s attack.position.x
 function utils:math/max
 execute store result score @s attack.position.x run data get storage utils:math.max out
+# TODO: TAG_SUMMIT_HARDCODED
 data merge storage utils:math.min { a: -15700 }
 execute store result storage utils:math.min b int 1 run scoreboard players get @s attack.position.x
 function utils:math/min
 execute store result score @s attack.position.x run data get storage utils:math.min out
 
 # Randomize y-position to summon bullet at
+# TODO: TAG_SUMMIT_HARDCODED
 execute store result score @s attack.position.y run random value 6400..7000
 
 # Set z-position to summon bullet at
+# TODO: TAG_SUMMIT_HARDCODED
 scoreboard players set @s attack.position.z 5400
 
 execute store result storage attack:homing-vines x float 0.01 run scoreboard players get @s attack.position.x

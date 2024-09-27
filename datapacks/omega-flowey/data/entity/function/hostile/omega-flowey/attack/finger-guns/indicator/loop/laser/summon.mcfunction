@@ -1,4 +1,5 @@
 # Summon laser
+# TODO: TAG_SUMMIT_HARDCODED
 $execute positioned -178.0 63.5 $(z) run function animated_java:finger_gun_laser/summon { args: {} }
 
 # Copy group id to laser

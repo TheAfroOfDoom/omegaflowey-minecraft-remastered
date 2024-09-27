@@ -1,16 +1,22 @@
 # randomize x-position
+# TODO: TAG_SUMMIT_HARDCODED
 scoreboard players set @s attack.position.x -19850
 execute store result score @s math.0 run random value 0..1
+# TODO: TAG_SUMMIT_HARDCODED
 execute if score @s math.0 matches 1 run scoreboard players set @s attack.position.x -15650
 
+# TODO: TAG_SUMMIT_HARDCODED
 # face east if at -156.5, face west if at -198.5
 scoreboard players set @s attack.indicator.yaw -9000
 execute if score @s math.0 matches 1 run scoreboard players set @s attack.indicator.yaw 9000
 
 # y-position
+# TODO: TAG_SUMMIT_HARDCODED
 scoreboard players set @s attack.position.y 6300
 
+# TODO: TAG_SUMMIT_HARDCODED
 # Randomize z-position to summon indicator at (z: [-3.5..19.5])
+# TODO: TAG_SUMMIT_HARDCODED
 execute store result score @s attack.position.z run random value 305..535
 
 # Store new position and yaw

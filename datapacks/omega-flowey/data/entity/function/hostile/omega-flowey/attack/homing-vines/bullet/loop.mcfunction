@@ -7,6 +7,7 @@ data merge storage utils:damage { damage: 2, radius: 1 }
 execute if entity @s[tag=!cant-damage] run function entity:utils/damage with storage utils:damage
 
 # Move while inside arena
+# TODO: TAG_SUMMIT_HARDCODED
 execute if entity @s[x=-203,dx=50,y=62,dy=10,z=55.0,dz=-23] run function entity:hostile/omega-flowey/attack/homing-vines/bullet/loop/move
 
 # TODO(41): validate/determine a value for how long until the homing-vines bullets terminate

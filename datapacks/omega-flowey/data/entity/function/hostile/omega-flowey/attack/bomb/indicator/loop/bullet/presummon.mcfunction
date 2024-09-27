@@ -1,7 +1,7 @@
-# Randomize x-position to summon bullet
+# Randomize x/z-position to summon bullet
+# TODO: TAG_SUMMIT_HARDCODED
 execute store result score @s attack.position.x run random value -1995..-1555
-
-# Randomize z-position to summon bullet
+# TODO: TAG_SUMMIT_HARDCODED
 execute store result score @s attack.position.z run random value 310..540
 
 # Store position

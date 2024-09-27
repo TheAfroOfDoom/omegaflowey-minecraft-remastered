@@ -1,3 +1,4 @@
+# TODO: TAG_SUMMIT_HARDCODED
 summon block_display -175.0 79.5 84.0 \
     {Tags:["omega-flowey-remastered","soul","call-for-help-display","call-for-help-display-new"], \
     Passengers:[{id:"minecraft:text_display", \

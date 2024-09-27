@@ -9,6 +9,7 @@ scoreboard players operation @s attack.bullets.remaining = @s attack.bullets.tot
 # Determine if this indicator belongs to the right/left eye
 # HARDCODED BOUND FOR DEVELOPMENT SPEED => x: -178.0
 execute store result score @s math.0 run data get entity @s Pos[0] 100
+# TODO: TAG_SUMMIT_HARDCODED
 execute if score @s math.0 matches -17800.. run tag @s add indicator.left
 
 # Remove tags

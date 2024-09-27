@@ -5,6 +5,7 @@ data merge storage utils:damage { damage: 2.5 }
 function entity:utils/damage with storage utils:damage
 
 # Bounce if hit edge of arena
+# TODO: TAG_SUMMIT_HARDCODED
 execute unless entity @s[x=-156.5,dx=-42,y=50,dy=40,z=53,dz=-21] run function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/maybe_bounce
 
 # Move forward at defined `attack.speed.z` velocity

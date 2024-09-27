@@ -1,7 +1,9 @@
 ## Summon bullet
 # bullet head (begin animation)
+# TODO: TAG_SUMMIT_HARDCODED
 $execute if score @s attack.bullets.count matches 0 positioned $(x) 63.0 $(z) run function animated_java:dentata_snake_ball/summon { args: { animation: 'roll_bite', start_animation: true } }
 # bullet tail
+# TODO: TAG_SUMMIT_HARDCODED
 $execute unless score @s attack.bullets.count matches 0 positioned $(x) 63.0 $(z) run function animated_java:dentata_snake_ball/summon/tail
 
 # Initialize bullet

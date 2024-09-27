@@ -2,6 +2,7 @@
 
 # Summon indicator
 # NOTE: this is -4 blocks from origin's Y coordinate
+# TODO: TAG_SUMMIT_HARDCODED
 execute at @r[team=player] run summon minecraft:marker ~ 63.0 ~ { \
   CustomName: '"Friendliness-Pellets Indicator"', \
   Tags: [ \

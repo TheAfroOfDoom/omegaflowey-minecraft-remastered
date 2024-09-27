@@ -1,4 +1,5 @@
 # Summon bullet
+# TODO: TAG_SUMMIT_HARDCODED
 $execute positioned $(x) 65 $(z) run function animated_java:finger_gun_bullet/summon { args: { animation: 'shoot', start_animation: true } }
 
 # Copy yaw to bullet
