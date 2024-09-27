@@ -1,18 +1,41 @@
-# Don't bounce if we've already escaped the arena (past wall towards Flowey)
-# TODO: TAG_SUMMIT_HARDCODED
-execute if entity @s[x=822.5,dx=-2000,y=60,dy=10,z=54,dz=1000,tag=can-escape-arena] run return 0
+# Check if escaped arena past z-bound towarsd flowey
+scoreboard players set @s math.0 0
+function entity:directorial/boss_fight/summit/origin/at/position { \
+  command: "execute positioned ~1000.0 ~-7.0 ~-8.5 if entity @s[dx=-2000,dy=10,dz=1000] run \
+    scoreboard players set @s math.0 1" \
+}
+
+# Don't bounce if we've already escaped the arena
+execute if score @s math.0 matches 1 if entity @s[tag=can-escape-arena] run return 0
 
 # TODO(42): adjust arena bounds based on new animated java model (visually, it clips into the wall right now)
-# TODO: TAG_SUMMIT_HARDCODED
-data merge storage attack:dentata-snakes.bounce { x_negative_x: -198.5, x_negative_dx: 50 }
-# TODO: TAG_SUMMIT_HARDCODED
-data merge storage attack:dentata-snakes.bounce { x_positive_x: -156.5, x_positive_dx: -50 }
-# TODO: TAG_SUMMIT_HARDCODED
-data merge storage attack:dentata-snakes.bounce { z_negative_z: 32, z_negative_dz: 25 }
-# TODO: TAG_SUMMIT_HARDCODED
-data merge storage attack:dentata-snakes.bounce { z_positive_z: 53, z_positive_dz: -25 }
-# TODO: TAG_SUMMIT_HARDCODED
-data merge storage attack:dentata-snakes.bounce { y: 60, dy: 10 }
-data merge storage attack:dentata-snakes.bounce { command_after_bouncing: 'execute if entity @s[tag=attack-bullet-head] run function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/after_bounce_as_bullet_head' }
+scoreboard players set @s math.0 -2100
+scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.x global.flag
+execute store result storage attack:dentata-snakes.bounce x_negative_x float 0.01 run scoreboard players get @s math.0
+data modify storage attack:dentata-snakes.bounce x_negative_dx set value 50
 
-function entity:utils/bounce with storage attack:dentata-snakes.bounce
+scoreboard players set @s math.0 2100
+scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.x global.flag
+execute store result storage attack:dentata-snakes.bounce x_positive_x float 0.01 run scoreboard players get @s math.0
+data modify storage attack:dentata-snakes.bounce x_positive_dx set value -50
+
+scoreboard players set @s math.0 -3050
+scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.z global.flag
+execute store result storage attack:dentata-snakes.bounce z_negative_z float 0.01 run scoreboard players get @s math.0
+data modify storage attack:dentata-snakes.bounce z_negative_dz set value 25
+
+scoreboard players set @s math.0 -950
+scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.z global.flag
+execute store result storage attack:dentata-snakes.bounce z_positive_z float 0.01 run scoreboard players get @s math.0
+data modify storage attack:dentata-snakes.bounce z_positive_dz set value -25
+
+scoreboard players set @s math.0 -700
+scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.y global.flag
+execute store result storage attack:dentata-snakes.bounce y float 0.01 run scoreboard players get @s math.0
+data modify storage attack:dentata-snakes.bounce dy set value 10
+
+data modify storage attack:dentata-snakes.bounce command_after_bouncing set value 'execute if entity @s[tag=attack-bullet-head] run function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/after_bounce_as_bullet_head'
+
+function entity:directorial/boss_fight/summit/origin/at/position { \
+  command: "function entity:utils/bounce with storage attack:dentata-snakes.bounce" \
+}

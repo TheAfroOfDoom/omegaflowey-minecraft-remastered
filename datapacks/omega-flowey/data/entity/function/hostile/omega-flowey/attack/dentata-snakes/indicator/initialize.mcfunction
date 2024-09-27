@@ -10,10 +10,10 @@ scoreboard players operation @s attack.bullets.total = #attack-dentata-snakes at
 tag @s remove attack-indicator-new
 
 # Randomize position to summon bullet at
-# TODO: TAG_SUMMIT_HARDCODED
-execute store result score @s attack.bullets.position.x run random value -19250..-16250
-# TODO: TAG_SUMMIT_HARDCODED
-scoreboard players set @s attack.bullets.position.z 5500
+execute store result score @s attack.bullets.position.x run random value -1500..1500
+scoreboard players operation @s attack.bullets.position.x += #omega-flowey.bossfight.summit.origin.x global.flag
+scoreboard players set @s attack.bullets.position.z -750
+scoreboard players operation @s attack.bullets.position.z += #omega-flowey.bossfight.summit.origin.z global.flag
 
 # Randomize initial yaw of bullets
 execute store result score @s math.0 run random value 0..1
