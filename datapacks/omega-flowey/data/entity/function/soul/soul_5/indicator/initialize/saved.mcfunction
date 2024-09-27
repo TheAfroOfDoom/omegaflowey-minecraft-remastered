@@ -2,5 +2,6 @@
 tag @s remove shaking
 
 # Return to starting position
-# TODO: TAG_SUMMIT_HARDCODED
-teleport @s -178.0 63.1 117.5
+function entity:directorial/boss_fight/summit/soul_origin/at/position {\
+  command: "teleport @s ~ ~-3.9 ~-20.0" \
+}
