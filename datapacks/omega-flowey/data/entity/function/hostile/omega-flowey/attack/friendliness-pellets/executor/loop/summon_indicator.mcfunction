@@ -3,19 +3,7 @@
 # Summon indicator
 # NOTE: this is -4 blocks from origin's Y coordinate
 # TODO: TAG_SUMMIT_HARDCODED
-execute at @r[team=player] run summon minecraft:marker ~ 63.0 ~ { \
-  CustomName: '"Friendliness-Pellets Indicator"', \
-  Tags: [ \
-    "omega-flowey-remastered", \
-    "groupable", \
-    "hostile", \
-    "omega-flowey", \
-    "attack", \
-    "attack-indicator", \
-    "attack-indicator-new", \
-    "friendliness-pellets" \
-  ], \
-}
+execute at @r[team=player] positioned ~ 63.0 ~ run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/summon
 
 # TODO(43): this is so unbelievably hacky
 # first indicator is 6 ticks slower before it starts summoning bullets
