@@ -9,12 +9,12 @@ function entity:directorial/boss_fight/summit/origin/at/position { \
 execute if score @s math.0 matches 1 if entity @s[tag=can-escape-arena] run return 0
 
 # TODO(42): adjust arena bounds based on new animated java model (visually, it clips into the wall right now)
-scoreboard players set @s math.0 -2100
+scoreboard players set @s math.0 -1400
 scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.x global.flag
 execute store result storage attack:dentata-snakes.bounce x_negative_x float 0.01 run scoreboard players get @s math.0
 data modify storage attack:dentata-snakes.bounce x_negative_dx set value 50
 
-scoreboard players set @s math.0 2100
+scoreboard players set @s math.0 1400
 scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.x global.flag
 execute store result storage attack:dentata-snakes.bounce x_positive_x float 0.01 run scoreboard players get @s math.0
 data modify storage attack:dentata-snakes.bounce x_positive_dx set value -50
