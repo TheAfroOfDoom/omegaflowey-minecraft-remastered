@@ -1,8 +1,6 @@
 # Summon laser
 $function entity:directorial/boss_fight/summit/origin/at/x { \
-  command: 'function entity:directorial/boss_fight/summit/origin/at/y { \
-    command: "execute positioned ~ ~-3.5 $(z) run function animated_java:finger_gun_laser/summon { args: {} }" \
-  }' \
+  command: "execute positioned ~ ~0.5 $(z) run function animated_java:finger_gun_laser/summon { args: {} }" \
 }
 
 # Copy group id to laser
