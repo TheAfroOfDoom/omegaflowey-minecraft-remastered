@@ -65,7 +65,7 @@ module.exports = {
     },
     lint: {
       default: 'nps lint.custom lint.scripts',
-      fix: 'nps lint.scripts.fix',
+      fix: series.nps('lint.custom.fix', 'lint.scripts.fix'),
       scripts: {
         default: 'nps lint.scripts.check',
         check: series.nps(
@@ -91,6 +91,7 @@ module.exports = {
           'lint.custom.resourcepack',
           'lint.custom.other',
         ),
+        fix: 'nps "lint.custom.datapacks --fix"',
         datapacks: `node ./package-scripts/run-linting-rules --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
         resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
         other:

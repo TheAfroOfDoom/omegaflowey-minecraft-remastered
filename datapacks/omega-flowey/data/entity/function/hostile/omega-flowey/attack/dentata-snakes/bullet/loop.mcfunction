@@ -7,7 +7,7 @@ function entity:utils/damage with storage utils:damage
 # Check if inside arena
 scoreboard players set @s math.0 0
 function entity:directorial/boss_fight/summit/origin/at/position { \
-  command: "execute positioned ~21.0 ~-17.0 ~-9.5 if entity @s[dx=-42,dy=40,dz=-21] run \
+  command: "execute positioned ~14.0 ~-17.0 ~-9.5 if entity @s[dx=-28,dy=40,dz=-21] run \
     scoreboard players set @s math.0 1\
   " \
 }

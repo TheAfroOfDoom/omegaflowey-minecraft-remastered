@@ -1,10 +1,11 @@
 const chalk = require('chalk');
 const { lstatSync } = require('fs');
 const { globSync } = require('glob');
-const minimist = require('minimist');
+const parseArgs = require('minimist');
 const { basename } = require('path');
 
-const argv = minimist(process.argv.slice(2));
+const minimistOptions = { boolean: ['fix'] };
+const argv = parseArgs(process.argv.slice(2), minimistOptions);
 
 const rules = globSync('./package-scripts/linting-rules/*.js').map(
   (rulePath) => ({
@@ -29,7 +30,7 @@ const main = () => {
   for (const file of files) {
     const errors = [];
     for (const rule of rules) {
-      const ruleErrors = rule.function(file);
+      const ruleErrors = rule.function(file, argv);
       errors.push(
         ...ruleErrors.map((error) => `${chalk.yellow(rule.name)}: ${error}`),
       );
