@@ -9,6 +9,7 @@ This directory contains convenience functions for developers for quicker calls t
 - `boss_fight`: starts the vanilla boss fight
   - `boss_fight/stop`: stops any currently running boss fights
 - `heal`: heals the executing player to full, fills the hunger bar, and applies infinite night vision
+- `origin`: changes the execution location to the summit boss-fight origin and runs a specified `command` macro
 - `reset_scores`: resets the `omega-flowey` boss's attack score parameters
 - `reset`: calls `omega-flowey:reset`
 - `soul/N`: starts soul N's phase

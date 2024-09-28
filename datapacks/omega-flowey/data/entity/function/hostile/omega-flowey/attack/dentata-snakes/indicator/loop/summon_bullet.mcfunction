@@ -1,8 +1,14 @@
 ## Summon bullet
 # bullet head (begin animation)
-$execute if score @s attack.bullets.count matches 0 positioned $(x) 63.0 $(z) run function animated_java:dentata_snake_ball/summon { args: { animation: 'roll_bite', start_animation: true } }
+$execute if score @s attack.bullets.count matches 0 run function entity:directorial/boss_fight/summit/origin/at/y { \
+  command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:dentata_snake_ball/summon { \
+    args: { animation: 'roll_bite', start_animation: true } \
+  }" \
+}
 # bullet tail
-$execute unless score @s attack.bullets.count matches 0 positioned $(x) 63.0 $(z) run function animated_java:dentata_snake_ball/summon/tail
+$execute unless score @s attack.bullets.count matches 0 run function entity:directorial/boss_fight/summit/origin/at/y { \
+  command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:dentata_snake_ball/summon/tail" \
+}
 
 # Initialize bullet
 execute if score @s attack.bullets.count matches 0 as @e[tag=attack-bullet-new] run function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/initialize/head

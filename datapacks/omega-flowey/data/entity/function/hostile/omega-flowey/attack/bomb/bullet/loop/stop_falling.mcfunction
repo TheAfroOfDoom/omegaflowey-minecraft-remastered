@@ -1,5 +1,7 @@
 # Keep consistent y-pos
-teleport @s ~ 63.0 ~
+function entity:directorial/boss_fight/summit/origin/at/y { \
+  command: "teleport @s ~ ~-4.0 ~" \
+}
 
 # Play animation if we just stopped falling
 execute unless entity @s[tag=is_done_falling] run function animated_java:bomb/animations/explode/play

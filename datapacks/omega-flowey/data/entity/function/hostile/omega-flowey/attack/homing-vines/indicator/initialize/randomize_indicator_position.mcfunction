@@ -5,11 +5,17 @@ execute store result score @s math.0 run random value -50..50
 scoreboard players operation @s attack.position.x += @s math.0
 
 # Bound `attack.position.x` within arena
-data merge storage utils:math.max { a: -19900 }
+# lower-bound
+scoreboard players set @s math.0 -2100
+scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.x global.flag
+execute store result storage utils:math.max a int 1 run scoreboard players get @s math.0
 execute store result storage utils:math.max b int 1 run scoreboard players get @s attack.position.x
 function utils:math/max
 execute store result score @s attack.position.x run data get storage utils:math.max out
-data merge storage utils:math.min { a: -15700 }
+# upper-bound
+scoreboard players set @s math.0 2100
+scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.x global.flag
+execute store result storage utils:math.max a int 1 run scoreboard players get @s math.0
 execute store result storage utils:math.min b int 1 run scoreboard players get @s attack.position.x
 function utils:math/min
 execute store result score @s attack.position.x run data get storage utils:math.min out
@@ -21,11 +27,17 @@ execute store result score @s math.0 run random value -100..100
 scoreboard players operation @s attack.position.z += @s math.0
 
 # Bound `attack.position.z` within arena
-data merge storage utils:math.max { a: 3200 }
+# lower-bound
+scoreboard players set @s math.0 -3050
+scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.z global.flag
+execute store result storage utils:math.max a int 1 run scoreboard players get @s math.0
 execute store result storage utils:math.max b int 1 run scoreboard players get @s attack.position.z
 function utils:math/max
 execute store result score @s attack.position.z run data get storage utils:math.max out
-data merge storage utils:math.min { a: 5300 }
+# upper-bound
+scoreboard players set @s math.0 -950
+scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.x global.flag
+execute store result storage utils:math.max a int 1 run scoreboard players get @s math.0
 execute store result storage utils:math.min b int 1 run scoreboard players get @s attack.position.z
 function utils:math/min
 execute store result score @s attack.position.z run data get storage utils:math.min out

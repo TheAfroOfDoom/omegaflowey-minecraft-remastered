@@ -1,19 +1,8 @@
 ## summons an indicator at a player
 
 # Summon indicator
-# NOTE: this is -4 blocks from origin's Y coordinate
-execute at @r[team=player] run summon minecraft:marker ~ 63.0 ~ { \
-  CustomName: '"Friendliness-Pellets Indicator"', \
-  Tags: [ \
-    "omega-flowey-remastered", \
-    "groupable", \
-    "hostile", \
-    "omega-flowey", \
-    "attack", \
-    "attack-indicator", \
-    "attack-indicator-new", \
-    "friendliness-pellets" \
-  ], \
+execute at @r[team=player] run function entity:directorial/boss_fight/summit/origin/at/y { \
+  command: "execute positioned ~ ~-4.0 ~ run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/summon" \
 }
 
 # TODO(43): this is so unbelievably hacky
