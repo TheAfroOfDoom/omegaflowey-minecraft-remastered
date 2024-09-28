@@ -1,5 +1,5 @@
 const chalk = require('chalk');
-const { readFileSync } = require('fs');
+const { readFileSync, writeFileSync } = require('fs');
 
 const applicableExtensions = [
   'datapacks/omega-flowey/data/entity/function/directorial/boss_fight/summit/origin/setup.mcfunction',
@@ -10,7 +10,7 @@ const applicableExtensions = [
  * Errors if the Summit boss-fight's origin coordinates differ from the
  * scores defined in a separate file
  */
-const originScoresEqual = (file) => {
+const originScoresEqual = (file, options) => {
   const fileNormalized = file.replace(/\\/g, '/');
   // Return early if file does not match any applicable extension
   if (applicableExtensions.every((ext) => !fileNormalized.endsWith(ext))) {
@@ -31,19 +31,19 @@ const originScoresEqual = (file) => {
   const originType = fileNormalized.includes('soul_origin')
     ? 'soul_origin'
     : 'origin';
+  const getFunctionPath = (subpath) =>
+    `datapacks/omega-flowey/data/entity/function/directorial/boss_fight/summit/${originType}/at/${subpath}.mcfunction`;
   const readOriginFunction = (subpath) =>
-    readFileSync(
-      `datapacks/omega-flowey/data/entity/function/directorial/boss_fight/summit/${originType}/at/${subpath}.mcfunction`,
-      'utf8',
-    );
+    readFileSync(getFunctionPath(subpath), 'utf8');
 
   const origin = [];
   const axes = ['x', 'y', 'z'];
   for (const [idx, axis] of axes.entries()) {
     const originLines = readOriginFunction(axis).split('\n');
-    const axisLine = originLines.find((line) =>
+    const axisLineIdx = originLines.findIndex((line) =>
       line.startsWith('$execute positioned '),
     );
+    const axisLine = originLines[axisLineIdx];
     // $execute positioned -177.5 ~ ~ run $(command)
     const position = axisLine
       .replace('$execute positioned ', '')
@@ -51,25 +51,44 @@ const originScoresEqual = (file) => {
     const axesStr = position.split(' ');
     const value = Number(axesStr[idx]);
     origin.push(value);
-  }
 
-  const assertEqual = (idx) => {
-    const score = scores[idx];
-    const originCoord = origin[idx];
-    if (score === originCoord) {
-      return;
-    }
+    const assertEqual = () => {
+      const score = scores[idx];
+      const originCoord = origin[idx];
+      if (score === originCoord) {
+        return;
+      }
 
-    const axis = axes[idx];
-    const scoreRaw = scoresRaw[idx];
-    let error = `origin score mismatch for axis ${chalk.bold(axis)}: `;
-    error += `score ${chalk.red(
-      scoreRaw,
-    )} does not map to coordinate ${chalk.blueBright(originCoord)}`;
+      const axis = axes[idx];
+      const fix = () => {
+        let formattedCoord;
+        if (score === 0) {
+          formattedCoord = '';
+        } else if (Number.isInteger(score)) {
+          formattedCoord = `${score}.0`;
+        } else {
+          formattedCoord = `${score}`;
+        }
+        const expectedPosition = new Array(3).fill('~');
+        expectedPosition[idx] = formattedCoord;
+        const expectedPosStr = expectedPosition.join(' ');
+        const expectedLine = `$execute positioned ${expectedPosStr} run $(command)`;
+        originLines[axisLineIdx] = expectedLine;
+        writeFileSync(getFunctionPath(axis), originLines.join('\n'));
+      };
 
-    errors.push(error);
-  };
-  for (const idx of axes.keys()) {
+      if (options.fix) {
+        fix();
+        return;
+      }
+
+      const scoreRaw = scoresRaw[idx];
+      let error = `origin score mismatch for axis ${chalk.bold(axis)}: `;
+      error += `score ${chalk.red(scoreRaw)} `;
+      error += `does not map to coordinate ${chalk.blueBright(originCoord)}`;
+
+      errors.push(error);
+    };
     assertEqual(idx);
   }
 
