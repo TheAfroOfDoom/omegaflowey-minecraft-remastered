@@ -7,8 +7,7 @@ execute as @e[type=minecraft:item_display, tag=omega-flowey-remastered, tag=aj.t
   function omega-flowey:summit/room/setup/outside/tv_screen
 
 # Surrounding petal pipes, very simplified models
-execute as @e[type=minecraft:item_display, tag=omega-flowey-remastered, tag=aj.summit_petal_pipe_right.root] run \
-  function animated_java:summit_petal_pipe_right/remove/this
+function animated_java:summit_petal_pipe_right/remove/all
 execute positioned -109.9375 90.0625 41.9375 rotated 200 15 run \
   function animated_java:summit_petal_pipe_right/summon { args: { animation: 'move', start_animation: true } }
 execute as @e[type=minecraft:item_display, tag=omega-flowey-remastered, tag=aj.summit_petal_pipe_right.root] run \
