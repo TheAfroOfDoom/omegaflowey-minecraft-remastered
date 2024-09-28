@@ -1,5 +1,5 @@
 # Randomize x/z-position to summon bullet
-execute store result score @s attack.position.x run random value -220..220
+execute store result score @s attack.position.x run random value -150..150
 scoreboard players operation @s attack.position.x *= #10 mathf.const
 scoreboard players operation @s attack.position.x += #omega-flowey.bossfight.summit.origin.x global.flag
 
