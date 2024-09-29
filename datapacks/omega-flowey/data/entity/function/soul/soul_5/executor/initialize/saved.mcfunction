@@ -9,7 +9,7 @@ playsound omega-flowey:soul.saved record @a ~ ~ ~ 10 1
 playsound omega-flowey:soul.transition record @a ~ ~ ~ 10 1
 
 # Flash each player/spectator's screen
-execute as @a unless entity @s[team=!player,team=!spectator] at @s anchored eyes run particle minecraft:flash ^ ^ ^0.5
+execute as @a unless entity @s[tag=!omegaflowey.player.fighting_flowey, team=!spectator] at @s anchored eyes run particle minecraft:flash ^ ^ ^0.5
 
 # Initialize other soul event models
 $execute as $(act_button_uuid) run function entity:soul/soul_5/act_button/initialize/saved

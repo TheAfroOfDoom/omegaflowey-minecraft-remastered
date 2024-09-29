@@ -3,7 +3,7 @@ execute as @e[type=minecraft:item_display, tag=aj.tv_screen.root, tag=tv_screen.
 
 # NOTE: TAG_SUMMIT_HARDCODED
 # Player location after boss-fight ends
-teleport @a[team=player] -117.5 66.0 -2.5
+teleport @a[tag=omegaflowey.player.fighting_flowey] -117.5 66.0 -2.5
 
 # end boss fight
 kill @s

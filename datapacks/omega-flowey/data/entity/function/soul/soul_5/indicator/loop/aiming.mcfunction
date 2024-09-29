@@ -5,4 +5,4 @@ execute if score @s soul.clock.i matches ..-1 run return 0
 
 scoreboard players operation @s math.0 = @s soul.clock.i
 scoreboard players operation @s math.0 %= #4 math.const
-execute if score @s math.0 matches 0 at @r[team=player] run function entity:soul/soul_5/indicator/loop/aiming/next_crosshair
+execute if score @s math.0 matches 0 at @r[tag=omegaflowey.player.fighting_flowey] run function entity:soul/soul_5/indicator/loop/aiming/next_crosshair

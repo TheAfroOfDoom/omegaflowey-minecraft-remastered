@@ -4,6 +4,6 @@ execute as @e[tag=soul_5] run function entity:soul/soul_5/executor/terminate/as_
 
 stopsound @a record omega-flowey:music.soul.5
 stopsound @a record omega-flowey:soul.saved
-effect clear @a[team=player] minecraft:resistance
+effect clear @a[tag=omegaflowey.player.fighting_flowey] minecraft:resistance
 
 kill @s

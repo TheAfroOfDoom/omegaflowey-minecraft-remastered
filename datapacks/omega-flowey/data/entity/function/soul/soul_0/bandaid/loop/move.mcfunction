@@ -1,2 +1,2 @@
 $teleport @s ~ ~ ~ ~$(rotation) ~
-$execute facing entity @p[team=player] eyes rotated ~ 0 run teleport @s ^ ^ ^$(velocity)
+$execute facing entity @p[tag=omegaflowey.player.fighting_flowey] eyes rotated ~ 0 run teleport @s ^ ^ ^$(velocity)

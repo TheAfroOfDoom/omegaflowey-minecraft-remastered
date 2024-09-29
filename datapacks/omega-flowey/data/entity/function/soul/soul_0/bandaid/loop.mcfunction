@@ -8,7 +8,7 @@ execute if score #soul_0.bandaid_touched_player soul.flag matches 1 run return 0
 data modify storage utils:math.distance_squared x0 set from entity @s Pos[0]
 data modify storage utils:math.distance_squared y0 set from entity @s Pos[1]
 data modify storage utils:math.distance_squared z0 set from entity @s Pos[2]
-execute as @p[team=player] at @s positioned ~ 34.0 ~ run function entity:soul/soul_0/bandaid/loop/as_player
+execute as @p[tag=omegaflowey.player.fighting_flowey] at @s positioned ~ 34.0 ~ run function entity:soul/soul_0/bandaid/loop/as_player
 
 function utils:math/distance_squared
 

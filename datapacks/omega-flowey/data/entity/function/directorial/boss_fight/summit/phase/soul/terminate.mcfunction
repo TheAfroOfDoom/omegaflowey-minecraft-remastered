@@ -12,7 +12,7 @@ tag @s remove boss_fight.phase.soul
 function entity:directorial/boss_fight/summit/phase/attack/initialize
 
 # Move players to main arena
-execute as @a at @s unless entity @s[team=!player,team=!spectator] run function entity:directorial/boss_fight/summit/soul_origin/to_origin
+execute as @a at @s unless entity @s[tag=!omegaflowey.player.fighting_flowey, team=!spectator] run function entity:directorial/boss_fight/summit/soul_origin/to_origin
 
 # Re-summon main Omega Flowey models
 function entity:directorial/boss_fight/summit/origin/at { \
