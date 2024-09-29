@@ -24,7 +24,7 @@
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
 		"data_pack": "G:\\Coding\\omega-flowey-minecraft-remastered\\datapacks\\animated_java",
-		"summon_commands": "",
+		"summon_commands": "tag @s add omega-flowey-remastered",
 		"ticking_commands": "",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
@@ -5756,7 +5756,8 @@
 			"origin": [-40, 0, -24],
 			"color": 0,
 			"configs": {
-				"variants": {}
+				"variants": {},
+				"default": {}
 			},
 			"uuid": "81d9f08c-5eb0-b27f-12ac-1ab8c418d6ac",
 			"export": true,
@@ -5776,7 +5777,7 @@
 					"uuid": "9b9dc625-9139-0e87-6370-8cad80da6a51",
 					"export": true,
 					"mirror_uv": false,
-					"isOpen": true,
+					"isOpen": false,
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
@@ -6584,7 +6585,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "4dfa2aa6-c785-29c1-18c0-0b7d84c9b4fd",
+			"uuid": "b3046915-0164-8e8b-eab4-97a01569a5d3",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
