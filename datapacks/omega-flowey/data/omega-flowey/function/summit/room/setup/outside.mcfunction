@@ -12,3 +12,28 @@ execute positioned -109.9375 90.0625 41.9375 rotated 200 15 run \
   function animated_java:summit_petal_pipe_right/summon { args: { animation: 'move', start_animation: true } }
 execute as @e[type=minecraft:item_display, tag=omega-flowey-remastered, tag=aj.summit_petal_pipe_right.root] run \
   function omega-flowey:summit/room/setup/outside/summit_petal_pipe_right
+
+# Title text display
+summon minecraft:text_display -109.25 82.75 31.0 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "title-display", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 1b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  shadow_strength: 1f, \
+  text: '"Omega Flowey Remastered"', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [ 0.0050161737f, 0.99403214f, -0.052095026f, 0.09571429f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [7.499999f, 7.500005f, 2.500003f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  }, \
+  view_range: 2.0f, \
+}
