@@ -30,7 +30,6 @@ summon minecraft:text_display -110.5 43.0 38.5 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
-  billboard: "vertical", \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
@@ -38,7 +37,7 @@ summon minecraft:text_display -110.5 43.0 38.5 { \
   text: '"by TheAfroOfDoom"', \
   text_opacity: 255, \
   transformation: {\
-    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    left_rotation: [0.0f, 0.9975641f, 0.0f, 0.069755904f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [2.0f, 2.0f, 2.0f], \
     translation: [0.0f, 0.0f, 0.0f] \
@@ -111,8 +110,8 @@ summon minecraft:text_display -108.0 44.0 25.0 { \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [1.5f, 1.5f, 1.5f], \
     translation: [0.0f, 0.0f, 0.0f] \
-    } \
-  }
+  } \
+}
 
 summon minecraft:text_display -110.5 42.75 26.25 { \
   Tags: [ \
@@ -123,7 +122,6 @@ summon minecraft:text_display -110.5 42.75 26.25 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
-  billboard: "vertical", \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
@@ -131,7 +129,7 @@ summon minecraft:text_display -110.5 42.75 26.25 { \
   text: '"adahy"', \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    left_rotation: [0.0f, 0.1736482f, 0.0f, 0.98480785f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [1.5f, 1.5f, 1.5f], \
     translation: [0.0f, 0.0f, 0.0f] \
@@ -147,7 +145,6 @@ summon minecraft:text_display -108.0 42.75 25.5 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
-  billboard: "vertical", \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
@@ -171,7 +168,6 @@ summon minecraft:text_display -105.5 42.75 26.0 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
-  billboard: "vertical", \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
@@ -179,7 +175,7 @@ summon minecraft:text_display -105.5 42.75 26.0 { \
   text: '"Wes"', \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    left_rotation: [0.0f, -0.1736482f, 0.0f, 0.98480785f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [1.5f, 1.5f, 1.5f], \
     translation: [0.0f, 0.0f, 0.0f] \
