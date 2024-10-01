@@ -114,3 +114,27 @@ summon minecraft:interaction -132.375 42.625 25.25 { \
 }
 execute as @e[tag=omega-flowey-remastered, tag=description-github-interaction, limit=1] run function gu:generate
 data modify storage omegaflowey:decorative github_interaction_uuid set from storage gu:main out
+
+summon minecraft:text_display -127.5 45.95 22.0 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "exit-hallway-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: false, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  shadow_strength: 1f, \
+  text: '[ { "text": "EXIT", "color": "yellow", "bold": true } ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.875f, 1.875f, 0.9375f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
