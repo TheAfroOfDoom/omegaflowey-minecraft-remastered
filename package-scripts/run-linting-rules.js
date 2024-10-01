@@ -24,6 +24,7 @@ const main = () => {
 
   let errorCount = 0;
   const excludePatterns = exclude?.split(',') ?? [];
+  excludePatterns.push('build/**');
   const paths = globSync(include, { ignore: excludePatterns });
   const files = paths.filter((path) => lstatSync(path).isFile());
 
