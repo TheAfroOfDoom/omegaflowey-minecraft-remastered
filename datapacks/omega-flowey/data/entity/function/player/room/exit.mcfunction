@@ -1,4 +1,4 @@
-function utils:log { text_component: ["exit booth"] }
+function utils:log/self { text_component: ["exit booth"] }
 tag @s remove omegaflowey.player
 
 # Remove all room tags if necessary
