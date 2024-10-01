@@ -67,7 +67,6 @@ summon minecraft:text_display -127.0 42.5 43.9375 { \
   } \
 }
 
-# TODO github link needs to be clickable via an minecraft:interaction entity
 summon minecraft:text_display -133.0 42.625 25.5 {\
   Tags: [ \
     "omega-flowey-remastered", \
@@ -102,3 +101,16 @@ summon minecraft:text_display -133.0 42.625 25.5 {\
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
+summon minecraft:interaction -132.375 42.625 25.25 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "description-github-interaction", \
+  ], \
+  width: 1, \
+  height: 0.5, \
+  response: true, \
+}
+execute as @e[tag=omega-flowey-remastered, tag=description-github-interaction, limit=1] run function gu:generate
+data modify storage omegaflowey:decorative github_interaction_uuid set from storage gu:main out
