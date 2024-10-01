@@ -43,3 +43,20 @@ summon minecraft:text_display -133.0 44.0 42.875 { \
     translation: [ 0.0f, 0.0f, 0.0f] \
   } \
 }
+
+summon minecraft:text_display -127.0 42.5 43.9375 { \
+  alignment: "center", \
+  background: 1073741824, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '"SPECTATE"', \
+  text_opacity: 255, \
+  transformation: { \
+      left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+      right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+      scale: [3.0f, 3.0f, 3.0f], \
+      translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
