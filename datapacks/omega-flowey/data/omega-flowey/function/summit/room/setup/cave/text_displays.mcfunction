@@ -45,6 +45,12 @@ summon minecraft:text_display -133.0 44.0 42.875 { \
 }
 
 summon minecraft:text_display -127.0 42.5 43.9375 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "spectate-title", \
+  ], \
   alignment: "center", \
   background: 1073741824, \
   default_background: 0b, \
