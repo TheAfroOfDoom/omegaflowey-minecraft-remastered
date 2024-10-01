@@ -3,9 +3,9 @@
 $execute as @a unless entity @s[tag=!omegaflowey.admin,name=!TheAfroOfDoom] run \
   function utils:log/self { text_component: ' \
     [ \
-      {"text":"["}, \
+      "[", \
       {"text":"DEV","color":"light_purple"}, \
-      {"text":"] "}, \
+      "] ", \
       $(text_component) \
     ]' \
   }
