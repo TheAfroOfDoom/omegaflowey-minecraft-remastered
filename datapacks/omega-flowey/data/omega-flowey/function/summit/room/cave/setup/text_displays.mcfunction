@@ -11,7 +11,7 @@ summon minecraft:text_display -133.0 45.0 42.875 { \
   line_width: 200, \
   see_through: false, \
   shadow: 0b, \
-  text: '"Players in queue:"', \
+  text: '[{ "bold": true, "text": "Players in queue:" }]', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -21,7 +21,7 @@ summon minecraft:text_display -133.0 45.0 42.875 { \
   }\
 }
 
-summon minecraft:text_display -133.0 44.0 42.875 { \
+summon minecraft:text_display -133.0 43.3125 42.875 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -34,15 +34,15 @@ summon minecraft:text_display -133.0 44.0 42.875 { \
   line_width: 200, \
   see_through: false, \
   shadow: 0b, \
-  text: '"0"', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-    scale: [ 3.0f, 3.0f, 3.0f], \
-    translation: [ 0.0f, 0.0f, 0.0f] \
+    scale: [5.0f, 5.0f, 5.0f], \
+    translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
+function omega-flowey:summit/room/cave/player_queue_counter/update_value
 
 summon minecraft:text_display -127.0 42.5 43.9375 { \
   Tags: [ \
