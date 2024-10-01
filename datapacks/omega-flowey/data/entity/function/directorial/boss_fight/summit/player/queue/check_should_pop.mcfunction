@@ -5,4 +5,5 @@ execute if score #omega-flowey.bossfight.player_queue_count global.flag matches 
 execute if entity @a[tag=omegaflowey.player.fighting_flowey] run return 0
 
 # otherwise, pop queue
-function entity:directorial/boss_fight/summit/player/queue/pop with storage omegaflowey:bossfight player_queue[0]
+# function entity:directorial/boss_fight/summit/player/queue/pop with storage omegaflowey:bossfight player_queue[0]
+# function entity:directorial/boss_fight/summit/player/queue/prompt_next_player with storage omegaflowey:bossfight player_queue[0]
