@@ -183,7 +183,7 @@ summon minecraft:text_display -106.1875 42.75 25.5625 { \
 }
 
 # TODO github link needs to be clickable via an minecraft:interaction entity
-summon minecraft:text_display -118.0625 42.625 36.1875 {\
+summon minecraft:text_display -133.0 42.625 25.5 {\
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -211,7 +211,7 @@ summon minecraft:text_display -118.0625 42.625 36.1875 {\
   ]', \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, 0.8433915f, 0.0f, 0.5372995f], \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [1.3749996f, 1.375f, 1.3749993f], \
     translation: [0.0f, 0.0f, 0.0f] \
