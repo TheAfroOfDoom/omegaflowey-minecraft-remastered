@@ -7,4 +7,4 @@ function entity:setup
 
 function omega-flowey:summit/room/setup
 
-function utils:log { text_component: '[{"color": "aqua", "text": "Datapack initialized"}]'}
+function utils:log { text_component: '[ { "text": "Datapack initialized", "color": "aqua" } ]'}
