@@ -1,3 +1,4 @@
 ## expects a text component in the `text_component` parameter
 # https://minecraft.wiki/w/Raw_JSON_text_format
-$tellraw @a [{"text":"["}, {"text":"Omega Flowey","color":"green"}, {"text":"] "}, $(text_component)]
+$execute as @a unless entity @s[tag=!omegaflowey.admin,name=!TheAfroOfDoom] run \
+  tellraw @s [{"text":"["}, {"text":"Omega Flowey","color":"green"}, {"text":"] "}, $(text_component)]

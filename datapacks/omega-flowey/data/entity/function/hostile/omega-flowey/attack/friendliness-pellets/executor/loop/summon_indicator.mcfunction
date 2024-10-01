@@ -1,7 +1,7 @@
 ## summons an indicator at a player
 
 # Summon indicator
-execute at @r[team=player] run function entity:directorial/boss_fight/summit/origin/at/y { \
+execute at @r[tag=omegaflowey.player.fighting_flowey] run function entity:directorial/boss_fight/summit/origin/at/y { \
   command: "execute positioned ~ ~-4.0 ~ run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/summon" \
 }
 

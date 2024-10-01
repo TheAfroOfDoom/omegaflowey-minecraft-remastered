@@ -92,7 +92,7 @@ module.exports = {
           'lint.custom.other',
         ),
         fix: 'nps "lint.custom.datapacks --fix"',
-        datapacks: `node ./package-scripts/run-linting-rules --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
+        datapacks: `node ./package-scripts/run-linting-rules --fix --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
         resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
         other:
           'node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"',

@@ -24,7 +24,8 @@ const minecraftPath = process.env.MINECRAFT_PATH;
 const resourcePackName = process.env.RESOURCEPACK_NAME;
 const worldName = process.env.WORLD_NAME;
 
-const worldPath = `${minecraftPath}/saves/${worldName}`;
+const worldPath =
+  process.env.WATCH_WORLD_PATH ?? `${minecraftPath}/saves/${worldName}`;
 const resourcePackBasePath = `${minecraftPath}/resourcepacks/${resourcePackName}`;
 const regexDotFiles = /(^|[/\\])\../;
 
@@ -46,6 +47,8 @@ const watchDatapacks = async (showVerbose) => {
       log(prefix, path);
     }
   };
+
+  log('World path:', worldPath);
 
   const ignored = [
     regexDotFiles,

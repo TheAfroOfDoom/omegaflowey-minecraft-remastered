@@ -1,5 +1,5 @@
 # Loop logic for players
-execute as @a[team=player] run function entity:soul/soul_5/executor/loop/as_player
+execute as @a[tag=omegaflowey.player.fighting_flowey] run function entity:soul/soul_5/executor/loop/as_player
 
 scoreboard players add @s soul.clock.i 1
 
