@@ -1,5 +1,9 @@
+scoreboard players set #omegaflowey.bossfight.has_player_been_prompted global.flag 1
+
 tag @s add omegaflowey.player.in_queue.prompted
+scoreboard players set @s player.trigger.bossfight.confirm 0
 scoreboard players set @s player.trigger.bossfight.deny 0
+scoreboard players enable @s player.trigger.bossfight.confirm
 scoreboard players enable @s player.trigger.bossfight.deny
 
 function utils:log/self { text_component: '[ \
@@ -15,7 +19,7 @@ function utils:log/self { text_component: '[ \
         "color": "gray", \
         "clickEvent": { \
           "action": "run_command", \
-          "value": "/tellraw @s [\\"confirm\\"]" \
+          "value": "/trigger player.trigger.bossfight.confirm set 1" \
         }, \
         "extra": [ \
           "[", \
@@ -39,7 +43,7 @@ function utils:log/self { text_component: '[ \
         "text": "", \
         "clickEvent": { \
           "action": "run_command", \
-          "value": "/tellraw @s [\\"confirm\\"]" \
+          "value": "/trigger player.trigger.bossfight.confirm set 1" \
         }, \
         "extra": [ \
           "[", \
