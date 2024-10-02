@@ -101,6 +101,8 @@ scoreboard objectives add player.leave.current minecraft.custom:minecraft.leave_
 scoreboard objectives add player.leave.previous dummy
 scoreboard objectives add player.shake.pitch dummy
 scoreboard objectives add player.shake.yaw dummy
+scoreboard objectives add player.trigger.bossfight.confirm trigger
+scoreboard objectives add player.trigger.bossfight.deny trigger
 
 # x/z spans of the bullet grid
 scoreboard objectives add soul.bullet.position.dx dummy
