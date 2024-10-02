@@ -42,6 +42,11 @@ const getSummitDatapackPaths = () => {
   ]);
 
   const playerPaths = prefixPaths('player/', [
+    'interacted_with_github_description',
+    'interacted_with_github_description.mcfunction',
+    'rejoin',
+    'room',
+    'room.mcfunction',
     'shake_screen.mcfunction',
     'tick.mcfunction',
   ]);
@@ -66,20 +71,23 @@ const getSummitDatapackPaths = () => {
     'store_position.mcfunction',
   ]);
 
-  const entityPaths = prefixPaths('entity/function/', [
-    ...bossFightPaths,
-    'directorial/tick.mcfunction',
-    'group',
-    ...hostilePaths,
-    ...playerPaths,
-    'remove_animated_java_models',
-    ...soulPaths,
-    ...entityUtilsPaths,
-    'remove_animated_java_models.mcfunction',
-    'reset_scores.mcfunction',
-    'reset.mcfunction',
-    'setup.mcfunction',
-    'tick.mcfunction',
+  const entityPaths = prefixPaths('entity/', [
+    'advancement/player_interacted_with_github_description.json',
+    ...prefixPaths('function/', [
+      ...bossFightPaths,
+      'directorial/tick.mcfunction',
+      'group',
+      ...hostilePaths,
+      ...playerPaths,
+      'remove_animated_java_models',
+      ...soulPaths,
+      ...entityUtilsPaths,
+      'remove_animated_java_models.mcfunction',
+      'reset_scores.mcfunction',
+      'reset.mcfunction',
+      'setup.mcfunction',
+      'tick.mcfunction',
+    ]),
   ]);
 
   const utilsPaths = prefixPaths('utils/function/', [

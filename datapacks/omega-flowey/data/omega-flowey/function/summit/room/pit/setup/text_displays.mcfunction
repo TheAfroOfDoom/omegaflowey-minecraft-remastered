@@ -11,7 +11,7 @@ summon minecraft:text_display -108.5 43.9375 38.75 {\
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"Welcome to the\\nOmega Flowey demo!"', \
+  text: '[ "Welcome to the\\n", { "color": "green", "text" :"Omega Flowey "}, "demo!" ]', \
   text_opacity: 255, \
   transformation: {\
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -57,7 +57,7 @@ summon minecraft:text_display -101.4375 44.0 32.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"This is a recreation of a boss\\nfrom Toby Fox\'s Undertale"', \
+  text: '[ "This is a recreation of a boss\\nfrom Toby Fox\'s ", { "color": "light_purple", "text": "Undertale" } ]', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -103,7 +103,7 @@ summon minecraft:text_display -108.0 44.0 25.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"Special thanks\\nto our contributors :)"', \
+  text: '[ "Special thanks\\nto our", { "color": "yellow", "text": " contributors" }, " :)" ]', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -113,7 +113,7 @@ summon minecraft:text_display -108.0 44.0 25.0 { \
   } \
 }
 
-summon minecraft:text_display -110.5 42.75 26.25 { \
+summon minecraft:text_display -109.5625 42.75 25.625 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -159,7 +159,7 @@ summon minecraft:text_display -108.0 42.75 25.5 { \
   } \
 }
 
-summon minecraft:text_display -105.5 42.75 26.0 { \
+summon minecraft:text_display -106.1875 42.75 25.5625 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
