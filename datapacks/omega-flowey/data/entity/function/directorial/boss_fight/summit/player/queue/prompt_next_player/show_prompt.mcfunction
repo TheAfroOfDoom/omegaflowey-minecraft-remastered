@@ -1,3 +1,7 @@
+tag @s add omegaflowey.player.in_queue.prompted
+scoreboard players set @s player.trigger.bossfight.deny 0
+scoreboard players enable @s player.trigger.bossfight.deny
+
 function utils:log/self { text_component: '[ \
   { \
     "text": "", \
@@ -48,7 +52,7 @@ function utils:log/self { text_component: '[ \
         "text": "", \
         "clickEvent": { \
           "action": "run_command", \
-          "value": "/tellraw @s [\\"deny\\"]" \
+          "value": "/trigger player.trigger.bossfight.deny set 1" \
         }, \
         "extra": [ \
           "[", \
