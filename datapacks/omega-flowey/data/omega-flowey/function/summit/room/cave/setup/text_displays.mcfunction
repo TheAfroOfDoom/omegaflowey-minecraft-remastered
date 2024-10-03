@@ -1,4 +1,71 @@
-summon minecraft:text_display -133.0 45.0 42.875 { \
+summon minecraft:text_display -133.5 45.25 42.99 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "currently-playing-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '"Currently playing:"', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [2.0f, 2.0f, 2.0f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display -133.5 44.0 42.99 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "currently-playing-player-name", \
+  ], \
+  alignment: "center", background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '"MMMMMMMMMMMMMMMM"', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [2.0f, 2.0f, 2.0f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display -138.25 42.5 41.3125 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "join-queue-title", \
+  ], \
+  alignment: "center", \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '"JOIN QUEUE"', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.92387956f, 0.0f, 0.38268352f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [2.0f, 2.0f, 2.0f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display -139.99 45.0 39.0 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -14,14 +81,14 @@ summon minecraft:text_display -133.0 45.0 42.875 { \
   text: '[{ "bold": true, "text": "Players in queue:" }]', \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [ 2.0f, 2.0f, 2.0f], \
     translation: [ 0.0f, 0.0f, 0.0f] \
-  }\
+  } \
 }
 
-summon minecraft:text_display -133.0 43.3125 42.875 { \
+summon minecraft:text_display -139.99 43.3125 39.0 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -36,7 +103,7 @@ summon minecraft:text_display -133.0 43.3125 42.875 { \
   shadow: 0b, \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [5.0f, 5.0f, 5.0f], \
     translation: [0.0f, 0.0f, 0.0f] \
