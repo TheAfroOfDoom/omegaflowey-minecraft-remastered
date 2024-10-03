@@ -25,7 +25,7 @@
 		"enable_advanced_data_pack_settings": false,
 		"data_pack": "G:/Coding/omega-flowey-minecraft-remastered/datapacks/animated_java",
 		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-bullet\ntag @s add attack-bullet-new",
-		"ticking_commands": "",
+		"ticking_commands": "function entity:hostile/omega-flowey/attack/friendliness-pellets/bullet/cleanup",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
 		"use_storage_for_animation": false,
@@ -594,7 +594,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "31a22dda-2e66-8536-761c-cec2adb093e0",
+			"uuid": "641bb220-4ea2-e4bc-aa44-1b3ea83b0e63",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
