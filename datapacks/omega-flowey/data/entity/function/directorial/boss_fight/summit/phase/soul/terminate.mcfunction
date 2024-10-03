@@ -15,7 +15,12 @@ function entity:directorial/boss_fight/summit/phase/attack/initialize
 execute as @a at @s unless entity @s[tag=!omegaflowey.player.fighting_flowey, team=!spectator] run function entity:directorial/boss_fight/summit/soul_origin/to_origin
 
 # Re-summon main Omega Flowey models
+scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen global.flag 1
 function entity:directorial/boss_fight/summit/origin/at { \
   command: "function entity:hostile/omega-flowey/summon/relative" \
 }
 function entity:hostile/omega-flowey/animate
+scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen global.flag 0
+
+# Set tvscreen variant back to default
+execute as @e[type=minecraft:item_display, tag=aj.tv_screen.root, tag=tv_screen.boss_fight, limit=1] run function animated_java:tv_screen/variants/default/apply

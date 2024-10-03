@@ -1,11 +1,10 @@
 ## Initializes the boss fight
 function entity:directorial/boss_fight/shared/initialize
 
-# Summon Omega Flowey entity if it doesn't exist
-execute unless entity @e[type=minecraft:item_display, tag=aj.tv_screen.root, tag=!tv_screen.outside] run \
-  function entity:directorial/boss_fight/summit/origin/at { \
-    command: "function entity:hostile/omega-flowey/summon/relative" \
-  }
+# Summon Omega Flowey entity
+function entity:directorial/boss_fight/summit/origin/at { \
+  command: "function entity:hostile/omega-flowey/summon/relative" \
+}
 
 # Set all attack parameters to default
 function entity:hostile/omega-flowey/attack/reset_scores

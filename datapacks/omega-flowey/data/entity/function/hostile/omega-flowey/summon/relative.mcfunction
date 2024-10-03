@@ -40,8 +40,10 @@ execute positioned ^ ^-1.5 ^9.35 rotated ~ ~9 run function animated_java:mouth/s
 execute positioned ^ ^ ^ rotated ~ ~10 run function animated_java:nose/summon { args: {} }
 
 ## TV-screen
-execute positioned ^ ^12.5 ^7.5 rotated ~ ~45 run function animated_java:tv_screen/summon { args: {} }
-execute as @e[tag=aj.tv_screen.root, tag=tv-screen-new] run function entity:hostile/omega-flowey/summon/tv_screen/initialize
+execute unless score #omegaflowey.bossfight.skip_resummon_tvscreen global.flag matches 1 \
+  positioned ^ ^12.5 ^7.5 rotated ~ ~45 run function animated_java:tv_screen/summon { args: {} }
+execute unless score #omegaflowey.bossfight.skip_resummon_tvscreen global.flag matches 1 \
+  as @e[tag=aj.tv_screen.root, tag=tv-screen-new] run function entity:hostile/omega-flowey/summon/tv_screen/initialize
 
 ## Upper eyes
 # Right-eye
