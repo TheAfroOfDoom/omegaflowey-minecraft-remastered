@@ -8,9 +8,8 @@
 # Toggle between dark-eye and bright-eye variants
 scoreboard players operation @s math.0 = @s attack.bullets.remaining
 scoreboard players operation @s math.0 %= #2 mathf.const
-# TODO(47): this needs to NOT be a distance check
-execute if score @s math.0 matches 0 as @e[tag=aj.upper_eye.root,sort=nearest,limit=1] run function animated_java:upper_eye/variants/dark/apply
-execute if score @s math.0 matches 1 as @e[tag=aj.upper_eye.root,sort=nearest,limit=1] run function animated_java:upper_eye/variants/bright/apply
+$execute if score @s math.0 matches 0 as $(corresponding_root_uuid) run function animated_java:upper_eye/variants/dark/apply
+$execute if score @s math.0 matches 1 as $(corresponding_root_uuid) run function animated_java:upper_eye/variants/bright/apply
 
 # Summon and initialize bullet
 execute if entity @s[tag=!x-bullets-upper-save-states] run \
