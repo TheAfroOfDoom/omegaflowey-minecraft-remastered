@@ -38,8 +38,8 @@ execute positioned 0 35.5 -3.15 rotated 0 9 run function animated_java:mouth/sum
 execute positioned 0 37 -13 rotated 0 10 run function animated_java:nose/summon { args: {} }
 
 ## TV-screen
+scoreboard players set #omegaflowey.summon.tag_variant global.flag 1
 execute positioned 0 49 -6 rotated 0 45 run function animated_java:tv_screen/summon { args: {} }
-execute as @e[tag=aj.tv_screen.root, tag=tv-screen-new] run function entity:hostile/omega-flowey/summon/tv_screen/initialize
 
 ## Upper eyes
 # Right-eye
