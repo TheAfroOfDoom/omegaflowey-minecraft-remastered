@@ -112,7 +112,13 @@ summon minecraft:interaction -132.375 42.625 25.25 { \
   height: 0.5, \
   response: true, \
 }
-execute as @e[tag=omega-flowey-remastered, tag=description-github-interaction, limit=1] run function gu:generate
+execute as @e[ \
+  x=-133.0, dx=2, y=42.0, dy=2, z=25.0, dz=2, \
+  type=minecraft:interaction, \
+  tag=description-github-interaction, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
 data modify storage omegaflowey:decorative github_interaction_uuid set from storage gu:main out
 
 summon minecraft:text_display -127.5 45.95 22.0 { \
