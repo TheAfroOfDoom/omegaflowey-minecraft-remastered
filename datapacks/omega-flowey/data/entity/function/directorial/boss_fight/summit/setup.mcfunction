@@ -16,3 +16,6 @@ execute unless data storage omegaflowey:bossfight boss_fight_uuid run data modif
 
 # reset tag-variant flag
 scoreboard players set #omegaflowey.summon.tag_variant global.flag 0
+
+# reset attack global flags
+scoreboard players set #omegaflowey.attack.xbullets.type global.flag 0
