@@ -1,3 +1,4 @@
-## as `aj.lower_eye.root`
-function animated_java:lower_eye/animations/look_around/pause
-function animated_java:lower_eye/variants/colorful/apply
+$execute as $(attack_lower_eye_right_uuid) run \
+  function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/loop/lower_eye/pause_animation/as_root
+$execute as $(attack_lower_eye_left_uuid) run \
+  function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/loop/lower_eye/pause_animation/as_root
