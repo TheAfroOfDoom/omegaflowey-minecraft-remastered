@@ -13,3 +13,6 @@ scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen global.flag
 
 # ensure boss_fight_uuid is always set so attacks can terminate
 execute unless data storage omegaflowey:bossfight boss_fight_uuid run data modify storage omegaflowey:bossfight boss_fight_uuid set value "0"
+
+# reset tag-variant flag
+scoreboard players set #omegaflowey.summon.tag_variant global.flag 0
