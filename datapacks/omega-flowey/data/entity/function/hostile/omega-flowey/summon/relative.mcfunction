@@ -23,7 +23,7 @@ tag @e[tag=aj.petal_pipe_circle.root] add petal_pipe.right
 # Left-lower petal pipe
 execute positioned ^11.5 ^7.5 ^ rotated ~-170 ~-20 run function animated_java:petal_pipe_circle/summon { args: {} }
 tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe.right] add petal_pipe.left
-tag @e[tag=aj.petal_pipe_circle.root] add petal_pipe_lower
+tag @e[tag=aj.petal_pipe_circle.root] add petal_pipe.lower
 
 ## Middle petal pipes
 # Right-middle petal pipe
@@ -54,8 +54,8 @@ execute positioned ^16.0 ^11.5 ^9.5 rotated ~20 ~40 run function animated_java:u
 ## Upper petal pipes
 # Right-upper petal pipe
 execute positioned ^-11.5 ^26.5 ^17.5 rotated ~-10 ~45 run function animated_java:petal_pipe_circle/summon { args: {} }
-tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe_lower] add petal_pipe.right
+tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe.lower] add petal_pipe.right
 # Left-upper petal pipe
 execute positioned ^11.5 ^26.5 ^17.5 rotated ~-170 ~-45 run function animated_java:petal_pipe_circle/summon { args: {} }
-tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe_lower,tag=!petal_pipe.right] add petal_pipe.left
-tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe_lower] add petal_pipe_upper
+tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe.lower,tag=!petal_pipe.right] add petal_pipe.left
+tag @e[tag=aj.petal_pipe_circle.root,tag=!petal_pipe.lower] add petal_pipe.upper
