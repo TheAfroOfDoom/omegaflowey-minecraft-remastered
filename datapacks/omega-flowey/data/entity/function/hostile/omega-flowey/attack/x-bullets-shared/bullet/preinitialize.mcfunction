@@ -6,3 +6,7 @@ execute if score #omegaflowey.attack.xbullets.type global.flag matches 1 run \
   function entity:hostile/omega-flowey/attack/x-bullets-upper/bullet/initialize
 execute if score #omegaflowey.attack.xbullets.type global.flag matches 2 run \
   function entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/bullet/initialize/x-bullets-upper
+
+## x-bullets-lower: 3
+execute if score #omegaflowey.attack.xbullets.type global.flag matches 3 run \
+  function entity:hostile/omega-flowey/attack/x-bullets-lower/bullet/initialize
