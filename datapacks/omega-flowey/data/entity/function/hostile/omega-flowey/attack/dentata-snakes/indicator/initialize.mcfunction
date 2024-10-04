@@ -1,13 +1,16 @@
+function entity:hostile/omega-flowey/attack/shared/indicator/initialize
+
+data modify entity @s CustomName set value '"Dentata-Snakes Indicator"'
+
+# Add tags
+tag @s add dentata-snakes
+
 # Set scores
-scoreboard players set @s attack.clock.i -1
 scoreboard players set @s attack.bullets.count 0
 scoreboard players operation @s attack.bullets.clock.delay = #attack-dentata-snakes attack.bullets.clock.delay
 scoreboard players operation @s attack.bullets.clock.i = @s attack.bullets.clock.delay
 scoreboard players operation @s attack.bullets.scale = #attack-dentata-snakes attack.bullets.scale
 scoreboard players operation @s attack.bullets.total = #attack-dentata-snakes attack.bullets.total
-
-# Remove tags
-tag @s remove attack-indicator-new
 
 # Randomize position to summon bullet at
 execute store result score @s attack.bullets.position.x run random value -800..800

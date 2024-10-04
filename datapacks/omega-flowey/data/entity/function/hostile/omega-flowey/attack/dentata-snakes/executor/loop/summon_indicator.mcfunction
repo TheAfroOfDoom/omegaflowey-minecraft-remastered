@@ -1,5 +1,2 @@
-# Summon indicator
-summon minecraft:marker ~ ~ ~ { CustomName: '"Dentata-Snakes Indicator"', Tags:["omega-flowey-remastered","hostile","omega-flowey","attack","attack-indicator","attack-indicator-new","dentata-snakes"] }
-
-# Initialize indicator
-execute as @e[tag=attack-indicator-new] at @s run function entity:hostile/omega-flowey/attack/dentata-snakes/indicator/initialize
+# Summon and initialize indicator
+execute summon minecraft:marker run function entity:hostile/omega-flowey/attack/dentata-snakes/indicator/initialize

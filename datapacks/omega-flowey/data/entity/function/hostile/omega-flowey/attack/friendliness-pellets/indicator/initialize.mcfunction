@@ -1,5 +1,12 @@
+function entity:hostile/omega-flowey/attack/shared/indicator/initialize
+
+data modify entity @s CustomName set value '"Friendliness-Pellets Indicator"'
+
+# Add tags
+tag @s add friendliness-pellets
+tag @s add groupable
+
 # Inputted scores
-scoreboard players set @s attack.clock.i -1
 scoreboard players operation @s attack.clock.i -= #attack-friendliness-pellets attack.indicator.clock.delay
 
 scoreboard players set @s attack.bullets.clock.i -1
@@ -28,6 +35,3 @@ execute as @e[tag=friendliness-pellet-ring-new] run function entity:hostile/omeg
 # Randomize initial yaw
 execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
 execute store result score @s math.0 run data get entity @s Rotation[0] 100
-
-# Remove tags
-tag @s remove attack-indicator-new

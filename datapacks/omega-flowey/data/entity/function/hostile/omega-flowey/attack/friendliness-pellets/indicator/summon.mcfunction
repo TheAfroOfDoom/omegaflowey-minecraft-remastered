@@ -1,13 +1,2 @@
-summon minecraft:marker ~ ~ ~ { \
-  CustomName: '"Friendliness-Pellets Indicator"', \
-  Tags: [ \
-    "omega-flowey-remastered", \
-    "groupable", \
-    "hostile", \
-    "omega-flowey", \
-    "attack", \
-    "attack-indicator", \
-    "attack-indicator-new", \
-    "friendliness-pellets" \
-  ], \
-}
+# Summon and initialize indicator
+execute summon minecraft:marker run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/initialize
