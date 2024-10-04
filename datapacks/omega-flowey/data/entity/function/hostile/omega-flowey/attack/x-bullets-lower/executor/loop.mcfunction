@@ -24,4 +24,4 @@ execute if score @s math.0 matches 0 if score @s attack.indicator.remaining matc
 
 # Terminate
 execute if score @s attack.clock.i >= @s attack.executor.clock.length \
-  run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/terminate
+  run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/terminate with storage omegaflowey:bossfight

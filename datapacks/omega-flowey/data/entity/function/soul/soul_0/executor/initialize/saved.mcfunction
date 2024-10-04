@@ -17,4 +17,4 @@ execute as @e[tag=omega-flowey-remastered, tag=call-for-help-display] run \
   function entity:soul/shared/call_for_help_display/terminate
 execute as @e[tag=soul_0,tag=soul-bullet] at @s run function entity:soul/soul_0/bullet/initialize/saved
 execute as @e[tag=soul.soul_event,tag=aj.soul.root] run function entity:soul/soul_0/soul/saved
-execute as @e[tag=boss_fight] run function entity:directorial/boss_fight/shared/phase/soul/loop/saved
+function entity:directorial/boss_fight/shared/phase/soul/loop/saved with storage omegaflowey:bossfight

@@ -19,4 +19,4 @@ execute as @e[tag=soul_5,tag=soul-bullet] at @s run function entity:soul/soul_5/
 execute as @e[tag=soul_5,tag=soul-crosshair] at @s run function entity:soul/soul_5/crosshair/initialize/saved
 $execute as $(indicator_uuid) at @s run function entity:soul/soul_5/indicator/initialize/saved
 execute as @e[tag=soul.soul_event,tag=aj.soul.root] run function entity:soul/soul_5/soul/saved
-execute as @e[tag=boss_fight] run function entity:directorial/boss_fight/shared/phase/soul/loop/saved
+function entity:directorial/boss_fight/shared/phase/soul/loop/saved with storage omegaflowey:bossfight

@@ -10,3 +10,6 @@ execute as @a run function entity:directorial/boss_fight/summit/player/queue/pro
 
 # reset flag that prevents us from duplicating tvscreen model on bossfight phase changes
 scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen global.flag 0
+
+# ensure boss_fight_uuid is always set so attacks can terminate
+execute unless data storage omegaflowey:bossfight boss_fight_uuid run data modify storage omegaflowey:bossfight boss_fight_uuid set value "0"

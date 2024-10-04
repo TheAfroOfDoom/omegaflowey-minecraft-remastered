@@ -1,6 +1,9 @@
 ## Initializes the boss fight
 function entity:directorial/boss_fight/shared/initialize
 
+# Add tags
+tag @s add boss_fight.summit
+
 # Summon Omega Flowey entity
 function entity:directorial/boss_fight/summit/origin/at { \
   command: "function entity:hostile/omega-flowey/summon/relative" \
@@ -19,12 +22,8 @@ scoreboard players set @s boss-fight.attack.phase.total 2
 scoreboard players set @s boss-fight.progress.phase.i 0
 scoreboard players set @s boss-fight.progress.phase.total 2
 
-
 # Begin animating Omega Flowey entity
 function entity:hostile/omega-flowey/animate
-
-# Remove tag
-tag @s remove boss_fight_new
 
 # Initialize attack phase
 function entity:directorial/boss_fight/summit/phase/attack/initialize
