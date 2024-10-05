@@ -13,9 +13,12 @@ scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen global.flag
 
 # ensure boss_fight_uuid is always set so attacks can terminate
 execute unless data storage omegaflowey:bossfight boss_fight_uuid run data modify storage omegaflowey:bossfight boss_fight_uuid set value "0"
+# ensure soul_event_soul_model_uuid is always set so soul events can transition to "saved"
+execute unless data storage omegaflowey:bossfight soul_event_soul_model_uuid run data modify storage omegaflowey:bossfight soul_event_soul_model_uuid set value "0"
 
 # reset tag-variant flag
 scoreboard players set #omegaflowey.summon.tag_variant global.flag 0
 
-# reset attack global flags
+# reset attack/soul global flags
 scoreboard players set #omegaflowey.attack.xbullets.type global.flag 0
+scoreboard players set #omegaflowey.soul.summon_type global.flag -1

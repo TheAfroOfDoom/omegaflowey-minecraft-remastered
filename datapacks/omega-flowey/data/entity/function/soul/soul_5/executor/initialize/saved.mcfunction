@@ -13,10 +13,13 @@ execute as @a unless entity @s[tag=!omegaflowey.player.fighting_flowey, team=!sp
 
 # Initialize other soul event models
 $execute as $(act_button_uuid) run function entity:soul/soul_5/act_button/initialize/saved
-execute as @e[tag=omega-flowey-remastered, tag=call-for-help-display] run \
-  function entity:soul/shared/call_for_help_display/terminate
-execute as @e[tag=soul_5,tag=soul-bullet] at @s run function entity:soul/soul_5/bullet/initialize/saved
-execute as @e[tag=soul_5,tag=soul-crosshair] at @s run function entity:soul/soul_5/crosshair/initialize/saved
 $execute as $(indicator_uuid) at @s run function entity:soul/soul_5/indicator/initialize/saved
-execute as @e[tag=soul.soul_event,tag=aj.soul.root] run function entity:soul/soul_5/soul/saved
+$execute as $(soul_event_soul_model_uuid) run function entity:soul/soul_5/soul/saved
 function entity:directorial/boss_fight/shared/phase/soul/loop/saved with storage omegaflowey:bossfight
+
+# NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
+execute as @e[ \
+  x=-185, dx=90, y=13, dy=92, z=12, dz=90, \
+  tag=soul_5, \
+  tag=omega-flowey-remastered \
+] run function entity:soul/soul_5/executor/initialize/saved/as_root

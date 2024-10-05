@@ -1,6 +1,11 @@
 $execute as $(boss_fight_uuid) run function entity:soul/soul_5/executor/terminate/as_boss_fight
 
-execute as @e[tag=soul_5] run function entity:soul/soul_5/executor/terminate/as_root
+# NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
+execute as @e[ \
+  x=-185, dx=90, y=13, dy=92, z=12, dz=90, \
+  tag=soul_5, \
+  tag=omega-flowey-remastered \
+] run function entity:soul/soul_5/executor/terminate/as_root
 
 stopsound @a record omega-flowey:music.soul.5
 stopsound @a record omega-flowey:soul.saved

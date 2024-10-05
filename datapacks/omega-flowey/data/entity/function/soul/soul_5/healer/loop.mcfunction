@@ -6,10 +6,3 @@ execute if score #soul_5.flower_touched_player soul.flag matches 1 run return 0
 
 # Move forward
 teleport @s ^ ^ ^1.0
-
-## Delete healers once they visually escape the arena
-function entity:soul/soul_5/shared/terminate_unless_in_region { \
-  x_score: 'soul.healer.position.x', \
-  z_score: 'soul.healer.position.z', \
-  terminate_command: 'function entity:soul/soul_5/healer/terminate' \
-}

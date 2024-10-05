@@ -24,8 +24,8 @@
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
 		"data_pack": "G:/Coding/omega-flowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul_5\ntag @s add soul-healer\ntag @s add soul-healer-new",
-		"ticking_commands": "",
+		"summon_commands": "function entity:soul/soul_5/healer/initialize",
+		"ticking_commands": "function entity:soul/soul_5/healer/cleanup",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
 		"use_storage_for_animation": false,
@@ -8309,7 +8309,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "e1b1755a-e26d-5ca1-b23e-395cff622947",
+			"uuid": "c1746bdb-fcc6-3b72-4a86-e78e8758683f",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
