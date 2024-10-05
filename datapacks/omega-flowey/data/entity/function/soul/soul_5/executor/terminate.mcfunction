@@ -2,7 +2,7 @@ $execute as $(boss_fight_uuid) run function entity:soul/soul_5/executor/terminat
 
 # NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
-  x=-185, dx=90, y=13, dy=92, z=12, dz=90, \
+  x=-186, dx=91, y=12, dy=93, z=12, dz=95, \
   tag=soul_5, \
   tag=omega-flowey-remastered \
 ] run function entity:soul/soul_5/executor/terminate/as_root
