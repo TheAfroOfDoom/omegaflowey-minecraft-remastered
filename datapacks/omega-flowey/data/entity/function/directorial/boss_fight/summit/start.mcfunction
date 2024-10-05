@@ -14,5 +14,5 @@ function entity:directorial/boss_fight/summit/origin/at/position { \
 
 # Summon and initialize boss fight director
 function entity:directorial/boss_fight/summit/origin/at { \
-  command: "execute summon minecraft:marker run function entity:directorial/boss_fight/summit/initialize" \
+  command: "execute summon minecraft:marker at @s run function entity:directorial/boss_fight/summit/initialize" \
 }
