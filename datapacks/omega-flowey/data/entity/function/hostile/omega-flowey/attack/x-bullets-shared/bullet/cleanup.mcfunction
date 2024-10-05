@@ -1,4 +1,4 @@
-# runs every tick on the bullet AJ model, terminating if it's outside the booth bounds
-function entity:shared/run_if_outside_booth_volume { terminate_command: \
+# runs every tick on the bullet AJ model, terminating if it's outside the arena bounds
+function entity:shared/run_if_outside_arena_volume { command: \
   "function entity:hostile/omega-flowey/attack/x-bullets-shared/bullet/terminate" \
 }
