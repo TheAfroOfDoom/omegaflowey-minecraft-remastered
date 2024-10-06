@@ -169,7 +169,7 @@ summon minecraft:text_display -132.5 42.6875 24.01 {\
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
-summon minecraft:interaction -132.375 42.625 25.25 { \
+summon minecraft:interaction -131.875 42.625 23.75 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -181,7 +181,7 @@ summon minecraft:interaction -132.375 42.625 25.25 { \
   response: true, \
 }
 execute as @e[ \
-  x=-133.0, dx=2, y=42.0, dy=2, z=25.0, dz=2, \
+  x=-133.0, dx=2, y=42.0, dy=2, z=23.0, dz=2, \
   type=minecraft:interaction, \
   tag=description-github-interaction, \
   tag=omega-flowey-remastered, \
