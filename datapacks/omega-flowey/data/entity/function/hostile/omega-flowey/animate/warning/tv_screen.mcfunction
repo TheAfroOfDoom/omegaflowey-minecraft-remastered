@@ -1,2 +1,2 @@
 function animated_java:tv_screen/variants/warning/apply
-execute on passengers if entity @s[tag=aj.tv_screen.bone.screen] run data merge entity @s { brightness: { block: 15, sky: 15 } }
+execute on passengers if entity @s[tag=aj.tv_screen.bone] run function entity:hostile/omega-flowey/animate/warning/tv_screen/bone
