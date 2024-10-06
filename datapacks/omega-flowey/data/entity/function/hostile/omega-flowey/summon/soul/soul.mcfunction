@@ -1,3 +1,3 @@
 ## Soul heart (soul_event)
-$execute at @e[tag=aj.tv_screen.locator.soul_event] run function animated_java:soul/summon/$(soul_index)
-tag @e[tag=aj.soul.root,tag=!soul.soul_event,tag=!soul.warning] add soul.soul_event
+scoreboard players set #omegaflowey.summon.tag_variant global.flag 2
+$execute at $(bossfight_tvscreen_soul_event_locator_uuid) run function animated_java:soul/summon/$(soul_index)

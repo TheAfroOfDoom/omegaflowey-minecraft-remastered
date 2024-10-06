@@ -1,1 +1,1 @@
-execute as @e[tag=aj.petal_pipe_circle.root,tag=petal_pipe_lower,tag=petal_pipe.right] run function animated_java:petal_pipe_circle/variants/soul_0/apply
+$execute as $(petal_pipe_lower_right_uuid) run function animated_java:petal_pipe_circle/variants/soul_0/apply

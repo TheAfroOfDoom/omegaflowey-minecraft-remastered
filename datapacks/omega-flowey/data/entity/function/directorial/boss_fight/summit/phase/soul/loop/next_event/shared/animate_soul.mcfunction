@@ -1,4 +1,4 @@
 # Summon and begin animating soul heart model in front of soul screen
-execute store result storage animate:soul soul_index int 1 run scoreboard players get @s boss-fight.progress.phase.i
-function entity:hostile/omega-flowey/summon/soul/soul with storage animate:soul
-execute as @e[type=minecraft:item_display, tag=aj.soul.root, tag=soul.soul_event] run function entity:hostile/omega-flowey/animate/soul/soul
+execute store result storage omegaflowey:bossfight soul_index int 1 run scoreboard players get @s boss-fight.progress.phase.i
+function entity:hostile/omega-flowey/summon/soul/soul with storage omegaflowey:bossfight
+function entity:directorial/boss_fight/summit/phase/soul/loop/next_event/shared/animate_soul/target_soul_model with storage omegaflowey:bossfight

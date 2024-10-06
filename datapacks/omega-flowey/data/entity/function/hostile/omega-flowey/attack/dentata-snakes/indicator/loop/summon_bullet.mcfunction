@@ -1,4 +1,7 @@
 ## Summon bullet
+execute if score @s attack.bullets.count matches 0 run scoreboard players set #omegaflowey.summon.tag_variant global.flag 0
+execute unless score @s attack.bullets.count matches 0 run scoreboard players set #omegaflowey.summon.tag_variant global.flag 1
+
 # bullet head (begin animation)
 $execute if score @s attack.bullets.count matches 0 run function entity:directorial/boss_fight/summit/origin/at/y { \
   command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:dentata_snake_ball/summon { \
@@ -9,10 +12,6 @@ $execute if score @s attack.bullets.count matches 0 run function entity:director
 $execute unless score @s attack.bullets.count matches 0 run function entity:directorial/boss_fight/summit/origin/at/y { \
   command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:dentata_snake_ball/summon/tail" \
 }
-
-# Initialize bullet
-execute if score @s attack.bullets.count matches 0 as @e[tag=attack-bullet-new] run function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/initialize/head
-execute unless score @s attack.bullets.count matches 0 as @e[tag=attack-bullet-new] run function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/initialize/tail
 
 # Increment bullets summoned so far
 scoreboard players add @s attack.bullets.count 1

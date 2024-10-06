@@ -1,8 +1,9 @@
+function entity:hostile/omega-flowey/attack/shared/initialize
+
+data merge entity @s {CustomName:'"Friendliness Pellet Ring"'}
+
 # Add tags
-tag @s add groupable
+tag @s add friendliness-pellets
+tag @s add friendliness-pellet-ring
 
-# Copy parent indicator's group id to blinking-ring
-function entity:group/copy with storage group
-
-# Remove tags
-tag @s remove friendliness-pellet-ring-new
+function gu:generate

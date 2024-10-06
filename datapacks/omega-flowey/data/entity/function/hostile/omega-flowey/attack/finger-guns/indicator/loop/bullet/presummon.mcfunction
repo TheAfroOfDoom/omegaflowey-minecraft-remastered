@@ -1,9 +1,11 @@
 # Bullet summoning setup
 execute store result storage attack:finger-guns x double 0.01 run data get entity @s Pos[0] 100
 execute store result storage attack:finger-guns z double 0.01 run data get entity @s Pos[2] 100
+execute store result storage attack:finger-guns yaw float 1 run data get entity @s Rotation[0] 1
 
 # Terminate associated laser
-function entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/terminate
+execute on passengers if entity @s[type=minecraft:marker, tag=aj.data] run \
+  function entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/terminate with entity @s data
 
 # Play shoot animation
 function animated_java:finger_gun/animations/shoot/play

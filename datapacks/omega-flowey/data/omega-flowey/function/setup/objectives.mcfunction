@@ -99,6 +99,7 @@ scoreboard objectives add music.clock.total dummy
 scoreboard objectives add player.flag dummy
 scoreboard objectives add player.leave.current minecraft.custom:minecraft.leave_game
 scoreboard objectives add player.leave.previous dummy
+scoreboard objectives add player.health health
 scoreboard objectives add player.shake.pitch dummy
 scoreboard objectives add player.shake.yaw dummy
 scoreboard objectives add player.trigger.bossfight.confirm trigger

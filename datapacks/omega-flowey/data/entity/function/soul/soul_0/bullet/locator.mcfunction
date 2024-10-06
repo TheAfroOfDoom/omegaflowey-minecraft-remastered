@@ -1,1 +1,2 @@
-execute positioned ~ ~-1 ~ run function entity:utils/damage with entity @s data
+function entity:shared/locator/merge_data_to_utilsdamage
+execute positioned ~ ~-1 ~ run function entity:utils/damage with storage utils:damage

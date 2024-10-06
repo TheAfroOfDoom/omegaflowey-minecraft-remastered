@@ -1,5 +1,11 @@
+function entity:hostile/omega-flowey/attack/shared/indicator/initialize
+
+data modify entity @s CustomName set value '"Homing-Vines Indicator"'
+
+# Add tags
+tag @s add homing-vines
+
 # Set scores
-scoreboard players set @s attack.clock.i -1
 scoreboard players operation @s attack.clock.i -= #attack-homing-vines attack.indicator.clock.delay
 
 scoreboard players set @s attack.bullets.count 0
@@ -12,6 +18,3 @@ function entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/ra
 
 # Summon blinking-lane
 execute at @s run function entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/summon with storage attack:homing-vines
-
-# Remove tags
-tag @s remove attack-indicator-new

@@ -1,0 +1,1 @@
+function animated_java:projectile_star/remove/this

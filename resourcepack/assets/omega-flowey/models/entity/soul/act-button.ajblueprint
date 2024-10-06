@@ -24,7 +24,7 @@
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
 		"data_pack": "G:/Coding/omega-flowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "data merge entity @s {CustomName:\"'Act Button'\"}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add act-button\ntag @s add act-button-new",
+		"summon_commands": "function entity:soul/shared/act_button/initialize",
 		"ticking_commands": "",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,

@@ -76,7 +76,6 @@ const getSummitDatapackPaths = () => {
     ...prefixPaths('function/', [
       ...bossFightPaths,
       'directorial/tick.mcfunction',
-      'group',
       ...hostilePaths,
       ...playerPaths,
       'remove_animated_java_models',
@@ -84,7 +83,6 @@ const getSummitDatapackPaths = () => {
       ...entityUtilsPaths,
       'remove_animated_java_models.mcfunction',
       'reset_scores.mcfunction',
-      'reset.mcfunction',
       'setup.mcfunction',
       'tick.mcfunction',
     ]),
@@ -106,6 +104,11 @@ const getSummitDatapackPaths = () => {
       ...utilsPaths,
     ]),
   ]);
+  const removeResetFunction = async ({ compiledPath }) => {
+    const resetFunctionFile = `${compiledPath}/datapacks/omega-flowey/data/omega-flowey/function/reset.mcfunction`;
+    await rimraf(resetFunctionFile);
+  };
+  postProcessors.push(removeResetFunction);
 
   const datapackPaths = prefixPaths('datapacks/', [
     'animated_java/data',

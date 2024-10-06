@@ -1,7 +1,9 @@
+function entity:hostile/omega-flowey/attack/shared/indicator/initialize
+
+data modify entity @s CustomName set value '"Bomb Indicator"'
+
+# Add tags
+tag @s add bomb
+
 # Set scores
-scoreboard players set @s attack.clock.i -1
-
 scoreboard players operation @s attack.indicator.clock.length = #attack-bomb attack.indicator.clock.length
-
-# Remove tags
-tag @s remove attack-indicator-new

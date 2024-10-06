@@ -9,4 +9,5 @@ scoreboard players operation @s math.0 %= @s attack.executor.rate
 execute if score @s math.0 matches 0 run function entity:hostile/omega-flowey/attack/finger-guns/executor/loop/indicator/presummon
 
 # Terminate
-execute if score @s attack.clock.i = @s attack.executor.clock.length run function entity:hostile/omega-flowey/attack/finger-guns/executor/terminate
+execute if score @s attack.clock.i = @s attack.executor.clock.length run \
+  function entity:hostile/omega-flowey/attack/finger-guns/executor/terminate with storage omegaflowey:bossfight

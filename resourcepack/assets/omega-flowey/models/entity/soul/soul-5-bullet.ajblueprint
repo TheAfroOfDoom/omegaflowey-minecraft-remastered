@@ -24,8 +24,8 @@
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
 		"data_pack": "G:/Coding/omega-flowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul_5\ntag @s add soul-bullet\ntag @s add soul-bullet-new",
-		"ticking_commands": "",
+		"summon_commands": "function entity:soul/soul_5/bullet/initialize with storage soul:soul_5.indicator",
+		"ticking_commands": "function entity:soul/soul_5/bullet/cleanup",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
 		"use_storage_for_animation": false,
@@ -10940,7 +10940,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "c9795a0d-9c6c-e9e8-350f-12ca8cea151b",
+			"uuid": "2639dd36-c7db-656a-8104-37e0337a52cd",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true

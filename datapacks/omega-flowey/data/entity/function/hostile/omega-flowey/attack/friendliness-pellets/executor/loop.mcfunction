@@ -11,4 +11,5 @@ scoreboard players operation @s math.0 %= @s attack.executor.rate
 execute if score @s math.0 matches 0 run function entity:hostile/omega-flowey/attack/friendliness-pellets/executor/loop/summon_indicator
 
 # Terminate
-execute if score @s attack.clock.i = @s attack.executor.clock.length run function entity:hostile/omega-flowey/attack/friendliness-pellets/executor/terminate
+execute if score @s attack.clock.i = @s attack.executor.clock.length run \
+  function entity:hostile/omega-flowey/attack/friendliness-pellets/executor/terminate with storage omegaflowey:bossfight

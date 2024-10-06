@@ -1,1 +1,1 @@
-function animated_java:projectile_star/remove/this
+function entity:hostile/omega-flowey/attack/x-bullets-shared/bullet/terminate

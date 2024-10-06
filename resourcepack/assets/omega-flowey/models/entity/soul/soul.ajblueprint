@@ -24,7 +24,7 @@
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
 		"data_pack": "G:/Coding/omega-flowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add model-soul",
+		"summon_commands": "function entity:hostile/omega-flowey/summon/soul/soul/initialize",
 		"ticking_commands": "",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
@@ -696,7 +696,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "f3ae6ad4-b650-c1e6-0ba5-d2b4830e82e4",
+			"uuid": "2c6e83ce-cd68-277e-9819-b767e217808c",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true

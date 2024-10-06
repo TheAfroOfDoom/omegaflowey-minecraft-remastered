@@ -1,4 +1,5 @@
 ## Initializes the boss fight
+function entity:directorial/boss_fight/shared/initialize
 
 # Summon Omega Flowey entity if it doesn't exist
 execute unless entity @e[tag=aj.tv_screen.root] run function entity:hostile/omega-flowey/summon { args: {} }

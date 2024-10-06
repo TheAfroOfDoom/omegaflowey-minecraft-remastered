@@ -17,4 +17,5 @@ execute if score #soul_5.touched soul.flag matches 1 run function entity:soul/so
 execute if score #soul_5.touched soul.flag matches 1 run return 0
 
 # Terminate
-execute if score @s soul.clock.i >= @s soul.executor.clock.length run function entity:soul/soul_5/executor/terminate
+execute if score @s soul.clock.i >= @s soul.executor.clock.length run \
+  function entity:soul/soul_5/executor/terminate with storage omegaflowey:bossfight
