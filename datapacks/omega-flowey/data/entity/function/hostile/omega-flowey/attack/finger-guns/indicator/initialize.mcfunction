@@ -1,8 +1,11 @@
+function entity:hostile/omega-flowey/attack/shared/indicator/initialize
+
+data merge entity @s { CustomName: '"Finger-Guns Indicator"', teleport_duration: 0 }
+
 # Set scores
-scoreboard players set @s attack.clock.i -1
 scoreboard players operation @s attack.clock.i -= #attack-finger-guns attack.indicator.clock.delay
 
 scoreboard players operation @s attack.indicator.clock.length = #attack-finger-guns attack.indicator.clock.length
 
-# Remove tags
-tag @s remove attack-indicator-new
+# Add tags
+tag @s add finger-guns
