@@ -1,4 +1,4 @@
-summon minecraft:text_display -133.5 45.25 42.99 { \
+summon minecraft:text_display -133.5 45.0 44.99 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -21,7 +21,7 @@ summon minecraft:text_display -133.5 45.25 42.99 { \
   } \
 }
 
-summon minecraft:text_display -133.5 44.0 42.99 { \
+summon minecraft:text_display -133.5 44.0 44.99 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -43,7 +43,7 @@ summon minecraft:text_display -133.5 44.0 42.99 { \
   } \
 }
 
-summon minecraft:text_display -138.25 42.5 41.3125 { \
+summon minecraft:text_display -137.75 43.5 42.75 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -111,7 +111,7 @@ summon minecraft:text_display -139.99 43.3125 39.0 { \
 }
 function omega-flowey:summit/room/cave/player_queue_counter/update_value
 
-summon minecraft:text_display -127.0 42.5 43.9375 { \
+summon minecraft:text_display -127.0 42.875 43.9375 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -134,7 +134,7 @@ summon minecraft:text_display -127.0 42.5 43.9375 { \
   } \
 }
 
-summon minecraft:text_display -132.5 42.6875 25.01 {\
+summon minecraft:text_display -132.5 42.6875 24.01 {\
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
