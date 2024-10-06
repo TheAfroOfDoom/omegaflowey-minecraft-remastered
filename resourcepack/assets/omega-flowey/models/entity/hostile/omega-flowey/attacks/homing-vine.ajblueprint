@@ -2091,7 +2091,11 @@
 			"rotation": [0, -180, 0],
 			"color": 0,
 			"configs": {
-				"default": {},
+				"default": {
+					"inherit_settings": true,
+					"nbt": "{ brightness: { block: 13, sky: 0 } }",
+					"use_nbt": true
+				},
 				"variants": {}
 			},
 			"uuid": "c1728807-c214-1e93-b0fe-135c728a5e9a",
@@ -2107,7 +2111,11 @@
 					"origin": [0, 0, 35],
 					"color": 0,
 					"configs": {
-						"default": {},
+						"default": {
+							"inherit_settings": true,
+							"nbt": "{ brightness: { block: 13, sky: 0 } }",
+							"use_nbt": true
+						},
 						"variants": {}
 					},
 					"uuid": "56692b12-ecba-8cc2-bde7-6b3f858489a1",
@@ -2132,13 +2140,17 @@
 					"origin": [0, 0, 35],
 					"color": 0,
 					"configs": {
-						"default": {},
+						"default": {
+							"inherit_settings": true,
+							"nbt": "{ brightness: { block: 13, sky: 0 } }",
+							"use_nbt": true
+						},
 						"variants": {}
 					},
 					"uuid": "3b4f98ae-0998-0b9c-c1c6-223d4fe8f796",
 					"export": true,
 					"mirror_uv": false,
-					"isOpen": true,
+					"isOpen": false,
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
@@ -2248,7 +2260,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "3d4ff9ff-e71d-f15a-a2e1-141a355b9837",
+			"uuid": "16a91a0d-8548-d2c4-4df9-29935e542788",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
