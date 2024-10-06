@@ -34,10 +34,10 @@ summon minecraft:text_display -110.5 43.0 38.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"by TheAfroOfDoom"', \
+  text: '[ "by ", { "text": "TheAfroOfDoom", "color": "yellow" } ]', \
   text_opacity: 255, \
   transformation: {\
-    left_rotation: [0.0f, 0.9975641f, 0.0f, 0.069755904f], \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [2.0f, 2.0f, 2.0f], \
     translation: [0.0f, 0.0f, 0.0f] \
