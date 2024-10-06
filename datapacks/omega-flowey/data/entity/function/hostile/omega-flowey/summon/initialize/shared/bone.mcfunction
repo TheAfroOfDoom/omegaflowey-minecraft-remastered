@@ -1,1 +1,1 @@
-data merge entity @s { brightness: { block: 8, sky: 0 } }
+data merge entity @s { brightness: { block: 13, sky: 0 } }
