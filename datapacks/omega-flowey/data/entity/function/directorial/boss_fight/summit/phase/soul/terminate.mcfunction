@@ -12,8 +12,8 @@ tag @s remove boss_fight.phase.soul
 # Next phase
 function entity:directorial/boss_fight/summit/phase/attack/initialize
 
-# Move players to main arena
-execute as @a at @s unless entity @s[tag=!omegaflowey.player.fighting_flowey, team=!spectator] run function entity:directorial/boss_fight/summit/soul_origin/to_origin
+# # Move players to main arena
+# execute as @a at @s unless entity @s[tag=!omegaflowey.player.fighting_flowey, team=!spectator] run function entity:directorial/boss_fight/summit/soul_origin/to_origin
 
 # Re-summon main Omega Flowey models
 scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen global.flag 1
