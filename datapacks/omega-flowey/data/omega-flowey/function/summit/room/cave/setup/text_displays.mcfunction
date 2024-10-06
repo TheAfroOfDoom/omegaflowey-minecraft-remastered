@@ -3,7 +3,7 @@ summon minecraft:text_display -133.5 45.0 44.99 { \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
-    "currently-playing-title", \
+    "now-playing-title", \
   ], \
   alignment: "center", \
   background: 0, \
@@ -11,7 +11,7 @@ summon minecraft:text_display -133.5 45.0 44.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"Currently playing:"', \
+  text: '[{ "text": "Now playing", "color": "yellow", "bold": true }]', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -26,7 +26,7 @@ summon minecraft:text_display -133.5 44.0 44.99 { \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
-    "currently-playing-player-name", \
+    "now-playing-player-name", \
   ], \
   alignment: "center", background: 0, \
   default_background: 0b, \
@@ -43,7 +43,7 @@ summon minecraft:text_display -133.5 44.0 44.99 { \
   } \
 }
 
-summon minecraft:text_display -137.75 43.5 42.75 { \
+summon minecraft:text_display -137.5 43.5 42.5 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -51,16 +51,17 @@ summon minecraft:text_display -137.75 43.5 42.75 { \
     "join-queue-title", \
   ], \
   alignment: "center", \
+  billboard: "center", \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"JOIN QUEUE"', \
+  text: '[{ "text": "JOIN QUEUE", "color": "light_purple", "bold": true }]', \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, 0.92387956f, 0.0f, 0.38268352f], \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-    scale: [2.0f, 2.0f, 2.0f], \
+    scale: [1.5f, 1.5f, 1.5f], \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
@@ -78,7 +79,7 @@ summon minecraft:text_display -139.99 45.0 39.0 { \
   line_width: 200, \
   see_through: false, \
   shadow: 0b, \
-  text: '[{ "bold": true, "text": "Players in queue:" }]', \
+  text: '[{ "text": "Players in queue", "color": "aqua", "bold": true }]', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -111,7 +112,7 @@ summon minecraft:text_display -139.99 43.3125 39.0 { \
 }
 function omega-flowey:summit/room/cave/player_queue_counter/update_value
 
-summon minecraft:text_display -127.0 42.875 43.9375 { \
+summon minecraft:text_display -127.0 43.0 43.99 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -119,17 +120,17 @@ summon minecraft:text_display -127.0 42.875 43.9375 { \
     "spectate-title", \
   ], \
   alignment: "center", \
-  background: 1073741824, \
+  background: 0, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"SPECTATE"', \
+  text: '[{ "text": "SPECTATE", "color": "yellow", "bold": true }]', \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
       right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-      scale: [3.0f, 3.0f, 3.0f], \
+      scale: [2.625f, 2.625f, 2.625f], \
       translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
