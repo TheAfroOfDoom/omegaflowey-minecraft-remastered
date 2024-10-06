@@ -19,11 +19,8 @@ scoreboard players operation @s attack.indicator.radius = #attack-friendliness-p
 scoreboard players set @s attack.d-phi 360
 scoreboard players operation @s attack.d-phi /= @s attack.bullets.total
 
-# Summon blinking-ring
+# Summon and initialize blinking-ring
 function animated_java:friendliness_pellet_ring/summon { args: {} }
-
-# Initialize blinking-ring
-execute as @e[tag=friendliness-pellet-ring-new] run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/initialize/friendliness-pellet-ring
 data modify entity @s data.corresponding_ring_uuid set from storage gu:main out
 
 # Randomize initial yaw
