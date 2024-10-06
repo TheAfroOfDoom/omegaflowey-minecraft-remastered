@@ -4,9 +4,8 @@ scoreboard players add @s attack.clock.i 1
 
 # TODO(45): refactor repeated `attack.clock.i` conditionals into separate functions
 # Change ring variant at tick index
-execute if score @s attack.clock.i = @s attack.indicator.animation.index run function entity:group/start
-execute if score @s attack.clock.i = @s attack.indicator.animation.index as @e[tag=friendliness-pellet-ring,scores={group.id=0}] run function animated_java:friendliness_pellet_ring/variants/finished_blinking/apply
-execute if score @s attack.clock.i = @s attack.indicator.animation.index run function entity:group/end
+execute if score @s attack.clock.i = @s attack.indicator.animation.index run \
+  function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/finished_blinking with entity @s data
 
 # Play blinking sound before we summon bullets
 execute if score @s attack.clock.i matches ..-1 run playsound omega-flowey:attack.friendliness-pellets.blinking hostile @a ~ ~ ~ 3 1 1
@@ -16,9 +15,8 @@ execute if score @s attack.clock.i matches ..-1 run return 0
 
 # TODO(45): refactor repeated `attack.clock.i` conditionals into separate functions
 # Delete ring when we start summoning bullets
-execute if score @s attack.clock.i matches 0 run function entity:group/start
-execute if score @s attack.clock.i matches 0 as @e[tag=friendliness-pellet-ring,scores={group.id=0}] run function animated_java:friendliness_pellet_ring/remove/this
-execute if score @s attack.clock.i matches 0 run function entity:group/end
+execute if score @s attack.clock.i matches 0 run \
+  function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/terminate_ring with entity @s data
 
 # Summon a bullet each tick that `attack.bullets.count` is less than `attack.bullets.total`
 execute if score @s attack.bullets.count < @s attack.bullets.total run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/presummon_bullet
@@ -28,4 +26,5 @@ execute if score @s attack.bullets.count = @s attack.bullets.total run scoreboar
 
 # After `attack.bullets.clock.delay` ticks, terminate (and activate all bullets)
 # TODO(44): this could be off by one tick (might need to be `attack.bullets.clock.delay - 1`?)
-execute if score @s attack.bullets.clock.i = @s attack.bullets.clock.delay run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/terminate
+execute if score @s attack.bullets.clock.i = @s attack.bullets.clock.delay run \
+  function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/terminate with entity @s data
