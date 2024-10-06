@@ -1,8 +1,8 @@
 # Play WARNING sound
-execute at @e[tag=aj.tv_screen.root,tag=tv_screen.boss_fight] run playsound omega-flowey:boss-fight.alarm ambient @a ~ ~ ~ 10 1
+$execute at $(bossfight_tvscreen_uuid) run playsound omega-flowey:boss-fight.alarm ambient @a ~ ~ ~ 10 1
 
 # Set tv screen to WARNING variant
-execute as @e[tag=aj.tv_screen.root,tag=tv_screen.boss_fight] run function entity:hostile/omega-flowey/animate/warning/tv_screen
+$execute as $(bossfight_tvscreen_uuid) run function entity:hostile/omega-flowey/animate/warning/tv_screen
 
 execute store result storage animate:soul soul_index int 1 run scoreboard players get @s boss-fight.progress.phase.i
 

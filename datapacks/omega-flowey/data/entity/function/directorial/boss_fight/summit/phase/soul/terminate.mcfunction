@@ -2,7 +2,8 @@
 scoreboard players set #omega-flowey.bossfight.done global.flag 0
 execute if score @s boss-fight.progress.phase.i = @s boss-fight.progress.phase.total run scoreboard players set #omega-flowey.bossfight.done global.flag 1
 
-execute if score #omega-flowey.bossfight.done global.flag matches 1 run function entity:directorial/boss_fight/summit/phase/soul/terminate/final
+execute if score #omega-flowey.bossfight.done global.flag matches 1 run \
+  function entity:directorial/boss_fight/summit/phase/soul/terminate/final with storage omegaflowey:bossfight
 execute if score #omega-flowey.bossfight.done global.flag matches 1 run return 0
 
 # Remove tags
@@ -23,4 +24,4 @@ function entity:hostile/omega-flowey/animate
 scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen global.flag 0
 
 # Set tvscreen variant back to default
-execute as @e[type=minecraft:item_display, tag=aj.tv_screen.root, tag=tv_screen.boss_fight, limit=1] run function animated_java:tv_screen/variants/default/apply
+$execute as $(bossfight_tvscreen_uuid) run function animated_java:tv_screen/variants/default/apply

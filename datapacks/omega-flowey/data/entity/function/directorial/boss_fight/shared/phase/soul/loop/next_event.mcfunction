@@ -1,2 +1,2 @@
 # Change tv screen variant
-execute as @e[type=minecraft:item_display, tag=aj.tv_screen.root, tag=tv_screen.boss_fight] run function animated_java:tv_screen/variants/default/apply
+$execute as $(bossfight_tvscreen_uuid) run function animated_java:tv_screen/variants/default/apply
