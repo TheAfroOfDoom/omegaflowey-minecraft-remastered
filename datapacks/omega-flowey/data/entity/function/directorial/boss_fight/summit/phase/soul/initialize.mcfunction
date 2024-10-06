@@ -13,7 +13,7 @@ tag @s add boss_fight.phase.soul
 
 # Delete main flowey models for performance reasons
 function entity:hostile/omega-flowey/summon/remove_preexisting_models/except_tv_screen
-execute as @e[tag=aj.soul.root,tag=soul.warning] run function animated_java:soul/remove/this
+$execute as $(soul_model_uuid) run function animated_java:soul/remove/this
 
 # Split on phase score
 execute if score @s boss-fight.progress.phase.i matches 0 run function entity:directorial/boss_fight/summit/phase/soul/initialize/0

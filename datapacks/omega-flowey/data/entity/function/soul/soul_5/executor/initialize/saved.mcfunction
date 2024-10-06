@@ -14,7 +14,7 @@ execute as @a unless entity @s[tag=!omegaflowey.player.fighting_flowey, team=!sp
 # Initialize other soul event models
 $execute as $(act_button_uuid) run function entity:soul/soul_5/act_button/initialize/saved
 $execute as $(indicator_uuid) at @s run function entity:soul/soul_5/indicator/initialize/saved
-$execute as $(soul_event_soul_model_uuid) run function entity:soul/soul_5/soul/saved
+$execute as $(soul_model_uuid) run function entity:soul/soul_5/soul/saved
 function entity:directorial/boss_fight/shared/phase/soul/loop/saved with storage omegaflowey:bossfight
 
 # NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME

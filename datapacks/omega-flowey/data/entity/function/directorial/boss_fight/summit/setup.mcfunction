@@ -14,7 +14,7 @@ scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen global.flag
 # ensure various uuids are always set so functions can be called
 execute unless data storage omegaflowey:bossfight boss_fight_uuid run data modify storage omegaflowey:bossfight boss_fight_uuid set value "0"
 execute unless data storage omegaflowey:bossfight bossfight_tvscreen_uuid run data modify storage omegaflowey:bossfight bossfight_tvscreen_uuid set value "0"
-execute unless data storage omegaflowey:bossfight soul_event_soul_model_uuid run data modify storage omegaflowey:bossfight soul_event_soul_model_uuid set value "0"
+execute unless data storage omegaflowey:bossfight soul_model_uuid run data modify storage omegaflowey:bossfight soul_model_uuid set value "0"
 
 # reset tag-variant flag
 scoreboard players set #omegaflowey.summon.tag_variant global.flag 0
