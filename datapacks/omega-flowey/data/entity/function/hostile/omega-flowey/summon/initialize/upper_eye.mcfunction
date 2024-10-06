@@ -1,7 +1,7 @@
 function entity:hostile/omega-flowey/summon/initialize/shared
 tag @s add omega-flowey-upper-eye
 
-execute on passengers if entity @s[tag=aj.upper_eye.bone] run function entity:hostile/omega-flowey/summon/initialize/upper_eye/bone
+execute on passengers if entity @s[tag=aj.bone] run function entity:hostile/omega-flowey/summon/initialize/shared/bone
 
 function gu:generate
 
