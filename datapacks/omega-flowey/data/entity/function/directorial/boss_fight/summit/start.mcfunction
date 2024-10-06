@@ -5,9 +5,9 @@ function entity:directorial/boss_fight/summit/origin/at/position { \
   command: "kill @e[ \
     distance=..0.01, \
     type=minecraft:marker, \
-    tag=omega-flowey-remastered, \
-    tag=directorial, \
     tag=boss_fight, \
+    tag=directorial, \
+    tag=omega-flowey-remastered, \
     limit=1 \
   ]" \
 }

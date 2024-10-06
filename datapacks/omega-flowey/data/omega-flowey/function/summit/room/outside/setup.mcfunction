@@ -1,5 +1,5 @@
 # Flowey TV screen, smiling
-execute as @e[\
+execute as @e[ \
   x=-124.0, dx=2, y=87.0, dy=2, z=33.0, dz=2, \
   type=minecraft:item_display, \
   tag=tv_screen.outside, \
