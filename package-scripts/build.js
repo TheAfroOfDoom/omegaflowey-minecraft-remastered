@@ -76,7 +76,6 @@ const getSummitDatapackPaths = () => {
     ...prefixPaths('function/', [
       ...bossFightPaths,
       'directorial/tick.mcfunction',
-      'group',
       ...hostilePaths,
       ...playerPaths,
       'remove_animated_java_models',
