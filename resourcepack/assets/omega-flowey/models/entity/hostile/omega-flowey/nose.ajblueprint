@@ -24,7 +24,7 @@
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
 		"data_pack": "G:/Coding/omega-flowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add omega-flowey\ntag @s add omega-flowey-nose",
+		"summon_commands": "function entity:hostile/omega-flowey/summon/initialize/nose",
 		"ticking_commands": "",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
@@ -881,7 +881,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "24cecc74-6778-ff4e-8807-58741a19bff9",
+			"uuid": "3151c781-9038-0331-e86c-b2dd83dc073a",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true

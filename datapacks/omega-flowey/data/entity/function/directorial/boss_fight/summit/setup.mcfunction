@@ -12,6 +12,8 @@ execute as @a run function entity:directorial/boss_fight/summit/player/queue/pro
 scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen global.flag 0
 
 # ensure various uuids are always set so functions can be called
+execute unless data storage omegaflowey:bossfight active_player_uuid run data modify storage omegaflowey:bossfight active_player_uuid set value "0"
+execute unless data storage omegaflowey:bossfight active_player_uuid_intarray run data modify storage omegaflowey:bossfight active_player_uuid_intarray set value "0"
 execute unless data storage omegaflowey:bossfight boss_fight_uuid run data modify storage omegaflowey:bossfight boss_fight_uuid set value "0"
 execute unless data storage omegaflowey:bossfight bossfight_tvscreen_uuid run data modify storage omegaflowey:bossfight bossfight_tvscreen_uuid set value "0"
 execute unless data storage omegaflowey:bossfight bossfight_tvscreen_soul_event_locator_uuid run \

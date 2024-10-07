@@ -24,7 +24,7 @@
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
 		"data_pack": "G:/Coding/omega-flowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "tag @s add omega-flowey-remastered\ntag @s add omega-flowey\ntag @s add omega-flowey-mouth",
+		"summon_commands": "function entity:hostile/omega-flowey/summon/initialize/mouth",
 		"ticking_commands": "",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
@@ -9880,7 +9880,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "a76dad12-5b61-9695-196a-7021d3010eb0",
+			"uuid": "ba71d18c-5615-01b6-d0de-717ab57ff86d",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
