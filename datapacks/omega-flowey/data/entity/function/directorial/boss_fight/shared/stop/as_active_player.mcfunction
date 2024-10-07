@@ -1,4 +1,4 @@
-stopsound @s record
+function entity:directorial/boss_fight/shared/stop/as_spectator
 
 teleport @s -141.5 43.0 25.5 -45 0
 
