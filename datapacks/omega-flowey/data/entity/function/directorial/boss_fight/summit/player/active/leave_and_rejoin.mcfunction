@@ -4,5 +4,6 @@ function entity:directorial/boss_fight/shared/stop/as_active_player/modify_healt
 function utils:log/self { text_component: '[\
   { "text": "You were ", "color": "yellow" }, \
   { "text": "removed from the boss-fight ", "color": "red" }, \
-  { "text": "because you left the server", "color": "yellow" } \
+  { "text": "because you ", "color": "yellow" }, \
+  { "text": "left the server", "color": "gold" } \
 ]' }
