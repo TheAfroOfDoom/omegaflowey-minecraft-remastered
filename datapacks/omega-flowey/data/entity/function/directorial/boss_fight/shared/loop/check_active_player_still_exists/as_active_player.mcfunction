@@ -1,5 +1,7 @@
 # bossfight can only continue if all of:
 # - active player still exists
+# (if player exists, set stop_reason to 0)
+scoreboard players set #omegaflowey.bossfight.stop_reason global.flag 0
 
 # - active player has the `fighting_flowey` tag
 # (if player does not have fighting_flowey tag, set stop_reason to 2)
