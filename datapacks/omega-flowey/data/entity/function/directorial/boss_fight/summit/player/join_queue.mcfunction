@@ -1,5 +1,5 @@
-# if already in queue, do nothing
-execute if entity @s[tag=omegaflowey.player.in_queue] run return 0
+# if already in queue (or in bossfight somehow), do nothing
+execute unless entity @s[tag=!omegaflowey.player.in_queue, tag=!omegaflowey.player.fighting_flowey] run return 0
 
 tag @s add omegaflowey.player.in_queue
 
