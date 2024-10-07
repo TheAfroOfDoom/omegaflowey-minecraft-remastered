@@ -96,6 +96,8 @@ scoreboard objectives add math.trials dummy
 scoreboard objectives add music.clock.i dummy
 scoreboard objectives add music.clock.total dummy
 
+scoreboard objectives add player.deaths.current deathCount
+scoreboard objectives add player.deaths.previous dummy
 scoreboard objectives add player.flag dummy
 scoreboard objectives add player.leave.current minecraft.custom:minecraft.leave_game
 scoreboard objectives add player.leave.previous dummy
