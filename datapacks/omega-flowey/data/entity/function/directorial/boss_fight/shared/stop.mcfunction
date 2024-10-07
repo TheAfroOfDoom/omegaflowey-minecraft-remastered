@@ -5,3 +5,5 @@ execute as @e[ \
   tag=omega-flowey-remastered \
 ] run function entity:directorial/boss_fight/shared/stop/as_root
 stopsound @a record
+
+tag @s remove omegaflowey.player.fighting_flowey
