@@ -7,7 +7,6 @@ $function entity:directorial/boss_fight/summit/soul_origin/at/y { \
     execute \
       rotated $(next_bullet_angle_from_player) 0 positioned ^ ^ ^4 positioned ~ ~-3.9 ~ \
       if entity @e[ \
-        x=-186, dx=61, y=12, dy=44, z=47, dz=60, \
         type=minecraft:item_display, \
         tag=soul-indicator, \
         tag=soul_5, \
