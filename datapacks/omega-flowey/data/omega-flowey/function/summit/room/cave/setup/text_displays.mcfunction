@@ -133,7 +133,7 @@ summon minecraft:text_display -127.0 43.0 43.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[{ "text": "SPECTATE", "color": "yellow", "bold": true }]', \
+  text: '[{ "text": "SPECTATE", "color": "gold", "bold": true }]', \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
