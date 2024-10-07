@@ -49,6 +49,37 @@ execute as @e[ \
   limit=1 \
 ] run function gu:generate
 data modify storage omegaflowey:bossfight active_player_display_uuid set from storage gu:main out
+
+summon minecraft:text_display -132.3125 43.125 44.99 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "now-playing-player-health", \
+  ], \
+  alignment: "center", background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [2.0f, 2.0f, 2.0f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+execute as @e[ \
+  x=-133.0, dx=2, y=42.0, dy=2, z=44.0, dz=2, \
+  type=minecraft:text_display, \
+  tag=now-playing-player-health, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:bossfight active_player_health_display_uuid set from storage gu:main out
+
+# Player name display updates both the name (+ skull) and the health counter
 function omega-flowey:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 
 summon minecraft:text_display -137.5 43.5 42.5 { \

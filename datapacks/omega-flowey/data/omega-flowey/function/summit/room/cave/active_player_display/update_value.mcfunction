@@ -6,3 +6,5 @@ execute unless entity @s[type=player, tag=omegaflowey.player.fighting_flowey] ru
 
 $execute as $(active_player_display_uuid) run \
   function omega-flowey:summit/room/cave/active_player_display/as_text_display with storage omegaflowey:bossfight
+
+function omega-flowey:summit/room/cave/active_player_health_display/update_value with storage omegaflowey:bossfight
