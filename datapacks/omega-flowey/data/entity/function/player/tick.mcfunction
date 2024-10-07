@@ -1,4 +1,5 @@
 function entity:player/rejoin/check
+function entity:player/death/check
 
 execute if entity @s[tag=omegaflowey.player.in_queue.prompted] run \
   function entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/check
