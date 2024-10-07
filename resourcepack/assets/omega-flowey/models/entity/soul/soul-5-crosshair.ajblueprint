@@ -2450,7 +2450,12 @@
 			"origin": [0, 0, 41.5],
 			"color": 0,
 			"configs": {
-				"variants": {}
+				"variants": {},
+				"default": {
+					"inherit_settings": true,
+					"nbt": "{ brightness: { block: 15, sky: 0 } }",
+					"use_nbt": true
+				}
 			},
 			"uuid": "46b3ab6c-791c-8564-2e10-f861870d8036",
 			"export": true,
@@ -2489,7 +2494,12 @@
 					"origin": [10.75, 35, -0.25],
 					"color": 0,
 					"configs": {
-						"variants": {}
+						"variants": {},
+						"default": {
+							"inherit_settings": true,
+							"nbt": "{ brightness: { block: 15, sky: 0 } }",
+							"use_nbt": true
+						}
 					},
 					"uuid": "2e574a6b-f91e-e1a6-42da-cb1144ba6f1a",
 					"export": true,
@@ -2599,7 +2609,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "99a80c80-e8c7-7800-f162-232a51208c7d",
+			"uuid": "4520a01e-655f-a1f9-8761-078482fe5395",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true

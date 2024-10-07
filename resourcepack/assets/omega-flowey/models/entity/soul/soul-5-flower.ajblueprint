@@ -8014,7 +8014,12 @@
 			"origin": [-0.22464, 24, -5.16667],
 			"color": 0,
 			"configs": {
-				"variants": {}
+				"variants": {},
+				"default": {
+					"inherit_settings": true,
+					"nbt": "{ brightness: { block: 15, sky: 0 } }",
+					"use_nbt": true
+				}
 			},
 			"uuid": "43e3fbcf-86ff-98e2-72a0-84ddfa349271",
 			"export": true,
@@ -8309,7 +8314,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "c1746bdb-fcc6-3b72-4a86-e78e8758683f",
+			"uuid": "0a3eb527-2e18-eaf2-62c5-65a808310fd9",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
