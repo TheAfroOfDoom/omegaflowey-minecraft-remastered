@@ -209,7 +209,7 @@ const getSummitResourcepackPaths = () => {
     'pipe',
     'soul',
     'tv_screen',
-    'upper_eye',
+    'x_bullets_shared',
     'black.png',
     'white.png',
   ]);
