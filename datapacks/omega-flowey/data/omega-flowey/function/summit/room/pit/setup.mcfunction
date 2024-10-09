@@ -7,8 +7,7 @@ function animated_java:flower_contributor/remove/all
 execute positioned -110.5 41.0 38.5 rotated -168 0 run function animated_java:flower_contributor/summon/default
 execute positioned -109.5625 41.0 25.625 rotated -20 0 run function animated_java:flower_contributor/summon/adahy
 execute positioned -108.0 41.0 25.5 rotated 0 0 run function animated_java:flower_contributor/summon/natia
-# this last one needs to be Wes's skin
-execute positioned -106.1875 41.0 25.5625 rotated 20 0 run function animated_java:flower_contributor/summon/adahy
+execute positioned -106.1875 41.0 25.5625 rotated 20 0 run function animated_java:flower_contributor/summon/wes
 
 function omega-flowey:summit/room/pit/setup/text_displays
 
