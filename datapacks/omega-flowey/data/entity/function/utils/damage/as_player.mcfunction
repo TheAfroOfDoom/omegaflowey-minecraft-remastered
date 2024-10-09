@@ -5,4 +5,6 @@
 $execute unless entity $(boss_fight_uuid) run damage @s $(damage) minecraft:mob_projectile
 $execute if entity $(boss_fight_uuid) run damage @s $(damage) minecraft:mob_projectile by $(boss_fight_uuid)
 
+scoreboard players add #omegaflowey.bossfight.player_hit_count global.flag 1
+
 schedule function omega-flowey:summit/room/cave/active_player_health_display/scheduled 2t append
