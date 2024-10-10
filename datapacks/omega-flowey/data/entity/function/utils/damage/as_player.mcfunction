@@ -1,6 +1,9 @@
 # If player is going to die to this hit, disable `showDeathMessages` temporarily and display a custom death message
 scoreboard players set #omegaflowey.bossfight.show_custom_death_message global.flag 0
-$execute if score @s player.health matches ..$(damage) run scoreboard players set #omegaflowey.bossfight.show_custom_death_message global.flag 1
+$execute \
+  if score @s player.health matches ..$(damage) \
+  unless data entity @s active_effects[{ amplifier: 4b, duration: -1, id: "minecraft:resistance" }] \
+  run scoreboard players set #omegaflowey.bossfight.show_custom_death_message global.flag 1
 execute if score #omegaflowey.bossfight.show_custom_death_message global.flag matches 1 store result score @s math.0 run gamerule showDeathMessages
 execute if score #omegaflowey.bossfight.show_custom_death_message global.flag matches 1 \
   if score @s math.0 matches 1 run gamerule showDeathMessages false
