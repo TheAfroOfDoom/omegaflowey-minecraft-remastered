@@ -5,4 +5,11 @@
 $execute unless entity $(boss_fight_uuid) run damage @s $(damage) minecraft:mob_projectile
 $execute if entity $(boss_fight_uuid) run damage @s $(damage) minecraft:mob_projectile by $(boss_fight_uuid)
 
+scoreboard players add #omegaflowey.bossfight.player_hit_count global.flag 1
+scoreboard players set #omegaflowey.bossfight.player_is_damage_immune global.flag 1
+
 schedule function omega-flowey:summit/room/cave/active_player_health_display/scheduled 2t append
+
+# Reset damage immunity after 0.5s
+# https://minecraft.wiki/w/Damage#Immunity
+schedule function entity:utils/damage/reset_immunity_flag 10t replace

@@ -10,4 +10,7 @@ effect clear @s
 effect give @s instant_health 1 4 true
 function omega-flowey:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 
+scoreboard players set #omegaflowey.bossfight.player_hit_count global.flag 0
+scoreboard players set #omegaflowey.bossfight.player_is_damage_immune global.flag 0
+
 function entity:directorial/boss_fight/summit/start
