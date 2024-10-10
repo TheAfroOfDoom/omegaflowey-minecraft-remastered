@@ -28,7 +28,8 @@ summon minecraft:text_display -133.5 44.0 44.99 { \
     "decorative-cave", \
     "now-playing-player-name", \
   ], \
-  alignment: "center", background: 0, \
+  alignment: "center", \
+  background: 0, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
@@ -113,7 +114,7 @@ summon minecraft:text_display -139.99 45.0 39.0 { \
     "players-in-queue-title", \
   ], \
   alignment: "center", \
-  background: 1073741824, \
+  background: 0, \
   default_background: false, \
   line_width: 200, \
   see_through: false, \
@@ -136,7 +137,7 @@ summon minecraft:text_display -139.99 43.3125 39.0 { \
     "players-in-queue-count", \
   ], \
   alignment: "center", \
-  background: 1073741824, \
+  background: 0, \
   default_background: false, \
   line_width: 200, \
   see_through: false, \
@@ -182,7 +183,7 @@ summon minecraft:text_display -133.5 42.6875 24.01 {\
     "description-github", \
   ], \
   alignment: "center", \
-  background: 1073741824, \
+  background: 0, \
   default_background: 0b, \
   line_width: 100, \
   see_through: 0b, \
