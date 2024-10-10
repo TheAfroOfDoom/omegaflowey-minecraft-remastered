@@ -1,6 +1,9 @@
 # Omega Flowey model
 function entity:hostile/omega-flowey/summon/remove_preexisting_models
 
+# Bossfight models
+function animated_java:arena_box/remove/all
+
 # Attack models
 function animated_java:bomb/remove/all
 function animated_java:dentata_snake_ball/remove/all
