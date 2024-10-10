@@ -1,0 +1,20 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "minecraft:item/gray_dye"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "omega-flowey:entity/decorative/balloon_soul_red"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "omega-flowey:entity/decorative/balloon_soul_cyan"
+		}
+  ]
+}
