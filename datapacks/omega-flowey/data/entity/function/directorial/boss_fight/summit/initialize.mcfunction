@@ -1,6 +1,9 @@
 ## Initializes the boss fight
 function entity:directorial/boss_fight/shared/initialize
 
+# Summon and initialize `arena_box` entity
+function animated_java:arena_box/summon/default
+
 # Add tags
 tag @s add boss_fight.summit
 
