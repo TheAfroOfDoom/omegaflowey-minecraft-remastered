@@ -14,6 +14,12 @@ execute positioned -123.47 87.25 33.35 rotated -158.2 12.52 run \
 function animated_java:summit_petal_pipe_right/remove/all
 execute positioned -109.9375 90.0625 41.9375 rotated 200 15 run \
   function animated_java:summit_petal_pipe_right/summon { args: { animation: 'move', start_animation: true } }
+function animated_java:summitpetalpipeleft/remove/all
+execute positioned -127.5625 74.0625 31.0 rotated 180.2 -5 run \
+  function animated_java:summitpetalpipeleft/summon { args: { animation: 'move', start_animation: true } }
+function animated_java:summitpetalpipetop/remove/all
+execute positioned -123.125 101.5625 35.6875 rotated -116 0 run \
+  function animated_java:summitpetalpipetop/summon { args: { animation: 'move', start_animation: true } }
 
 function omega-flowey:summit/room/outside/setup/text_displays
 

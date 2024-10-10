@@ -1,4 +1,4 @@
-summon minecraft:text_display -108.5 43.9375 38.75 {\
+summon minecraft:text_display -108.5 43.9375 38.5 {\
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
