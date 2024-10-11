@@ -2,11 +2,11 @@
 $execute \
   if score #omegaflowey.bossfight.player_hit_count global.flag matches ..3 \
   as $(active_player_uuid) \
-  run function entity:directorial/boss_fight/summit/phase/soul/terminate/final/player/low_hits
+  run function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/terminate/final/player/low_hits
 
 $execute \
   if score #omegaflowey.bossfight.player_hit_count global.flag matches 4.. \
   as $(active_player_uuid) \
-  run function entity:directorial/boss_fight/summit/phase/soul/terminate/final/player
+  run function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/terminate/final/player
 
-function entity:directorial/boss_fight/shared/stop with storage omegaflowey:bossfight
+function omegaflowey.entity:directorial/boss_fight/shared/stop with storage omegaflowey:bossfight

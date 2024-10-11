@@ -5,6 +5,6 @@ execute \
   run tag @s remove omegaflowey.room.is_within.spectator_box
 
 execute if entity @s[tag=!omegaflowey.player.room.spectator_box, tag=omegaflowey.room.is_within.spectator_box] run \
-  function entity:player/room/spectator_box/enter
+  function omegaflowey.entity:player/room/spectator_box/enter
 execute if entity @s[tag=omegaflowey.player.room.spectator_box, tag=!omegaflowey.room.is_within.spectator_box] run \
-  function entity:player/room/spectator_box/exit
+  function omegaflowey.entity:player/room/spectator_box/exit

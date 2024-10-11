@@ -71,7 +71,7 @@ const getSummitDatapackPaths = () => {
     'store_position.mcfunction',
   ]);
 
-  const entityPaths = prefixPaths('entity/', [
+  const entityPaths = prefixPaths('omegaflowey.entity/', [
     'advancement/player_interacted_with_github_description.json',
     ...prefixPaths('function/', [
       ...bossFightPaths,

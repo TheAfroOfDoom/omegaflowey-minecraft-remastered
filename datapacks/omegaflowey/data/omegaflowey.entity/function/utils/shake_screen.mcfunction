@@ -12,7 +12,7 @@ execute store result score @s math.1 run random value 0..1
 execute if score @s math.1 matches 1 run scoreboard players operation @s math.2 *= #-1 mathf.const
 execute store result storage utils:shake_screen pitch float 0.1 run scoreboard players get @s math.2
 
-function entity:utils/shake_screen_macro with storage utils:shake_screen
+function omegaflowey.entity:utils/shake_screen_macro with storage utils:shake_screen
 
 scoreboard players operation @s player.shake.yaw += @s math.0
 scoreboard players operation @s player.shake.pitch += @s math.2

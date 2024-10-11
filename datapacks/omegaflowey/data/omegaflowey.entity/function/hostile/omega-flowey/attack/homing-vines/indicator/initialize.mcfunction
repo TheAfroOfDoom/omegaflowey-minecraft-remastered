@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/shared/indicator/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/indicator/initialize
 
 data modify entity @s CustomName set value '"Homing-Vines Indicator"'
 
@@ -12,9 +12,9 @@ scoreboard players set @s attack.bullets.count 0
 scoreboard players operation @s attack.bullets.total = #attack-homing-vines attack.bullets.total
 
 # Summon indicator in a range around the player
-function entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/randomize_indicator_position
+function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/randomize_indicator_position
 
-function entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/randomize_bullet_position
+function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/randomize_bullet_position
 
 # Summon blinking-lane
-execute at @s run function entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/summon with storage attack:homing-vines
+execute at @s run function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/summon with storage attack:homing-vines

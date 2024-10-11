@@ -2,7 +2,7 @@
 scoreboard players set @s math.bool 1
 
 # NOTE: TAG_SUMMIT_HARDCODED_ARENA_VOLUME
-$function entity:directorial/boss_fight/summit/soul_origin/at/y { \
+$function omegaflowey.entity:directorial/boss_fight/summit/soul_origin/at/y { \
   command: "\
     execute \
       rotated $(next_bullet_angle_from_player) 0 positioned ^ ^ ^4 positioned ~ ~-3.9 ~ \

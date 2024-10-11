@@ -1,6 +1,6 @@
 # Check if escaped arena past z-bound towarsd flowey
 scoreboard players set @s math.0 0
-function entity:directorial/boss_fight/summit/origin/at/position { \
+function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
   command: "execute positioned ~1000.0 ~-7.0 ~-11.0 if entity @s[dx=-2000,dy=10,dz=1000] run \
     scoreboard players set @s math.0 1" \
 }
@@ -33,8 +33,8 @@ scoreboard players operation @s math.0 += #omega-flowey.bossfight.summit.origin.
 execute store result storage attack:dentata-snakes.bounce y float 0.01 run scoreboard players get @s math.0
 data modify storage attack:dentata-snakes.bounce dy set value 10
 
-data modify storage attack:dentata-snakes.bounce command_after_bouncing set value 'execute if entity @s[tag=attack-bullet-head] run function entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/after_bounce_as_bullet_head'
+data modify storage attack:dentata-snakes.bounce command_after_bouncing set value 'execute if entity @s[tag=attack-bullet-head] run function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/after_bounce_as_bullet_head'
 
-function entity:directorial/boss_fight/summit/origin/at/position { \
-  command: "function entity:utils/bounce with storage attack:dentata-snakes.bounce" \
+function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
+  command: "function omegaflowey.entity:utils/bounce with storage attack:dentata-snakes.bounce" \
 }

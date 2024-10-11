@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/shared/indicator/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/indicator/initialize
 
 data merge entity @s { CustomName: '"Finger-Guns Indicator"', teleport_duration: 0 }
 

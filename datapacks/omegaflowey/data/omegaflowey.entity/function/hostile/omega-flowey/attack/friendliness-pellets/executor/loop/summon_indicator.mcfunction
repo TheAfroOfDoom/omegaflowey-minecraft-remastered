@@ -5,8 +5,8 @@
 execute if score @s attack.clock.i matches 0 run scoreboard players add #attack-friendliness-pellets attack.indicator.clock.delay 6
 
 # Summon indicator
-execute at @r[tag=omegaflowey.player.fighting_flowey] run function entity:directorial/boss_fight/summit/origin/at/y { \
-  command: "execute positioned ~ ~-4.0 ~ run function entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/summon" \
+execute at @r[tag=omegaflowey.player.fighting_flowey] run function omegaflowey.entity:directorial/boss_fight/summit/origin/at/y { \
+  command: "execute positioned ~ ~-4.0 ~ run function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/summon" \
 }
 
 # TODO(43): this is so unbelievably hacky

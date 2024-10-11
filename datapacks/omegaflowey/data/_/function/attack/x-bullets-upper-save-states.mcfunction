@@ -1,1 +1,1 @@
-function entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/start
+function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/start

@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/shared/bullet/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
 
 # Set scores
 scoreboard players operation @s attack.speed.z = #attack-dentata-snakes attack.speed.z

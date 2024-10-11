@@ -5,4 +5,4 @@ scoreboard players set @s boss-fight.attack.clock.total 320
 scoreboard players set @s boss-fight.attack.delay 7
 
 # Setup music-repeating infrastructure
-function entity:directorial/boss_fight/music/initialize/boss_fight_vanilla_attack_phase_repeat_0
+function omegaflowey.entity:directorial/boss_fight/music/initialize/boss_fight_vanilla_attack_phase_repeat_0

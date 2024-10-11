@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/summon/remove_preexisting_models/except_tv_screen
+function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_models/except_tv_screen
 # TAG_SUMMIT_HARDCODED_ARENA_VOLUME
 execute unless score #omegaflowey.bossfight.skip_resummon_tvscreen global.flag matches 1 \
   as @e[ \

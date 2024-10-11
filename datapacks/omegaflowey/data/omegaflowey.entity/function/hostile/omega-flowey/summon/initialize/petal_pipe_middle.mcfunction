@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/summon/initialize/shared
+function omegaflowey.entity:hostile/omega-flowey/summon/initialize/shared
 tag @s add omega-flowey-petal-pipe
 tag @s add omega-flowey-petal-pipe-middle
 

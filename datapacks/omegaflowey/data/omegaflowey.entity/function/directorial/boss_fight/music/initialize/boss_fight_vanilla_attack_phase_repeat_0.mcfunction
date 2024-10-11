@@ -4,4 +4,4 @@ data modify entity @s data.looped_music.playsound_command set value "playsound o
 data modify entity @s data.looped_music.stopsound_command set value "stopsound @a record omega-flowey:music.phase.repeat.0"
 
 # base initializations
-function entity:directorial/boss_fight/music/initialize with entity @s data.looped_music
+function omegaflowey.entity:directorial/boss_fight/music/initialize with entity @s data.looped_music

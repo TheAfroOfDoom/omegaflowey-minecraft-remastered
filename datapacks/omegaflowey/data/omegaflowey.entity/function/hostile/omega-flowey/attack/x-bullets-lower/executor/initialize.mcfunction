@@ -6,15 +6,15 @@ $execute \
   run scoreboard players set #attack.x-bullets-lower.lower_eye_exists attack.flag 0
 
 # throw an error if no model exists
-execute if score #attack.x-bullets-lower.lower_eye_exists attack.flag matches 0 run function entity:hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "lower" }
+execute if score #attack.x-bullets-lower.lower_eye_exists attack.flag matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "lower" }
 execute if score #attack.x-bullets-lower.lower_eye_exists attack.flag matches 0 run return fail
 
-function entity:hostile/omega-flowey/attack/shared/executor/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initialize
 
 data modify entity @s CustomName set value '"X-Bullets-Lower Executor"'
 
-$execute at $(attack_lower_eye_right_locator_uuid) run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
-$execute at $(attack_lower_eye_left_locator_uuid) run function entity:hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
+$execute at $(attack_lower_eye_right_locator_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
+$execute at $(attack_lower_eye_left_locator_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
 
 # Set scores
 scoreboard players operation @s attack.clock.i -= #attack-x-bullets-lower attack.executor.clock.delay

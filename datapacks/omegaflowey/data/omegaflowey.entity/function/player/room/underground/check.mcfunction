@@ -10,9 +10,9 @@ execute \
 # Special exit logic if player enters the exit hallway
 execute if entity @s[tag=omegaflowey.player.room.underground, x=-131, dx=7, y=39, dy=11, z=12, dz=3] \
   run tag @s add omegaflowey.player.room.underground.exit_hall
-execute if entity @s[tag=omegaflowey.player.room.underground.exit_hall] run function entity:player/room/underground/exit/hallway
+execute if entity @s[tag=omegaflowey.player.room.underground.exit_hall] run function omegaflowey.entity:player/room/underground/exit/hallway
 
 execute if entity @s[tag=!omegaflowey.player.room.underground, tag=omegaflowey.room.is_within.underground] run \
-  function entity:player/room/underground/enter
+  function omegaflowey.entity:player/room/underground/enter
 execute if entity @s[tag=omegaflowey.player.room.underground, tag=!omegaflowey.room.is_within.underground] run \
-  function entity:player/room/underground/exit
+  function omegaflowey.entity:player/room/underground/exit

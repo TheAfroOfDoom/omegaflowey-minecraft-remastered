@@ -1,2 +1,2 @@
-function entity:soul/shared/initialize
+function omegaflowey.entity:soul/shared/initialize
 tag @s add soul-executor

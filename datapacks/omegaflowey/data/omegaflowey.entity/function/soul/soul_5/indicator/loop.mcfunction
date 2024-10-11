@@ -5,9 +5,9 @@ scoreboard players add @s soul.clock.i 1
 execute if score @s soul.clock.i matches ..-1 run return 0
 
 # state-loop is: idle -> aiming -> shooting -> aiming -> shooting -> aiming -> ...
-execute if entity @s[tag=soul_5.idle] run function entity:soul/soul_5/indicator/loop/idle
-execute if entity @s[tag=soul_5.aiming] run function entity:soul/soul_5/indicator/loop/aiming
-execute if entity @s[tag=soul_5.shooting] run function entity:soul/soul_5/indicator/loop/shooting
+execute if entity @s[tag=soul_5.idle] run function omegaflowey.entity:soul/soul_5/indicator/loop/idle
+execute if entity @s[tag=soul_5.aiming] run function omegaflowey.entity:soul/soul_5/indicator/loop/aiming
+execute if entity @s[tag=soul_5.shooting] run function omegaflowey.entity:soul/soul_5/indicator/loop/shooting
 
 # Shaking animation
-execute if entity @s[tag=shaking] run function entity:soul/soul_5/indicator/loop/shaking
+execute if entity @s[tag=shaking] run function omegaflowey.entity:soul/soul_5/indicator/loop/shaking

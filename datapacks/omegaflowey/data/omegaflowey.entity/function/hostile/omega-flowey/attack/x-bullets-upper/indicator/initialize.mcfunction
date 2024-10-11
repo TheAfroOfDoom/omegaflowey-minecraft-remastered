@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/shared/indicator/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/indicator/initialize
 
 data modify entity @s CustomName set value '"X-Bullets-Upper Indicator"'
 
@@ -12,4 +12,4 @@ scoreboard players operation @s attack.cone = #attack-x-bullets-upper attack.con
 scoreboard players operation @s attack.bullets.remaining = @s attack.bullets.total
 
 # Face nearest player
-function entity:hostile/omega-flowey/attack/x-bullets-upper/indicator/initialize/face_player
+function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/indicator/initialize/face_player

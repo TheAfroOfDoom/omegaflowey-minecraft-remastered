@@ -24,4 +24,4 @@ execute store result storage attack:finger-guns yaw float 0.01 run scoreboard pl
 # flat pitch
 data merge storage attack:finger-guns { pitch: 0.0f }
 
-function entity:hostile/omega-flowey/attack/finger-guns/executor/loop/indicator/summon with storage attack:finger-guns
+function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/executor/loop/indicator/summon with storage attack:finger-guns

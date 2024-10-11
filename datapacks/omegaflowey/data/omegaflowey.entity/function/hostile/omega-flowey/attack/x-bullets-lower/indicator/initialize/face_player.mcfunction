@@ -1,12 +1,12 @@
 ## Faces closest player and summons `x-bullets-lower` bullets using `attack.cone` and `attack.bullets`
 
-function entity:utils/store_position
+function omegaflowey.entity:utils/store_position
 # Save bone position to score
 execute store result score @s attack.position.x run data get storage entity:position x
 execute store result score @s attack.position.y run data get storage entity:position y
 execute store result score @s attack.position.z run data get storage entity:position z
 
-function entity:utils/face_closest_player
+function omegaflowey.entity:utils/face_closest_player
 
 execute store result score @s attack.indicator.yaw run data get entity @s Rotation[0]
 execute store result score @s attack.theta run data get entity @s Rotation[1]

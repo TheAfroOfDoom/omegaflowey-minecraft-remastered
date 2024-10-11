@@ -8,4 +8,4 @@ scoreboard players set #attack-flies attack.weight 3
 scoreboard players set #attack-homing-vines attack.weight 3
 
 # Run base `start` function
-function entity:hostile/omega-flowey/attack/random/start
+function omegaflowey.entity:hostile/omega-flowey/attack/random/start

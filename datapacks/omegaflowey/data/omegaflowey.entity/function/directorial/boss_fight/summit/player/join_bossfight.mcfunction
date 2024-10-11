@@ -13,4 +13,4 @@ function omegaflowey.main:summit/room/cave/active_player_display/update_value wi
 scoreboard players set #omegaflowey.bossfight.player_hit_count global.flag 0
 scoreboard players set #omegaflowey.bossfight.player_is_damage_immune global.flag 0
 
-function entity:directorial/boss_fight/summit/start
+function omegaflowey.entity:directorial/boss_fight/summit/start

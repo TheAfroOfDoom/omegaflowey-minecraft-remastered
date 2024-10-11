@@ -7,5 +7,5 @@ execute if entity @a[tag=omegaflowey.player.fighting_flowey] run return 0
 execute if score #omegaflowey.bossfight.has_player_been_prompted global.flag matches 1 run return 0
 
 # otherwise, prompt the player at front of queue to teleport to boss fight
-function entity:directorial/boss_fight/summit/player/queue/prompt_next_player \
+function omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player \
   with storage omegaflowey:bossfight player_queue[0]
