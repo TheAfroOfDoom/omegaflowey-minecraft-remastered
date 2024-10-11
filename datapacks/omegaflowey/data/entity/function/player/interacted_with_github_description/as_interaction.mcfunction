@@ -7,7 +7,7 @@ execute on target run function utils:log/self { text_component: ' \
       ], \
       "clickEvent": { \
         "action": "open_url", \
-        "value": "https://github.com/TheAfroOfDoom/omega-flowey-minecraft-remastered" \
+        "value": "https://github.com/TheAfroOfDoom/omegaflowey-minecraft-remastered" \
       } } \
   ]' \
 }

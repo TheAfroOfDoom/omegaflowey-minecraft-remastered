@@ -197,7 +197,7 @@ summon minecraft:text_display -133.5 42.6875 24.01 {\
       "color": "aqua", \
       "underlined": true, \
       "clickEvent": { \
-        "action": "open_url", "value": "https://github.com/TheAfroOfDoom/omega-flowey-minecraft-remastered" \
+        "action": "open_url", "value": "https://github.com/TheAfroOfDoom/omegaflowey-minecraft-remastered" \
       } \
     } \
   ]', \
