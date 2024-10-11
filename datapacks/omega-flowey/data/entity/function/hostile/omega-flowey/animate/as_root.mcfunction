@@ -1,5 +1,8 @@
 execute if entity @s[tag=aj.mouth.root] run function animated_java:mouth/animations/move/resume
-execute if entity @s[tag=aj.nose.root] run function animated_java:nose/animations/move/resume
+execute \
+  unless score #omegaflowey.bossfight.skip_reanimate_nose global.flag matches 1 \
+  if entity @s[tag=aj.nose.root] \
+  run function animated_java:nose/animations/move/resume
 execute if entity @s[tag=aj.large_side_vine.root] run function entity:hostile/omega-flowey/animate/large_side_vine
 execute if entity @s[tag=aj.lower_eye.root] run function animated_java:lower_eye/animations/look_around/resume
 execute if entity @s[tag=aj.petal_pipe_circle.root] run function entity:hostile/omega-flowey/animate/petal_pipe_circle
