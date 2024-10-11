@@ -1,6 +1,6 @@
-# @batch utils:math.distance_squared
+# @batch omegaflowey.utils:math.distance_squared
 
-## setup for `utils:math.distance_squared` batch tests
+## setup for `omegaflowey.utils:math.distance_squared` batch tests
 data remove storage utils:math.distance_squared x0
 data remove storage utils:math.distance_squared x1
 data remove storage utils:math.distance_squared y0

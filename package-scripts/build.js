@@ -88,7 +88,7 @@ const getSummitDatapackPaths = () => {
     ]),
   ]);
 
-  const utilsPaths = prefixPaths('utils/function/', [
+  const utilsPaths = prefixPaths('omegaflowey.utils/function/', [
     'math/max.mcfunction',
     'math/min.mcfunction',
     'error.mcfunction',

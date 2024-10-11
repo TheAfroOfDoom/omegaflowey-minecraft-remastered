@@ -10,7 +10,7 @@ data modify storage omegaflowey:bossfight player_queue_timeout_uuid set from sto
 # Start timeout
 schedule function entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/timeout 15s replace
 
-function utils:log/self { text_component: '[ \
+function omegaflowey.utils:log/self { text_component: '[ \
   { \
     "text": "", \
     "color": "yellow", \
@@ -38,7 +38,7 @@ function utils:log/self { text_component: '[ \
   } \
 ]'}
 
-function utils:log/self { text_component: '[ \
+function omegaflowey.utils:log/self { text_component: '[ \
   { \
     "text": "", \
     "color": "gray", \

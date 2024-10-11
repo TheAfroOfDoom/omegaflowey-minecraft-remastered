@@ -1,4 +1,4 @@
-execute on target run function utils:log/self { text_component: ' \
+execute on target run function omegaflowey.utils:log/self { text_component: ' \
   [ \
     { \
       "text": "", "extra": [ \
