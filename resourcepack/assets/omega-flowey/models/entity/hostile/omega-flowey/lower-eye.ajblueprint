@@ -2579,7 +2579,7 @@
 			"override": false,
 			"length": 6,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": true,
 			"path": "",
 			"anim_time_update": "",
@@ -9538,6 +9538,77 @@
 							"bezier_left_value": [-0.00566, -0.00566, 0],
 							"bezier_right_time": [0.14993, 0.15128, 0.1],
 							"bezier_right_value": [0.00566, 0.00566, 0],
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				}
+			}
+		},
+		{
+			"uuid": "02f603df-1bfe-1545-a3f2-c67c6feb35b1",
+			"name": "omegaflowey_intro_shake",
+			"loop": "hold",
+			"override": false,
+			"length": 6,
+			"snapping": 20,
+			"selected": true,
+			"saved": false,
+			"path": "",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [],
+			"animators": {
+				"f13c55d0-8667-840d-3540-9fdda50cfc40": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "4116e4f4-099e-6c5d-c153-4750e12407e8",
+							"time": 6,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "Math.random(-4, 4)",
+									"y": "Math.random(-4, 4)",
+									"z": "Math.random(-4, 4)"
+								}
+							],
+							"uuid": "ffa8244c-2a99-dabb-a29b-2b4002c5c512",
+							"time": 5.95,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear"
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "Math.random(-4, 4)",
+									"y": "Math.random(-4, 4)",
+									"z": "Math.random(-4, 4)"
+								}
+							],
+							"uuid": "43d23750-b195-6320-60e8-590b39a429ee",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
 							"easing": "linear",
 							"easingArgs": []
 						}
