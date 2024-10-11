@@ -17,6 +17,7 @@ $execute as $(petal_pipe_middle_right_uuid) run function animated_java:petal_pip
 $execute as $(petal_pipe_middle_left_uuid) run function animated_java:petal_pipe_middle/animations/intro_shake/play
 
 $execute as $(bossfight_tvscreen_uuid) run function animated_java:tv_screen/animations/intro_shake/play
+$execute as $(bossfight_tvscreen_uuid) run function animated_java:tv_screen/variants/intro_laughing/apply
 
 $execute as $(attack_upper_eye_left_uuid) run function animated_java:upper_eye/animations/intro_shake/play
 $execute as $(attack_upper_eye_right_uuid) run function animated_java:upper_eye/animations/intro_shake/play
