@@ -9,4 +9,4 @@ function entity:setup
 # not being loaded
 execute if entity @a run function omegaflowey.main:summit/room/setup
 
-function utils:log { text_component: '[ { "text": "Datapack initialized", "color": "aqua" } ]'}
+function omegaflowey.utils:log { text_component: '[ { "text": "Datapack initialized", "color": "aqua" } ]'}

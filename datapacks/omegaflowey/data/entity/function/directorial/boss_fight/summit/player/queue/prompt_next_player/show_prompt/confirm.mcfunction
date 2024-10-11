@@ -1,7 +1,7 @@
 function entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/shared/as_player/triggers
 schedule clear entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/timeout
 
-function utils:log/self { text_component: '[ \
+function omegaflowey.utils:log/self { text_component: '[ \
   { "text": "Teleporting ", "color": "green" }, \
   { "text": "you to the ", "color": "yellow" }, \
   { "text": "boss-fight ", "color": "aqua" }, \

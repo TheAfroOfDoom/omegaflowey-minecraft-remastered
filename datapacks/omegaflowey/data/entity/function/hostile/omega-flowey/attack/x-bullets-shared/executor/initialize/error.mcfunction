@@ -1,4 +1,4 @@
-$function utils:error { error: '{ \
+$function omegaflowey.utils:error { error: '{ \
   "text": "", "color": "yellow", "extra": [ \
     "No ", \
     { "text": "$(type)_eye ", "color": "aqua" }, \
