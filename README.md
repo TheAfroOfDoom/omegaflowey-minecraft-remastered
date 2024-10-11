@@ -59,7 +59,7 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 
 1. [Blockbench](https://www.blockbench.net/downloads) -- for 3D modelling
    - Install our Blockbench CLI plugin:
-     - Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `bb-cli.js` file from your local `omega-flowey-remastered` repo (`omega-flowey-remastered/package-scripts/modules/bb-cli.js`).
+     - Open Blockbench, then go to `File > Plugins > Load Plugin From File` and select the `bb-cli.js` file from your local `omegaflowey-remastered` repo (`omegaflowey-remastered/package-scripts/modules/bb-cli.js`).
    - Install Animated Java from the Blockbench plugin store
      - see the [docs](https://animated-java.dev/docs/getting-started/installing-animated-java#installing-animated-java) for a detailed guide on how to do this.
    - Restart Blockbench after installing these plugins

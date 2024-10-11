@@ -41,7 +41,7 @@ const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 const worldSyncArgs = `--backup-path="${floweyWorldSyncPath}" --world-path="${minecraftWorldPath}"`;
 
 const smithedSummitWorldSyncPath =
-  './bin/smithed-summit-2024/world/smithed-summit-2024-omega-flowey-plot.zip';
+  './bin/smithed-summit-2024/world/smithed-summit-2024-omegaflowey-plot.zip';
 const smithedSummitWorldSyncArgs = `--backup-path="${smithedSummitWorldSyncPath}" --world-path="${process.env.SMITHED_SUMMIT_WORLD_PATH}"`;
 
 module.exports = {
