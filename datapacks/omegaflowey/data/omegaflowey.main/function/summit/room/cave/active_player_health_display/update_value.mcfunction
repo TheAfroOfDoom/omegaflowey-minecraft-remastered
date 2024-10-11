@@ -4,4 +4,4 @@ $execute \
   run data modify storage omegaflowey:bossfight active_player_uuid set value "0"
 
 $execute as $(active_player_health_display_uuid) run \
-  function omega-flowey:summit/room/cave/active_player_health_display/as_text_display with storage omegaflowey:bossfight
+  function omegaflowey.main:summit/room/cave/active_player_health_display/as_text_display with storage omegaflowey:bossfight

@@ -4,7 +4,7 @@
 data remove storage utils:math.min a
 data remove storage utils:math.min b
 data remove storage utils:math.min out
-function omega-flowey:reset
+function omegaflowey.main:reset
 
 ## cases
 data merge storage utils:math.min { a: 10, b: 10 }

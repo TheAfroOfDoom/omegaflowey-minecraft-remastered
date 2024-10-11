@@ -8,4 +8,4 @@ data remove storage utils:math.distance_squared y1
 data remove storage utils:math.distance_squared z0
 data remove storage utils:math.distance_squared z1
 data remove storage utils:math.distance_squared out
-function omega-flowey:reset
+function omegaflowey.main:reset

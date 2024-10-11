@@ -1,8 +1,8 @@
-# @batch omega-flowey:reset
+# @batch omegaflowey.main:reset
 
 ## should wipe any preexisting scores
 
-function omega-flowey:reset
+function omegaflowey.main:reset
 
 # create an entity with a group id
 summon minecraft:marker ~ ~ ~ {Tags:["omega-flowey","groupable","test.setup.should-reset-group-ids"]}
@@ -15,6 +15,6 @@ assert score #group.id.next group.id matches 1
 kill @e[tag=test.setup.should-reset-group-ids]
 assert score #group.id.next group.id matches 1
 
-function omega-flowey:reset
+function omegaflowey.main:reset
 
 assert score #group.id.next group.id matches 0
