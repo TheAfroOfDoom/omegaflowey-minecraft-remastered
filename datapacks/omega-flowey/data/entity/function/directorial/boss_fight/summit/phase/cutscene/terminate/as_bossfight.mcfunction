@@ -23,9 +23,11 @@ execute as @e[ \
 ] run function animated_java:nose/animations/move/tween { duration: 1, to_frame: 1 }
 
 # Re-animate main Omega Flowey models
+scoreboard players set #omegaflowey.bossfight.skip_reanimate_largesidevine global.flag 1
 scoreboard players set #omegaflowey.bossfight.skip_reanimate_nose global.flag 1
 function entity:hostile/omega-flowey/animate
 scoreboard players set #omegaflowey.bossfight.skip_reanimate_nose global.flag 0
+scoreboard players set #omegaflowey.bossfight.skip_reanimate_largesidevine global.flag 0
 
 # Next phase
 function entity:directorial/boss_fight/summit/phase/attack/initialize
