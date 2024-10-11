@@ -95,7 +95,7 @@ const getSummitDatapackPaths = () => {
     'log.mcfunction',
   ]);
 
-  const primaryDatapackPaths = prefixPaths('omega-flowey/', [
+  const primaryDatapackPaths = prefixPaths('omegaflowey/', [
     'pack.mcmeta',
     ...prefixPaths('data/', [
       'minecraft',
@@ -105,7 +105,7 @@ const getSummitDatapackPaths = () => {
     ]),
   ]);
   const removeResetFunction = async ({ compiledPath }) => {
-    const resetFunctionFile = `${compiledPath}/datapacks/omega-flowey/data/omega-flowey/function/reset.mcfunction`;
+    const resetFunctionFile = `${compiledPath}/datapacks/omegaflowey/data/omegaflowey/function/reset.mcfunction`;
     await rimraf(resetFunctionFile);
   };
   postProcessors.push(removeResetFunction);
