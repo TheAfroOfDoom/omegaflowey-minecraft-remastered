@@ -8,7 +8,7 @@ data modify storage omegaflowey:bossfight add_player_to_queue.player_uuid set fr
 data modify storage omegaflowey:bossfight player_queue append from storage omegaflowey:bossfight add_player_to_queue
 
 scoreboard players add #omega-flowey.bossfight.player_queue_count global.flag 1
-function omega-flowey:summit/room/cave/player_queue_counter/update_value
+function omegaflowey.main:summit/room/cave/player_queue_counter/update_value
 
 # tell the player they joined the queue if either...
 # - the queue already has other player(s) in it

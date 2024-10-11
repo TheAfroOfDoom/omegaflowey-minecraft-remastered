@@ -4,7 +4,7 @@
 data remove storage utils:math.max a
 data remove storage utils:math.max b
 data remove storage utils:math.max out
-function omega-flowey:reset
+function omegaflowey.main:reset
 
 ## cases
 data merge storage utils:math.max { a: 10, b: 10 }

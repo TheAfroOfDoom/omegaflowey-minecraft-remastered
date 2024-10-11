@@ -100,7 +100,7 @@ const getSummitDatapackPaths = () => {
     ...prefixPaths('data/', [
       'minecraft',
       ...entityPaths,
-      'omega-flowey/function/',
+      'omegaflowey.main/function/',
       ...utilsPaths,
     ]),
   ]);

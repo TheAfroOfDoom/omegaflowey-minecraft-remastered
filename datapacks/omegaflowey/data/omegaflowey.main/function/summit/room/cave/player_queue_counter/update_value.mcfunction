@@ -4,4 +4,4 @@ execute as @e[ \
     tag=players-in-queue-count, \
     tag=omega-flowey-remastered, \
     limit=1 \
-] run function omega-flowey:summit/room/cave/player_queue_counter/update_value/as_text_display
+] run function omegaflowey.main:summit/room/cave/player_queue_counter/update_value/as_text_display

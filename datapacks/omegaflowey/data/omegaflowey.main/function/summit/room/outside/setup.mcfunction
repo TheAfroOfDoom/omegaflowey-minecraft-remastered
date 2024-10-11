@@ -21,6 +21,6 @@ function animated_java:summitpetalpipetop/remove/all
 execute positioned -123.125 101.5625 35.6875 rotated -116 0 run \
   function animated_java:summitpetalpipetop/summon { args: { animation: 'move', start_animation: true } }
 
-function omega-flowey:summit/room/outside/setup/text_displays
+function omegaflowey.main:summit/room/outside/setup/text_displays
 
 scoreboard players set #omegaflowey.summon.tag_variant global.flag 0

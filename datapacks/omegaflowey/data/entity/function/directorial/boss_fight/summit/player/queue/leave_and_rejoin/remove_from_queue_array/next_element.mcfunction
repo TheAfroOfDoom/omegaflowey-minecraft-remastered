@@ -14,7 +14,7 @@ $execute if data storage omegaflowey:bossfight.remove_from_queue { current_eleme
 # if match, remove current element
 $execute if score @s math.0 matches 1 run data remove storage omegaflowey:bossfight player_queue[$(i)]
 execute if score @s math.0 matches 1 run scoreboard players remove #omega-flowey.bossfight.player_queue_count global.flag 1
-execute if score @s math.0 matches 1 run function omega-flowey:summit/room/cave/player_queue_counter/update_value
+execute if score @s math.0 matches 1 run function omegaflowey.main:summit/room/cave/player_queue_counter/update_value
 # if rejoining player was the next player in queue and was prompted,
 # we need to reset the following global state flag
 execute \
