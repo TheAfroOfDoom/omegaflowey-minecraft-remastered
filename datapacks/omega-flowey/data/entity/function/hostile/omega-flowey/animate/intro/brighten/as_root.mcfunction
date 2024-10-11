@@ -4,7 +4,7 @@ execute if entity @s[tag=aj.mouth.root] run function animated_java:mouth/variant
 execute if entity @s[tag=aj.nose.root] run function animated_java:nose/animations/move/pause
 execute if entity @s[tag=aj.nose.root] run function animated_java:nose/variants/default/apply
 
-execute if entity @s[tag=aj.large_side_vine.root] run function entity:hostile/omega-flowey/animate/large_side_vine/pause
+execute if entity @s[tag=aj.large_side_vine.root] run function entity:hostile/omega-flowey/animate/large_side_vine/slow
 execute if entity @s[tag=aj.large_side_vine.root] run function animated_java:large_side_vine/variants/default/apply
 
 execute if entity @s[tag=aj.lower_eye.root] run function animated_java:lower_eye/animations/look_around/pause
