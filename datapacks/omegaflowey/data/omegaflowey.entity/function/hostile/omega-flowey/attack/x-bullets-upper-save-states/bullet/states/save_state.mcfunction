@@ -6,7 +6,7 @@ data modify storage attack:x-bullets-upper-save-states current_state.scores set 
 ## Data used to re-summon this entity ordered by priority
 
 # Important functions/tags for later
-data modify storage attack:x-bullets-upper-save-states current_state.summon_function set value "entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/bullet/states/load_state/resummon"
+data modify storage attack:x-bullets-upper-save-states current_state.summon_function set value "omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/bullet/states/load_state/resummon"
 
 # Positional data
 data modify storage attack:x-bullets-upper-save-states current_state.pos_x set from entity @s Pos[0]

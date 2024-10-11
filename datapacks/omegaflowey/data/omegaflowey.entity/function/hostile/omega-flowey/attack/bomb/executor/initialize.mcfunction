@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/shared/executor/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initialize
 
 data modify entity @s CustomName set value '"Bomb Executor"'
 

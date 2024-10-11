@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/shared/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/initialize
 
 data modify entity @s CustomName set value '"Finger-Guns Laser"'
 

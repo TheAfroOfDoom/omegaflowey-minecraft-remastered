@@ -32,4 +32,4 @@ execute \
     tag=call-for-help-display-new, \
     tag=omega-flowey-remastered, \
     limit=2 \
-  ] run function entity:soul/shared/call_for_help_display/initialize
+  ] run function omegaflowey.entity:soul/shared/call_for_help_display/initialize

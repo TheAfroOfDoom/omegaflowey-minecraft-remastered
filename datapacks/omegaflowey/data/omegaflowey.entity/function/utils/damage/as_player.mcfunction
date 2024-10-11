@@ -22,7 +22,7 @@ schedule function omegaflowey.main:summit/room/cave/active_player_health_display
 
 # Reset damage immunity after 0.5s
 # https://minecraft.wiki/w/Damage#Immunity
-schedule function entity:utils/damage/reset_immunity_flag 10t replace
+schedule function omegaflowey.entity:utils/damage/reset_immunity_flag 10t replace
 
 # Show custom death message
 execute if score #omegaflowey.bossfight.show_custom_death_message global.flag matches 1 run tellraw @a [ \

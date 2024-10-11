@@ -3,4 +3,4 @@ $execute positioned $(x) $(y) $(z) rotated ~ 0 run function animated_java:soul_0
 
 
 # Initialize bandaid
-execute as @e[tag=bandaid-new] run function entity:soul/soul_0/bandaid/initialize
+execute as @e[tag=bandaid-new] run function omegaflowey.entity:soul/soul_0/bandaid/initialize

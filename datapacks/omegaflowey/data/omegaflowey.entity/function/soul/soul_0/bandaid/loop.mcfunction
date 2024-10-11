@@ -1,14 +1,14 @@
 # Check if any of this bandaid's locator's hitboxes intersect with a player
 scoreboard players set #soul_0.bandaid_touched_player soul.flag 0
-function animated_java:soul_0_bandaid/as_own_locator_entities { command: 'function entity:soul/soul_0/bandaid/loop/as_locator with entity @s data' }
-execute if score #soul_0.bandaid_touched_player soul.flag matches 1 run function entity:soul/soul_0/bandaid/heal
+function animated_java:soul_0_bandaid/as_own_locator_entities { command: 'function omegaflowey.entity:soul/soul_0/bandaid/loop/as_locator with entity @s data' }
+execute if score #soul_0.bandaid_touched_player soul.flag matches 1 run function omegaflowey.entity:soul/soul_0/bandaid/heal
 execute if score #soul_0.bandaid_touched_player soul.flag matches 1 run return 0
 
 # Calculate distance to nearest player
 data modify storage utils:math.distance_squared x0 set from entity @s Pos[0]
 data modify storage utils:math.distance_squared y0 set from entity @s Pos[1]
 data modify storage utils:math.distance_squared z0 set from entity @s Pos[2]
-execute as @p[tag=omegaflowey.player.fighting_flowey] at @s positioned ~ 34.0 ~ run function entity:soul/soul_0/bandaid/loop/as_player
+execute as @p[tag=omegaflowey.player.fighting_flowey] at @s positioned ~ 34.0 ~ run function omegaflowey.entity:soul/soul_0/bandaid/loop/as_player
 
 function omegaflowey.utils:math/distance_squared
 
@@ -21,6 +21,6 @@ execute store result storage soul:soul_0.bandaid gravity int 1 run scoreboard pl
 # NOTE: you can tune these constants to tune the effect of "gravity" on how fast the bandaid rotates / moves towards the player
 # TODO(88): tune these velocity/rotation constants
 data merge storage soul:soul_0.bandaid { velocity_constant: 20, rotation_constant: -500 }
-function entity:soul/soul_0/bandaid/loop/pre_move with storage soul:soul_0.bandaid
+function omegaflowey.entity:soul/soul_0/bandaid/loop/pre_move with storage soul:soul_0.bandaid
 
 # TODO(89): looks ugly when the bandaid models overlap

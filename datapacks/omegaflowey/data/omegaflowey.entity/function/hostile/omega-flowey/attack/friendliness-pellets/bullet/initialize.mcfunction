@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/shared/bullet/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
 
 data modify entity @s CustomName set value '"Friendliness-Pellets Bullet"'
 

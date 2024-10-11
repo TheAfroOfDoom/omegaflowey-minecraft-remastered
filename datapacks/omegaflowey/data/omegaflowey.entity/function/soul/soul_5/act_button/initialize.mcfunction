@@ -12,4 +12,4 @@ function gu:generate
 data modify storage soul:soul_5 act_button_uuid set from storage gu:main out
 
 # Update tags on locator children
-function animated_java:act_button/as_own_locator_entities { command: 'function entity:soul/soul_5/act_button/initialize/locator' }
+function animated_java:act_button/as_own_locator_entities { command: 'function omegaflowey.entity:soul/soul_5/act_button/initialize/locator' }

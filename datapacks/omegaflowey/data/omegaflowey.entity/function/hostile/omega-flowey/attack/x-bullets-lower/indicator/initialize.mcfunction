@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/shared/indicator/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/indicator/initialize
 
 data modify entity @s CustomName set value '"X-Bullets-Lower Indicator"'
 
@@ -17,4 +17,4 @@ scoreboard players operation @s math.0 -= #omega-flowey.bossfight.summit.origin.
 execute if score @s math.0 matches 0.. run tag @s add indicator.left
 
 # Face nearest player
-function entity:hostile/omega-flowey/attack/x-bullets-lower/indicator/initialize/face_player
+function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-lower/indicator/initialize/face_player

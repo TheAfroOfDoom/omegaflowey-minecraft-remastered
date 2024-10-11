@@ -5,4 +5,4 @@ scoreboard players set #attack-homing-vines-save-states attack.weight 3
 scoreboard players set #attack-x-bullets-upper-save-states attack.weight 3
 
 # Run base `start` function
-function entity:hostile/omega-flowey/attack/random/start
+function omegaflowey.entity:hostile/omega-flowey/attack/random/start

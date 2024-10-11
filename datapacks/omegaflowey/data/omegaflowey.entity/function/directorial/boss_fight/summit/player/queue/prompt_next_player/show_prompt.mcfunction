@@ -8,7 +8,7 @@ scoreboard players enable @s player.trigger.bossfight.deny
 data modify storage omegaflowey:bossfight player_queue_timeout_uuid set from storage omegaflowey:bossfight player_queue[0].player_uuid
 
 # Start timeout
-schedule function entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/timeout 15s replace
+schedule function omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/timeout 15s replace
 
 function omegaflowey.utils:log/self { text_component: '[ \
   { \

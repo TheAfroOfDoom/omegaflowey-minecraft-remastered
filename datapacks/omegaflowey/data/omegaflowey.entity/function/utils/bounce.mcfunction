@@ -18,16 +18,16 @@ execute store result score @s util.bounce.yaw.initial run data get entity @s Rot
 scoreboard players operation @s util.bounce.yaw = @s util.bounce.yaw.initial
 
 # -X wall
-$execute unless entity @s[x=$(x_negative_x),dx=$(x_negative_dx),y=$(y),dy=$(dy),z=-1000,dz=2000] if entity @s[y_rotation=0..180] run function entity:utils/bounce/x_negative
+$execute unless entity @s[x=$(x_negative_x),dx=$(x_negative_dx),y=$(y),dy=$(dy),z=-1000,dz=2000] if entity @s[y_rotation=0..180] run function omegaflowey.entity:utils/bounce/x_negative
 
 # +X wall
-$execute unless entity @s[x=$(x_positive_x),dx=$(x_positive_dx),y=$(y),dy=$(dy),z=-1000,dz=2000] if entity @s[y_rotation=-180..0] run function entity:utils/bounce/x_positive
+$execute unless entity @s[x=$(x_positive_x),dx=$(x_positive_dx),y=$(y),dy=$(dy),z=-1000,dz=2000] if entity @s[y_rotation=-180..0] run function omegaflowey.entity:utils/bounce/x_positive
 
 # -Z wall
-$execute unless entity @s[x=-1000,dx=2000,y=$(y),dy=$(dy),z=$(z_negative_z),dz=$(z_negative_dz)] unless entity @s[y_rotation=-90..90] run function entity:utils/bounce/z_negative
+$execute unless entity @s[x=-1000,dx=2000,y=$(y),dy=$(dy),z=$(z_negative_z),dz=$(z_negative_dz)] unless entity @s[y_rotation=-90..90] run function omegaflowey.entity:utils/bounce/z_negative
 
 # +Z wall
-$execute unless entity @s[x=-1000,dx=2000,y=$(y),dy=$(dy),z=$(z_positive_z),dz=$(z_positive_dz)] if entity @s[y_rotation=-90..90] run function entity:utils/bounce/z_positive
+$execute unless entity @s[x=-1000,dx=2000,y=$(y),dy=$(dy),z=$(z_positive_z),dz=$(z_positive_dz)] if entity @s[y_rotation=-90..90] run function omegaflowey.entity:utils/bounce/z_positive
 
 # Store bounced angle
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s util.bounce.yaw

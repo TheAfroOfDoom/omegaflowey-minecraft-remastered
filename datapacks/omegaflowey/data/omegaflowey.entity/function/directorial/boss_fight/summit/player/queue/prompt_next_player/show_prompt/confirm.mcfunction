@@ -1,5 +1,5 @@
-function entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/shared/as_player/triggers
-schedule clear entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/timeout
+function omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/shared/as_player/triggers
+schedule clear omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/timeout
 
 function omegaflowey.utils:log/self { text_component: '[ \
   { "text": "Teleporting ", "color": "green" }, \
@@ -10,4 +10,4 @@ function omegaflowey.utils:log/self { text_component: '[ \
   { "text": "...", "color": "yellow" } \
 ]' }
 
-schedule function entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/confirm/after_delay 3s replace
+schedule function omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/confirm/after_delay 3s replace

@@ -21,7 +21,7 @@ execute \
   if score @s math.0 matches 1 \
   if score #omega-flowey.bossfight.remove_player_from_queue.i global.flag matches 0 \
   if entity @s[tag=omegaflowey.player.in_queue.prompted] \
-  run function entity:directorial/boss_fight/summit/player/queue/leave_and_rejoin/remove_from_queue_array/reset_prompted_player
+  run function omegaflowey.entity:directorial/boss_fight/summit/player/queue/leave_and_rejoin/remove_from_queue_array/reset_prompted_player
 execute if score @s math.0 matches 1 run return 0
 
 # else, increment and try next element
@@ -29,5 +29,5 @@ scoreboard players add #omega-flowey.bossfight.remove_player_from_queue.i global
 execute store result storage omegaflowey:bossfight.remove_from_queue i int 1 run \
   scoreboard players get #omega-flowey.bossfight.remove_player_from_queue.i global.flag
 
-function entity:directorial/boss_fight/summit/player/queue/leave_and_rejoin/remove_from_queue_array/next_element \
+function omegaflowey.entity:directorial/boss_fight/summit/player/queue/leave_and_rejoin/remove_from_queue_array/next_element \
   with storage omegaflowey:bossfight.remove_from_queue

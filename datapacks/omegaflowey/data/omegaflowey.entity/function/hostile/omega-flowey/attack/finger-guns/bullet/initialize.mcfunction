@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/shared/bullet/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
 
 data merge entity @s {CustomName:"\"Finger-Guns Bullet\""}
 

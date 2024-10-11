@@ -5,10 +5,10 @@ execute store result storage attack:finger-guns yaw float 1 run data get entity 
 
 # Terminate associated laser
 execute on passengers if entity @s[type=minecraft:marker, tag=aj.data] run \
-  function entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/terminate with entity @s data
+  function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/terminate with entity @s data
 
 # Play shoot animation
 function animated_java:finger_gun/animations/shoot/play
 
 # Summon bullet
-function entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/bullet/summon with storage attack:finger-guns
+function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/bullet/summon with storage attack:finger-guns

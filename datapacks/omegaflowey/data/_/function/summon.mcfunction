@@ -1,4 +1,4 @@
-function entity:directorial/boss_fight/summit/origin/at { \
-  command: "function entity:hostile/omega-flowey/summon/relative" \
+function omegaflowey.entity:directorial/boss_fight/summit/origin/at { \
+  command: "function omegaflowey.entity:hostile/omega-flowey/summon/relative" \
 }
-function entity:hostile/omega-flowey/animate
+function omegaflowey.entity:hostile/omega-flowey/animate

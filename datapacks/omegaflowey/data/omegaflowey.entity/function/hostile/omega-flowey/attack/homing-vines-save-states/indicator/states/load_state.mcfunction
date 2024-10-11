@@ -8,4 +8,4 @@ execute store result score @s attack.position.z run data get storage attack:homi
 tag @s remove attack-indicator-new
 
 # Resummon blinking_lane if it existed when we saved state
-execute if data storage attack:homing-vines-save-states entity_specific_params.has_blinking_lane run function entity:hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/load_state/resummon/blinking_lane with storage attack:homing-vines-save-states entity_specific_params.blinking_lane
+execute if data storage attack:homing-vines-save-states entity_specific_params.has_blinking_lane run function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/load_state/resummon/blinking_lane with storage attack:homing-vines-save-states entity_specific_params.blinking_lane

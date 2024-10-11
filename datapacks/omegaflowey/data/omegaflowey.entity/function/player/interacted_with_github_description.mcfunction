@@ -1,2 +1,2 @@
-function entity:player/interacted_with_github_description/macro with storage omegaflowey:decorative
-advancement revoke @s only entity:player_interacted_with_github_description
+function omegaflowey.entity:player/interacted_with_github_description/macro with storage omegaflowey:decorative
+advancement revoke @s only omegaflowey.entity:player_interacted_with_github_description

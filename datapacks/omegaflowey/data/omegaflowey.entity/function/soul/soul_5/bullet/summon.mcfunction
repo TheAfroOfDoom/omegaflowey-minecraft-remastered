@@ -1,6 +1,6 @@
 # Where we'd summon a bullet, instead summon a flower
 # (this happens upon saved)
-execute if score #soul_5.saved soul.flag matches 1 run function entity:soul/soul_5/healer/summon
+execute if score #soul_5.saved soul.flag matches 1 run function omegaflowey.entity:soul/soul_5/healer/summon
 execute if score #soul_5.saved soul.flag matches 1 run return 0
 
 ## Summon and initialize bullet

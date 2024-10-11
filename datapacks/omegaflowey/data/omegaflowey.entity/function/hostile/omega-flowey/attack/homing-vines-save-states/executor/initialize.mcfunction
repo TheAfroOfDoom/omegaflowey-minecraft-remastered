@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/homing-vines/executor/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/executor/initialize
 
 # store executor UUID so save-state entities and players can reference it directly
 function gu:generate

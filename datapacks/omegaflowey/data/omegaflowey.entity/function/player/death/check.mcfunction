@@ -7,4 +7,4 @@ execute if score @s player.deaths.current = @s player.deaths.previous run return
 scoreboard players operation @s player.deaths.previous = @s player.deaths.current
 
 # otherwise they just died and we should handle that accordingly
-execute if entity @s[tag=omegaflowey.player.fighting_flowey] run function entity:directorial/boss_fight/summit/player/active/on_death
+execute if entity @s[tag=omegaflowey.player.fighting_flowey] run function omegaflowey.entity:directorial/boss_fight/summit/player/active/on_death

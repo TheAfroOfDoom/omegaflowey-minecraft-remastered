@@ -30,4 +30,4 @@ execute unless entity @a[tag=omegaflowey.player.fighting_flowey] run data merge 
 
 execute store result storage soul:soul_0.bandaid velocity float 0.01 run data get storage utils:math.max out
 
-function entity:soul/soul_0/bandaid/loop/move with storage soul:soul_0.bandaid
+function omegaflowey.entity:soul/soul_0/bandaid/loop/move with storage soul:soul_0.bandaid

@@ -1,1 +1,1 @@
-$execute as $(soul_model_uuid) run function entity:hostile/omega-flowey/animate/warning/soul
+$execute as $(soul_model_uuid) run function omegaflowey.entity:hostile/omega-flowey/animate/warning/soul

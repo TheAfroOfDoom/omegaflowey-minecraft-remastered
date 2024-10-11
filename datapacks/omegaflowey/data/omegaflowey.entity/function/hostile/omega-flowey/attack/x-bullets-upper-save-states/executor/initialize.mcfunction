@@ -1,4 +1,4 @@
-function entity:hostile/omega-flowey/attack/x-bullets-upper/executor/initialize
+function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/initialize
 
 scoreboard players operation @s attack.executor.clock.length = #attack-x-bullets-upper-save-states attack.executor.clock.length
 scoreboard players operation @s attack.indicator.total = #attack-x-bullets-upper-save-states attack.indicator.total

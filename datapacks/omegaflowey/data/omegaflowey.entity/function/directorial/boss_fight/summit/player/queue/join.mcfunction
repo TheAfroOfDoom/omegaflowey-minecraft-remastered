@@ -27,7 +27,7 @@ execute \
   run scoreboard players set @s math.0 1
 
 execute if score @s math.0 matches 1 run \
-  function entity:directorial/boss_fight/summit/player/queue/join/log_players_ahead_of_you
+  function omegaflowey.entity:directorial/boss_fight/summit/player/queue/join/log_players_ahead_of_you
 
 # check if the queue is ready to pop
-function entity:directorial/boss_fight/summit/player/queue/check_should_prompt
+function omegaflowey.entity:directorial/boss_fight/summit/player/queue/check_should_prompt

@@ -7,7 +7,7 @@ execute if score @s attack.clock.i matches 0 run playsound omega-flowey:attack.f
 execute if score @s attack.clock.i matches 0 run function animated_java:housefly/animations/shrink/play
 
 # Move forward until done shrinking
-execute if score @s attack.clock.i matches ..3 run function entity:hostile/omega-flowey/attack/flies/bullet/loop/move
+execute if score @s attack.clock.i matches ..3 run function omegaflowey.entity:hostile/omega-flowey/attack/flies/bullet/loop/move
 
 # Terminate
-execute if score @s attack.clock.i matches 10.. run function entity:hostile/omega-flowey/attack/flies/bullet/terminate
+execute if score @s attack.clock.i matches 10.. run function omegaflowey.entity:hostile/omega-flowey/attack/flies/bullet/terminate
