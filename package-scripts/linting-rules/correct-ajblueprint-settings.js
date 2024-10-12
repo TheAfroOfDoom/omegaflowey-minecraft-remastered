@@ -1,22 +1,32 @@
 const chalk = require('chalk');
-const { readFileSync } = require('fs');
+const { readFileSync, writeFileSync } = require('fs');
 
 const applicableExtensions = ['.ajblueprint'];
 
 /** Animations need to be prefixed with their model's name and an underscore _ */
-const checkAnimationName = (model) => {
+const checkAnimationName = (model, { file }) => {
+  const FIX = false;
   const errors = [];
-  for (const animation of model.animations) {
+  const fixedModel = structuredClone(model);
+  const expectedPrefix = 'omegaflowey_';
+
+  for (const [idx, animation] of model.animations.entries()) {
     const { name } = animation;
-    const isValidName = name.startsWith('omegaflowey_');
+    const isValidName = name.startsWith(expectedPrefix);
     if (!isValidName) {
       let error = `animation name is not namespaced: `;
       error += chalk.redBright(name);
       error += ` (expected a prefix of `;
-      error += chalk.blueBright('omegaflowey_');
+      error += chalk.blueBright(expectedPrefix);
       error += ` )`;
       errors.push(error);
+
+      fixedModel.animations[idx].name = `${expectedPrefix}${name}`;
     }
+  }
+
+  if (FIX) {
+    writeFileSync(file, JSON.stringify(fixedModel, undefined, '\t'));
   }
 
   return errors;
@@ -103,7 +113,7 @@ const correctAjblueprintSettings = (file) => {
     checkSummonCommands,
   ];
   for (const settingsCheck of settingsChecks) {
-    errors.push(...settingsCheck(ajblueprint));
+    errors.push(...settingsCheck(ajblueprint, { file }));
   }
 
   return errors;
