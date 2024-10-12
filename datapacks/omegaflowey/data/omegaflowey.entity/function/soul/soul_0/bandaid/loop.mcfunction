@@ -16,11 +16,11 @@ function omegaflowey.utils:math/distance_squared
 scoreboard players set @s omegaflowey.math.0 1000000
 execute store result score @s omegaflowey.math.1 run data get storage utils:math.distance_squared out
 scoreboard players operation @s omegaflowey.math.0 /= @s omegaflowey.math.1
-execute store result storage soul:soul_0.bandaid gravity int 1 run scoreboard players get @s omegaflowey.math.0
+execute store result storage omegaflowey:soul.0.bandaid gravity int 1 run scoreboard players get @s omegaflowey.math.0
 
 # NOTE: you can tune these constants to tune the effect of "gravity" on how fast the bandaid rotates / moves towards the player
 # TODO(88): tune these velocity/rotation constants
-data merge storage soul:soul_0.bandaid { velocity_constant: 20, rotation_constant: -500 }
-function omegaflowey.entity:soul/soul_0/bandaid/loop/pre_move with storage soul:soul_0.bandaid
+data merge storage omegaflowey:soul.0.bandaid { velocity_constant: 20, rotation_constant: -500 }
+function omegaflowey.entity:soul/soul_0/bandaid/loop/pre_move with storage omegaflowey:soul.0.bandaid
 
 # TODO(89): looks ugly when the bandaid models overlap
