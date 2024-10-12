@@ -3,6 +3,25 @@ const { readFileSync } = require('fs');
 
 const applicableExtensions = ['.ajblueprint'];
 
+/** Animations need to be prefixed with their model's name and an underscore _ */
+const checkAnimationName = (model) => {
+  const errors = [];
+  for (const animation of model.animations) {
+    const { name } = animation;
+    const isValidName = name.startsWith('omegaflowey_');
+    if (!isValidName) {
+      let error = `animation name is not namespaced: `;
+      error += chalk.redBright(name);
+      error += ` (expected a prefix of `;
+      error += chalk.blueBright('omegaflowey_');
+      error += ` )`;
+      errors.push(error);
+    }
+  }
+
+  return errors;
+};
+
 const checkDatapack = (model) => {
   const expected = /datapacks\/animated_java\/?$/;
   const actual = model.blueprint_settings.data_pack;
@@ -77,6 +96,7 @@ const correctAjblueprintSettings = (file) => {
   const errors = [];
 
   const settingsChecks = [
+    checkAnimationName,
     checkDatapack,
     checkExportNamespace,
     checkRigItem,
