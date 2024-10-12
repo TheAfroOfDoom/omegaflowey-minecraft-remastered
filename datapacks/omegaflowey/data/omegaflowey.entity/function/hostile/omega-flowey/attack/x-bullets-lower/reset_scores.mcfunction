@@ -2,7 +2,7 @@
 # TODO(46): validate these attack parameters
 scoreboard players set #attack-x-bullets-lower omegaflowey.attack.bullets.clock.delay 1
 scoreboard players set #attack-x-bullets-lower omegaflowey.attack.bullets.total 7
-scoreboard players set #attack-x-bullets-lower attack.cone 105
+scoreboard players set #attack-x-bullets-lower omegaflowey.attack.cone 105
 scoreboard players set #attack-x-bullets-lower attack.executor.clock.delay 8
 scoreboard players set #attack-x-bullets-lower attack.executor.clock.length 56
 scoreboard players set #attack-x-bullets-lower attack.executor.rate 8

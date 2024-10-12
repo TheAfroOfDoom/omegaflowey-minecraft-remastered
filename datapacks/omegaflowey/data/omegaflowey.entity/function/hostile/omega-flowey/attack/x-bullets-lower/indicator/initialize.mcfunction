@@ -7,7 +7,7 @@ tag @s add x-bullets-lower
 
 # Set scores
 scoreboard players operation @s omegaflowey.attack.bullets.total = #attack-x-bullets-lower omegaflowey.attack.bullets.total
-scoreboard players operation @s attack.cone = #attack-x-bullets-lower attack.cone
+scoreboard players operation @s omegaflowey.attack.cone = #attack-x-bullets-lower omegaflowey.attack.cone
 
 scoreboard players operation @s omegaflowey.attack.bullets.remaining = @s omegaflowey.attack.bullets.total
 
