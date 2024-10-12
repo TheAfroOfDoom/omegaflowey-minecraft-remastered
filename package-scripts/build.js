@@ -68,7 +68,6 @@ const getSummitDatapackPaths = () => {
     'move_forward.mcfunction',
     'shake_screen_macro.mcfunction',
     'shake_screen.mcfunction',
-    'store_position.mcfunction',
   ]);
 
   const entityPaths = prefixPaths('omegaflowey.entity/', [
@@ -235,6 +234,11 @@ const getSummitResourcepackPaths = () => {
     ...minecraftPaths,
     ...omegaFloweyPaths,
   ]);
+  const removeGrayDye = async ({ compiledPath }) => {
+    const grayDyeFile = `${compiledPath}/assets/minecraft/models/item/gray_dye.json`;
+    await rimraf(grayDyeFile);
+  };
+  postProcessors.push(removeGrayDye);
 
   const resourcepackPaths = prefixPaths('resourcepack/', [
     'pack.mcmeta',

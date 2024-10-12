@@ -23,6 +23,9 @@ function omegaflowey.utils:log/self { text_component: '[ \
       { "text": "kill/bossfight", "color": "yellow" }, \
       ": ends the bossfight and kills related entities (if active)", \
       "\\n", \
+      { "text": "kill/petalpipes", "color": "yellow" }, \
+      ": kills the performance-heavy AJ petal pipe models", \
+      "\\n", \
       { "text": "kill/queue", "color": "yellow" }, \
       ": resets the bossfight player queue" \
     ] \

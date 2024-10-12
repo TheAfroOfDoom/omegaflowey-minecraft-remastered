@@ -32,6 +32,28 @@ const checkAnimationName = (model, { file }) => {
   return errors;
 };
 
+/**
+ * Custom model data offset need to be some large, arbitrary value to avoid collision
+ * with other Summit booths
+ */
+const checkCustomModelDataOffset = (model) => {
+  const errors = [];
+
+  const expectedCMDOffset = 4654465;
+  const cmdOffset = model.blueprint_settings.custom_model_data_offset;
+  const isValidCMDOffset = expectedCMDOffset === cmdOffset;
+  if (!isValidCMDOffset) {
+    let error = `custom model data offset is incorrect: `;
+    error += chalk.redBright(cmdOffset);
+    error += ` (expected `;
+    error += chalk.blueBright(expectedCMDOffset);
+    error += ` )`;
+    errors.push(error);
+  }
+
+  return errors;
+};
+
 const checkDatapack = (model) => {
   const expected = /datapacks\/animated_java\/?$/;
   const actual = model.blueprint_settings.data_pack;
@@ -45,6 +67,26 @@ const checkDatapack = (model) => {
   error += `${chalk.yellow('datapacks/animated_java')}`;
   error += `\n\t\t found: ${chalk.red(actual)}`;
   return [error];
+};
+
+/** This flag needs to be enabled to enable the custom CMD offset */
+const checkEnableAdvancedResourcePackSettings = (model) => {
+  const errors = [];
+
+  const expected = true;
+  const actual =
+    model.blueprint_settings.enable_advanced_resource_pack_settings;
+  const isValid = actual === expected;
+  if (!isValid) {
+    let error = `custom model data offset is incorrect: `;
+    error += chalk.redBright(actual);
+    error += ` (expected `;
+    error += chalk.blueBright(expected);
+    error += ` )`;
+    errors.push(error);
+  }
+
+  return errors;
 };
 
 /**
@@ -67,7 +109,7 @@ const checkExportNamespace = (model) => {
 };
 
 const checkRigItem = (model) => {
-  const expected = 'minecraft:white_dye';
+  const expected = 'minecraft:pink_dye';
   const actual = model.blueprint_settings.display_item;
   if (actual === expected) {
     return [];
@@ -107,7 +149,9 @@ const correctAjblueprintSettings = (file) => {
 
   const settingsChecks = [
     checkAnimationName,
+    checkCustomModelDataOffset,
     checkDatapack,
+    checkEnableAdvancedResourcePackSettings,
     checkExportNamespace,
     checkRigItem,
     checkSummonCommands,
