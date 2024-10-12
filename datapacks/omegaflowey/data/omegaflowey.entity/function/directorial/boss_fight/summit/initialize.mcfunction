@@ -2,7 +2,7 @@
 function omegaflowey.entity:directorial/boss_fight/shared/initialize
 
 # Summon and initialize `arena_box` entity
-function animated_java:arena_box/summon/default
+function animated_java:omegaflowey_arena_box/summon/default
 
 # Add tags
 tag @s add boss_fight.summit
