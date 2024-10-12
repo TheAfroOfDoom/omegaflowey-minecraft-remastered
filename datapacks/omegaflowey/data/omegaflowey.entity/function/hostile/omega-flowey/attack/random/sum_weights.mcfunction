@@ -9,7 +9,7 @@ scoreboard players operation @s omegaflowey.math.0 += #attack-homing-vines omega
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.homing-vines-save-states omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #attack-x-bullets-lower omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #attack-x-bullets-upper omegaflowey.attack.weight
-scoreboard players operation @s omegaflowey.math.0 += #attack-x-bullets-upper-save-states omegaflowey.attack.weight
+scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.x-bullets-upper-save-states omegaflowey.attack.weight
 
 # Assert sum is > 0
 execute if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/error/zero_sum
