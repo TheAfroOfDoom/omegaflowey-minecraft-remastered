@@ -1,7 +1,7 @@
-#> mathf:internal/error-handling/error-tick
-# 
+#> omegaflowey.mathf:internal/error-handling/error-tick
+#
 # Displays errors when detected.
-# @within mathf:internal
+# @within omegaflowey.mathf:internal
 
-execute if data storage mathf:throw error run function mathf:internal/error-handling/throw-error
-execute if data storage mathf:throw warning run function mathf:internal/error-handling/throw-warning
+execute if data storage mathf:throw error run function omegaflowey.mathf:internal/error-handling/throw-error
+execute if data storage mathf:throw warning run function omegaflowey.mathf:internal/error-handling/throw-warning

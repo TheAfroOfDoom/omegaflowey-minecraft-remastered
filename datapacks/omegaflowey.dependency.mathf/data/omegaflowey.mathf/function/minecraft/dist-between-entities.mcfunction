@@ -1,4 +1,4 @@
-#> mathf:minecraft/dist-between-entities
+#> omegaflowey.mathf:minecraft/dist-between-entities
 # Finds the distance between two entities. Note that the mathf.entity0 and mathf.entity1 tags will be removed from the entities afterwards.
 # @input
 #   entity mathf.entity0    The first entity with tag mathf.entity0
@@ -19,7 +19,7 @@ execute store result score i4 mathf.io as @e[tag=mathf.entity1,limit=1] run data
 execute store result score i5 mathf.io as @e[tag=mathf.entity1,limit=1] run data get entity @s Pos[2]
 
 # Input their coords into this function
-function mathf:dist-between-points
+function omegaflowey.mathf:dist-between-points
 
 # Remove entity tags after use
 tag @e[tag=mathf.entity0] remove mathf.entity0

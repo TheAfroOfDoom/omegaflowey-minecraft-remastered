@@ -1,4 +1,4 @@
-#> mathf:minecraft/vector-between-entities-eyes
+#> omegaflowey.mathf:minecraft/vector-between-entities-eyes
 # Note that the mathf.entity0 and mathf.entity1 tags will be removed from the entities afterwards.
 # @input
 #   entity mathf.entity0    The first entity.
@@ -24,7 +24,7 @@ execute store result score i4 mathf.io as @e[tag=mathf.aec1,limit=1] run data ge
 execute store result score i5 mathf.io as @e[tag=mathf.aec1,limit=1] run data get entity @s Pos[2] 100
 
 # Input their coords into this function
-function mathf:vector/get-vector-between-points
+function omegaflowey.mathf:vector/get-vector-between-points
 
 # Kill AECs after use
 kill @e[type=area_effect_cloud,tag=mathf.dummy]

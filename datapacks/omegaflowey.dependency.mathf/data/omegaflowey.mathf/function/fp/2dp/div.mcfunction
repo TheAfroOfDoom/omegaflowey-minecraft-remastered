@@ -1,13 +1,13 @@
-#> mathf:fp/2dp/div
-# 
+#> omegaflowey.mathf:fp/2dp/div
+#
 # Divides a 2dp floating point by another floating point.
-# 
+#
 # @input
 #   score i0 mathf.io Number to divide.
 #   score i1 mathf.io Divisor.
-# 
+#
 # @output score o0 mathf.io Result.
-# 
+#
 # @public
 # @context any
 

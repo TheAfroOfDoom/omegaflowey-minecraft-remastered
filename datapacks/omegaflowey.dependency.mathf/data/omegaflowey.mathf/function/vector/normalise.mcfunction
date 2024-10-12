@@ -1,15 +1,15 @@
-#> mathf:vector/normalise
+#> omegaflowey.mathf:vector/normalise
 # Normalises a vector.
 # @input
 #   Vector x (Scale 100) = i0 mathf.io
 #   Vector y (Scale 100) = i1 mathf.io
 #   Vector z (Scale 100) = i2 mathf.io
-#  
+#
 # @output
 #   Normalised Vector x (Scale 100) = o0 mathf.io
 #   Normalised Vector y (Scale 100) = o1 mathf.io
 #   Normalised Vector z (Scale 100) = o2 mathf.io
-# 
+#
 # @public
 # @context any
 
@@ -17,7 +17,7 @@ scoreboard players operation vecX mathf.data = i0 mathf.io
 scoreboard players operation vecY mathf.data = i1 mathf.io
 scoreboard players operation vecZ mathf.data = i2 mathf.io
 
-function mathf:vector/magnitude
+function omegaflowey.mathf:vector/magnitude
 scoreboard players operation magnitude mathf.data = o0 mathf.io
 
 scoreboard players operation o0 mathf.io = vecX mathf.data

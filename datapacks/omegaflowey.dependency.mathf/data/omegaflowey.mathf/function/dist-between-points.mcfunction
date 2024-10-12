@@ -1,7 +1,7 @@
-#> mathf:dist-between-points
-# 
+#> omegaflowey.mathf:dist-between-points
+#
 # Gets the distance in whole blocks between 2 coordinates.
-# 
+#
 # @input
 #   score i0 mathf.io    Point 1 X coordinate.
 #   score i1 mathf.io    Point 1 Y coordinate.
@@ -9,10 +9,10 @@
 #   score i3 mathf.io    Point 2 X coordinate.
 #   score i4 mathf.io    Point 2 Y coordinate.
 #   score i5 mathf.io    Point 2 Z coordinate.
-# 
+#
 # @output
 #   score o0 mathf.io    The distance as an int.
-# 
+#
 # @public
 # @context any
 
@@ -38,4 +38,4 @@ scoreboard players operation distSquared mathf.data += zDiff mathf.data
 
 # Sqrt the distSquared to get the overall distance
 scoreboard players operation i0 mathf.io = distSquared mathf.data
-function mathf:sqrt
+function omegaflowey.mathf:sqrt

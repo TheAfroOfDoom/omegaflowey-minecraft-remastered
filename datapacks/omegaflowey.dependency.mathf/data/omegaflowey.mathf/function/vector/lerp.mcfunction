@@ -1,16 +1,16 @@
-#> mathf:vector/lerp
+#> omegaflowey.mathf:vector/lerp
 # Linearly interpolates a vector.
 # @input
 #   score i0 mathf.io   Interpolant (Scale 100)
 #   score i1 mathf.io   Input Vector x (Scale 100)
 #   score i2 mathf.io   Input Vector y (Scale 100)
 #   score i3 mathf.io   Input Vector z (Scale 100)
-#  
+#
 # @output
 #   score o0 mathf.io   Vector x (Scale 100)
 #   score o1 mathf.io   Vector y (Scale 100)
 #   score o2 mathf.io   Vector z (Scale 100)
-# 
+#
 # @public
 # @context any
 
@@ -25,17 +25,17 @@ scoreboard players operation i2 mathf.io = vectorInterpolant mathf.data
 
 scoreboard players set i0 mathf.io 0
 scoreboard players operation i1 mathf.io = endX mathf.data
-function mathf:lerp
+function omegaflowey.mathf:lerp
 scoreboard players operation xLerp mathf.data = o0 mathf.io
 
 scoreboard players set i0 mathf.io 0
 scoreboard players operation i1 mathf.io = endY mathf.data
-function mathf:lerp
+function omegaflowey.mathf:lerp
 scoreboard players operation yLerp mathf.data = o0 mathf.io
 
 scoreboard players set i0 mathf.io 0
 scoreboard players operation i1 mathf.io = endZ mathf.data
-function mathf:lerp
+function omegaflowey.mathf:lerp
 scoreboard players operation zLerp mathf.data = o0 mathf.io
 
 

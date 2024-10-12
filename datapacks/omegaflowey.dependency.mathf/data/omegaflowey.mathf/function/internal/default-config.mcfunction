@@ -1,8 +1,8 @@
-#> mathf:internal/default-config
-# 
+#> omegaflowey.mathf:internal/default-config
+#
 # Sets the defualt config settings.
-# 
-# @within mathf:internal/init
+#
+# @within omegaflowey.mathf:internal/init
 
 scoreboard players set setDefaultConfig mathf.config 0
 

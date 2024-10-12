@@ -1,14 +1,14 @@
-#> mathf:vector/magnitude
+#> omegaflowey.mathf:vector/magnitude
 # Gets the magnitude of a vector.
 # Credit to https://gaming.stackexchange.com/a/348985
 # @input
 #   score i0 mathf.ioVector x (Scale 100)
 #   score i1 mathf.ioVector y (Scale 100)
 #   score i2 mathf.ioVector z (Scale 100)
-#  
+#
 # @output
 #   score o0 mathf.io       Magnitude (Scale 100)
-# 
+#
 # @public
 # @context any
 
@@ -28,4 +28,4 @@ scoreboard players operation distSquared mathf.data += zDiff mathf.data
 
 # Sqrt the distSquared to get the overall distance
 scoreboard players operation i0 mathf.io = distSquared mathf.data
-function mathf:sqrt
+function omegaflowey.mathf:sqrt

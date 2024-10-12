@@ -113,9 +113,9 @@ const getSummitDatapackPaths = () => {
   const datapackPaths = prefixPaths('datapacks/', [
     'animated_java/data',
     'animated_java/pack.mcmeta',
-    'mathf',
     'mud',
     ...primaryDatapackPaths,
+    'omegaflowey.dependency.mathf',
   ]);
 
   return { paths: datapackPaths, postProcessors };
