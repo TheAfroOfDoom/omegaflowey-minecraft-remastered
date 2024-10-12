@@ -4,13 +4,13 @@ execute at @e[tag=aj.tv_screen.root,tag=tv_screen.boss_fight] run playsound omeg
 # Set tv screen to WARNING variant
 execute as @e[tag=aj.tv_screen.root,tag=tv_screen.boss_fight] run function omegaflowey.entity:hostile/omega-flowey/animate/warning/tv_screen
 
-execute store result storage animate:soul soul_index int 1 run scoreboard players get @s omegaflowey.boss-fight.progress.phase.i
+execute store result storage omegaflowey:bossfight.animate soul_index int 1 run scoreboard players get @s omegaflowey.boss-fight.progress.phase.i
 
 # Set applicable petal-pipe to soul-color variant
-function omegaflowey.entity:hostile/omega-flowey/animate/pipe with storage animate:soul
+function omegaflowey.entity:hostile/omega-flowey/animate/pipe with storage omegaflowey:bossfight.animate
 
 # Summon and begin animating soul heart model in front of WARNING screen
-function omegaflowey.entity:hostile/omega-flowey/summon/warning/soul with storage animate:soul
+function omegaflowey.entity:hostile/omega-flowey/summon/warning/soul with storage omegaflowey:bossfight.animate
 execute as @e[tag=aj.soul.root,tag=omegaflowey.soul.warning] run function omegaflowey.entity:hostile/omega-flowey/animate/warning/soul
 
 # Summon and begin animating soul tv_screen in other arena

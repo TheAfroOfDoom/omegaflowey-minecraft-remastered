@@ -17,4 +17,4 @@ function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/indicator/i
 function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/randomize_bullet_position
 
 # Summon blinking-lane
-execute at @s run function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/summon with storage attack:homing-vines
+execute at @s run function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/blinking_lane/summon with storage omegaflowey:attack.homing-vines

@@ -1,8 +1,8 @@
 scoreboard players add @s omegaflowey.attack.clock.i 1
 
-execute store result storage utils:damage radius float 0.0001 run scoreboard players get @s omegaflowey.attack.bullets.radius
-data merge storage utils:damage { damage: 2.5 }
-function omegaflowey.entity:utils/damage with storage utils:damage
+execute store result storage omegaflowey:utils.damage radius float 0.0001 run scoreboard players get @s omegaflowey.attack.bullets.radius
+data merge storage omegaflowey:utils.damage { damage: 2.5 }
+function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 
 # Check if inside arena
 scoreboard players set @s omegaflowey.math.0 0
@@ -16,8 +16,8 @@ function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
 execute if score @s omegaflowey.math.0 matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/maybe_bounce
 
 # Move forward at defined `omegaflowey.attack.speed.z` velocity
-execute store result storage utils:move z float 0.01 run scoreboard players get @s omegaflowey.attack.speed.z
-function omegaflowey.entity:utils/move_forward with storage utils:move
+execute store result storage omegaflowey:utils.move z float 0.01 run scoreboard players get @s omegaflowey.attack.speed.z
+function omegaflowey.entity:utils/move_forward with storage omegaflowey:utils.move
 
 # TODO(42): validate/determine a value for how long the dentata-snakes can bounce
 # Allow bullet to escape arena after X seconds

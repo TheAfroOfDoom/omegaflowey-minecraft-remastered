@@ -5,8 +5,8 @@ execute if entity @s[tag=attack.random.consider_previous_trials] run function om
 function omegaflowey.entity:hostile/omega-flowey/attack/random/sum_weights
 
 # Get randomized value to choose an attack to run
-execute store result storage attack:random sum int 1 run scoreboard players get @s omegaflowey.math.0
-function omegaflowey.entity:hostile/omega-flowey/attack/random/get_randomized_value with storage attack:random
+execute store result storage omegaflowey:attack.random sum int 1 run scoreboard players get @s omegaflowey.math.0
+function omegaflowey.entity:hostile/omega-flowey/attack/random/get_randomized_value with storage omegaflowey:attack.random
 
 function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack
 

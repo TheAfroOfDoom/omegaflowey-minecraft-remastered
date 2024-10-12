@@ -9,12 +9,12 @@ execute if score @s omegaflowey.math.0 matches 96..99 run function omegaflowey.e
 # y: 34.50
 scoreboard players set @s omegaflowey.attack.position.y 3450
 
-execute store result storage attack:flies x double 0.01 run scoreboard players get @s omegaflowey.attack.position.x
-execute store result storage attack:flies y double 0.01 run scoreboard players get @s omegaflowey.attack.position.y
-execute store result storage attack:flies z double 0.01 run scoreboard players get @s omegaflowey.attack.position.z
+execute store result storage omegaflowey:attack.flies x double 0.01 run scoreboard players get @s omegaflowey.attack.position.x
+execute store result storage omegaflowey:attack.flies y double 0.01 run scoreboard players get @s omegaflowey.attack.position.y
+execute store result storage omegaflowey:attack.flies z double 0.01 run scoreboard players get @s omegaflowey.attack.position.z
 
 # Store `omegaflowey.group.id` for next bullet
-execute store result storage group id int 1 run scoreboard players get @s omegaflowey.group.id
+execute store result storage omegaflowey:attack.flies group_id int 1 run scoreboard players get @s omegaflowey.group.id
 
 # Summon bullet
-function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/summon with storage attack:flies
+function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/summon with storage omegaflowey:attack.flies

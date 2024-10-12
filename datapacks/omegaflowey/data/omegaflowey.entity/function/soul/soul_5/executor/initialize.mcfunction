@@ -11,9 +11,9 @@ scoreboard players set #omegaflowey.soul.5.touched omegaflowey.soul.flag 0
 
 # Store this UUID to a global storage for later reference
 function gu:generate
-data modify storage soul:soul_5 executor_uuid set from storage gu:main out
+data modify storage omegaflowey:soul.5 executor_uuid set from storage gu:main out
 
-data modify storage soul:soul_5 soul_model_uuid set from storage omegaflowey:bossfight soul_model_uuid
+data modify storage omegaflowey:soul.5 soul_model_uuid set from storage omegaflowey:bossfight soul_model_uuid
 
 # Add tags
 tag @s add soul_5

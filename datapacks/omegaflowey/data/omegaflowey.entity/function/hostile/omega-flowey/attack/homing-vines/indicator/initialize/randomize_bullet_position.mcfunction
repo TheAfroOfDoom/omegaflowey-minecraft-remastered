@@ -8,17 +8,17 @@ scoreboard players operation @s omegaflowey.attack.position.x += @s omegaflowey.
 # lower-bound
 scoreboard players set @s omegaflowey.math.0 -1800
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.summit.origin.x omegaflowey.global.flag
-execute store result storage utils:math.max a int 1 run scoreboard players get @s omegaflowey.math.0
-execute store result storage utils:math.max b int 1 run scoreboard players get @s omegaflowey.attack.position.x
+execute store result storage omegaflowey:utils.math.max a int 1 run scoreboard players get @s omegaflowey.math.0
+execute store result storage omegaflowey:utils.math.max b int 1 run scoreboard players get @s omegaflowey.attack.position.x
 function omegaflowey.utils:math/max
-execute store result score @s omegaflowey.attack.position.x run data get storage utils:math.max out
+execute store result score @s omegaflowey.attack.position.x run data get storage omegaflowey:utils.math.max out
 # upper-bound
 scoreboard players set @s omegaflowey.math.0 1800
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.summit.origin.x omegaflowey.global.flag
-execute store result storage utils:math.min a int 1 run scoreboard players get @s omegaflowey.math.0
-execute store result storage utils:math.min b int 1 run scoreboard players get @s omegaflowey.attack.position.x
+execute store result storage omegaflowey:utils.math.min a int 1 run scoreboard players get @s omegaflowey.math.0
+execute store result storage omegaflowey:utils.math.min b int 1 run scoreboard players get @s omegaflowey.attack.position.x
 function omegaflowey.utils:math/min
-execute store result score @s omegaflowey.attack.position.x run data get storage utils:math.min out
+execute store result score @s omegaflowey.attack.position.x run data get storage omegaflowey:utils.math.min out
 
 # Randomize y-position to summon bullet at
 execute store result score @s omegaflowey.attack.position.y run random value -300..300
@@ -28,6 +28,6 @@ scoreboard players operation @s omegaflowey.attack.position.y += #omegaflowey.bo
 scoreboard players set @s omegaflowey.attack.position.z -850
 scoreboard players operation @s omegaflowey.attack.position.z += #omegaflowey.bossfight.summit.origin.z omegaflowey.global.flag
 
-execute store result storage attack:homing-vines x float 0.01 run scoreboard players get @s omegaflowey.attack.position.x
-execute store result storage attack:homing-vines y float 0.01 run scoreboard players get @s omegaflowey.attack.position.y
-execute store result storage attack:homing-vines z float 0.01 run scoreboard players get @s omegaflowey.attack.position.z
+execute store result storage omegaflowey:attack.homing-vines x float 0.01 run scoreboard players get @s omegaflowey.attack.position.x
+execute store result storage omegaflowey:attack.homing-vines y float 0.01 run scoreboard players get @s omegaflowey.attack.position.y
+execute store result storage omegaflowey:attack.homing-vines z float 0.01 run scoreboard players get @s omegaflowey.attack.position.z

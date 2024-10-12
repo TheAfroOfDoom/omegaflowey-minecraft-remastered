@@ -17,11 +17,11 @@ execute store result score @s omegaflowey.attack.position.z run random value -32
 scoreboard players operation @s omegaflowey.attack.position.z += #omegaflowey.bossfight.summit.origin.z omegaflowey.global.flag
 
 # Store new position and yaw
-execute store result storage attack:finger-guns x double 0.01 run scoreboard players get @s omegaflowey.attack.position.x
-execute store result storage attack:finger-guns y double 0.01 run scoreboard players get @s omegaflowey.attack.position.y
-execute store result storage attack:finger-guns z double 0.01 run scoreboard players get @s omegaflowey.attack.position.z
-execute store result storage attack:finger-guns yaw float 0.01 run scoreboard players get @s omegaflowey.attack.indicator.yaw
+execute store result storage omegaflowey:attack.finger-guns x double 0.01 run scoreboard players get @s omegaflowey.attack.position.x
+execute store result storage omegaflowey:attack.finger-guns y double 0.01 run scoreboard players get @s omegaflowey.attack.position.y
+execute store result storage omegaflowey:attack.finger-guns z double 0.01 run scoreboard players get @s omegaflowey.attack.position.z
+execute store result storage omegaflowey:attack.finger-guns yaw float 0.01 run scoreboard players get @s omegaflowey.attack.indicator.yaw
 # flat pitch
-data merge storage attack:finger-guns { pitch: 0.0f }
+data merge storage omegaflowey:attack.finger-guns { pitch: 0.0f }
 
-function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/executor/loop/indicator/summon with storage attack:finger-guns
+function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/executor/loop/indicator/summon with storage omegaflowey:attack.finger-guns

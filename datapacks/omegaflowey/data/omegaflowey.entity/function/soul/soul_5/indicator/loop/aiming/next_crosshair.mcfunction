@@ -4,10 +4,10 @@ function omegaflowey.entity:soul/soul_5/indicator/loop/aiming/next_crosshair/ran
 
 # summon hearts instead of crosshairs upon `saved`
 # (only different visually; they are the same root `soul_5_crosshair` entity)
-data modify storage soul:soul_5.indicator next_crosshair_variant set value 'default'
-execute if score #omegaflowey.soul.5.saved omegaflowey.soul.flag matches 1 run data modify storage soul:soul_5.indicator next_crosshair_variant set value 'heart'
+data modify storage omegaflowey:soul.5.indicator next_crosshair_variant set value 'default'
+execute if score #omegaflowey.soul.5.saved omegaflowey.soul.flag matches 1 run data modify storage omegaflowey:soul.5.indicator next_crosshair_variant set value 'heart'
 
-function omegaflowey.entity:soul/soul_5/crosshair/summon with storage soul:soul_5.indicator
+function omegaflowey.entity:soul/soul_5/crosshair/summon with storage omegaflowey:soul.5.indicator
 
 scoreboard players remove @s omegaflowey.soul.indicator.bullets.remaining 1
 

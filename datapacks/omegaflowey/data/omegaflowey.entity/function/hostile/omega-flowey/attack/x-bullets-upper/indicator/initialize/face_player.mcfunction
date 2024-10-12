@@ -2,11 +2,10 @@
 
 scoreboard players set @s omegaflowey.attack.bullets.clock.i -1
 
-function omegaflowey.entity:utils/store_position
 # Save bone position to score
-execute store result score @s omegaflowey.attack.position.x run data get storage entity:position x
-execute store result score @s omegaflowey.attack.position.y run data get storage entity:position y
-execute store result score @s omegaflowey.attack.position.z run data get storage entity:position z
+execute store result score @s omegaflowey.attack.position.x run data get entity @s Pos[0] 100
+execute store result score @s omegaflowey.attack.position.y run data get entity @s Pos[1] 100
+execute store result score @s omegaflowey.attack.position.z run data get entity @s Pos[2] 100
 
 function omegaflowey.entity:utils/face_closest_player
 
