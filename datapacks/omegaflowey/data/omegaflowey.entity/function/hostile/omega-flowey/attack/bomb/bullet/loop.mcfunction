@@ -2,11 +2,11 @@ scoreboard players add @s omegaflowey.attack.clock.i 1
 
 # this is a rect volume, size is 18x(28+36)x18
 # y-bound is -28 to +36
-data merge storage utils:damage { damage: 2, radius: 1.8 }
-execute positioned ~ ~-4 ~ run function omegaflowey.entity:utils/damage with storage utils:damage
-execute positioned ~ ~-2 ~ run function omegaflowey.entity:utils/damage with storage utils:damage
-execute positioned ~ ~ ~ run function omegaflowey.entity:utils/damage with storage utils:damage
-execute positioned ~ ~2 ~ run function omegaflowey.entity:utils/damage with storage utils:damage
+data merge storage omegaflowey:utils.damage { damage: 2, radius: 1.8 }
+execute positioned ~ ~-4 ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
+execute positioned ~ ~-2 ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
+execute positioned ~ ~ ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
+execute positioned ~ ~2 ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 
 # Move down slowly during summon animation
 execute if score @s omegaflowey.attack.clock.i matches 0..15 run teleport @s ~ ~-0.5 ~

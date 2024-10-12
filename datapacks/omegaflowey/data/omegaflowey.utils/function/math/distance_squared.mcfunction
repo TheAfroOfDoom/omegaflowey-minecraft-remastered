@@ -10,25 +10,25 @@
 scoreboard players set #omegaflowey.utils:math.distance_squared omegaflowey.math.0 0
 
 # (x0 - x1)^2
-execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.1 run data get storage utils:math.distance_squared x0 100
-execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.2 run data get storage utils:math.distance_squared x1 100
+execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.1 run data get storage omegaflowey:utils.math.distance_squared x0 100
+execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.2 run data get storage omegaflowey:utils.math.distance_squared x1 100
 scoreboard players operation #omegaflowey.utils:math.distance_squared omegaflowey.math.1 -= #omegaflowey.utils:math.distance_squared omegaflowey.math.2
 scoreboard players operation #omegaflowey.utils:math.distance_squared omegaflowey.math.1 *= #omegaflowey.utils:math.distance_squared omegaflowey.math.1
 scoreboard players operation #omegaflowey.utils:math.distance_squared omegaflowey.math.0 += #omegaflowey.utils:math.distance_squared omegaflowey.math.1
 
 # (y0 - y1)^2
-execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.1 run data get storage utils:math.distance_squared y0 100
-execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.2 run data get storage utils:math.distance_squared y1 100
+execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.1 run data get storage omegaflowey:utils.math.distance_squared y0 100
+execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.2 run data get storage omegaflowey:utils.math.distance_squared y1 100
 scoreboard players operation #omegaflowey.utils:math.distance_squared omegaflowey.math.1 -= #omegaflowey.utils:math.distance_squared omegaflowey.math.2
 scoreboard players operation #omegaflowey.utils:math.distance_squared omegaflowey.math.1 *= #omegaflowey.utils:math.distance_squared omegaflowey.math.1
 scoreboard players operation #omegaflowey.utils:math.distance_squared omegaflowey.math.0 += #omegaflowey.utils:math.distance_squared omegaflowey.math.1
 
 # (z0 - z1)^2
-execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.1 run data get storage utils:math.distance_squared z0 100
-execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.2 run data get storage utils:math.distance_squared z1 100
+execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.1 run data get storage omegaflowey:utils.math.distance_squared z0 100
+execute store result score #omegaflowey.utils:math.distance_squared omegaflowey.math.2 run data get storage omegaflowey:utils.math.distance_squared z1 100
 scoreboard players operation #omegaflowey.utils:math.distance_squared omegaflowey.math.1 -= #omegaflowey.utils:math.distance_squared omegaflowey.math.2
 scoreboard players operation #omegaflowey.utils:math.distance_squared omegaflowey.math.1 *= #omegaflowey.utils:math.distance_squared omegaflowey.math.1
 scoreboard players operation #omegaflowey.utils:math.distance_squared omegaflowey.math.0 += #omegaflowey.utils:math.distance_squared omegaflowey.math.1
 
 # divide by 10000 since we multiplied each input coordinate by 100 to do integer math
-execute store result storage utils:math.distance_squared out float 0.0001 run scoreboard players get #omegaflowey.utils:math.distance_squared omegaflowey.math.0
+execute store result storage omegaflowey:utils.math.distance_squared out float 0.0001 run scoreboard players get #omegaflowey.utils:math.distance_squared omegaflowey.math.0
