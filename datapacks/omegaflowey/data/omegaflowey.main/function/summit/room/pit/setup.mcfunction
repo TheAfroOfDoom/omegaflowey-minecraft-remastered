@@ -1,6 +1,6 @@
-function animated_java:summit_flower_bed/remove/all
+function animated_java:omegaflowey_summitflowerbed/remove/all
 execute positioned -109.5 41.0 33.5 rotated 180 0 run \
-  function animated_java:summit_flower_bed/summon/default
+  function animated_java:omegaflowey_summitflowerbed/summon/default
 
 # player flowers
 function animated_java:flower_contributor/remove/all
