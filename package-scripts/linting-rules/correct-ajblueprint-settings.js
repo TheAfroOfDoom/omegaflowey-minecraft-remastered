@@ -69,6 +69,26 @@ const checkDatapack = (model) => {
   return [error];
 };
 
+/** This flag needs to be enabled to enable the custom CMD offset */
+const checkEnableAdvancedResourcePackSettings = (model) => {
+  const errors = [];
+
+  const expected = true;
+  const actual =
+    model.blueprint_settings.enable_advanced_resource_pack_settings;
+  const isValid = actual === expected;
+  if (!isValid) {
+    let error = `custom model data offset is incorrect: `;
+    error += chalk.redBright(actual);
+    error += ` (expected `;
+    error += chalk.blueBright(expected);
+    error += ` )`;
+    errors.push(error);
+  }
+
+  return errors;
+};
+
 /**
  * Export namespaces need to start with `omegaflowey_` (e.g. `omegaflowey_mouth`)
  * in order to be compatible with Smithed Summit
@@ -131,6 +151,7 @@ const correctAjblueprintSettings = (file) => {
     checkAnimationName,
     checkCustomModelDataOffset,
     checkDatapack,
+    checkEnableAdvancedResourcePackSettings,
     checkExportNamespace,
     checkRigItem,
     checkSummonCommands,
