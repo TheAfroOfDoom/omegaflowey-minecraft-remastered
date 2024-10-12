@@ -17,7 +17,7 @@ execute if entity @s[tag=!x-bullets-upper-save-states] run \
 execute if entity @s[tag=x-bullets-upper-save-states] run \
   scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 2
 $execute positioned $(x) $(y) $(z) rotated $(yaw) $(pitch) run \
-  function animated_java:projectile_star/summon { args: {} }
+  function animated_java:omegaflowey_projectile_star/summon { args: {} }
 scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 0
 
 # Rotate yaw to be ready for next bullet
