@@ -12,6 +12,11 @@ function omegaflowey.utils:log/self { text_component: '[ \
       "\\n", \
       "\\n", \
 \
+      { "text": "kill/all", "color": "yellow" }, \
+      ": kills all omegaflowey entities", \
+      "\\n", \
+      "\\n", \
+\
       { "text": "kill/decorations", "color": "yellow" }, \
       ": kills all decorative AJ models and display entities" \
     ] \
