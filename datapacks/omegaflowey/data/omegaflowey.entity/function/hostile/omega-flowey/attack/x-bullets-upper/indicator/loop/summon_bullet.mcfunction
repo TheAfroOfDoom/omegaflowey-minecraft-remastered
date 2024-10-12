@@ -3,7 +3,7 @@
 # omegaflowey.attack.bullets.remaining = number of bullets left to summon
 # attack.d-phi = angle between bullets
 # attack.phi = angle to summon bullet at
-# attack.theta = pitch to summon bullet at
+# omegaflowey.attack.theta = pitch to summon bullet at
 
 # Toggle between dark-eye and bright-eye variants
 scoreboard players operation @s math.0 = @s omegaflowey.attack.bullets.remaining

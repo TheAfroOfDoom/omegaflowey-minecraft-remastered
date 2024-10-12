@@ -47,7 +47,7 @@ scoreboard objectives add omegaflowey.attack.indicator.remaining dummy
 # total number of indicators an attack-executor will summon
 scoreboard objectives add omegaflowey.attack.indicator.total dummy
 scoreboard objectives add omegaflowey.attack.indicator.yaw dummy
-scoreboard objectives add attack.theta dummy
+scoreboard objectives add omegaflowey.attack.theta dummy
 scoreboard objectives add attack.d-theta dummy
 scoreboard objectives add attack.phi dummy
 scoreboard objectives add attack.d-phi dummy
