@@ -11,7 +11,7 @@ function omegaflowey.entity:hostile/omega-flowey/animate/pipe with storage omega
 
 # Summon and begin animating soul heart model in front of WARNING screen
 function omegaflowey.entity:hostile/omega-flowey/summon/warning/soul with storage omegaflowey:bossfight.animate
-execute as @e[tag=aj.soul.root,tag=omegaflowey.soul.warning] run function omegaflowey.entity:hostile/omega-flowey/animate/warning/soul
+execute as @e[tag=aj.omegaflowey_soul.root,tag=omegaflowey.soul.warning] run function omegaflowey.entity:hostile/omega-flowey/animate/warning/soul
 
 # Summon and begin animating soul tv_screen in other arena
 function omegaflowey.entity:hostile/omega-flowey/summon/soul/tv_screen
