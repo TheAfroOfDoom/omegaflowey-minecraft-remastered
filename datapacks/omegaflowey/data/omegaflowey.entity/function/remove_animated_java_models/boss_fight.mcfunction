@@ -5,7 +5,7 @@ function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_model
 function animated_java:arena_box/remove/all
 
 # Attack models
-function animated_java:bomb/remove/all
+function animated_java:omegaflowey_bomb/remove/all
 function animated_java:dentata_snake_ball/remove/all
 function animated_java:finger_gun/remove/all
 function animated_java:finger_gun_bullet/remove/all
