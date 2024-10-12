@@ -1,6 +1,6 @@
 function animated_java:omegaflowey_large_side_vine/remove/all
 function animated_java:omegaflowey_lower_eye/remove/all
-function animated_java:mouth/remove/all
+function animated_java:omegaflowey_mouth/remove/all
 function animated_java:nose/remove/all
 function animated_java:petal_pipe_circle/remove/all
 function animated_java:petal_pipe_middle/remove/all

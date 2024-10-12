@@ -33,7 +33,7 @@ scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 2
 execute positioned ^15.0 ^11.5 ^6.5 rotated ~-160 ~-40 run function animated_java:petal_pipe_middle/summon { args: {} }
 
 ## Mouth
-execute positioned ^ ^-1.5 ^9.35 rotated ~ ~9 run function animated_java:mouth/summon { args: {} }
+execute positioned ^ ^-1.5 ^9.35 rotated ~ ~9 run function animated_java:omegaflowey_mouth/summon { args: {} }
 
 ## Nose
 execute positioned ^ ^ ^ rotated ~ ~10 run function animated_java:nose/summon { args: {} }
