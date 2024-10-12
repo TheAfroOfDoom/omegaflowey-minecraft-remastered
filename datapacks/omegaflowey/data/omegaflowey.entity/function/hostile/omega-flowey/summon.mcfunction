@@ -10,9 +10,9 @@ tag @e[tag=aj.large_side_vine.root,tag=!large_side_vine.right] add large_side_vi
 
 ## Lower eyes
 # Right-eye
-execute positioned -5 42 -7 rotated 170 -20 run function animated_java:lower_eye/summon { args: {} }
+execute positioned -5 42 -7 rotated 170 -20 run function animated_java:omegaflowey_lower_eye/summon { args: {} }
 # Left-eye
-execute positioned 5 42 -7 rotated 10 20 run function animated_java:lower_eye/summon { args: {} }
+execute positioned 5 42 -7 rotated 10 20 run function animated_java:omegaflowey_lower_eye/summon { args: {} }
 
 ## Lower petal pipes
 # Right-lower petal pipe

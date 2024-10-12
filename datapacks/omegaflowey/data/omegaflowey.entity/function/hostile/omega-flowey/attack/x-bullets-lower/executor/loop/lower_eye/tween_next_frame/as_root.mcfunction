@@ -1,4 +1,4 @@
-## as `aj.lower_eye.root`
+## as `aj.omegaflowey_lower_eye.root`
 
 # store next frame index
 scoreboard players operation @s omegaflowey.math.0 = @s aj.look_around.frame
@@ -11,4 +11,4 @@ execute store result storage omegaflowey:attack.x-bullets-lower to_frame int 1 r
 execute store result storage omegaflowey:attack.x-bullets-lower duration int 1 \
   run scoreboard players get #omegaflowey.attack.x-bullets-lower.tween_duration omegaflowey.math.const
 
-function animated_java:lower_eye/animations/look_around/tween with storage omegaflowey:attack.x-bullets-lower
+function animated_java:omegaflowey_lower_eye/animations/look_around/tween with storage omegaflowey:attack.x-bullets-lower

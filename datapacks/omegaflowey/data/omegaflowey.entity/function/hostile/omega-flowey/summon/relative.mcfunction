@@ -11,10 +11,10 @@ execute positioned ^27.0 ^3.5 ^4.5 rotated ~215 ~-10 run function animated_java:
 ## Lower eyes
 # Right-eye
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
-execute positioned ^-5.5 ^5.5 ^6.5 rotated ~170 ~-20 run function animated_java:lower_eye/summon { args: {} }
+execute positioned ^-5.5 ^5.5 ^6.5 rotated ~170 ~-20 run function animated_java:omegaflowey_lower_eye/summon { args: {} }
 # Left-eye
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 2
-execute positioned ^5.5 ^5.5 ^6.5 rotated ~10 ~20 run function animated_java:lower_eye/summon { args: {} }
+execute positioned ^5.5 ^5.5 ^6.5 rotated ~10 ~20 run function animated_java:omegaflowey_lower_eye/summon { args: {} }
 
 ## Lower petal pipes
 # Right-lower petal pipe
