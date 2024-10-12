@@ -1,5 +1,8 @@
 tag @s add omegaflowey.player.fighting_flowey
 
+# Required by summit to disable regen during the fight
+tag @s add summit.no_regen
+
 function gu:generate
 data modify storage omegaflowey:bossfight active_player_uuid set from storage gu:main out
 
