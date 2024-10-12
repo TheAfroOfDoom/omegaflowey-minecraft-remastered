@@ -1,1 +1,1 @@
-function animated_java:friendliness_pellet/remove/this
+function animated_java:omegaflowey_friendliness_pellet/remove/this

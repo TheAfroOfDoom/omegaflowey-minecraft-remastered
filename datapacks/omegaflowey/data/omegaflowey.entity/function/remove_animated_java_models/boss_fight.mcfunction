@@ -10,8 +10,8 @@ function animated_java:omegaflowey_dentata_snake_ball/remove/all
 function animated_java:omegaflowey_finger_gun/remove/all
 function animated_java:omegaflowey_finger_gun_bullet/remove/all
 function animated_java:omegaflowey_finger_gun_laser/remove/all
-function animated_java:friendliness_pellet/remove/all
-function animated_java:friendliness_pellet_ring/remove/all
+function animated_java:omegaflowey_friendliness_pellet/remove/all
+function animated_java:omegaflowey_friendliness_pellet_ring/remove/all
 function animated_java:homing_vine/remove/all
 function animated_java:homing_vine_blinking_lane/remove/all
 function animated_java:housefly/remove/all
