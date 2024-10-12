@@ -1,5 +1,5 @@
 give @s carved_pumpkin[ \
-  minecraft:custom_model_data=2, \
+  minecraft:custom_model_data=4654466, \
   minecraft:rarity=epic, \
   minecraft:enchantment_glint_override=true, \
   minecraft:fire_resistant={}, \
