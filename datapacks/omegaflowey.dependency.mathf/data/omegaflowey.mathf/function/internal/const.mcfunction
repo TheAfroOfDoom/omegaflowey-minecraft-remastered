@@ -1,7 +1,7 @@
-#> mathf:internal/const
+#> omegaflowey.mathf:internal/const
 #
 # Constant values used in calculations.
-# @within mathf:internal/init
+# @within omegaflowey.mathf:internal/init
 
 scoreboard objectives remove mathf.const
 scoreboard objectives add mathf.const dummy

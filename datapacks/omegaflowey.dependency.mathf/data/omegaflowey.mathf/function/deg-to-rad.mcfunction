@@ -1,10 +1,10 @@
-#> mathf:deg-to-rad
-# 
+#> omegaflowey.mathf:deg-to-rad
+#
 # Converts from degrees (at scale 100) to radians (at scale 1000)
-# 
+#
 # @input    score   i0    mathf.io   Input in degrees.
 # @output   score   o0    mathf.io   Output in radians.
-# 
+#
 # @public
 # @context any
 

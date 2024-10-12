@@ -1,5 +1,5 @@
-#> mathf:private/sqrt-loop
-# @within function mathf:sqrt
+#> omegaflowey.mathf:private/sqrt-loop
+# @within function omegaflowey.mathf:sqrt
 
 scoreboard players add sqrtCount mathf.data 1
 scoreboard players operation sqrtValue mathf.data = i0 mathf.io
@@ -19,4 +19,4 @@ scoreboard players operation sqrtValue.n-2 mathf.data = sqrtValue.n-1 mathf.data
 scoreboard players operation sqrtValue.n-1 mathf.data = sqrtValue mathf.data
 
 # Loop the function if not accurate enough
-execute if score sqrtFinished mathf.data matches 0 run function mathf:private/sqrt-loop
+execute if score sqrtFinished mathf.data matches 0 run function omegaflowey.mathf:private/sqrt-loop

@@ -1,5 +1,5 @@
-#> mathf:trig/private/sin-loop
-# @within function mathf:trig/sin
+#> omegaflowey.mathf:trig/private/sin-loop
+# @within function omegaflowey.mathf:trig/sin
 
 scoreboard players add powerCount mathf.data 1
 scoreboard players operation sinPower mathf.data *= temp mathf.data
@@ -10,4 +10,4 @@ execute if score powerCount mathf.data matches 5 run scoreboard players operatio
 execute if score powerCount mathf.data matches 7 run scoreboard players operation angPow7 mathf.data = sinPower mathf.data
 execute if score powerCount mathf.data matches 9 run scoreboard players operation angPow9 mathf.data = sinPower mathf.data
 
-execute if score powerCount mathf.data matches ..8 run function mathf:trig/private/sin-loop
+execute if score powerCount mathf.data matches ..8 run function omegaflowey.mathf:trig/private/sin-loop

@@ -1,4 +1,4 @@
-#> mathf:minecraft/entity-rotation-to-vector
+#> omegaflowey.mathf:minecraft/entity-rotation-to-vector
 # Finds the vector of rotation of the entity with tag mathf.entity0. The entity will have the tag mathf.entity0 removed.
 # @input
 #   entity mathf.entity0    The tagged entity to find the vector of.
@@ -15,4 +15,4 @@ execute store result score i1 mathf.io run data get entity @e[tag=mathf.entity0,
 
 tag @e[tag=mathf.entity0] remove mathf.entity0
 
-function mathf:rotation/rotation-to-vector
+function omegaflowey.mathf:rotation/rotation-to-vector

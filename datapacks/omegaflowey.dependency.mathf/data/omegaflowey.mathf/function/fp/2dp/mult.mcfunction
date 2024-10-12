@@ -1,13 +1,13 @@
-#> mathf:fp/2dp/mult
-# 
+#> omegaflowey.mathf:fp/2dp/mult
+#
 # Multiplies a 2dp floating point by another floating point.
-# 
+#
 # @input
 #   score i0 mathf.io First Number.
 #   score i1 mathf.io Second Number.
-# 
+#
 # @output score o0 mathf.io Result.
-# 
+#
 # @public
 # @context any
 
