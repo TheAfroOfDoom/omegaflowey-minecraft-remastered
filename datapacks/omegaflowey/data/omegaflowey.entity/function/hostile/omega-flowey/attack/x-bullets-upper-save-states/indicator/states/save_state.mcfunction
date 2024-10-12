@@ -16,7 +16,7 @@ data modify storage attack:x-bullets-upper-save-states current_state.rotation_ya
 data modify storage attack:x-bullets-upper-save-states current_state.rotation_pitch set from entity @s Rotation[1]
 
 # Scores
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_bullets_remaining int 1 run scoreboard players get @s attack.bullets.remaining
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_bullets_remaining int 1 run scoreboard players get @s omegaflowey.attack.bullets.remaining
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_clock_i int 1 run scoreboard players get @s attack.clock.i
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_x int 1 run scoreboard players get @s attack.position.x
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_y int 1 run scoreboard players get @s attack.position.y

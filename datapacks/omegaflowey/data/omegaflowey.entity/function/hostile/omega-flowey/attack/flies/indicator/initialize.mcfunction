@@ -2,7 +2,7 @@
 scoreboard players set @s attack.clock.i -1
 scoreboard players operation @s attack.clock.i -= #attack-flies attack.indicator.clock.delay
 
-scoreboard players operation @s attack.bullets.remaining = #attack-flies attack.bullets.total
+scoreboard players operation @s omegaflowey.attack.bullets.remaining = #attack-flies omegaflowey.attack.bullets.total
 scoreboard players operation @s attack.indicator.rate = #attack-flies attack.indicator.rate
 
 # Store if this is a flipped indicator (across x-axis) or not

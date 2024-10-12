@@ -1,22 +1,22 @@
 ## Add dummy objectives
 # delay (in ticks) to wait after finished summoning bullets before summoning next set of bullets / performing next action
-scoreboard objectives add attack.bullets.clock.delay dummy
+scoreboard objectives add omegaflowey.attack.bullets.clock.delay dummy
 # time ticker for bullet-summoning logic
-scoreboard objectives add attack.bullets.clock.i dummy
+scoreboard objectives add omegaflowey.attack.bullets.clock.i dummy
 # number of bullets an indicator has summoned so far
-scoreboard objectives add attack.bullets.count dummy
+scoreboard objectives add omegaflowey.attack.bullets.count dummy
 # x-coordinate for indicator to summon bullet at
-scoreboard objectives add attack.bullets.position.x dummy
+scoreboard objectives add omegaflowey.attack.bullets.position.x dummy
 # z-coordinate for indicator to summon bullet at
-scoreboard objectives add attack.bullets.position.z dummy
+scoreboard objectives add omegaflowey.attack.bullets.position.z dummy
 # storage score to hold calculated radius of a bullet for damaging-purposes
-scoreboard objectives add attack.bullets.radius dummy
+scoreboard objectives add omegaflowey.attack.bullets.radius dummy
 # number of bullets left to summon in a set
-scoreboard objectives add attack.bullets.remaining dummy
+scoreboard objectives add omegaflowey.attack.bullets.remaining dummy
 # visual scale at which bullet is summoned
-scoreboard objectives add attack.bullets.scale dummy
+scoreboard objectives add omegaflowey.attack.bullets.scale dummy
 # total number of bullets to summon each set
-scoreboard objectives add attack.bullets.total dummy
+scoreboard objectives add omegaflowey.attack.bullets.total dummy
 scoreboard objectives add attack.clock.i dummy
 scoreboard objectives add attack.cone dummy
 # delay (in ticks) before an attack-executor begins summoning indicators

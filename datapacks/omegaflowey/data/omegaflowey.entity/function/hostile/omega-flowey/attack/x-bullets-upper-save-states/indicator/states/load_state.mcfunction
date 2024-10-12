@@ -1,4 +1,4 @@
-execute store result score @s attack.bullets.remaining run data get storage attack:x-bullets-upper-save-states state_scores.attack_bullets_remaining
+execute store result score @s omegaflowey.attack.bullets.remaining run data get storage attack:x-bullets-upper-save-states state_scores.attack_bullets_remaining
 execute store result score @s attack.clock.i run data get storage attack:x-bullets-upper-save-states state_scores.attack_clock_i
 execute store result score @s attack.position.x run data get storage attack:x-bullets-upper-save-states state_scores.attack_position_x
 execute store result score @s attack.position.y run data get storage attack:x-bullets-upper-save-states state_scores.attack_position_y

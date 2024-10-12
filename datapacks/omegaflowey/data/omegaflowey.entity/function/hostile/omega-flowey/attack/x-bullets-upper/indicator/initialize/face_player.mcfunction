@@ -1,6 +1,6 @@
 ## faces closest player and summons `x-bullets-upper` bullets using `attack.cone` and `attack.bullets`
 
-scoreboard players set @s attack.bullets.clock.i -1
+scoreboard players set @s omegaflowey.attack.bullets.clock.i -1
 
 function omegaflowey.entity:utils/store_position
 # Save bone position to score
@@ -21,6 +21,6 @@ scoreboard players operation @s attack.phi -= @s math.0
 
 # Store angle between bullets in attack.d-phi
 scoreboard players operation @s attack.d-phi = @s attack.cone
-scoreboard players operation @s math.0 = @s attack.bullets.total
+scoreboard players operation @s math.0 = @s omegaflowey.attack.bullets.total
 scoreboard players remove @s math.0 1
 scoreboard players operation @s attack.d-phi /= @s math.0

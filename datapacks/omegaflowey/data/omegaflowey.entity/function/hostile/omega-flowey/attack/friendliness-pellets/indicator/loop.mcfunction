@@ -18,13 +18,13 @@ execute if score @s attack.clock.i matches ..-1 run return 0
 execute if score @s attack.clock.i matches 0 run \
   function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/terminate_ring with entity @s data
 
-# Summon a bullet each tick that `attack.bullets.count` is less than `attack.bullets.total`
-execute if score @s attack.bullets.count < @s attack.bullets.total run function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/presummon_bullet
+# Summon a bullet each tick that `omegaflowey.attack.bullets.count` is less than `omegaflowey.attack.bullets.total`
+execute if score @s omegaflowey.attack.bullets.count < @s omegaflowey.attack.bullets.total run function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/presummon_bullet
 
 # Add to post-bullet-summoning clock after all bullets have been summoned
-execute if score @s attack.bullets.count = @s attack.bullets.total run scoreboard players add @s attack.bullets.clock.i 1
+execute if score @s omegaflowey.attack.bullets.count = @s omegaflowey.attack.bullets.total run scoreboard players add @s omegaflowey.attack.bullets.clock.i 1
 
-# After `attack.bullets.clock.delay` ticks, terminate (and activate all bullets)
-# TODO(44): this could be off by one tick (might need to be `attack.bullets.clock.delay - 1`?)
-execute if score @s attack.bullets.clock.i = @s attack.bullets.clock.delay run \
+# After `omegaflowey.attack.bullets.clock.delay` ticks, terminate (and activate all bullets)
+# TODO(44): this could be off by one tick (might need to be `omegaflowey.attack.bullets.clock.delay - 1`?)
+execute if score @s omegaflowey.attack.bullets.clock.i = @s omegaflowey.attack.bullets.clock.delay run \
   function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/terminate with entity @s data

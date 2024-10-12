@@ -8,8 +8,8 @@ tag @s add homing-vines
 # Set scores
 scoreboard players operation @s attack.clock.i -= #attack-homing-vines attack.indicator.clock.delay
 
-scoreboard players set @s attack.bullets.count 0
-scoreboard players operation @s attack.bullets.total = #attack-homing-vines attack.bullets.total
+scoreboard players set @s omegaflowey.attack.bullets.count 0
+scoreboard players operation @s omegaflowey.attack.bullets.total = #attack-homing-vines omegaflowey.attack.bullets.total
 
 # Summon indicator in a range around the player
 function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/indicator/initialize/randomize_indicator_position

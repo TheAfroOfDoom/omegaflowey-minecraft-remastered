@@ -1,6 +1,6 @@
 scoreboard players add @s attack.clock.i 1
 
-execute store result storage utils:damage radius float 0.0001 run scoreboard players get @s attack.bullets.radius
+execute store result storage utils:damage radius float 0.0001 run scoreboard players get @s omegaflowey.attack.bullets.radius
 data merge storage utils:damage { damage: 2.5 }
 function omegaflowey.entity:utils/damage with storage utils:damage
 

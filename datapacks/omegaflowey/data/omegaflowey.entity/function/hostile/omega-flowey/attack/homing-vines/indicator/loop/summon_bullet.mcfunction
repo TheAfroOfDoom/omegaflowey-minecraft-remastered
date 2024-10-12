@@ -4,4 +4,4 @@ $execute positioned $(x) $(y) $(z) rotated $(bullet_yaw) $(bullet_pitch) run \
   function animated_java:homing_vine/summon { args: { animation: "default", start_animation: true } }
 
 # Increment bullets summoned so far
-scoreboard players add @s attack.bullets.count 1
+scoreboard players add @s omegaflowey.attack.bullets.count 1

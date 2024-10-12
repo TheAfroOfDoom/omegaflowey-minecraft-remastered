@@ -16,7 +16,7 @@ scoreboard players operation @s attack.phi = @s attack.indicator.yaw
 
 # Store angle between bullets in `attack.d-phi`
 scoreboard players operation @s attack.d-phi = @s attack.cone
-scoreboard players operation @s math.0 = @s attack.bullets.total
+scoreboard players operation @s math.0 = @s omegaflowey.attack.bullets.total
 scoreboard players remove @s math.0 1
 scoreboard players operation @s attack.d-phi /= @s math.0
 
