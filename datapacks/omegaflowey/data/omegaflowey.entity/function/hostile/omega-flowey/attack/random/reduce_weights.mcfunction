@@ -1,7 +1,7 @@
 ## Reduce weight of attack if it was just ran
 scoreboard players set @s omegaflowey.attack.weight 5
 
-execute if entity @s[tag=attack.random.previous_attack.bomb] run scoreboard players operation #attack-bomb omegaflowey.attack.weight -= @s omegaflowey.attack.weight
+execute if entity @s[tag=attack.random.previous_attack.bomb] run scoreboard players operation #omegaflowey.attack.bomb omegaflowey.attack.weight -= @s omegaflowey.attack.weight
 execute if entity @s[tag=attack.random.previous_attack.bomb] run tag @s remove attack.random.previous_attack.bomb
 
 execute if entity @s[tag=attack.random.previous_attack.dentata-snakes] run scoreboard players operation #attack-dentata-snakes omegaflowey.attack.weight -= @s omegaflowey.attack.weight
