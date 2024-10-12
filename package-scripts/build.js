@@ -99,6 +99,7 @@ const getSummitDatapackPaths = () => {
     'pack.mcmeta',
     ...prefixPaths('data/', [
       'minecraft',
+      'omegaflowey.admin/function/',
       ...entityPaths,
       'omegaflowey.main/function/',
       ...utilsPaths,
