@@ -25,7 +25,7 @@ execute if entity @s[tag=attack.random.previous_attack.homing-vines-save-states]
 execute if entity @s[tag=attack.random.previous_attack.x-bullets-lower] run scoreboard players operation #omegaflowey.attack.x-bullets-lower omegaflowey.attack.weight -= @s omegaflowey.attack.weight
 execute if entity @s[tag=attack.random.previous_attack.x-bullets-lower] run tag @s remove attack.random.previous_attack.x-bullets-lower
 
-execute if entity @s[tag=attack.random.previous_attack.x-bullets-upper] run scoreboard players operation #attack-x-bullets-upper omegaflowey.attack.weight -= @s omegaflowey.attack.weight
+execute if entity @s[tag=attack.random.previous_attack.x-bullets-upper] run scoreboard players operation #omegaflowey.attack.x-bullets-upper omegaflowey.attack.weight -= @s omegaflowey.attack.weight
 execute if entity @s[tag=attack.random.previous_attack.x-bullets-upper] run tag @s remove attack.random.previous_attack.x-bullets-upper
 
 execute if entity @s[tag=attack.random.previous_attack.x-bullets-upper-save-states] run scoreboard players operation #omegaflowey.attack.x-bullets-upper-save-states omegaflowey.attack.weight -= @s omegaflowey.attack.weight

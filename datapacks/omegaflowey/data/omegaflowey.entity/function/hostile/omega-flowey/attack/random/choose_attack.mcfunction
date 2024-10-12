@@ -36,9 +36,9 @@ scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.x-bull
 execute if score #omegaflowey.attack.x-bullets-lower omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/x-bullets-lower
 execute if score #omegaflowey.attack.x-bullets-lower omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
 
-scoreboard players operation @s omegaflowey.math.0 -= #attack-x-bullets-upper omegaflowey.attack.weight
-execute if score #attack-x-bullets-upper omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/x-bullets-upper
-execute if score #attack-x-bullets-upper omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
+scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.x-bullets-upper omegaflowey.attack.weight
+execute if score #omegaflowey.attack.x-bullets-upper omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/x-bullets-upper
+execute if score #omegaflowey.attack.x-bullets-upper omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
 
 scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.x-bullets-upper-save-states omegaflowey.attack.weight
 execute if score #omegaflowey.attack.x-bullets-upper-save-states omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/x-bullets-upper-save-states
