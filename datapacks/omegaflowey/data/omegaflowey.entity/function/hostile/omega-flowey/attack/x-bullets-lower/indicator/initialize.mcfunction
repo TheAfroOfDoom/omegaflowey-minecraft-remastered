@@ -12,9 +12,9 @@ scoreboard players operation @s omegaflowey.attack.cone = #attack-x-bullets-lowe
 scoreboard players operation @s omegaflowey.attack.bullets.remaining = @s omegaflowey.attack.bullets.total
 
 # Determine if this indicator belongs to the right/left eye
-execute store result score @s math.0 run data get entity @s Pos[0] 100
-scoreboard players operation @s math.0 -= #omega-flowey.bossfight.summit.origin.x omegaflowey.global.flag
-execute if score @s math.0 matches 0.. run tag @s add indicator.left
+execute store result score @s omegaflowey.math.0 run data get entity @s Pos[0] 100
+scoreboard players operation @s omegaflowey.math.0 -= #omega-flowey.bossfight.summit.origin.x omegaflowey.global.flag
+execute if score @s omegaflowey.math.0 matches 0.. run tag @s add indicator.left
 
 # Face nearest player
 function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-lower/indicator/initialize/face_player

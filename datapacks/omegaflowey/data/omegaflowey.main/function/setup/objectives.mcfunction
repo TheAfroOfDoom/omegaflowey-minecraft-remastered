@@ -86,12 +86,12 @@ scoreboard objectives add omegaflowey.global.flag dummy
 scoreboard objectives add omegaflowey.group.id dummy
 scoreboard objectives add omegaflowey.group.id.tree.level dummy
 
-scoreboard objectives add math.0 dummy
-scoreboard objectives add math.1 dummy
-scoreboard objectives add math.2 dummy
-scoreboard objectives add math.bool dummy
-scoreboard objectives add math.const dummy
-scoreboard objectives add math.trials dummy
+scoreboard objectives add omegaflowey.math.0 dummy
+scoreboard objectives add omegaflowey.math.1 dummy
+scoreboard objectives add omegaflowey.math.2 dummy
+scoreboard objectives add omegaflowey.math.bool dummy
+scoreboard objectives add omegaflowey.math.const dummy
+scoreboard objectives add omegaflowey.math.trials dummy
 
 scoreboard objectives add music.clock.i dummy
 scoreboard objectives add music.clock.total dummy

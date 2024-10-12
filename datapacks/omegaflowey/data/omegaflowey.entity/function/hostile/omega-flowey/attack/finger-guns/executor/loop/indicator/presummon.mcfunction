@@ -1,12 +1,12 @@
 # randomize x-position
 scoreboard players operation @s omegaflowey.attack.position.x = #omega-flowey.bossfight.summit.origin.x omegaflowey.global.flag
-execute store result score @s math.0 run random value 0..1
-execute if score @s math.0 matches 0 run scoreboard players remove @s omegaflowey.attack.position.x 1400
-execute if score @s math.0 matches 1 run scoreboard players add @s omegaflowey.attack.position.x 1400
+execute store result score @s omegaflowey.math.0 run random value 0..1
+execute if score @s omegaflowey.math.0 matches 0 run scoreboard players remove @s omegaflowey.attack.position.x 1400
+execute if score @s omegaflowey.math.0 matches 1 run scoreboard players add @s omegaflowey.attack.position.x 1400
 
 # set yaw based on randomized x-side of arena
 scoreboard players set @s omegaflowey.attack.indicator.yaw -9000
-execute if score @s math.0 matches 1 run scoreboard players set @s omegaflowey.attack.indicator.yaw 9000
+execute if score @s omegaflowey.math.0 matches 1 run scoreboard players set @s omegaflowey.attack.indicator.yaw 9000
 
 # y-position
 scoreboard players operation @s omegaflowey.attack.position.y = #omega-flowey.bossfight.summit.origin.y omegaflowey.global.flag

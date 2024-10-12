@@ -1,5 +1,5 @@
 # randomize yaw (0..2pi) until the next crosshair would no longer summon too close to the indicator
-scoreboard players set @s math.trials -1
+scoreboard players set @s omegaflowey.math.trials -1
 function omegaflowey.entity:soul/soul_5/indicator/loop/aiming/next_crosshair/randomize_yaw
 
 # summon hearts instead of crosshairs upon `saved`

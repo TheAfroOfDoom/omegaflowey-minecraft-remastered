@@ -13,10 +13,10 @@ execute as @p[tag=omegaflowey.player.fighting_flowey] at @s positioned ~ 34.0 ~ 
 function omegaflowey.utils:math/distance_squared
 
 # Move towards nearest player like gravity -- inverse squared relationship of acceleration (velocity) : distance
-scoreboard players set @s math.0 1000000
-execute store result score @s math.1 run data get storage utils:math.distance_squared out
-scoreboard players operation @s math.0 /= @s math.1
-execute store result storage soul:soul_0.bandaid gravity int 1 run scoreboard players get @s math.0
+scoreboard players set @s omegaflowey.math.0 1000000
+execute store result score @s omegaflowey.math.1 run data get storage utils:math.distance_squared out
+scoreboard players operation @s omegaflowey.math.0 /= @s omegaflowey.math.1
+execute store result storage soul:soul_0.bandaid gravity int 1 run scoreboard players get @s omegaflowey.math.0
 
 # NOTE: you can tune these constants to tune the effect of "gravity" on how fast the bandaid rotates / moves towards the player
 # TODO(88): tune these velocity/rotation constants

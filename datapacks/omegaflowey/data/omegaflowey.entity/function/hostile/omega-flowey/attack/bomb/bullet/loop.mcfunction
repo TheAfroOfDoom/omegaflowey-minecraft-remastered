@@ -18,15 +18,15 @@ execute if score @s omegaflowey.attack.clock.i matches 20 run function omegaflow
 execute if score @s omegaflowey.attack.clock.i matches 20.. run teleport @s ~ ~-2.2 ~
 
 # Check if below the floor
-scoreboard players set @s math.0 0
+scoreboard players set @s omegaflowey.math.0 0
 function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
   command: "execute positioned ~100.0 ~-4.0 ~87.5 if entity @s[dx=-200,dy=-20,dz=-200] run \
-    scoreboard players set @s math.0 1\
+    scoreboard players set @s omegaflowey.math.0 1\
   " \
 }
 
 # Stop falling after bomb falls through floor
-execute if score @s math.0 matches 1 run function omegaflowey.entity:hostile/omega-flowey/attack/bomb/bullet/loop/stop_falling
+execute if score @s omegaflowey.math.0 matches 1 run function omegaflowey.entity:hostile/omega-flowey/attack/bomb/bullet/loop/stop_falling
 
 # TODO(68): validate/determine a value for how long until the bomb bullets terminate
 # Terminate after X seconds

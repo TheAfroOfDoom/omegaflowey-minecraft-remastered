@@ -9,4 +9,4 @@ scoreboard players set #attack-x-bullets-lower omegaflowey.attack.executor.rate 
 scoreboard players set #attack-x-bullets-lower omegaflowey.attack.indicator.total 7
 scoreboard players set #attack-x-bullets-lower omegaflowey.attack.speed.z 150
 
-scoreboard players set #attack-x-bullets-lower.tween_duration math.const 3
+scoreboard players set #attack-x-bullets-lower.tween_duration omegaflowey.math.const 3

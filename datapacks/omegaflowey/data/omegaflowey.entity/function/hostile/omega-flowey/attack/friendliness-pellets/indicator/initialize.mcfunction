@@ -25,4 +25,4 @@ data modify entity @s data.corresponding_ring_uuid set from storage gu:main out
 
 # Randomize initial yaw
 execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
-execute store result score @s math.0 run data get entity @s Rotation[0] 100
+execute store result score @s omegaflowey.math.0 run data get entity @s Rotation[0] 100

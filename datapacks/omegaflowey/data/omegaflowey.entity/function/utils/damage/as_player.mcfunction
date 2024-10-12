@@ -4,9 +4,9 @@ $execute \
   if score @s player.health matches ..$(damage) \
   unless data entity @s active_effects[{ amplifier: 4b, duration: -1, id: "minecraft:resistance" }] \
   run scoreboard players set #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag 1
-execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 store result score @s math.0 run gamerule showDeathMessages
+execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 store result score @s omegaflowey.math.0 run gamerule showDeathMessages
 execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 \
-  if score @s math.0 matches 1 run gamerule showDeathMessages false
+  if score @s omegaflowey.math.0 matches 1 run gamerule showDeathMessages false
 
 # TODO(39): remove these `unless entity @e[tag=boss_fight]`/`if entity @e[tag=boss_fight]` checks when boss fight is fully setup
 # we have it here for development so that the boss entity (omega-flowey)
@@ -33,4 +33,4 @@ execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.gl
 
 # Re-enable `showDeathMessages` if it was enabled previously
 execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 \
-  if score @s math.0 matches 1 run gamerule showDeathMessages true
+  if score @s omegaflowey.math.0 matches 1 run gamerule showDeathMessages true

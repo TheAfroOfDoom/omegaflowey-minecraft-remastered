@@ -5,15 +5,15 @@ data merge storage utils:damage { damage: 2.5 }
 function omegaflowey.entity:utils/damage with storage utils:damage
 
 # Check if inside arena
-scoreboard players set @s math.0 0
+scoreboard players set @s omegaflowey.math.0 0
 function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
   command: "execute positioned ~12.5 ~-17.0 ~-11.0 if entity @s[dx=-25,dy=40,dz=-19] run \
-    scoreboard players set @s math.0 1\
+    scoreboard players set @s omegaflowey.math.0 1\
   " \
 }
 
 # Bounce if hit edge of arena
-execute if score @s math.0 matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/maybe_bounce
+execute if score @s omegaflowey.math.0 matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/maybe_bounce
 
 # Move forward at defined `omegaflowey.attack.speed.z` velocity
 execute store result storage utils:move z float 0.01 run scoreboard players get @s omegaflowey.attack.speed.z

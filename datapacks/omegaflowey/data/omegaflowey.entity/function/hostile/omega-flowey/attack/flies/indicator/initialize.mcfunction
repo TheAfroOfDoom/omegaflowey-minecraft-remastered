@@ -6,8 +6,8 @@ scoreboard players operation @s omegaflowey.attack.bullets.remaining = #attack-f
 scoreboard players operation @s omegaflowey.attack.indicator.rate = #attack-flies omegaflowey.attack.indicator.rate
 
 # Store if this is a flipped indicator (across x-axis) or not
-execute store result score @s math.0 run data get entity @s Pos[0] 1
-execute if score @s math.0 matches ..0 run tag @s add is_flipped
+execute store result score @s omegaflowey.math.0 run data get entity @s Pos[0] 1
+execute if score @s omegaflowey.math.0 matches ..0 run tag @s add is_flipped
 
 # Set group ID
 function omegaflowey.entity:group/set

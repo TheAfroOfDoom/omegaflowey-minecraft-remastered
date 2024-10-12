@@ -15,12 +15,12 @@ execute store result score @s omegaflowey.attack.theta run data get entity @s Ro
 
 # Store angle to left-most bullet in omegaflowey.attack.phi
 scoreboard players operation @s omegaflowey.attack.phi = @s omegaflowey.attack.indicator.yaw
-scoreboard players operation @s math.0 = @s omegaflowey.attack.cone
-scoreboard players operation @s math.0 /= #2 math.const
-scoreboard players operation @s omegaflowey.attack.phi -= @s math.0
+scoreboard players operation @s omegaflowey.math.0 = @s omegaflowey.attack.cone
+scoreboard players operation @s omegaflowey.math.0 /= #2 omegaflowey.math.const
+scoreboard players operation @s omegaflowey.attack.phi -= @s omegaflowey.math.0
 
 # Store angle between bullets in omegaflowey.attack.d-phi
 scoreboard players operation @s omegaflowey.attack.d-phi = @s omegaflowey.attack.cone
-scoreboard players operation @s math.0 = @s omegaflowey.attack.bullets.total
-scoreboard players remove @s math.0 1
-scoreboard players operation @s omegaflowey.attack.d-phi /= @s math.0
+scoreboard players operation @s omegaflowey.math.0 = @s omegaflowey.attack.bullets.total
+scoreboard players remove @s omegaflowey.math.0 1
+scoreboard players operation @s omegaflowey.attack.d-phi /= @s omegaflowey.math.0
