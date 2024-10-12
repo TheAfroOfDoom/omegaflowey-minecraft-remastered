@@ -1,5 +1,5 @@
 # Set scores
-scoreboard players set @s soul.clock.i -1
+scoreboard players set @s omegaflowey.soul.clock.i -1
 
 # Add tags
 tag @s add soul_5

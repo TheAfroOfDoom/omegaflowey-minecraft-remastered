@@ -7,7 +7,7 @@ execute as @e[ \
   tag=omega-flowey-remastered \
 ] run function omegaflowey.entity:soul/soul_5/executor/terminate/as_root
 
-stopsound @a record omega-flowey:music.soul.5
+stopsound @a record omega-flowey:music.omegaflowey.soul.5
 stopsound @a record omega-flowey:soul.saved
 effect clear @a[tag=omegaflowey.player.fighting_flowey] minecraft:resistance
 

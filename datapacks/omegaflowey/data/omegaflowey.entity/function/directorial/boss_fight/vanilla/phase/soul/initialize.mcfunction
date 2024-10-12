@@ -16,5 +16,5 @@ tag @s add boss_fight.phase.soul
 
 # Delete main flowey models for performance reasons
 function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_models/except_tv_screen
-execute as @e[tag=aj.soul.root,tag=soul.warning] run function animated_java:soul/remove/this
+execute as @e[tag=aj.soul.root,tag=omegaflowey.soul.warning] run function animated_java:soul/remove/this
 execute as @e[tag=aj.tv_screen.root,tag=tv_screen.boss_fight] run function animated_java:tv_screen/remove/this

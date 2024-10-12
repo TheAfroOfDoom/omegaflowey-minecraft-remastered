@@ -3,11 +3,11 @@ function omegaflowey.entity:soul/shared/executor/initialize
 data modify entity @s CustomName set value '"Soul 5 Executor"'
 
 # Set scores
-scoreboard players operation @s soul.executor.clock.length = #soul-5 soul.executor.clock.length
+scoreboard players operation @s omegaflowey.soul.executor.clock.length = #soul-5 omegaflowey.soul.executor.clock.length
 
-scoreboard players reset @s soul.clock.touched_act_button
-scoreboard players set #soul_5.saved soul.flag 0
-scoreboard players set #soul_5.touched soul.flag 0
+scoreboard players reset @s omegaflowey.soul.clock.touched_act_button
+scoreboard players set #soul_5.saved omegaflowey.soul.flag 0
+scoreboard players set #soul_5.touched omegaflowey.soul.flag 0
 
 # Store this UUID to a global storage for later reference
 function gu:generate

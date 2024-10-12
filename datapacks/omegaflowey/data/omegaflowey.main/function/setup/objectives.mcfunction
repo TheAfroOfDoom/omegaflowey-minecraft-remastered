@@ -108,33 +108,33 @@ scoreboard objectives add omegaflowey.player.trigger.bossfight.confirm trigger
 scoreboard objectives add omegaflowey.player.trigger.bossfight.deny trigger
 
 # x/z spans of the bullet grid
-scoreboard objectives add soul.bullet.position.dx dummy
-scoreboard objectives add soul.bullet.position.dz dummy
+scoreboard objectives add omegaflowey.soul.bullet.position.dx dummy
+scoreboard objectives add omegaflowey.soul.bullet.position.dz dummy
 # x start/end points of the bullet grid
-scoreboard objectives add soul.bullet.position.x dummy
-scoreboard objectives add soul.bullet.position.x.end dummy
+scoreboard objectives add omegaflowey.soul.bullet.position.x dummy
+scoreboard objectives add omegaflowey.soul.bullet.position.x.end dummy
 # yaw bullets will summon at
-scoreboard objectives add soul.bullet.position.yaw dummy
+scoreboard objectives add omegaflowey.soul.bullet.position.yaw dummy
 # z start/end points of the bullet grid
-scoreboard objectives add soul.bullet.position.z dummy
-scoreboard objectives add soul.bullet.position.z.end dummy
-scoreboard objectives add soul.clock.animation dummy
-scoreboard objectives add soul.clock.i dummy
+scoreboard objectives add omegaflowey.soul.bullet.position.z dummy
+scoreboard objectives add omegaflowey.soul.bullet.position.z.end dummy
+scoreboard objectives add omegaflowey.soul.clock.animation dummy
+scoreboard objectives add omegaflowey.soul.clock.i dummy
 # used as a reference score for when the player touches the ACT button
-scoreboard objectives add soul.clock.touched_act_button dummy
+scoreboard objectives add omegaflowey.soul.clock.touched_act_button dummy
 # length an soul-executor will exist (length this soul event will last if the act button is never touched)
-scoreboard objectives add soul.executor.clock.length dummy
+scoreboard objectives add omegaflowey.soul.executor.clock.length dummy
 # stored x position of a healer entity
-scoreboard objectives add soul.healer.position.x dummy
+scoreboard objectives add omegaflowey.soul.healer.position.x dummy
 # stored z position of a healer entity
-scoreboard objectives add soul.healer.position.z dummy
+scoreboard objectives add omegaflowey.soul.healer.position.z dummy
 # cumulative number of bullets an indicator has summoned so far
-scoreboard objectives add soul.indicator.bullets.cumulative-total dummy
+scoreboard objectives add omegaflowey.soul.indicator.bullets.cumulative-total dummy
 # number of bullets left to summon in a set
-scoreboard objectives add soul.indicator.bullets.remaining dummy
-scoreboard objectives add soul.indicator.bullets.total dummy
+scoreboard objectives add omegaflowey.soul.indicator.bullets.remaining dummy
+scoreboard objectives add omegaflowey.soul.indicator.bullets.total dummy
 # boolean flags used to mark state changes during soul events
-scoreboard objectives add soul.flag dummy
+scoreboard objectives add omegaflowey.soul.flag dummy
 
 # the final yaw an entity has after running bounce calculations
 scoreboard objectives add util.bounce.yaw dummy
