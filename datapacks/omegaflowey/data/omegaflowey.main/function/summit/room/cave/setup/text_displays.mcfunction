@@ -51,7 +51,7 @@ execute as @e[ \
 ] run function gu:generate
 data modify storage omegaflowey:bossfight active_player_display_uuid set from storage gu:main out
 
-summon minecraft:text_display -132.5 43.1875 44.99 { \
+summon minecraft:text_display -134.5 43.1875 44.99 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -72,7 +72,7 @@ summon minecraft:text_display -132.5 43.1875 44.99 { \
   } \
 }
 execute as @e[ \
-  x=-133.0, dx=2, y=42.0, dy=2, z=44.0, dz=2, \
+  x=-135.0, dx=2, y=42.0, dy=2, z=44.0, dz=2, \
   type=minecraft:text_display, \
   tag=now-playing-player-health, \
   tag=omega-flowey-remastered, \
