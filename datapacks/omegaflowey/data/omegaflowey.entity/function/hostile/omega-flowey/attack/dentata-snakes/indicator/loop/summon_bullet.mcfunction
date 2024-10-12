@@ -5,7 +5,7 @@ execute unless score @s omegaflowey.attack.bullets.count matches 0 run scoreboar
 # bullet head (begin animation)
 $execute if score @s omegaflowey.attack.bullets.count matches 0 run function omegaflowey.entity:directorial/boss_fight/summit/origin/at/y { \
   command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:omegaflowey_dentata_snake_ball/summon { \
-    args: { animation: 'roll_bite', start_animation: true } \
+    args: { animation: 'omegaflowey_roll_bite', start_animation: true } \
   }" \
 }
 # bullet tail

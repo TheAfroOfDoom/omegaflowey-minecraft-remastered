@@ -1,2 +1,2 @@
-function animated_java:omegaflowey_petal_pipe_circle/animations/float_disabled/play
+function animated_java:omegaflowey_petal_pipe_circle/animations/omegaflowey_float_disabled/play
 function animated_java:omegaflowey_petal_pipe_circle/variants/disabled/apply
