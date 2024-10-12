@@ -1,7 +1,7 @@
 # NOTE: we set these storage values because `homing-vines/bullet/initialize` sets the bullet's
 # rotations to them, and this is easier than refactoring that behavior out of that initialize function
-data modify storage attack:homing-vines bullet_yaw set from entity @s Rotation[0]
-data modify storage attack:homing-vines bullet_pitch set from entity @s Rotation[1]
+data modify storage omegaflowey:attack.homing-vines bullet_yaw set from entity @s Rotation[0]
+data modify storage omegaflowey:attack.homing-vines bullet_pitch set from entity @s Rotation[1]
 
 function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines-save-states/bullet/initialize
 
