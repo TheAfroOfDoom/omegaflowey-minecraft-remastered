@@ -21,21 +21,21 @@ scoreboard players operation @s math.1 -= @s math.0
 # scoreboard players operation @s math.2 = @s math.1
 tag @s remove is_negative_diff
 execute if score @s math.1 matches ..-1 run tag @s add is_negative_diff
-execute if entity @s[tag=is_negative_diff] run scoreboard players operation @s math.1 *= #-1 mathf.const
+execute if entity @s[tag=is_negative_diff] run scoreboard players operation @s math.1 *= #-1 math.const
 
 # math.1 = diff
 # math.2 = 360 - diff
 scoreboard players operation @s math.2 = @s math.1
-scoreboard players operation @s math.2 *= #-1 mathf.const
+scoreboard players operation @s math.2 *= #-1 math.const
 scoreboard players add @s math.2 360
 
 # use the smaller absolute difference between `diff` and `360 - diff`
 tag @s remove rotate_other_direction
 execute if score @s math.2 < @s math.1 run tag @s add rotate_other_direction
 execute if entity @s[tag=rotate_other_direction] run scoreboard players operation @s math.1 = @s math.2
-execute if entity @s[tag=rotate_other_direction] run scoreboard players operation @s math.1 *= #-1 mathf.const
+execute if entity @s[tag=rotate_other_direction] run scoreboard players operation @s math.1 *= #-1 math.const
 
-execute if entity @s[tag=is_negative_diff] run scoreboard players operation @s math.1 *= #-1 mathf.const
+execute if entity @s[tag=is_negative_diff] run scoreboard players operation @s math.1 *= #-1 math.const
 
 # stop rotating + shoot a bullet if we are facing the crosshair (eps = 5 degrees)
 execute if score @s math.1 matches -5..5 run function omegaflowey.entity:soul/soul_5/indicator/loop/shooting/shoot_bullet with storage soul:soul_5.indicator

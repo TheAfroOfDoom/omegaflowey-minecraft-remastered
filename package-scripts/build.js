@@ -115,7 +115,6 @@ const getSummitDatapackPaths = () => {
     'animated_java/pack.mcmeta',
     'mud',
     ...primaryDatapackPaths,
-    'omegaflowey.dependency.mathf',
   ]);
 
   return { paths: datapackPaths, postProcessors };
