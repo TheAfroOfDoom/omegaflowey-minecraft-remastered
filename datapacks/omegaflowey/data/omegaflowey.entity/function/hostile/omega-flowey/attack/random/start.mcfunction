@@ -1,4 +1,4 @@
-## Randomize which attack to run based on `attack.weight`s
+## Randomize which attack to run based on `omegaflowey.attack.weight`s
 
 execute if entity @s[tag=attack.random.consider_previous_trials] run function omegaflowey.entity:hostile/omega-flowey/attack/random/reduce_weights
 

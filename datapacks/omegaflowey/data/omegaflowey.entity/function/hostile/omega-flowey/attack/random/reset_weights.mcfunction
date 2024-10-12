@@ -1,11 +1,11 @@
 # Reset all weights
-scoreboard players reset #attack-bomb attack.weight
-scoreboard players reset #attack-dentata-snakes attack.weight
-scoreboard players reset #attack-finger-guns attack.weight
-scoreboard players reset #attack-flies attack.weight
-scoreboard players reset #attack-friendliness-pellets attack.weight
-scoreboard players reset #attack-homing-vines attack.weight
-scoreboard players reset #attack-homing-vines-save-states attack.weight
-scoreboard players reset #attack-x-bullets-lower attack.weight
-scoreboard players reset #attack-x-bullets-upper attack.weight
-scoreboard players reset #attack-x-bullets-upper-save-states attack.weight
+scoreboard players reset #attack-bomb omegaflowey.attack.weight
+scoreboard players reset #attack-dentata-snakes omegaflowey.attack.weight
+scoreboard players reset #attack-finger-guns omegaflowey.attack.weight
+scoreboard players reset #attack-flies omegaflowey.attack.weight
+scoreboard players reset #attack-friendliness-pellets omegaflowey.attack.weight
+scoreboard players reset #attack-homing-vines omegaflowey.attack.weight
+scoreboard players reset #attack-homing-vines-save-states omegaflowey.attack.weight
+scoreboard players reset #attack-x-bullets-lower omegaflowey.attack.weight
+scoreboard players reset #attack-x-bullets-upper omegaflowey.attack.weight
+scoreboard players reset #attack-x-bullets-upper-save-states omegaflowey.attack.weight
