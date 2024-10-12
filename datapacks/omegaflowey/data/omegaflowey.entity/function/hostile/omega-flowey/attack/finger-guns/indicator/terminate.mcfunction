@@ -1,1 +1,1 @@
-function animated_java:finger_gun/remove/this
+function animated_java:omegaflowey_finger_gun/remove/this

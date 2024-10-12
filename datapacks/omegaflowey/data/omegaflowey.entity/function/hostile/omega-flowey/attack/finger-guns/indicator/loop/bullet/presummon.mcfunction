@@ -8,7 +8,7 @@ execute on passengers if entity @s[type=minecraft:marker, tag=aj.data] run \
   function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/terminate with entity @s data
 
 # Play shoot animation
-function animated_java:finger_gun/animations/shoot/play
+function animated_java:omegaflowey_finger_gun/animations/shoot/play
 
 # Summon bullet
 function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/bullet/summon with storage omegaflowey:attack.finger-guns
