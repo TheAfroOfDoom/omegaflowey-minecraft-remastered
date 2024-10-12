@@ -1,1 +1,1 @@
-execute as @a unless entity @s[tag=!omegaflowey.player.fighting_flowey, team=!spectator] run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor/states/load_all_states/show_title/as_player
+execute as @a unless entity @s[tag=!omegaflowey.player.fighting_flowey, tag=!omegaflowey.player.room.spectator_box] run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor/states/load_all_states/show_title/as_player
