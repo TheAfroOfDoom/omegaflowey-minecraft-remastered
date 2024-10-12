@@ -2,11 +2,11 @@ function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_model
 
 ## Large side vines
 # Right large side vine
-execute positioned -25 40 -9 rotated 135 -10 run function animated_java:large_side_vine/summon { args: {} }
-tag @e[tag=aj.large_side_vine.root] add large_side_vine.right
+execute positioned -25 40 -9 rotated 135 -10 run function animated_java:omegaflowey_large_side_vine/summon { args: {} }
+tag @e[tag=aj.omegaflowey_large_side_vine.root] add large_side_vine.right
 # Left large side vine
-execute positioned 27 40 -9 rotated 215 -10 run function animated_java:large_side_vine/summon { args: {} }
-tag @e[tag=aj.large_side_vine.root,tag=!large_side_vine.right] add large_side_vine.left
+execute positioned 27 40 -9 rotated 215 -10 run function animated_java:omegaflowey_large_side_vine/summon { args: {} }
+tag @e[tag=aj.omegaflowey_large_side_vine.root,tag=!large_side_vine.right] add large_side_vine.left
 
 ## Lower eyes
 # Right-eye

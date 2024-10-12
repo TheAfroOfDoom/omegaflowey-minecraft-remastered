@@ -3,10 +3,10 @@ function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_model
 ## Large side vines
 # Right large side vine
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
-execute positioned ^-27.0 ^3.5 ^4.5 rotated ~135 ~-10 run function animated_java:large_side_vine/summon { args: {} }
+execute positioned ^-27.0 ^3.5 ^4.5 rotated ~135 ~-10 run function animated_java:omegaflowey_large_side_vine/summon { args: {} }
 # Left large side vine
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 2
-execute positioned ^27.0 ^3.5 ^4.5 rotated ~215 ~-10 run function animated_java:large_side_vine/summon { args: {} }
+execute positioned ^27.0 ^3.5 ^4.5 rotated ~215 ~-10 run function animated_java:omegaflowey_large_side_vine/summon { args: {} }
 
 ## Lower eyes
 # Right-eye
