@@ -2,7 +2,7 @@
 function omegaflowey.entity:directorial/boss_fight/shared/initialize
 
 # Summon Omega Flowey entity if it doesn't exist
-execute unless entity @e[tag=aj.tv_screen.root] run function omegaflowey.entity:hostile/omega-flowey/summon { args: {} }
+execute unless entity @e[tag=aj.omegaflowey_tv_screen.root] run function omegaflowey.entity:hostile/omega-flowey/summon { args: {} }
 
 # Set all attack parameters to default
 function omegaflowey.entity:hostile/omega-flowey/attack/reset_scores

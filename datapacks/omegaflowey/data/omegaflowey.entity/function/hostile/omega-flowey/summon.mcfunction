@@ -39,7 +39,7 @@ execute positioned 0 37 -13 rotated 0 10 run function animated_java:omegaflowey_
 
 ## TV-screen
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
-execute positioned 0 49 -6 rotated 0 45 run function animated_java:tv_screen/summon { args: {} }
+execute positioned 0 49 -6 rotated 0 45 run function animated_java:omegaflowey_tv_screen/summon { args: {} }
 
 ## Upper eyes
 # Right-eye

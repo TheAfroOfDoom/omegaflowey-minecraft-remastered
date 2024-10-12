@@ -1,3 +1,3 @@
-function animated_java:tv_screen/animations/move/play
-function animated_java:tv_screen/variants/default/apply
-execute on passengers if entity @s[tag=aj.tv_screen.bone] run function omegaflowey.entity:hostile/omega-flowey/animate/tv-screen/default/bone
+function animated_java:omegaflowey_tv_screen/animations/move/play
+function animated_java:omegaflowey_tv_screen/variants/default/apply
+execute on passengers if entity @s[tag=aj.omegaflowey_tv_screen.bone] run function omegaflowey.entity:hostile/omega-flowey/animate/tv-screen/default/bone

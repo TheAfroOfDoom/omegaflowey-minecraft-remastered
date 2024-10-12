@@ -41,7 +41,7 @@ execute positioned ^ ^ ^ rotated ~ ~10 run function animated_java:omegaflowey_no
 ## TV-screen
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
 execute unless score #omegaflowey.bossfight.skip_resummon_tvscreen omegaflowey.global.flag matches 1 \
-  positioned ^ ^12.5 ^7.5 rotated ~ ~45 run function animated_java:tv_screen/summon { args: {} }
+  positioned ^ ^12.5 ^7.5 rotated ~ ~45 run function animated_java:omegaflowey_tv_screen/summon { args: {} }
 
 ## Upper eyes
 # Right-eye

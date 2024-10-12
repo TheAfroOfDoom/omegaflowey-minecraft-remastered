@@ -24,4 +24,4 @@ function omegaflowey.entity:hostile/omega-flowey/animate
 scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen omegaflowey.global.flag 0
 
 # Set tvscreen variant back to default
-$execute as $(bossfight_tvscreen_uuid) run function animated_java:tv_screen/variants/default/apply
+$execute as $(bossfight_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/variants/default/apply

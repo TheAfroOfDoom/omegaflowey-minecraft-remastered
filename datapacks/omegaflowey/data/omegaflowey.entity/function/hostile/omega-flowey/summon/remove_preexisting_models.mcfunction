@@ -5,6 +5,6 @@ execute unless score #omegaflowey.bossfight.skip_resummon_tvscreen omegaflowey.g
     x=-186, dx=61, y=12, dy=44, z=47, dz=60, \
     type=minecraft:item_display, \
     tag=!tv_screen.outside, \
-    tag=aj.tv_screen.root, \
+    tag=aj.omegaflowey_tv_screen.root, \
     tag=omega-flowey-remastered \
-  ] run function animated_java:tv_screen/remove/this
+  ] run function animated_java:omegaflowey_tv_screen/remove/this
