@@ -7,7 +7,7 @@ scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.flies 
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.friendliness-pellets omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #attack-homing-vines omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.homing-vines-save-states omegaflowey.attack.weight
-scoreboard players operation @s omegaflowey.math.0 += #attack-x-bullets-lower omegaflowey.attack.weight
+scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.x-bullets-lower omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #attack-x-bullets-upper omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.x-bullets-upper-save-states omegaflowey.attack.weight
 

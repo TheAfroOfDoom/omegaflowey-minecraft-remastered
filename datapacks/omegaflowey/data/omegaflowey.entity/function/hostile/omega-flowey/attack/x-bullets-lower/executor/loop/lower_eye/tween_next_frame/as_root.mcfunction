@@ -9,6 +9,6 @@ execute store result storage attack:x-bullets-lower to_frame int 1 run scoreboar
 
 # tween to next frame over `tween_duration` seconds
 execute store result storage attack:x-bullets-lower duration int 1 \
-  run scoreboard players get #attack-x-bullets-lower.tween_duration omegaflowey.math.const
+  run scoreboard players get #omegaflowey.attack.x-bullets-lower.tween_duration omegaflowey.math.const
 
 function animated_java:lower_eye/animations/look_around/tween with storage attack:x-bullets-lower
