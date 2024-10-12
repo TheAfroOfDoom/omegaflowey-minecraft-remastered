@@ -1,6 +1,6 @@
 ## Summon bullet
-execute if score @s attack.bullets.count matches 0 run scoreboard players set #omegaflowey.summon.tag_variant global.flag 0
-execute unless score @s attack.bullets.count matches 0 run scoreboard players set #omegaflowey.summon.tag_variant global.flag 1
+execute if score @s attack.bullets.count matches 0 run scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 0
+execute unless score @s attack.bullets.count matches 0 run scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
 
 # bullet head (begin animation)
 $execute if score @s attack.bullets.count matches 0 run function omegaflowey.entity:directorial/boss_fight/summit/origin/at/y { \

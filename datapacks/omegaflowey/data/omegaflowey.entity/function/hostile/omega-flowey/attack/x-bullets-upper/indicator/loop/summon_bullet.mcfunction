@@ -13,12 +13,12 @@ $execute if score @s math.0 matches 1 as $(corresponding_root_uuid) run function
 
 # Summon and initialize bullet
 execute if entity @s[tag=!x-bullets-upper-save-states] run \
-  scoreboard players set #omegaflowey.attack.xbullets.type global.flag 1
+  scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 1
 execute if entity @s[tag=x-bullets-upper-save-states] run \
-  scoreboard players set #omegaflowey.attack.xbullets.type global.flag 2
+  scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 2
 $execute positioned $(x) $(y) $(z) rotated $(yaw) $(pitch) run \
   function animated_java:projectile_star/summon { args: {} }
-scoreboard players set #omegaflowey.attack.xbullets.type global.flag 0
+scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 0
 
 # Rotate yaw to be ready for next bullet
 scoreboard players operation @s attack.phi += @s attack.d-phi

@@ -19,7 +19,9 @@ const originScoresEqual = (file, options) => {
 
   const errors = [];
   const lines = readFileSync(file, 'utf8').split('\n');
-  const scoreLines = lines.filter((line) => line.includes('global.flag'));
+  const scoreLines = lines.filter((line) =>
+    line.includes('omegaflowey.global.flag'),
+  );
 
   const scoresRaw = scoreLines.map(
     (line) => line.match(/global\.flag (-?\d+)/)[1],

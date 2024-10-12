@@ -1,4 +1,4 @@
-scoreboard players set #omegaflowey.bossfight.has_player_been_prompted global.flag 1
+scoreboard players set #omegaflowey.bossfight.has_player_been_prompted omegaflowey.global.flag 1
 
 tag @s add omegaflowey.player.in_queue.prompted
 scoreboard players set @s player.trigger.bossfight.confirm 0
