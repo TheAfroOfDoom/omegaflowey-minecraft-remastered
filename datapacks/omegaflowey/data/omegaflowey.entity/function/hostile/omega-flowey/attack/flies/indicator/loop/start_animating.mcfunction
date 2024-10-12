@@ -1,5 +1,5 @@
 # Start animation
-function animated_java:venus_fly_trap/animations/chomp/play
+function animated_java:omegaflowey_venus_fly_trap/animations/chomp/play
 
 # Play sound (and stop old ones)
 stopsound @a hostile omega-flowey:attack.flies.buzzing

@@ -16,7 +16,7 @@ function animated_java:omegaflowey_homing_vine/remove/all
 function animated_java:omegaflowey_homing_vine_blinking_lane/remove/all
 function animated_java:omegaflowey_housefly/remove/all
 function animated_java:projectile_star/remove/all
-function animated_java:venus_fly_trap/remove/all
+function animated_java:omegaflowey_venus_fly_trap/remove/all
 
 # Soul models
 function animated_java:act_button/remove/all
