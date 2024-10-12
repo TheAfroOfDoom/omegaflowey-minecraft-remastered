@@ -18,6 +18,25 @@ const checkDatapack = (model) => {
   return [error];
 };
 
+/**
+ * Export namespaces need to start with `omegaflowey_` (e.g. `omegaflowey_mouth`)
+ * in order to be compatible with Smithed Summit
+ */
+const checkExportNamespace = (model) => {
+  const errors = [];
+  const namespace = model.blueprint_settings.export_namespace;
+  const isValidName = namespace.startsWith('omegaflowey_');
+  if (!isValidName) {
+    let error = 'export namespace is missing ';
+    error += chalk.blueBright('omegaflowey_');
+    error += ' prefix: ';
+    error += chalk.redBright(namespace);
+    errors.push(error);
+  }
+
+  return errors;
+};
+
 const checkRigItem = (model) => {
   const expected = 'minecraft:white_dye';
   const actual = model.blueprint_settings.display_item;
@@ -57,7 +76,12 @@ const correctAjblueprintSettings = (file) => {
 
   const errors = [];
 
-  const settingsChecks = [checkDatapack, checkRigItem, checkSummonCommands];
+  const settingsChecks = [
+    checkDatapack,
+    checkExportNamespace,
+    checkRigItem,
+    checkSummonCommands,
+  ];
   for (const settingsCheck of settingsChecks) {
     errors.push(...settingsCheck(ajblueprint));
   }
