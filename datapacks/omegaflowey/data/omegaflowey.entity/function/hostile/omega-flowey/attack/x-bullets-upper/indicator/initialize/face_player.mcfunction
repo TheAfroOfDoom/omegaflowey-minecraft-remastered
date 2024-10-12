@@ -19,8 +19,8 @@ scoreboard players operation @s math.0 = @s omegaflowey.attack.cone
 scoreboard players operation @s math.0 /= #2 math.const
 scoreboard players operation @s omegaflowey.attack.phi -= @s math.0
 
-# Store angle between bullets in attack.d-phi
-scoreboard players operation @s attack.d-phi = @s omegaflowey.attack.cone
+# Store angle between bullets in omegaflowey.attack.d-phi
+scoreboard players operation @s omegaflowey.attack.d-phi = @s omegaflowey.attack.cone
 scoreboard players operation @s math.0 = @s omegaflowey.attack.bullets.total
 scoreboard players remove @s math.0 1
-scoreboard players operation @s attack.d-phi /= @s math.0
+scoreboard players operation @s omegaflowey.attack.d-phi /= @s math.0

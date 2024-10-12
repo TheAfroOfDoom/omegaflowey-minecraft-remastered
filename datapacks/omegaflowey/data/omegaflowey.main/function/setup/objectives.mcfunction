@@ -50,7 +50,7 @@ scoreboard objectives add omegaflowey.attack.indicator.yaw dummy
 scoreboard objectives add omegaflowey.attack.theta dummy
 scoreboard objectives add attack.d-theta dummy
 scoreboard objectives add omegaflowey.attack.phi dummy
-scoreboard objectives add attack.d-phi dummy
+scoreboard objectives add omegaflowey.attack.d-phi dummy
 scoreboard objectives add attack.position.x dummy
 scoreboard objectives add attack.position.y dummy
 scoreboard objectives add attack.position.z dummy

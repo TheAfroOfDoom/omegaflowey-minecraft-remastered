@@ -1,5 +1,5 @@
 execute store result storage params radius int 1 run scoreboard players get @s omegaflowey.attack.indicator.radius
-execute store result storage params yaw_delta int 1 run scoreboard players get @s attack.d-phi
+execute store result storage params yaw_delta int 1 run scoreboard players get @s omegaflowey.attack.d-phi
 
 # Store flipped yaw to summon bullet at
 execute store result score @s math.0 run data get entity @s Rotation[0] 100

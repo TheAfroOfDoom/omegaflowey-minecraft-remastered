@@ -14,17 +14,17 @@ execute store result score @s omegaflowey.attack.theta run data get entity @s Ro
 # Store angle to first bullet in `omegaflowey.attack.phi`
 scoreboard players operation @s omegaflowey.attack.phi = @s omegaflowey.attack.indicator.yaw
 
-# Store angle between bullets in `attack.d-phi`
-scoreboard players operation @s attack.d-phi = @s omegaflowey.attack.cone
+# Store angle between bullets in `omegaflowey.attack.d-phi`
+scoreboard players operation @s omegaflowey.attack.d-phi = @s omegaflowey.attack.cone
 scoreboard players operation @s math.0 = @s omegaflowey.attack.bullets.total
 scoreboard players remove @s math.0 1
-scoreboard players operation @s attack.d-phi /= @s math.0
+scoreboard players operation @s omegaflowey.attack.d-phi /= @s math.0
 
-# Flip `attack.d-phi` for one of the eyes
-scoreboard players operation @s[tag=indicator.left] attack.d-phi *= #-1 math.const
+# Flip `omegaflowey.attack.d-phi` for one of the eyes
+scoreboard players operation @s[tag=indicator.left] omegaflowey.attack.d-phi *= #-1 math.const
 
-# # Randomly offset `omegaflowey.attack.cone` by half `attack.d-phi` to increase entropy of attack pattern (50% chance)
+# # Randomly offset `omegaflowey.attack.cone` by half `omegaflowey.attack.d-phi` to increase entropy of attack pattern (50% chance)
 # execute store result score @s math.1 run random value 0..1
-# scoreboard players operation @s[scores={math.1=0}] math.0 = @s attack.d-phi
+# scoreboard players operation @s[scores={math.1=0}] math.0 = @s omegaflowey.attack.d-phi
 # scoreboard players operation @s[scores={math.1=0}] math.0 /= #2 math.const
 # scoreboard players operation @s[scores={math.1=0}] omegaflowey.attack.phi += @s math.0

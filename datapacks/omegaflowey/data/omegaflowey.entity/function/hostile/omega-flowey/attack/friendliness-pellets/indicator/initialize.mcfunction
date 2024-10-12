@@ -16,8 +16,8 @@ scoreboard players operation @s omegaflowey.attack.indicator.animation.index = #
 scoreboard players operation @s omegaflowey.attack.indicator.radius = #attack-friendliness-pellets omegaflowey.attack.indicator.radius
 
 # Calculated scores
-scoreboard players set @s attack.d-phi 360
-scoreboard players operation @s attack.d-phi /= @s omegaflowey.attack.bullets.total
+scoreboard players set @s omegaflowey.attack.d-phi 360
+scoreboard players operation @s omegaflowey.attack.d-phi /= @s omegaflowey.attack.bullets.total
 
 # Summon and initialize blinking-ring
 function animated_java:friendliness_pellet_ring/summon { args: {} }
