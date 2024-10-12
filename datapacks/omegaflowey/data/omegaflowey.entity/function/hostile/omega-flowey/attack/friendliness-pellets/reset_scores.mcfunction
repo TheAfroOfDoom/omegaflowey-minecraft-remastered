@@ -8,4 +8,4 @@ scoreboard players set #attack-friendliness-pellets omegaflowey.attack.executor.
 scoreboard players set #attack-friendliness-pellets omegaflowey.attack.indicator.clock.delay 16
 scoreboard players set #attack-friendliness-pellets omegaflowey.attack.indicator.radius 3
 scoreboard players set #attack-friendliness-pellets omegaflowey.attack.indicator.animation.index -11
-scoreboard players set #attack-friendliness-pellets attack.speed.z 100
+scoreboard players set #attack-friendliness-pellets omegaflowey.attack.speed.z 100

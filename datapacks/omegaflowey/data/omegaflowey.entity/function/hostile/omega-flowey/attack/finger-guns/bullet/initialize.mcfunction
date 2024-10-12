@@ -3,7 +3,7 @@ function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
 data merge entity @s {CustomName:"\"Finger-Guns Bullet\""}
 
 # Set scores
-scoreboard players operation @s attack.speed.z = #attack-finger-guns attack.speed.z
+scoreboard players operation @s omegaflowey.attack.speed.z = #attack-finger-guns omegaflowey.attack.speed.z
 
 # Play bullet shoot sound
 stopsound @a hostile omega-flowey:attack.finger-guns.shoot

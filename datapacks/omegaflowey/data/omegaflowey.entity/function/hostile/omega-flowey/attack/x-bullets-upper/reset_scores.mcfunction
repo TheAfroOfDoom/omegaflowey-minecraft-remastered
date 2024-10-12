@@ -7,4 +7,4 @@ scoreboard players set #attack-x-bullets-upper omegaflowey.attack.executor.clock
 scoreboard players set #attack-x-bullets-upper omegaflowey.attack.executor.clock.length 56
 scoreboard players set #attack-x-bullets-upper omegaflowey.attack.executor.rate 4
 scoreboard players set #attack-x-bullets-upper omegaflowey.attack.indicator.total 14
-scoreboard players set #attack-x-bullets-upper attack.speed.z 200
+scoreboard players set #attack-x-bullets-upper omegaflowey.attack.speed.z 200

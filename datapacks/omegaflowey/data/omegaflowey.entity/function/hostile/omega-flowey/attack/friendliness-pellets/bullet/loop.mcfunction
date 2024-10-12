@@ -6,8 +6,8 @@ execute if entity @s[tag=stationary] run return 0
 
 scoreboard players add @s omegaflowey.attack.clock.i 1
 
-# Move forward at defined `attack.speed.z` velocity
-execute store result storage utils:move z float 0.01 run scoreboard players get #attack-friendliness-pellets attack.speed.z
+# Move forward at defined `omegaflowey.attack.speed.z` velocity
+execute store result storage utils:move z float 0.01 run scoreboard players get #attack-friendliness-pellets omegaflowey.attack.speed.z
 function omegaflowey.entity:utils/move_forward with storage utils:move
 
 # Terminate after 3 seconds

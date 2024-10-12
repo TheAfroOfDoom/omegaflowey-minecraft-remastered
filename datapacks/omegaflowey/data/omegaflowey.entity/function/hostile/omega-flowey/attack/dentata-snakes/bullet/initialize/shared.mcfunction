@@ -1,7 +1,7 @@
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
 
 # Set scores
-scoreboard players operation @s attack.speed.z = #attack-dentata-snakes attack.speed.z
+scoreboard players operation @s omegaflowey.attack.speed.z = #attack-dentata-snakes omegaflowey.attack.speed.z
 
 # Update yaw from indicator
 $data merge entity @s { Rotation: [$(bullet_yaw)f, 0.0f] }

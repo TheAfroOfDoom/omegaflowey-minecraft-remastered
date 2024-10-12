@@ -15,8 +15,8 @@ function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
 # Bounce if hit edge of arena
 execute if score @s math.0 matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/maybe_bounce
 
-# Move forward at defined `attack.speed.z` velocity
-execute store result storage utils:move z float 0.01 run scoreboard players get @s attack.speed.z
+# Move forward at defined `omegaflowey.attack.speed.z` velocity
+execute store result storage utils:move z float 0.01 run scoreboard players get @s omegaflowey.attack.speed.z
 function omegaflowey.entity:utils/move_forward with storage utils:move
 
 # TODO(42): validate/determine a value for how long the dentata-snakes can bounce

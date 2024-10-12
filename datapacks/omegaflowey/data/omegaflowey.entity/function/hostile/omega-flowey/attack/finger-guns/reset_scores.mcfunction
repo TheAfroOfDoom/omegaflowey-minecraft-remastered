@@ -6,4 +6,4 @@ scoreboard players set #attack-finger-guns omegaflowey.attack.executor.rate 3
 scoreboard players set #attack-finger-guns omegaflowey.attack.indicator.clock.delay 14
 # lifespan of indicator after summoning laser
 scoreboard players set #attack-finger-guns omegaflowey.attack.indicator.clock.length 40
-scoreboard players set #attack-finger-guns attack.speed.z 110
+scoreboard players set #attack-finger-guns omegaflowey.attack.speed.z 110

@@ -6,4 +6,4 @@ scoreboard players set #attack-dentata-snakes omegaflowey.attack.bullets.scale 1
 scoreboard players set #attack-dentata-snakes omegaflowey.attack.bullets.total 6
 scoreboard players set #attack-dentata-snakes omegaflowey.attack.executor.clock.length 16
 scoreboard players set #attack-dentata-snakes omegaflowey.attack.executor.rate 8
-scoreboard players set #attack-dentata-snakes attack.speed.z 100
+scoreboard players set #attack-dentata-snakes omegaflowey.attack.speed.z 100
