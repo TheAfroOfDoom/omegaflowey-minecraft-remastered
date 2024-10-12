@@ -28,9 +28,9 @@ scoreboard players operation @s omegaflowey.math.0 -= #attack-homing-vines omega
 execute if score #attack-homing-vines omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/homing-vines
 execute if score #attack-homing-vines omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
 
-scoreboard players operation @s omegaflowey.math.0 -= #attack-homing-vines-save-states omegaflowey.attack.weight
-execute if score #attack-homing-vines-save-states omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/homing-vines-save-states
-execute if score #attack-homing-vines-save-states omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
+scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.homing-vines-save-states omegaflowey.attack.weight
+execute if score #omegaflowey.attack.homing-vines-save-states omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/homing-vines-save-states
+execute if score #omegaflowey.attack.homing-vines-save-states omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
 
 scoreboard players operation @s omegaflowey.math.0 -= #attack-x-bullets-lower omegaflowey.attack.weight
 execute if score #attack-x-bullets-lower omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/x-bullets-lower
