@@ -14,9 +14,9 @@ scoreboard players operation @s omegaflowey.attack.bullets.total = #attack-denta
 
 # Randomize position to summon bullet at
 execute store result score @s omegaflowey.attack.bullets.position.x run random value -800..800
-scoreboard players operation @s omegaflowey.attack.bullets.position.x += #omega-flowey.bossfight.summit.origin.x omegaflowey.global.flag
+scoreboard players operation @s omegaflowey.attack.bullets.position.x += #omegaflowey.bossfight.summit.origin.x omegaflowey.global.flag
 scoreboard players set @s omegaflowey.attack.bullets.position.z -750
-scoreboard players operation @s omegaflowey.attack.bullets.position.z += #omega-flowey.bossfight.summit.origin.z omegaflowey.global.flag
+scoreboard players operation @s omegaflowey.attack.bullets.position.z += #omegaflowey.bossfight.summit.origin.z omegaflowey.global.flag
 
 # Randomize initial yaw of bullets
 execute store result score @s omegaflowey.math.0 run random value 0..1
