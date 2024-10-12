@@ -7,11 +7,11 @@ execute if score @s math.0 matches 47..95 run function omegaflowey.entity:hostil
 execute if score @s math.0 matches 96..99 run function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_bottom
 
 # y: 34.50
-scoreboard players set @s attack.position.y 3450
+scoreboard players set @s omegaflowey.attack.position.y 3450
 
-execute store result storage attack:flies x double 0.01 run scoreboard players get @s attack.position.x
-execute store result storage attack:flies y double 0.01 run scoreboard players get @s attack.position.y
-execute store result storage attack:flies z double 0.01 run scoreboard players get @s attack.position.z
+execute store result storage attack:flies x double 0.01 run scoreboard players get @s omegaflowey.attack.position.x
+execute store result storage attack:flies y double 0.01 run scoreboard players get @s omegaflowey.attack.position.y
+execute store result storage attack:flies z double 0.01 run scoreboard players get @s omegaflowey.attack.position.z
 
 # Store `group.id` for next bullet
 execute store result storage group id int 1 run scoreboard players get @s group.id

@@ -2,9 +2,9 @@
 
 function omegaflowey.entity:utils/store_position
 # Save bone position to score
-execute store result score @s attack.position.x run data get storage entity:position x
-execute store result score @s attack.position.y run data get storage entity:position y
-execute store result score @s attack.position.z run data get storage entity:position z
+execute store result score @s omegaflowey.attack.position.x run data get storage entity:position x
+execute store result score @s omegaflowey.attack.position.y run data get storage entity:position y
+execute store result score @s omegaflowey.attack.position.z run data get storage entity:position z
 
 function omegaflowey.entity:utils/face_closest_player
 

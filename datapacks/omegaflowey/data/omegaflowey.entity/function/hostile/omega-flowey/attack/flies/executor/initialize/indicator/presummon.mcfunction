@@ -16,9 +16,9 @@ execute if score #attack.flies.nonflipped_exists math.0 matches 1 if score #atta
 execute if score #attack.flies.nonflipped_exists math.0 matches 0 if score #attack.flies.flipped_exists math.0 matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/flies/executor/initialize/indicator/presummon/random
 
 # Store new position and yaw
-execute store result storage attack:flies x double 0.01 run scoreboard players get @s attack.position.x
-execute store result storage attack:flies y double 0.01 run scoreboard players get @s attack.position.y
-execute store result storage attack:flies z double 0.01 run scoreboard players get @s attack.position.z
+execute store result storage attack:flies x double 0.01 run scoreboard players get @s omegaflowey.attack.position.x
+execute store result storage attack:flies y double 0.01 run scoreboard players get @s omegaflowey.attack.position.y
+execute store result storage attack:flies z double 0.01 run scoreboard players get @s omegaflowey.attack.position.z
 execute store result storage attack:flies yaw float 0.01 run scoreboard players get @s omegaflowey.attack.indicator.yaw
 # flat pitch
 data merge storage attack:flies { pitch: 0.0f }

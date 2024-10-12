@@ -51,9 +51,9 @@ scoreboard objectives add omegaflowey.attack.theta dummy
 scoreboard objectives add attack.d-theta dummy
 scoreboard objectives add omegaflowey.attack.phi dummy
 scoreboard objectives add omegaflowey.attack.d-phi dummy
-scoreboard objectives add attack.position.x dummy
-scoreboard objectives add attack.position.y dummy
-scoreboard objectives add attack.position.z dummy
+scoreboard objectives add omegaflowey.attack.position.x dummy
+scoreboard objectives add omegaflowey.attack.position.y dummy
+scoreboard objectives add omegaflowey.attack.position.z dummy
 scoreboard objectives add attack.speed.x dummy
 scoreboard objectives add attack.speed.y dummy
 scoreboard objectives add attack.speed.z dummy
