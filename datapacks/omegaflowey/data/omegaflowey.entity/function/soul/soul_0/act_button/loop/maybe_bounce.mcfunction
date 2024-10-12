@@ -13,7 +13,7 @@ execute store result entity @s Rotation[0] float 1 run scoreboard players get @s
 
 # Run bounce util function
 function omegaflowey.entity:utils/bounce with storage soul:soul_0.bounce
-scoreboard players operation @s omegaflowey.soul.bullet.position.yaw = @s util.bounce.yaw
+scoreboard players operation @s omegaflowey.soul.bullet.position.yaw = @s omegaflowey.util.bounce.yaw
 
 # Restore original yaw
 execute store result entity @s Rotation[0] float 0.01 run scoreboard players get @s omegaflowey.math.0

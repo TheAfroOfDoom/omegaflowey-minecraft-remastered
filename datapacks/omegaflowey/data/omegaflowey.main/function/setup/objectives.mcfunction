@@ -137,6 +137,6 @@ scoreboard objectives add omegaflowey.soul.indicator.bullets.total dummy
 scoreboard objectives add omegaflowey.soul.flag dummy
 
 # the final yaw an entity has after running bounce calculations
-scoreboard objectives add util.bounce.yaw dummy
+scoreboard objectives add omegaflowey.util.bounce.yaw dummy
 # the initial yaw an entity starts with before running bounce calculations
-scoreboard objectives add util.bounce.yaw.initial dummy
+scoreboard objectives add omegaflowey.util.bounce.yaw.initial dummy
