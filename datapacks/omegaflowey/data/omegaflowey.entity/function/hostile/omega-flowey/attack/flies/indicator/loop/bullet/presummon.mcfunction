@@ -13,8 +13,8 @@ execute store result storage attack:flies x double 0.01 run scoreboard players g
 execute store result storage attack:flies y double 0.01 run scoreboard players get @s omegaflowey.attack.position.y
 execute store result storage attack:flies z double 0.01 run scoreboard players get @s omegaflowey.attack.position.z
 
-# Store `group.id` for next bullet
-execute store result storage group id int 1 run scoreboard players get @s group.id
+# Store `omegaflowey.group.id` for next bullet
+execute store result storage group id int 1 run scoreboard players get @s omegaflowey.group.id
 
 # Summon bullet
 function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/summon with storage attack:flies
