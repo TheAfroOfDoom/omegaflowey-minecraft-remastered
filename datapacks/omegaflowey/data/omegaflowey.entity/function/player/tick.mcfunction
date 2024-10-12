@@ -1,4 +1,4 @@
-function omegaflowey.entity:player/rejoin/check
+# function omegaflowey.entity:player/rejoin/check
 function omegaflowey.entity:player/death/check
 
 execute if entity @s[tag=omegaflowey.player.in_queue.prompted] run \
