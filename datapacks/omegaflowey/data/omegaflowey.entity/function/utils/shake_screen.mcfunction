@@ -3,13 +3,13 @@
 # Shake player yaw anywhere from 0.5..5.0 degrees (can also be negative)
 execute store result score @s math.0 run random value 5..50
 execute store result score @s math.1 run random value 0..1
-execute if score @s math.1 matches 1 run scoreboard players operation @s math.0 *= #-1 mathf.const
+execute if score @s math.1 matches 1 run scoreboard players operation @s math.0 *= #-1 math.const
 execute store result storage utils:shake_screen yaw float 0.1 run scoreboard players get @s math.0
 
 # Shake player pitch anywhere from 0.5..2.0 degrees (can also be negative)
 execute store result score @s math.2 run random value 5..20
 execute store result score @s math.1 run random value 0..1
-execute if score @s math.1 matches 1 run scoreboard players operation @s math.2 *= #-1 mathf.const
+execute if score @s math.1 matches 1 run scoreboard players operation @s math.2 *= #-1 math.const
 execute store result storage utils:shake_screen pitch float 0.1 run scoreboard players get @s math.2
 
 function omegaflowey.entity:utils/shake_screen_macro with storage utils:shake_screen

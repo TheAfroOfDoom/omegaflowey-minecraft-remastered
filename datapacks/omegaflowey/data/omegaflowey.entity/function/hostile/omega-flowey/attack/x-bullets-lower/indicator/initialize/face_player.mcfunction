@@ -21,10 +21,10 @@ scoreboard players remove @s math.0 1
 scoreboard players operation @s attack.d-phi /= @s math.0
 
 # Flip `attack.d-phi` for one of the eyes
-scoreboard players operation @s[tag=indicator.left] attack.d-phi *= #-1 mathf.const
+scoreboard players operation @s[tag=indicator.left] attack.d-phi *= #-1 math.const
 
 # # Randomly offset `attack.cone` by half `attack.d-phi` to increase entropy of attack pattern (50% chance)
 # execute store result score @s math.1 run random value 0..1
 # scoreboard players operation @s[scores={math.1=0}] math.0 = @s attack.d-phi
-# scoreboard players operation @s[scores={math.1=0}] math.0 /= #2 mathf.const
+# scoreboard players operation @s[scores={math.1=0}] math.0 /= #2 math.const
 # scoreboard players operation @s[scores={math.1=0}] attack.phi += @s math.0

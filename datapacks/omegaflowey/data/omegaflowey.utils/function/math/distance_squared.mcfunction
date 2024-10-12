@@ -3,7 +3,8 @@
 # outputs:
 #   out: (the distance between points p0 and p1) squared
 
-## logic here is copied and modified from function `omegaflowey.mathf:dist-between-points`
+## logic here is copied and modified from function `mathf:dist-between-points`
+## https://github.com/Up-Level/Mathf-Datapack/blob/6c84b91cd18f2236c7a2133ce9e82c68b1854db1/src/data/mathf/functions/dist-between-points.mcfunction
 
 # sum of differences
 scoreboard players set #utils:math.distance_squared math.0 0

@@ -7,7 +7,7 @@
 
 # Toggle between dark-eye and bright-eye variants
 scoreboard players operation @s math.0 = @s attack.bullets.remaining
-scoreboard players operation @s math.0 %= #2 mathf.const
+scoreboard players operation @s math.0 %= #2 math.const
 $execute if score @s math.0 matches 0 as $(corresponding_root_uuid) run function animated_java:lower_eye/variants/dark/apply
 $execute if score @s math.0 matches 1 as $(corresponding_root_uuid) run function animated_java:lower_eye/variants/bright/apply
 
