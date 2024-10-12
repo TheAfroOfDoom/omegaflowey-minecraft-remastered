@@ -6,9 +6,9 @@ execute if score @s omegaflowey.attack.clock.i matches ..-1 run return 0
 # Pause upper_eye animations
 execute if score @s omegaflowey.attack.clock.i matches 0 as @e[tag=aj.upper_eye.root] run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/loop/pause_eye
 
-# Summon indicators at each upper_eye every `attack.executor.rate` ticks
+# Summon indicators at each upper_eye every `omegaflowey.attack.executor.rate` ticks
 scoreboard players operation @s math.0 = @s omegaflowey.attack.clock.i
-scoreboard players operation @s math.0 %= @s attack.executor.rate
+scoreboard players operation @s math.0 %= @s omegaflowey.attack.executor.rate
 execute if score @s math.0 matches 0 if score @s attack.indicator.remaining matches 1.. run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/indicator/summon/x-bullets-upper
 
 # Resume upper_eye visuals after done summoning bullet triplets

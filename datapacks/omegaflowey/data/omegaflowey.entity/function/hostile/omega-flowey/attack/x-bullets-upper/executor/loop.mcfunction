@@ -9,12 +9,12 @@ execute if score @s omegaflowey.attack.clock.i matches ..-1 run return 0
 execute if score @s omegaflowey.attack.clock.i matches 0 run \
   function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/loop/pause_eye with storage omegaflowey:bossfight
 
-# Summon indicators at each upper_eye every `attack.executor.rate` ticks
+# Summon indicators at each upper_eye every `omegaflowey.attack.executor.rate` ticks
 scoreboard players operation @s math.0 = @s omegaflowey.attack.clock.i
-scoreboard players operation @s math.0 %= @s attack.executor.rate
+scoreboard players operation @s math.0 %= @s omegaflowey.attack.executor.rate
 execute if score @s math.0 matches 0 if score @s attack.indicator.remaining matches 1.. run \
   function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/loop/summon_indicator with storage omegaflowey:bossfight
 
 # Terminate
-execute if score @s omegaflowey.attack.clock.i >= @s attack.executor.clock.length run \
+execute if score @s omegaflowey.attack.clock.i >= @s omegaflowey.attack.executor.clock.length run \
   function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/terminate with storage omegaflowey:bossfight

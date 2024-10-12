@@ -20,17 +20,17 @@ scoreboard objectives add omegaflowey.attack.bullets.total dummy
 scoreboard objectives add omegaflowey.attack.clock.i dummy
 scoreboard objectives add omegaflowey.attack.cone dummy
 # delay (in ticks) before an attack-executor begins summoning indicators
-scoreboard objectives add attack.executor.clock.delay dummy
+scoreboard objectives add omegaflowey.attack.executor.clock.delay dummy
 # length an attack-executor will exist
-scoreboard objectives add attack.executor.clock.length dummy
+scoreboard objectives add omegaflowey.attack.executor.clock.length dummy
 # how often (in ticks) an attack-executor summons an attack-indicator
-scoreboard objectives add attack.executor.rate dummy
+scoreboard objectives add omegaflowey.attack.executor.rate dummy
 # how many times an attack-executor will repeat its indicator-summoning behavior (ongoing-count)
-scoreboard objectives add attack.executor.repeat.count.i dummy
+scoreboard objectives add omegaflowey.attack.executor.repeat.count.i dummy
 # how many times an attack-executor will repeat its indicator-summoning behavior (total count)
-scoreboard objectives add attack.executor.repeat.count.total dummy
+scoreboard objectives add omegaflowey.attack.executor.repeat.count.total dummy
 # how long (in ticks) an attack-executor will wait until repeating its indicator-summong behavior
-scoreboard objectives add attack.executor.repeat.delay dummy
+scoreboard objectives add omegaflowey.attack.executor.repeat.delay dummy
 # boolean flags used to mark various states of an attack
 scoreboard objectives add attack.flag dummy
 scoreboard objectives add attack.indicator.animation.index dummy
