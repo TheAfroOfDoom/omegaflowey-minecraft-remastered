@@ -13,7 +13,7 @@ execute if entity @s[tag=attack.random.previous_attack.finger-guns] run tag @s r
 execute if entity @s[tag=attack.random.previous_attack.flies] run scoreboard players operation #omegaflowey.attack.flies omegaflowey.attack.weight -= @s omegaflowey.attack.weight
 execute if entity @s[tag=attack.random.previous_attack.flies] run tag @s remove attack.random.previous_attack.flies
 
-execute if entity @s[tag=attack.random.previous_attack.friendliness-pellets] run scoreboard players operation #attack-friendliness-pellets omegaflowey.attack.weight -= @s omegaflowey.attack.weight
+execute if entity @s[tag=attack.random.previous_attack.friendliness-pellets] run scoreboard players operation #omegaflowey.attack.friendliness-pellets omegaflowey.attack.weight -= @s omegaflowey.attack.weight
 execute if entity @s[tag=attack.random.previous_attack.friendliness-pellets] run tag @s remove attack.random.previous_attack.friendliness-pellets
 
 execute if entity @s[tag=attack.random.previous_attack.homing-vines] run scoreboard players operation #attack-homing-vines omegaflowey.attack.weight -= @s omegaflowey.attack.weight
