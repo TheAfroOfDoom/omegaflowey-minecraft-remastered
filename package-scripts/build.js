@@ -68,7 +68,6 @@ const getSummitDatapackPaths = () => {
     'move_forward.mcfunction',
     'shake_screen_macro.mcfunction',
     'shake_screen.mcfunction',
-    'store_position.mcfunction',
   ]);
 
   const entityPaths = prefixPaths('omegaflowey.entity/', [
