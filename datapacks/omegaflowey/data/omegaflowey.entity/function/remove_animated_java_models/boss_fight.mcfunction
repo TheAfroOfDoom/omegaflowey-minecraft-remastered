@@ -9,7 +9,7 @@ function animated_java:omegaflowey_bomb/remove/all
 function animated_java:omegaflowey_dentata_snake_ball/remove/all
 function animated_java:omegaflowey_finger_gun/remove/all
 function animated_java:finger_gun_bullet/remove/all
-function animated_java:finger_gun_laser/remove/all
+function animated_java:omegaflowey_finger_gun_laser/remove/all
 function animated_java:friendliness_pellet/remove/all
 function animated_java:friendliness_pellet_ring/remove/all
 function animated_java:homing_vine/remove/all
