@@ -234,6 +234,11 @@ const getSummitResourcepackPaths = () => {
     ...minecraftPaths,
     ...omegaFloweyPaths,
   ]);
+  const removeGrayDye = async ({ compiledPath }) => {
+    const grayDyeFile = `${compiledPath}/assets/minecraft/models/item/gray_dye.json`;
+    await rimraf(grayDyeFile);
+  };
+  postProcessors.push(removeGrayDye);
 
   const resourcepackPaths = prefixPaths('resourcepack/', [
     'pack.mcmeta',
