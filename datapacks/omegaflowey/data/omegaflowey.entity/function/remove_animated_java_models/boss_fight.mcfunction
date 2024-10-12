@@ -13,7 +13,7 @@ function animated_java:omegaflowey_finger_gun_laser/remove/all
 function animated_java:omegaflowey_friendliness_pellet/remove/all
 function animated_java:omegaflowey_friendliness_pellet_ring/remove/all
 function animated_java:homing_vine/remove/all
-function animated_java:homing_vine_blinking_lane/remove/all
+function animated_java:omegaflowey_homing_vine_blinking_lane/remove/all
 function animated_java:housefly/remove/all
 function animated_java:projectile_star/remove/all
 function animated_java:venus_fly_trap/remove/all
