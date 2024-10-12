@@ -105,7 +105,7 @@ const getSummitDatapackPaths = () => {
     ]),
   ]);
   const removeResetFunction = async ({ compiledPath }) => {
-    const resetFunctionFile = `${compiledPath}/datapacks/omegaflowey/data/omegaflowey/function/reset.mcfunction`;
+    const resetFunctionFile = `${compiledPath}/datapacks/omegaflowey/data/omegaflowey.main/function/reset.mcfunction`;
     await rimraf(resetFunctionFile);
   };
   postProcessors.push(removeResetFunction);
