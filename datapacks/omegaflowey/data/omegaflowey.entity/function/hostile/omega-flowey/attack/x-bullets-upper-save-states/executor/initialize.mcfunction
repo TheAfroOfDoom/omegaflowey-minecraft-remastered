@@ -9,4 +9,4 @@ scoreboard players operation @s attack.indicator.remaining = @s attack.indicator
 function gu:generate
 data modify storage attack:x-bullets-upper-save-states executor_uuid set from storage gu:main out
 
-scoreboard players set #x-bullets-upper-save-states.did_player_take_damage attack.flag 0
+scoreboard players set #x-bullets-upper-save-states.did_player_take_damage omegaflowey.attack.flag 0

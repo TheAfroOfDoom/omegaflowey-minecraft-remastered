@@ -1,13 +1,13 @@
 # check for pre-existence of at least one lower_eye model
-scoreboard players set #attack.x-bullets-lower.lower_eye_exists attack.flag 1
+scoreboard players set #attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag 1
 $execute \
   unless entity $(attack_lower_eye_right_uuid) \
   unless entity $(attack_lower_eye_left_uuid) \
-  run scoreboard players set #attack.x-bullets-lower.lower_eye_exists attack.flag 0
+  run scoreboard players set #attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag 0
 
 # throw an error if no model exists
-execute if score #attack.x-bullets-lower.lower_eye_exists attack.flag matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "lower" }
-execute if score #attack.x-bullets-lower.lower_eye_exists attack.flag matches 0 run return fail
+execute if score #attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "lower" }
+execute if score #attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag matches 0 run return fail
 
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initialize
 

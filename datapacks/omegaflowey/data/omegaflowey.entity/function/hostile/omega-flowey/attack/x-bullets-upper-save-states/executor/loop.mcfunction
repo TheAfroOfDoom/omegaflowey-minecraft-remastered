@@ -17,8 +17,8 @@ execute if score @s math.0 matches 0 if score @s attack.indicator.remaining matc
 execute if score @s omegaflowey.attack.clock.i matches 21 as @e[tag=aj.upper_eye.root] run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/terminate/upper_eye
 
 # Don't actually load-state if a player has taken damage
-execute if score #x-bullets-upper-save-states.did_player_take_damage attack.flag matches 1 run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor/loop/after_load_state
-execute if score #x-bullets-upper-save-states.did_player_take_damage attack.flag matches 1 run return 0
+execute if score #x-bullets-upper-save-states.did_player_take_damage omegaflowey.attack.flag matches 1 run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor/loop/after_load_state
+execute if score #x-bullets-upper-save-states.did_player_take_damage omegaflowey.attack.flag matches 1 run return 0
 
 # Split loop logic on whether or not we've loaded state
 execute if entity @s[tag=has-loaded-state] run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor/loop/after_load_state
