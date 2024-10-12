@@ -6,6 +6,6 @@ execute store result score @s attack.position.z run data get storage attack:x-bu
 execute store result score @s omegaflowey.attack.indicator.yaw run data get storage attack:x-bullets-upper-save-states state_scores.attack_indicator_yaw
 execute store result score @s omegaflowey.attack.theta run data get storage attack:x-bullets-upper-save-states state_scores.attack_theta
 execute store result score @s attack.d-phi run data get storage attack:x-bullets-upper-save-states state_scores.attack_d_phi
-execute store result score @s attack.phi run data get storage attack:x-bullets-upper-save-states state_scores.attack_phi
+execute store result score @s omegaflowey.attack.phi run data get storage attack:x-bullets-upper-save-states state_scores.attack_phi
 
 tag @s remove attack-indicator-new

@@ -13,11 +13,11 @@ function omegaflowey.entity:utils/face_closest_player
 execute store result score @s omegaflowey.attack.indicator.yaw run data get entity @s Rotation[0]
 execute store result score @s omegaflowey.attack.theta run data get entity @s Rotation[1]
 
-# Store angle to left-most bullet in attack.phi
-scoreboard players operation @s attack.phi = @s omegaflowey.attack.indicator.yaw
+# Store angle to left-most bullet in omegaflowey.attack.phi
+scoreboard players operation @s omegaflowey.attack.phi = @s omegaflowey.attack.indicator.yaw
 scoreboard players operation @s math.0 = @s omegaflowey.attack.cone
 scoreboard players operation @s math.0 /= #2 math.const
-scoreboard players operation @s attack.phi -= @s math.0
+scoreboard players operation @s omegaflowey.attack.phi -= @s math.0
 
 # Store angle between bullets in attack.d-phi
 scoreboard players operation @s attack.d-phi = @s omegaflowey.attack.cone

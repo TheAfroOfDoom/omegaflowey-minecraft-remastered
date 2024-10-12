@@ -24,7 +24,7 @@ execute store result storage attack:x-bullets-upper-save-states current_state.sc
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_indicator_yaw int 1 run scoreboard players get @s omegaflowey.attack.indicator.yaw
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_theta int 1 run scoreboard players get @s omegaflowey.attack.theta
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_d_phi int 1 run scoreboard players get @s attack.d-phi
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_phi int 1 run scoreboard players get @s attack.phi
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_phi int 1 run scoreboard players get @s omegaflowey.attack.phi
 
 # Append this entity's saved_state to the executor's NBT list
 $data modify entity $(executor_uuid) data.saved_states append from storage attack:x-bullets-upper-save-states current_state

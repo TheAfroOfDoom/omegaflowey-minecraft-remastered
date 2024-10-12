@@ -2,7 +2,7 @@
 
 # omegaflowey.attack.bullets.remaining = number of bullets left to summon
 # attack.d-phi = angle between bullets
-# attack.phi = angle to summon bullet at
+# omegaflowey.attack.phi = angle to summon bullet at
 # omegaflowey.attack.theta = pitch to summon bullet at
 
 # Toggle between dark-eye and bright-eye variants
@@ -21,7 +21,7 @@ $execute positioned $(x) $(y) $(z) rotated $(yaw) $(pitch) run \
 scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 0
 
 # Rotate yaw to be ready for next bullet
-scoreboard players operation @s attack.phi += @s attack.d-phi
+scoreboard players operation @s omegaflowey.attack.phi += @s attack.d-phi
 
 # Decrement number of bullets left to summon
 scoreboard players remove @s omegaflowey.attack.bullets.remaining 1
