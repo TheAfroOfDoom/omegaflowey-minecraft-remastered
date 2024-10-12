@@ -19,10 +19,10 @@ execute positioned ^5.5 ^5.5 ^6.5 rotated ~10 ~20 run function animated_java:ome
 ## Lower petal pipes
 # Right-lower petal pipe
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
-execute positioned ^-11.5 ^7.5 ^ rotated ~-10 ~20 run function animated_java:petal_pipe_circle/summon { args: {} }
+execute positioned ^-11.5 ^7.5 ^ rotated ~-10 ~20 run function animated_java:omegaflowey_petal_pipe_circle/summon { args: {} }
 # Left-lower petal pipe
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 2
-execute positioned ^11.5 ^7.5 ^ rotated ~-170 ~-20 run function animated_java:petal_pipe_circle/summon { args: {} }
+execute positioned ^11.5 ^7.5 ^ rotated ~-170 ~-20 run function animated_java:omegaflowey_petal_pipe_circle/summon { args: {} }
 
 ## Middle petal pipes
 # Right-middle petal pipe
@@ -54,10 +54,10 @@ execute positioned ^16.0 ^11.5 ^9.5 rotated ~20 ~40 run function animated_java:o
 ## Upper petal pipes
 # Right-upper petal pipe
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 3
-execute positioned ^-11.5 ^26.5 ^17.5 rotated ~-10 ~45 run function animated_java:petal_pipe_circle/summon { args: {} }
+execute positioned ^-11.5 ^26.5 ^17.5 rotated ~-10 ~45 run function animated_java:omegaflowey_petal_pipe_circle/summon { args: {} }
 # Left-upper petal pipe
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 4
-execute positioned ^11.5 ^26.5 ^17.5 rotated ~-170 ~-45 run function animated_java:petal_pipe_circle/summon { args: {} }
+execute positioned ^11.5 ^26.5 ^17.5 rotated ~-170 ~-45 run function animated_java:omegaflowey_petal_pipe_circle/summon { args: {} }
 
 # reset tag-variant flag
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 0
