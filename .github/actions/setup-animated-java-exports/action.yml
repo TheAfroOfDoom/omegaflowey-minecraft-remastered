@@ -18,7 +18,7 @@ runs:
           datapacks/animated_java/data.ajmeta
           resourcepack/assets.ajmeta
           resourcepack/assets/animated_java
-          resourcepack/assets/minecraft/models/item/white_dye.json
+          resourcepack/assets/minecraft/models/item/pink_dye.json
           resourcepack/assets/omega-flowey/models/last_exported_hashes.json
     - run: bash ${{ github.action_path }}/install-animated-java-and-run-auto-exporter.sh
       if: ${{ steps.cache-animated-java-exports.outputs.cache-hit != 'true' }}
@@ -32,5 +32,5 @@ runs:
           datapacks/animated_java/data.ajmeta
           resourcepack/assets.ajmeta
           resourcepack/assets/animated_java
-          resourcepack/assets/minecraft/models/item/white_dye.json
+          resourcepack/assets/minecraft/models/item/pink_dye.json
           resourcepack/assets/omega-flowey/models/last_exported_hashes.json

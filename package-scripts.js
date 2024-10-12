@@ -28,7 +28,7 @@ const allAnimatedJavaExportFiles = [
   'datapacks/animated_java/data.ajmeta',
   'resourcepack/assets.ajmeta',
   'resourcepack/assets/animated_java',
-  'resourcepack/assets/minecraft/models/item/white_dye.json',
+  'resourcepack/assets/minecraft/models/item/pink_dye.json',
   `${ajblueprintDir}/last_exported_hashes.json`,
 ];
 const allAnimatedJavaExportFilesFormatted =

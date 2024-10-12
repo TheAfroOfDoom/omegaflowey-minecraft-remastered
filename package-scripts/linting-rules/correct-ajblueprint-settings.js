@@ -67,7 +67,7 @@ const checkExportNamespace = (model) => {
 };
 
 const checkRigItem = (model) => {
-  const expected = 'minecraft:white_dye';
+  const expected = 'minecraft:pink_dye';
   const actual = model.blueprint_settings.display_item;
   if (actual === expected) {
     return [];
