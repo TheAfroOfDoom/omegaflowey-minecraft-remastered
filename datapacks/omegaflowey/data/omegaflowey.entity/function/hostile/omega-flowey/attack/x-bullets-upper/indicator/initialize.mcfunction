@@ -6,8 +6,8 @@ data modify entity @s CustomName set value '"X-Bullets-Upper Indicator"'
 tag @s add x-bullets-upper
 
 # Set scores
-scoreboard players operation @s omegaflowey.attack.bullets.total = #attack-x-bullets-upper omegaflowey.attack.bullets.total
-scoreboard players operation @s omegaflowey.attack.cone = #attack-x-bullets-upper omegaflowey.attack.cone
+scoreboard players operation @s omegaflowey.attack.bullets.total = #omegaflowey.attack.x-bullets-upper omegaflowey.attack.bullets.total
+scoreboard players operation @s omegaflowey.attack.cone = #omegaflowey.attack.x-bullets-upper omegaflowey.attack.cone
 
 scoreboard players operation @s omegaflowey.attack.bullets.remaining = @s omegaflowey.attack.bullets.total
 

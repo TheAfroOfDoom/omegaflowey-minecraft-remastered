@@ -1,6 +1,6 @@
 # Set scores
 scoreboard players set @s omegaflowey.attack.clock.i -1
-scoreboard players operation @s omegaflowey.attack.speed.z = #attack-flies omegaflowey.attack.speed.z
+scoreboard players operation @s omegaflowey.attack.speed.z = #omegaflowey.attack.flies omegaflowey.attack.speed.z
 
 # Copy group id from indicator
 function omegaflowey.entity:group/copy with storage group

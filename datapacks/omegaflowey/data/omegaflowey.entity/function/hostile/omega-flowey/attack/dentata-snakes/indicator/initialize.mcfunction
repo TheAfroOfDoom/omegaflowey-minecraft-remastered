@@ -7,16 +7,16 @@ tag @s add dentata-snakes
 
 # Set scores
 scoreboard players set @s omegaflowey.attack.bullets.count 0
-scoreboard players operation @s omegaflowey.attack.bullets.clock.delay = #attack-dentata-snakes omegaflowey.attack.bullets.clock.delay
+scoreboard players operation @s omegaflowey.attack.bullets.clock.delay = #omegaflowey.attack.dentata-snakes omegaflowey.attack.bullets.clock.delay
 scoreboard players operation @s omegaflowey.attack.bullets.clock.i = @s omegaflowey.attack.bullets.clock.delay
-scoreboard players operation @s omegaflowey.attack.bullets.scale = #attack-dentata-snakes omegaflowey.attack.bullets.scale
-scoreboard players operation @s omegaflowey.attack.bullets.total = #attack-dentata-snakes omegaflowey.attack.bullets.total
+scoreboard players operation @s omegaflowey.attack.bullets.scale = #omegaflowey.attack.dentata-snakes omegaflowey.attack.bullets.scale
+scoreboard players operation @s omegaflowey.attack.bullets.total = #omegaflowey.attack.dentata-snakes omegaflowey.attack.bullets.total
 
 # Randomize position to summon bullet at
 execute store result score @s omegaflowey.attack.bullets.position.x run random value -800..800
-scoreboard players operation @s omegaflowey.attack.bullets.position.x += #omega-flowey.bossfight.summit.origin.x omegaflowey.global.flag
+scoreboard players operation @s omegaflowey.attack.bullets.position.x += #omegaflowey.bossfight.summit.origin.x omegaflowey.global.flag
 scoreboard players set @s omegaflowey.attack.bullets.position.z -750
-scoreboard players operation @s omegaflowey.attack.bullets.position.z += #omega-flowey.bossfight.summit.origin.z omegaflowey.global.flag
+scoreboard players operation @s omegaflowey.attack.bullets.position.z += #omegaflowey.bossfight.summit.origin.z omegaflowey.global.flag
 
 # Randomize initial yaw of bullets
 execute store result score @s omegaflowey.math.0 run random value 0..1

@@ -1,9 +1,9 @@
 # Set scores
 scoreboard players set @s omegaflowey.attack.clock.i -1
-scoreboard players operation @s omegaflowey.attack.clock.i -= #attack-flies omegaflowey.attack.indicator.clock.delay
+scoreboard players operation @s omegaflowey.attack.clock.i -= #omegaflowey.attack.flies omegaflowey.attack.indicator.clock.delay
 
-scoreboard players operation @s omegaflowey.attack.bullets.remaining = #attack-flies omegaflowey.attack.bullets.total
-scoreboard players operation @s omegaflowey.attack.indicator.rate = #attack-flies omegaflowey.attack.indicator.rate
+scoreboard players operation @s omegaflowey.attack.bullets.remaining = #omegaflowey.attack.flies omegaflowey.attack.bullets.total
+scoreboard players operation @s omegaflowey.attack.indicator.rate = #omegaflowey.attack.flies omegaflowey.attack.indicator.rate
 
 # Store if this is a flipped indicator (across x-axis) or not
 execute store result score @s omegaflowey.math.0 run data get entity @s Pos[0] 1
