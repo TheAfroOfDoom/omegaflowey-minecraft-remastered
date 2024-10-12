@@ -2,7 +2,7 @@
 scoreboard players reset #omegaflowey.attack.bomb omegaflowey.attack.weight
 scoreboard players reset #omegaflowey.attack.dentata-snakes omegaflowey.attack.weight
 scoreboard players reset #attack-finger-guns omegaflowey.attack.weight
-scoreboard players reset #attack-flies omegaflowey.attack.weight
+scoreboard players reset #omegaflowey.attack.flies omegaflowey.attack.weight
 scoreboard players reset #attack-friendliness-pellets omegaflowey.attack.weight
 scoreboard players reset #attack-homing-vines omegaflowey.attack.weight
 scoreboard players reset #attack-homing-vines-save-states omegaflowey.attack.weight

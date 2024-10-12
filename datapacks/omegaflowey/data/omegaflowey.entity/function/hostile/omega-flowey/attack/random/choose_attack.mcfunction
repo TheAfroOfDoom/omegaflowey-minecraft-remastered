@@ -16,9 +16,9 @@ scoreboard players operation @s omegaflowey.math.0 -= #attack-finger-guns omegaf
 execute if score #attack-finger-guns omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/finger-guns
 execute if score #attack-finger-guns omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
 
-scoreboard players operation @s omegaflowey.math.0 -= #attack-flies omegaflowey.attack.weight
-execute if score #attack-flies omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/flies
-execute if score #attack-flies omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
+scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.flies omegaflowey.attack.weight
+execute if score #omegaflowey.attack.flies omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/flies
+execute if score #omegaflowey.attack.flies omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
 
 scoreboard players operation @s omegaflowey.math.0 -= #attack-friendliness-pellets omegaflowey.attack.weight
 execute if score #attack-friendliness-pellets omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/friendliness-pellets
