@@ -14,8 +14,8 @@
 #   (y/dy need to be generous because of target selectors being janky with volume selections)
 
 # Save initial yaw
-execute store result score @s util.bounce.yaw.initial run data get entity @s Rotation[0]
-scoreboard players operation @s util.bounce.yaw = @s util.bounce.yaw.initial
+execute store result score @s omegaflowey.util.bounce.yaw.initial run data get entity @s Rotation[0]
+scoreboard players operation @s omegaflowey.util.bounce.yaw = @s omegaflowey.util.bounce.yaw.initial
 
 # -X wall
 $execute unless entity @s[x=$(x_negative_x),dx=$(x_negative_dx),y=$(y),dy=$(dy),z=-1000,dz=2000] if entity @s[y_rotation=0..180] run function omegaflowey.entity:utils/bounce/x_negative
@@ -30,7 +30,7 @@ $execute unless entity @s[x=-1000,dx=2000,y=$(y),dy=$(dy),z=$(z_negative_z),dz=$
 $execute unless entity @s[x=-1000,dx=2000,y=$(y),dy=$(dy),z=$(z_positive_z),dz=$(z_positive_dz)] if entity @s[y_rotation=-90..90] run function omegaflowey.entity:utils/bounce/z_positive
 
 # Store bounced angle
-execute store result entity @s Rotation[0] float 1 run scoreboard players get @s util.bounce.yaw
+execute store result entity @s Rotation[0] float 1 run scoreboard players get @s omegaflowey.util.bounce.yaw
 
-# If `util.bounce.yaw != util.bounce.yaw.initial`, we bounced
-$execute unless score @s util.bounce.yaw = @s util.bounce.yaw.initial run $(command_after_bouncing)
+# If `omegaflowey.util.bounce.yaw != omegaflowey.util.bounce.yaw.initial`, we bounced
+$execute unless score @s omegaflowey.util.bounce.yaw = @s omegaflowey.util.bounce.yaw.initial run $(command_after_bouncing)

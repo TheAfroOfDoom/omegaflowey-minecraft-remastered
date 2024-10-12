@@ -1,6 +1,6 @@
 ## Set scores
 # Length of music (up to the WARNING sound)
-scoreboard players set @s boss-fight.attack.clock.total 463
+scoreboard players set @s omegaflowey.boss-fight.attack.clock.total 463
 
 # Play music
 playsound omega-flowey:music.phase.0 record @a ~ ~ ~ 10 1

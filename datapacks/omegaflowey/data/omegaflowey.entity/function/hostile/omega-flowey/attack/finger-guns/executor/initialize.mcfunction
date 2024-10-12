@@ -3,8 +3,8 @@ function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initiali
 data modify entity @s CustomName set value '"Finger-Guns Executor"'
 
 # Set scores
-scoreboard players operation @s attack.executor.clock.length = #attack-finger-guns attack.executor.clock.length
-scoreboard players operation @s attack.executor.rate = #attack-finger-guns attack.executor.rate
+scoreboard players operation @s omegaflowey.attack.executor.clock.length = #attack-finger-guns omegaflowey.attack.executor.clock.length
+scoreboard players operation @s omegaflowey.attack.executor.rate = #attack-finger-guns omegaflowey.attack.executor.rate
 
 # Add tags
 tag @s add finger-guns

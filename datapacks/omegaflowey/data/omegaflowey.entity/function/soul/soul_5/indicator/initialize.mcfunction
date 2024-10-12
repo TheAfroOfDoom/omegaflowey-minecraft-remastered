@@ -1,12 +1,12 @@
 data modify entity @s CustomName set value '"Soul 5 Gun"'
 
 # Set scores
-scoreboard players set @s soul.clock.i -1
+scoreboard players set @s omegaflowey.soul.clock.i -1
 
-scoreboard players operation @s soul.indicator.bullets.total = #soul-5 soul.indicator.bullets.total
-scoreboard players operation @s soul.indicator.bullets.remaining = @s soul.indicator.bullets.total
+scoreboard players operation @s omegaflowey.soul.indicator.bullets.total = #soul-5 omegaflowey.soul.indicator.bullets.total
+scoreboard players operation @s omegaflowey.soul.indicator.bullets.remaining = @s omegaflowey.soul.indicator.bullets.total
 
-scoreboard players set @s soul.indicator.bullets.cumulative-total 0
+scoreboard players set @s omegaflowey.soul.indicator.bullets.cumulative-total 0
 
 # Store this UUID to a global storage for later reference
 function gu:generate

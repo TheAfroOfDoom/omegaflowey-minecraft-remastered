@@ -6,7 +6,7 @@ execute as @e[ \
   tag=aj.tv_screen.root, \
   tag=omega-flowey-remastered \
 ] run function animated_java:tv_screen/remove/this
-scoreboard players set #omegaflowey.summon.tag_variant global.flag 3
+scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 3
 execute positioned -123.47 87.25 33.35 rotated -158.2 12.52 run \
   function animated_java:tv_screen/summon { args: { animation: 'move_slow', start_animation: true, variant: 'smiling' } }
 
@@ -23,4 +23,4 @@ execute positioned -123.125 101.5625 35.6875 rotated -116 0 run \
 
 function omegaflowey.main:summit/room/outside/setup/text_displays
 
-scoreboard players set #omegaflowey.summon.tag_variant global.flag 0
+scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 0

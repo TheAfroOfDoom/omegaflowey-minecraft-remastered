@@ -6,10 +6,10 @@ $execute store result storage soul:soul_0.bandaid rotation float 0.000001 run da
 data merge storage utils:math.min { a: -200 }
 execute store result storage utils:math.min b int 1 run data get storage soul:soul_0.bandaid rotation 100
 function omegaflowey.utils:math/min
-execute store result score @s math.0 run data get storage utils:math.min out
+execute store result score @s omegaflowey.math.0 run data get storage utils:math.min out
 
 data merge storage utils:math.max { a: -1000 }
-execute store result storage utils:math.max b int 1 run scoreboard players get @s math.0
+execute store result storage utils:math.max b int 1 run scoreboard players get @s omegaflowey.math.0
 function omegaflowey.utils:math/max
 
 execute store result storage soul:soul_0.bandaid rotation float 0.01 run data get storage utils:math.max out
@@ -19,10 +19,10 @@ execute store result storage soul:soul_0.bandaid rotation float 0.01 run data ge
 data merge storage utils:math.min { a: 40 }
 execute store result storage utils:math.min b int 1 run data get storage soul:soul_0.bandaid velocity 100
 function omegaflowey.utils:math/min
-execute store result score @s math.0 run data get storage utils:math.min out
+execute store result score @s omegaflowey.math.0 run data get storage utils:math.min out
 
 data merge storage utils:math.max { a: 10 }
-execute store result storage utils:math.max b int 1 run scoreboard players get @s math.0
+execute store result storage utils:math.max b int 1 run scoreboard players get @s omegaflowey.math.0
 function omegaflowey.utils:math/max
 
 # If there are no players alive, the bandaid will rotate at its minimum bound

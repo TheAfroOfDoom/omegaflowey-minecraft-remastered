@@ -16,15 +16,15 @@ data modify storage attack:x-bullets-upper-save-states current_state.rotation_ya
 data modify storage attack:x-bullets-upper-save-states current_state.rotation_pitch set from entity @s Rotation[1]
 
 # Scores
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_bullets_remaining int 1 run scoreboard players get @s attack.bullets.remaining
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_clock_i int 1 run scoreboard players get @s attack.clock.i
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_x int 1 run scoreboard players get @s attack.position.x
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_y int 1 run scoreboard players get @s attack.position.y
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_z int 1 run scoreboard players get @s attack.position.z
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_indicator_yaw int 1 run scoreboard players get @s attack.indicator.yaw
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_theta int 1 run scoreboard players get @s attack.theta
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_d_phi int 1 run scoreboard players get @s attack.d-phi
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_phi int 1 run scoreboard players get @s attack.phi
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_bullets_remaining int 1 run scoreboard players get @s omegaflowey.attack.bullets.remaining
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_clock_i int 1 run scoreboard players get @s omegaflowey.attack.clock.i
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_x int 1 run scoreboard players get @s omegaflowey.attack.position.x
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_y int 1 run scoreboard players get @s omegaflowey.attack.position.y
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_z int 1 run scoreboard players get @s omegaflowey.attack.position.z
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_indicator_yaw int 1 run scoreboard players get @s omegaflowey.attack.indicator.yaw
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_theta int 1 run scoreboard players get @s omegaflowey.attack.theta
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_d_phi int 1 run scoreboard players get @s omegaflowey.attack.d-phi
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_phi int 1 run scoreboard players get @s omegaflowey.attack.phi
 
 # Append this entity's saved_state to the executor's NBT list
 $data modify entity $(executor_uuid) data.saved_states append from storage attack:x-bullets-upper-save-states current_state

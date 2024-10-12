@@ -1,3 +1,3 @@
 ## restores group IDs
-execute if entity @s[scores={group.id.tree.level=1}] run scoreboard players operation @e[tag=groupable] group.id += #group.id.restore group.id
-scoreboard players remove @e[scores={group.id.tree.level=1..},tag=groupable] group.id.tree.level 1
+execute if entity @s[scores={omegaflowey.group.id.tree.level=1}] run scoreboard players operation @e[tag=groupable] omegaflowey.group.id += #group.id.restore omegaflowey.group.id
+scoreboard players remove @e[scores={omegaflowey.group.id.tree.level=1..},tag=groupable] omegaflowey.group.id.tree.level 1

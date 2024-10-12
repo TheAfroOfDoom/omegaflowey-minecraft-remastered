@@ -6,4 +6,4 @@ data modify entity @s CustomName set value '"Bomb Indicator"'
 tag @s add bomb
 
 # Set scores
-scoreboard players operation @s attack.indicator.clock.length = #attack-bomb attack.indicator.clock.length
+scoreboard players operation @s omegaflowey.attack.indicator.clock.length = #attack-bomb omegaflowey.attack.indicator.clock.length

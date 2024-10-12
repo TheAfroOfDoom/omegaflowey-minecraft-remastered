@@ -1,1 +1,1 @@
-scoreboard players operation @s util.bounce.yaw *= #-1 math.const
+scoreboard players operation @s omegaflowey.util.bounce.yaw *= #-1 omegaflowey.math.const

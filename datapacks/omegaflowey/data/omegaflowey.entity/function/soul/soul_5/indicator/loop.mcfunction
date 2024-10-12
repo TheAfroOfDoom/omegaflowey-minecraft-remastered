@@ -1,8 +1,8 @@
 ## Split logic between states: `idle`, `aiming`, and `shooting`
-scoreboard players add @s soul.clock.i 1
+scoreboard players add @s omegaflowey.soul.clock.i 1
 
-# Ignore logic while `soul.clock.i` is negative
-execute if score @s soul.clock.i matches ..-1 run return 0
+# Ignore logic while `omegaflowey.soul.clock.i` is negative
+execute if score @s omegaflowey.soul.clock.i matches ..-1 run return 0
 
 # state-loop is: idle -> aiming -> shooting -> aiming -> shooting -> aiming -> ...
 execute if entity @s[tag=soul_5.idle] run function omegaflowey.entity:soul/soul_5/indicator/loop/idle

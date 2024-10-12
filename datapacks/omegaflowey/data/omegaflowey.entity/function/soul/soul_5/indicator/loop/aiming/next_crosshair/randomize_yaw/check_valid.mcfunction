@@ -1,5 +1,5 @@
 # this position is invalid if the placement is too close to the indicator
-scoreboard players set @s math.bool 1
+scoreboard players set @s omegaflowey.math.bool 1
 
 # NOTE: TAG_SUMMIT_HARDCODED_ARENA_VOLUME
 $function omegaflowey.entity:directorial/boss_fight/summit/soul_origin/at/y { \
@@ -12,6 +12,6 @@ $function omegaflowey.entity:directorial/boss_fight/summit/soul_origin/at/y { \
         tag=soul_5, \
         distance=..3, \
         limit=1 \
-      ] run scoreboard players set @s math.bool 0\
+      ] run scoreboard players set @s omegaflowey.math.bool 0\
   " \
 }

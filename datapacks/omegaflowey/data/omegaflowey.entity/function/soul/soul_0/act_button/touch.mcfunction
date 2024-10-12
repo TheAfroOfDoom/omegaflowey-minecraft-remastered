@@ -1,5 +1,5 @@
 # Update state flag
-scoreboard players set #soul_0.touched soul.flag 1
+scoreboard players set #soul_0.touched omegaflowey.soul.flag 1
 
 # Apply yellow-highlighted variant
 function animated_java:act_button/variants/selected/apply

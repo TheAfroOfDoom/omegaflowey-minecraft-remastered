@@ -9,7 +9,7 @@ function omegaflowey.entity:hostile/omega-flowey/attack/flies/bullet/loop/move
 
 # Begin terminating after reaching the venus fly trap's mouth
 function omegaflowey.entity:group/start
-execute if entity @e[scores={group.id=0},tag=attack-indicator,tag=flies,distance=..5] run tag @s add is_terminating
+execute if entity @e[scores={omegaflowey.group.id=0},tag=attack-indicator,tag=flies,distance=..5] run tag @s add is_terminating
 function omegaflowey.entity:group/end
 # guard against flies who move past the fly trap and outside the arena due to e.g. lag
 execute unless entity @s[x=-25,dx=50,y=-100,dy=200,z=-7,dz=29] run tag @s add is_terminating
