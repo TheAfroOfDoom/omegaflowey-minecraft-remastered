@@ -19,7 +19,7 @@ function animated_java:omegaflowey_projectile_star/remove/all
 function animated_java:omegaflowey_venus_fly_trap/remove/all
 
 # Soul models
-function animated_java:act_button/remove/all
+function animated_java:omegaflowey_act_button/remove/all
 function animated_java:omegaflowey_soul/remove/all
 function animated_java:soul_0_bandaid/remove/all
 function animated_java:soul_0_sword/remove/all
