@@ -93,8 +93,8 @@ scoreboard objectives add omegaflowey.math.bool dummy
 scoreboard objectives add omegaflowey.math.const dummy
 scoreboard objectives add omegaflowey.math.trials dummy
 
-scoreboard objectives add music.clock.i dummy
-scoreboard objectives add music.clock.total dummy
+scoreboard objectives add omegaflowey.music.clock.i dummy
+scoreboard objectives add omegaflowey.music.clock.total dummy
 
 scoreboard objectives add player.deaths.current deathCount
 scoreboard objectives add player.deaths.previous dummy
