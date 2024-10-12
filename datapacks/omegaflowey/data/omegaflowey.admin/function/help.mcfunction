@@ -21,7 +21,10 @@ function omegaflowey.utils:log/self { text_component: '[ \
       ": kills all decorative AJ models and display entities", \
       "\\n", \
       { "text": "kill/bossfight", "color": "yellow" }, \
-      ": ends the bossfight and kills related entities (if active)" \
+      ": ends the bossfight and kills related entities (if active)", \
+      "\\n", \
+      { "text": "kill/queue", "color": "yellow" }, \
+      ": resets the bossfight player queue" \
     ] \
   } \
 ]'}
