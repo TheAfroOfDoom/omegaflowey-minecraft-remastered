@@ -2,7 +2,7 @@
 scoreboard players set #soul_5.saved omegaflowey.soul.flag 1
 
 # Stop event music
-stopsound @a record omega-flowey:music.omegaflowey.soul.5
+stopsound @a record omega-flowey:music.soul.5
 
 # Play saved music + sound effect
 playsound omega-flowey:soul.saved record @a ~ ~ ~ 10 1
