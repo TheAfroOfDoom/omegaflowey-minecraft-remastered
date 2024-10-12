@@ -43,9 +43,9 @@ execute positioned 0 49 -6 rotated 0 45 run function animated_java:tv_screen/sum
 
 ## Upper eyes
 # Right-eye
-execute positioned -15.5 48 -4 rotated 160 -40 run function animated_java:upper_eye/summon { args: {} }
+execute positioned -15.5 48 -4 rotated 160 -40 run function animated_java:omegaflowey_upper_eye/summon { args: {} }
 # Left-eye
-execute positioned 16.5 48 -4 rotated 20 40 run function animated_java:upper_eye/summon { args: {} }
+execute positioned 16.5 48 -4 rotated 20 40 run function animated_java:omegaflowey_upper_eye/summon { args: {} }
 
 ## Upper petal pipes
 # Right-upper petal pipe

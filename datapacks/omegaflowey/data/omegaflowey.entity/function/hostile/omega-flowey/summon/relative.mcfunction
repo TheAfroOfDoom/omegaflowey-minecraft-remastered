@@ -46,10 +46,10 @@ execute unless score #omegaflowey.bossfight.skip_resummon_tvscreen omegaflowey.g
 ## Upper eyes
 # Right-eye
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
-execute positioned ^-16.0 ^11.5 ^9.5 rotated ~160 ~-40 run function animated_java:upper_eye/summon { args: {} }
+execute positioned ^-16.0 ^11.5 ^9.5 rotated ~160 ~-40 run function animated_java:omegaflowey_upper_eye/summon { args: {} }
 # Left-eye
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 2
-execute positioned ^16.0 ^11.5 ^9.5 rotated ~20 ~40 run function animated_java:upper_eye/summon { args: {} }
+execute positioned ^16.0 ^11.5 ^9.5 rotated ~20 ~40 run function animated_java:omegaflowey_upper_eye/summon { args: {} }
 
 ## Upper petal pipes
 # Right-upper petal pipe
