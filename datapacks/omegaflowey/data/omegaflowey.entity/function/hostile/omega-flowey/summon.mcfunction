@@ -35,7 +35,7 @@ tag @e[tag=aj.petal_pipe_middle.root,tag=!petal_pipe.right] add petal_pipe.left
 execute positioned 0 35.5 -3.15 rotated 0 9 run function animated_java:omegaflowey_mouth/summon { args: {} }
 
 ## Nose
-execute positioned 0 37 -13 rotated 0 10 run function animated_java:nose/summon { args: {} }
+execute positioned 0 37 -13 rotated 0 10 run function animated_java:omegaflowey_nose/summon { args: {} }
 
 ## TV-screen
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
