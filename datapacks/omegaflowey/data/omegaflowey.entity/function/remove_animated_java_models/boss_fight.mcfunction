@@ -23,7 +23,7 @@ function animated_java:omegaflowey_act_button/remove/all
 function animated_java:omegaflowey_soul/remove/all
 function animated_java:omegaflowey_soul_0_bandaid/remove/all
 function animated_java:omegaflowey_soul_0_sword/remove/all
-function animated_java:soul_5_bullet/remove/all
-function animated_java:soul_5_crosshair/remove/all
-function animated_java:soul_5_flower/remove/all
-function animated_java:soul_5_gun/remove/all
+function animated_java:omegaflowey_soul_5_bullet/remove/all
+function animated_java:omegaflowey_soul_5_crosshair/remove/all
+function animated_java:omegaflowey_soul_5_flower/remove/all
+function animated_java:omegaflowey_soul_5_gun/remove/all
