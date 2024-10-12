@@ -13,6 +13,7 @@ scoreboard players set #omegaflowey.soul.5.touched omegaflowey.soul.flag 0
 function gu:generate
 data modify storage omegaflowey:soul.5 executor_uuid set from storage gu:main out
 
+data modify storage omegaflowey:soul.5 active_player_uuid set from storage omegaflowey:bossfight active_player_uuid
 data modify storage omegaflowey:soul.5 soul_model_uuid set from storage omegaflowey:bossfight soul_model_uuid
 
 # Add tags

@@ -6,7 +6,7 @@ scoreboard players set @s omegaflowey.boss-fight.progress.clock.total 27
 function omegaflowey.entity:directorial/boss_fight/shared/phase/soul/static with storage omegaflowey:bossfight
 
 # # Move players to soul arena
-# execute as @a at @s unless entity @s[tag=!omegaflowey.player.fighting_flowey, team=!spectator] run function omegaflowey.entity:directorial/boss_fight/summit/origin/to_soul_origin
+# execute as @a at @s unless entity @s[tag=!omegaflowey.player.fighting_flowey, tag=!omegaflowey.player.room.spectator_box] run function omegaflowey.entity:directorial/boss_fight/summit/origin/to_soul_origin
 
 # Add tags
 tag @s add boss_fight.phase.soul
