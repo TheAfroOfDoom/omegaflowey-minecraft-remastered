@@ -1,7 +1,7 @@
 ## Set scores
 # the negative time duration is how long the static length lasts (25 ticks)
-scoreboard players set @s boss-fight.progress.clock.i -26
-scoreboard players set @s boss-fight.progress.clock.total 27
+scoreboard players set @s omegaflowey.boss-fight.progress.clock.i -26
+scoreboard players set @s omegaflowey.boss-fight.progress.clock.total 27
 
 function omegaflowey.entity:directorial/boss_fight/shared/phase/soul/static with storage omegaflowey:bossfight
 
@@ -16,5 +16,5 @@ function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_model
 $execute as $(soul_model_uuid) run function animated_java:soul/remove/this
 
 # Split on phase score
-execute if score @s boss-fight.progress.phase.i matches 0 run function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/initialize/0
-execute if score @s boss-fight.progress.phase.i matches 1 run function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/initialize/1
+execute if score @s omegaflowey.boss-fight.progress.phase.i matches 0 run function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/initialize/0
+execute if score @s omegaflowey.boss-fight.progress.phase.i matches 1 run function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/initialize/1

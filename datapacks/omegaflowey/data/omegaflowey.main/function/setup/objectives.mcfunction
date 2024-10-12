@@ -60,26 +60,26 @@ scoreboard objectives add omegaflowey.attack.speed.z dummy
 # the weight of an attack during the `random` attack's RNG
 scoreboard objectives add omegaflowey.attack.weight dummy
 
-scoreboard objectives add boss-fight.attack.clock.i dummy
+scoreboard objectives add omegaflowey.boss-fight.attack.clock.i dummy
 # total duration (in ticks) of the attack phase
-scoreboard objectives add boss-fight.attack.clock.total dummy
+scoreboard objectives add omegaflowey.boss-fight.attack.clock.total dummy
 # delay (in ticks) between an attack ending and the next one starting
-scoreboard objectives add boss-fight.attack.delay dummy
+scoreboard objectives add omegaflowey.boss-fight.attack.delay dummy
 # index of the attack phase
-scoreboard objectives add boss-fight.attack.phase.i dummy
+scoreboard objectives add omegaflowey.boss-fight.attack.phase.i dummy
 # total number of attack phases before we wrap the index
-scoreboard objectives add boss-fight.attack.phase.total dummy
+scoreboard objectives add omegaflowey.boss-fight.attack.phase.total dummy
 # boolean flags used to mark various states of the boss fight
-scoreboard objectives add boss-fight.flag dummy
-scoreboard objectives add boss-fight.progress.clock.i dummy
+scoreboard objectives add omegaflowey.boss-fight.flag dummy
+scoreboard objectives add omegaflowey.boss-fight.progress.clock.i dummy
 # total duration (in ticks) of the progress phase
-scoreboard objectives add boss-fight.progress.clock.total dummy
+scoreboard objectives add omegaflowey.boss-fight.progress.clock.total dummy
 # index of the progress phase
-scoreboard objectives add boss-fight.progress.phase.i dummy
+scoreboard objectives add omegaflowey.boss-fight.progress.phase.i dummy
 # total number of progress phases in the boss fight
-scoreboard objectives add boss-fight.progress.phase.total dummy
-scoreboard objectives add boss-fight.warn.clock.i dummy
-scoreboard objectives add boss-fight.warn.clock.total dummy
+scoreboard objectives add omegaflowey.boss-fight.progress.phase.total dummy
+scoreboard objectives add omegaflowey.boss-fight.warn.clock.i dummy
+scoreboard objectives add omegaflowey.boss-fight.warn.clock.total dummy
 
 scoreboard objectives add omegaflowey.global.flag dummy
 

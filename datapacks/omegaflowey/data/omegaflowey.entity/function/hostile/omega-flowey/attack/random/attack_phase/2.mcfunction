@@ -1,4 +1,4 @@
-## Initializes a random attack for entities (`boss_fight`) with `boss-fight.attack.phase.i` == 2
+## Initializes a random attack for entities (`boss_fight`) with `omegaflowey.boss-fight.attack.phase.i` == 2
 
 # Set influences to defaults for attack_phase 2
 scoreboard players set #attack-homing-vines-save-states omegaflowey.attack.weight 3

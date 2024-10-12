@@ -1,6 +1,6 @@
 # Check if this is the final phase
 scoreboard players set #omega-flowey.bossfight.done omegaflowey.global.flag 0
-execute if score @s boss-fight.progress.phase.i = @s boss-fight.progress.phase.total run scoreboard players set #omega-flowey.bossfight.done omegaflowey.global.flag 1
+execute if score @s omegaflowey.boss-fight.progress.phase.i = @s omegaflowey.boss-fight.progress.phase.total run scoreboard players set #omega-flowey.bossfight.done omegaflowey.global.flag 1
 
 execute if score #omega-flowey.bossfight.done omegaflowey.global.flag matches 1 run \
   function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/terminate/final with storage omegaflowey:bossfight
