@@ -4,4 +4,6 @@
 # TODO(36): maybe `particle minecraft:flash`?
 particle minecraft:explosion ~ ~ ~ 0 0 0 10 1 force
 
-playsound omega-flowey:attack.x-bullets.start hostile @a ~ ~ ~ 3 1 1
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+  'playsound omega-flowey:attack.x-bullets.start hostile @s ~ ~ ~ 3 1 1' \
+}
