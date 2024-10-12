@@ -6,7 +6,7 @@ scoreboard players set #attack-x-bullets-lower omegaflowey.attack.cone 105
 scoreboard players set #attack-x-bullets-lower omegaflowey.attack.executor.clock.delay 8
 scoreboard players set #attack-x-bullets-lower omegaflowey.attack.executor.clock.length 56
 scoreboard players set #attack-x-bullets-lower omegaflowey.attack.executor.rate 8
-scoreboard players set #attack-x-bullets-lower attack.indicator.total 7
+scoreboard players set #attack-x-bullets-lower omegaflowey.attack.indicator.total 7
 scoreboard players set #attack-x-bullets-lower attack.speed.z 150
 
 scoreboard players set #attack-x-bullets-lower.tween_duration math.const 3

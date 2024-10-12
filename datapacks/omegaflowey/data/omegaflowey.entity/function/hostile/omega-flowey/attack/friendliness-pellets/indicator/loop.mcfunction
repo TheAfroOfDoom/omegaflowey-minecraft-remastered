@@ -4,7 +4,7 @@ scoreboard players add @s omegaflowey.attack.clock.i 1
 
 # TODO(45): refactor repeated `omegaflowey.attack.clock.i` conditionals into separate functions
 # Change ring variant at tick index
-execute if score @s omegaflowey.attack.clock.i = @s attack.indicator.animation.index run \
+execute if score @s omegaflowey.attack.clock.i = @s omegaflowey.attack.indicator.animation.index run \
   function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/finished_blinking with entity @s data
 
 # Play blinking sound before we summon bullets

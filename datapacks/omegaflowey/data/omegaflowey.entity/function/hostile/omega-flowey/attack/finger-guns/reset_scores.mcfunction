@@ -3,7 +3,7 @@
 # (66 / 3) + 1 = 22 + 1 = 23 indicators
 scoreboard players set #attack-finger-guns omegaflowey.attack.executor.clock.length 66
 scoreboard players set #attack-finger-guns omegaflowey.attack.executor.rate 3
-scoreboard players set #attack-finger-guns attack.indicator.clock.delay 14
+scoreboard players set #attack-finger-guns omegaflowey.attack.indicator.clock.delay 14
 # lifespan of indicator after summoning laser
-scoreboard players set #attack-finger-guns attack.indicator.clock.length 40
+scoreboard players set #attack-finger-guns omegaflowey.attack.indicator.clock.length 40
 scoreboard players set #attack-finger-guns attack.speed.z 110

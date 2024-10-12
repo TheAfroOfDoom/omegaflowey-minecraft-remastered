@@ -10,7 +10,7 @@ execute if score @s omegaflowey.attack.clock.i matches ..-1 run return 0
 # Play buzzing sound when we begin summoning bullets
 execute if score @s omegaflowey.attack.clock.i matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/start_animating
 
-# Summon a bullet every `attack.indicator.rate` ticks
+# Summon a bullet every `omegaflowey.attack.indicator.rate` ticks
 scoreboard players operation @s math.0 = @s omegaflowey.attack.clock.i
-scoreboard players operation @s math.0 %= @s attack.indicator.rate
+scoreboard players operation @s math.0 %= @s omegaflowey.attack.indicator.rate
 execute if score @s omegaflowey.attack.bullets.remaining matches 1.. if score @s math.0 matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon

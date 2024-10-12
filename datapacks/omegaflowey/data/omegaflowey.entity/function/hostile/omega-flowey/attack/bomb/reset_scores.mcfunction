@@ -2,4 +2,4 @@
 # TODO(68): validate these attack parameters
 scoreboard players set #attack-bomb omegaflowey.attack.executor.clock.length 54
 scoreboard players set #attack-bomb omegaflowey.attack.executor.rate 6
-scoreboard players set #attack-bomb attack.indicator.clock.length 2
+scoreboard players set #attack-bomb omegaflowey.attack.indicator.clock.length 2

@@ -1,4 +1,4 @@
-execute store result storage params radius int 1 run scoreboard players get @s attack.indicator.radius
+execute store result storage params radius int 1 run scoreboard players get @s omegaflowey.attack.indicator.radius
 execute store result storage params yaw_delta int 1 run scoreboard players get @s attack.d-phi
 
 # Store flipped yaw to summon bullet at

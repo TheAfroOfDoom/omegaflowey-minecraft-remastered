@@ -21,9 +21,9 @@ scoreboard players operation @s omegaflowey.attack.clock.i -= #attack-x-bullets-
 
 scoreboard players operation @s omegaflowey.attack.executor.clock.length = #attack-x-bullets-lower omegaflowey.attack.executor.clock.length
 scoreboard players operation @s omegaflowey.attack.executor.rate = #attack-x-bullets-lower omegaflowey.attack.executor.rate
-scoreboard players operation @s attack.indicator.total = #attack-x-bullets-lower attack.indicator.total
+scoreboard players operation @s omegaflowey.attack.indicator.total = #attack-x-bullets-lower omegaflowey.attack.indicator.total
 
-scoreboard players operation @s attack.indicator.remaining = @s attack.indicator.total
+scoreboard players operation @s omegaflowey.attack.indicator.remaining = @s omegaflowey.attack.indicator.total
 
 # Add tags
 tag @s add x-bullets-lower

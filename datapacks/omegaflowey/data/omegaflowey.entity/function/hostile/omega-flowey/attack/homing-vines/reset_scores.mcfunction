@@ -6,5 +6,5 @@ scoreboard players set #attack-homing-vines omegaflowey.attack.executor.clock.le
 scoreboard players set #attack-homing-vines omegaflowey.attack.executor.rate 1
 scoreboard players set #attack-homing-vines omegaflowey.attack.executor.repeat.count.total 1
 scoreboard players set #attack-homing-vines omegaflowey.attack.executor.repeat.delay 12
-scoreboard players set #attack-homing-vines attack.indicator.clock.delay 6
+scoreboard players set #attack-homing-vines omegaflowey.attack.indicator.clock.delay 6
 scoreboard players set #attack-homing-vines attack.speed.z 500

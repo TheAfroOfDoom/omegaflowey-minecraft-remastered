@@ -33,20 +33,20 @@ scoreboard objectives add omegaflowey.attack.executor.repeat.count.total dummy
 scoreboard objectives add omegaflowey.attack.executor.repeat.delay dummy
 # boolean flags used to mark various states of an attack
 scoreboard objectives add omegaflowey.attack.flag dummy
-scoreboard objectives add attack.indicator.animation.index dummy
+scoreboard objectives add omegaflowey.attack.indicator.animation.index dummy
 # delay (in ticks) before an attack-indicator begins summoning bullets
-scoreboard objectives add attack.indicator.clock.delay dummy
+scoreboard objectives add omegaflowey.attack.indicator.clock.delay dummy
 # length an attack-indicator will exist
-scoreboard objectives add attack.indicator.clock.length dummy
+scoreboard objectives add omegaflowey.attack.indicator.clock.length dummy
 # radius (in blocks) at which to summon bullets around attack-indicator
-scoreboard objectives add attack.indicator.radius dummy
+scoreboard objectives add omegaflowey.attack.indicator.radius dummy
 # how often (in ticks) an attack-indicator summons an attack-bullet
-scoreboard objectives add attack.indicator.rate dummy
+scoreboard objectives add omegaflowey.attack.indicator.rate dummy
 # number of indicators left to summon in a set
-scoreboard objectives add attack.indicator.remaining dummy
+scoreboard objectives add omegaflowey.attack.indicator.remaining dummy
 # total number of indicators an attack-executor will summon
-scoreboard objectives add attack.indicator.total dummy
-scoreboard objectives add attack.indicator.yaw dummy
+scoreboard objectives add omegaflowey.attack.indicator.total dummy
+scoreboard objectives add omegaflowey.attack.indicator.yaw dummy
 scoreboard objectives add attack.theta dummy
 scoreboard objectives add attack.d-theta dummy
 scoreboard objectives add attack.phi dummy

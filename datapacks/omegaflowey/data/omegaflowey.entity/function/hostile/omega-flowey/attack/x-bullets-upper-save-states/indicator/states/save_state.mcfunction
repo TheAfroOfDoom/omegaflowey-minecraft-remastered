@@ -21,7 +21,7 @@ execute store result storage attack:x-bullets-upper-save-states current_state.sc
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_x int 1 run scoreboard players get @s attack.position.x
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_y int 1 run scoreboard players get @s attack.position.y
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_position_z int 1 run scoreboard players get @s attack.position.z
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_indicator_yaw int 1 run scoreboard players get @s attack.indicator.yaw
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_indicator_yaw int 1 run scoreboard players get @s omegaflowey.attack.indicator.yaw
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_theta int 1 run scoreboard players get @s attack.theta
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_d_phi int 1 run scoreboard players get @s attack.d-phi
 execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_phi int 1 run scoreboard players get @s attack.phi
