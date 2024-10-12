@@ -1,4 +1,4 @@
-# Randomize delta-x-position to summon bullet at (x: player.Position.x, dx: [-15.00..15.00])
+# Randomize delta-x-position to summon bullet at (x: omegaflowey.player.Position.x, dx: [-15.00..15.00])
 # TODO(41): validate this dx range
 execute store result score @s omegaflowey.attack.position.x run data get entity @s Pos[0] 100
 execute store result score @s omegaflowey.math.0 run random value -1500..1500

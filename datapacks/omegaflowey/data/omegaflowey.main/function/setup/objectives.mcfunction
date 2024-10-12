@@ -96,16 +96,16 @@ scoreboard objectives add omegaflowey.math.trials dummy
 scoreboard objectives add omegaflowey.music.clock.i dummy
 scoreboard objectives add omegaflowey.music.clock.total dummy
 
-scoreboard objectives add player.deaths.current deathCount
-scoreboard objectives add player.deaths.previous dummy
-scoreboard objectives add player.flag dummy
-scoreboard objectives add player.leave.current minecraft.custom:minecraft.leave_game
-scoreboard objectives add player.leave.previous dummy
-scoreboard objectives add player.health health
-scoreboard objectives add player.shake.pitch dummy
-scoreboard objectives add player.shake.yaw dummy
-scoreboard objectives add player.trigger.bossfight.confirm trigger
-scoreboard objectives add player.trigger.bossfight.deny trigger
+scoreboard objectives add omegaflowey.player.deaths.current deathCount
+scoreboard objectives add omegaflowey.player.deaths.previous dummy
+scoreboard objectives add omegaflowey.player.flag dummy
+scoreboard objectives add omegaflowey.player.leave.current minecraft.custom:minecraft.leave_game
+scoreboard objectives add omegaflowey.player.leave.previous dummy
+scoreboard objectives add omegaflowey.player.health health
+scoreboard objectives add omegaflowey.player.shake.pitch dummy
+scoreboard objectives add omegaflowey.player.shake.yaw dummy
+scoreboard objectives add omegaflowey.player.trigger.bossfight.confirm trigger
+scoreboard objectives add omegaflowey.player.trigger.bossfight.deny trigger
 
 # x/z spans of the bullet grid
 scoreboard objectives add soul.bullet.position.dx dummy

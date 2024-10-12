@@ -14,5 +14,5 @@ execute store result storage utils:shake_screen pitch float 0.1 run scoreboard p
 
 function omegaflowey.entity:utils/shake_screen_macro with storage utils:shake_screen
 
-scoreboard players operation @s player.shake.yaw += @s omegaflowey.math.0
-scoreboard players operation @s player.shake.pitch += @s omegaflowey.math.2
+scoreboard players operation @s omegaflowey.player.shake.yaw += @s omegaflowey.math.0
+scoreboard players operation @s omegaflowey.player.shake.pitch += @s omegaflowey.math.2

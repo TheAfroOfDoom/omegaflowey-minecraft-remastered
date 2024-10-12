@@ -1,4 +1,4 @@
-# Randomize delta-x-position of indicator at (x: player.Position.x, dx: [-0.50..0.50])
+# Randomize delta-x-position of indicator at (x: omegaflowey.player.Position.x, dx: [-0.50..0.50])
 # TODO(41): validate this dx range
 execute store result score @s omegaflowey.attack.position.x run data get entity @s Pos[0] 100
 execute store result score @s omegaflowey.math.0 run random value -50..50
@@ -20,7 +20,7 @@ execute store result storage utils:math.min b int 1 run scoreboard players get @
 function omegaflowey.utils:math/min
 execute store result score @s omegaflowey.attack.position.x run data get storage utils:math.min out
 
-# Randomize delta-z-position of indicator at (z: player.Position.z, dx: [-1.00..1.00])
+# Randomize delta-z-position of indicator at (z: omegaflowey.player.Position.z, dx: [-1.00..1.00])
 # TODO(41): validate this dz range
 execute store result score @s omegaflowey.attack.position.z run data get entity @s Pos[2] 100
 execute store result score @s omegaflowey.math.0 run random value -100..100

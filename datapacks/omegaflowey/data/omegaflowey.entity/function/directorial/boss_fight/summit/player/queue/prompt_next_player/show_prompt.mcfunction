@@ -1,10 +1,10 @@
 scoreboard players set #omegaflowey.bossfight.has_player_been_prompted omegaflowey.global.flag 1
 
 tag @s add omegaflowey.player.in_queue.prompted
-scoreboard players set @s player.trigger.bossfight.confirm 0
-scoreboard players set @s player.trigger.bossfight.deny 0
-scoreboard players enable @s player.trigger.bossfight.confirm
-scoreboard players enable @s player.trigger.bossfight.deny
+scoreboard players set @s omegaflowey.player.trigger.bossfight.confirm 0
+scoreboard players set @s omegaflowey.player.trigger.bossfight.deny 0
+scoreboard players enable @s omegaflowey.player.trigger.bossfight.confirm
+scoreboard players enable @s omegaflowey.player.trigger.bossfight.deny
 data modify storage omegaflowey:bossfight player_queue_timeout_uuid set from storage omegaflowey:bossfight player_queue[0].player_uuid
 
 # Start timeout
@@ -23,7 +23,7 @@ function omegaflowey.utils:log/self { text_component: '[ \
         "color": "gray", \
         "clickEvent": { \
           "action": "run_command", \
-          "value": "/trigger player.trigger.bossfight.confirm set 1" \
+          "value": "/trigger omegaflowey.player.trigger.bossfight.confirm set 1" \
         }, \
         "extra": [ \
           "[", \
@@ -47,7 +47,7 @@ function omegaflowey.utils:log/self { text_component: '[ \
         "text": "", \
         "clickEvent": { \
           "action": "run_command", \
-          "value": "/trigger player.trigger.bossfight.confirm set 1" \
+          "value": "/trigger omegaflowey.player.trigger.bossfight.confirm set 1" \
         }, \
         "extra": [ \
           "[", \
@@ -60,7 +60,7 @@ function omegaflowey.utils:log/self { text_component: '[ \
         "text": "", \
         "clickEvent": { \
           "action": "run_command", \
-          "value": "/trigger player.trigger.bossfight.deny set 1" \
+          "value": "/trigger omegaflowey.player.trigger.bossfight.deny set 1" \
         }, \
         "extra": [ \
           "[", \
