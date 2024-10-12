@@ -221,7 +221,7 @@ summon minecraft:interaction -132.875 42.625 23.75 { \
   response: true, \
 }
 execute as @e[ \
-  x=-132.0, dx=2, y=42.0, dy=2, z=23.0, dz=2, \
+  x=-134.0, dx=2, y=42.0, dy=2, z=23.0, dz=2, \
   type=minecraft:interaction, \
   tag=description-github-interaction, \
   tag=omega-flowey-remastered, \
