@@ -8,9 +8,9 @@ scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.bomb o
 execute if score #omegaflowey.attack.bomb omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/bomb
 execute if score #omegaflowey.attack.bomb omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
 
-scoreboard players operation @s omegaflowey.math.0 -= #attack-dentata-snakes omegaflowey.attack.weight
-execute if score #attack-dentata-snakes omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/dentata-snakes
-execute if score #attack-dentata-snakes omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
+scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.dentata-snakes omegaflowey.attack.weight
+execute if score #omegaflowey.attack.dentata-snakes omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/dentata-snakes
+execute if score #omegaflowey.attack.dentata-snakes omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
 
 scoreboard players operation @s omegaflowey.math.0 -= #attack-finger-guns omegaflowey.attack.weight
 execute if score #attack-finger-guns omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/finger-guns
