@@ -32,6 +32,28 @@ const checkAnimationName = (model, { file }) => {
   return errors;
 };
 
+/**
+ * Custom model data offset need to be some large, arbitrary value to avoid collision
+ * with other Summit booths
+ */
+const checkCustomModelDataOffset = (model) => {
+  const errors = [];
+
+  const expectedCMDOffset = 4654465;
+  const cmdOffset = model.blueprint_settings.custom_model_data_offset;
+  const isValidCMDOffset = expectedCMDOffset === cmdOffset;
+  if (!isValidCMDOffset) {
+    let error = `custom model data offset is incorrect: `;
+    error += chalk.redBright(cmdOffset);
+    error += ` (expected `;
+    error += chalk.blueBright(expectedCMDOffset);
+    error += ` )`;
+    errors.push(error);
+  }
+
+  return errors;
+};
+
 const checkDatapack = (model) => {
   const expected = /datapacks\/animated_java\/?$/;
   const actual = model.blueprint_settings.data_pack;
@@ -107,6 +129,7 @@ const correctAjblueprintSettings = (file) => {
 
   const settingsChecks = [
     checkAnimationName,
+    checkCustomModelDataOffset,
     checkDatapack,
     checkExportNamespace,
     checkRigItem,
