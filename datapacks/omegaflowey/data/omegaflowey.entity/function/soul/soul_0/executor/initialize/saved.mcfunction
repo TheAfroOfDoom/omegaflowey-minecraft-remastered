@@ -1,5 +1,5 @@
 # Update state flag
-scoreboard players set #soul_0.saved omegaflowey.soul.flag 1
+scoreboard players set #omegaflowey.soul.0.saved omegaflowey.soul.flag 1
 
 # Stop event music
 stopsound @a record omega-flowey:music.soul.0

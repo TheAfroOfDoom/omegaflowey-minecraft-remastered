@@ -10,8 +10,8 @@ scoreboard players operation @s omegaflowey.soul.bullet.position.z = #omegaflowe
 scoreboard players operation @s omegaflowey.soul.bullet.position.z.end = #omegaflowey.soul.0 omegaflowey.soul.bullet.position.z.end
 
 scoreboard players reset @s omegaflowey.soul.clock.touched_act_button
-scoreboard players set #soul_0.saved omegaflowey.soul.flag 0
-scoreboard players set #soul_0.touched omegaflowey.soul.flag 0
+scoreboard players set #omegaflowey.soul.0.saved omegaflowey.soul.flag 0
+scoreboard players set #omegaflowey.soul.0.touched omegaflowey.soul.flag 0
 
 # Remove tags
 tag @s remove soul-executor-new

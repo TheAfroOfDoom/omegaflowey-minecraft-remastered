@@ -1,8 +1,8 @@
 # Check if any of this bandaid's locator's hitboxes intersect with a player
-scoreboard players set #soul_0.bandaid_touched_player omegaflowey.soul.flag 0
+scoreboard players set #omegaflowey.soul.0.bandaid_touched_player omegaflowey.soul.flag 0
 function animated_java:soul_0_bandaid/as_own_locator_entities { command: 'function omegaflowey.entity:soul/soul_0/bandaid/loop/as_locator with entity @s data' }
-execute if score #soul_0.bandaid_touched_player omegaflowey.soul.flag matches 1 run function omegaflowey.entity:soul/soul_0/bandaid/heal
-execute if score #soul_0.bandaid_touched_player omegaflowey.soul.flag matches 1 run return 0
+execute if score #omegaflowey.soul.0.bandaid_touched_player omegaflowey.soul.flag matches 1 run function omegaflowey.entity:soul/soul_0/bandaid/heal
+execute if score #omegaflowey.soul.0.bandaid_touched_player omegaflowey.soul.flag matches 1 run return 0
 
 # Calculate distance to nearest player
 data modify storage utils:math.distance_squared x0 set from entity @s Pos[0]
