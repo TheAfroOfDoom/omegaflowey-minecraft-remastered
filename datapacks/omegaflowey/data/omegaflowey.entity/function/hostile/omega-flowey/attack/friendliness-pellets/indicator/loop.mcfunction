@@ -1,21 +1,21 @@
 ## Runs tick-wise on the `attack-indicator` for the `friendliness-pellets` attack
 
-scoreboard players add @s attack.clock.i 1
+scoreboard players add @s omegaflowey.attack.clock.i 1
 
-# TODO(45): refactor repeated `attack.clock.i` conditionals into separate functions
+# TODO(45): refactor repeated `omegaflowey.attack.clock.i` conditionals into separate functions
 # Change ring variant at tick index
-execute if score @s attack.clock.i = @s attack.indicator.animation.index run \
+execute if score @s omegaflowey.attack.clock.i = @s attack.indicator.animation.index run \
   function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/finished_blinking with entity @s data
 
 # Play blinking sound before we summon bullets
-execute if score @s attack.clock.i matches ..-1 run playsound omega-flowey:attack.friendliness-pellets.blinking hostile @a ~ ~ ~ 3 1 1
+execute if score @s omegaflowey.attack.clock.i matches ..-1 run playsound omega-flowey:attack.friendliness-pellets.blinking hostile @a ~ ~ ~ 3 1 1
 
-# Ignore bullet summoning logic while `attack.clock.i` is negative
-execute if score @s attack.clock.i matches ..-1 run return 0
+# Ignore bullet summoning logic while `omegaflowey.attack.clock.i` is negative
+execute if score @s omegaflowey.attack.clock.i matches ..-1 run return 0
 
-# TODO(45): refactor repeated `attack.clock.i` conditionals into separate functions
+# TODO(45): refactor repeated `omegaflowey.attack.clock.i` conditionals into separate functions
 # Delete ring when we start summoning bullets
-execute if score @s attack.clock.i matches 0 run \
+execute if score @s omegaflowey.attack.clock.i matches 0 run \
   function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/terminate_ring with entity @s data
 
 # Summon a bullet each tick that `omegaflowey.attack.bullets.count` is less than `omegaflowey.attack.bullets.total`

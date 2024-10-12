@@ -17,7 +17,7 @@ $execute at $(attack_upper_eye_right_locator_uuid) run function omegaflowey.enti
 $execute at $(attack_upper_eye_left_locator_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/initialize/effects
 
 # Set scores
-scoreboard players operation @s attack.clock.i -= #attack-x-bullets-upper attack.executor.clock.delay
+scoreboard players operation @s omegaflowey.attack.clock.i -= #attack-x-bullets-upper attack.executor.clock.delay
 
 scoreboard players operation @s attack.executor.clock.length = #attack-x-bullets-upper attack.executor.clock.length
 scoreboard players operation @s attack.executor.rate = #attack-x-bullets-upper attack.executor.rate

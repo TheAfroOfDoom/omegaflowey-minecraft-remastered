@@ -6,7 +6,7 @@ data modify entity @s CustomName set value '"Homing-Vines Indicator"'
 tag @s add homing-vines
 
 # Set scores
-scoreboard players operation @s attack.clock.i -= #attack-homing-vines attack.indicator.clock.delay
+scoreboard players operation @s omegaflowey.attack.clock.i -= #attack-homing-vines attack.indicator.clock.delay
 
 scoreboard players set @s omegaflowey.attack.bullets.count 0
 scoreboard players operation @s omegaflowey.attack.bullets.total = #attack-homing-vines omegaflowey.attack.bullets.total

@@ -16,7 +16,7 @@ data modify storage attack:x-bullets-upper-save-states current_state.rotation_ya
 data modify storage attack:x-bullets-upper-save-states current_state.rotation_pitch set from entity @s Rotation[1]
 
 # Scores
-execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_clock_i int 1 run scoreboard players get @s attack.clock.i
+execute store result storage attack:x-bullets-upper-save-states current_state.scores.attack_clock_i int 1 run scoreboard players get @s omegaflowey.attack.clock.i
 
 # Append this entity's saved_state to the executor's NBT list
 $data modify entity $(executor_uuid) data.saved_states append from storage attack:x-bullets-upper-save-states current_state

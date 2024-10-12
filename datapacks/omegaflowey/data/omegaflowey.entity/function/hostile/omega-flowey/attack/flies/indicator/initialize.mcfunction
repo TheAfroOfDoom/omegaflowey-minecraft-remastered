@@ -1,6 +1,6 @@
 # Set scores
-scoreboard players set @s attack.clock.i -1
-scoreboard players operation @s attack.clock.i -= #attack-flies attack.indicator.clock.delay
+scoreboard players set @s omegaflowey.attack.clock.i -1
+scoreboard players operation @s omegaflowey.attack.clock.i -= #attack-flies attack.indicator.clock.delay
 
 scoreboard players operation @s omegaflowey.attack.bullets.remaining = #attack-flies omegaflowey.attack.bullets.total
 scoreboard players operation @s attack.indicator.rate = #attack-flies attack.indicator.rate

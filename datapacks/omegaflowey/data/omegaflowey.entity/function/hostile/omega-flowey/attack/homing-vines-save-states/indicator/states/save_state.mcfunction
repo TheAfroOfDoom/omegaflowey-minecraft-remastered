@@ -18,7 +18,7 @@ data modify storage attack:homing-vines-save-states current_state.rotation_pitch
 # Scores
 execute store result storage attack:homing-vines-save-states current_state.scores.attack_bullets_count int 1 run scoreboard players get @s omegaflowey.attack.bullets.count
 execute store result storage attack:homing-vines-save-states current_state.scores.attack_bullets_total int 1 run scoreboard players get @s omegaflowey.attack.bullets.total
-execute store result storage attack:homing-vines-save-states current_state.scores.attack_clock_i int 1 run scoreboard players get @s attack.clock.i
+execute store result storage attack:homing-vines-save-states current_state.scores.attack_clock_i int 1 run scoreboard players get @s omegaflowey.attack.clock.i
 execute store result storage attack:homing-vines-save-states current_state.scores.attack_position_x int 1 run scoreboard players get @s attack.position.x
 execute store result storage attack:homing-vines-save-states current_state.scores.attack_position_y int 1 run scoreboard players get @s attack.position.y
 execute store result storage attack:homing-vines-save-states current_state.scores.attack_position_z int 1 run scoreboard players get @s attack.position.z

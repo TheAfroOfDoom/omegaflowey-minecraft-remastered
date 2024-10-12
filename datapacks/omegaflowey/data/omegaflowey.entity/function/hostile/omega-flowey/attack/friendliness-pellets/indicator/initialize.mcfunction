@@ -6,7 +6,7 @@ data modify entity @s CustomName set value '"Friendliness-Pellets Indicator"'
 tag @s add friendliness-pellets
 
 # Inputted scores
-scoreboard players operation @s attack.clock.i -= #attack-friendliness-pellets attack.indicator.clock.delay
+scoreboard players operation @s omegaflowey.attack.clock.i -= #attack-friendliness-pellets attack.indicator.clock.delay
 
 scoreboard players set @s omegaflowey.attack.bullets.clock.i -1
 scoreboard players set @s omegaflowey.attack.bullets.count 0

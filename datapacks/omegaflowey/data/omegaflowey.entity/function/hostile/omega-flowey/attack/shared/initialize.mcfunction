@@ -1,5 +1,5 @@
 # Set scores
-scoreboard players set @s attack.clock.i -1
+scoreboard players set @s omegaflowey.attack.clock.i -1
 
 # Add tags
 tag @s add omega-flowey-remastered

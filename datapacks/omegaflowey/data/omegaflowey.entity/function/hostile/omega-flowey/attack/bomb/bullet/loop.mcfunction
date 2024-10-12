@@ -1,4 +1,4 @@
-scoreboard players add @s attack.clock.i 1
+scoreboard players add @s omegaflowey.attack.clock.i 1
 
 # this is a rect volume, size is 18x(28+36)x18
 # y-bound is -28 to +36
@@ -9,13 +9,13 @@ execute positioned ~ ~ ~ run function omegaflowey.entity:utils/damage with stora
 execute positioned ~ ~2 ~ run function omegaflowey.entity:utils/damage with storage utils:damage
 
 # Move down slowly during summon animation
-execute if score @s attack.clock.i matches 0..15 run teleport @s ~ ~-0.5 ~
+execute if score @s omegaflowey.attack.clock.i matches 0..15 run teleport @s ~ ~-0.5 ~
 
 # Play falling sound once when we start falling faster
-execute if score @s attack.clock.i matches 20 run function omegaflowey.entity:hostile/omega-flowey/attack/bomb/bullet/loop/start_falling
+execute if score @s omegaflowey.attack.clock.i matches 20 run function omegaflowey.entity:hostile/omega-flowey/attack/bomb/bullet/loop/start_falling
 
 # Move down faster during actual fall after a delay
-execute if score @s attack.clock.i matches 20.. run teleport @s ~ ~-2.2 ~
+execute if score @s omegaflowey.attack.clock.i matches 20.. run teleport @s ~ ~-2.2 ~
 
 # Check if below the floor
 scoreboard players set @s math.0 0
@@ -30,4 +30,4 @@ execute if score @s math.0 matches 1 run function omegaflowey.entity:hostile/ome
 
 # TODO(68): validate/determine a value for how long until the bomb bullets terminate
 # Terminate after X seconds
-execute if score @s attack.clock.i matches 39.. run function omegaflowey.entity:hostile/omega-flowey/attack/bomb/bullet/terminate
+execute if score @s omegaflowey.attack.clock.i matches 39.. run function omegaflowey.entity:hostile/omega-flowey/attack/bomb/bullet/terminate

@@ -17,7 +17,7 @@ scoreboard objectives add omegaflowey.attack.bullets.remaining dummy
 scoreboard objectives add omegaflowey.attack.bullets.scale dummy
 # total number of bullets to summon each set
 scoreboard objectives add omegaflowey.attack.bullets.total dummy
-scoreboard objectives add attack.clock.i dummy
+scoreboard objectives add omegaflowey.attack.clock.i dummy
 scoreboard objectives add attack.cone dummy
 # delay (in ticks) before an attack-executor begins summoning indicators
 scoreboard objectives add attack.executor.clock.delay dummy

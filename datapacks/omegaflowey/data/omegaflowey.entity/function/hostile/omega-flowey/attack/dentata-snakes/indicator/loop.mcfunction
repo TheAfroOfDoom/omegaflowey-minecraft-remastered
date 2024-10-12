@@ -1,4 +1,4 @@
-scoreboard players add @s attack.clock.i 1
+scoreboard players add @s omegaflowey.attack.clock.i 1
 
 scoreboard players operation @s omegaflowey.attack.bullets.remaining = @s omegaflowey.attack.bullets.total
 scoreboard players operation @s omegaflowey.attack.bullets.remaining -= @s omegaflowey.attack.bullets.count
