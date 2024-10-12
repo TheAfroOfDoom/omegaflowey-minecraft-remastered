@@ -5,4 +5,4 @@ execute if score #omegaflowey.soul.5.saved omegaflowey.soul.flag matches 1 run r
 
 ## Summon and initialize bullet
 # TODO(127): this should maybe also increase in scale a bit upon summon, similar to the act_button/soul_5 animation
-function animated_java:soul_5_bullet/summon { args: {} }
+function animated_java:omegaflowey_soul_5_bullet/summon { args: {} }

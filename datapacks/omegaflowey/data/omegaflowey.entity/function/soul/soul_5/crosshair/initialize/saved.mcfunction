@@ -1,1 +1,1 @@
-function animated_java:soul_5_crosshair/variants/heart/apply
+function animated_java:omegaflowey_soul_5_crosshair/variants/heart/apply

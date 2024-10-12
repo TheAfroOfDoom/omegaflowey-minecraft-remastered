@@ -2,7 +2,7 @@
 scoreboard players add @s omegaflowey.attack.clock.i 1
 
 # Stop chomping animation
-execute if score @s omegaflowey.attack.clock.i matches 0 run function animated_java:venus_fly_trap/animations/chomp/pause
+execute if score @s omegaflowey.attack.clock.i matches 0 run function animated_java:omegaflowey_venus_fly_trap/animations/omegaflowey_chomp/pause
 
 # Begin desummon animation
 

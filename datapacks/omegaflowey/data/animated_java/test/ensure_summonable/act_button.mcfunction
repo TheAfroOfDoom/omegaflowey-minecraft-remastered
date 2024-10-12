@@ -1,4 +1,4 @@
 # @batch animated_java:ensure_summonable
 
-function animated_java:act_button/summon { args: {} }
-assert entity @e[tag=aj.act_button.root]
+function animated_java:omegaflowey_act_button/summon { args: {} }
+assert entity @e[tag=aj.omegaflowey_act_button.root]

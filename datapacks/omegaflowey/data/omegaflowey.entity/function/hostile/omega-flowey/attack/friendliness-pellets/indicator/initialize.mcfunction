@@ -20,7 +20,7 @@ scoreboard players set @s omegaflowey.attack.d-phi 360
 scoreboard players operation @s omegaflowey.attack.d-phi /= @s omegaflowey.attack.bullets.total
 
 # Summon and initialize blinking-ring
-function animated_java:friendliness_pellet_ring/summon { args: {} }
+function animated_java:omegaflowey_friendliness_pellet_ring/summon { args: {} }
 data modify entity @s data.corresponding_ring_uuid set from storage gu:main out
 
 # Randomize initial yaw

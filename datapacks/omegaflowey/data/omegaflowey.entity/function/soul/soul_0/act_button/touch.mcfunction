@@ -2,7 +2,7 @@
 scoreboard players set #omegaflowey.soul.0.touched omegaflowey.soul.flag 1
 
 # Apply yellow-highlighted variant
-function animated_java:act_button/variants/selected/apply
+function animated_java:omegaflowey_act_button/variants/selected/apply
 
 # Summon and initialize call for help display
 function omegaflowey.entity:soul/shared/call_for_help_display/summon

@@ -1,1 +1,1 @@
-function animated_java:soul/animations/shake/play
+function animated_java:omegaflowey_soul/animations/omegaflowey_shake/play

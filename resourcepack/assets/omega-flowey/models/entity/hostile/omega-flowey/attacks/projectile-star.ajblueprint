@@ -4,10 +4,10 @@
 		"format_version": "1.4.2",
 		"uuid": "c523ec8c-2275-0b41-3dfe-72c0213741fe",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\projectile-star.ajblueprint",
-		"last_used_export_namespace": "projectile_star"
+		"last_used_export_namespace": "omegaflowey_projectile_star"
 	},
 	"blueprint_settings": {
-		"export_namespace": "projectile_star",
+		"export_namespace": "omegaflowey_projectile_star",
 		"show_bounding_box": false,
 		"auto_bounding_box": true,
 		"bounding_box": [48, 48],
@@ -1648,7 +1648,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "e10d0750-e4df-ac8e-0f15-04de7cbd2edf",
+			"uuid": "14dfde2a-99e0-6bdf-7ea2-50aa193f9421",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
@@ -1658,7 +1658,7 @@
 	"animations": [
 		{
 			"uuid": "d7191e7f-be5a-5e83-e336-933b4e0f3793",
-			"name": "spin_and_grow",
+			"name": "omegaflowey_spin_and_grow",
 			"loop": "once",
 			"override": false,
 			"length": 3,
@@ -1825,7 +1825,7 @@
 									"x": "0",
 									"y": "0",
 									"z": "0",
-									"commands": "function animated_java:projectile_star/animations/spin/play",
+									"commands": "function animated_java:omegaflowey_projectile_star/animations/omegaflowey_spin/play",
 									"execute_condition": "",
 									"repeat": false,
 									"repeat_frequency": 1
