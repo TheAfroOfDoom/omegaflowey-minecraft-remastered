@@ -1,5 +1,5 @@
 # if player(s) have touched the ACT button, delete the locator
-execute if score #soul_5.touched omegaflowey.soul.flag matches 1 run kill @s
+execute if score #omegaflowey.soul.5.touched omegaflowey.soul.flag matches 1 run kill @s
 
 # otherwise, perform hitbox check
 $execute positioned ~ ~-1.5 ~ \
