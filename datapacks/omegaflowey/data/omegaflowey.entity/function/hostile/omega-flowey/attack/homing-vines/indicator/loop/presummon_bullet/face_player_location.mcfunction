@@ -5,7 +5,7 @@ execute store result storage attack:homing-vines bullet_yaw float 0.01 run score
 
 # Flip pitch that bullet will summon with
 execute store result score @s omegaflowey.math.0 run data get entity @s Rotation[1] 100
-scoreboard players operation @s omegaflowey.math.0 *= #-1 omegaflowey.math.const
+scoreboard players operation @s omegaflowey.math.0 *= #omegaflowey.const.-1 omegaflowey.math.const
 execute store result storage attack:homing-vines bullet_pitch float 0.01 run scoreboard players get @s omegaflowey.math.0
 
 # Summon bullet

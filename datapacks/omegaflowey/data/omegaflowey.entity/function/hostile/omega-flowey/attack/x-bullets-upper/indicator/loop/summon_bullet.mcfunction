@@ -7,7 +7,7 @@
 
 # Toggle between dark-eye and bright-eye variants
 scoreboard players operation @s omegaflowey.math.0 = @s omegaflowey.attack.bullets.remaining
-scoreboard players operation @s omegaflowey.math.0 %= #2 omegaflowey.math.const
+scoreboard players operation @s omegaflowey.math.0 %= #omegaflowey.const.2 omegaflowey.math.const
 $execute if score @s omegaflowey.math.0 matches 0 as $(corresponding_root_uuid) run function animated_java:upper_eye/variants/dark/apply
 $execute if score @s omegaflowey.math.0 matches 1 as $(corresponding_root_uuid) run function animated_java:upper_eye/variants/bright/apply
 

@@ -1,10 +1,10 @@
 # Randomize x/z-position to summon bullet
 execute store result score @s omegaflowey.attack.position.x run random value -150..150
-scoreboard players operation @s omegaflowey.attack.position.x *= #10 omegaflowey.math.const
+scoreboard players operation @s omegaflowey.attack.position.x *= #omegaflowey.const.10 omegaflowey.math.const
 scoreboard players operation @s omegaflowey.attack.position.x += #omegaflowey.bossfight.summit.origin.x omegaflowey.global.flag
 
 execute store result score @s omegaflowey.attack.position.z run random value -315..-85
-scoreboard players operation @s omegaflowey.attack.position.z *= #10 omegaflowey.math.const
+scoreboard players operation @s omegaflowey.attack.position.z *= #omegaflowey.const.10 omegaflowey.math.const
 scoreboard players operation @s omegaflowey.attack.position.z += #omegaflowey.bossfight.summit.origin.z omegaflowey.global.flag
 
 # Store position
