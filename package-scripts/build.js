@@ -135,8 +135,6 @@ const getSummitResourcepackPaths = () => {
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
   const modelPaths = prefixPaths('models/entity/decorative/', [
-    'balloon_soul_cyan.json',
-    'balloon_soul_red.json',
     'reward_hat.json',
     'reward_hat_cyan.json',
   ]);
@@ -216,6 +214,21 @@ const getSummitResourcepackPaths = () => {
     ),
   ]);
 
+  const decorativeTexturePaths = prefixPaths(
+    'decorative/',
+    suffixPaths(
+      [
+        'adahy',
+        'gulag-kamina-cape',
+        'natia',
+        'sunflower_front_cyan_noshade',
+        'sunflower_front_noshade',
+        'theafroofdoom',
+      ],
+      '.png',
+    ),
+  );
+
   const pipeTexturePaths = prefixPaths('pipe/polished_andesite', [
     '.png',
     '_disabled.png',
@@ -227,7 +240,7 @@ const getSummitResourcepackPaths = () => {
 
   const texturePaths = prefixPaths('textures/custom/', [
     ...attackTexturePaths,
-    'decorative',
+    ...decorativeTexturePaths,
     'dentata_snake_ball',
     'font',
     'lower_eye',
