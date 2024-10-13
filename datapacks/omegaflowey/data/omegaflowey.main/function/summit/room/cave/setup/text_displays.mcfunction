@@ -566,3 +566,30 @@ summon minecraft:text_display -125.25 38.3125 51.99 { \
     translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+
+summon minecraft:text_display -148.01 45.125 21.5 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "rare-balloon-hint", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '[ \
+    "Can you find the \\n", \
+    { "text": "rare balloon ", "color": "aqua" }, \
+    "hidden\\nin the pillar room?" \
+  ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.0f, 1.0f, 1.0f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
