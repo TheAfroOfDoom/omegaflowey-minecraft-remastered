@@ -321,3 +321,248 @@ summon minecraft:text_display -124.01 43.375 36.3125 { \
     translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+
+summon minecraft:text_display -120.01 39.625 48.5 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-title-left", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{"text":"HOW TO PLAY","underlined":true,"color":"yellow","bold":true}', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5f, 1.5f, 1.5f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -120.01 38.8125 47.25 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-section-1-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{"text":"1","color":"gray","bold":true}', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5f, 1.5f, 1.5f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -120.01 38.1875 47.25 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-section-1-description", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '[ \
+    "Dodge ", \
+    { "text": "Flowey\'s\\n", "color": "yellow" }, \
+    "attacks" \
+  ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.0f, 1.0f, 1.0f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -120.01 38.8125 49.75 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-section-2-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{"text":"2","color":"gray","bold":true}', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5f, 1.5f, 1.5f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -120.01 37.9375 49.75 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-section-2-description", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '[ \
+    "Touch the\\n", \
+    { "text": "ACT BUTTON\\n", "color": "gold" }, \
+    "when it appears" \
+  ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.0f, 1.0f, 1.0f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -124.0 39.625 51.99 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-title-right", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{"text":"HOW TO PLAY","underlined":true,"color":"yellow","bold":true}', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5f, 1.5f, 1.5f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -122.75 38.8125 51.99 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-section-3-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{"text":"3","color":"gray","bold":true}', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5f, 1.5f, 1.5f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -122.75 38.1875 51.99 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-section-3-description", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '[ \
+    "Touch the\\n", \
+    { "text": "flowers ", "color": "green" }, \
+    "to ", \
+    { "text": "heal", "color": "green" } \
+  ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.0f, 1.0f, 1.0f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -125.25 38.8125 51.99 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-section-4-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{"text":"4","color":"gray","bold":true}', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5f, 1.5f, 1.5f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -125.25 38.3125 51.99 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "how-to-play-section-4-description", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '[ \
+    { "text": "Survive", "color": "dark_red", "bold": true } \
+  ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5f, 1.5f, 1.5f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
