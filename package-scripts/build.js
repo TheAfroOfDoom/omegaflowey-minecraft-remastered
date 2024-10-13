@@ -15,6 +15,7 @@ const getSummitDatapackPaths = () => {
     'friendliness-pellets',
     'homing-vines',
     'random',
+    'shared',
     'x-bullets-lower',
     'x-bullets-shared',
     'x-bullets-upper',
@@ -42,6 +43,7 @@ const getSummitDatapackPaths = () => {
   ]);
 
   const playerPaths = prefixPaths('player/', [
+    'death',
     'interacted_with_github_description',
     'interacted_with_github_description.mcfunction',
     'rejoin',
@@ -61,6 +63,7 @@ const getSummitDatapackPaths = () => {
   const entityUtilsPaths = prefixPaths('utils/', [
     'bounce',
     'bounce.mcfunction',
+    'damage',
     'damage.mcfunction',
     'face_closest_player_macro.mcfunction',
     'face_closest_player.mcfunction',
@@ -74,10 +77,12 @@ const getSummitDatapackPaths = () => {
     'advancement/player_interacted_with_github_description.json',
     ...prefixPaths('function/', [
       ...bossFightPaths,
+      'decorative',
       'directorial/tick.mcfunction',
       ...hostilePaths,
       ...playerPaths,
       'remove_animated_java_models',
+      'shared',
       ...soulPaths,
       ...entityUtilsPaths,
       'remove_animated_java_models.mcfunction',
@@ -88,24 +93,27 @@ const getSummitDatapackPaths = () => {
   ]);
 
   const utilsPaths = prefixPaths('omegaflowey.utils/function/', [
+    'error.mcfunction',
     'math/max.mcfunction',
     'math/min.mcfunction',
-    'error.mcfunction',
+    'log',
     'log.mcfunction',
   ]);
 
   const primaryDatapackPaths = prefixPaths('omegaflowey/', [
     'pack.mcmeta',
     ...prefixPaths('data/', [
+      'animated_java/tags/function/',
       'minecraft',
       'omegaflowey.admin/function/',
       ...entityPaths,
       'omegaflowey.main/function/',
       ...utilsPaths,
+      'summit/',
     ]),
   ]);
   const removeResetFunction = async ({ compiledPath }) => {
-    const resetFunctionFile = `${compiledPath}/datapacks/omegaflowey/data/omegaflowey/function/reset.mcfunction`;
+    const resetFunctionFile = `${compiledPath}/datapacks/omegaflowey/data/omegaflowey.main/function/reset.mcfunction`;
     await rimraf(resetFunctionFile);
   };
   postProcessors.push(removeResetFunction);
@@ -125,6 +133,13 @@ const getSummitResourcepackPaths = () => {
 
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
+
+  const modelPaths = prefixPaths('models/entity/decorative/', [
+    'balloon_soul_cyan.json',
+    'balloon_soul_red.json',
+    'reward_hat.json',
+    'reward_hat_cyan.json',
+  ]);
 
   const soundPaths = prefixPaths(
     'sounds/',
@@ -201,11 +216,22 @@ const getSummitResourcepackPaths = () => {
     ),
   ]);
 
+  const pipeTexturePaths = prefixPaths('pipe/polished_andesite', [
+    '.png',
+    '_disabled.png',
+    '_soul_0.png',
+    '_soul_0.png.mcmeta',
+    '_soul_1.png',
+    '_soul_1.png.mcmeta',
+  ]);
+
   const texturePaths = prefixPaths('textures/custom/', [
     ...attackTexturePaths,
+    'decorative',
     'dentata_snake_ball',
+    'font',
     'lower_eye',
-    'pipe',
+    ...pipeTexturePaths,
     'soul',
     'tv_screen',
     'x_bullets_shared',
@@ -225,6 +251,7 @@ const getSummitResourcepackPaths = () => {
   const omegaFloweyPaths = prefixPaths('omega-flowey/', [
     'font',
     ...soundPaths,
+    ...modelPaths,
     ...texturePaths,
     'sounds.json',
   ]);
