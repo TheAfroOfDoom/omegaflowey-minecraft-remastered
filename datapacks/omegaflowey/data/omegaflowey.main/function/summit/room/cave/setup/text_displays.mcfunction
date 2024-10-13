@@ -252,3 +252,72 @@ summon minecraft:text_display -127.5 45.95 22.0 { \
     translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+
+summon minecraft:text_display -124.01 44.0 35.5 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "reward-hats-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: false, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{ "text": "REWARD HATS", "underlined": true, "color": "green", "bold": true }', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5f, 1.5f, 1.5f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -124.01 43.4375 34.6875 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "reward-hats-yellow-description", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: false, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{ "text": "Survive", "color": "gold" }', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.25f, 1.25f, 1.25f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -124.01 43.375 36.3125 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "reward-hats-cyan-description", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: false, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{ "text": "Get hit 3 times\\nor less", "color": "aqua" }', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [0.875f, 0.875f, 0.875f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
