@@ -5,10 +5,10 @@ execute as @e[ \
   tag=omega-flowey-remastered \
 ] run function omegaflowey.entity:directorial/boss_fight/shared/stop/as_root
 
-# TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
-execute as @a[x=-186, dx=91, y=12, dy=93, z=12, dz=95, tag=omegaflowey.player.room.spectator_box] run \
-  function omegaflowey.entity:directorial/boss_fight/shared/stop/as_spectator
-
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+  'execute unless entity @s[tag=omegaflowey.player.fighting_flowey] run \
+    function omegaflowey.entity:directorial/boss_fight/shared/stop/as_spectator' \
+}
 $execute as $(active_player_uuid) run function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player
 
 data modify storage omegaflowey:bossfight active_player_uuid set value "0"

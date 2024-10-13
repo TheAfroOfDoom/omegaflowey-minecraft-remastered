@@ -25,11 +25,16 @@ schedule function omegaflowey.main:summit/room/cave/active_player_health_display
 schedule function omegaflowey.entity:utils/damage/reset_immunity_flag 10t replace
 
 # Show custom death message
-execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 run tellraw @a [ \
-  { "selector": "@s"}, \
-  " was slain by ", \
-  { "text": "Omega Flowey", "color": "green" } \
-]
+# TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
+execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 run \
+  tellraw @a[ \
+    x=-186, dx=91, y=12, dy=93, z=12, dz=95, \
+    tag=omegaflowey.player \
+  ] [ \
+    { "selector": "@s"}, \
+    " was slain by ", \
+    { "text": "Omega Flowey", "color": "green" } \
+  ]
 
 # Re-enable `showDeathMessages` if it was enabled previously
 execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 \

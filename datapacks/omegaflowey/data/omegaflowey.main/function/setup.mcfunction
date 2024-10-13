@@ -7,6 +7,6 @@ function omegaflowey.entity:setup
 
 # don't run room setup if there are no players on, as this duplicates entities due to them
 # not being loaded
-execute if entity @a run function omegaflowey.main:summit/room/setup
+execute if entity @a[limit=1] run function omegaflowey.main:summit/room/setup
 
 function omegaflowey.utils:log { text_component: '[ { "text": "Datapack initialized", "color": "aqua" } ]'}

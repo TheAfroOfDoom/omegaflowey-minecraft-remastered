@@ -2,4 +2,6 @@
 $execute as $(blinking_lane_uuid) on passengers if entity @s[tag=aj.omegaflowey_homing_vine_blinking_lane.bone.root] run data modify entity @s view_range set value 1
 
 # Play blinking sound once
-playsound omega-flowey:attack.homing-vines.blinking hostile @a ~ ~ ~ 3 1 1
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+  'playsound omega-flowey:attack.homing-vines.blinking hostile @s ~ ~ ~ 3 1 1' \
+}

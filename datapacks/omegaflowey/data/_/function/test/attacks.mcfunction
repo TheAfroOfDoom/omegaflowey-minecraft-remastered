@@ -1,6 +1,9 @@
 function _:boss_fight/tag
 function _:summon
 
+function gu:generate
+data modify storage omegaflowey:bossfight active_player_uuid set from storage gu:main out
+
 data merge storage omegaflowey:dev.attack_test_suite { attacks: [ \
   { name: "bomb" }, \
   { name: "dentata-snakes" }, \

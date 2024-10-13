@@ -6,8 +6,9 @@ data merge entity @s {CustomName:"\"Finger-Guns Bullet\""}
 scoreboard players operation @s omegaflowey.attack.speed.z = #omegaflowey.attack.finger-guns omegaflowey.attack.speed.z
 
 # Play bullet shoot sound
-stopsound @a hostile omega-flowey:attack.finger-guns.shoot
-playsound omega-flowey:attack.finger-guns.shoot hostile @a ~ ~ ~ 5 1
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+  'function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/bullet/initialize/as_player' \
+}
 
 # Add tags
 tag @s add finger-guns

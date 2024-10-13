@@ -1,1 +1,1 @@
-$execute positioned $(x) $(y) $(z) run teleport @s ~ ~ ~ facing entity @p[tag=omegaflowey.player.fighting_flowey] feet
+$execute positioned $(x) $(y) $(z) run teleport @s ~ ~ ~ facing entity $(active_player_uuid) feet
