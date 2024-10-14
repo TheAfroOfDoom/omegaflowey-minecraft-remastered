@@ -214,9 +214,8 @@ const getSummitResourcepackPaths = () => {
     ),
   ]);
 
-  const decorativeTexturePaths = prefixPaths(
-    'decorative/',
-    suffixPaths(
+  const decorativeTexturePaths = prefixPaths('decorative/', [
+    ...suffixPaths(
       [
         'adahy',
         'gulag-kamina-cape',
@@ -227,7 +226,11 @@ const getSummitResourcepackPaths = () => {
       ],
       '.png',
     ),
-  );
+    ...prefixPaths(
+      'picture/',
+      suffixPaths(['flowey-build', 'legacy-flowey-build'], '-scaled-min.png'),
+    ),
+  ]);
 
   const pipeTexturePaths = prefixPaths('pipe/polished_andesite', [
     '.png',
@@ -274,11 +277,6 @@ const getSummitResourcepackPaths = () => {
     ...minecraftPaths,
     ...omegaFloweyPaths,
   ]);
-  const removeGrayDye = async ({ compiledPath }) => {
-    const grayDyeFile = `${compiledPath}/assets/minecraft/models/item/gray_dye.json`;
-    await rimraf(grayDyeFile);
-  };
-  postProcessors.push(removeGrayDye);
 
   const resourcepackPaths = prefixPaths('resourcepack/', [
     'pack.mcmeta',
