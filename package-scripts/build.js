@@ -135,6 +135,7 @@ const getSummitResourcepackPaths = () => {
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
   const modelPaths = prefixPaths('models/entity/decorative/', [
+    'housefly.json',
     'picture',
     'reward_hat.json',
     'reward_hat_cyan.json',
@@ -206,11 +207,16 @@ const getSummitResourcepackPaths = () => {
         'homing-vine',
         'homing-vine-blinking-lane',
         'moss_block_1',
+        'petes_fly',
       ],
       '.png',
     ),
     ...suffixPaths(
-      ['friendliness-pellet-ring-blinking', 'homing-vine-blinking-lane'],
+      [
+        'friendliness-pellet-ring-blinking',
+        'homing-vine-blinking-lane',
+        'petes_fly',
+      ],
       '.png.mcmeta',
     ),
   ]);

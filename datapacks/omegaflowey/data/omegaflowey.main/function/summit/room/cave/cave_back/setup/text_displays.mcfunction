@@ -38,7 +38,7 @@ summon minecraft:text_display -156.99 43.75 33.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "OMEGA FLOWEY", "color": "white", "bold": true }', \
+  text: '{ "text": "Omega Flowey", "color": "white", "bold": true }', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -61,7 +61,7 @@ summon minecraft:text_display -156.99 40.3125 33.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "MODEL HISTORY", "color": "white", "bold": true }', \
+  text: '{ "text": "Model History", "color": "white", "bold": true }', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -184,6 +184,29 @@ summon minecraft:text_display -150.99 41.1875 42.0 { \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
+      right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+      scale: [0.6875f, 0.6875f, 0.6875f], \
+      translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -147.5 43.1875 45.99 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "display-housefly-trivia", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '"Every model in the remaster\\nhas been remade from scratch,\\n_except_ for this housefly\\n\\nThis is the exact same model\\nused in the 2016 map\\n\\nArtist: adahy"', \
+  text_opacity: 255, \
+  transformation: { \
+      left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
       right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
       scale: [0.6875f, 0.6875f, 0.6875f], \
       translation: [0.0f, 0.0f, 0.0f], \

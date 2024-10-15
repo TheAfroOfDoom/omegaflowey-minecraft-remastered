@@ -119,3 +119,29 @@ summon minecraft:item_display -150.99 43.0 42.0 { \
     translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+
+summon minecraft:item_display -147.5 42.125 45.5 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "display-housefly-model-mount", \
+  ], \
+  Passengers: [ \
+    { \
+      id: "minecraft:item", \
+      Tags: [ \
+        "omega-flowey-remastered", \
+        "decorative", \
+        "decorative-cave", \
+        "display-housefly-model", \
+      ], \
+      Age: -32768, \
+      Item: { \
+        components: { "minecraft:custom_model_data": 4654470 }, \
+        id: "minecraft:gray_dye", \
+      }, \
+      PickupDelay: 32767, \
+    } \
+  ], \
+}
