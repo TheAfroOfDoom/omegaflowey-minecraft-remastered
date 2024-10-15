@@ -131,9 +131,49 @@ summon minecraft:text_display -144.01 41.25 40.0 { \
   see_through: 0b, \
   shadow: 0b, \
   text: '[ \
-    "I released the original Omega Flowey map for Minecraft 1.9 in March 2016. It used over 8000 command blocks and various redstone circuits to simulate the boss-fight with the (looking back) limited mapmaking tools Minecraft provided. Development time was about two months from start to finish.", \
-    "\\n\\nI decided to make a remaster after seeing some comments on YouTube playthroughs of the old map mentioning their enjoyment of it and desire for it to be updated to modern Minecraft versions. It was also a great excuse to dive into all the amazing new Minecraft features that were added since the last map I made in 2019 (a Jevil boss-fight from Deltarune), like macros, display entities, and data storage.", \
-    "\\n\\nDevelopment of the remaster has been ongoing since September 2023 (over a year now 😓) and is taking much longer than the original so I can focus on a high quality product. Check out our GitHub to stay up-to-date on progress or if you want to see the map\'s development history." \
+    "I released the original ", \
+    { "text": "Omega Flowey ", "color": "gold" }, \
+    "map for ", \
+    { "text": "Minecraft 1.9 ", "color": "green" }, \
+    "in ", \
+    { "text": "March 2016", "color": "yellow" }, \
+    ". It used over ", \
+    { "text": "8000 ", "color": "light_purple" }, \
+    { "text": "command blocks ", "color": "aqua" }, \
+    "and various ", \
+    { "text": "redstone circuits ", "color": "aqua" }, \
+    "to simulate the boss-fight with the (looking back) limited mapmaking tools Minecraft provided. ", \
+    "Development time was about ", \
+    { "text": "two months ", "color": "yellow" }, \
+    "from start to finish.", \
+    \
+    "\\n\\n", \
+    \
+    "I decided to make a remaster after seeing some comments on ", \
+    { "text": "YouTube ", "color": "red" }, \
+    "playthroughs of the old map mentioning their enjoyment of it and desire for it to be updated to ", \
+    "modern Minecraft versions. It was also a great excuse to dive into all the amazing ", \
+    { "text": "new Minecraft features ", "color": "green" }, \
+    "that were added since the last map I made in ", \
+    { "text": "2019 ", "color": "yellow" }, \
+    "(a Jevil boss-fight from Deltarune), like ", \
+    { "text": "macros", "color": "aqua" }, \
+    ", ", \
+    { "text": "display entities", "color": "aqua" }, \
+    ", and ", \
+    { "text": "data storage", "color": "aqua" }, \
+    ".", \
+    \
+    "\\n\\n", \
+    \
+    "Development of the remaster has been ongoing since ", \
+    { "text": "September 2023 ", "color": "yellow" }, \
+    "(over a ", \
+    { "text": "year ", "color": "yellow" }, \
+    "now 😓) and is taking much longer than the original so I can focus on a high quality product. ", \
+    "Check out our ", \
+    { "text": "GitHub", "color": "aqua", "underlined": true }, \
+    " to stay up-to-date on progress or if you want to see the map\'s development history." \
   ]', \
   text_opacity: 255, \
   transformation: { \
