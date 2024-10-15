@@ -96,7 +96,7 @@ summon minecraft:item_display -144.01 42.5 42.5 { \
   }, \
 }
 
-summon minecraft:item_display -150.99 43.0 42.0 { \
+summon minecraft:item_display -151.99 43.0 41.0 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \

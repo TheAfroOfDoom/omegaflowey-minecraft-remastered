@@ -184,7 +184,7 @@ summon minecraft:text_display -144.01 41.25 40.0 { \
   }, \
 }
 
-summon minecraft:text_display -150.99 44.125 42.0 { \
+summon minecraft:text_display -151.99 44.125 41.0 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -210,7 +210,7 @@ summon minecraft:text_display -150.99 44.125 42.0 { \
   }, \
 }
 
-summon minecraft:text_display -150.99 41.1875 42.0 { \
+summon minecraft:text_display -151.99 41.1875 41.0 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
