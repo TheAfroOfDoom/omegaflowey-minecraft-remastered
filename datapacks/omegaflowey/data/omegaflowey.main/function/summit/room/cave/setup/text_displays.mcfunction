@@ -567,6 +567,29 @@ summon minecraft:text_display -125.25 38.3125 51.99 { \
   }, \
 }
 
+summon minecraft:text_display -142.99 45.1875 32.0 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "history-back-cave-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{"text":"HISTORY","bold":true}', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.70710677f, 0.0f, 0.70710677f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.625f, 1.625f, 1.625f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
 summon minecraft:text_display -148.01 45.125 21.5 { \
   Tags: [ \
     "omega-flowey-remastered", \
