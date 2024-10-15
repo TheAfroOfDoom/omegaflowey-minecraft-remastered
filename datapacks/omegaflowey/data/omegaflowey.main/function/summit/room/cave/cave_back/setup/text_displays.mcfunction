@@ -243,7 +243,24 @@ summon minecraft:text_display -147.5 43.1875 45.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"Every model in the remaster\\nhas been remade from scratch,\\n_except_ for this housefly\\n\\nThis is the exact same model\\nused in the 2016 map\\n\\nArtist: adahy"', \
+  text: '[ \
+    "", \
+    { "text": "Every model ", "color": "aqua" }, \
+    "in the remaster\\nhas been remade ", \
+    { "text": "from scratch", "color": "light_purple" }, \
+    ",\\n", \
+    { "text": "except", "color": "aqua", "italic": true }, \
+    " for this ", \
+    { "text": "housefly", "color": "green" }, \
+    "\\n\\nThis is the exact same model\\nused in the ", \
+    { "text": "2016 ", "color": "yellow" }, \
+    "map", \
+    \
+    "\\n\\n", \
+    \
+    "Artist: ", \
+    { "text": "Adahy", "color": "yellow" } \
+  ]', \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
