@@ -197,7 +197,10 @@ summon minecraft:text_display -150.99 44.125 42.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"This project was\\nlargely motivated by\\nand possible thanks\\nto Animated Java"', \
+  text: '[ \
+    "This project was\\nlargely motivated by\\nand possible thanks\\nto ", \
+    { "text": "Animated Java", "color": "#00ACED" } \
+  ]', \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -220,7 +223,13 @@ summon minecraft:text_display -150.99 41.1875 42.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"They\'re here at\\nSmithed Summit too!\\nGo check out\\ntheir booth!"', \
+  text: '[ \
+    "They\'re here at\\n", \
+    { "text": "Smithed Summit ", "color": "blue" }, \
+    "too!\\nGo check out\\ntheir ", \
+    { "text": "booth", "color": "#00ACED" }, \
+    "!" \
+  ]', \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
