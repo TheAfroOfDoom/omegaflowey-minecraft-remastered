@@ -135,6 +135,7 @@ const getSummitResourcepackPaths = () => {
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
   const modelPaths = prefixPaths('models/entity/decorative/', [
+    'picture',
     'reward_hat.json',
     'reward_hat_cyan.json',
   ]);

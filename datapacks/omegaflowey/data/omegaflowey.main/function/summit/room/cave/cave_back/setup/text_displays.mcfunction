@@ -117,7 +117,7 @@ summon minecraft:text_display -156.99 43.125 31.5625 { \
   } \
 }
 
-summon minecraft:text_display -144.01 43.125 40.0 { \
+summon minecraft:text_display -144.01 41.25 40.0 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -127,7 +127,7 @@ summon minecraft:text_display -144.01 43.125 40.0 { \
   alignment: "left", \
   background: 0, \
   default_background: 0b, \
-  line_width: 200, \
+  line_width: 210, \
   see_through: 0b, \
   shadow: 0b, \
   text: '[ \
@@ -139,7 +139,7 @@ summon minecraft:text_display -144.01 43.125 40.0 { \
   transformation: { \
       left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
       right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-      scale: [0.45982584f, 0.4598258f, 0.45982578f], \
+      scale: [0.43749997f, 0.43749997f, 0.43749997f], \
       translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
