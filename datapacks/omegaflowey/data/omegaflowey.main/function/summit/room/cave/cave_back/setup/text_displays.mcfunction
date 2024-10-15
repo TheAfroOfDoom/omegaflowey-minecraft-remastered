@@ -143,3 +143,49 @@ summon minecraft:text_display -144.01 41.25 40.0 { \
       translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+
+summon minecraft:text_display -150.99 44.125 42.0 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "omega-flower-remastered-animated-java-shoutout-top", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '"This project was\\nlargely motivated by\\nand possible thanks\\nto Animated Java"', \
+  text_opacity: 255, \
+  transformation: { \
+      left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
+      right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+      scale: [0.6875f, 0.6875f, 0.6875f], \
+      translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display -150.99 41.1875 42.0 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "omega-flower-remastered-animated-java-shoutout-bottom", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '"They\'re here at\\nSmithed Summit too!\\nGo check out\\ntheir booth!"', \
+  text_opacity: 255, \
+  transformation: { \
+      left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
+      right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+      scale: [0.6875f, 0.6875f, 0.6875f], \
+      translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}

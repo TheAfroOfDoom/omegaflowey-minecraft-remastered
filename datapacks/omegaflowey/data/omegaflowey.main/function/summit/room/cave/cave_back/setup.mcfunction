@@ -95,3 +95,27 @@ summon minecraft:item_display -144.01 42.5 42.5 { \
     translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+
+summon minecraft:item_display -150.99 43.0 42.0 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "omega-flowey-remastered-picture-animated-java-logo", \
+  ], \
+  brightness: { block: 15, sky: 0 }, \
+  item: { \
+    components: { \
+      "minecraft:custom_model_data": 4654469, \
+    }, \
+    count: 1, \
+    id: "minecraft:gray_dye", \
+  }, \
+  item_display: "fixed", \
+  transformation: { \
+    left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.875f, 1.875f, 0.0f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}

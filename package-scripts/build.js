@@ -224,20 +224,20 @@ const getSummitResourcepackPaths = () => {
         'sunflower_front_cyan_noshade',
         'sunflower_front_noshade',
         'theafroofdoom',
+        ...prefixPaths('picture/', [
+          ...suffixPaths(
+            [
+              'flowey-build',
+              'legacy-command-blocks',
+              'legacy-flowey-build',
+              'legacy-hopper-clock',
+            ],
+            '-scaled-min',
+          ),
+          'animated_java_2023_256x256',
+        ]),
       ],
       '.png',
-    ),
-    ...prefixPaths(
-      'picture/',
-      suffixPaths(
-        [
-          'flowey-build',
-          'legacy-command-blocks',
-          'legacy-flowey-build',
-          'legacy-hopper-clock',
-        ],
-        '-scaled-min.png',
-      ),
     ),
   ]);
 
