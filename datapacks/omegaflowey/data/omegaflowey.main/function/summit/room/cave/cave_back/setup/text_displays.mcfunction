@@ -199,7 +199,7 @@ summon minecraft:text_display -151.99 44.125 41.0 { \
   shadow: 0b, \
   text: '[ \
     "This project was\\nlargely motivated by\\nand possible thanks\\nto ", \
-    { "text": "Animated Java", "color": "#00ACED" } \
+    { "text": "Animated Java", "color": "#00ACED", "underlined": true } \
   ]', \
   text_opacity: 255, \
   transformation: { \
@@ -209,6 +209,25 @@ summon minecraft:text_display -151.99 44.125 41.0 { \
       translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+summon minecraft:interaction -152.5625 44.125 40.875 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "omega-flower-remastered-animated-java-shoutout-interaction", \
+  ], \
+  width: 1.25, \
+  height: 0.2, \
+  response: true, \
+}
+execute as @e[ \
+  x=-153.0, dx=2, y=43.0, dy=2, z=40.0, dz=2, \
+  type=minecraft:interaction, \
+  tag=omega-flower-remastered-animated-java-shoutout-interaction, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:decorative animated_java_interaction_uuid set from storage gu:main out
 
 summon minecraft:text_display -151.99 41.1875 41.0 { \
   Tags: [ \
