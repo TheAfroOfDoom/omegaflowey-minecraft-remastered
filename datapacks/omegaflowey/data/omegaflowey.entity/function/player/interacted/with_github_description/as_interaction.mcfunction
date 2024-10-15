@@ -3,7 +3,7 @@ execute on target run function omegaflowey.utils:log/self { text_component: ' \
     { \
       "text": "", "extra": [ \
         { "text": "Click here to visit our ", "color": "aqua" }, \
-        { "text": "GitHub", "underlined": true, "color": "aqua" } \
+        { "text": "GitHub", "underlined": true, "color": "gray" } \
       ], \
       "clickEvent": { \
         "action": "open_url", \
