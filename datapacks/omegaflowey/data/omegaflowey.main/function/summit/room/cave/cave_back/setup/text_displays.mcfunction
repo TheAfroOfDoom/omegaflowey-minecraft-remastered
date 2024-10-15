@@ -183,6 +183,25 @@ summon minecraft:text_display -144.01 41.25 40.0 { \
       translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+summon minecraft:interaction -143.85 41.465 39.035 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "description-github-interaction-back-cave", \
+  ], \
+  width: 0.35, \
+  height: 0.15, \
+  response: true, \
+}
+execute as @e[ \
+  x=-144.0, dx=2, y=41.0, dy=2, z=39.0, dz=2, \
+  type=minecraft:interaction, \
+  tag=description-github-interaction-back-cave, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:decorative back_cave_github_interaction_uuid set from storage gu:main out
 
 summon minecraft:text_display -151.99 44.125 41.0 { \
   Tags: [ \

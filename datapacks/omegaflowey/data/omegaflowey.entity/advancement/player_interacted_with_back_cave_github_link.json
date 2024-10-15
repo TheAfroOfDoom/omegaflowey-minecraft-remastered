@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{ Tags: [\"description-github-interaction-back-cave\"] }"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "omegaflowey.entity:player/interacted/with_back_cave_github_link"
+  }
+}
