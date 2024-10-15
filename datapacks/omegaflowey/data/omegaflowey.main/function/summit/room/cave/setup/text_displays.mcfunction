@@ -192,14 +192,7 @@ summon minecraft:text_display -133.5 42.6875 24.01 {\
     "Check us out on ", \
     { "text":"GitHub", "color":"gray" }, \
     ": ", \
-    { \
-      "text": "[link]", \
-      "color": "aqua", \
-      "underlined": true, \
-      "clickEvent": { \
-        "action": "open_url", "value": "https://github.com/TheAfroOfDoom/omegaflowey-minecraft-remastered" \
-      } \
-    } \
+    { "text": "[link]", "color": "aqua", "underlined": true } \
   ]', \
   text_opacity: 255, \
   transformation: { \
