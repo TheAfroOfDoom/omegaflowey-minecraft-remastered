@@ -228,7 +228,15 @@ const getSummitResourcepackPaths = () => {
     ),
     ...prefixPaths(
       'picture/',
-      suffixPaths(['flowey-build', 'legacy-flowey-build'], '-scaled-min.png'),
+      suffixPaths(
+        [
+          'flowey-build',
+          'legacy-command-blocks',
+          'legacy-flowey-build',
+          'legacy-hopper-clock',
+        ],
+        '-scaled-min.png',
+      ),
     ),
   ]);
 
