@@ -113,6 +113,28 @@ function omegaflowey.utils:log/self { text_component: '[ \
       "\\n", \
 \
       { \
+        "text": "summon/flowey_model", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:summon/flowey_model" \
+        } \
+      }, \
+      ": summons the Omega Flowey model in the bossfight arena", \
+      "\\n", \
+      { \
+        "text": "summon/decorations", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:summon/decorations" \
+        } \
+      }, \
+      ": summons the Omega Flowey booth\'s decorations", \
+      "\\n", \
+      "\\n", \
+\
+      { \
         "text": "kill/all", \
         "color": "yellow", \
         "clickEvent": { \
@@ -143,6 +165,16 @@ function omegaflowey.utils:log/self { text_component: '[ \
         } \
       }, \
       ": ends the bossfight and kills related entities (if active)", \
+      "\\n", \
+      { \
+        "text": "kill/flowey_model", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:kill/flowey_model" \
+        } \
+      }, \
+      ": kills all Omega Flowey models in the bossfight arena (not the bossfight itself)", \
       "\\n", \
       { \
         "text": "kill/petalpipes", \
