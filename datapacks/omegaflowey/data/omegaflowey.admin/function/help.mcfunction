@@ -113,6 +113,28 @@ function omegaflowey.utils:log/self { text_component: '[ \
       "\\n", \
 \
       { \
+        "text": "bossfight/join", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:bossfight/join" \
+        } \
+      }, \
+      ": joins the bossfight queue", \
+      "\\n", \
+      { \
+        "text": "bossfight/stop", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:bossfight/stop" \
+        } \
+      }, \
+      ": stops the bossfight", \
+      "\\n", \
+      "\\n", \
+\
+      { \
         "text": "summon/flowey_model", \
         "color": "yellow", \
         "clickEvent": { \
