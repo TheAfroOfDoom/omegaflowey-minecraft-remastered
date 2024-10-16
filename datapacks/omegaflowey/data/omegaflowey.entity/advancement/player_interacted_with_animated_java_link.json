@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{ Tags: [\"omega-flower-remastered-animated-java-shoutout-interaction\"] }"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "omegaflowey.entity:player/interacted/with_animated_java_link"
+  }
+}

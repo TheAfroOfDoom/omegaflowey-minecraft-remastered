@@ -44,8 +44,7 @@ const getSummitDatapackPaths = () => {
 
   const playerPaths = prefixPaths('player/', [
     'death',
-    'interacted_with_github_description',
-    'interacted_with_github_description.mcfunction',
+    'interacted',
     'rejoin',
     'room',
     'room.mcfunction',
@@ -74,6 +73,8 @@ const getSummitDatapackPaths = () => {
   ]);
 
   const entityPaths = prefixPaths('omegaflowey.entity/', [
+    'advancement/player_interacted_with_animated_java_link.json',
+    'advancement/player_interacted_with_back_cave_github_link.json',
     'advancement/player_interacted_with_github_description.json',
     ...prefixPaths('function/', [
       ...bossFightPaths,
@@ -135,8 +136,8 @@ const getSummitResourcepackPaths = () => {
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
   const modelPaths = prefixPaths('models/entity/decorative/', [
-    'balloon_soul_cyan.json',
-    'balloon_soul_red.json',
+    'housefly.json',
+    'picture',
     'reward_hat.json',
     'reward_hat_cyan.json',
   ]);
@@ -207,12 +208,43 @@ const getSummitResourcepackPaths = () => {
         'homing-vine',
         'homing-vine-blinking-lane',
         'moss_block_1',
+        'petes_fly',
       ],
       '.png',
     ),
     ...suffixPaths(
-      ['friendliness-pellet-ring-blinking', 'homing-vine-blinking-lane'],
+      [
+        'friendliness-pellet-ring-blinking',
+        'homing-vine-blinking-lane',
+        'petes_fly',
+      ],
       '.png.mcmeta',
+    ),
+  ]);
+
+  const decorativeTexturePaths = prefixPaths('decorative/', [
+    ...suffixPaths(
+      [
+        'adahy',
+        'gulag-kamina-cape',
+        'natia',
+        'sunflower_front_cyan_noshade',
+        'sunflower_front_noshade',
+        'theafroofdoom',
+        ...prefixPaths('picture/', [
+          ...suffixPaths(
+            [
+              'flowey-build',
+              'legacy-command-blocks',
+              'legacy-flowey-build',
+              'legacy-hopper-clock',
+            ],
+            '-scaled-min',
+          ),
+          'animated_java_2023_256x256',
+        ]),
+      ],
+      '.png',
     ),
   ]);
 
@@ -227,7 +259,7 @@ const getSummitResourcepackPaths = () => {
 
   const texturePaths = prefixPaths('textures/custom/', [
     ...attackTexturePaths,
-    'decorative',
+    ...decorativeTexturePaths,
     'dentata_snake_ball',
     'font',
     'lower_eye',
@@ -261,11 +293,6 @@ const getSummitResourcepackPaths = () => {
     ...minecraftPaths,
     ...omegaFloweyPaths,
   ]);
-  const removeGrayDye = async ({ compiledPath }) => {
-    const grayDyeFile = `${compiledPath}/assets/minecraft/models/item/gray_dye.json`;
-    await rimraf(grayDyeFile);
-  };
-  postProcessors.push(removeGrayDye);
 
   const resourcepackPaths = prefixPaths('resourcepack/', [
     'pack.mcmeta',
