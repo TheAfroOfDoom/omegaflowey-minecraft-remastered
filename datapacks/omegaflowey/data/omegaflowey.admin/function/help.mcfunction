@@ -27,6 +27,92 @@ function omegaflowey.utils:log/self { text_component: '[ \
       "\\n", \
 \
       { \
+        "text": "set_active_player", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:set_active_player" \
+        } \
+      }, \
+      ": sets the active bossfight player as the current player (so attacks will target them)", \
+      "\\n", \
+      { \
+        "text": "unset_active_player", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:unset_active_player" \
+        } \
+      }, \
+      ": unsets the active bossfight player tag from the current player", \
+      "\\n", \
+      "\\n", \
+\
+      { "text": "attack/ ", "color": "aqua" }, \
+      { \
+        "text": "bomb ", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:attack/bomb" \
+        } \
+      }, \
+      { \
+        "text": "dentata-snakes ", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:attack/dentata-snakes" \
+        } \
+      }, \
+      { \
+        "text": "finger-guns ", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:attack/finger-guns" \
+        } \
+      }, \
+      "\\n", \
+      { "text": "          " }, \
+      { \
+        "text": "friendliness-pellets ", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:attack/friendliness-pellets" \
+        } \
+      }, \
+      { \
+        "text": "homing-vines ", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:attack/homing-vines" \
+        } \
+      }, \
+      "\\n", \
+      { "text": "          " }, \
+      { \
+        "text": "x-bullets-lower ", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:attack/x-bullets-lower" \
+        } \
+      }, \
+      { \
+        "text": "x-bullets-upper ", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:attack/x-bullets-upper" \
+        } \
+      }, \
+      "\\n", \
+      "\\n", \
+\
+      { \
         "text": "kill/all", \
         "color": "yellow", \
         "clickEvent": { \
