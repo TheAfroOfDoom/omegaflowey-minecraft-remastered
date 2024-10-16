@@ -175,7 +175,7 @@ summon minecraft:text_display -127.0 43.0 43.99 { \
   } \
 }
 
-summon minecraft:text_display -133.5 42.6875 24.01 {\
+summon minecraft:text_display -133.5 43.125 24.01 {\
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -202,7 +202,7 @@ summon minecraft:text_display -133.5 42.6875 24.01 {\
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
-summon minecraft:interaction -132.875 42.625 23.75 { \
+summon minecraft:interaction -132.875 43.0625 23.6 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -582,3 +582,50 @@ summon minecraft:text_display -142.99 45.1875 32.0 { \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
+
+summon minecraft:text_display -133.5 42.125 24.01 {\
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "description-feedback-form", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 100, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '[ \
+    "Share your ", \
+    { "text":"feedback", "color":"yellow" }, \
+    ": ", \
+    { "text": "[link]", "color": "aqua", "underlined": true } \
+  ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.3749996f, 1.375f, 1.3749993f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+summon minecraft:interaction -132.6 42.15 23.75 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "description-feedback-form-interaction", \
+  ], \
+  width: 1, \
+  height: 0.5, \
+  response: true, \
+}
+execute as @e[ \
+  x=-134.0, dx=2, y=42.0, dy=2, z=23.0, dz=2, \
+  type=minecraft:interaction, \
+  tag=description-feedback-form-interaction, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:decorative feedback_form_interaction_uuid set from storage gu:main out
