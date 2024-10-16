@@ -44,8 +44,7 @@ const getSummitDatapackPaths = () => {
 
   const playerPaths = prefixPaths('player/', [
     'death',
-    'interacted_with_github_description',
-    'interacted_with_github_description.mcfunction',
+    'interacted',
     'rejoin',
     'room',
     'room.mcfunction',
@@ -74,6 +73,8 @@ const getSummitDatapackPaths = () => {
   ]);
 
   const entityPaths = prefixPaths('omegaflowey.entity/', [
+    'advancement/player_interacted_with_animated_java_link.json',
+    'advancement/player_interacted_with_back_cave_github_link.json',
     'advancement/player_interacted_with_github_description.json',
     ...prefixPaths('function/', [
       ...bossFightPaths,
