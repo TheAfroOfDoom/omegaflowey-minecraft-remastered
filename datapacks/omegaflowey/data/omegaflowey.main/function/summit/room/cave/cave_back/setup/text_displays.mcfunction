@@ -264,7 +264,8 @@ summon minecraft:text_display -151.99 41.1875 41.0 { \
   text: '[ \
     "They\'re here at\\n", \
     { "text": "Smithed Summit ", "color": "blue" }, \
-    "too!\\nGo check out\\ntheir ", \
+    { "translate": ":mountain_snow:" }, \
+    "\\ntoo! Go check out\\ntheir ", \
     { "text": "booth", "color": "#00ACED" }, \
     "!" \
   ]', \
