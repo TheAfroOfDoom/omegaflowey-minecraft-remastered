@@ -95,11 +95,11 @@ summon minecraft:text_display -101.4375 42.1875 32.5 { \
   see_through: 0b, \
   shadow: 0b, \
   text: '[ \
-    "The map is still a ", \
-    { "text": "WIP", "color": "gold" }, \
-    ", but functional nonetheless. So we put together a short ", \
+    "The map is still ", \
+    { "text": "in development", "color": "gold" }, \
+    ", but we\'ve created a short ", \
     { "text": "demo ", "color": "aqua" }, \
-    "for ", \
+    "for you to enjoy during the ", \
     { "text": "Smithed Summit ", "color": "blue" }, \
     { "translate": ":mountain_snow:" } \
   ]', \
