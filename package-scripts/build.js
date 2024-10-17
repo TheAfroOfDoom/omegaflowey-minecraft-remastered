@@ -76,6 +76,7 @@ const getSummitDatapackPaths = () => {
     'advancement/player_interacted_with_animated_java_link.json',
     'advancement/player_interacted_with_back_cave_github_link.json',
     'advancement/player_interacted_with_github_description.json',
+    'advancement/player_interacted_with_join_queue.json',
     ...prefixPaths('function/', [
       ...bossFightPaths,
       'decorative',
