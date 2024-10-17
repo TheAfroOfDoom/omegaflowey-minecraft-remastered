@@ -1,5 +1,5 @@
 # Omega Flowey model
-function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_models with storage omegaflowey:decorative
+function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_models with storage omegaflowey:bossfight
 
 # Bossfight models
 function animated_java:omegaflowey_arena_box/remove/all
