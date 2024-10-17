@@ -96,6 +96,7 @@ module.exports = {
           'node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"',
       },
     },
+    log: `code -r "${minecraftPath}/logs/latest.log"`,
     sync: {
       default: 'nps sync.summit',
       world: {
