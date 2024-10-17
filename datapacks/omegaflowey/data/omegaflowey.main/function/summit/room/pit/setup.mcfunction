@@ -11,5 +11,5 @@ execute positioned -106.1875 41.0 25.5625 rotated 20 0 run function animated_jav
 
 function omegaflowey.main:summit/room/pit/setup/text_displays
 
-execute unless score #omegaflowey.setup_flags.dont_place_blocks omegaflowey.global.flag matches 1 run fill -113 319 35 -107 319 29 minecraft:barrier
-execute unless score #omegaflowey.setup_flags.dont_place_blocks omegaflowey.global.flag matches 1 run fill -113 318 35 -107 318 29 minecraft:pink_shulker_box[facing=up]
+execute unless score #omegaflowey.setup_flags.dont_place_blocks omegaflowey.global.flag matches 1 run \
+  function omegaflowey.main:summit/room/pit/setup/place_pink_shulker_boxes
