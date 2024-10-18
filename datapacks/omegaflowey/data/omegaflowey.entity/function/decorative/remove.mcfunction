@@ -1,5 +1,5 @@
 # Remove preexisting decorative AJ models
-function omegaflowey.entity:remove_animated_java_models/summit
+function omegaflowey.entity:remove_animated_java_models/summit with storage omegaflowey:decorative
 
 # Remove other preexisting decorative entities
 # NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME

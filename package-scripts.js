@@ -47,21 +47,19 @@ const smithedSummitWorldSyncArgs = `--backup-path="${smithedSummitWorldSyncPath}
 module.exports = {
   scripts: {
     default: 'nps watch',
-    watch: {
-      default: `node ${watchScriptPath}`,
+    build: {
+      default: 'nps build.summit',
+      clean: 'rimraf ./build',
+      summit: 'node ./package-scripts/build',
     },
-    sync: {
-      default: 'nps sync.summit',
-      world: {
-        default: 'nps sync.world.up',
-        down: `node ./package-scripts/sync-world --down ${worldSyncArgs}`,
-        up: `node ./package-scripts/sync-world --up ${worldSyncArgs}"`,
-      },
-      summit: {
-        default: 'nps sync.summit.up',
-        down: `node ./package-scripts/sync-world --down ${smithedSummitWorldSyncArgs}`,
-        up: `node ./package-scripts/sync-world --up ${smithedSummitWorldSyncArgs}`,
-      },
+    export: {
+      default: 'nps export.run',
+      run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
+      // forcibly purge the `animated_java` export-cache
+      force: series(
+        `rimraf ${allAnimatedJavaExportFiles.join(' ')}`,
+        'nps export',
+      ),
     },
     lint: {
       default: 'nps lint.custom lint.scripts',
@@ -98,19 +96,22 @@ module.exports = {
           'node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"',
       },
     },
-    export: {
-      default: 'nps export.run',
-      run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
-      // forcibly purge the `animated_java` export-cache
-      force: series(
-        `rimraf ${allAnimatedJavaExportFiles.join(' ')}`,
-        'nps export',
-      ),
+    log: `code -r "${minecraftPath}/logs/latest.log"`,
+    sync: {
+      default: 'nps sync.summit',
+      world: {
+        default: 'nps sync.world.up',
+        down: `node ./package-scripts/sync-world --down ${worldSyncArgs}`,
+        up: `node ./package-scripts/sync-world --up ${worldSyncArgs}"`,
+      },
+      summit: {
+        default: 'nps sync.summit.up',
+        down: `node ./package-scripts/sync-world --down ${smithedSummitWorldSyncArgs}`,
+        up: `node ./package-scripts/sync-world --up ${smithedSummitWorldSyncArgs}`,
+      },
     },
-    build: {
-      clean: 'rimraf ./build',
-      default: 'nps build.summit',
-      summit: 'node ./package-scripts/build',
+    watch: {
+      default: `node ${watchScriptPath}`,
     },
   },
 };

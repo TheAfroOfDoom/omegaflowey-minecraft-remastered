@@ -75,7 +75,9 @@ const getSummitDatapackPaths = () => {
   const entityPaths = prefixPaths('omegaflowey.entity/', [
     'advancement/player_interacted_with_animated_java_link.json',
     'advancement/player_interacted_with_back_cave_github_link.json',
+    'advancement/player_interacted_with_feedback_form_link.json',
     'advancement/player_interacted_with_github_description.json',
+    'advancement/player_interacted_with_join_queue.json',
     ...prefixPaths('function/', [
       ...bossFightPaths,
       'decorative',
@@ -105,6 +107,7 @@ const getSummitDatapackPaths = () => {
     'pack.mcmeta',
     ...prefixPaths('data/', [
       'animated_java/tags/function/',
+      'daylight_cycle',
       'minecraft',
       'omegaflowey.admin/function/',
       ...entityPaths,
@@ -142,13 +145,16 @@ const getSummitResourcepackPaths = () => {
     'reward_hat_cyan.json',
   ]);
 
+  const splitMonoSounds = ['mus_f_noise'];
+
   const soundPaths = prefixPaths(
     'sounds/',
     suffixPaths(
       [
+        ...suffixPaths(splitMonoSounds, '-01'),
+        ...suffixPaths(splitMonoSounds, '-02'),
         'mus_f_6s_6',
         'mus_f_alarm',
-        'mus_f_noise',
         'mus_f_part1',
         'mus_f_part2',
         'mus_f_saved',

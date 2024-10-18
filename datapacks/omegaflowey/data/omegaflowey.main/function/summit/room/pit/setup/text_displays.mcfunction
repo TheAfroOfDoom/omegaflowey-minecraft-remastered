@@ -7,11 +7,17 @@ summon minecraft:text_display -108.5 43.9375 38.5 {\
   ], \
   alignment: "center", \
   background: 1073741824, \
+  brightness: { block: 12, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ "Welcome to the\\n", { "color": "green", "text" :"Omega Flowey "}, "demo!" ]', \
+  text: '[ \
+    "Welcome to the\\n", \
+    { "text": "Omega Flowey ", "color": "green" }, \
+    { "text": "demo", "color": "aqua" }, \
+    "!" \
+  ]', \
   text_opacity: 255, \
   transformation: {\
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -30,6 +36,7 @@ summon minecraft:text_display -110.5 43.0 38.5 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
+  brightness: { block: 12, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
@@ -53,11 +60,17 @@ summon minecraft:text_display -101.4375 44.0 32.5 { \
   ], \
   alignment: "left", \
   background: 1073741824, \
+  brightness: { block: 12, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ "This is a recreation of a boss\\nfrom Toby Fox\'s ", { "color": "light_purple", "text": "Undertale" } ]', \
+  text: '[ \
+    "This is a recreation of a boss\\nfrom ", \
+    { "text": "Toby Fox", "color": "yellow" }, \
+    "\'s ", \
+    { "color": "light_purple", "text": "Undertale" } \
+  ]', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -76,11 +89,20 @@ summon minecraft:text_display -101.4375 42.1875 32.5 { \
   ], \
   alignment: "left", \
   background: 1073741824, \
+  brightness: { block: 12, sky: 0 }, \
   default_background: 0b, \
   line_width: 160, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"The map is still a WIP, but functional nonetheless. So we put together a short demo for Smithed Summit!"', \
+  text: '[ \
+    "The map is still ", \
+    { "text": "in development", "color": "gold" }, \
+    ", but we\'ve created a short ", \
+    { "text": "demo ", "color": "aqua" }, \
+    "for you to enjoy during the ", \
+    { "text": "Smithed Summit ", "color": "blue" }, \
+    { "translate": ":mountain_snow:" } \
+  ]', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -99,11 +121,16 @@ summon minecraft:text_display -108.0 44.0 25.0 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
+  brightness: { block: 12, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ "Special thanks\\nto our", { "color": "yellow", "text": " contributors" }, " :)" ]', \
+  text: '[ \
+    "Special thanks\\nto our ", \
+    { "text": "contributors ", "color": "gold" }, \
+    { "translate": ":smile:" } \
+  ]', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -122,11 +149,12 @@ summon minecraft:text_display -109.5625 42.75 25.625 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
+  brightness: { block: 12, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"adahy"', \
+  text: '{"text": "adahy", "color": "yellow" }', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.1736482f, 0.0f, 0.98480785f], \
@@ -145,11 +173,12 @@ summon minecraft:text_display -108.0 42.75 25.5 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
+  brightness: { block: 12, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"naTia"', \
+  text: '{"text": "naTia", "color": "yellow" }', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -168,11 +197,12 @@ summon minecraft:text_display -106.1875 42.75 25.5625 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
+  brightness: { block: 12, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '"Wes"', \
+  text: '{"text": "Wes", "color": "yellow" }', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.1736482f, 0.0f, 0.98480785f], \
