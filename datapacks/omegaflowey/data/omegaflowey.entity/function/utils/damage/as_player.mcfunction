@@ -17,7 +17,8 @@ $execute if entity $(boss_fight_uuid) run damage @s $(damage) minecraft:mob_proj
 
 # Play custom damage sound
 function omegaflowey.entity:shared/run_as_active_player_or_spectator { \
-  command: 'function omegaflowey.entity:utils/damage/as_player/as_players' \
+  command: 'execute if entity @s[gamemode=!creative, gamemode=!spectator] run \
+    function omegaflowey.entity:utils/damage/as_player/as_players' \
 }
 
 scoreboard players add #omegaflowey.bossfight.player_hit_count omegaflowey.global.flag 1
