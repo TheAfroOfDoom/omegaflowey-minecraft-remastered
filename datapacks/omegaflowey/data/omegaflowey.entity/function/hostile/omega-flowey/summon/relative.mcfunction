@@ -27,10 +27,10 @@ execute positioned ^11.5 ^7.5 ^ rotated ~-170 ~-20 run function animated_java:om
 ## Middle petal pipes
 # Right-middle petal pipe
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
-execute positioned ^-15.0 ^11.5 ^6.5 rotated ~-20 ~40 run function animated_java:omegaflowey_petal_pipe_middle/summon { args: {} }
+execute positioned ^-15.0 ^11.5 ^6.5 rotated ~-20 ~40 run function animated_java:omegaflowey_petal_pipe_middle_simplified/summon { args: {} }
 # Left-middle petal pipe
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 2
-execute positioned ^15.0 ^11.5 ^6.5 rotated ~-160 ~-40 run function animated_java:omegaflowey_petal_pipe_middle/summon { args: {} }
+execute positioned ^15.0 ^11.5 ^6.5 rotated ~-160 ~-40 run function animated_java:omegaflowey_petal_pipe_middle_simplified/summon { args: {} }
 
 ## Mouth
 execute positioned ^ ^-1.5 ^9.35 rotated ~ ~9 run function animated_java:omegaflowey_mouth/summon { args: {} }

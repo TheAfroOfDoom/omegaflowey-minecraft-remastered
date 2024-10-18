@@ -1,2 +1,2 @@
-function animated_java:omegaflowey_petal_pipe_middle/animations/omegaflowey_float_and_pulsate/play
-function animated_java:omegaflowey_petal_pipe_middle/variants/default/apply
+function animated_java:omegaflowey_petal_pipe_middle_simplified/animations/omegaflowey_float_and_pulsate/play
+function animated_java:omegaflowey_petal_pipe_middle_simplified/variants/default/apply
