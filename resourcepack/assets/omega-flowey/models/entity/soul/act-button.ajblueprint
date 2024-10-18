@@ -9068,6 +9068,168 @@
 			},
 			"type": "cube",
 			"uuid": "a1ffbeed-df1b-e141-9382-6da72d1222a6"
+		},
+		{
+			"name": "interaction_hitbox",
+			"position": [0, -4, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"summon_commands": "data merge entity @s {width: 1.6, height: 0.4375, response: true}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-interaction",
+				"ticking_commands": ""
+			},
+			"uuid": "6a552d44-b496-8d51-10da-a8e46c56e82f",
+			"type": "locator"
+		},
+		{
+			"name": "interaction_hitbox_reference",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [13, -6, -25],
+			"to": [63, 8, 25],
+			"autouv": 1,
+			"color": 9,
+			"visibility": false,
+			"export": false,
+			"origin": [38, 1, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 14]
+				},
+				"east": {
+					"uv": [0, 0, 16, 14]
+				},
+				"south": {
+					"uv": [0, 0, 16, 14]
+				},
+				"west": {
+					"uv": [0, 0, 16, 14]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "8de91c82-8780-20eb-65a7-7cf12d6e879a"
+		},
+		{
+			"name": "interaction_hitbox_reference",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-63, -6, -25],
+			"to": [-13, 8, 25],
+			"autouv": 1,
+			"color": 9,
+			"visibility": false,
+			"export": false,
+			"origin": [-38, 1, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 14]
+				},
+				"east": {
+					"uv": [0, 0, 16, 14]
+				},
+				"south": {
+					"uv": [0, 0, 16, 14]
+				},
+				"west": {
+					"uv": [0, 0, 16, 14]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "8590ab4d-9043-a8c6-00b3-fb129913f58e"
+		},
+		{
+			"name": "interaction_hitbox_reference",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-25, -6, -25],
+			"to": [25, 8, 25],
+			"autouv": 1,
+			"color": 9,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 1, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 14]
+				},
+				"east": {
+					"uv": [0, 0, 16, 14]
+				},
+				"south": {
+					"uv": [0, 0, 16, 14]
+				},
+				"west": {
+					"uv": [0, 0, 16, 14]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "2769de42-3dc5-ad0c-3bc1-8935a9e676f2"
+		},
+		{
+			"name": "interaction_hitbox2",
+			"position": [38, -4, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"summon_commands": "data merge entity @s {width: 1.6, height: 0.4375, response: true}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-interaction",
+				"ticking_commands": ""
+			},
+			"uuid": "fc907fe8-a13c-7f1f-28a2-5bdb0bc7f7f0",
+			"type": "locator"
+		},
+		{
+			"name": "interaction_hitbox3",
+			"position": [-38, -4, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"summon_commands": "data merge entity @s {width: 1.6, height: 0.4375, response: true}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-interaction",
+				"ticking_commands": ""
+			},
+			"uuid": "d36656af-f859-9567-bebe-dec701f939e9",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -9186,7 +9348,13 @@
 				"bf86acdf-7d32-f17d-f8cc-0643081c7574",
 				"49820d2a-42bf-c462-6b2a-19869f4ea9ca",
 				"64cf4226-8324-b47e-4a9a-0dbc3dcd87c8",
-				"99b17237-133d-1b40-7113-9f3c09474d02"
+				"99b17237-133d-1b40-7113-9f3c09474d02",
+				"6a552d44-b496-8d51-10da-a8e46c56e82f",
+				"fc907fe8-a13c-7f1f-28a2-5bdb0bc7f7f0",
+				"d36656af-f859-9567-bebe-dec701f939e9",
+				"8de91c82-8780-20eb-65a7-7cf12d6e879a",
+				"2769de42-3dc5-ad0c-3bc1-8935a9e676f2",
+				"8590ab4d-9043-a8c6-00b3-fb129913f58e"
 			]
 		},
 		{
