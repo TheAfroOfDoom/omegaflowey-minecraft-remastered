@@ -1,8 +1,3 @@
-execute if entity @s[tag=omegaflowey.player.fighting_flowey] run return run \
-  function omegaflowey.utils:log/self { text_component: '[ \
-    { "text": "You are already the active bossfight player", "color": "red" } \
-  ]' }
-
 tag @a remove omegaflowey.player.fighting_flowey
 tag @s add omegaflowey.player.fighting_flowey
 function gu:generate
