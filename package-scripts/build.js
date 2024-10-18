@@ -1,5 +1,6 @@
 const chalk = require('chalk');
 const { copy, emptyDir, pathExists, readJson, writeJson } = require('fs-extra');
+const { glob } = require('glob');
 const parseArgs = require('minimist');
 const { rimraf } = require('rimraf');
 
@@ -134,6 +135,7 @@ const getSummitDatapackPaths = () => {
 
 const getSummitResourcepackPaths = () => {
   const postProcessors = [];
+  const finalPostProcessors = [];
 
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
@@ -347,7 +349,14 @@ const getSummitResourcepackPaths = () => {
     ...assetsPaths,
   ]);
 
-  return { paths: resourcepackPaths, postProcessors };
+  const minifyJsons = async ({ compiledPath }) => {
+    for (const path of await glob(`${compiledPath}/**/*.json`)) {
+      await writeJson(path, await readJson(path));
+    }
+  };
+  finalPostProcessors.push(minifyJsons);
+
+  return { paths: resourcepackPaths, postProcessors, finalPostProcessors };
 };
 
 const LOG_LEVEL = {
@@ -437,7 +446,7 @@ const compile = async ({
 
   await emptyDir(compiledPath);
 
-  const { paths, postProcessors } = compilePaths();
+  const { paths, postProcessors, finalPostProcessors = [] } = compilePaths();
   if (args.verbose) {
     verbose(chalk.bold(`${logColor(packType)} compile paths:`));
     for (const src of paths) {
@@ -462,10 +471,16 @@ const compile = async ({
   const checkmark = '\u{2705}';
   info(`Finished copying ${paths.length} paths ${checkmark}`);
 
-  if (postProcessors.length > 0) {
-    info(`Running ${postProcessors.length} post-processors`);
+  const totalProcessors = postProcessors.length + finalPostProcessors.length;
+  if (totalProcessors > 0) {
+    info(`Running ${totalProcessors} post-processors`);
     await Promise.all(
       postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
+    );
+    await Promise.all(
+      finalPostProcessors.map((postProcessor) =>
+        postProcessor({ compiledPath }),
+      ),
     );
     info(`Finished post-processing ${checkmark}`);
   }
