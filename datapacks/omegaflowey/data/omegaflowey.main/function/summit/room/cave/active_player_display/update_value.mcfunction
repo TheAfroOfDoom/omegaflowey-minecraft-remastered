@@ -1,7 +1,8 @@
 # If active player doesn't exist, update active player UUID storage
+$execute unless entity $(active_player_uuid) run data modify storage omegaflowey:bossfight active_player_uuid set value "0"
 $execute \
   as $(active_player_uuid) \
-  unless entity @s[tag=!omegaflowey.player.fighting_flowey] \
+  if entity @s[tag=!omegaflowey.player.fighting_flowey] \
   run data modify storage omegaflowey:bossfight active_player_uuid set value "0"
 
 $data modify storage omegaflowey:bossfight active_player_uuid_intarray set from entity $(active_player_uuid) UUID
