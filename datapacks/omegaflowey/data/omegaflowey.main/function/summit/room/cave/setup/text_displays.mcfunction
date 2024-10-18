@@ -648,3 +648,83 @@ execute as @e[ \
   limit=1 \
 ] run function gu:generate
 data modify storage omegaflowey:decorative feedback_form_interaction_uuid set from storage gu:main out
+
+summon minecraft:text_display -137.75 44.0 26.001 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "sound-categories-display-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  brightness: { block: 12, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '{ "text": "BOOTH SOUND CATEGORIES", "color": "gold", "bold": true }', \
+  text_opacity: 255, \
+  transformation: { \
+  left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+  right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+  scale: [0.875f, 0.875f, 0.875f], \
+  translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display -137.75 42.0 26.0015 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "sound-categories-display-content", \
+  ], \
+  alignment: "left", \
+  background: -16777216, \
+  brightness: { block: 12, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 300, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '[ \
+    { "translate": ":musical_note:" }, \
+    { "text": " Jukebox/Note Blocks", "color": "yellow", "bold": true }, \
+    "\\nbossfight music\\n\\n", \
+    { "translate": ":crossed_swords:" }, \
+    { "text": " Hostile Creatures", "color": "yellow", "bold": true }, \
+    "\\nattack sound effects\\n\\n", \
+    { "translate": ":video_game:" }, \
+    { "text": " Players", "color": "yellow", "bold": true }, \
+    "\\nsound effects applied to players\\n\\n", \
+    { "translate": ":earth_americas:" }, \
+    { "text": " Ambient", "color": "yellow", "bold": true }, \
+    "\\nmisc. supplemental sounds" \
+  ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [0.625f, 0.625f, 0.625f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  } \
+}
+
+summon minecraft:block_display -139.13 41.9375 26.001 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "sound-categories-display-border", \
+  ], \
+  block_state: { \
+    "Name": "minecraft:smooth_quartz", \
+  }, \
+  brightness: { block: 12, sky: 0 }, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [2.775f, 1.875f, 1.0E-4f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  } \
+}
