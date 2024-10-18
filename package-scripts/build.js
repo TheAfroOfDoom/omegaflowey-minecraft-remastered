@@ -106,6 +106,7 @@ const getSummitDatapackPaths = () => {
     'pack.mcmeta',
     ...prefixPaths('data/', [
       'animated_java/tags/function/',
+      'daylight_cycle',
       'minecraft',
       'omegaflowey.admin/function/',
       ...entityPaths,
