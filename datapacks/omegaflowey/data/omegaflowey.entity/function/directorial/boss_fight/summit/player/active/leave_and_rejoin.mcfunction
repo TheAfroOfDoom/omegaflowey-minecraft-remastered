@@ -1,5 +1,6 @@
 # players who leave the server are removed from the bossfight (when they rejoin)
 function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/modify_health_and_tags
+function omegaflowey.main:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 
 function omegaflowey.utils:log/self { text_component: '[\
   { "text": "You were ", "color": "yellow" }, \
