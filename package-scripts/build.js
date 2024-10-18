@@ -146,6 +146,28 @@ const getSummitResourcepackPaths = () => {
     'soul_0_sword',
     'venus_fly_trap',
   ]);
+  const pruneAnimatedJavaDisplayItem = async ({ compiledPath }) => {
+    const displayItemPath = `${compiledPath}/assets/minecraft/models/item/pink_dye.json`;
+    const displayItemJson = await readJson(displayItemPath);
+
+    const filteredOverrides = displayItemJson.overrides.filter((override) => {
+      if (!override.model.startsWith('animated_java:item/')) {
+        return true;
+      }
+
+      const modelName = override.model
+        .replace('animated_java:item/', '')
+        .split('/')[0];
+      return !animatedJavaExportsToPrune.includes(modelName);
+    });
+
+    displayItemJson.overrides = filteredOverrides;
+
+    displayItemJson.animated_java = undefined;
+
+    await writeJson(displayItemPath, displayItemJson, { spaces: 2 });
+  };
+  postProcessors.push(pruneAnimatedJavaDisplayItem);
 
   const modelPaths = prefixPaths('models/entity/decorative/', [
     'housefly.json',
