@@ -112,6 +112,18 @@ function omegaflowey.utils:log/self { text_component: '[ \
       "\\n", \
       "\\n", \
 \
+      { "text": "soul/ ", "color": "aqua" }, \
+      { \
+        "text": "5 ", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:soul/5" \
+        } \
+      }, \
+      "\\n", \
+      "\\n", \
+\
       { \
         "text": "bossfight/join", \
         "color": "yellow", \
