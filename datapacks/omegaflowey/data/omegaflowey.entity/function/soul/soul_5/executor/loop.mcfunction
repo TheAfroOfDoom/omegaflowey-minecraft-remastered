@@ -13,8 +13,7 @@ execute if score @s omegaflowey.soul.clock.i matches 0 run function omegaflowey.
 execute if score #omegaflowey.soul.5.saved omegaflowey.soul.flag matches 0 if score @s omegaflowey.soul.clock.i matches 303 run function omegaflowey.entity:soul/soul_5/executor/play_music
 
 # Run new logic if the player grabs the act_button
-execute if score #omegaflowey.soul.5.touched omegaflowey.soul.flag matches 1 run function omegaflowey.entity:soul/soul_5/executor/loop/saved
-execute if score #omegaflowey.soul.5.touched omegaflowey.soul.flag matches 1 run return 0
+execute if score #omegaflowey.soul.5.touched omegaflowey.soul.flag matches 1 run return run function omegaflowey.entity:soul/soul_5/executor/loop/saved
 
 # Terminate
 execute if score @s omegaflowey.soul.clock.i >= @s omegaflowey.soul.executor.clock.length run \
