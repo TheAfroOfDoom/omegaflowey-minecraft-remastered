@@ -143,27 +143,24 @@
   "boss-fight.static": {
     "sounds": [
       {
-        "name": "omega-flowey:generic.noise",
-        "type": "event"
+        "name": "omega-flowey:mus_f_noise-01"
+      },
+      {
+        "name": "omega-flowey:mus_f_noise-02"
       }
     ]
   },
   "decorative.static": {
     "sounds": [
       {
-        "name": "omega-flowey:generic.noise",
-        "type": "event",
-        "volume": 0.05
-      }
-    ]
-  },
-  "generic.noise": {
-    "sounds": [
-      {
-        "name": "omega-flowey:mus_f_noise-01"
+        "attenuation_distance": 55,
+        "name": "omega-flowey:mus_f_noise-01",
+        "volume": 0.1
       },
       {
-        "name": "omega-flowey:mus_f_noise-02"
+        "attenuation_distance": 55,
+        "name": "omega-flowey:mus_f_noise-02",
+        "volume": 0.1
       }
     ]
   },
