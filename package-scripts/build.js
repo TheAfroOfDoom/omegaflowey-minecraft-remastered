@@ -6,6 +6,18 @@ const { rimraf } = require('rimraf');
 
 const buildDir = './build';
 
+const prefixPaths = (prefix, paths) => paths.map((path) => `${prefix}${path}`);
+const suffixPaths = (paths, suffix) => paths.map((path) => `${path}${suffix}`);
+
+const animatedJavaExportsToPrune = prefixPaths('omegaflowey_', [
+  'housefly',
+  'petal_pipe_circle',
+  'petal_pipe_middle',
+  'soul_0_bandaid',
+  'soul_0_sword',
+  'venus_fly_trap',
+]);
+
 const getSummitDatapackPaths = () => {
   const postProcessors = [];
 
@@ -130,6 +142,47 @@ const getSummitDatapackPaths = () => {
     ...primaryDatapackPaths,
   ]);
 
+  const pruneAnimatedJavaDatapackExports = async ({ compiledPath }) => {
+    const prunePromises = [];
+    for (const dir of animatedJavaExportsToPrune) {
+      const pruneFunctionDir = `${compiledPath}/datapacks/animated_java/data/animated_java/function/${dir}`;
+      prunePromises.push(rimraf(pruneFunctionDir));
+      prunePromises.push(
+        rimraf(
+          `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/${dir}`,
+        ),
+      );
+    }
+    await Promise.all(prunePromises);
+  };
+  postProcessors.push(pruneAnimatedJavaDatapackExports);
+
+  const pruneAnimatedJavaDatapackTags = async ({ compiledPath }) => {
+    for (const [tagPath, suffix] of [
+      [
+        `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/on_load.json`,
+        '/on_load',
+      ],
+      [
+        `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/root/on_load.json`,
+        '/root/on_load',
+      ],
+      [
+        `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/root/on_tick.json`,
+        '/root/on_tick',
+      ],
+    ]) {
+      const loadTagJson = await readJson(tagPath);
+      loadTagJson.values = loadTagJson.values.filter((modelTag) => {
+        const namespace = modelTag
+          .replace('animated_java:', '')
+          .replace(suffix, '');
+        return !animatedJavaExportsToPrune.includes(namespace);
+      });
+      await writeJson(tagPath, loadTagJson);
+    }
+  };
+  postProcessors.push(pruneAnimatedJavaDatapackTags);
   return { paths: datapackPaths, postProcessors };
 };
 
@@ -140,14 +193,6 @@ const getSummitResourcepackPaths = () => {
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
-  const animatedJavaExportsToPrune = prefixPaths('omegaflowey_', [
-    'housefly',
-    'petal_pipe_circle',
-    'petal_pipe_middle',
-    'soul_0_bandaid',
-    'soul_0_sword',
-    'venus_fly_trap',
-  ]);
   const pruneAnimatedJavaDisplayItem = async ({ compiledPath }) => {
     const displayItemPath = `${compiledPath}/assets/minecraft/models/item/pink_dye.json`;
     const displayItemJson = await readJson(displayItemPath);
@@ -391,9 +436,6 @@ const logLevel = (level, ...data) => {
       console.log(...data);
   }
 };
-
-const prefixPaths = (prefix, paths) => paths.map((path) => `${prefix}${path}`);
-const suffixPaths = (paths, suffix) => paths.map((path) => `${path}${suffix}`);
 
 const getCompilePaths = ({ getSummitPaths }) => {
   const { variant } = args;
