@@ -138,6 +138,15 @@ const getSummitResourcepackPaths = () => {
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
+  const animatedJavaExportsToPrune = prefixPaths('omegaflowey_', [
+    'housefly',
+    'petal_pipe_circle',
+    'petal_pipe_middle',
+    'soul_0_bandaid',
+    'soul_0_sword',
+    'venus_fly_trap',
+  ]);
+
   const modelPaths = prefixPaths('models/entity/decorative/', [
     'housefly.json',
     'picture',
@@ -299,6 +308,16 @@ const getSummitResourcepackPaths = () => {
     ...minecraftPaths,
     ...omegaFloweyPaths,
   ]);
+
+  const pruneAnimatedJavaResourcepackExports = async ({ compiledPath }) => {
+    const prunePromises = [];
+    for (const dir of animatedJavaExportsToPrune) {
+      const compiledPruneDir = `${compiledPath}/assets/animated_java/models/item/${dir}`;
+      prunePromises.push(rimraf(compiledPruneDir));
+    }
+    await Promise.all(prunePromises);
+  };
+  postProcessors.push(pruneAnimatedJavaResourcepackExports);
 
   const resourcepackPaths = prefixPaths('resourcepack/', [
     'pack.mcmeta',
