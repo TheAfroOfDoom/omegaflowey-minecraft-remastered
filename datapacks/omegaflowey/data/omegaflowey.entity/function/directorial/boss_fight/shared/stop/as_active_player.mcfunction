@@ -12,3 +12,7 @@ execute \
 function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/modify_health_and_tags
 
 function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/log_reason
+
+# Stop reason (5) is the player survived
+execute if score #omegaflowey.bossfight.stop_reason omegaflowey.global.flag matches 5 at @s run \
+  function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/won
