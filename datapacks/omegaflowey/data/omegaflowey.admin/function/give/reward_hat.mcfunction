@@ -1,1 +1,1 @@
-function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/terminate/final/player
+function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/won/give_reward_hat
