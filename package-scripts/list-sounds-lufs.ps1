@@ -16,8 +16,8 @@ if($out -ne '') {
 foreach ($script:file in $files) {
   $relativePath = $file | resolve-path -relative -relativeBasePath $path
   $script:fileLUFS = ffmpeg -i $file.fullname -af ebur128=framelog=verbose -f null - 2>&1 | grep -e I: -A 1
-  $script:lufsFormatted = (($fileLUFS.split([environment]::newline)) -join " ").trim()
-  $script:statsLine = "${relativePath}: $($lufsFormatted)"
+  $script:lufsFormatted = ((($fileLUFS.split('\n').where{$_ -ne ''}) | foreach-object -membername trim) -join [environment]::newline)
+  $script:statsLine = "# ${relativePath}$([environment]::newline)$($lufsFormatted)$([environment]::newline)"
   if ($out -ne '') {
     $statsLine | out-file -filepath $out -append
   } else {
