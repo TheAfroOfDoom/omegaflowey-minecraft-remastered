@@ -80,6 +80,8 @@ scoreboard objectives add omegaflowey.boss-fight.progress.phase.total dummy
 scoreboard objectives add omegaflowey.boss-fight.warn.clock.i dummy
 scoreboard objectives add omegaflowey.boss-fight.warn.clock.total dummy
 
+scoreboard objectives add omegaflowey.decorative.clock.i dummy
+
 scoreboard objectives add omegaflowey.global.flag dummy
 
 scoreboard objectives add omegaflowey.group.id dummy
