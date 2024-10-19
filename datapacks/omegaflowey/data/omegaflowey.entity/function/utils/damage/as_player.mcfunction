@@ -1,12 +1,17 @@
 # If player is going to die to this hit, disable `showDeathMessages` temporarily and display a custom death message
-scoreboard players set #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag 0
+scoreboard players set #omegaflowey.bossfight.player_died omegaflowey.global.flag 0
 $execute \
   if score @s omegaflowey.player.health matches ..$(damage) \
   unless data entity @s active_effects[{ amplifier: 4b, duration: -1, id: "minecraft:resistance" }] \
-  run scoreboard players set #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag 1
-execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 store result score @s omegaflowey.math.0 run gamerule showDeathMessages
-execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 \
-  if score @s omegaflowey.math.0 matches 1 run gamerule showDeathMessages false
+  run scoreboard players set #omegaflowey.bossfight.player_died omegaflowey.global.flag 1
+execute \
+  if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 \
+  store result score @s omegaflowey.math.0 \
+  run gamerule showDeathMessages
+execute \
+  if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 \
+  if score @s omegaflowey.math.0 matches 1 \
+  run gamerule showDeathMessages false
 
 # TODO(39): remove these `unless entity @e[tag=boss_fight]`/`if entity @e[tag=boss_fight]` checks when boss fight is fully setup
 # we have it here for development so that the boss entity (omega-flowey)
@@ -32,7 +37,7 @@ schedule function omegaflowey.entity:utils/damage/reset_immunity_flag 10t replac
 
 # Show custom death message
 # TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
-execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 run \
+execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 run \
   tellraw @a[ \
     x=-186, dx=91, y=12, dy=93, z=12, dz=95, \
     tag=omegaflowey.player \
@@ -43,5 +48,5 @@ execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.gl
   ]
 
 # Re-enable `showDeathMessages` if it was enabled previously
-execute if score #omegaflowey.bossfight.show_custom_death_message omegaflowey.global.flag matches 1 \
+execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 \
   if score @s omegaflowey.math.0 matches 1 run gamerule showDeathMessages true
