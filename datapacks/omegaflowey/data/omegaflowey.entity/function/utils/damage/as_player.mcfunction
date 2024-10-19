@@ -47,6 +47,10 @@ execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matc
     { "text": "Omega Flowey", "color": "green" } \
   ]
 
+# Run outside tvscreen death animation
+execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 run \
+  function omegaflowey.main:summit/room/outside/setup/tv_screen/death_animation with storage omegaflowey:decorative
+
 # Re-enable `showDeathMessages` if it was enabled previously
 execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 \
   if score @s omegaflowey.math.0 matches 1 run gamerule showDeathMessages true
