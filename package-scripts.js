@@ -99,7 +99,7 @@ module.exports = {
     log: `code -r "${minecraftPath}/logs/latest.log"`,
     stats: {
       default: 'nps stats.sounds',
-      sounds: `yarn exec pwsh -Command "./package-scripts/list-sound-stats.ps1" -Path "resourcepack/assets/omega-flowey/sounds" -Out "resourcepack/assets/omega-flowey/sounds/lufs.txt"`,
+      sounds: `yarn exec pwsh -Command "./package-scripts/list-sound-stats.ps1" -Path "resourcepack/assets/omega-flowey/sounds" -Out "resourcepack/assets/omega-flowey/sounds/stats.txt"`,
     },
     sync: {
       default: 'nps sync.summit',
