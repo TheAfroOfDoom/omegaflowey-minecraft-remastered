@@ -147,6 +147,28 @@ function omegaflowey.utils:log/self { text_component: '[ \
       "\\n", \
 \
       { \
+        "text": "give/reward_hat", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:give/reward_hat" \
+        } \
+      }, \
+      ": gives the yellow default reward hat item", \
+      "\\n", \
+      { \
+        "text": "give/reward_hat_low_hits", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:give/reward_hat_low_hits" \
+        } \
+      }, \
+      ": gives the low-hits cyan reward hat item", \
+      "\\n", \
+      "\\n", \
+\
+      { \
         "text": "summon/flowey_model", \
         "color": "yellow", \
         "clickEvent": { \
