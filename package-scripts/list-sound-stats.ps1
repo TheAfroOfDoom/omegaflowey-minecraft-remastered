@@ -16,10 +16,10 @@ if($out -ne '') {
 foreach ($script:file in $files) {
   $relativePath = $file | resolve-path -relative -relativeBasePath $path
 
-  $script:channels = ffprobe -i $file.fullname -show_entries stream=channels -select_streams a:0 -of compact=p=0:nk=1 -v 0
+  $script:channels = ffprobe -i $file -show_entries stream=channels -select_streams a:0 -of compact=p=0:nk=1 -v 0
   $script:channelsFormatted = "channels: ${channels}"
 
-  $script:lufs = ffmpeg -i $file.fullname -af ebur128=framelog=verbose -f null - 2>&1 | grep -e "Integrated loudness:" -A 8
+  $script:lufs = ffmpeg -i $file -af ebur128=framelog=verbose -f null - 2>&1 | grep -e "Integrated loudness:" -A 8
   $script:lufsFormatted = ((($lufs.split('\n').where{$_ -ne ''}) | foreach-object -membername trim) -join [environment]::newline)
 
   $script:statsLine = "# ${relativePath}$([environment]::newline)${channelsFormatted}$([environment]::newline)${lufsFormatted}$([environment]::newline)"
