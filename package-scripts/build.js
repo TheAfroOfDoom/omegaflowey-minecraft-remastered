@@ -91,6 +91,7 @@ const getSummitDatapackPaths = () => {
     'advancement/player_interacted_with_feedback_form_link.json',
     'advancement/player_interacted_with_github_description.json',
     'advancement/player_interacted_with_join_queue.json',
+    'advancement/player_interacted_with_soul_act_button_locator.json',
     ...prefixPaths('function/', [
       ...bossFightPaths,
       'decorative',
