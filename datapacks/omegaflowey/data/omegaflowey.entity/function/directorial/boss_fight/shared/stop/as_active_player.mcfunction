@@ -13,6 +13,9 @@ function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/
 
 function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/log_reason
 
+execute if score #omegaflowey.bossfight.stop_reason omegaflowey.global.flag matches 3 run \
+  playsound omega-flowey:player.escaped player @s ~ ~ ~ 3
+
 # Stop reason (5) is the player survived
 execute if score #omegaflowey.bossfight.stop_reason omegaflowey.global.flag matches 5 at @s run \
   function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/won
