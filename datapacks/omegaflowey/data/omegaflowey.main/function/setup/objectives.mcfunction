@@ -105,6 +105,7 @@ scoreboard objectives add omegaflowey.player.leave.previous dummy
 scoreboard objectives add omegaflowey.player.health health
 scoreboard objectives add omegaflowey.player.shake.pitch dummy
 scoreboard objectives add omegaflowey.player.shake.yaw dummy
+scoreboard objectives add omegaflowey.player.telemetry.id dummy
 scoreboard objectives add omegaflowey.player.trigger.bossfight.confirm trigger
 scoreboard objectives add omegaflowey.player.trigger.bossfight.deny trigger
 
