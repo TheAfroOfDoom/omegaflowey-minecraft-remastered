@@ -9,6 +9,7 @@ execute if score @s omegaflowey.boss-fight.attack.phase.i matches 1 run function
 
 # Set scores
 scoreboard players set @s omegaflowey.boss-fight.attack.clock.i -1
+scoreboard players set @s omegaflowey.boss-fight.attack.delay 10
 
 # Add tags
 tag @s add boss_fight.phase.attack
