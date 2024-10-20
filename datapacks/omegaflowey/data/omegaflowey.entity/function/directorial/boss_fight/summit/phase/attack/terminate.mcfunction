@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/tag/end { name: "bossfight.phase.attack" }
+
 # Increment attack phase
 scoreboard players add @s omegaflowey.boss-fight.attack.phase.i 1
 # Wrap around total phases (6)
