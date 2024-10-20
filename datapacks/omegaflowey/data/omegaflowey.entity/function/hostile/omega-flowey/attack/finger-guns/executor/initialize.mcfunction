@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/tag/start { name: "attack.finger_guns" }
+
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initialize
 
 data modify entity @s CustomName set value '"Finger-Guns Executor"'
