@@ -12,7 +12,7 @@ $tag $(corresponding_bullet_9_uuid) remove stationary
 
 # Play activate sound
 function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
-  'playsound omega-flowey:attack.friendliness-pellets.activate hostile @s ~ ~ ~ 3 1 1' \
+  'playsound omega-flowey:attack.friendliness-pellets.activate hostile @s ~ ~ ~ 5 1 1' \
 }
 
 kill @s

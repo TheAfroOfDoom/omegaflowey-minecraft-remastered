@@ -10,7 +10,7 @@ execute if score @s omegaflowey.attack.clock.i = @s omegaflowey.attack.indicator
 # Play blinking sound before we summon bullets
 execute if score @s omegaflowey.attack.clock.i matches ..-1 run \
   function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
-    'playsound omega-flowey:attack.friendliness-pellets.blinking hostile @s ~ ~ ~ 3 1 1' \
+    'playsound omega-flowey:attack.friendliness-pellets.blinking hostile @s ~ ~ ~ 5 1 1' \
   }
 
 # Ignore bullet summoning logic while `omegaflowey.attack.clock.i` is negative

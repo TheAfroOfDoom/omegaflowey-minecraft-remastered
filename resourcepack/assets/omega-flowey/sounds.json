@@ -90,7 +90,8 @@
   "attack.friendliness-pellets.activate": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_shakerbreaker"
+        "name": "omega-flowey:snd_shakerbreaker",
+        "attenuation_distance": 50
       }
     ]
   },
@@ -98,7 +99,8 @@
     "sounds": [
       {
         "name": "omega-flowey:attack.generic.beep",
-        "type": "event"
+        "type": "event",
+        "volume": 0.2
       }
     ]
   },
