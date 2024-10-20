@@ -5,3 +5,5 @@ data modify storage omegaflowey:telemetry tags append value [{ name: "root", typ
 execute store result score #omegaflowey.telemetry.basetime omegaflowey.global.flag run time query gametime
 execute store result storage omegaflowey:telemetry tags[-1][0].tick int 1 run \
   scoreboard players get #omegaflowey.telemetry.basetime omegaflowey.global.flag
+
+execute summon marker run function omegaflowey.main:telemetry/tag/root/start/generate_uuid
