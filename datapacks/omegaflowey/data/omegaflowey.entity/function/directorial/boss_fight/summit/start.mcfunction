@@ -12,8 +12,8 @@ function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
   ]" \
 }
 
-function omegaflowey.main:telemetry/tag/root/start
-function omegaflowey.main:telemetry/tag/start { name: "bossfight.summit" }
+function omegaflowey.main:telemetry/bossfight/tag/root/start
+function omegaflowey.main:telemetry/bossfight/tag/start { name: "bossfight.summit" }
 
 # Summon and initialize boss fight director
 function omegaflowey.entity:directorial/boss_fight/summit/origin/at { \

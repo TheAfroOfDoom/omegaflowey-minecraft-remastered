@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/tag/end { name: "bossfight.phase.attack" }
+function omegaflowey.main:telemetry/bossfight/tag/end { name: "bossfight.phase.attack" }
 
 # Increment attack phase
 scoreboard players add @s omegaflowey.boss-fight.attack.phase.i 1

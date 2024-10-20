@@ -1,8 +1,8 @@
 function omegaflowey.main:telemetry/data/active_player/gamemode with storage omegaflowey:bossfight
 execute store result storage omegaflowey:telemetry.temp data.stop_reason int 1 run \
   scoreboard players get #omegaflowey.bossfight.stop_reason omegaflowey.global.flag
-function omegaflowey.main:telemetry/tag/end { name: "bossfight.summit" }
-function omegaflowey.main:telemetry/tag/root/end
+function omegaflowey.main:telemetry/bossfight/tag/end { name: "bossfight.summit" }
+function omegaflowey.main:telemetry/bossfight/tag/root/end
 
 function omegaflowey.entity:remove_animated_java_models/boss_fight
 # TAG_SUMMIT_HARDCODED_ARENA_VOLUME

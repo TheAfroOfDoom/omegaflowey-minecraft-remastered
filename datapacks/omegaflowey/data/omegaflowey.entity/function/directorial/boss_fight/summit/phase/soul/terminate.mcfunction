@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/tag/end { name: "bossfight.phase.soul" }
+function omegaflowey.main:telemetry/bossfight/tag/end { name: "bossfight.phase.soul" }
 
 # Check if this is the final phase
 scoreboard players set #omegaflowey.bossfight.done omegaflowey.global.flag 0

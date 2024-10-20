@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/tag/instant { name: "soul.saved" }
+function omegaflowey.main:telemetry/bossfight/tag/instant { name: "soul.saved" }
 
 # Update state flag
 scoreboard players set #omegaflowey.soul.5.saved omegaflowey.soul.flag 1
