@@ -3,7 +3,8 @@
     "sounds": [
       {
         "name": "omega-flowey:snd_bombsplosion",
-        "attenuation_distance": 50
+        "attenuation_distance": 50,
+        "volume": 10
       }
     ]
   },
@@ -11,7 +12,8 @@
     "sounds": [
       {
         "name": "omega-flowey:snd_bombfall",
-        "attenuation_distance": 50
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
@@ -19,7 +21,8 @@
     "sounds": [
       {
         "name": "omega-flowey:snd_impact",
-        "attenuation_distance": 32
+        "attenuation_distance": 32,
+        "volume": 10
       }
     ]
   },
@@ -34,16 +37,19 @@
   "attack.dentata-snakes.spawn": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.charge-up",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_segapower",
+        "pitch": 1.2,
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
   "attack.finger-guns.laser": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.beep",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_a_target",
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
@@ -51,7 +57,8 @@
     "sounds": [
       {
         "name": "omega-flowey:mus_sfx_a_bullet",
-        "attenuation_distance": 50
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
@@ -88,25 +95,7 @@
   "attack.friendliness-pellets.blinking": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.beep",
-        "type": "event",
-        "volume": 0.2
-      }
-    ]
-  },
-  "attack.generic.beep": {
-    "sounds": [
-      {
         "name": "omega-flowey:mus_sfx_a_target",
-        "attenuation_distance": 50
-      }
-    ]
-  },
-  "attack.generic.charge-up": {
-    "sounds": [
-      {
-        "name": "omega-flowey:mus_sfx_segapower",
-        "pitch": 1.2,
         "attenuation_distance": 50
       }
     ]
@@ -115,31 +104,36 @@
     "sounds": [
       {
         "name": "omega-flowey:mus_sfx_yowl",
-        "attenuation_distance": 50
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
   "attack.homing-vines.blinking": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.beep",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_a_target",
+        "attenuation_distance": 50,
+        "volume": 1000
       }
     ]
   },
   "attack.homing-vines.summon": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.summon",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_yowl",
+        "attenuation_distance": 50,
+        "volume": 1
       }
     ]
   },
   "attack.x-bullets.start": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.charge-up",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_segapower",
+        "pitch": 1.2,
+        "attenuation_distance": 50,
+        "volume": 40
       }
     ]
   },
