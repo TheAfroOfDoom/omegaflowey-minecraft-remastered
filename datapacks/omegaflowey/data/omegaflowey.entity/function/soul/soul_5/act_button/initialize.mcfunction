@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/tag/instant { name: "soul_act_button_summon" }
+
 # Set scores
 scoreboard players set @s omegaflowey.soul.clock.i -1
 
