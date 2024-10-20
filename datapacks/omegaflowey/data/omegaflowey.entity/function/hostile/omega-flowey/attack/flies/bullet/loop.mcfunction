@@ -1,4 +1,4 @@
-data merge storage omegaflowey:utils.damage { damage: 2, radius: 1.5 }
+data merge storage omegaflowey:utils.damage { damage: 2, radius: 1.5, source: 'flies.bullet' }
 execute positioned ~ ~-0.5 ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 
 execute if entity @s[tag=is_terminating] run function omegaflowey.entity:hostile/omega-flowey/attack/flies/bullet/loop/terminating

@@ -3,7 +3,7 @@ scoreboard players add @s omegaflowey.attack.clock.i 1
 # TODO(40): this hitbox is inaccurate -- needs to be a bounding box that is NOT axis aligned
 # > make some functions to represent the shape and check if the player's coordinates pass the function checks
 # inputs: { rectangle_width, current_position, initial_position (bullet summon position) }
-data merge storage omegaflowey:utils.damage { damage: 2, radius: 1 }
+data merge storage omegaflowey:utils.damage { damage: 2, radius: 1, source: 'homing_vines.bullet' }
 execute if entity @s[tag=!cant-damage] run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 
 # Check if inside arena
