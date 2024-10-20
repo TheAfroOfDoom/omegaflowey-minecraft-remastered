@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/tag/start { name: "attack.friendliness_pellets" }
+function omegaflowey.main:telemetry/bossfight/tag/start { name: "attack.friendliness_pellets" }
 
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initialize
 
