@@ -2,14 +2,20 @@
   "attack.bomb.explode": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_bombsplosion"
+        "name": "omega-flowey:snd_bombsplosion",
+        "attenuation_distance": 50
       }
     ]
   },
   "attack.bomb.fall": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_bombfall"
+        "name": "omega-flowey:snd_bombfall-01",
+        "attenuation_distance": 50
+      },
+      {
+        "name": "omega-flowey:snd_bombfall-02",
+        "attenuation_distance": 50
       }
     ]
   },
