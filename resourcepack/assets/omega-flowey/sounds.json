@@ -16,14 +16,22 @@
   "attack.dentata-snakes.bounce": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_impact"
+        "name": "omega-flowey:snd_impact",
+        "attenuation_distance": 32
       }
     ]
   },
   "attack.dentata-snakes.summon": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_sfx_generate"
+        "name": "omega-flowey:mus_sfx_generate-01",
+        "attenuation_distance": 50,
+        "volume": 2
+      },
+      {
+        "name": "omega-flowey:mus_sfx_generate-02",
+        "attenuation_distance": 50,
+        "volume": 2
       }
     ]
   },
@@ -98,7 +106,8 @@
     "sounds": [
       {
         "name": "omega-flowey:mus_sfx_segapower",
-        "pitch": 1.2
+        "pitch": 1.2,
+        "attenuation_distance": 50
       }
     ]
   },
