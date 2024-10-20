@@ -1,4 +1,5 @@
 $data modify storage omegaflowey:telemetry.temp data set value { amount: $(damage) }
+data modify storage omegaflowey:telemetry.temp data.source set from storage omegaflowey:utils.damage source
 function omegaflowey.main:telemetry/data/active_player/gamemode with storage omegaflowey:bossfight
 function omegaflowey.main:telemetry/tag/instant { name: "player.damage" }
 

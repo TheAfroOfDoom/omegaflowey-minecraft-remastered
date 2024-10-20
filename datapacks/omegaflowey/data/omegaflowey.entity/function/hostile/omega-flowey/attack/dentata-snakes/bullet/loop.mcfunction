@@ -1,7 +1,7 @@
 scoreboard players add @s omegaflowey.attack.clock.i 1
 
 execute store result storage omegaflowey:utils.damage radius float 0.0001 run scoreboard players get @s omegaflowey.attack.bullets.radius
-data merge storage omegaflowey:utils.damage { damage: 3 }
+data merge storage omegaflowey:utils.damage { damage: 3, source: 'dentata_snakes.bullet' }
 function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 
 # Check if inside arena
