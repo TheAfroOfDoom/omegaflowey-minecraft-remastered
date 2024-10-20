@@ -8,4 +8,6 @@ execute store result storage omegaflowey:telemetry tags[-1][0].tick int 1 run \
 
 execute summon marker run function omegaflowey.main:telemetry/tag/root/start/generate_uuid
 
-data modify storage omegaflowey:telemetry tags[-1][-1].player set from storage omegaflowey:bossfight active_player_uuid
+data modify storage omegaflowey:telemetry tags[-1][-1].player_id set from storage omegaflowey:bossfight active_player_uuid
+
+function omegaflowey.main:telemetry/tag/root/start/macro with storage omegaflowey:bossfight
