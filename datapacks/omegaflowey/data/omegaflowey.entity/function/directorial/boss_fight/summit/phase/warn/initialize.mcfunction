@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/tag/start { name: "bossfight.phase.warn" }
+
 ## Set scores
 # Length of the WARNING sound
 scoreboard players set @s omegaflowey.boss-fight.warn.clock.total 101

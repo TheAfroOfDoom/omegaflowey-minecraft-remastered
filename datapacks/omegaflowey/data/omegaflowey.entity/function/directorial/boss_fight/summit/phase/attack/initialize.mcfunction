@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/tag/start { name: "bossfight.phase.attack" }
+
 # Split on phase score
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 0 run function omegaflowey.entity:directorial/boss_fight/summit/phase/attack/initialize/0
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 1 run function omegaflowey.entity:directorial/boss_fight/summit/phase/attack/initialize/1

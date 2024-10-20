@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/tag/start { name: "bossfight.phase.soul" }
+
 ## Set scores
 # the negative time duration is how long the static length lasts (25 ticks)
 scoreboard players set @s omegaflowey.boss-fight.progress.clock.i -26

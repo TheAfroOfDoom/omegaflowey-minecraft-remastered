@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/tag/end { name: "bossfight.phase.soul" }
+
 # Check if this is the final phase
 scoreboard players set #omegaflowey.bossfight.done omegaflowey.global.flag 0
 execute if score @s omegaflowey.boss-fight.progress.phase.i = @s omegaflowey.boss-fight.progress.phase.total run scoreboard players set #omegaflowey.bossfight.done omegaflowey.global.flag 1
