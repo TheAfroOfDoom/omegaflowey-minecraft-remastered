@@ -1,3 +1,6 @@
+data modify storage omegaflowey:telemetry.temp data set value {}
+execute store result storage omegaflowey:telemetry.temp data.stop_reason int 1 run \
+  scoreboard players get #omegaflowey.bossfight.stop_reason omegaflowey.global.flag
 function omegaflowey.main:telemetry/tag/end { name: "bossfight.summit" }
 function omegaflowey.main:telemetry/tag/root/end
 
