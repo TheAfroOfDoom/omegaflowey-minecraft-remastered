@@ -11,3 +11,6 @@ execute summon marker run function omegaflowey.main:telemetry/tag/root/start/gen
 data modify storage omegaflowey:telemetry tags[-1][-1].player_id set from storage omegaflowey:bossfight active_player_uuid
 
 function omegaflowey.main:telemetry/tag/root/start/macro with storage omegaflowey:bossfight
+
+function omegaflowey.main:telemetry/data/active_player/gamemode with storage omegaflowey:bossfight
+data modify storage omegaflowey:telemetry tags[-1][-1].player_gamemode set from storage omegaflowey:telemetry.temp data.player_gamemode
