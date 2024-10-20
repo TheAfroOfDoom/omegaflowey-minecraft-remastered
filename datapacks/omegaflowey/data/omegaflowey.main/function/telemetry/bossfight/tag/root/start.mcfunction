@@ -1,6 +1,3 @@
-execute unless data storage omegaflowey:telemetry tags run data modify storage omegaflowey:telemetry tags set value {}
-execute unless data storage omegaflowey:telemetry tags.bossfight run data modify storage omegaflowey:telemetry tags.bossfight set value []
-
 data modify storage omegaflowey:telemetry tags.bossfight append value [{ name: "root", type: "start", "version": "0.1.0" }]
 
 execute store result score #omegaflowey.telemetry.bossfight.basetime omegaflowey.global.flag run time query gametime
