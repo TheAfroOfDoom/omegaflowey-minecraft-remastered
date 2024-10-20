@@ -1,3 +1,6 @@
+function omegaflowey.main:telemetry/tag/end { name: "bossfight.summit" }
+function omegaflowey.main:telemetry/tag/root/end
+
 function omegaflowey.entity:remove_animated_java_models/boss_fight
 # TAG_SUMMIT_HARDCODED_ARENA_VOLUME
 execute as @e[ \
