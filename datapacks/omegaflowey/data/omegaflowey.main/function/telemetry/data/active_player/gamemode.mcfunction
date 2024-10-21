@@ -1,5 +1,4 @@
-execute unless data storage omegaflowey:telemetry.temp data run \
-  data modify storage omegaflowey:telemetry.temp data set value {}
+function omegaflowey.main:telemetry/data/shared
 
 $execute as $(active_player_uuid) if entity @s[gamemode=adventure] run \
   data modify storage omegaflowey:telemetry.temp data.player_gamemode set value "adventure"
