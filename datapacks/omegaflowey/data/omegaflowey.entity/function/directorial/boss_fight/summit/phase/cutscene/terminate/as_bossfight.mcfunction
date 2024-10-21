@@ -9,7 +9,7 @@ $execute as $(arena_box_uuid) run function animated_java:omegaflowey_arena_box/v
 # Begin animating largesidevines/nose at full speed
 $execute as $(large_side_vine_left_uuid) run function omegaflowey.entity:hostile/omega-flowey/animate/large_side_vine/resume_normal_from_slow/left
 $execute as $(large_side_vine_right_uuid) run function omegaflowey.entity:hostile/omega-flowey/animate/large_side_vine/resume_normal_from_slow/right
-$execute as $(model_nose_uuid) run function animated_java:nose/animations/move/tween { duration: 1, to_frame: 1 }
+$execute as $(model_nose_uuid) run function animated_java:omegaflowey_nose/animations/move/tween { duration: 1, to_frame: 1 }
 
 # Re-animate main Omega Flowey models
 scoreboard players set #omegaflowey.bossfight.skip_reanimate_largesidevine omegaflowey.global.flag 1
