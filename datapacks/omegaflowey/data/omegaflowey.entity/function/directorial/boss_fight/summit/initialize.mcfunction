@@ -3,7 +3,7 @@ function omegaflowey.entity:directorial/boss_fight/shared/initialize
 
 # Summon and initialize `arena_box` entity
 function omegaflowey.entity:directorial/boss_fight/summit/origin/at { command: "\
-  execute positioned ~ ~ ~-20.5 run function animated_java:omegaflowey_arena_box/summon/default\
+  execute positioned ~ ~ ~-20.5 rotated 0 0 run function animated_java:omegaflowey_arena_box/summon/default\
 "}
 
 # Add tags
