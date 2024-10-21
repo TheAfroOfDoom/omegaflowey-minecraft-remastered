@@ -5772,6 +5772,34 @@
 			"uuid": "eaba8d80-2850-abbb-be36-60ce443febf8",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAArpJREFUeF7tW01v2zAMpRMnMdJsK1C0BTq0QIf9hwE97FCgWP//TyjQQ7+SJXVcO3bigXKoKbJ7iH0oiD5dIscmIFJPFPVEBtfXv8vhYESrPCP+fa+576X/d57ReExGTqt8cPvnppzO5lSs11b3sN+3/XSVUjSMzDN/k2Y5RaMB8TfT2ZR+/rgkzfLWAE0zL0Y5/HZAy7Qwn5RF9cvvFou5NYBW+YCXQBynFCcpffk6oYMoNMrmWWZ04plmZQUVQRhaIzACLs7PSLN8IwIE9r1eRGWvMAq7S0QM4y4BFwGa5I0BHp+ndrYF3qIQz7zvB+Qd+4OL76ekWb6GAIY4w58V5760YFP1N5vUoKFY55Qsk5oP0CZfQ4APdVaU/R7bIuxX3l8a+w0fAdrkLQJkvb8lsd327OxvkcAOkpvsCC9PjxYBWuV34gCZXZnF955ZWV4KfhygUX7HB8ia97dCnvXBqIoSJQ7gvr8LaJQ3Bri7f6DJuIr2/CZKieLyzEtFnKBmeYsA3+OLt3e3PAmBJ5PI+AHXB2iVr22DTQEPG4EV5K1wlS9tzNAUCGmT39kGZbab1rsbIImzEwNIIKRRPvh1dVW+LmJaZUmjD5A/h6Ox6frfHR2fkGZ5cxjSfJ7vykeADxBCpAn/4APAB4APMKc/8AEcCIEPAB9gCFPwAUQEPmAbNIAP2JKi4ANm8xqDrIVPAB/gXoxoPM/z5WwXPgJ8APgA5AdUCRLgA5Af8B8Dmu73JUXHRfA+40d+gM8Jarvf9xGw7/iRHyAI0Hq/LwhoO37kB7g+QOP9vusD2owf+QGCAK33+4KAtuMHHwA+APkByA9AvQD4ANQL7DJC+5ynu57HP1oefAD4AK9iRFu+f9d6BdQLuHWDGvP93brFNuNHvQDqBbZXY23P013P4x8tDz4AfMAn5wP+AVWvvd78gHaPAAAAAElFTkSuQmCC",
 			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\black.png",
+			"name": "black.png",
+			"folder": "",
+			"namespace": "",
+			"id": "6",
+			"group": "",
+			"width": 16,
+			"height": 16,
+			"uv_width": 64,
+			"uv_height": 64,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "edd7b7f6-5d08-6475-cebe-f08e48ec2a38",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
+			"mode": "bitmap"
 		}
 	],
 	"variants": {
@@ -5826,6 +5854,15 @@
 				"uuid": "578b351e-2659-1479-96f7-e76436b4a031",
 				"texture_map": {
 					"1868b0c5-f4b5-0140-e8a7-84b899578a24": "2a8d1554-d346-03ec-67c7-095e633be282"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "black",
+				"display_name": "black",
+				"uuid": "689f35f9-7be0-e0c2-eaea-3a6bc160d9d2",
+				"texture_map": {
+					"1868b0c5-f4b5-0140-e8a7-84b899578a24": "edd7b7f6-5d08-6475-cebe-f08e48ec2a38"
 				},
 				"excluded_nodes": []
 			}
@@ -5912,7 +5949,8 @@
 							"bezier_left_value": [0, -0.00045, 0],
 							"bezier_right_time": [0.1, 0.15333, 0.1],
 							"bezier_right_value": [0, 0.00045, 0],
-							"easing": "linear"
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -6951,7 +6989,8 @@
 							"bezier_left_value": [0, -0.00045, 0],
 							"bezier_right_time": [0.1, 0.15333, 0.1],
 							"bezier_right_value": [0, 0.00045, 0],
-							"easing": "linear"
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
