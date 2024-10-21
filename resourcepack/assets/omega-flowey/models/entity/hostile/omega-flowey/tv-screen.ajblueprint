@@ -1460,7 +1460,7 @@
 			"override": false,
 			"length": 2,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": false,
 			"path": "",
 			"anim_time_update": "",
@@ -1533,6 +1533,110 @@
 							"bezier_left_value": [0, 0, 0],
 							"bezier_right_time": [0.1, 0.4, 0.1],
 							"bezier_right_value": [0, 0, 0],
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				}
+			}
+		},
+		{
+			"uuid": "e6e6f65b-e521-66f9-7a1d-08fff44775d5",
+			"name": "omegaflowey_intro_shake",
+			"loop": "hold",
+			"override": false,
+			"length": 11.95,
+			"snapping": 20,
+			"selected": true,
+			"saved": false,
+			"path": "",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [],
+			"animators": {
+				"9afbce00-c281-2321-0204-49c52e10c4a5": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "Math.random(-6, 6)",
+									"y": "Math.random(-6, 6)",
+									"z": "Math.random(-6, 6)"
+								}
+							],
+							"uuid": "ca74221b-487a-7cd1-6745-87eed1e7c916",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "33dfdf57-4c8e-61b8-176a-37bb7eda75f8",
+							"time": 11.95,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "Math.random(-2, 2)",
+									"y": "Math.random(-2, 2)\n",
+									"z": "Math.random(-2, 2)\n"
+								}
+							],
+							"uuid": "83e0be94-524b-504a-7806-f31dfcf43987",
+							"time": 11.85,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "f047b8d7-29e8-c06b-1419-e216e28c7d0b",
+							"time": 6,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "Math.random(-6, 6)",
+									"y": "Math.random(-6, 6)",
+									"z": "Math.random(-6, 6)"
+								}
+							],
+							"uuid": "709df520-8051-d33a-36d4-969d28476001",
+							"time": 5.95,
+							"color": -1,
+							"interpolation": "linear",
 							"easing": "linear",
 							"easingArgs": []
 						}
