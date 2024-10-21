@@ -10,11 +10,15 @@ execute if entity @s[tag=aj.omegaflowey_large_side_vine.root] run function anima
 execute if entity @s[tag=aj.omegaflowey_lower_eye.root] run function animated_java:omegaflowey_lower_eye/animations/omegaflowey_look_around/play
 execute if entity @s[tag=aj.omegaflowey_lower_eye.root] run function animated_java:omegaflowey_lower_eye/variants/black/apply
 
-execute if entity @s[tag=aj.omegaflowey_petal_pipe_circle.root] run function omegaflowey.entity:hostile/omega-flowey/animate/petal_pipe_circle
-execute if entity @s[tag=aj.omegaflowey_petal_pipe_circle.root] run function animated_java:omegaflowey_petal_pipe_circle/variants/black/apply
+execute if entity @s[tag=aj.omegaflowey_petal_pipe_circle_simplified.root] run \
+  function omegaflowey.entity:hostile/omega-flowey/animate/petal_pipe_circle
+execute if entity @s[tag=aj.omegaflowey_petal_pipe_circle_simplified.root] run \
+  function animated_java:omegaflowey_petal_pipe_circle_simplified/variants/black/apply
 
-execute if entity @s[tag=aj.omegaflowey_petal_pipe_middle.root] run function omegaflowey.entity:hostile/omega-flowey/animate/petal_pipe_middle
-execute if entity @s[tag=aj.omegaflowey_petal_pipe_middle.root] run function animated_java:omegaflowey_petal_pipe_middle/variants/black/apply
+execute if entity @s[tag=aj.omegaflowey_petal_pipe_middle_simplified.root] run \
+  function omegaflowey.entity:hostile/omega-flowey/animate/petal_pipe_middle
+execute if entity @s[tag=aj.omegaflowey_petal_pipe_middle_simplified.root] run \
+  function animated_java:omegaflowey_petal_pipe_middle_simplified/variants/black/apply
 
 execute if entity @s[tag=aj.omegaflowey_tv_screen.root, tag=tv_screen.boss_fight] run function animated_java:omegaflowey_tv_screen/animations/omegaflowey_move/play
 execute if entity @s[tag=aj.omegaflowey_tv_screen.root, tag=tv_screen.boss_fight] run function animated_java:omegaflowey_tv_screen/variants/black/apply
