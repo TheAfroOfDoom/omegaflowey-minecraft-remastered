@@ -9,7 +9,9 @@ execute as @e[ \
   tag=omega-flowey-remastered \
 ] run function omegaflowey.entity:hostile/omega-flowey/animate/intro/darken/as_root
 
-playsound omega-flowey:cutscene.intro.music record @a ~ ~ ~ 5 1
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: "\
+  execute at @s run playsound omega-flowey:cutscene.intro.music record @s ~ ~ ~ 1 1\
+"}
 
 # Set arena box to flashing red variant
 $execute as $(arena_box_uuid) run function animated_java:omegaflowey_arena_box/variants/intro_flashing_red/apply
