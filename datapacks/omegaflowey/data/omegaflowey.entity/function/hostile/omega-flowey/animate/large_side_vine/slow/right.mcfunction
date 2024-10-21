@@ -1,3 +1,5 @@
+function animated_java:omegaflowey_large_side_vine/variants/default/apply
+
 scoreboard players operation @s aj.omegaflowey_rotate_clockwise_slow.frame = @s aj.omegaflowey_rotate_clockwise.frame
 
 # `_slow` animation is 2x length of normal animation.
