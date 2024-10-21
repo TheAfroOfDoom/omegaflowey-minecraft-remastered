@@ -3,8 +3,7 @@ execute on target run function omegaflowey.utils:log/self { text_component: ' \
     { \
       "text": "", "extra": [ \
         { "text": "Click here to leave us ", "color": "aqua" }, \
-        { "text": "feedback", "underlined": true, "color": "yellow" }, \
-        { "text": "!", "color": "aqua" } \
+        { "text": "feedback", "underlined": true, "color": "yellow" } \
       ], \
       "clickEvent": { \
         "action": "open_url", \
