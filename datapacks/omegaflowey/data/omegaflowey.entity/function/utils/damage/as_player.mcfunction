@@ -45,7 +45,7 @@ schedule function omegaflowey.entity:utils/damage/reset_immunity_flag 10t replac
 # TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
 execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 run \
   tellraw @a[ \
-    x=-186, dx=91, y=12, dy=93, z=12, dz=95, \
+    x=-186, dx=91, y=10, dy=95, z=12, dz=95, \
     tag=omegaflowey.player \
   ] [ \
     { "selector": "@s"}, \
