@@ -3,7 +3,7 @@ execute if entity @s[tag=aj.omegaflowey_mouth.root] run function animated_java:o
 
 execute if entity @s[tag=aj.omegaflowey_nose.root] run function omegaflowey.entity:hostile/omega-flowey/animate/intro/brighten/nose
 
-execute if entity @s[tag=aj.omegaflowey_large_side_vine.root] run function omegaflowey.entity:hostile/omega-flowey/animate/large_side_vine/pause
+execute if entity @s[tag=aj.omegaflowey_large_side_vine.root] run function omegaflowey.entity:hostile/omega-flowey/animate/large_side_vine/slow
 
 execute if entity @s[tag=aj.omegaflowey_lower_eye.root] run function animated_java:omegaflowey_lower_eye/animations/omegaflowey_look_around/pause
 execute if entity @s[tag=aj.omegaflowey_lower_eye.root] run function animated_java:omegaflowey_lower_eye/variants/default/apply
