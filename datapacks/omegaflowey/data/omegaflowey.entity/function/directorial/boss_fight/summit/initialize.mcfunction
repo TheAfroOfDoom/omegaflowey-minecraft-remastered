@@ -25,6 +25,8 @@ scoreboard players set @s omegaflowey.boss-fight.attack.phase.total 2
 scoreboard players set @s omegaflowey.boss-fight.progress.phase.i 0
 scoreboard players set @s omegaflowey.boss-fight.progress.phase.total 2
 
+scoreboard players set #omegaflowey.bossfight.attack_phase_total_count omegaflowey.global.flag 0
+
 # Begin animating Omega Flowey entity
 function omegaflowey.entity:hostile/omega-flowey/animate
 
