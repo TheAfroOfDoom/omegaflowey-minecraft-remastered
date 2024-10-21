@@ -1,4 +1,6 @@
-playsound omega-flowey:cutscene.intro.laugh ambient @a ~ ~ ~ 5 1
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: "\
+  execute at @s run playsound omega-flowey:cutscene.intro.laugh ambient @s ~ ~ ~ 1 1\
+"}
 
 $execute as $(attack_lower_eye_left_uuid) run \
   function animated_java:omegaflowey_lower_eye/animations/omegaflowey_intro_shake/tween { duration: 1, to_frame: 0 }
