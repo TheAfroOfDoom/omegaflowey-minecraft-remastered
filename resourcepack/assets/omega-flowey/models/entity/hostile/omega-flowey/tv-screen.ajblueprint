@@ -98,7 +98,7 @@
 			"faces": {
 				"north": {
 					"uv": [0, 14, 16, 16],
-					"texture": 0
+					"texture": 28
 				},
 				"east": {
 					"uv": [5, 14, 16, 16],
@@ -115,7 +115,7 @@
 				"up": {
 					"uv": [2, 2, 14, 14],
 					"rotation": 180,
-					"texture": 0
+					"texture": 28
 				},
 				"down": {
 					"uv": [2, 2, 14, 14],
@@ -142,7 +142,7 @@
 			"faces": {
 				"north": {
 					"uv": [0, 6, 3, 15],
-					"texture": 0
+					"texture": 28
 				},
 				"east": {
 					"uv": [5, 3, 16, 14],
@@ -154,7 +154,7 @@
 				},
 				"west": {
 					"uv": [2, 2, 14, 14],
-					"texture": 0
+					"texture": 28
 				},
 				"up": {
 					"uv": [2, 2, 14, 14],
@@ -186,11 +186,11 @@
 			"faces": {
 				"north": {
 					"uv": [13, 5, 16, 15],
-					"texture": 0
+					"texture": 28
 				},
 				"east": {
 					"uv": [2, 2, 14, 14],
-					"texture": 0
+					"texture": 28
 				},
 				"south": {
 					"uv": [0, 3, 2, 14],
@@ -230,7 +230,7 @@
 			"faces": {
 				"north": {
 					"uv": [16, 0, 0, 2],
-					"texture": 0
+					"texture": 28
 				},
 				"east": {
 					"uv": [5, 0, 16, 2],
@@ -252,7 +252,7 @@
 				"down": {
 					"uv": [2, 2, 14, 14],
 					"rotation": 180,
-					"texture": 0
+					"texture": 28
 				}
 			},
 			"type": "cube",
@@ -475,59 +475,11 @@
 			"light_emission": 0,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-121.2, 50.4, -34],
-			"to": [121.2, 223.2, 57.6],
-			"autouv": 0,
-			"color": 8,
-			"visibility": false,
-			"export": false,
-			"origin": [6, 0, 43.2],
-			"faces": {
-				"north": {
-					"uv": [2, 0.7, 14, 9.61429],
-					"texture": 23
-				},
-				"east": {
-					"uv": [1.1, 0, 14.9, 9.81429],
-					"rotation": 180,
-					"texture": null
-				},
-				"south": {
-					"uv": [1.1, 0, 14.9, 9.81429],
-					"rotation": 180,
-					"texture": null
-				},
-				"west": {
-					"uv": [1.1, 0, 14.9, 9.81429],
-					"rotation": 180,
-					"texture": null
-				},
-				"up": {
-					"uv": [1.1, 0, 14.9, 9.81429],
-					"rotation": 180,
-					"texture": null
-				},
-				"down": {
-					"uv": [1.1, 0, 14.9, 9.81429],
-					"rotation": 180,
-					"texture": null
-				}
-			},
-			"type": "cube",
-			"uuid": "3645d1b3-9886-25c4-3634-a33b2bab2527"
-		},
-		{
-			"name": "screen_laughing_actual",
-			"box_uv": false,
-			"rescale": false,
-			"locked": false,
-			"light_emission": 0,
-			"render_order": "default",
-			"allow_mirror_modeling": true,
 			"from": [-121.2, -11.8, -51],
 			"to": [121.2, 223.2, 57.6],
 			"autouv": 0,
 			"color": 8,
+			"visibility": false,
 			"origin": [6, 0, 43.2],
 			"faces": {
 				"north": {
@@ -622,6 +574,7 @@
 			"to": [-120.2, 51.4, -110.8],
 			"autouv": 0,
 			"color": 6,
+			"visibility": false,
 			"origin": [242.89999, 397.09999, 0.2],
 			"faces": {
 				"north": {
@@ -653,188 +606,6 @@
 			},
 			"type": "cube",
 			"uuid": "be746948-416b-de1c-74a7-e1681e45c4b0"
-		},
-		{
-			"name": "screen_glow_inner",
-			"box_uv": false,
-			"rescale": false,
-			"locked": false,
-			"light_emission": 0,
-			"render_order": "default",
-			"allow_mirror_modeling": true,
-			"from": [-149.6, 223.80001, -45.9],
-			"to": [150, 252.00001, -21.7],
-			"autouv": 0,
-			"color": 6,
-			"export": false,
-			"origin": [213.09999, 386.7, 89.3],
-			"faces": {
-				"north": {
-					"uv": [4, 0, 5, 16],
-					"rotation": 90,
-					"texture": 5
-				},
-				"east": {
-					"uv": [0, 0, 16, 16],
-					"texture": null
-				},
-				"south": {
-					"uv": [0, 0, 0, 0],
-					"texture": null
-				},
-				"west": {
-					"uv": [16, 0, 0, 16],
-					"texture": null
-				},
-				"up": {
-					"uv": [16, 16, 0, 0],
-					"rotation": 90,
-					"texture": null
-				},
-				"down": {
-					"uv": [0, 0, 16, 16],
-					"rotation": 90,
-					"texture": null
-				}
-			},
-			"type": "cube",
-			"uuid": "f54e7ef6-b247-0494-71e3-3f5811ba03aa"
-		},
-		{
-			"name": "screen_glow_inner",
-			"box_uv": false,
-			"rescale": false,
-			"locked": false,
-			"light_emission": 0,
-			"render_order": "default",
-			"allow_mirror_modeling": true,
-			"from": [-149.6, 21.80001, -45.9],
-			"to": [150, 50.00001, -21.7],
-			"autouv": 0,
-			"color": 6,
-			"export": false,
-			"origin": [213.09999, 184.7, 89.3],
-			"faces": {
-				"north": {
-					"uv": [4, 0, 5, 16],
-					"rotation": 90,
-					"texture": 5
-				},
-				"east": {
-					"uv": [0, 0, 16, 16],
-					"texture": null
-				},
-				"south": {
-					"uv": [0, 0, 0, 0],
-					"texture": null
-				},
-				"west": {
-					"uv": [16, 0, 0, 16],
-					"texture": null
-				},
-				"up": {
-					"uv": [16, 16, 0, 0],
-					"rotation": 90,
-					"texture": null
-				},
-				"down": {
-					"uv": [0, 0, 16, 16],
-					"rotation": 90,
-					"texture": null
-				}
-			},
-			"type": "cube",
-			"uuid": "054f0912-62c9-7526-6691-2d0bd2758100"
-		},
-		{
-			"name": "screen_glow_inner",
-			"box_uv": false,
-			"rescale": false,
-			"locked": false,
-			"light_emission": 0,
-			"render_order": "default",
-			"allow_mirror_modeling": true,
-			"from": [121.2, 49.80001, -45.9],
-			"to": [150, 224.00001, -21.7],
-			"autouv": 0,
-			"color": 6,
-			"export": false,
-			"origin": [213.09999, 212.7, 89.3],
-			"faces": {
-				"north": {
-					"uv": [4, 0, 5, 16],
-					"texture": 5
-				},
-				"east": {
-					"uv": [0, 0, 16, 16],
-					"texture": null
-				},
-				"south": {
-					"uv": [0, 0, 0, 0],
-					"texture": null
-				},
-				"west": {
-					"uv": [16, 0, 0, 16],
-					"texture": null
-				},
-				"up": {
-					"uv": [16, 16, 0, 0],
-					"rotation": 90,
-					"texture": null
-				},
-				"down": {
-					"uv": [0, 0, 16, 16],
-					"rotation": 90,
-					"texture": null
-				}
-			},
-			"type": "cube",
-			"uuid": "7f942efe-186c-916e-edc6-0a8859a9d89d"
-		},
-		{
-			"name": "screen_glow_inner",
-			"box_uv": false,
-			"rescale": false,
-			"locked": false,
-			"light_emission": 0,
-			"render_order": "default",
-			"allow_mirror_modeling": true,
-			"from": [-150, 50.40001, -44.2],
-			"to": [-121.2, 224.60001, -20],
-			"autouv": 0,
-			"color": 6,
-			"export": false,
-			"origin": [-58.10001, 213.3, 91],
-			"faces": {
-				"north": {
-					"uv": [4, 0, 5, 16],
-					"texture": 5
-				},
-				"east": {
-					"uv": [0, 0, 16, 16],
-					"texture": null
-				},
-				"south": {
-					"uv": [0, 0, 0, 0],
-					"texture": null
-				},
-				"west": {
-					"uv": [16, 0, 0, 16],
-					"texture": null
-				},
-				"up": {
-					"uv": [16, 16, 0, 0],
-					"rotation": 90,
-					"texture": null
-				},
-				"down": {
-					"uv": [0, 0, 16, 16],
-					"rotation": 90,
-					"texture": null
-				}
-			},
-			"type": "cube",
-			"uuid": "8f72a3e7-120a-d4b5-63e1-ee80be23c616"
 		}
 	],
 	"outliner": [
@@ -904,13 +675,8 @@
 					"children": [
 						"08b7d234-49c3-0d44-e451-e9e53c703b21",
 						"bd646ad9-b7f7-d6b5-db01-8163c38820db",
-						"3645d1b3-9886-25c4-3634-a33b2bab2527",
 						"4e1328a4-7b35-0738-bebf-d5366c6b5b4f",
 						"d72c67f0-2e29-d787-1e47-9eecd0d19799",
-						"f54e7ef6-b247-0494-71e3-3f5811ba03aa",
-						"054f0912-62c9-7526-6691-2d0bd2758100",
-						"7f942efe-186c-916e-edc6-0a8859a9d89d",
-						"8f72a3e7-120a-d4b5-63e1-ee80be23c616",
 						"1d42e3f8-19ee-bf07-fd0b-28fe3e44877c",
 						"ef11bc42-2b8d-f574-45ea-f5eb20bd1a98"
 					]
@@ -1706,6 +1472,62 @@
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII=",
 			"image_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII=",
 			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\netherite_block_1.png",
+			"name": "netherite_block_1.png",
+			"folder": "",
+			"namespace": "",
+			"id": "28",
+			"group": "",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "70dac508-a15a-2c61-c69b-5ae6c46952f2",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWpJREFUOE+Fk09Lw0AQxWehoUnTiEawB0tQVFBv9tzv/wEEKYKCLb3kEqVr/rGByNt2trMS6FyS7M789r2ZjVouFn1ZNxRHIZ0KmYd3XZakXp6e+9k8ozRNT9WT3mlKzhKbh/fV2yspKMgeHmm9WVMy3W8Go8DBqrqiIAho1Bm71h32kOMB8jz3ElU4sQWmMw7YNxXVPVHTNpSepz6gKAoyxlCkiFCMZIawHMCQ0+6+aXp5RR/vq6MFVsAQSIVMeIZfDlhiQL7d+ABOgmfZB0CgkEP/atsvTwFbYH//R8LyAQdgsAfyVG4gT4WnAYs4BAo8C+yTPaNAWkKhhR0UOAAu0vzmziVz9yUAmzgVodraPi9m1/4YoYCL8cQU4BURjkMPoKuastv7PYAVFD+Fu4nW/8GrBOB0FCMGAUjox5GzIwvkVJJJZC1svz6PCjAm1zTxL8irLCFYt/cAFvBbeifEsf2U68nAGnL+AK7IFKyaYaryAAAAAElFTkSuQmCC",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\netherite_block_smiling_glow.png",
+			"name": "netherite_block_smiling_glow.png",
+			"folder": "",
+			"namespace": "",
+			"id": "29",
+			"group": "",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "3dc44e6b-7594-04c0-12fd-29f604f95a5a",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAVVJREFUOE+Fk9FugzAMRU1DyRZ1Wqm6ffL2sL7sJ6d1qkYlJNqEBKZrcJpMSPULKNgn99qm+DwcRud6qqo13Ys0D+/WOSo+3t7Hp21Nxph79WSvlvSD5jy8H7+/qICCev9KTdOQ1tNHtVIR5npHSilaDYHPhvkbcjJA27ZZYlFWXBCGEIGjd9SPRN57Mo8mB3RdRyEEWhdEKEayQEQOYMjx9kLabOj0c7xZEAUCgVTIhGf4lYAlAbTnJgdIEjynfQAECiWstdyvTIFYEH//RyLyAQdgsQfprdJAmYpMg3vgPSvILIhP8YyC1BIKGTYriAAs0na3j8nS/RSAj7h1mmvPD7N5zscIBVKMJ6YAr4iyLDMAVrjevUwAUdBduriJfNHsNQOEaf8RiwCWp5KfKilIp6Krii2cf083BRhTbFryL6SrnEJwznsACyJLEnADIj1fOkPOHzFGJayqdejwAAAAAElFTkSuQmCC",
+			"mode": "bitmap"
 		}
 	],
 	"variants": {
@@ -1744,9 +1566,10 @@
 				"uuid": "15518bc4-594f-1171-0c32-727e4ab022a0",
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "41a69925-626e-aadd-232c-27ef97a00c94",
-					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406"
+					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
 				},
-				"excluded_nodes": ["a392135b-a4c6-2b9e-d88f-f3b3746d5270"]
+				"excluded_nodes": []
 			},
 			{
 				"name": "smiling_noglow",
