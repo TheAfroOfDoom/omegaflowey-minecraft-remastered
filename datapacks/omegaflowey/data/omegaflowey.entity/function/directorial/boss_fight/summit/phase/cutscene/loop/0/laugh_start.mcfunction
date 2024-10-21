@@ -8,13 +8,19 @@ $execute as $(model_mouth_uuid) run function animated_java:omegaflowey_mouth/ani
 scoreboard players operation @s aj.omegaflowey_nose_move_slow_shake.frame = @s aj.omegaflowey_nose_move_slow.frame
 $execute as $(model_nose_uuid) run function animated_java:omegaflowey_nose/animations/omegaflowey_nose_move_slow_shake/resume
 
-$execute as $(petal_pipe_lower_left_uuid) run function animated_java:omegaflowey_petal_pipe_circle/animations/omegaflowey_intro_shake/play
-$execute as $(petal_pipe_upper_left_uuid) run function animated_java:omegaflowey_petal_pipe_circle/animations/omegaflowey_intro_shake/play
-$execute as $(petal_pipe_lower_right_uuid) run function animated_java:omegaflowey_petal_pipe_circle/animations/omegaflowey_intro_shake/play
-$execute as $(petal_pipe_upper_right_uuid) run function animated_java:omegaflowey_petal_pipe_circle/animations/omegaflowey_intro_shake/play
+$execute as $(petal_pipe_lower_left_uuid) run \
+  function animated_java:omegaflowey_petal_pipe_circle_simplified/animations/omegaflowey_intro_shake/play
+$execute as $(petal_pipe_upper_left_uuid) run \
+  function animated_java:omegaflowey_petal_pipe_circle_simplified/animations/omegaflowey_intro_shake/play
+$execute as $(petal_pipe_lower_right_uuid) run \
+  function animated_java:omegaflowey_petal_pipe_circle_simplified/animations/omegaflowey_intro_shake/play
+$execute as $(petal_pipe_upper_right_uuid) run \
+  function animated_java:omegaflowey_petal_pipe_circle_simplified/animations/omegaflowey_intro_shake/play
 
-$execute as $(petal_pipe_middle_right_uuid) run function animated_java:omegaflowey_petal_pipe_middle/animations/omegaflowey_intro_shake/play
-$execute as $(petal_pipe_middle_left_uuid) run function animated_java:omegaflowey_petal_pipe_middle/animations/omegaflowey_intro_shake/play
+$execute as $(petal_pipe_middle_right_uuid) run \
+  function animated_java:omegaflowey_petal_pipe_middle_simplified/animations/omegaflowey_intro_shake/play
+$execute as $(petal_pipe_middle_left_uuid) run \
+  function animated_java:omegaflowey_petal_pipe_middle_simplified/animations/omegaflowey_intro_shake/play
 
 $execute as $(bossfight_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/animations/omegaflowey_intro_shake/play
 $execute as $(bossfight_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/variants/omegaflowey_intro_laughing/apply

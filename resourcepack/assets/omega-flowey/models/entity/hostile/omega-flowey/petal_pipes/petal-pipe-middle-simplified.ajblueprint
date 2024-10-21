@@ -7852,7 +7852,7 @@
 			"override": false,
 			"length": 4.55,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": false,
 			"path": "",
 			"anim_time_update": "",
@@ -8264,6 +8264,77 @@
 							"color": -1,
 							"uniform": false,
 							"interpolation": "catmullrom",
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				}
+			}
+		},
+		{
+			"uuid": "7c3c1cdd-4c7a-3b2e-509c-520342a318c0",
+			"name": "omegaflowey_intro_shake",
+			"loop": "hold",
+			"override": false,
+			"length": 6,
+			"snapping": 20,
+			"selected": true,
+			"saved": false,
+			"path": "",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [],
+			"animators": {
+				"465c7869-5926-8979-1636-2ecaef5f9462": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "e6888618-9779-66b4-ed36-ff4fdbcdb4e1",
+							"time": 6,
+							"color": -1,
+							"interpolation": "step",
+							"easing": "linear"
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "Math.random(-4, 4)",
+									"y": "Math.random(-4, 4)",
+									"z": "Math.random(-4, 4)"
+								}
+							],
+							"uuid": "3c9099f1-af95-ca9a-314a-332a8d653aef",
+							"time": 0,
+							"color": -1,
+							"interpolation": "step",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "Math.random(-4, 4)",
+									"y": "Math.random(-4, 4)",
+									"z": "Math.random(-4, 4)"
+								}
+							],
+							"uuid": "133c29c1-a946-1c06-0385-828171cc1e12",
+							"time": 5.95,
+							"color": -1,
+							"interpolation": "step",
 							"easing": "linear",
 							"easingArgs": []
 						}
