@@ -9591,7 +9591,7 @@
 			"children": [
 				{
 					"name": "left",
-					"origin": [-80, 16, -68],
+					"origin": [-44, 0, 109],
 					"color": 0,
 					"configs": {
 						"variants": {}
@@ -9704,7 +9704,7 @@
 				},
 				{
 					"name": "right",
-					"origin": [80, 16, -68],
+					"origin": [44, 0, 109],
 					"color": 0,
 					"configs": {
 						"variants": {}
@@ -9874,18 +9874,57 @@
 			"uuid": "d7d2b4b3-6fd5-560d-ea43-535660d3ad96",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAKJJREFUOE+1k0sKgDAMRFNroRvvfyI3HkFQ8AxuCrUqCURqjRhEsylY+/KZiRn7dgMA8L4BW1eQlpXOMvg7njEGuk4pgtECGMgAfIxBAGsdOOfFzFIlWME/AMwm9Z9XIc6AW/gdgNkxTipMQ0cyaoaoAtz5gHSXKihlfGWk3AcaAM/hcGKuwpMS3EYI89WJ2sf437cA7TbmjuR9UG8j914aaQd74tzRuHc/yAAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\black.png",
+			"name": "black.png",
+			"folder": "",
+			"namespace": "",
+			"id": "2",
+			"group": "",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "e7bf6002-9914-9d47-f3dd-c6e09d1be55c",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
+			"mode": "bitmap"
 		}
 	],
 	"variants": {
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "ba71d18c-5615-01b6-d0de-717ab57ff86d",
+			"uuid": "f28c6605-7490-669f-eaf5-c434a885041e",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
 		},
-		"list": []
+		"list": [
+			{
+				"name": "black",
+				"display_name": "black",
+				"uuid": "8bc33bc6-195d-5004-eb63-3733e074367e",
+				"texture_map": {
+					"ee90e1e0-94e1-e143-2984-39890c644417": "e7bf6002-9914-9d47-f3dd-c6e09d1be55c",
+					"d7d2b4b3-6fd5-560d-ea43-535660d3ad96": "e7bf6002-9914-9d47-f3dd-c6e09d1be55c"
+				},
+				"excluded_nodes": []
+			}
+		]
 	},
 	"animations": [
 		{
@@ -9895,7 +9934,7 @@
 			"override": false,
 			"length": 9.9,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": false,
 			"path": "",
 			"anim_time_update": "",
