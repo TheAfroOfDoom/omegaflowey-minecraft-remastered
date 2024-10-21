@@ -1,6 +1,6 @@
 # Summon and animate Omega Flowey entity
 function omegaflowey.entity:directorial/boss_fight/summit/origin/at { \
-  command: "execute positioned ~ ~ ~29.4 run function entity:hostile/omega-flowey/summon/relative" \
+  command: "execute positioned ~ ~ ~29.4 run function omegaflowey.entity:hostile/omega-flowey/summon/relative" \
 }
 execute as @e[ \
   x=-186, dx=61, y=12, dy=44, z=47, dz=91, \
