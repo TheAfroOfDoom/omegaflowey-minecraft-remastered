@@ -485,7 +485,7 @@
 			"faces": {
 				"north": {
 					"uv": [2, 0.7, 14, 9.61429],
-					"texture": 13
+					"texture": 23
 				},
 				"east": {
 					"uv": [1.1, 0, 14.9, 9.81429],
@@ -532,7 +532,7 @@
 			"faces": {
 				"north": {
 					"uv": [2, 0.7, 14, 12.8143],
-					"texture": 13
+					"texture": 23
 				},
 				"east": {
 					"uv": [1.1, 0, 14.9, 9.81429],
@@ -579,7 +579,7 @@
 			"faces": {
 				"north": {
 					"uv": [2, 0.7, 14, 9.61429],
-					"texture": 16
+					"texture": 26
 				},
 				"east": {
 					"uv": [1.1, 0, 14.9, 9.81429],
@@ -622,6 +622,7 @@
 			"to": [-120.2, 51.4, -110.8],
 			"autouv": 0,
 			"color": 6,
+			"visibility": false,
 			"origin": [242.89999, 397.09999, 0.2],
 			"faces": {
 				"north": {
@@ -630,7 +631,7 @@
 				},
 				"east": {
 					"uv": [0, 0, 16, 16],
-					"texture": 17
+					"texture": 27
 				},
 				"south": {
 					"uv": [0, 0, 0, 0],
@@ -638,17 +639,17 @@
 				},
 				"west": {
 					"uv": [16, 0, 0, 16],
-					"texture": 17
+					"texture": 27
 				},
 				"up": {
 					"uv": [16, 16, 0, 0],
 					"rotation": 90,
-					"texture": 17
+					"texture": 27
 				},
 				"down": {
 					"uv": [0, 0, 16, 16],
 					"rotation": 90,
-					"texture": 17
+					"texture": 27
 				}
 			},
 			"type": "cube",
@@ -666,6 +667,7 @@
 			"to": [150, 252.00001, -21.7],
 			"autouv": 0,
 			"color": 6,
+			"export": false,
 			"origin": [213.09999, 386.7, 89.3],
 			"faces": {
 				"north": {
@@ -711,6 +713,7 @@
 			"to": [150, 50.00001, -21.7],
 			"autouv": 0,
 			"color": 6,
+			"export": false,
 			"origin": [213.09999, 184.7, 89.3],
 			"faces": {
 				"north": {
@@ -756,6 +759,7 @@
 			"to": [150, 224.00001, -21.7],
 			"autouv": 0,
 			"color": 6,
+			"export": false,
 			"origin": [213.09999, 212.7, 89.3],
 			"faces": {
 				"north": {
@@ -800,6 +804,7 @@
 			"to": [-121.2, 224.60001, -20],
 			"autouv": 0,
 			"color": 6,
+			"export": false,
 			"origin": [-58.10001, 213.3, 91],
 			"faces": {
 				"north": {
@@ -2073,7 +2078,7 @@
 		{
 			"uuid": "e6e6f65b-e521-66f9-7a1d-08fff44775d5",
 			"name": "omegaflowey_intro_shake",
-			"loop": "loop",
+			"loop": "hold",
 			"override": false,
 			"length": 6,
 			"snapping": 20,
