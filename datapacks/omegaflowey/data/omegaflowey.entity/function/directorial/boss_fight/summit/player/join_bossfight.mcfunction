@@ -8,7 +8,7 @@ tag @s add summit.no_regen
 function gu:generate
 data modify storage omegaflowey:bossfight active_player_uuid set from storage gu:main out
 
-teleport @s ~ ~-4.0 ~-27.0 ~180.0 -40.0
+teleport @s ~ ~-4.0 ~-27.0 ~180.0 -30.0
 spawnpoint @s -142 43 25 -45
 
 effect clear @s
