@@ -22,6 +22,11 @@ execute if entity @s[tag=aj.omegaflowey_petal_pipe_middle_simplified.root] run \
 
 execute if entity @s[tag=aj.omegaflowey_tv_screen.root, tag=tv_screen.boss_fight] run function animated_java:omegaflowey_tv_screen/animations/omegaflowey_move/play
 execute if entity @s[tag=aj.omegaflowey_tv_screen.root, tag=tv_screen.boss_fight] run function animated_java:omegaflowey_tv_screen/variants/black/apply
+execute \
+  if entity @s[tag=aj.omegaflowey_tv_screen.root, tag=tv_screen.boss_fight] \
+  on passengers \
+  if entity @s[tag=aj.omegaflowey_tv_screen.bone] \
+  run function omegaflowey.entity:hostile/omega-flowey/animate/tv-screen/default/bone
 
 execute if entity @s[tag=aj.omegaflowey_upper_eye.root] run function animated_java:omegaflowey_upper_eye/animations/omegaflowey_look_around/play
 execute if entity @s[tag=aj.omegaflowey_upper_eye.root] run function animated_java:omegaflowey_upper_eye/variants/black/apply
