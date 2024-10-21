@@ -23,7 +23,7 @@ $execute as $(petal_pipe_middle_left_uuid) run \
   function animated_java:omegaflowey_petal_pipe_middle_simplified/animations/omegaflowey_intro_shake/play
 
 $execute as $(bossfight_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/animations/omegaflowey_intro_shake/play
-$execute as $(bossfight_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/variants/omegaflowey_intro_laughing/apply
+$execute as $(bossfight_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/variants/intro_laughing/apply
 
 $execute as $(attack_upper_eye_left_uuid) run function animated_java:omegaflowey_upper_eye/animations/omegaflowey_intro_shake/play
 $execute as $(attack_upper_eye_right_uuid) run function animated_java:omegaflowey_upper_eye/animations/omegaflowey_intro_shake/play
