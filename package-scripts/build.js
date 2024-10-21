@@ -224,16 +224,13 @@ const getSummitResourcepackPaths = () => {
     'reward_hat_cyan.json',
   ]);
 
-  const splitMonoSounds = ['mus_f_noise'];
-
   const soundPaths = prefixPaths(
     'sounds/',
     suffixPaths(
       [
-        ...suffixPaths(splitMonoSounds, '-01'),
-        ...suffixPaths(splitMonoSounds, '-02'),
         'mus_f_6s_6',
         'mus_f_alarm',
+        'mus_f_noise',
         'mus_f_part1',
         'mus_f_part2',
         'mus_f_saved',
