@@ -68,6 +68,13 @@ scoreboard objectives add omegaflowey.boss-fight.attack.delay dummy
 scoreboard objectives add omegaflowey.boss-fight.attack.phase.i dummy
 # total number of attack phases before we wrap the index
 scoreboard objectives add omegaflowey.boss-fight.attack.phase.total dummy
+scoreboard objectives add omegaflowey.boss-fight.cutscene.clock.i dummy
+# total duration (in ticks) of the cutscene phase
+scoreboard objectives add omegaflowey.boss-fight.cutscene.clock.total dummy
+# index of the cutscene phase
+scoreboard objectives add omegaflowey.boss-fight.cutscene.phase.i dummy
+# total number of cutscene phases in the boss fight
+scoreboard objectives add omegaflowey.boss-fight.cutscene.phase.total dummy
 # boolean flags used to mark various states of the boss fight
 scoreboard objectives add omegaflowey.boss-fight.flag dummy
 scoreboard objectives add omegaflowey.boss-fight.progress.clock.i dummy
