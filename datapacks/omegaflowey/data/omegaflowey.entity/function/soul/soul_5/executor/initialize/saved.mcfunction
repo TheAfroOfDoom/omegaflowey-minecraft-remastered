@@ -18,7 +18,7 @@ function omegaflowey.entity:directorial/boss_fight/shared/phase/soul/loop/saved 
 
 # NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
-  x=-186, dx=91, y=12, dy=93, z=12, dz=95, \
+  x=-186, dx=91, y=10, dy=95, z=12, dz=95, \
   tag=soul_5, \
   tag=omega-flowey-remastered \
 ] run function omegaflowey.entity:soul/soul_5/executor/initialize/saved/as_root
