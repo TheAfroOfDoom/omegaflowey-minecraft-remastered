@@ -1,3 +1,9 @@
+execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 0 run \
+  function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0/start_cutscene with storage omegaflowey:bossfight
+
+execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 1 run \
+  function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0/clear_player_blindness with storage omegaflowey:bossfight
+
 execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 0..293 run return run \
   function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0/approach
 execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 332 run return run \
