@@ -94,6 +94,7 @@ const getSummitDatapackPaths = () => {
         'feedback_form_link',
         'github_description',
         'join_queue',
+        'join_queue_2',
         'soul_act_button_locator',
       ],
       '.json',
@@ -152,6 +153,12 @@ const getSummitDatapackPaths = () => {
     'mud',
     ...primaryDatapackPaths,
   ]);
+
+  const pruneMarkdownFiles = async ({ compiledPath }) => {
+    const mdGlob = `${compiledPath}/datapacks/**/*.md`;
+    await rimraf(mdGlob, { glob: true });
+  };
+  postProcessors.push(pruneMarkdownFiles);
 
   const pruneAnimatedJavaDatapackExports = async ({ compiledPath }) => {
     const prunePromises = [];
