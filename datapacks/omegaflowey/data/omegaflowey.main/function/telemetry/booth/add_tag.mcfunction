@@ -19,4 +19,4 @@ scoreboard players operation @s omegaflowey.math.0 -= @s omegaflowey.math.1
 execute store result storage omegaflowey:telemetry temp.booth_next.t int 1 run scoreboard players get @s omegaflowey.math.0
 execute store result storage omegaflowey:telemetry temp.booth_next.u int 1 run scoreboard players get @s omegaflowey.player.telemetry.id
 
-function omegaflowey.main:telemetry/booth/add_tag/macro with storage omegaflowey:telemetry temp.booth_next
+function omegaflowey.main:telemetry/booth/add_tag/to_string with storage omegaflowey:telemetry temp.booth_next
