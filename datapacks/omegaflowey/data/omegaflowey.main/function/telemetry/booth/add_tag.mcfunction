@@ -7,7 +7,9 @@ data modify storage omegaflowey:telemetry temp.booth_next set value {}
 
 $function omegaflowey.main:telemetry/booth/schema/get { n: "$(name)" }
 $execute unless data storage omegaflowey:telemetry temp.n run return run function omegaflowey.utils:error { error: '[ \
-  { "text": "Name not found in booth schema: ", "color": "yellow" }, \
+  { "text": "Name not found in ", "color": "yellow" }, \
+  { "text": "booth ", "color": "green" }, \
+  { "text": "schema: ", "color": "yellow" }, \
   { "text": "$(name)", "color": "aqua" } \
 ]'}
 data modify storage omegaflowey:telemetry temp.booth_next.n set from storage omegaflowey:telemetry temp.n
