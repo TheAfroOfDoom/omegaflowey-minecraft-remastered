@@ -1,8 +1,9 @@
 execute unless data storage omegaflowey:telemetry data run data modify storage omegaflowey:telemetry data set value {}
+# summit is hosted over a few subservers. keep track of which one is associated with which player ID map
+execute unless data storage omegaflowey:telemetry data.server_id summon minecraft:marker run \
+  function omegaflowey.main:telemetry/setup/set_server_id
 execute unless data storage omegaflowey:telemetry data.player_id_map run \
   data modify storage omegaflowey:telemetry data.player_id_map set value {}
-execute unless data storage omegaflowey:telemetry data.player_id_map.temp run \
-  data modify storage omegaflowey:telemetry data.player_id_map.temp set value {}
 execute unless data storage omegaflowey:telemetry data.booth run \
   data modify storage omegaflowey:telemetry data.booth set value []
 execute unless data storage omegaflowey:telemetry data.bossfight run \
