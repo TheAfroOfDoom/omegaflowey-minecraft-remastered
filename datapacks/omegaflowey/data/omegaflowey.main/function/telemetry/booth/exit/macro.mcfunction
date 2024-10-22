@@ -1,1 +1,1 @@
-$data remove storage omegaflowey:telemetry player_id_cache.$(i)
+$data remove storage omegaflowey:telemetry data.player_id_map.$(i)
