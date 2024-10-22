@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/booth/add_tag { name: "player.rejoin.was_in_queue" }
+
 # players who leave the server are removed from the queue (when they rejoin)
 function omegaflowey.entity:directorial/boss_fight/summit/player/queue/leave_and_rejoin/remove_from_queue_array
 

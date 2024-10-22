@@ -16,4 +16,12 @@ data modify storage omegaflowey:telemetry schema_booth_n set value { \
   "player.interact.feedback_form_link": 10, \
   "player.interact.animated_java_link": 11, \
   "player.interact.back_cave_github_link": 12, \
+  'player.queue.join': 13, \
+  'player.queue.shown_prompt': 14, \
+  'player.queue.confirm': 15, \
+  'player.queue.deny': 16, \
+  'player.queue.timeout': 17, \
+  'player.queue.confirm.after_delay': 18, \
+  'player.rejoin.was_in_bossfight': 19, \
+  'player.rejoin.was_in_queue': 20, \
 }

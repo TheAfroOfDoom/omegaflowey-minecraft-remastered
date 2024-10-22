@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/booth/add_tag { name: "player.queue.confirm" }
+
 function omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/shared/as_player/triggers
 schedule clear omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/timeout
 

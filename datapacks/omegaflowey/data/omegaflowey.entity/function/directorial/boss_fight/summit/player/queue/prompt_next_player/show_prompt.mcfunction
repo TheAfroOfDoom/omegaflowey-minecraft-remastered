@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/booth/add_tag { name: "player.queue.shown_prompt" }
+
 scoreboard players set #omegaflowey.bossfight.has_player_been_prompted omegaflowey.global.flag 1
 
 tag @s add omegaflowey.player.in_queue.prompted
