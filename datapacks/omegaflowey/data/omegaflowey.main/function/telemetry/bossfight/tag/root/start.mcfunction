@@ -1,6 +1,6 @@
 execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 1 run return 0
 
-data modify storage omegaflowey:telemetry tags.bossfight append value [{ name: "root", type: "start", "version": "0.1.0" }]
+data modify storage omegaflowey:telemetry tags.bossfight append value [{ name: "root", type: "start" }]
 
 execute store result score #omegaflowey.telemetry.bossfight.basetime omegaflowey.global.flag run time query gametime
 execute store result storage omegaflowey:telemetry tags.bossfight[-1][0].tick int 1 run \
