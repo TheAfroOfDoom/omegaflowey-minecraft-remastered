@@ -7,7 +7,7 @@ execute if entity @s[tag=is_active_death_animation] run return 0
 execute store result score @s omegaflowey.math.0 run time query daytime
 execute unless score @s omegaflowey.math.0 matches 13500..23000 run tag @s add is_daytime
 
-execute if entity @s[tag=is_daytime] run function animated_java:omegaflowey_tv_screen/variants/static_noglow/apply
 execute unless entity @s[tag=is_daytime] run function animated_java:omegaflowey_tv_screen/variants/static/apply
+execute if entity @s[tag=is_daytime] run function animated_java:omegaflowey_tv_screen/variants/static_noglow/apply
 
 tag @s remove is_daytime

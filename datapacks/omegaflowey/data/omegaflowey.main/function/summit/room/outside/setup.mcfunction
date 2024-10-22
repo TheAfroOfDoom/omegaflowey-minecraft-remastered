@@ -1,7 +1,7 @@
 # Flowey TV screen, smiling
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 3
 execute positioned -123.47 87.25 33.35 rotated -158.2 12.52 run \
-  function animated_java:omegaflowey_tv_screen/summon { args: { animation: 'omegaflowey_move_slow', start_animation: true, variant: 'smiling' } }
+  function animated_java:omegaflowey_tv_screen/summon { args: { animation: 'omegaflowey_move_slow', start_animation: true, variant: 'smiling_noglow' } }
 
 # Surrounding petal pipes, very simplified models
 execute positioned -109.9375 90.0625 41.9375 rotated 200 15 run \
