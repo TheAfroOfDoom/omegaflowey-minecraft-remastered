@@ -3,8 +3,13 @@
 # Remove tags
 tag @s remove boss_fight.phase.cutscene
 
-# Set arena box variant back to default
-$execute as $(arena_box_uuid) run function animated_java:omegaflowey_arena_box/variants/default/apply
+# Kill DEMO title
+kill @e[ \
+  x=-156.5, y=43.0625, z=76.0, distance=..0.01, \
+  type=minecraft:text_display, \
+  tag=demo-intro-title, \
+  limit=1 \
+]
 
 # Begin animating largesidevines/nose at full speed
 $execute as $(large_side_vine_left_uuid) run function omegaflowey.entity:hostile/omega-flowey/animate/large_side_vine/resume_normal_from_slow/left
