@@ -6,3 +6,5 @@ execute unless data storage omegaflowey:telemetry tags.bossfight run data modify
 
 execute unless score #omegaflowey.telemetry.next_player_id omegaflowey.global.flag matches 0.. run \
   scoreboard players set #omegaflowey.telemetry.next_player_id omegaflowey.global.flag 0
+execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 0.. run \
+  scoreboard players set #omegaflowey.telemetry.enabled omegaflowey.global.flag 1
