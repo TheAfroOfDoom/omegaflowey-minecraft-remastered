@@ -150,7 +150,7 @@ const getSummitDatapackPaths = () => {
   const datapackPaths = prefixPaths('datapacks/', [
     'animated_java/data',
     'animated_java/pack.mcmeta',
-    'mud',
+    'gu',
     ...primaryDatapackPaths,
   ]);
 
