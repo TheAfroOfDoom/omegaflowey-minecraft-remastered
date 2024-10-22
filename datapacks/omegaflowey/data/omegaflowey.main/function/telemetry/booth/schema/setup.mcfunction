@@ -1,4 +1,4 @@
-# t: tick
+# t: tick relative to basetick
 # u: player uuid
 
 # n: name

@@ -13,6 +13,9 @@ $execute unless data storage omegaflowey:telemetry temp.n run return run functio
 data modify storage omegaflowey:telemetry temp.booth_next.n set from storage omegaflowey:telemetry temp.n
 
 execute store result score @s omegaflowey.math.0 run time query gametime
+# the first entry in the booth data array is the base gametick the array was initialized with
+execute store result score @s omegaflowey.math.1 run data get storage omegaflowey:telemetry data.booth_basetick
+scoreboard players operation @s omegaflowey.math.0 -= @s omegaflowey.math.1
 execute store result storage omegaflowey:telemetry temp.booth_next.t int 1 run scoreboard players get @s omegaflowey.math.0
 execute store result storage omegaflowey:telemetry temp.booth_next.u int 1 run scoreboard players get @s omegaflowey.player.telemetry.id
 
