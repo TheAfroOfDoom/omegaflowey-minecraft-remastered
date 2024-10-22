@@ -4,23 +4,44 @@ function omegaflowey.utils:log/self { text_component: '[ \
   "\\n", \
   "\\n", \
 \
+  { "text": "show: ", "color": "aqua" }, \
   { \
-    "text": "show", \
-    "color": "aqua", \
-    "clickEvent": { \
-      "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.show" \
-    } \
-  }, \
-  "\\n", \
-  { \
-    "text": "show_and_clear", \
+    "text": "booth", \
     "color": "yellow", \
     "clickEvent": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.show_and_clear" \
+      "value": "/trigger omegaflowey.player.telemetry.trigger.show.booth" \
     } \
   }, \
+  " ", \
+  { \
+    "text": "bossfight", \
+    "color": "yellow", \
+    "clickEvent": { \
+      "action": "suggest_command", \
+      "value": "/trigger omegaflowey.player.telemetry.trigger.show.bossfight" \
+    } \
+  }, \
+  "\\n", \
+  { "text": "pop: ", "color": "aqua" }, \
+  { \
+    "text": "booth", \
+    "color": "yellow", \
+    "clickEvent": { \
+      "action": "suggest_command", \
+      "value": "/trigger omegaflowey.player.telemetry.trigger.pop.booth" \
+    } \
+  }, \
+  " ", \
+  { \
+    "text": "bossfight", \
+    "color": "yellow", \
+    "clickEvent": { \
+      "action": "suggest_command", \
+      "value": "/trigger omegaflowey.player.telemetry.trigger.pop.bossfight" \
+    } \
+  }, \
+  "\\n", \
   { \
     "text": "enable", \
     "color": "yellow", \
