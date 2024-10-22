@@ -11,7 +11,10 @@ data modify storage omegaflowey:bossfight active_player_uuid set from storage gu
 teleport @s ~ ~-4.0 ~-27.0 ~180.0 -40.0
 spawnpoint @s -142 43 25 -45
 
+execute at @s run playsound omega-flowey:cutscene.intro.battle_start_end ambient @s ~ ~ ~ 5
+
 effect clear @s
+effect give @s minecraft:blindness 5 0 true
 effect give @s instant_health 1 4 true
 function omegaflowey.main:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 
