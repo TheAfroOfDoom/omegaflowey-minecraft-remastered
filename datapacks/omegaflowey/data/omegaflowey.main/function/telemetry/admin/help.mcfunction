@@ -20,5 +20,21 @@ function omegaflowey.utils:log/self { text_component: '[ \
       "action": "suggest_command", \
       "value": "/trigger omegaflowey.player.telemetry.trigger.show_and_clear" \
     } \
+  }, \
+  { \
+    "text": "enable", \
+    "color": "yellow", \
+    "clickEvent": { \
+      "action": "suggest_command", \
+      "value": "/trigger omegaflowey.player.telemetry.trigger.enable" \
+    } \
+  }, \
+  { \
+    "text": "disable", \
+    "color": "aqua", \
+    "clickEvent": { \
+      "action": "suggest_command", \
+      "value": "/trigger omegaflowey.player.telemetry.trigger.disable" \
+    } \
   } \
 ]'}

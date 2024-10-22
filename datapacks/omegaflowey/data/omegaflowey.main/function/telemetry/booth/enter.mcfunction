@@ -1,3 +1,5 @@
+execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 1 run return 0
+
 scoreboard players operation @s omegaflowey.player.telemetry.id = #omegaflowey.telemetry.next_player_id omegaflowey.global.flag
 scoreboard players add #omegaflowey.telemetry.next_player_id omegaflowey.global.flag 1
 

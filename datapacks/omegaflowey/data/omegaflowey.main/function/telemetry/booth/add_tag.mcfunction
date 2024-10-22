@@ -1,3 +1,5 @@
+execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 1 run return 0
+
 $data modify storage omegaflowey:telemetry tags.booth append value { name: "$(name)" }
 
 execute store result score @s omegaflowey.math.0 run time query gametime
