@@ -20,3 +20,4 @@ execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matc
 
 function omegaflowey.main:telemetry/setup/initialize_booth_data
 function omegaflowey.main:telemetry/booth/schema/setup
+function omegaflowey.main:telemetry/bossfight/schema/setup
