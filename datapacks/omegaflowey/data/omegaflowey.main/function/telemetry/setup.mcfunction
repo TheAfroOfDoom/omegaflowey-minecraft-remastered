@@ -3,6 +3,7 @@ execute unless data storage omegaflowey:telemetry player_id_cache.temp run data 
 execute unless data storage omegaflowey:telemetry tags run data modify storage omegaflowey:telemetry tags set value {}
 execute unless data storage omegaflowey:telemetry tags.booth run data modify storage omegaflowey:telemetry tags.booth set value []
 execute unless data storage omegaflowey:telemetry tags.bossfight run data modify storage omegaflowey:telemetry tags.bossfight set value []
+data modify storage omegaflowey:telemetry tags.version set value "0.2.0"
 
 execute unless score #omegaflowey.telemetry.next_player_id omegaflowey.global.flag matches 0.. run \
   scoreboard players set #omegaflowey.telemetry.next_player_id omegaflowey.global.flag 0
