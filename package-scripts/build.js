@@ -85,13 +85,23 @@ const getSummitDatapackPaths = () => {
     'shake_screen.mcfunction',
   ]);
 
+  const advancementPaths = prefixPaths(
+    'advancement/player_interacted_with_',
+    suffixPaths(
+      [
+        'animated_java_link',
+        'back_cave_github_link',
+        'feedback_form_link',
+        'github_description',
+        'join_queue',
+        'soul_act_button_locator',
+      ],
+      '.json',
+    ),
+  );
+
   const entityPaths = prefixPaths('omegaflowey.entity/', [
-    'advancement/player_interacted_with_animated_java_link.json',
-    'advancement/player_interacted_with_back_cave_github_link.json',
-    'advancement/player_interacted_with_feedback_form_link.json',
-    'advancement/player_interacted_with_github_description.json',
-    'advancement/player_interacted_with_join_queue.json',
-    'advancement/player_interacted_with_soul_act_button_locator.json',
+    ...advancementPaths,
     ...prefixPaths('function/', [
       ...bossFightPaths,
       'decorative',
