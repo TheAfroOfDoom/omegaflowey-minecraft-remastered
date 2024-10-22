@@ -42,6 +42,7 @@ function omegaflowey.utils:log/self { text_component: '[ \
     } \
   }, \
   "\\n", \
+  "\\n", \
   { \
     "text": "enable", \
     "color": "yellow", \
@@ -50,9 +51,10 @@ function omegaflowey.utils:log/self { text_component: '[ \
       "value": "/trigger omegaflowey.player.telemetry.trigger.enable" \
     } \
   }, \
+  "\\n", \
   { \
     "text": "disable", \
-    "color": "aqua", \
+    "color": "yellow", \
     "clickEvent": { \
       "action": "suggest_command", \
       "value": "/trigger omegaflowey.player.telemetry.trigger.disable" \
