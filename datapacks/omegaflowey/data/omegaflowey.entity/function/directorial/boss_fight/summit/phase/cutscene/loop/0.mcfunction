@@ -1,6 +1,6 @@
 execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 0..293 run return run \
   function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0/approach
-execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 333 run return run \
+execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 312 run return run \
   function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0/turn_on_screen with storage omegaflowey:bossfight
 execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 342 run return run \
   function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0/reveal_2 with storage omegaflowey:bossfight
@@ -28,5 +28,5 @@ execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 422 run retu
   function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0/laugh_start with storage omegaflowey:bossfight
 execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 542 run return run \
   function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0/laugh_stop with storage omegaflowey:bossfight
-execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 545 run return run \
+execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 544 run return run \
   function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0/laugh_stop/screen with storage omegaflowey:bossfight
