@@ -1,7 +1,5 @@
-$execute at $(bossfight_tvscreen_uuid) run function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: '\
-  playsound omega-flowey:cutscene.summit.victory ambient @s ~ ~ ~ 5 1\
-'}
+$execute as $(bossfight_tvscreen_uuid) at @s run \
+  function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/loop/next_event/1/as_tvscreen
 
-scoreboard players add @s omegaflowey.boss-fight.progress.phase.i 1
-
-function omegaflowey.entity:directorial/boss_fight/shared/phase/soul/loop/event_finished with storage omegaflowey:bossfight
+schedule clear omegaflowey.entity:directorial/boss_fight/summit/phase/soul/loop/next_event/1/scheduled
+schedule function omegaflowey.entity:directorial/boss_fight/summit/phase/soul/loop/next_event/1/scheduled 30t replace
