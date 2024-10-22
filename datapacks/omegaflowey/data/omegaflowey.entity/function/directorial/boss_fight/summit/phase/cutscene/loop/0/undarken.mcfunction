@@ -16,7 +16,7 @@ summon minecraft:text_display -156.5 43.0625 76.0 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "directorial", \
-    "directorial-decorative", \
+    "boss_fight.decorative", \
     "demo-intro-title", \
   ], \
   alignment: "center", \
