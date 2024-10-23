@@ -250,7 +250,28 @@ function omegaflowey.utils:log/self { text_component: '[ \
           "value": "/function omegaflowey.admin:kill/queue" \
         } \
       }, \
-      ": resets the bossfight player queue" \
+      ": resets the bossfight player queue", \
+      "\\n", \
+      "\\n", \
+      { \
+        "text": "queue/enable", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:queue/enable" \
+        } \
+      }, \
+      ": enables the join queue buttons and shows their text", \
+      "\\n", \
+      { \
+        "text": "queue/disable", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:queue/disable" \
+        } \
+      }, \
+      ": disables the join queue buttons and hides their text" \
     ] \
   } \
 ]'}

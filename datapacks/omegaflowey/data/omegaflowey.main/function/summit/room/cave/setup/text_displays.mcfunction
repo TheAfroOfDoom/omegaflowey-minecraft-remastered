@@ -83,6 +83,7 @@ data modify storage omegaflowey:bossfight active_player_health_display_uuid set 
 # Player name display updates both the name (+ skull) and the health counter
 function omegaflowey.main:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 
+scoreboard players set #omegaflowey.bossfight.queue_disabled omegaflowey.global.flag 0
 summon minecraft:text_display -137.5 43.5 42.5 { \
   Tags: [ \
     "omega-flowey-remastered", \
