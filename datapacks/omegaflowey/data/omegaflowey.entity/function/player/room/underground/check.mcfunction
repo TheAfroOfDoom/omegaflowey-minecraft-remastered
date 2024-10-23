@@ -23,4 +23,6 @@ execute if entity @s[tag=!omegaflowey.player.room.underground] run return 0
 execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 1 run return 0
 
 # TAG_SUMMIT_HARDCODED_PARKOUR_FULL
-execute if entity @s[x=-122, dx=27, y=41, dy=14, z=31, dz=14] run function omegaflowey.entity:player/room/underground/parkour/check
+execute if entity @s[x=-122, dx=27, y=41, dy=14, z=31, dz=14] run return run \
+  function omegaflowey.entity:player/room/underground/parkour/check
+function omegaflowey.entity:player/room/underground/back_cave/check
