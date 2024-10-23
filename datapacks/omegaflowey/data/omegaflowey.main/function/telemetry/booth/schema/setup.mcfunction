@@ -24,4 +24,12 @@ data modify storage omegaflowey:telemetry schema_booth_n set value { \
   'player.queue.confirm.after_delay': 18, \
   'player.rejoin.was_in_bossfight': 19, \
   'player.rejoin.was_in_queue': 20, \
+  'room.underground.parkour.start.enter': 21, \
+  'room.underground.parkour.before_pillar.enter': 22, \
+  'room.underground.parkour.behind_pillar.enter': 23, \
+  'room.underground.parkour.south_wall.enter': 24, \
+  'room.underground.parkour.south_glow_vines.enter': 25, \
+  'room.underground.parkour.final_vines.enter': 26, \
+  'room.underground.parkour.before_final_jump.enter': 27, \
+  'room.underground.parkour.finish.enter': 28, \
 }
