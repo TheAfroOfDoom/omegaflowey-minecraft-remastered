@@ -1,4 +1,4 @@
-data modify storage omegaflowey:telemetry.temp data set value { amount: 4 }
+data modify storage omegaflowey:telemetry.temp data set value { a: 4 }
 function omegaflowey.main:telemetry/bossfight/tag/instant { name: "player.heal" }
 
 effect give @s minecraft:instant_health 1 1 true

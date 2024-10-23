@@ -43,3 +43,21 @@ data modify storage omegaflowey:telemetry schema_bossfight_name set value { \
   "soul.saved": 34, \
   "player.heal": 35, \
 }
+
+## bossfight.summit.end data
+# h: player_hit_count
+# s: stop_reason
+
+## bossfight.phase.attack.start data
+## bossfight.phase.cutscene.start data
+## bossfight.phase.soul.start data
+## bossfight.phase.warn.start data
+# i: phase_index
+
+## player.damage data
+# d: damage
+# g: player_gamemode
+# s: source
+
+## player.heal data
+# a: amount
