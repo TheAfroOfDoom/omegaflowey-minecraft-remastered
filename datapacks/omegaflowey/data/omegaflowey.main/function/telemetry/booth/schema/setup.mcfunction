@@ -32,4 +32,5 @@ data modify storage omegaflowey:telemetry schema_booth_n set value { \
   'room.underground.parkour.final_vines.enter': 26, \
   'room.underground.parkour.before_final_jump.enter': 27, \
   'room.underground.parkour.finish.enter': 28, \
+  'player.shown_feedback_link.won_fight': 29, \
 }
