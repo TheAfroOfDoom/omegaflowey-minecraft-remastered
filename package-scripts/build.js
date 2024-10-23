@@ -137,6 +137,7 @@ const getSummitDatapackPaths = () => {
       'omegaflowey.admin/function/',
       ...entityPaths,
       'omegaflowey.main/function/',
+      'omegaflowey.main/tags/',
       ...utilsPaths,
       'summit/',
     ]),
