@@ -113,9 +113,13 @@ scoreboard objectives add omegaflowey.player.health health
 scoreboard objectives add omegaflowey.player.shake.pitch dummy
 scoreboard objectives add omegaflowey.player.shake.yaw dummy
 scoreboard objectives add omegaflowey.player.telemetry.id dummy
+scoreboard objectives add omegaflowey.player.telemetry.trigger.disable trigger
+scoreboard objectives add omegaflowey.player.telemetry.trigger.enable trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.help trigger
-scoreboard objectives add omegaflowey.player.telemetry.trigger.show trigger
-scoreboard objectives add omegaflowey.player.telemetry.trigger.show_and_clear trigger
+scoreboard objectives add omegaflowey.player.telemetry.trigger.pop.booth trigger
+scoreboard objectives add omegaflowey.player.telemetry.trigger.pop.bossfight trigger
+scoreboard objectives add omegaflowey.player.telemetry.trigger.show.booth trigger
+scoreboard objectives add omegaflowey.player.telemetry.trigger.show.bossfight trigger
 scoreboard objectives add omegaflowey.player.trigger.bossfight.confirm trigger
 scoreboard objectives add omegaflowey.player.trigger.bossfight.deny trigger
 
