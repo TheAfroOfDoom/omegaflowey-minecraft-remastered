@@ -1,5 +1,11 @@
 execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 1 run return 0
 
+$execute unless entity @s[type=player] run return run function omegaflowey.utils:error { error: '[ \
+  { "text": "Booth tags must be added as a player entity (name: " }, \
+  { "text": "$(name)", "color": "aqua" }, \
+  { "text": ")" } \
+]'}
+
 # Ensure numeric player ID is set
 execute unless score @s omegaflowey.player.telemetry.id matches 0.. run function omegaflowey.main:telemetry/booth/enter
 
