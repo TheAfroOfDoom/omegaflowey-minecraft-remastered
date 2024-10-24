@@ -5,6 +5,8 @@ execute store result storage omegaflowey:telemetry.temp data.s int 1 run \
 function omegaflowey.main:telemetry/bossfight/tag/end { name: "bossfight.summit" }
 function omegaflowey.main:telemetry/bossfight/tag/root/end
 
+schedule clear omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/terminate/scheduled
+
 function omegaflowey.entity:remove_animated_java_models/boss_fight
 # TAG_SUMMIT_HARDCODED_ARENA_VOLUME
 execute as @e[ \
