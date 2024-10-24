@@ -12,6 +12,9 @@ function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
   ]" \
 }
 
+function omegaflowey.main:telemetry/bossfight/tag/root/start
+function omegaflowey.main:telemetry/bossfight/tag/start { name: "bossfight.summit" }
+
 # Summon and initialize boss fight director
 function omegaflowey.entity:directorial/boss_fight/summit/origin/at { \
   command: "execute summon minecraft:marker at @s run function omegaflowey.entity:directorial/boss_fight/summit/initialize" \

@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/bossfight/tag/end { name: "bossfight.phase.warn" }
+
 # Remove tags
 tag @s remove boss_fight.phase.warn
 

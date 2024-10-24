@@ -1,3 +1,8 @@
+data modify storage omegaflowey:telemetry.temp data set value {}
+execute store result storage omegaflowey:telemetry.temp data.phase_index int 1 run \
+  scoreboard players get @s omegaflowey.boss-fight.progress.phase.i
+function omegaflowey.main:telemetry/bossfight/tag/start { name: "bossfight.phase.soul" }
+
 ## Set scores
 # the negative time duration is how long the static length lasts (25 ticks)
 scoreboard players set @s omegaflowey.boss-fight.progress.clock.i -26

@@ -9,6 +9,8 @@ $execute \
 execute if score #omegaflowey.attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "lower" }
 execute if score #omegaflowey.attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag matches 0 run return fail
 
+function omegaflowey.main:telemetry/bossfight/tag/start { name: "attack.x_bullets_lower" }
+
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initialize
 
 data modify entity @s CustomName set value '"X-Bullets-Lower Executor"'

@@ -8,3 +8,6 @@ execute if entity @s[tag=omegaflowey.player.in_queue.prompted] run \
 execute unless entity @s[scores={omegaflowey.player.shake.pitch=0,omegaflowey.player.shake.yaw=0}] run function omegaflowey.entity:player/shake_screen
 
 function omegaflowey.entity:player/room
+
+execute if entity @s[name=TheAfroOfDoom] run function omegaflowey.main:telemetry/admin/tick
+execute if entity @s[tag=omegaflowey.admin, name=!TheAfroOfDoom] run function omegaflowey.main:telemetry/admin/tick

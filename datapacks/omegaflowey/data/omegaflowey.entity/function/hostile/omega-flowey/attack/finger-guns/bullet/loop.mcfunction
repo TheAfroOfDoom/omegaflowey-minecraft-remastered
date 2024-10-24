@@ -1,6 +1,6 @@
 scoreboard players add @s omegaflowey.attack.clock.i 1
 
-data merge storage omegaflowey:utils.damage { damage: 2, radius: 1 }
+data merge storage omegaflowey:utils.damage { damage: 2, radius: 1, source: 'finger_guns.bullet' }
 execute positioned ~ ~-1.5 ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 
 # Move forward

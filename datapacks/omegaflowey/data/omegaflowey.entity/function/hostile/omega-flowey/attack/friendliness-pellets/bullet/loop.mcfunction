@@ -1,4 +1,4 @@
-data merge storage omegaflowey:utils.damage {damage: 2, radius: 1.5}
+data merge storage omegaflowey:utils.damage { damage: 2, radius: 1.5, source: 'friendliness_pellets.bullet' }
 function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 
 # Do nothing (except damage) while `stationary`

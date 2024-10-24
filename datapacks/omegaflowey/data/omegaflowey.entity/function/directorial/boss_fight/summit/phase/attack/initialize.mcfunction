@@ -1,3 +1,8 @@
+data modify storage omegaflowey:telemetry.temp data set value {}
+execute store result storage omegaflowey:telemetry.temp data.phase_index int 1 run \
+  scoreboard players get @s omegaflowey.boss-fight.attack.phase.i
+function omegaflowey.main:telemetry/bossfight/tag/start { name: "bossfight.phase.attack" }
+
 # Split on phase score
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 0 run function omegaflowey.entity:directorial/boss_fight/summit/phase/attack/initialize/0
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 1 run function omegaflowey.entity:directorial/boss_fight/summit/phase/attack/initialize/1

@@ -1,3 +1,5 @@
+function omegaflowey.main:telemetry/bossfight/tag/start { name: "attack.dentata_snakes" }
+
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initialize
 
 data modify entity @s CustomName set value '"Dentata-Snakes Executor"'

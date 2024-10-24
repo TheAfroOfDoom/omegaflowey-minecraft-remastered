@@ -1,3 +1,8 @@
+$data modify storage omegaflowey:telemetry.temp data set value { amount: $(damage) }
+data modify storage omegaflowey:telemetry.temp data.source set from storage omegaflowey:utils.damage source
+function omegaflowey.main:telemetry/data/active_player/gamemode with storage omegaflowey:bossfight
+function omegaflowey.main:telemetry/bossfight/tag/instant { name: "player.damage" }
+
 # If player is going to die to this hit, disable `showDeathMessages` temporarily and display a custom death message
 scoreboard players set #omegaflowey.bossfight.player_died omegaflowey.global.flag 0
 $execute \
