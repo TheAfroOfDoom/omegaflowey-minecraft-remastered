@@ -1,4 +1,8 @@
+# We need to reset the player, but if they are joining the fight we don't want to
+# reset their Flowey telemetry ID too
+scoreboard players set #omegaflowey.bossfight.skip_reset_telemetry_id omegaflowey.global.flag 1
 function #summit:join_server
+scoreboard players set #omegaflowey.bossfight.skip_reset_telemetry_id omegaflowey.global.flag 0
 
 scoreboard players add #omegaflowey.telemetry.stats.total_fights omegaflowey.global.flag 1
 execute unless score @s omegaflowey.player.summit.has_fought_flowey matches 1 run \
