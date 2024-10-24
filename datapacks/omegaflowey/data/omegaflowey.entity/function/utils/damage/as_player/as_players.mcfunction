@@ -1,2 +1,2 @@
 stopsound @s player minecraft:entity.player.hurt
-playsound omega-flowey:player.hurt player @s ~ ~ ~ 3
+playsound omega-flowey:player.hurt player @s ~ ~ ~ 5

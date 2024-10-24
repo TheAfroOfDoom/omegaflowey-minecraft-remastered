@@ -2,7 +2,7 @@
 scoreboard players set #omegaflowey.soul.5.saved omegaflowey.soul.flag 1
 
 function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
-  'function omegaflowey.entity:soul/soul_5/executor/initialize/saved/as_player' \
+  'execute at @s run function omegaflowey.entity:soul/soul_5/executor/initialize/saved/as_player' \
 }
 
 # Flash each player's screen

@@ -33,7 +33,7 @@ scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.sum
 execute store result storage omegaflowey:attack.dentata-snakes.bounce y float 0.01 run scoreboard players get @s omegaflowey.math.0
 data modify storage omegaflowey:attack.dentata-snakes.bounce dy set value 10
 
-data modify storage omegaflowey:attack.dentata-snakes.bounce command_after_bouncing set value 'execute if entity @s[tag=attack-bullet-head] run function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/after_bounce_as_bullet_head'
+data modify storage omegaflowey:attack.dentata-snakes.bounce command_after_bouncing set value 'execute if entity @s[tag=attack-bullet-head] at @s run function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/loop/after_bounce_as_bullet_head'
 
 function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
   command: "function omegaflowey.entity:utils/bounce with storage omegaflowey:attack.dentata-snakes.bounce" \

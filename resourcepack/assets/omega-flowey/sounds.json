@@ -2,51 +2,63 @@
   "attack.bomb.explode": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_bombsplosion"
+        "name": "omega-flowey:snd_bombsplosion",
+        "attenuation_distance": 50,
+        "volume": 10
       }
     ]
   },
   "attack.bomb.fall": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_bombfall"
+        "name": "omega-flowey:snd_bombfall",
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
   "attack.dentata-snakes.bounce": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_impact"
+        "name": "omega-flowey:snd_impact",
+        "attenuation_distance": 45,
+        "volume": 10
       }
     ]
   },
   "attack.dentata-snakes.summon": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_sfx_generate"
+        "name": "omega-flowey:mus_sfx_generate",
+        "attenuation_distance": 50
       }
     ]
   },
   "attack.dentata-snakes.spawn": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.charge-up",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_segapower",
+        "pitch": 1.2,
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
   "attack.finger-guns.laser": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.beep",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_a_target",
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
   "attack.finger-guns.shoot": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_sfx_a_bullet"
+        "name": "omega-flowey:mus_sfx_a_bullet",
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
@@ -75,78 +87,70 @@
   "attack.friendliness-pellets.activate": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_shakerbreaker"
+        "name": "omega-flowey:snd_shakerbreaker",
+        "attenuation_distance": 50
       }
     ]
   },
   "attack.friendliness-pellets.blinking": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.beep",
-        "type": "event"
-      }
-    ]
-  },
-  "attack.generic.beep": {
-    "sounds": [
-      {
-        "name": "omega-flowey:mus_sfx_a_target"
-      }
-    ]
-  },
-  "attack.generic.charge-up": {
-    "sounds": [
-      {
-        "name": "omega-flowey:mus_sfx_segapower",
-        "pitch": 1.2
+        "name": "omega-flowey:mus_sfx_a_target",
+        "attenuation_distance": 50
       }
     ]
   },
   "attack.generic.summon": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_sfx_yowl"
+        "name": "omega-flowey:mus_sfx_yowl",
+        "attenuation_distance": 50,
+        "volume": 100
       }
     ]
   },
   "attack.homing-vines.blinking": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.beep",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_a_target",
+        "attenuation_distance": 50,
+        "volume": 1000
       }
     ]
   },
   "attack.homing-vines.summon": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.summon",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_yowl",
+        "attenuation_distance": 50,
+        "volume": 1
       }
     ]
   },
   "attack.x-bullets.start": {
     "sounds": [
       {
-        "name": "omega-flowey:attack.generic.charge-up",
-        "type": "event"
+        "name": "omega-flowey:mus_sfx_segapower",
+        "pitch": 1.2,
+        "attenuation_distance": 50,
+        "volume": 40
       }
     ]
   },
   "boss-fight.alarm": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_f_alarm"
+        "name": "omega-flowey:mus_f_alarm",
+        "attenuation_distance": 50
       }
     ]
   },
   "boss-fight.static": {
     "sounds": [
       {
-        "name": "omega-flowey:mus_f_noise-01"
-      },
-      {
-        "name": "omega-flowey:mus_f_noise-02"
+        "name": "omega-flowey:mus_f_noise",
+        "attenuation_distance": 40,
+        "volume": 0.3
       }
     ]
   },
@@ -181,12 +185,7 @@
     "sounds": [
       {
         "attenuation_distance": 55,
-        "name": "omega-flowey:mus_f_noise-01",
-        "volume": 0.1
-      },
-      {
-        "attenuation_distance": 55,
-        "name": "omega-flowey:mus_f_noise-02",
+        "name": "omega-flowey:mus_f_noise",
         "volume": 0.1
       }
     ]
@@ -195,7 +194,8 @@
     "sounds": [
       {
         "name": "omega-flowey:mus_f_part1",
-        "stream": true
+        "stream": true,
+        "volume": 0.47
       }
     ]
   },
@@ -203,7 +203,8 @@
     "sounds": [
       {
         "name": "omega-flowey:mus_f_part2",
-        "stream": true
+        "stream": true,
+        "volume": 0.519
       }
     ]
   },
@@ -283,7 +284,8 @@
     "sounds": [
       {
         "name": "omega-flowey:mus_f_6s_6",
-        "stream": true
+        "stream": true,
+        "volume": 0.67
       }
     ]
   },
@@ -298,15 +300,18 @@
     "sounds": [
       {
         "name": "omega-flowey:snd_hurt1_c",
-        "pitch": 1
+        "pitch": 1,
+        "attenuation_distance": 20
       },
       {
         "name": "omega-flowey:snd_hurt1_c",
-        "pitch": 0.95
+        "pitch": 0.95,
+        "attenuation_distance": 20
       },
       {
         "name": "omega-flowey:snd_hurt1_c",
-        "pitch": 1.0526
+        "pitch": 1.0526,
+        "attenuation_distance": 20
       }
     ]
   },
@@ -320,7 +325,8 @@
   "soul.heal": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_heal_c"
+        "name": "omega-flowey:snd_heal_c",
+        "attenuation_distance": 50
       }
     ]
   },
@@ -336,7 +342,8 @@
   "soul.touch": {
     "sounds": [
       {
-        "name": "omega-flowey:snd_select"
+        "name": "omega-flowey:snd_select",
+        "attenuation_distance": 50
       }
     ]
   },
