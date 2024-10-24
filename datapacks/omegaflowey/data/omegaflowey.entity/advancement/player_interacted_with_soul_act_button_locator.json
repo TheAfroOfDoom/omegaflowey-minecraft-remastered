@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{ Tags: [\"aj.omegaflowey_act_button.locator\", \"soul-interaction\", \"soul\", \"omega-flowey-remastered\"] }"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "omegaflowey.entity:player/interacted/with_soul_act_button_locator"
+  }
+}

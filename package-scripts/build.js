@@ -246,6 +246,7 @@ const getSummitResourcepackPaths = () => {
         'snd_break2_c',
         'snd_heal_c',
         'snd_impact',
+        'snd_select',
         'snd_shakerbreaker',
       ],
       '.ogg',
