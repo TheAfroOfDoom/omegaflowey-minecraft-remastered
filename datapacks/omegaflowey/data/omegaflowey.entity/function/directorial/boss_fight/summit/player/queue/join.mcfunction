@@ -1,6 +1,10 @@
 # if already in queue (or in bossfight somehow), do nothing
 execute unless entity @s[tag=!omegaflowey.player.in_queue, tag=!omegaflowey.player.fighting_flowey] run return 0
 
+# Play select sound if this was called from the interaction (and not manually)
+execute if score #omegaflowey.play_join_queue_select_sound omegaflowey.global.flag matches 1 run \
+  playsound omega-flowey:soul.touch player @s
+
 tag @s add omegaflowey.player.in_queue
 
 function gu:generate

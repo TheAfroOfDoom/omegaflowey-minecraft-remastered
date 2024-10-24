@@ -9,7 +9,7 @@ function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: 
   'execute unless entity @s[tag=omegaflowey.player.fighting_flowey] run \
     function omegaflowey.entity:directorial/boss_fight/shared/stop/as_spectator' \
 }
-$execute as $(active_player_uuid) run function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player
+$execute as $(active_player_uuid) at @s run function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player
 
 function omegaflowey.main:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 # prompt next player in queue
