@@ -8,7 +8,7 @@ function omegaflowey.main:telemetry/bossfight/tag/root/end
 function omegaflowey.entity:remove_animated_java_models/boss_fight
 # TAG_SUMMIT_HARDCODED_ARENA_VOLUME
 execute as @e[ \
-  x=-186, dx=61, y=12, dy=44, z=47, dz=60, \
+  x=-186, dx=61, y=10, dy=46, z=47, dz=60, \
   tag=omega-flowey-remastered \
 ] run function omegaflowey.entity:directorial/boss_fight/shared/stop/as_root
 
