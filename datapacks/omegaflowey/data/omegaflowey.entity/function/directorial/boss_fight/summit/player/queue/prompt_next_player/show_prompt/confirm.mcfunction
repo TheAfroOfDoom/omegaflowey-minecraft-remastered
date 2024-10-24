@@ -10,4 +10,4 @@ function omegaflowey.utils:log/self { text_component: '[ \
   { "text": "...", "color": "yellow" } \
 ]' }
 
-schedule function omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/confirm/after_delay 3s replace
+schedule function omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/confirm/teleport_animation 3s replace

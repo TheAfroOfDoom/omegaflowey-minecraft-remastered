@@ -85,13 +85,24 @@ const getSummitDatapackPaths = () => {
     'shake_screen.mcfunction',
   ]);
 
+  const advancementPaths = prefixPaths(
+    'advancement/player_interacted_with_',
+    suffixPaths(
+      [
+        'animated_java_link',
+        'back_cave_github_link',
+        'feedback_form_link',
+        'github_description',
+        'join_queue',
+        'join_queue_2',
+        'soul_act_button_locator',
+      ],
+      '.json',
+    ),
+  );
+
   const entityPaths = prefixPaths('omegaflowey.entity/', [
-    'advancement/player_interacted_with_animated_java_link.json',
-    'advancement/player_interacted_with_back_cave_github_link.json',
-    'advancement/player_interacted_with_feedback_form_link.json',
-    'advancement/player_interacted_with_github_description.json',
-    'advancement/player_interacted_with_join_queue.json',
-    'advancement/player_interacted_with_soul_act_button_locator.json',
+    ...advancementPaths,
     ...prefixPaths('function/', [
       ...bossFightPaths,
       'decorative',
@@ -142,6 +153,12 @@ const getSummitDatapackPaths = () => {
     'mud',
     ...primaryDatapackPaths,
   ]);
+
+  const pruneMarkdownFiles = async ({ compiledPath }) => {
+    const mdGlob = `${compiledPath}/datapacks/**/*.md`;
+    await rimraf(mdGlob, { glob: true });
+  };
+  postProcessors.push(pruneMarkdownFiles);
 
   const pruneAnimatedJavaDatapackExports = async ({ compiledPath }) => {
     const prunePromises = [];
@@ -228,8 +245,11 @@ const getSummitResourcepackPaths = () => {
     'sounds/',
     suffixPaths(
       [
+        'battle_start',
         'mus_f_6s_6',
         'mus_f_alarm',
+        'mus_f_intro',
+        'mus_f_laugh',
         'mus_f_noise',
         'mus_f_part1',
         'mus_f_part2',
@@ -239,13 +259,19 @@ const getSummitResourcepackPaths = () => {
         'mus_sfx_generate',
         'mus_sfx_segapower',
         'mus_sfx_yowl',
+        'snd_battlefall',
         'snd_bombfall',
         'snd_bombsplosion',
         'snd_break1',
         'snd_break2',
         'snd_break2_c',
+        'snd_dumbvictory',
+        'snd_elecdoor_shutheavy',
+        'snd_escaped',
         'snd_heal_c',
+        'snd_hurt1_c',
         'snd_impact',
+        'snd_item',
         'snd_noise',
         'snd_select',
         'snd_shakerbreaker',
@@ -291,7 +317,9 @@ const getSummitResourcepackPaths = () => {
         'flowery',
         'friendliness-pellet-ring-blinking',
         'friendliness-pellet-ring-finished',
+        'homing_vine_orange_shulker_box_emissive',
         'homing-vine',
+        'homing-vine-noshade',
         'homing-vine-blinking-lane',
         'moss_block_1',
         'petes_fly',
@@ -354,6 +382,8 @@ const getSummitResourcepackPaths = () => {
     'tv_screen',
     'x_bullets_shared',
     'black.png',
+    'intro_flashing_red.png',
+    'intro_flashing_red.png.mcmeta',
     'white.png',
   ]);
 
