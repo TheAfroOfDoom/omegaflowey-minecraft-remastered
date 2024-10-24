@@ -1,9 +1,22 @@
 const chalk = require('chalk');
 const { copy, emptyDir, pathExists, readJson, writeJson } = require('fs-extra');
+const { glob } = require('glob');
 const parseArgs = require('minimist');
 const { rimraf } = require('rimraf');
 
 const buildDir = './build';
+
+const prefixPaths = (prefix, paths) => paths.map((path) => `${prefix}${path}`);
+const suffixPaths = (paths, suffix) => paths.map((path) => `${path}${suffix}`);
+
+const animatedJavaExportsToPrune = prefixPaths('omegaflowey_', [
+  'housefly',
+  'petal_pipe_circle',
+  'petal_pipe_middle',
+  'soul_0_bandaid',
+  'soul_0_sword',
+  'venus_fly_trap',
+]);
 
 const getSummitDatapackPaths = () => {
   const postProcessors = [];
@@ -129,14 +142,79 @@ const getSummitDatapackPaths = () => {
     ...primaryDatapackPaths,
   ]);
 
+  const pruneAnimatedJavaDatapackExports = async ({ compiledPath }) => {
+    const prunePromises = [];
+    for (const dir of animatedJavaExportsToPrune) {
+      const pruneFunctionDir = `${compiledPath}/datapacks/animated_java/data/animated_java/function/${dir}`;
+      prunePromises.push(rimraf(pruneFunctionDir));
+      prunePromises.push(
+        rimraf(
+          `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/${dir}`,
+        ),
+      );
+    }
+    await Promise.all(prunePromises);
+  };
+  postProcessors.push(pruneAnimatedJavaDatapackExports);
+
+  const pruneAnimatedJavaDatapackTags = async ({ compiledPath }) => {
+    for (const [tagPath, suffix] of [
+      [
+        `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/on_load.json`,
+        '/on_load',
+      ],
+      [
+        `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/root/on_load.json`,
+        '/root/on_load',
+      ],
+      [
+        `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/root/on_tick.json`,
+        '/root/on_tick',
+      ],
+    ]) {
+      const loadTagJson = await readJson(tagPath);
+      loadTagJson.values = loadTagJson.values.filter((modelTag) => {
+        const namespace = modelTag
+          .replace('animated_java:', '')
+          .replace(suffix, '');
+        return !animatedJavaExportsToPrune.includes(namespace);
+      });
+      await writeJson(tagPath, loadTagJson);
+    }
+  };
+  postProcessors.push(pruneAnimatedJavaDatapackTags);
   return { paths: datapackPaths, postProcessors };
 };
 
 const getSummitResourcepackPaths = () => {
   const postProcessors = [];
+  const finalPostProcessors = [];
 
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
+
+  const pruneAnimatedJavaDisplayItem = async ({ compiledPath }) => {
+    const displayItemPath = `${compiledPath}/assets/minecraft/models/item/pink_dye.json`;
+    const displayItemJson = await readJson(displayItemPath);
+
+    const filteredOverrides = displayItemJson.overrides.filter((override) => {
+      if (!override.model.startsWith('animated_java:item/')) {
+        return true;
+      }
+
+      const modelName = override.model
+        .replace('animated_java:item/', '')
+        .split('/')[0];
+      return !animatedJavaExportsToPrune.includes(modelName);
+    });
+
+    displayItemJson.overrides = filteredOverrides;
+
+    displayItemJson.animated_java = undefined;
+
+    await writeJson(displayItemPath, displayItemJson, { spaces: 2 });
+  };
+  postProcessors.push(pruneAnimatedJavaDisplayItem);
 
   const modelPaths = prefixPaths('models/entity/decorative/', [
     'housefly.json',
@@ -300,13 +378,30 @@ const getSummitResourcepackPaths = () => {
     ...omegaFloweyPaths,
   ]);
 
+  const pruneAnimatedJavaResourcepackExports = async ({ compiledPath }) => {
+    const prunePromises = [];
+    for (const dir of animatedJavaExportsToPrune) {
+      const compiledPruneDir = `${compiledPath}/assets/animated_java/models/item/${dir}`;
+      prunePromises.push(rimraf(compiledPruneDir));
+    }
+    await Promise.all(prunePromises);
+  };
+  postProcessors.push(pruneAnimatedJavaResourcepackExports);
+
   const resourcepackPaths = prefixPaths('resourcepack/', [
     'pack.mcmeta',
     'pack.png',
     ...assetsPaths,
   ]);
 
-  return { paths: resourcepackPaths, postProcessors };
+  const minifyJsons = async ({ compiledPath }) => {
+    for (const path of await glob(`${compiledPath}/**/*.json`)) {
+      await writeJson(path, await readJson(path));
+    }
+  };
+  finalPostProcessors.push(minifyJsons);
+
+  return { paths: resourcepackPaths, postProcessors, finalPostProcessors };
 };
 
 const LOG_LEVEL = {
@@ -341,9 +436,6 @@ const logLevel = (level, ...data) => {
       console.log(...data);
   }
 };
-
-const prefixPaths = (prefix, paths) => paths.map((path) => `${prefix}${path}`);
-const suffixPaths = (paths, suffix) => paths.map((path) => `${path}${suffix}`);
 
 const getCompilePaths = ({ getSummitPaths }) => {
   const { variant } = args;
@@ -396,7 +488,7 @@ const compile = async ({
 
   await emptyDir(compiledPath);
 
-  const { paths, postProcessors } = compilePaths();
+  const { paths, postProcessors, finalPostProcessors = [] } = compilePaths();
   if (args.verbose) {
     verbose(chalk.bold(`${logColor(packType)} compile paths:`));
     for (const src of paths) {
@@ -421,10 +513,16 @@ const compile = async ({
   const checkmark = '\u{2705}';
   info(`Finished copying ${paths.length} paths ${checkmark}`);
 
-  if (postProcessors.length > 0) {
-    info(`Running ${postProcessors.length} post-processors`);
+  const totalProcessors = postProcessors.length + finalPostProcessors.length;
+  if (totalProcessors > 0) {
+    info(`Running ${totalProcessors} post-processors`);
     await Promise.all(
       postProcessors.map((postProcessor) => postProcessor({ compiledPath })),
+    );
+    await Promise.all(
+      finalPostProcessors.map((postProcessor) =>
+        postProcessor({ compiledPath }),
+      ),
     );
     info(`Finished post-processing ${checkmark}`);
   }
