@@ -19,6 +19,11 @@ tellraw @s [ { "storage": "omegaflowey:telemetry", "nbt": "data.booth_basetick" 
 
 # math.0 = total page count
 execute store result score @s omegaflowey.math.0 run data get storage omegaflowey:telemetry data.booth
+execute if score @s omegaflowey.math.0 matches 0 run \
+  tellraw @s [ { "text": "\nbooth", "color": "yellow", "underlined": true } ]
+execute if score @s omegaflowey.math.0 matches 0 run return run \
+  tellraw @s [ { "text": "none", "color": "gray" } ]
+
 # math.1 = current page index
 scoreboard players set @s omegaflowey.math.1 0
 function omegaflowey.main:telemetry/admin/show/booth/iterate
