@@ -673,7 +673,7 @@ summon minecraft:text_display -137.75 44.0 26.001 { \
   } \
 }
 
-summon minecraft:text_display -137.75 42.0 26.0015 { \
+summon minecraft:text_display -137.75 42.0 26.005 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -726,5 +726,62 @@ summon minecraft:block_display -139.13 41.9375 26.001 { \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [2.775f, 1.875f, 1.0E-4f], \
     translation: [0.0f, 0.0f, 0.0f], \
+  } \
+}
+
+summon minecraft:text_display -127.99 39.25 50.5 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "tip-third-person-mode-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  brightness: { block: 12, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '[ \
+    { "text": "TIP", "color": "green", "bold": true, "underlined": true } \
+  ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.25f, 1.25f, 1.25f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display -127.99 38.5 50.5 { \
+  Tags: [ \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative-cave", \
+    "tip-third-person-mode-content", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  brightness: { block: 12, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: '[ \
+    { "text": "We recommend being in\\n", "color": "yellow" }, \
+    { "text": "F5 mode ", "color": "aqua", "bold": true }, \
+    { "text": "(", "color": "gray" }, \
+    { "text": "third-person", "color": "aqua" }, \
+    { "text": ")\\n", "color": "gray" }, \
+    "for most of the bossfight" \
+  ]', \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [0.8125f, 0.8125f, 0.8125f], \
+    translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
