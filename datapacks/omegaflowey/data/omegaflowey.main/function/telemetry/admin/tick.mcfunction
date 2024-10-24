@@ -12,5 +12,7 @@ execute if score @s omegaflowey.player.telemetry.trigger.show.booth matches 1 ru
   function omegaflowey.main:telemetry/admin/show/booth
 execute if score @s omegaflowey.player.telemetry.trigger.show.bossfight matches 1 run \
   function omegaflowey.main:telemetry/admin/show/bossfight
+execute if score @s omegaflowey.player.telemetry.trigger.stats matches 1 run \
+  function omegaflowey.main:telemetry/admin/stats
 
 function omegaflowey.main:telemetry/admin/reset_triggers

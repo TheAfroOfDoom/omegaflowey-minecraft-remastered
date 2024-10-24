@@ -1,5 +1,10 @@
 function #summit:join_server
 
+scoreboard players add #omegaflowey.telemetry.stats.total_fights omegaflowey.global.flag 1
+execute unless score @s omegaflowey.player.summit.has_fought_flowey matches 1 run \
+  scoreboard players add #omegaflowey.telemetry.stats.total_distinct_fights omegaflowey.global.flag 1
+scoreboard players set @s omegaflowey.player.summit.has_fought_flowey 1
+
 tag @s add omegaflowey.player.fighting_flowey
 
 # Required by summit to disable regen during the fight

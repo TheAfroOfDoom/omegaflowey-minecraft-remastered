@@ -44,19 +44,4 @@ schedule function omegaflowey.entity:utils/damage/reset_immunity_flag 10t replac
 # Show custom death message
 # TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
 execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 run \
-  tellraw @a[ \
-    x=-186, dx=91, y=10, dy=95, z=12, dz=95, \
-    tag=omegaflowey.player \
-  ] [ \
-    { "selector": "@s"}, \
-    " was slain by ", \
-    { "text": "Omega Flowey", "color": "green" } \
-  ]
-
-# Run outside tvscreen death animation
-execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 run \
-  function omegaflowey.main:summit/room/outside/setup/tv_screen/death_animation with storage omegaflowey:decorative
-
-# Re-enable `showDeathMessages` if it was enabled previously
-execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 \
-  if score @s omegaflowey.math.0 matches 1 run gamerule showDeathMessages true
+  function omegaflowey.entity:utils/damage/as_player/died
