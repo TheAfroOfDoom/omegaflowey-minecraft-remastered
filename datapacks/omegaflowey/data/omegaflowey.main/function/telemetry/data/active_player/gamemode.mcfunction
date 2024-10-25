@@ -1,10 +1,3 @@
 function omegaflowey.main:telemetry/data/shared
 
-$execute as $(active_player_uuid) if entity @s[gamemode=survival] run \
-  data modify storage omegaflowey:telemetry temp.data.g set value 0
-$execute as $(active_player_uuid) if entity @s[gamemode=creative] run \
-  data modify storage omegaflowey:telemetry temp.data.g set value 1
-$execute as $(active_player_uuid) if entity @s[gamemode=adventure] run \
-  data modify storage omegaflowey:telemetry temp.data.g set value 2
-$execute as $(active_player_uuid) if entity @s[gamemode=spectator] run \
-  data modify storage omegaflowey:telemetry temp.data.g set value 3
+$execute as $(active_player_uuid) run function omegaflowey.main:telemetry/data/active_player/gamemode/as_active_player

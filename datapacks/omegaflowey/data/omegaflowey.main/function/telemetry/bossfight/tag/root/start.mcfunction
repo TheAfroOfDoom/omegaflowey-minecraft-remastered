@@ -14,11 +14,7 @@ execute store result storage omegaflowey:telemetry temp.bossfight_root_next.tick
 
 execute summon marker run function omegaflowey.main:telemetry/bossfight/tag/root/start/generate_uuid
 
-function omegaflowey.main:telemetry/bossfight/tag/root/start/get_player_id
-
 function omegaflowey.main:telemetry/bossfight/tag/root/start/macro with storage omegaflowey:bossfight
-function omegaflowey.main:telemetry/data/active_player/gamemode with storage omegaflowey:bossfight
-data modify storage omegaflowey:telemetry temp.bossfight_root_next.player_gamemode set from storage omegaflowey:telemetry temp.data.g
 
 function omegaflowey.main:telemetry/bossfight/tag/root/start/to_string with storage omegaflowey:telemetry temp.bossfight_root_next
 function omegaflowey.main:telemetry/bossfight/tag/update_page_length
