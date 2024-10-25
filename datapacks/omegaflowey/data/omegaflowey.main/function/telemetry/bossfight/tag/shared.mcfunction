@@ -13,7 +13,11 @@ data modify storage omegaflowey:telemetry temp.bossfight_next.data set value ""
 execute if data storage omegaflowey:telemetry temp.data run \
   data modify storage omegaflowey:telemetry temp.bossfight_next.data set from storage omegaflowey:telemetry temp.data
 
-function omegaflowey.main:telemetry/bossfight/tag/to_string with storage omegaflowey:telemetry temp.bossfight_next
+function omegaflowey.main:telemetry/bossfight/tag/shared/to_string with storage omegaflowey:telemetry temp.bossfight_next
+function omegaflowey.main:telemetry/bossfight/tag/update_page_length
+
+# add data to latest bossfight on latest page
+data modify storage omegaflowey:telemetry data.bossfight[-1][-1] append from storage omegaflowey:telemetry temp.bossfight_next_str
 
 # reset extra data
 data remove storage omegaflowey:telemetry temp.data
