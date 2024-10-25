@@ -32,7 +32,10 @@ foreach ($script:file in $files) {
   $script:lufs = ffmpeg -i $file -af ebur128=framelog=verbose -f null - 2>&1 | grep -e "Integrated loudness:" -A 8
   $script:lufsFormatted = ((($lufs.split('\n').where{$_ -ne ''}) | foreach-object -membername trim) -join [environment]::newline)
 
-  $script:statsLine = "# ${relativePath}$([environment]::newline)${channelsVolumeDiffMaxFormatted}$([environment]::newline)${channelsFormatted}$([environment]::newline)${lufsFormatted}$([environment]::newline)"
+  $script:sampleRate = ffprobe -v 0 -select_streams a:0 -show_entries stream=sample_rate -of compact=p=0:nk=1 $file
+  $script:sampleRateFormatted = "sampleRate: ${sampleRate}"
+
+  $script:statsLine = "# ${relativePath}$([environment]::newline)${channelsVolumeDiffMaxFormatted}$([environment]::newline)${channelsFormatted}$([environment]::newline)${sampleRateFormatted}$([environment]::newline)${lufsFormatted}$([environment]::newline)"
   if ($out -ne '') {
     $statsLine | out-file -filepath $out -append
   } else {
