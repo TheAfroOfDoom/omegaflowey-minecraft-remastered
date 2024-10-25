@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/bossfight/schema/get with storage omegaflowey:telemetry temp.bossfight_next
+function omegaflowey.main:telemetry/bossfight/schema/get/name with storage omegaflowey:telemetry temp.bossfight_next
 execute unless data storage omegaflowey:telemetry temp.name run return run \
   function omegaflowey.main:telemetry/bossfight/tag/shared/error with storage omegaflowey:telemetry temp.bossfight_next
 

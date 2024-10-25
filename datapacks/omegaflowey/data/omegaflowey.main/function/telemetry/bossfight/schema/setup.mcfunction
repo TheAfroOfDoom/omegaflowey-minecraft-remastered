@@ -61,3 +61,14 @@ data modify storage omegaflowey:telemetry schema_bossfight_name set value { \
 
 ## player.heal data
 # a: amount
+
+data modify storage omegaflowey:telemetry schema_bossfight_damage_source set value { \
+  "x_bullets_lower.bullet": 0, \
+  "x_bullets_upper.bullet": 1, \
+  "homing_vines.bullet": 2, \
+  "friendliness_pellets.bullet": 3, \
+  "bomb.bullet": 4, \
+  "dentata_snakes.bullet": 5, \
+  "finger_guns.bullet": 6, \
+  "soul.5.bullet": 7, \
+}
