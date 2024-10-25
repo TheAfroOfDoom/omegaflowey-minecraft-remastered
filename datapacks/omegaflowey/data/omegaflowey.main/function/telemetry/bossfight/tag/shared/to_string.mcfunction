@@ -2,5 +2,5 @@
 $data modify storage omegaflowey:telemetry temp.bossfight_next_str set value '\
   $(name);\
   $(tick);\
-  $(data);\
+  $(data)\
 '
