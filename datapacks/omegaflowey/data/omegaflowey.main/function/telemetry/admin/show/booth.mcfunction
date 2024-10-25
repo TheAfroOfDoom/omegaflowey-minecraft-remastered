@@ -12,7 +12,7 @@ tellraw @s [ { "text": "\nversion", "color": "yellow", "underlined": true } ]
 tellraw @s [ { "storage": "omegaflowey:telemetry", "nbt": "data.version" } ]
 
 tellraw @s [ { "text": "\nplayer_id_map", "color": "yellow", "underlined": true } ]
-function omegaflowey.main:telemetry/admin/show/booth/show_player_id_map
+function omegaflowey.main:telemetry/admin/show/player_id_map
 
 tellraw @s [ { "text": "\nbooth_basetick", "color": "yellow", "underlined": true } ]
 tellraw @s [ { "storage": "omegaflowey:telemetry", "nbt": "data.booth_basetick" } ]
