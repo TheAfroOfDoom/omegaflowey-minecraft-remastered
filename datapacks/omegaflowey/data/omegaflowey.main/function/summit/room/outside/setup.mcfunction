@@ -1,4 +1,5 @@
 # Flowey TV screen, smiling
+# TAG_OUTSIDE_TVSCREEN_HARDCODED
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 3
 execute positioned -123.47 87.25 33.35 rotated -158.2 12.52 run \
   function animated_java:omegaflowey_tv_screen/summon { args: { animation: 'omegaflowey_move_slow', start_animation: true, variant: 'smiling_noglow' } }
