@@ -272,6 +272,17 @@ function omegaflowey.utils:log/self { text_component: '[ \
         } \
       }, \
       ": disables the join queue buttons and hides their text" \
+      "\\n", \
+      "\\n", \
+      { \
+        "text": "setup", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.main:setup" \
+        } \
+      }, \
+      ": re-runs the setup function that normally runs on `/reload`" \
     ] \
   } \
 ]'}
