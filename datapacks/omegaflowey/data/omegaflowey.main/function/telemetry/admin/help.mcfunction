@@ -44,6 +44,16 @@ function omegaflowey.utils:log/self { text_component: '[ \
   "\\n", \
   "\\n", \
   { \
+    "text": "stats", \
+    "color": "yellow", \
+    "clickEvent": { \
+      "action": "suggest_command", \
+      "value": "/trigger omegaflowey.player.telemetry.trigger.stats" \
+    } \
+  }, \
+  "\\n", \
+  "\\n", \
+  { \
     "text": "enable", \
     "color": "yellow", \
     "clickEvent": { \

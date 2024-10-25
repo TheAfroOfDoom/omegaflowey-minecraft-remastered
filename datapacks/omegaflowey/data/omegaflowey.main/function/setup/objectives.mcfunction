@@ -112,6 +112,12 @@ scoreboard objectives add omegaflowey.player.leave.previous dummy
 scoreboard objectives add omegaflowey.player.health health
 scoreboard objectives add omegaflowey.player.shake.pitch dummy
 scoreboard objectives add omegaflowey.player.shake.yaw dummy
+scoreboard objectives add omegaflowey.player.summit.has_died_to_flowey dummy
+scoreboard objectives add omegaflowey.player.summit.has_fought_flowey dummy
+scoreboard objectives add omegaflowey.player.summit.has_finished_parkour dummy
+scoreboard objectives add omegaflowey.player.summit.has_joined_queue_before dummy
+scoreboard objectives add omegaflowey.player.summit.has_survived_flowey dummy
+scoreboard objectives add omegaflowey.player.summit.has_visited_booth dummy
 scoreboard objectives add omegaflowey.player.telemetry.id dummy
 scoreboard objectives add omegaflowey.player.telemetry.trigger.disable trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.enable trigger
@@ -120,6 +126,7 @@ scoreboard objectives add omegaflowey.player.telemetry.trigger.pop.booth trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.pop.bossfight trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.show.booth trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.show.bossfight trigger
+scoreboard objectives add omegaflowey.player.telemetry.trigger.stats trigger
 scoreboard objectives add omegaflowey.player.trigger.bossfight.confirm trigger
 scoreboard objectives add omegaflowey.player.trigger.bossfight.deny trigger
 

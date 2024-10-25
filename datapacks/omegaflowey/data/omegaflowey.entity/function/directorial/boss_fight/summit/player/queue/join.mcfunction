@@ -1,6 +1,11 @@
 # if already in queue (or in bossfight somehow), do nothing
 execute unless entity @s[tag=!omegaflowey.player.in_queue, tag=!omegaflowey.player.fighting_flowey] run return 0
 
+scoreboard players add #omegaflowey.telemetry.stats.total_queue_joins omegaflowey.global.flag 1
+execute unless score @s omegaflowey.player.summit.has_joined_queue_before matches 1 run \
+  scoreboard players add #omegaflowey.telemetry.stats.total_distinct_queue_joins omegaflowey.global.flag 1
+scoreboard players set @s omegaflowey.player.summit.has_joined_queue_before 1
+
 function omegaflowey.main:telemetry/booth/add_tag { name: "player.queue.join" }
 
 # Play select sound if this was called from the interaction (and not manually)

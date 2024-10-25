@@ -1,5 +1,11 @@
 execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 1 run return 0
 
+$execute unless entity @s[type=player] run return run function omegaflowey.utils:error { error: '[ \
+  { "text": "Booth tags must be added as a player entity (name: " }, \
+  { "text": "$(name)", "color": "aqua" }, \
+  { "text": ")" } \
+]'}
+
 # Ensure numeric player ID is set
 execute unless score @s omegaflowey.player.telemetry.id matches 0.. run function omegaflowey.main:telemetry/booth/enter
 
@@ -22,3 +28,7 @@ execute store result storage omegaflowey:telemetry temp.booth_next.t int 1 run s
 execute store result storage omegaflowey:telemetry temp.booth_next.u int 1 run scoreboard players get @s omegaflowey.player.telemetry.id
 
 function omegaflowey.main:telemetry/booth/add_tag/to_string with storage omegaflowey:telemetry temp.booth_next
+function omegaflowey.main:telemetry/booth/add_tag/check_page_length
+
+# add data to latest page
+data modify storage omegaflowey:telemetry data.booth[-1] append from storage omegaflowey:telemetry temp.booth_next_str

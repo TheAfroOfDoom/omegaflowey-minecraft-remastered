@@ -11,5 +11,12 @@ tellraw @s [ { "storage": "omegaflowey:telemetry", "nbt": "data.server_id" } ]
 tellraw @s [ { "text": "\nversion", "color": "yellow", "underlined": true } ]
 tellraw @s [ { "storage": "omegaflowey:telemetry", "nbt": "data.version" } ]
 
-tellraw @s [ { "text": "\nbossfight", "color": "yellow", "underlined": true } ]
-tellraw @s [ { "storage": "omegaflowey:telemetry", "nbt": "data.bossfight" } ]
+tellraw @s [ { "text": "\nplayer_id_map", "color": "yellow", "underlined": true } ]
+function omegaflowey.main:telemetry/admin/show/player_id_map
+
+# math.0 = total page count
+execute store result score @s omegaflowey.math.0 run data get storage omegaflowey:telemetry data.bossfight
+
+# math.1 = current page index
+scoreboard players set @s omegaflowey.math.1 0
+function omegaflowey.main:telemetry/admin/show/bossfight/iterate
