@@ -12,7 +12,5 @@ execute as @e[ \
   tag=aj.omegaflowey_tv_screen.root, \
   tag=!tv_screen.boss_fight, \
   tag=!tv_screen.soul, \
-  tag=decorative, \
-  tag=omega-flowey-remastered, \
-  limit=1 \
+  tag=omega-flowey-remastered \
 ] run function animated_java:omegaflowey_tv_screen/remove/this
