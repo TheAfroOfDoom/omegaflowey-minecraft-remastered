@@ -1,5 +1,6 @@
 summon minecraft:text_display -133.5 45.0 44.99 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -23,6 +24,7 @@ summon minecraft:text_display -133.5 45.0 44.99 { \
 
 summon minecraft:text_display -133.5 44.0 44.99 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -53,6 +55,7 @@ data modify storage omegaflowey:bossfight active_player_display_uuid set from st
 
 summon minecraft:text_display -134.5 43.1875 44.99 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -86,6 +89,7 @@ function omegaflowey.main:summit/room/cave/active_player_display/update_value wi
 scoreboard players set #omegaflowey.bossfight.queue_disabled omegaflowey.global.flag 0
 summon minecraft:text_display -137.5 43.5 42.5 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -109,6 +113,7 @@ summon minecraft:text_display -137.5 43.5 42.5 { \
 }
 summon minecraft:interaction -137.5 43.5 42.5 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -129,6 +134,7 @@ data modify storage omegaflowey:decorative join_queue_interaction_uuid set from 
 
 summon minecraft:text_display -135.0 39.0 46.25 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -152,6 +158,7 @@ summon minecraft:text_display -135.0 39.0 46.25 { \
 }
 summon minecraft:interaction -135.0 39.0 46.25 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -172,6 +179,7 @@ data modify storage omegaflowey:decorative join_queue_2_interaction_uuid set fro
 
 summon minecraft:text_display -139.99 45.0 39.0 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -195,6 +203,7 @@ summon minecraft:text_display -139.99 45.0 39.0 { \
 
 summon minecraft:text_display -139.99 43.3125 39.0 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \

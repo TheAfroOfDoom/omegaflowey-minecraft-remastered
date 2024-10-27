@@ -1,5 +1,6 @@
 summon minecraft:text_display -109.5 78.0 33.0 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-outside", \
@@ -28,6 +29,7 @@ summon minecraft:text_display -109.5 78.0 33.0 { \
 
 summon minecraft:text_display -109.345947265625 83.625 32.349365234375 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-outside", \
@@ -56,6 +58,7 @@ summon minecraft:text_display -109.345947265625 83.625 32.349365234375 { \
 
 summon minecraft:text_display -109.36833640835407 82.4375 32.46571874706921 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-outside", \

@@ -2,6 +2,7 @@ function omegaflowey.main:summit/room/cave/cave_back/setup/text_displays
 
 summon minecraft:item_display -156.99 42.0 34.4375 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -26,6 +27,7 @@ summon minecraft:item_display -156.99 42.0 34.4375 { \
 
 summon minecraft:item_display -156.99 42.0 31.5625 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -122,6 +124,7 @@ summon minecraft:item_display -151.99 43.0 41.0 { \
 
 summon minecraft:item_display -147.5 42.125 45.5 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -131,6 +134,7 @@ summon minecraft:item_display -147.5 42.125 45.5 { \
     { \
       id: "minecraft:item", \
       Tags: [ \
+        "entityview.ignore", \
         "omega-flowey-remastered", \
         "decorative", \
         "decorative-cave", \

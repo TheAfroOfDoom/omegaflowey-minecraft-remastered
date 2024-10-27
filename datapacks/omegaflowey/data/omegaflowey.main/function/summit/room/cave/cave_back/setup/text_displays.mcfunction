@@ -27,6 +27,7 @@ summon minecraft:text_display -148.01 45.125 21.5 { \
 
 summon minecraft:text_display -156.99 43.75 33.0 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -50,6 +51,7 @@ summon minecraft:text_display -156.99 43.75 33.0 { \
 
 summon minecraft:text_display -156.99 40.3125 33.0 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -73,6 +75,7 @@ summon minecraft:text_display -156.99 40.3125 33.0 { \
 
 summon minecraft:text_display -156.99 43.125 34.4375 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
@@ -96,6 +99,7 @@ summon minecraft:text_display -156.99 43.125 34.4375 { \
 
 summon minecraft:text_display -156.99 43.125 31.5625 { \
   Tags: [ \
+    "entityview.ignore", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative-cave", \
