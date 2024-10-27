@@ -271,7 +271,7 @@ function omegaflowey.utils:log/self { text_component: '[ \
           "value": "/function omegaflowey.admin:queue/disable" \
         } \
       }, \
-      ": disables the join queue buttons and hides their text" \
+      ": disables the join queue buttons and hides their text", \
       "\\n", \
       "\\n", \
       { \
