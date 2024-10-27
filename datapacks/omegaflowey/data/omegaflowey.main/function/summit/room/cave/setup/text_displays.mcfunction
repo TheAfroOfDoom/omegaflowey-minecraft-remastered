@@ -378,7 +378,7 @@ summon minecraft:text_display -124.01 43.375 36.3125 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "Get hit 3 times\\nor less", "color": "aqua" }', \
+  text: '{ "text": "Get hit 7 times\\nor less", "color": "aqua" }', \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \

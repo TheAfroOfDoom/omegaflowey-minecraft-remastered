@@ -3,10 +3,10 @@ execute unless score @s omegaflowey.player.summit.has_survived_flowey matches 1 
   scoreboard players add #omegaflowey.telemetry.stats.total_distinct_wins omegaflowey.global.flag 1
 
 # Split rewards based on how many hits the player took
-execute if score #omegaflowey.bossfight.player_hit_count omegaflowey.global.flag matches ..3 run \
+execute if score #omegaflowey.bossfight.player_hit_count omegaflowey.global.flag matches ..7 run \
   function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/won/give_reward_hat_low_hits
 
-execute if score #omegaflowey.bossfight.player_hit_count omegaflowey.global.flag matches 4.. run \
+execute unless score #omegaflowey.bossfight.player_hit_count omegaflowey.global.flag matches ..7 run \
   function omegaflowey.entity:directorial/boss_fight/shared/stop/as_active_player/won/give_reward_hat
 
 # Play custom item pickup sound
