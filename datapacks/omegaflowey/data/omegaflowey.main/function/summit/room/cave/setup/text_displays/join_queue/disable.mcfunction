@@ -16,7 +16,7 @@ execute as @e[ \
 ] run data modify entity @s response set value false
 
 execute as @e[ \
-  x=-135.75, y=38.5, z=46.25, distance=..0.01, \
+  x=-135.0, y=39.0, z=46.25, distance=..0.01, \
   type=minecraft:text_display, \
   tag=join-queue-2-title, \
   limit=1 \
@@ -26,7 +26,7 @@ execute as @e[ \
 ]'
 
 execute as @e[ \
-  x=-135.75, y=38.5, z=46.25, distance=..0.01, \
+  x=-135.0, y=39.0, z=46.25, distance=..0.01, \
   type=minecraft:interaction, \
   tag=join-queue-2-interaction, \
   limit=1 \
