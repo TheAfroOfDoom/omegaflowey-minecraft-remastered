@@ -1,15 +1,6 @@
 ## The active player died after being damaged by a Flowey attack
 
-# Show custom death message
-# TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
-tellraw @a[ \
-  x=-186, dx=91, y=10, dy=95, z=12, dz=95, \
-  tag=omegaflowey.player \
-] [ \
-  { "selector": "@s"}, \
-  " was slain by ", \
-  { "text": "Omega Flowey", "color": "yellow" } \
-]
+function omegaflowey.entity:utils/damage/as_player/died/show_death_message
 
 # Run outside tvscreen death animation
 function omegaflowey.main:summit/room/outside/setup/tv_screen/death_animation with storage omegaflowey:decorative
