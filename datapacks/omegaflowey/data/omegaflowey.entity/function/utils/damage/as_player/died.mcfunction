@@ -8,7 +8,7 @@ tellraw @a[ \
 ] [ \
   { "selector": "@s"}, \
   " was slain by ", \
-  { "text": "Omega Flowey", "color": "green" } \
+  { "text": "Omega Flowey", "color": "yellow" } \
 ]
 
 # Run outside tvscreen death animation
