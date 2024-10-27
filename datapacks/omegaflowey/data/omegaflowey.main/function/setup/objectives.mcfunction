@@ -122,6 +122,8 @@ scoreboard objectives add omegaflowey.player.telemetry.id dummy
 scoreboard objectives add omegaflowey.player.telemetry.trigger.disable trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.enable trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.help trigger
+scoreboard objectives add omegaflowey.player.telemetry.trigger.new_page.booth trigger
+scoreboard objectives add omegaflowey.player.telemetry.trigger.new_page.bossfight trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.pop.booth trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.pop.bossfight trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.show.booth trigger

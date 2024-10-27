@@ -42,6 +42,25 @@ function omegaflowey.utils:log/self { text_component: '[ \
     } \
   }, \
   "\\n", \
+  { "text": "new_page: ", "color": "aqua" }, \
+  { \
+    "text": "booth", \
+    "color": "yellow", \
+    "clickEvent": { \
+      "action": "suggest_command", \
+      "value": "/trigger omegaflowey.player.telemetry.trigger.new_page.booth" \
+    } \
+  }, \
+  " ", \
+  { \
+    "text": "bossfight", \
+    "color": "yellow", \
+    "clickEvent": { \
+      "action": "suggest_command", \
+      "value": "/trigger omegaflowey.player.telemetry.trigger.new_page.bossfight" \
+    } \
+  }, \
+  "\\n", \
   "\\n", \
   { \
     "text": "stats", \
