@@ -127,7 +127,7 @@ execute as @e[ \
 ] run function gu:generate
 data modify storage omegaflowey:decorative join_queue_interaction_uuid set from storage gu:main out
 
-summon minecraft:text_display -135.75 38.5 46.25 { \
+summon minecraft:text_display -135.0 39.0 46.25 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
@@ -150,7 +150,7 @@ summon minecraft:text_display -135.75 38.5 46.25 { \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
-summon minecraft:interaction -135.75 38.5 46.25 { \
+summon minecraft:interaction -135.0 39.0 46.25 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "decorative", \
