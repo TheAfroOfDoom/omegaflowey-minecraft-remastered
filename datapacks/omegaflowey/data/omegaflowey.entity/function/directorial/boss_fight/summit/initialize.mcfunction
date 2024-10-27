@@ -25,6 +25,7 @@ scoreboard players set @s omegaflowey.boss-fight.progress.phase.i 0
 scoreboard players set @s omegaflowey.boss-fight.progress.phase.total 2
 
 scoreboard players set #omegaflowey.bossfight.attack_phase_total_count omegaflowey.global.flag 0
+scoreboard players set #omegaflowey.bossfight.player_died omegaflowey.global.flag 0
 
 # Initialize first cutscene
 function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/initialize
