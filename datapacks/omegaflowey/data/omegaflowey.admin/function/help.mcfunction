@@ -274,6 +274,26 @@ function omegaflowey.utils:log/self { text_component: '[ \
       ": disables the join queue buttons and hides their text", \
       "\\n", \
       "\\n", \
+      { "text": "death_message/ ", "color": "aqua" }, \
+      { \
+        "text": "global", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:death_message/set_global" \
+        } \
+      }, \
+      " ", \
+      { \
+        "text": "local", \
+        "color": "yellow", \
+        "clickEvent": { \
+          "action": "suggest_command", \
+          "value": "/function omegaflowey.admin:death_message/set_local" \
+        } \
+      }, \
+      "\\n", \
+      "\\n", \
       { \
         "text": "setup", \
         "color": "yellow", \
