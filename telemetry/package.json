@@ -1,0 +1,15 @@
+{
+  "name": "omegaflowey-telemetry",
+  "version": "1.0.0",
+  "description": "Hello World!",
+  "packageManager": "yarn@3.6.3",
+  "main": "main.js",
+  "author": "TheAfroOfDoom",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_OPTIONS='--require ./.pnp.cjs' electron ."
+  },
+  "devDependencies": {
+    "electron": "33.0.2"
+  }
+}
