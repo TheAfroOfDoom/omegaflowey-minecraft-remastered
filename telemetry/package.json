@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "build": "node scripts/esbuild.cjs",
-    "start": "electron ./dist/main.js"
+    "start": "electron ./dist/main.js",
+    "watch": "node scripts/esbuild.cjs --watch"
   },
   "devDependencies": {
     "electron": "33.0.2",
