@@ -7,9 +7,11 @@
   "author": "TheAfroOfDoom",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_OPTIONS='--require ./.pnp.cjs' electron ."
+    "build": "node scripts/esbuild.cjs",
+    "start": "NODE_OPTIONS='--require ./.pnp.cjs' electron ./dist/main.js"
   },
   "devDependencies": {
-    "electron": "33.0.2"
+    "electron": "33.0.2",
+    "esbuild": "0.24.0"
   }
 }
