@@ -7,6 +7,16 @@ async function main() {
     bundle: true,
     platform: "node",
     packages: "external",
+    plugins: [
+      {
+        name: "rebuild-notify",
+        setup(build) {
+          build.onEnd((result) => {
+            console.log(`build ended with ${result.errors.length} errors`);
+          });
+        },
+      },
+    ],
   });
 
   await ctx.watch();
