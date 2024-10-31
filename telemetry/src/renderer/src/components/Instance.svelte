@@ -19,7 +19,7 @@
     svg = d3
       .select(svg)
       .attr('id', `timeline-${idx}`)
-      .attr('width', instanceLength * 20)
+      .attr('width', instanceLength * 50)
 
     const dimensions = svg.node().getBoundingClientRect()
     let svgHeight = dimensions.height
