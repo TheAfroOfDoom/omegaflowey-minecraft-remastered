@@ -1,4 +1,5 @@
 import { readJSON } from "fs-extra";
+import JSON5 from "json5";
 import { BossfightEventName, Gamemode } from "./decode/schema";
 
 // Converts bossfight string data to corresponding JSON events
@@ -21,7 +22,14 @@ export const parseInstance = (instanceRaw: unknown) => {
   }
 
   const instances = [];
-  instances.push(parseRootEvent(instanceRaw[0]));
+  const rootEvent = parseRootEvent(instanceRaw[0]);
+  instances.push(rootEvent);
+
+  const { basetick } = rootEvent;
+
+  for (const eventRaw of instanceRaw.slice(1)) {
+    instances.push(parseEvent(eventRaw, basetick));
+  }
   return instances;
 };
 
@@ -49,8 +57,23 @@ export const parseRootEvent = (eventRaw: unknown) => {
   };
 };
 
-export const parseEvent = (event: unknown) => {
-  if (typeof event !== "string") {
+export const parseEvent = (eventRaw: unknown, basetick: number) => {
+  if (typeof eventRaw !== "string") {
     throw new Error("Invalid event: must be a string");
   }
+
+  const rawFields = eventRaw.split(";");
+  if (rawFields.length !== 3) {
+    throw new Error(`Invalid number of event fields: ${rawFields.length}`);
+  }
+
+  const [nameId, tick] = rawFields.slice(0, 2).map((s) => parseInt(s));
+  const dataRaw = rawFields[2];
+  const data = dataRaw !== "" ? JSON5.parse(dataRaw) : {};
+
+  return {
+    name: BossfightEventName[nameId],
+    tick: tick + basetick,
+    data,
+  };
 };

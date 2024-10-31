@@ -265,11 +265,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^20.9.0":
-  version: 20.17.3
-  resolution: "@types/node@npm:20.17.3"
+  version: 20.17.4
+  resolution: "@types/node@npm:20.17.4"
   dependencies:
     undici-types: ~6.19.2
-  checksum: 0a02f7a24dd7f7e238d79defeba6711c1d92d44a16fdbbaf4e663174bc55a8f14e3f83f9a5e65e2f59015539813f21775c4d23a1a8c7d9c6560cda998ca5a509
+  checksum: 63a8016ca4763e6be039d6f52ce358450d891cd2131243e975f2a6e06c78f1619e0d56d62aef724bcbf643e0249def7fe114fe72d46444ebb3df2e6774415f9a
   languageName: node
   linkType: hard
 
@@ -734,6 +734,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json5@npm:2.2.3":
+  version: 2.2.3
+  resolution: "json5@npm:2.2.3"
+  bin:
+    json5: lib/cli.js
+  checksum: 2a7436a93393830bce797d4626275152e37e877b265e94ca69c99e3d20c2b9dab021279146a39cdb700e71b2dd32a4cebd1514cd57cee102b1af906ce5040349
+  languageName: node
+  linkType: hard
+
 "jsonfile@npm:^4.0.0":
   version: 4.0.0
   resolution: "jsonfile@npm:4.0.0"
@@ -827,6 +836,7 @@ __metadata:
     electron: 33.0.2
     esbuild: 0.24.0
     fs-extra: 11.2.0
+    json5: 2.2.3
     typescript: 5.6.3
   languageName: unknown
   linkType: soft
