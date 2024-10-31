@@ -2,12 +2,11 @@
 
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: left;
   overflow: hidden;
+  padding: 10px;
   background-image: url('./wavy-lines.svg');
   background-size: cover;
-  user-select: none;
 }
 
 code {
@@ -27,18 +26,15 @@ code {
 }
 
 #app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 80px;
+  margin: 10px;
+  width: 100%;
 }
 
 .logo {
   margin-bottom: 20px;
   -webkit-user-drag: none;
-  height: 128px;
-  width: 128px;
+  height: 64;
+  width: 64px;
   will-change: filter;
   transition: filter 300ms;
 }

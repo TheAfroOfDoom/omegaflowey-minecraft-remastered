@@ -22,13 +22,17 @@
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
-    "@electron-toolkit/utils": "^3.0.0"
+    "@electron-toolkit/utils": "^3.0.0",
+    "d3": "7.9.0",
+    "json5": "2.2.3"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config-prettier": "^2.0.0",
     "@electron-toolkit/eslint-config-ts": "^2.0.0",
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@types/d3": "7.4.3",
+    "@types/json5": "2.2.0",
     "@types/node": "^20.14.8",
     "electron": "^31.0.2",
     "electron-builder": "^24.13.3",
