@@ -1,5 +1,6 @@
 import { app, BrowserWindow } from "electron";
 import { resolve } from "path";
+import { parseData } from "./decode";
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -10,6 +11,8 @@ const createWindow = () => {
   win.loadFile(resolve("./src/index.html"));
 };
 
-app.whenReady().then(() => {
+app.whenReady().then(async () => {
   createWindow();
+
+  console.log(await parseData("./data/raw.txt"));
 });
