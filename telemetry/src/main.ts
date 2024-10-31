@@ -1,5 +1,5 @@
-const { app, BrowserWindow } = require('electron');
-const { resolve } = require('path');
+import { app, BrowserWindow } from "electron";
+import { resolve } from "path";
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -7,7 +7,7 @@ const createWindow = () => {
     height: 600,
   });
 
-  win.loadFile(resolve('./index.html'));
+  win.loadFile(resolve("./src/index.html"));
 };
 
 app.whenReady().then(() => {

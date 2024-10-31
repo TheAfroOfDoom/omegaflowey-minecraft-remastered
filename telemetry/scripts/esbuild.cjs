@@ -1,6 +1,6 @@
 const { build } = require("esbuild");
 build({
-  entryPoints: ["main.js"],
+  entryPoints: ["src/main.ts"],
   outfile: "dist/main.js",
   bundle: true,
   platform: "node",
