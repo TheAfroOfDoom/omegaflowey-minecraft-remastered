@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { BossfightInstance } from '../lib/decode'
   import * as d3 from 'd3'
+  import JSON5 from 'json5'
   import { onMount } from 'svelte'
 
   export let data: {
@@ -57,6 +58,7 @@
         if (inspectSelection.node()) {
           inspectSelection.remove()
           d3.select(`#${eventId}-inspect-border`).remove()
+          d3.select(`#${eventId}-inspect-text`).remove()
         } else {
           const width = 100
           const height = 50
@@ -91,6 +93,22 @@
             .attr('height', height)
             .attr('fill', 'currentcolor')
             .attr('rx', 5)
+            .append('title')
+            .text(d.name)
+
+          svgSelection
+            .append('text')
+            .attr('id', `${eventId}-inspect-text`)
+            .attr('x', x + 5)
+            .attr('y', y + 20)
+            .classed('event-info-text', true)
+            .text(() => {
+              // No text if this is a root event / the data object is empty
+              if (!('data' in d) || Object.keys(d.data).length === 0) {
+                return ''
+              }
+              return JSON5.stringify(d.data)
+            })
         }
       })
 
