@@ -10,58 +10,64 @@
   const { instance, idx } = data
 
   const [rootEvent, ...events] = instance
-  const instanceStart = rootEvent.basetick
+  const instanceStart = rootEvent.tick
   const instanceEnd = events[events.length - 1].tick
   const instanceLength = (instanceEnd - instanceStart) / 20
 
   let svg
   onMount(() => {
-    svg = d3
+    const svgSelection = d3
       .select(svg)
       .attr('id', `timeline-${idx}`)
       .attr('width', instanceLength * 50)
+      .attr('height', 100)
 
-    const dimensions = svg.node().getBoundingClientRect()
+    const dimensions = svgSelection.node().getBoundingClientRect()
     let svgHeight = dimensions.height
     const svgWidth = dimensions.width
     const timeScale = d3.scaleLinear([0, instanceLength], [0, svgWidth])
 
-    const tickSecs = [0].concat(events.map((e) => (e.tick - instanceStart) / 20))
     const axis = d3
-      .axisBottom(timeScale)
-      .tickValues(tickSecs)
-      .tickFormat(d3.format('.2f'))
+      .axisTop(timeScale)
+      .ticks(d3.tickStep(0, instanceLength, 5))
       .tickPadding(20)
       .offset(20)
-    const axisElement = svg.append('g').classed('timeline-axis', true).call(axis)
+      .tickSize(3)
+    svgSelection.append('g').classed('timeline-axis', true).call(axis)
 
-    const minHeight = 20
+    const tickToWidth = (tick: number) => ((tick - instanceStart) / 20) * 50 + 20
+
+    // Add event data points
+    const minCy = 60
+    const eventPts = svgSelection
+      .selectAll('circle.event')
+      .data(instance)
+      .enter()
+      .append('circle')
+      .classed('event', true)
+      .attr('cx', (d) => tickToWidth(d.tick))
+      .attr('cy', minCy)
+      .attr('r', 10)
+
     let maxHeight = 0
-    let prevWidth: number
-    let height = minHeight
-    let prevHeight = 0
-    axisElement.selectAll('.tick').each(function () {
-      const transform = d3.select(this).attr('transform')
-      const width = parseFloat(transform.replaceAll(/^translate\(/g, '').replaceAll(/,0\)$/g, ''))
+    let cy = minCy
+    let prevCx: number
+    eventPts.each(function () {
+      const cx = parseFloat(d3.select(this).attr('cx'))
 
-      if (prevWidth === width) {
-        d3.select(this).classed('hidden', true)
+      if (prevCx !== undefined && cx - prevCx <= 20) {
+        cy += 20
+        maxHeight = Math.max(maxHeight, cy)
       } else {
-        if (prevWidth !== undefined && width - prevWidth <= 40) {
-          height += 20
-          maxHeight = Math.max(maxHeight, height)
-        } else {
-          height = minHeight
-        }
-        d3.select(this).attr('transform', `translate(${width}, ${height})`)
+        cy = minCy
       }
+      d3.select(this).attr('cy', cy)
 
-      prevHeight = height
-      prevWidth = width
+      prevCx = cx
     })
-    svg.attr('height', maxHeight + svgHeight)
+    svgSelection.attr('height', maxHeight + svgHeight)
 
-    svg = svg.node()
+    svg = svgSelection.node()
   })
 </script>
 

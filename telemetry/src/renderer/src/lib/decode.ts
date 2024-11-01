@@ -9,7 +9,7 @@ interface BossfightEvent {
 
 interface BossfightRootEvent {
   name: string
-  basetick: number
+  tick: number
   playerNumId: number
   playerNumGamemode: string
   playerHealth: number
@@ -40,7 +40,7 @@ export const parseInstance = (instanceRaw: unknown) => {
   const rootEvent = parseRootEvent(instanceRaw[0])
   instances.push(rootEvent)
 
-  const { basetick } = rootEvent
+  const { tick: basetick } = rootEvent
 
   for (const eventRaw of instanceRaw.slice(1)) {
     instances.push(parseEvent(eventRaw, basetick))
@@ -58,14 +58,14 @@ export const parseRootEvent = (eventRaw: unknown) => {
     throw new Error(`Invalid number of root event fields: ${rawFields.length}`)
   }
 
-  const [nameId, basetick, playerNumId, playerNumGamemode] = rawFields
+  const [nameId, tick, playerNumId, playerNumGamemode] = rawFields
     .slice(0, 4)
     .map((s) => parseInt(s))
   const playerHealth = rawFields[4]
 
   return {
     name: BossfightEventName[nameId],
-    basetick,
+    tick,
     playerNumId,
     playerNumGamemode: Gamemode[playerNumGamemode],
     playerHealth: parseInt(playerHealth)
