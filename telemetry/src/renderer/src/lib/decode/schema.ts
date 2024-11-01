@@ -57,6 +57,22 @@ export enum BossfightEventIcon {
   'player.damage' = '💔'
 }
 
+export enum BossfightStopReasonName {
+  'player_not_found' = 1,
+  'player_missing_tag' = 2,
+  'player_oob' = 3,
+  'player_died' = 4,
+  'player_survived' = 5,
+  'player_timeout' = 6
+}
+
+export enum BossfightStopReasonIcon {
+  'player_not_found' = '🔌',
+  'player_died' = '💀',
+  'player_survived' = '🏆',
+  'player_timeout' = '⏱️'
+}
+
 export enum Gamemode {
   survival = 0,
   creative = 1,

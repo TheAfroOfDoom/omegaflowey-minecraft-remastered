@@ -1,7 +1,7 @@
 <script lang="ts">
   import '../assets/event-color-schema.css'
-  import type { BossfightInstance } from '../lib/decode'
-  import { BossfightEventIcon } from '../lib/decode/schema'
+  import { isBossfightStopEvent, type BossfightInstance } from '../lib/decode'
+  import { BossfightEventIcon, BossfightStopReasonIcon } from '../lib/decode/schema'
   import * as d3 from 'd3'
   import JSON5 from 'json5'
   import { onMount } from 'svelte'
@@ -137,7 +137,18 @@
     eventPts.each(function (d) {
       this.classList.add(d.name)
 
-      const icon = BossfightEventIcon[d.name]
+      let icon
+      // Special icon cases
+      if ('data' in d) {
+        if (isBossfightStopEvent(d)) {
+          icon = BossfightStopReasonIcon[d.data.s]
+        }
+      }
+
+      if (icon === undefined) {
+        icon = BossfightEventIcon[d.name]
+      }
+
       if (icon !== undefined) {
         const eventPtSelection = d3.select(this).classed('hidden', true)
         const x = parseFloat(eventPtSelection.attr('cx')) - 13
