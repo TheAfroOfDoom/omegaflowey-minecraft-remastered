@@ -97,8 +97,6 @@
           .attr('height', height)
           .attr('fill', 'currentcolor')
           .attr('rx', 5)
-          .append('title')
-          .text(d.name)
 
         svgSelection
           .append('text')
@@ -114,6 +112,10 @@
             return JSON5.stringify(d.data)
           })
       })
+
+    eventPts.each(function (d) {
+      d3.select(this).append('title').text(d.name)
+    })
 
     let maxHeight = 0
     let cy = minCy
