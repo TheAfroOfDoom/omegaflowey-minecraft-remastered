@@ -59,57 +59,58 @@
           inspectSelection.remove()
           d3.select(`#${eventId}-inspect-border`).remove()
           d3.select(`#${eventId}-inspect-text`).remove()
-        } else {
-          const width = 100
-          const height = 50
-
-          const borderPadding = 10
-          const widthBorder = width + borderPadding
-          const heightBorder = height + borderPadding
-
-          const xBorder = parseFloat(d3.select(event.target).attr('cx'))
-          const yBorder = parseFloat(d3.select(event.target).attr('cy'))
-          const x = xBorder + borderPadding / 2
-          const y = yBorder + borderPadding / 2
-
-          svgSelection
-            .append('rect')
-            .attr('id', `${eventId}-inspect-border`)
-            .classed('event-info-border', true)
-            .attr('x', xBorder)
-            .attr('y', yBorder)
-            .attr('width', widthBorder)
-            .attr('height', heightBorder)
-            .attr('fill', 'currentcolor')
-            .attr('rx', 5)
-
-          svgSelection
-            .append('rect')
-            .attr('id', `${eventId}-inspect`)
-            .classed('event-info', true)
-            .attr('x', x)
-            .attr('y', y)
-            .attr('width', width)
-            .attr('height', height)
-            .attr('fill', 'currentcolor')
-            .attr('rx', 5)
-            .append('title')
-            .text(d.name)
-
-          svgSelection
-            .append('text')
-            .attr('id', `${eventId}-inspect-text`)
-            .attr('x', x + 5)
-            .attr('y', y + 20)
-            .classed('event-info-text', true)
-            .text(() => {
-              // No text if this is a root event / the data object is empty
-              if (!('data' in d) || Object.keys(d.data).length === 0) {
-                return ''
-              }
-              return JSON5.stringify(d.data)
-            })
+          return
         }
+
+        const width = 100
+        const height = 50
+
+        const borderPadding = 10
+        const widthBorder = width + borderPadding
+        const heightBorder = height + borderPadding
+
+        const xBorder = parseFloat(d3.select(event.target).attr('cx'))
+        const yBorder = parseFloat(d3.select(event.target).attr('cy'))
+        const x = xBorder + borderPadding / 2
+        const y = yBorder + borderPadding / 2
+
+        svgSelection
+          .append('rect')
+          .attr('id', `${eventId}-inspect-border`)
+          .classed('event-info-border', true)
+          .attr('x', xBorder)
+          .attr('y', yBorder)
+          .attr('width', widthBorder)
+          .attr('height', heightBorder)
+          .attr('fill', 'currentcolor')
+          .attr('rx', 5)
+
+        svgSelection
+          .append('rect')
+          .attr('id', `${eventId}-inspect`)
+          .classed('event-info', true)
+          .attr('x', x)
+          .attr('y', y)
+          .attr('width', width)
+          .attr('height', height)
+          .attr('fill', 'currentcolor')
+          .attr('rx', 5)
+          .append('title')
+          .text(d.name)
+
+        svgSelection
+          .append('text')
+          .attr('id', `${eventId}-inspect-text`)
+          .attr('x', x + 5)
+          .attr('y', y + 20)
+          .classed('event-info-text', true)
+          .text(() => {
+            // No text if this is a root event / the data object is empty
+            if (!('data' in d) || Object.keys(d.data).length === 0) {
+              return ''
+            }
+            return JSON5.stringify(d.data)
+          })
       })
 
     let maxHeight = 0
