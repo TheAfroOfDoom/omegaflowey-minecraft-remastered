@@ -19,7 +19,7 @@
     const svgSelection = d3
       .select(svg)
       .attr('id', `instance-${idx}`)
-      .attr('width', instanceLength * 50 + 50)
+      .attr('width', instanceLength * 50 + 150)
       .attr('height', 100)
 
     const dimensions = svgSelection.node().getBoundingClientRect()
@@ -65,10 +65,10 @@
           const widthBorder = width + borderPadding
           const heightBorder = height + borderPadding
 
-          const x = parseFloat(d3.select(event.target).attr('cx')) - width / 2
-          const y = parseFloat(d3.select(event.target).attr('cy')) + 10
-          const xBorder = x - borderPadding / 2
-          const yBorder = y - borderPadding / 2
+          const xBorder = parseFloat(d3.select(event.target).attr('cx'))
+          const yBorder = parseFloat(d3.select(event.target).attr('cy'))
+          const x = xBorder + borderPadding / 2
+          const y = yBorder + borderPadding / 2
 
           svgSelection
             .append('rect')
