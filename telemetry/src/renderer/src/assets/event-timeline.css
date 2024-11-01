@@ -39,8 +39,15 @@
   transform: translate(0, 40px);
 }
 
-.hidden {
-  display: none;
+.event.hidden {
+  fill: rgba(0, 0, 0, 0);
+}
+
+.event-icon {
+  fill: green;
+  font-size: 18px;
+  font-style: normal;
+  user-select: none;
 }
 
 .event-info-border {

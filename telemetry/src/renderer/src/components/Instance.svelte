@@ -1,6 +1,7 @@
 <script lang="ts">
   import '../assets/event-color-schema.css'
   import type { BossfightInstance } from '../lib/decode'
+  import { BossfightEventIcon } from '../lib/decode/schema'
   import * as d3 from 'd3'
   import JSON5 from 'json5'
   import { onMount } from 'svelte'
@@ -114,11 +115,6 @@
           })
       })
 
-    // Add name class to each event point for color schema
-    eventPts.each(function (d) {
-      this.classList.add(d.name)
-    })
-
     let maxHeight = 0
     let cy = minCy
     let prevCx: number
@@ -136,6 +132,26 @@
       prevCx = cx
     })
     svgSelection.attr('height', maxHeight + svgHeight)
+
+    // Add name class to each event point for color schema
+    eventPts.each(function (d) {
+      this.classList.add(d.name)
+
+      const icon = BossfightEventIcon[d.name]
+      if (icon !== undefined) {
+        const eventPtSelection = d3.select(this).classed('hidden', true)
+        const x = parseFloat(eventPtSelection.attr('cx')) - 13
+        const y = parseFloat(eventPtSelection.attr('cy')) + 6
+        const id = eventPtSelection.attr('id')
+
+        svgSelection
+          .insert('text', `#${id}`)
+          .classed('event-icon', true)
+          .text(icon)
+          .attr('x', x)
+          .attr('y', y)
+      }
+    })
 
     svg = svgSelection.node()
   })
