@@ -17,17 +17,21 @@
   const instanceEnd = events[events.length - 1].tick
   const instanceLength = (instanceEnd - instanceStart) / 20
 
+  let zoomScale = 1
   let svg
-  onMount(() => {
+
+  function render() {
+    d3.select(svg).selectAll('*').remove()
+
     const svgSelection = d3
       .select(svg)
       .attr('id', `instance-${idx}`)
-      .attr('width', instanceLength * 50 + 150)
+      .attr('width', (instanceLength * 50 + 150) * zoomScale)
       .attr('height', 100)
 
     const dimensions = svgSelection.node().getBoundingClientRect()
     let svgHeight = dimensions.height
-    const timeScale = d3.scaleLinear([0, instanceLength], [0, instanceLength * 50])
+    const timeScale = d3.scaleLinear([0, instanceLength], [0, instanceLength * 50 * zoomScale])
 
     const axis = d3
       .axisTop(timeScale)
@@ -37,7 +41,7 @@
       .tickSize(3)
     svgSelection.append('g').classed('timeline-axis', true).call(axis)
 
-    const tickToWidth = (tick: number) => ((tick - instanceStart) / 20) * 50 + 20
+    const tickToWidth = (tick: number) => ((tick - instanceStart) / 20) * 50 * zoomScale + 20
 
     // Add event data points
     const minCy = 60
@@ -165,7 +169,20 @@
     })
 
     svg = svgSelection.node()
+  }
+
+  function onWheel(event) {
+    if (!event.ctrlKey) {
+      return
+    }
+    zoomScale = Math.max(0.1, zoomScale + -Math.sign(event.deltaY) * 0.1)
+    render()
+  }
+
+  onMount(() => {
+    render()
   })
 </script>
 
+<svelte:window on:wheel={onWheel} />
 <svg bind:this={svg} class="timeline" />
