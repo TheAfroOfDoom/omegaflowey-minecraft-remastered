@@ -1,0 +1,65 @@
+@import './base.css';
+
+.event-timeline-container {
+  width: 100%;
+  height: 90%;
+  background: gray;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.event-timeline-title {
+  color: white;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.event-timeline-content {
+  width: 100%;
+  height: 90%;
+  background: white;
+  color: black;
+  padding: 10px;
+  border: medium solid black;
+  /* background-image: repeating-linear-gradient(white, white 100px, gray 100px, gray 105px); */
+  overflow: auto;
+  display: grid;
+}
+
+.timeline {
+  padding: 10px;
+}
+
+.timeline-container {
+  padding: 10px;
+}
+
+.timeline-axis {
+  font-size: 1em;
+  transform: translate(0, 40px);
+}
+
+.event.hidden {
+  fill: rgba(0, 0, 0, 0);
+}
+
+.event-icon {
+  fill: green;
+  font-size: 18px;
+  font-style: normal;
+  user-select: none;
+}
+
+.event-info-border {
+  border: thin solid black;
+  color: gray;
+  padding: 3px;
+}
+
+.event-info {
+  color: white;
+}
+
+.event-info-text {
+  color: black;
+}

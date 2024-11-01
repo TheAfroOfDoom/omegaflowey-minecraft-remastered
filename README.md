@@ -29,8 +29,7 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 1. Install [`Node.js >= 16.10`](https://nodejs.org/en/download)
 2. Install [`Yarn 3.6.3`](https://v3.yarnpkg.com/getting-started/install) by running `corepack enable`
 3. Initialize the repo by running `yarn`
-4. Enable Yarn's Plug'n'Play with VSCode by running `yarn dlx @yarnpkg/sdks vscode`
-5. Copy-paste `.env.EXAMPLE` and rename it to `.env`
+4. Copy-paste `.env.EXAMPLE` and rename it to `.env`
 
    1. Replace all the paths in your new `.env` with paths on your local machine -- e.g. replacing `afro` with `<YOUR_USERNAME>`.
 
@@ -48,7 +47,7 @@ Since then I've gained a lot of skills both in Minecraft map development and in 
 
          1. **Make sure to point to the doubly nested folder** -- e.g. `.../versions/1.21/1.21`
 
-6. Run `yarn down` to extract the Minecraft world to your local Minecraft's `saves` directory (so you can open the world in-game)
+5. Run `yarn down` to extract the Minecraft world to your local Minecraft's `saves` directory (so you can open the world in-game)
 
 </details>
 
