@@ -1,4 +1,5 @@
 <script lang="ts">
+  import '../assets/event-color-schema.css'
   import type { BossfightInstance } from '../lib/decode'
   import * as d3 from 'd3'
   import JSON5 from 'json5'
@@ -112,6 +113,11 @@
             return JSON5.stringify(d.data)
           })
       })
+
+    // Add name class to each event point for color schema
+    eventPts.each(function (d) {
+      this.classList.add(d.name)
+    })
 
     let maxHeight = 0
     let cy = minCy
