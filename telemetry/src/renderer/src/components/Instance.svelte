@@ -18,7 +18,7 @@
   onMount(() => {
     const svgSelection = d3
       .select(svg)
-      .attr('id', `timeline-${idx}`)
+      .attr('id', `instance-${idx}`)
       .attr('width', instanceLength * 50 + 50)
       .attr('height', 100)
 
@@ -43,44 +43,55 @@
       .data(instance)
       .enter()
       .append('circle')
-      .attr('id', (_, eventIdx) => `instance-${idx}-${eventIdx}`)
+      .attr('id', (_, eventIdx) => `instance-${idx}-event-${eventIdx}`)
       .classed('event', true)
       .attr('cx', (d) => tickToWidth(d.tick))
       .attr('cy', minCy)
       .attr('r', 10)
-      .on('click', (event, d) => {
+      .on('click', function (event, d) {
+        const eventId = d3.select(this).attr('id')
         console.log({ event, d })
-        const width = 100
-        const height = 50
 
-        const borderPadding = 10
-        const widthBorder = width + borderPadding
-        const heightBorder = height + borderPadding
+        // Remove inspect if it already exists (toggle)
+        const inspectSelection = d3.select(`#${eventId}-inspect`)
+        if (inspectSelection.node()) {
+          inspectSelection.remove()
+          d3.select(`#${eventId}-inspect-border`).remove()
+        } else {
+          const width = 100
+          const height = 50
 
-        const x = parseFloat(d3.select(event.target).attr('cx')) - width / 2
-        const y = parseFloat(d3.select(event.target).attr('cy')) + 10
-        const xBorder = x - borderPadding / 2
-        const yBorder = y - borderPadding / 2
+          const borderPadding = 10
+          const widthBorder = width + borderPadding
+          const heightBorder = height + borderPadding
 
-        svgSelection
-          .append('rect')
-          .classed('event-info-border', true)
-          .attr('x', xBorder)
-          .attr('y', yBorder)
-          .attr('width', widthBorder)
-          .attr('height', heightBorder)
-          .attr('fill', 'currentcolor')
-          .attr('rx', 5)
+          const x = parseFloat(d3.select(event.target).attr('cx')) - width / 2
+          const y = parseFloat(d3.select(event.target).attr('cy')) + 10
+          const xBorder = x - borderPadding / 2
+          const yBorder = y - borderPadding / 2
 
-        svgSelection
-          .append('rect')
-          .classed('event-info', true)
-          .attr('x', x)
-          .attr('y', y)
-          .attr('width', width)
-          .attr('height', height)
-          .attr('fill', 'currentcolor')
-          .attr('rx', 5)
+          svgSelection
+            .append('rect')
+            .attr('id', `${eventId}-inspect-border`)
+            .classed('event-info-border', true)
+            .attr('x', xBorder)
+            .attr('y', yBorder)
+            .attr('width', widthBorder)
+            .attr('height', heightBorder)
+            .attr('fill', 'currentcolor')
+            .attr('rx', 5)
+
+          svgSelection
+            .append('rect')
+            .attr('id', `${eventId}-inspect`)
+            .classed('event-info', true)
+            .attr('x', x)
+            .attr('y', y)
+            .attr('width', width)
+            .attr('height', height)
+            .attr('fill', 'currentcolor')
+            .attr('rx', 5)
+        }
       })
 
     let maxHeight = 0
