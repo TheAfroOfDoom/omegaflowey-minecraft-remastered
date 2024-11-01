@@ -38,7 +38,9 @@ export enum BossfightEventName {
 }
 
 export enum BossfightEventIcon {
+  'bossfight.phase.cutscene.start' = '🎥',
   'bossfight.phase.attack.start' = '🚩',
+  'bossfight.phase.soul.start' = '👻',
   'bossfight.phase.warn.start' = '⚠️',
   'attack.bomb.start' = '⚔️',
   'attack.dentata_snakes.start' = '⚔️',
@@ -54,7 +56,9 @@ export enum BossfightEventIcon {
   'attack.homing_vines.end' = '🛡️',
   'attack.x_bullets_lower.end' = '🛡️',
   'attack.x_bullets_upper.end' = '🛡️',
-  'player.damage' = '💔'
+  'player.damage' = '💔',
+  'soul.touch' = '✅',
+  'player.heal' = '💚'
 }
 
 export enum BossfightStopReasonName {
