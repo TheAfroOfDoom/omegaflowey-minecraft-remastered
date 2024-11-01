@@ -53,7 +53,11 @@
       .attr('r', 10)
       .on('click', function (event, d) {
         const eventId = d3.select(this).attr('id')
-        console.log({ event, d })
+
+        // No inspect if this is a root event / the data object is empty
+        if (!('data' in d) || Object.keys(d.data).length === 0) {
+          return
+        }
 
         // Remove inspect if it already exists (toggle)
         const inspectSelection = d3.select(`#${eventId}-inspect`)
@@ -104,13 +108,7 @@
           .attr('x', x + 5)
           .attr('y', y + 20)
           .classed('event-info-text', true)
-          .text(() => {
-            // No text if this is a root event / the data object is empty
-            if (!('data' in d) || Object.keys(d.data).length === 0) {
-              return ''
-            }
-            return JSON5.stringify(d.data)
-          })
+          .text(() => JSON5.stringify(d.data))
       })
 
     eventPts.each(function (d) {
