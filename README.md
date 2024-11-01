@@ -17,6 +17,8 @@ Back in early 2016 I released `Omega Flowey in Minecraft`.
 
 Since then I've gained a lot of skills both in Minecraft map development and in programming generally. This repo will store any and everything relating to development of a remaster of the original map for modern Minecraft version(s) with better gameplay, performance, and visuals.
 
+## [Development Videos](https://www.youtube.com/playlist?list=PLg_hm2zl98YuYUUim80MvHCoQ9GJVVtLx)
+
 ## Contributing
 
 ### Setup
