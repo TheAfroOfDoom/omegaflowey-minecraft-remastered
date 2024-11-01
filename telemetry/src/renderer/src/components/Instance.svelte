@@ -19,13 +19,12 @@
     const svgSelection = d3
       .select(svg)
       .attr('id', `timeline-${idx}`)
-      .attr('width', instanceLength * 50)
+      .attr('width', instanceLength * 50 + 50)
       .attr('height', 100)
 
     const dimensions = svgSelection.node().getBoundingClientRect()
     let svgHeight = dimensions.height
-    const svgWidth = dimensions.width
-    const timeScale = d3.scaleLinear([0, instanceLength], [0, svgWidth])
+    const timeScale = d3.scaleLinear([0, instanceLength], [0, instanceLength * 50])
 
     const axis = d3
       .axisTop(timeScale)
@@ -44,10 +43,45 @@
       .data(instance)
       .enter()
       .append('circle')
+      .attr('id', (_, eventIdx) => `instance-${idx}-${eventIdx}`)
       .classed('event', true)
       .attr('cx', (d) => tickToWidth(d.tick))
       .attr('cy', minCy)
       .attr('r', 10)
+      .on('click', (event, d) => {
+        console.log({ event, d })
+        const width = 100
+        const height = 50
+
+        const borderPadding = 10
+        const widthBorder = width + borderPadding
+        const heightBorder = height + borderPadding
+
+        const x = parseFloat(d3.select(event.target).attr('cx')) - width / 2
+        const y = parseFloat(d3.select(event.target).attr('cy')) + 10
+        const xBorder = x - borderPadding / 2
+        const yBorder = y - borderPadding / 2
+
+        svgSelection
+          .append('rect')
+          .classed('event-info-border', true)
+          .attr('x', xBorder)
+          .attr('y', yBorder)
+          .attr('width', widthBorder)
+          .attr('height', heightBorder)
+          .attr('fill', 'currentcolor')
+          .attr('rx', 5)
+
+        svgSelection
+          .append('rect')
+          .classed('event-info', true)
+          .attr('x', x)
+          .attr('y', y)
+          .attr('width', width)
+          .attr('height', height)
+          .attr('fill', 'currentcolor')
+          .attr('rx', 5)
+      })
 
     let maxHeight = 0
     let cy = minCy
