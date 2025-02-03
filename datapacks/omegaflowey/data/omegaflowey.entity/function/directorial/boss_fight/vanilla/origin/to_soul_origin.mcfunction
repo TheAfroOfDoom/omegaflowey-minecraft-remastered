@@ -1,3 +1,3 @@
 # assumes the executor is currently within the main arena and wants to move to the soul arena
-# NOTE: TAG_SUMMIT_HARDCODED
+# NOTE: TAG_VANILLA_HARDCODED
 teleport @s ~ ~ ~

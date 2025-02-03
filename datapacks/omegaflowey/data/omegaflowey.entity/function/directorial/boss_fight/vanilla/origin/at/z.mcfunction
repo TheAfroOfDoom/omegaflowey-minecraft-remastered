@@ -1,1 +1,2 @@
-$execute positioned ~ ~ 96.5 run $(command)
+# NOTE: TAG_VANILLA_HARDCODED
+$execute positioned ~ ~ -12.5 run $(command)
