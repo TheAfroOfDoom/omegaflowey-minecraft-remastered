@@ -1,7 +1,8 @@
-function omegaflowey.entity:directorial/boss_fight/summit/origin/setup
-function omegaflowey.entity:directorial/boss_fight/summit/soul_origin/setup
+function omegaflowey.entity:directorial/boss_fight/vanilla/origin/setup
+# TODO soul origin
+# function omegaflowey.entity:directorial/boss_fight/vanilla/soul_origin/setup
 
-function omegaflowey.entity:directorial/boss_fight/summit/player/queue/reset
+# function omegaflowey.entity:directorial/boss_fight/summit/player/queue/reset
 
 # reset flag that prevents us from duplicating tvscreen model on bossfight phase changes
 scoreboard players set #omegaflowey.bossfight.skip_resummon_tvscreen omegaflowey.global.flag 0
