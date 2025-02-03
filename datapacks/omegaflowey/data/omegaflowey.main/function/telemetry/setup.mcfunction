@@ -16,7 +16,7 @@ execute unless data storage omegaflowey:telemetry temp run \
 execute unless score #omegaflowey.telemetry.next_player_id omegaflowey.global.flag matches 0.. run \
   scoreboard players set #omegaflowey.telemetry.next_player_id omegaflowey.global.flag 0
 execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 0.. run \
-  scoreboard players set #omegaflowey.telemetry.enabled omegaflowey.global.flag 1
+  scoreboard players set #omegaflowey.telemetry.enabled omegaflowey.global.flag 0
 
 function omegaflowey.main:telemetry/setup/initialize_booth_data
 function omegaflowey.main:telemetry/setup/pages

@@ -5,6 +5,7 @@
 # 3: spectator
 
 ## name
+# TODO maybe vanilla map telemetry? unlikely though
 data modify storage omegaflowey:telemetry schema_bossfight_name set value { \
   "root.start": 0, \
   "root.end": 1, \
