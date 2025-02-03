@@ -102,7 +102,7 @@ module.exports = {
       sounds: `yarn exec pwsh -Command "./package-scripts/list-sound-stats.ps1" -Path "resourcepack/assets/omega-flowey/sounds" -Out "resourcepack/assets/omega-flowey/sounds/stats.txt"`,
     },
     sync: {
-      default: 'nps sync.summit',
+      default: 'nps sync.world',
       world: {
         default: 'nps sync.world.up',
         down: `node ./package-scripts/sync-world --down ${worldSyncArgs}`,
