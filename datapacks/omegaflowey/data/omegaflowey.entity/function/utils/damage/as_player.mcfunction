@@ -35,7 +35,8 @@ function omegaflowey.entity:shared/run_as_active_player_or_spectator { \
 scoreboard players add #omegaflowey.bossfight.player_hit_count omegaflowey.global.flag 1
 scoreboard players set #omegaflowey.bossfight.player_is_damage_immune omegaflowey.global.flag 1
 
-schedule function omegaflowey.main:summit/room/cave/active_player_health_display/scheduled 2t append
+# TODO vanilla map active player display
+# schedule function omegaflowey.main:summit/room/cave/active_player_health_display/scheduled 2t append
 
 # Reset damage immunity after 0.5s
 # https://minecraft.wiki/w/Damage#Immunity
