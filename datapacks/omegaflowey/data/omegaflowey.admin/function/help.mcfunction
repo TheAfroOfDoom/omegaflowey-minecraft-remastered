@@ -1,4 +1,4 @@
-function omegaflowey.utils:log/self { text_component: '[ \
+# function omegaflowey.utils:log/self { text_component: '[ \
   { "text": "", "color": "white", "bold": false, "extra": \
     [ \
       { "text": "Admin menu:\\n", "color": "aqua", "bold": true }, \
