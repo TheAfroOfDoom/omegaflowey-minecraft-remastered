@@ -13,7 +13,7 @@ scoreboard players operation @s omegaflowey.attack.bullets.remaining = @s omegaf
 
 # Determine if this indicator belongs to the right/left eye
 execute store result score @s omegaflowey.math.0 run data get entity @s Pos[0] 100
-scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.bossfight.summit.origin.x omegaflowey.global.flag
+scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.bossfight.vanilla.origin.x omegaflowey.global.flag
 execute if score @s omegaflowey.math.0 matches 0.. run tag @s add indicator.left
 
 # Face nearest player
