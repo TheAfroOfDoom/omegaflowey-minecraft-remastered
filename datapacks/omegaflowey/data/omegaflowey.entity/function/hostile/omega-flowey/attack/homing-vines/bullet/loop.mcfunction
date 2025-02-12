@@ -8,8 +8,8 @@ execute if entity @s[tag=!cant-damage] run function omegaflowey.entity:utils/dam
 
 # Check if inside arena
 scoreboard players set @s omegaflowey.math.0 0
-function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
-  command: "execute positioned ~-25.0 ~-5.0 ~-7.5 if entity @s[dx=50,dy=10,dz=-23] run \
+function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/position { \
+  command: "execute positioned ~-25.0 ~-5.0 ~7.5 if entity @s[dx=50,dy=10,dz=23] run \
     scoreboard players set @s omegaflowey.math.0 1\
   " \
 }

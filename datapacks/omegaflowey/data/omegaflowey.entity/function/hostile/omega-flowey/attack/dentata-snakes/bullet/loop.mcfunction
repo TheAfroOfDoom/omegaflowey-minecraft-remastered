@@ -6,8 +6,8 @@ function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 
 # Check if inside arena
 scoreboard players set @s omegaflowey.math.0 0
-function omegaflowey.entity:directorial/boss_fight/summit/origin/at/position { \
-  command: "execute positioned ~12.5 ~-17.0 ~-11.0 if entity @s[dx=-25,dy=40,dz=-19] run \
+function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/position { \
+  command: "execute positioned ~12.5 ~-17.0 ~11.0 if entity @s[dx=-25,dy=40,dz=19] run \
     scoreboard players set @s omegaflowey.math.0 1\
   " \
 }
