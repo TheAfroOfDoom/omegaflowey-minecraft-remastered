@@ -3,13 +3,13 @@ execute if score @s omegaflowey.attack.bullets.count matches 0 run scoreboard pl
 execute unless score @s omegaflowey.attack.bullets.count matches 0 run scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
 
 # bullet head (begin animation)
-$execute if score @s omegaflowey.attack.bullets.count matches 0 run function omegaflowey.entity:directorial/boss_fight/summit/origin/at/y { \
+$execute if score @s omegaflowey.attack.bullets.count matches 0 run function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/y { \
   command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:omegaflowey_dentata_snake_ball/summon { \
     args: { animation: 'omegaflowey_roll_bite', start_animation: true } \
   }" \
 }
 # bullet tail
-$execute unless score @s omegaflowey.attack.bullets.count matches 0 run function omegaflowey.entity:directorial/boss_fight/summit/origin/at/y { \
+$execute unless score @s omegaflowey.attack.bullets.count matches 0 run function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/y { \
   command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:omegaflowey_dentata_snake_ball/summon/tail" \
 }
 
