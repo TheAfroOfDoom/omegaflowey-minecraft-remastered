@@ -112,12 +112,6 @@ scoreboard objectives add omegaflowey.player.leave.previous dummy
 scoreboard objectives add omegaflowey.player.health health
 scoreboard objectives add omegaflowey.player.shake.pitch dummy
 scoreboard objectives add omegaflowey.player.shake.yaw dummy
-scoreboard objectives add omegaflowey.player.summit.has_died_to_flowey dummy
-scoreboard objectives add omegaflowey.player.summit.has_fought_flowey dummy
-scoreboard objectives add omegaflowey.player.summit.has_finished_parkour dummy
-scoreboard objectives add omegaflowey.player.summit.has_joined_queue_before dummy
-scoreboard objectives add omegaflowey.player.summit.has_survived_flowey dummy
-scoreboard objectives add omegaflowey.player.summit.has_visited_booth dummy
 scoreboard objectives add omegaflowey.player.telemetry.id dummy
 scoreboard objectives add omegaflowey.player.telemetry.trigger.disable trigger
 scoreboard objectives add omegaflowey.player.telemetry.trigger.enable trigger
@@ -165,3 +159,11 @@ scoreboard objectives add omegaflowey.soul.flag dummy
 scoreboard objectives add omegaflowey.util.bounce.yaw dummy
 # the initial yaw an entity starts with before running bounce calculations
 scoreboard objectives add omegaflowey.util.bounce.yaw.initial dummy
+
+## DEPRECATED
+scoreboard objectives add omegaflowey.player.summit.has_died_to_flowey dummy
+scoreboard objectives add omegaflowey.player.summit.has_fought_flowey dummy
+scoreboard objectives add omegaflowey.player.summit.has_finished_parkour dummy
+scoreboard objectives add omegaflowey.player.summit.has_joined_queue_before dummy
+scoreboard objectives add omegaflowey.player.summit.has_survived_flowey dummy
+scoreboard objectives add omegaflowey.player.summit.has_visited_booth dummy

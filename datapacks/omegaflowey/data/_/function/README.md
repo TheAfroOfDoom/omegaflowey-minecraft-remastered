@@ -4,7 +4,6 @@ This directory contains convenience functions for developers for quicker calls t
 
 ## Functions
 
-- `admin`: shows the Summit admin help menu
 - `attack`: runs the pre-defined attack's `start` function
   - `attack/random/N`: randomly starts an attack from the `boss_fight`'s attack phase `N` (e.g. `N = 0`)
 - `boss_fight`: starts the vanilla boss fight
