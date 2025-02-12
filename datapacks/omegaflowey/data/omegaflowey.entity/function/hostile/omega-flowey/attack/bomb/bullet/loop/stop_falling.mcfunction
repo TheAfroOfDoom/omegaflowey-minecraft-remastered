@@ -1,5 +1,5 @@
 # Keep consistent y-pos
-function omegaflowey.entity:directorial/boss_fight/summit/origin/at/y { \
+function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/y { \
   command: "teleport @s ~ ~-4.0 ~" \
 }
 
