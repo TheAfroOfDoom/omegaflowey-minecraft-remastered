@@ -13,7 +13,7 @@ scoreboard players operation @s omegaflowey.attack.position.y = #omegaflowey.bos
 scoreboard players remove @s omegaflowey.attack.position.y 400
 
 # Randomize z-position to summon indicator at
-execute store result score @s omegaflowey.attack.position.z run random value -3200..-900
+execute store result score @s omegaflowey.attack.position.z run random value 900..3200
 scoreboard players operation @s omegaflowey.attack.position.z += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
 
 # Store new position and yaw
