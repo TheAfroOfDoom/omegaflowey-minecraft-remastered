@@ -1,7 +1,7 @@
 # Check if escaped arena past z-bound towarsd flowey
 scoreboard players set @s omegaflowey.math.0 0
 function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/position { \
-  command: "execute positioned ~1000.0 ~-7.0 ~-11.0 if entity @s[dx=-2000,dy=10,dz=1000] run \
+  command: "execute positioned ~1000.0 ~-7.0 ~11.0 if entity @s[dx=-2000,dy=10,dz=-1000] run \
     scoreboard players set @s omegaflowey.math.0 1" \
 }
 
@@ -18,12 +18,12 @@ scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.van
 execute store result storage omegaflowey:attack.dentata-snakes.bounce x_positive_x float 0.01 run scoreboard players get @s omegaflowey.math.0
 data modify storage omegaflowey:attack.dentata-snakes.bounce x_positive_dx set value -50
 
-scoreboard players set @s omegaflowey.math.0 -3000
+scoreboard players set @s omegaflowey.math.0 1100
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
 execute store result storage omegaflowey:attack.dentata-snakes.bounce z_negative_z float 0.01 run scoreboard players get @s omegaflowey.math.0
 data modify storage omegaflowey:attack.dentata-snakes.bounce z_negative_dz set value 25
 
-scoreboard players set @s omegaflowey.math.0 -1100
+scoreboard players set @s omegaflowey.math.0 3000
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
 execute store result storage omegaflowey:attack.dentata-snakes.bounce z_positive_z float 0.01 run scoreboard players get @s omegaflowey.math.0
 data modify storage omegaflowey:attack.dentata-snakes.bounce z_positive_dz set value -25
