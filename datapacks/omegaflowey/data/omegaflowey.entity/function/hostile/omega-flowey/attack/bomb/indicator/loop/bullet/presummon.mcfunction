@@ -3,7 +3,7 @@ execute store result score @s omegaflowey.attack.position.x run random value -15
 scoreboard players operation @s omegaflowey.attack.position.x *= #omegaflowey.const.10 omegaflowey.math.const
 scoreboard players operation @s omegaflowey.attack.position.x += #omegaflowey.bossfight.vanilla.origin.x omegaflowey.global.flag
 
-execute store result score @s omegaflowey.attack.position.z run random value -315..-85
+execute store result score @s omegaflowey.attack.position.z run random value 85..315
 scoreboard players operation @s omegaflowey.attack.position.z *= #omegaflowey.const.10 omegaflowey.math.const
 scoreboard players operation @s omegaflowey.attack.position.z += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
 
