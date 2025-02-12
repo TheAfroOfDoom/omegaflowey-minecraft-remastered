@@ -38,14 +38,14 @@ scoreboard players operation @s omegaflowey.attack.position.z += @s omegaflowey.
 
 # Bound `omegaflowey.attack.position.z` within arena
 # lower-bound
-scoreboard players set @s omegaflowey.math.0 -3050
+scoreboard players set @s omegaflowey.math.0 950
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
 execute store result storage omegaflowey:utils.math.max a int 1 run scoreboard players get @s omegaflowey.math.0
 execute store result storage omegaflowey:utils.math.max b int 1 run scoreboard players get @s omegaflowey.attack.position.z
 function omegaflowey.utils:math/max
 execute store result score @s omegaflowey.attack.position.z run data get storage omegaflowey:utils.math.max out
 # upper-bound
-scoreboard players set @s omegaflowey.math.0 -950
+scoreboard players set @s omegaflowey.math.0 3050
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
 execute store result storage omegaflowey:utils.math.min a int 1 run scoreboard players get @s omegaflowey.math.0
 execute store result storage omegaflowey:utils.math.min b int 1 run scoreboard players get @s omegaflowey.attack.position.z

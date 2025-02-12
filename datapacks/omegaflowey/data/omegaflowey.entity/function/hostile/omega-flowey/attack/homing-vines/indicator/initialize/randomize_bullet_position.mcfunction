@@ -25,7 +25,7 @@ execute store result score @s omegaflowey.attack.position.y run random value -30
 scoreboard players operation @s omegaflowey.attack.position.y += #omegaflowey.bossfight.vanilla.origin.y omegaflowey.global.flag
 
 # Set z-position to summon bullet at
-scoreboard players set @s omegaflowey.attack.position.z -850
+scoreboard players set @s omegaflowey.attack.position.z 850
 scoreboard players operation @s omegaflowey.attack.position.z += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
 
 execute store result storage omegaflowey:attack.homing-vines x float 0.01 run scoreboard players get @s omegaflowey.attack.position.x
