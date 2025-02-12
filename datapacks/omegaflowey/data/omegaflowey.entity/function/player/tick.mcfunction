@@ -9,6 +9,6 @@ execute unless entity @s[scores={omegaflowey.player.shake.pitch=0,omegaflowey.pl
 
 # function omegaflowey.entity:player/room
 
-# TODO fix admin menu
+# TODO(264): fix admin menu
 # execute if entity @s[name=TheAfroOfDoom] run function omegaflowey.main:telemetry/admin/tick
 # execute if entity @s[tag=omegaflowey.admin, name=!TheAfroOfDoom] run function omegaflowey.main:telemetry/admin/tick

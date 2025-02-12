@@ -1,5 +1,4 @@
 function omegaflowey.entity:directorial/boss_fight/vanilla/origin/setup
-# TODO soul origin
 # function omegaflowey.entity:directorial/boss_fight/vanilla/soul_origin/setup
 
 # function omegaflowey.entity:directorial/boss_fight/summit/player/queue/reset
