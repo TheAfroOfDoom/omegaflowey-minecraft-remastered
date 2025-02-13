@@ -16,7 +16,7 @@ BBPlugin.register('bb-cli', {
     const scriptArg = argv.find((arg) => arg.startsWith('--script'));
     if (typeof scriptArg !== 'undefined') {
       const scriptPath = scriptArg.replace('--script=', '');
-      console.log('BB-CLI: importing script:', scriptPath);
+      app.terminal.log('BB-CLI: importing script:', scriptPath);
       const script = import(scriptPath);
       script
         .then(async (module) => {

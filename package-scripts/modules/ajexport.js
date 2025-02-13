@@ -13,14 +13,12 @@ const requireWithCwd = (cwd = '') => {
   const {
     ajblueprintDir,
     ajblueprintPathsDontOpenSuffix,
-    ajExporterPassthroughFlagEnd,
     ajExporterPassthroughFlagStart,
   } = require(resolve(`${cwd}/package-scripts/shared-consts`));
 
   return {
     ajblueprintDir: `${cwd}/${ajblueprintDir}`,
     ajblueprintPathsDontOpenSuffix,
-    ajExporterPassthroughFlagEnd,
     ajExporterPassthroughFlagStart,
     hash,
     parseLastExportedHashes,
@@ -45,7 +43,6 @@ export async function script() {
   const {
     ajblueprintDir,
     ajblueprintPathsDontOpenSuffix,
-    ajExporterPassthroughFlagEnd,
     ajExporterPassthroughFlagStart,
     hash,
     parseLastExportedHashes,
@@ -53,11 +50,7 @@ export async function script() {
   } = requireWithCwd(cwd);
 
   const log = (...args) => {
-    console.log(
-      ajExporterPassthroughFlagStart,
-      ...args,
-      ajExporterPassthroughFlagEnd,
-    );
+    app.terminal.log(ajExporterPassthroughFlagStart, ...args);
   };
 
   const paths = parseEnv();

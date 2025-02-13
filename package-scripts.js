@@ -54,7 +54,7 @@ module.exports = {
     },
     export: {
       default: 'nps export.run',
-      run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
+      run: `yarn exec "${blockbenchPath}" --no-auto-update --install-custom-plugins https://github.com/Animated-Java/animated-java/releases/download/v1.6.4/animated_java.js,D:/omegaflowey-minecraft-remastered/package-scripts/modules/bb-cli.js --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
       // forcibly purge the `animated_java` export-cache
       force: series(
         `rimraf ${allAnimatedJavaExportFiles.join(' ')}`,
