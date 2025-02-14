@@ -106,7 +106,7 @@ module.exports = {
       world: {
         default: 'nps sync.world.up',
         down: `node ./package-scripts/sync-world --down ${worldSyncArgs}`,
-        up: `node ./package-scripts/sync-world --up ${worldSyncArgs}"`,
+        up: `node ./package-scripts/sync-world --up ${worldSyncArgs}`,
       },
       summit: {
         default: 'nps sync.summit.up',
