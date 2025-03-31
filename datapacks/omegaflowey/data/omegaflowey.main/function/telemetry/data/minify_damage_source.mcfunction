@@ -1,3 +1,5 @@
+execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 1 run return 0
+
 $function omegaflowey.main:telemetry/bossfight/schema/get/damage_source { source: "$(source)" }
 $execute unless data storage omegaflowey:telemetry temp.damage_source run return run \
   function omegaflowey.main:telemetry/bossfight/schema/error/damage_source { source: "$(source)" }
