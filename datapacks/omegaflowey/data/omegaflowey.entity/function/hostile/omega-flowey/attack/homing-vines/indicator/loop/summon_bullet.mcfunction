@@ -1,5 +1,8 @@
 # Default
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
+# homing-vines-save-states
+execute if entity @s[tag=homing-vines-save-states] run \
+  scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 2
 # x-bullets-upper-save-states
 execute if entity @s[tag=x-bullets-upper-save-states] run \
   scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 3

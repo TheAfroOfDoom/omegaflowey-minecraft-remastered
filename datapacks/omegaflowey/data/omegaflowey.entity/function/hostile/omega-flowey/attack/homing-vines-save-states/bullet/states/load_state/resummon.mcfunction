@@ -1,2 +1,2 @@
-function animated_java:omegaflowey_homing_vine/summon
-execute as @e[tag=attack-bullet-new] run function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines-save-states/bullet/states/load_state
+scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 4
+function animated_java:omegaflowey_homing_vine/summon/default

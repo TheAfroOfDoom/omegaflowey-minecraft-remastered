@@ -15,5 +15,4 @@ tag @s add hostile
 tag @s add omega-flowey
 tag @s add attack
 tag @s add player-marker
-tag @s add player-marker-new
 tag @s add x-bullets-upper-save-states
