@@ -26,5 +26,7 @@ execute store result storage omegaflowey:attack.x-bullets-upper-save-states curr
 execute store result storage omegaflowey:attack.x-bullets-upper-save-states current_state.scores.attack_d_phi int 1 run scoreboard players get @s omegaflowey.attack.d-phi
 execute store result storage omegaflowey:attack.x-bullets-upper-save-states current_state.scores.attack_phi int 1 run scoreboard players get @s omegaflowey.attack.phi
 
+data modify storage omegaflowey:attack.x-bullets-upper-save-states current_state.entity_specific_params.corresponding_root_uuid set from entity @s data.corresponding_root_uuid
+
 # Append this entity's saved_state to the executor's NBT list
 $data modify entity $(executor_uuid) data.saved_states append from storage omegaflowey:attack.x-bullets-upper-save-states current_state

@@ -17,6 +17,8 @@ data modify storage omegaflowey:attack.x-bullets-upper-save-states current_state
 
 # Scores
 execute store result storage omegaflowey:attack.x-bullets-upper-save-states current_state.scores.attack_clock_i int 1 run scoreboard players get @s omegaflowey.attack.clock.i
+execute store result storage omegaflowey:attack.x-bullets-upper-save-states current_state.scores.aj_omegaflowey_spin_and_grow_frame int 1 run \
+  scoreboard players get @s aj.omegaflowey_spin_and_grow.frame
 
 # Append this entity's saved_state to the executor's NBT list
 $data modify entity $(executor_uuid) data.saved_states append from storage omegaflowey:attack.x-bullets-upper-save-states current_state
