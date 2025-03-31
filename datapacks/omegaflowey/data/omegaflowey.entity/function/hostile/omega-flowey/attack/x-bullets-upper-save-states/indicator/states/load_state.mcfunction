@@ -8,4 +8,6 @@ execute store result score @s omegaflowey.attack.theta run data get storage omeg
 execute store result score @s omegaflowey.attack.d-phi run data get storage omegaflowey:attack.x-bullets-upper-save-states state_scores.attack_d_phi
 execute store result score @s omegaflowey.attack.phi run data get storage omegaflowey:attack.x-bullets-upper-save-states state_scores.attack_phi
 
+data modify entity @s data.corresponding_root_uuid set from storage omegaflowey:attack.x-bullets-upper-save-states entity_specific_params.corresponding_root_uuid
+
 tag @s remove attack-indicator-new

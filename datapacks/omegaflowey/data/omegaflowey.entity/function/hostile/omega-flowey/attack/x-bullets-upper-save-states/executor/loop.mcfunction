@@ -9,7 +9,8 @@ execute if score @s omegaflowey.attack.clock.i matches 0 as @e[tag=aj.omegaflowe
 # Summon indicators at each upper_eye every `omegaflowey.attack.executor.rate` ticks
 scoreboard players operation @s omegaflowey.math.0 = @s omegaflowey.attack.clock.i
 scoreboard players operation @s omegaflowey.math.0 %= @s omegaflowey.attack.executor.rate
-execute if score @s omegaflowey.math.0 matches 0 if score @s omegaflowey.attack.indicator.remaining matches 1.. run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/indicator/summon/x-bullets-upper
+execute if score @s omegaflowey.math.0 matches 0 if score @s omegaflowey.attack.indicator.remaining matches 1.. run \
+  function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/indicator/summon/x-bullets-upper with storage omegaflowey:bossfight
 
 # Resume upper_eye visuals after done summoning bullet triplets
 # ( this was found experimentally with the following command inside `../indicator/summon/x-bullets-upper`: )

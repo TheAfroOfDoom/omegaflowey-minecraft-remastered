@@ -1,0 +1,2 @@
+data modify entity @s data.corresponding_root_uuid set from storage omegaflowey:bossfight attack_upper_eye_right_uuid
+function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/indicator/summon/x-bullets-upper/raw/shared

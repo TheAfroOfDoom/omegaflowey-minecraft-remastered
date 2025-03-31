@@ -1,4 +1,4 @@
-execute as @e[tag=boss_fight] run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor/terminate/boss_fight
+$execute as $(boss_fight_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/executor/terminate/boss_fight
 
 # player-markers may linger if a player takes damage before the executor load-states,
 # so explicitly remove them here
