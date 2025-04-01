@@ -9,8 +9,8 @@ $execute if score @s $(x_score) <= @s omegaflowey.math.0 run tag @s add should-t
 $execute if score @s $(x_score) >= @s omegaflowey.math.1 run tag @s add should-terminate
 
 # z bounds
-scoreboard players set @s omegaflowey.math.0 -4150
-scoreboard players set @s omegaflowey.math.1 850
+scoreboard players set @s omegaflowey.math.0 -850
+scoreboard players set @s omegaflowey.math.1 4150
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.soul_origin.z omegaflowey.global.flag
 scoreboard players operation @s omegaflowey.math.1 += #omegaflowey.bossfight.vanilla.soul_origin.z omegaflowey.global.flag
 
