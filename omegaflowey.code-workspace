@@ -5,19 +5,28 @@
       "path": "."
     },
     {
-      "name": "omegaflowey.entity:hostile/omega-flowey",
+      "name": "omegaflowey.entity:hostile/omega-flowey/",
       "path": "./datapacks/omegaflowey/data/omegaflowey.entity/function/hostile/omega-flowey"
     },
     {
-      "name": "omegaflowey.entity:soul",
+      "name": "omegaflowey.entity:soul/",
       "path": "./datapacks/omegaflowey/data/omegaflowey.entity/function/soul"
     },
     {
-      "name": "omegaflowey.entity:directorial",
+      "name": "omegaflowey.entity:directorial/",
       "path": "./datapacks/omegaflowey/data/omegaflowey.entity/function/directorial"
     }
   ],
   "settings": {
+    "commandAutolink.queries": [
+      {
+        "linkFilePattern": "**/*.mcfunction",
+        "linkPattern": "LINK: /([^\\s]+\\.mcfunction)",
+        "linkCommand": "workbench.action.quickOpen",
+        "linkText": "Go To File"
+      }
+    ],
+
     "datapack.env.dataVersion": "Latest snapshot",
     "datapack.env.include": ["./datapacks/**/*"],
     "datapack.lint.blockStateBracketSpacing": {
