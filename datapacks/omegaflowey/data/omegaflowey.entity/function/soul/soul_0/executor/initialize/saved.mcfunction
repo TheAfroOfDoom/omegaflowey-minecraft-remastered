@@ -1,12 +1,9 @@
 # Update state flag
 scoreboard players set #omegaflowey.soul.0.saved omegaflowey.soul.flag 1
 
-# Stop event music
-stopsound @a record omega-flowey:music.soul.0
-
-# Play saved music + sound effect
-playsound omega-flowey:soul.saved record @a ~ ~ ~ 10 1
-playsound omega-flowey:soul.transition record @a ~ ~ ~ 10 1
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+  'execute at @s run function omegaflowey.entity:soul/soul_0/executor/initialize/saved/as_player' \
+}
 
 # Flash each player's screen
 execute as @a[tag=omegaflowey.player.fighting_flowey] at @s anchored eyes run particle minecraft:flash ^ ^ ^0.5
