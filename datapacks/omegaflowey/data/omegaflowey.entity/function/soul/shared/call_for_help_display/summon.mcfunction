@@ -16,6 +16,7 @@ summon block_display ~ ~ ~ { \
       alignment:"center", \
       line_width:210, \
       default_background:false, \
+      Rotation: [180.0f, 0.0f], \
       transformation: { \
         left_rotation: [0.0f, 0.9914314f, -0.13062839f, 0.0f], \
         right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
