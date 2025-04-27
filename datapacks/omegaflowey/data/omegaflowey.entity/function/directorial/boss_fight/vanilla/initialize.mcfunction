@@ -1,14 +1,16 @@
 ## Initializes the boss fight
 function omegaflowey.entity:directorial/boss_fight/shared/initialize
 
-# Summon Omega Flowey entity if it doesn't exist
-execute unless entity @e[tag=aj.omegaflowey_tv_screen.root] run function omegaflowey.entity:hostile/omega-flowey/summon { args: {} }
+# Add tags
+tag @s add boss_fight.vanilla
 
-# Set all attack parameters to default
-function omegaflowey.entity:hostile/omega-flowey/attack/reset_scores
-
-# Reset soul event completion status flags
-function omegaflowey.entity:directorial/boss_fight/shared/reset_scores
+# Summon and animate Omega Flowey entity (if it doesn't exist)
+execute \
+  unless entity @e[type=minecraft:item_display, tag=aj.omegaflowey_nose.root] run \
+  function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at { \
+    command: "function omegaflowey.entity:hostile/omega-flowey/summon/relative" \
+  }
+function omegaflowey.entity:hostile/omega-flowey/animate
 
 # Set scores
 scoreboard players set @s omegaflowey.boss-fight.attack.delay -1
@@ -19,9 +21,6 @@ scoreboard players set @s omegaflowey.boss-fight.progress.phase.total 6
 
 # Begin animating Omega Flowey entity
 function omegaflowey.entity:hostile/omega-flowey/animate
-
-# Remove tag
-tag @s remove boss_fight_new
 
 # Initialize attack phase
 function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize

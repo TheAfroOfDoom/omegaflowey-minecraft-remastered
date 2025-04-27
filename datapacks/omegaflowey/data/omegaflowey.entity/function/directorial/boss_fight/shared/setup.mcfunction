@@ -11,6 +11,7 @@ execute unless data storage omegaflowey:bossfight bossfight_tvscreen_soul_event_
 execute unless data storage omegaflowey:bossfight bossfight_tvscreen_warning_locator_uuid run \
   data modify storage omegaflowey:bossfight bossfight_tvscreen_warning_locator_uuid set value "0"
 execute unless data storage omegaflowey:bossfight soul_model_uuid run data modify storage omegaflowey:bossfight soul_model_uuid set value "0"
+execute unless data storage omegaflowey:bossfight soul_tvscreen_uuid run data modify storage omegaflowey:bossfight soul_tvscreen_uuid set value "0"
 
 # reset tag-variant flag
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 0

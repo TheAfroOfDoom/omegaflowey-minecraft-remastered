@@ -12,3 +12,9 @@ data modify storage omegaflowey:utils.damage boss_fight_uuid set from storage gu
 
 # Store active player uuid to `utils:damage`
 data modify storage omegaflowey:utils.damage active_player_uuid set from storage omegaflowey:bossfight active_player_uuid
+
+# Set all attack parameters to default
+function omegaflowey.entity:hostile/omega-flowey/attack/reset_scores
+
+# Reset soul event completion status flags
+function omegaflowey.entity:directorial/boss_fight/shared/reset_scores
