@@ -1,21 +1,19 @@
 # Play WARNING sound
-execute at @e[tag=aj.omegaflowey_tv_screen.root,tag=tv_screen.boss_fight] run playsound omega-flowey:boss-fight.alarm ambient @a ~ ~ ~ 10 1
+$execute at $(bossfight_tvscreen_uuid) run playsound omega-flowey:boss-fight.alarm ambient @a ~ ~ ~ 10 1
 
 # Set tv screen to WARNING variant
-execute as @e[tag=aj.omegaflowey_tv_screen.root,tag=tv_screen.boss_fight] run function omegaflowey.entity:hostile/omega-flowey/animate/warning/tv_screen
+$execute as $(bossfight_tvscreen_uuid) run function omegaflowey.entity:hostile/omega-flowey/animate/warning/tv_screen
 
-execute store result storage omegaflowey:bossfight.animate soul_index int 1 run scoreboard players get @s omegaflowey.boss-fight.progress.phase.i
+execute store result storage omegaflowey:bossfight soul_index int 1 run scoreboard players get @s omegaflowey.boss-fight.progress.phase.i
 
 # Set applicable petal-pipe to soul-color variant
-function omegaflowey.entity:hostile/omega-flowey/animate/pipe with storage omegaflowey:bossfight.animate
+function omegaflowey.entity:hostile/omega-flowey/animate/pipe with storage omegaflowey:bossfight
 
 # Summon and begin animating soul heart model in front of WARNING screen
-function omegaflowey.entity:hostile/omega-flowey/summon/warning/soul with storage omegaflowey:bossfight.animate
-execute as @e[tag=aj.omegaflowey_soul.root,tag=omegaflowey.soul.warning] run function omegaflowey.entity:hostile/omega-flowey/animate/warning/soul
+function omegaflowey.entity:hostile/omega-flowey/summon/warning/soul with storage omegaflowey:bossfight
 
 # Summon and begin animating soul tv_screen in other arena
 function omegaflowey.entity:hostile/omega-flowey/summon/soul/tv_screen
-execute as @e[tag=aj.omegaflowey_tv_screen.root,tag=tv_screen.soul] run function omegaflowey.entity:hostile/omega-flowey/animate/soul/tv_screen
 
 # Terminate music-looping logic if it was running
 execute if entity @s[tag=is_looping_music] run function omegaflowey.entity:directorial/boss_fight/music/terminate with entity @s data.looped_music

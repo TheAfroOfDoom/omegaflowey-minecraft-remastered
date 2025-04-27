@@ -9,12 +9,6 @@ function omegaflowey.entity:directorial/boss_fight/summit/origin/at { command: "
 # Add tags
 tag @s add boss_fight.summit
 
-# Set all attack parameters to default
-function omegaflowey.entity:hostile/omega-flowey/attack/reset_scores
-
-# Reset soul event completion status flags
-function omegaflowey.entity:directorial/boss_fight/shared/reset_scores
-
 # Set scores
 scoreboard players set @s omegaflowey.boss-fight.attack.delay -1
 scoreboard players set @s omegaflowey.boss-fight.attack.phase.i 0

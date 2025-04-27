@@ -1,8 +1,18 @@
-## Summons the boss fight marker and initializes it
+## Summon and initialize the boss fight marker
 
 # Kill any pre-existing boss fights
-kill @e[tag=boss_fight]
+function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/position { \
+  command: "kill @e[ \
+    distance=..0.01, \
+    type=minecraft:marker, \
+    tag=boss_fight, \
+    tag=directorial, \
+    tag=omega-flowey-remastered, \
+    limit=1 \
+  ]" \
+}
 
 # Summon and initialize boss fight director
-summon minecraft:marker 0 33 0 { CustomName:'"Vanilla Boss Fight Director"', Tags:["omega-flowey-remastered","directorial","boss_fight","boss_fight_new","boss_fight_vanilla"] }
-execute as @e[tag=boss_fight_new] at @s run function omegaflowey.entity:directorial/boss_fight/vanilla/initialize
+function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at { \
+  command: "execute summon minecraft:marker at @s run function omegaflowey.entity:directorial/boss_fight/vanilla/initialize" \
+}
