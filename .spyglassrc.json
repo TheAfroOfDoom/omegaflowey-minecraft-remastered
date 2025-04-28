@@ -2,10 +2,14 @@
   "env": {
     "exclude": [
       ".*",
-      "tmp",
-      "build",
+      "**/.yarn/**",
+      "**/node_modules/**",
+      "**/bin/**",
+      "**/build/**",
       "**/last_exported_hashes.json",
-      "datapacks/omegaflowey/data/*/test/",
+      "**/tmp/**",
+      "**/world.zip",
+      "**/datapacks/omegaflowey/data/*/test/**",
       "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft"
     ]
   }
