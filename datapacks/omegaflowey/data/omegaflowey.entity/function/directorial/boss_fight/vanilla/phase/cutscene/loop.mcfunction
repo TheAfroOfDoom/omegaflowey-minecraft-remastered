@@ -3,4 +3,4 @@ execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches ..-1 run ret
 
 # Run cutscene specific logic
 execute if score @s omegaflowey.boss-fight.cutscene.phase.i matches 0 run return run \
-  function omegaflowey.entity:directorial/boss_fight/summit/phase/cutscene/loop/0
+  function omegaflowey.entity:directorial/boss_fight/vanilla/phase/cutscene/loop/0

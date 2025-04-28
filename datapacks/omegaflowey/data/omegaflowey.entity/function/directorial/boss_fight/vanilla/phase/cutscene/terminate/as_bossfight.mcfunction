@@ -24,4 +24,4 @@ scoreboard players set #omegaflowey.bossfight.skip_reanimate_nose omegaflowey.gl
 scoreboard players set #omegaflowey.bossfight.skip_reanimate_largesidevine omegaflowey.global.flag 0
 
 # Next phase
-function omegaflowey.entity:directorial/boss_fight/summit/phase/attack/initialize
+function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize
