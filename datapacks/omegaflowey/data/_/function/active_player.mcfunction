@@ -1,2 +1,1 @@
-function gu:generate
-data modify storage omegaflowey:bossfight active_player_uuid set from storage gu:main out
+function omegaflowey.entity:directorial/boss_fight/shared/player/set_active_player
