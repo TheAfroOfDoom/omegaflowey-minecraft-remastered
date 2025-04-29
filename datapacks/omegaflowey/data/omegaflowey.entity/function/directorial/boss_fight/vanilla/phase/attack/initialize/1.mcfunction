@@ -3,7 +3,9 @@
 scoreboard players set @s omegaflowey.boss-fight.attack.clock.total 414
 
 # Play music
-playsound omega-flowey:music.phase.1 record @a ~ ~ ~ 10 1
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+  'execute at @s run playsound omega-flowey:music.phase.1 record @s ~ ~ ~ 1 1' \
+}
 
 ## Add tags
 # Use logic to decrease chance of repeating attacks during `attack/random`
