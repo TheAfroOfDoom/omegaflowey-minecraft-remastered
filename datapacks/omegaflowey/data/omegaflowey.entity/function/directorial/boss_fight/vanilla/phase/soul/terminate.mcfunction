@@ -2,7 +2,7 @@
 tag @s remove boss_fight.phase.soul
 
 # Next phase
-function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize
+function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize with storage omegaflowey:bossfight
 
 # Move players to main arena
 function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \

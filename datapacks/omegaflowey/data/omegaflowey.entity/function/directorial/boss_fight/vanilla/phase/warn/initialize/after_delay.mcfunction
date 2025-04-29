@@ -1,5 +1,7 @@
 # Play WARNING sound
-$execute at $(bossfight_tvscreen_uuid) run playsound omega-flowey:boss-fight.alarm ambient @a ~ ~ ~ 10 1
+$execute at $(bossfight_tvscreen_uuid) run function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+  'playsound omega-flowey:boss-fight.alarm ambient @s ~ ~ ~ 10 1' \
+}
 
 # Set tv screen to WARNING variant
 $execute as $(bossfight_tvscreen_uuid) run function omegaflowey.entity:hostile/omega-flowey/animate/warning/tv_screen
