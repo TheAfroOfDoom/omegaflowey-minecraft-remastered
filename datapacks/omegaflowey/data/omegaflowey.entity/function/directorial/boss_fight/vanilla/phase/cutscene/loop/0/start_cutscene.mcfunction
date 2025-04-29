@@ -1,5 +1,3 @@
-function omegaflowey.main:telemetry/bossfight/tag/start { name: "cutscene.intro" }
-
 # Summon and animate Omega Flowey entity
 function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at { \
   command: "execute positioned ~ ~ ~-29.4 run function omegaflowey.entity:hostile/omega-flowey/summon/relative" \
