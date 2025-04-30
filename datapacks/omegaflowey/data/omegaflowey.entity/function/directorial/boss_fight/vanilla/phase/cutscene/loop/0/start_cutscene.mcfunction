@@ -13,6 +13,6 @@ function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: 
 "}
 
 # Set arena box to flashing red variant
-$execute as $(arena_box_uuid) run function animated_java:omegaflowey_arena_box/variants/intro_flashing_red/apply
+$execute as $(arena_box_uuid) run function animated_java:omegaflowey_arena_box_vanilla/variants/intro_flashing_red/apply
 
 schedule function omegaflowey.entity:directorial/boss_fight/vanilla/phase/cutscene/terminate/scheduled 575t
