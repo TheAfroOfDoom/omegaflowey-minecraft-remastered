@@ -1,3 +1,4 @@
+function animated_java:omegaflowey_arm_vine/remove/all
 function animated_java:omegaflowey_large_side_vine/remove/all
 function animated_java:omegaflowey_lower_eye/remove/all
 function animated_java:omegaflowey_mouth/remove/all

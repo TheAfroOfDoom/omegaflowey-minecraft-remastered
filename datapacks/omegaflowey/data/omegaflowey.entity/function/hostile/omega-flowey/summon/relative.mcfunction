@@ -1,5 +1,9 @@
 function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_models with storage omegaflowey:bossfight
 
+## Arm vines
+# Left arm vine
+execute positioned ^22.25 ^1.5 ^13.0 rotated ~185.0 ~ run function animated_java:omegaflowey_arm_vine/summon { args: {} }
+
 ## Large side vines
 # Right large side vine
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
