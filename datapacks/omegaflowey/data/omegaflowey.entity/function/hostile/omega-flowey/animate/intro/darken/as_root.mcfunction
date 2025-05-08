@@ -4,6 +4,7 @@ execute if entity @s[tag=aj.omegaflowey_mouth.root] run function animated_java:o
 execute if entity @s[tag=aj.omegaflowey_nose.root] run function animated_java:omegaflowey_nose/animations/omegaflowey_move/play
 execute if entity @s[tag=aj.omegaflowey_nose.root] run function animated_java:omegaflowey_nose/variants/black/apply
 
+execute if entity @s[tag=aj.omegaflowey_arm_vine.root] run function animated_java:omegaflowey_arm_vine/animations/omegaflowey_move/play
 execute if entity @s[tag=aj.omegaflowey_arm_vine.root] run function animated_java:omegaflowey_arm_vine/variants/black/apply
 
 execute if entity @s[tag=aj.omegaflowey_large_side_vine.root] run function omegaflowey.entity:hostile/omega-flowey/animate/large_side_vine
