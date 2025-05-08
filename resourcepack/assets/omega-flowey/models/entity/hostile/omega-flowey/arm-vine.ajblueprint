@@ -4152,7 +4152,7 @@
 			"override": false,
 			"length": 6,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": false,
 			"path": "",
 			"anim_time_update": "",
@@ -4194,7 +4194,8 @@
 							"time": 5.95,
 							"color": -1,
 							"interpolation": "linear",
-							"easing": "linear"
+							"easing": "linear",
+							"easingArgs": []
 						},
 						{
 							"channel": "position",
@@ -4209,12 +4210,54 @@
 							"time": 6,
 							"color": -1,
 							"interpolation": "linear",
-							"easing": "linear"
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				}
+			}
+		},
+		{
+			"uuid": "572d0a18-1961-7ce1-8a88-a0862442b9bf",
+			"name": "omegaflowey_move",
+			"loop": "loop",
+			"override": false,
+			"length": 1,
+			"snapping": 20,
+			"selected": true,
+			"saved": false,
+			"path": "",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [],
+			"animators": {
+				"6495ed0a-fafa-5637-6da1-e014c2a79d69": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "math.sin(tick * 360 / period) * z_amp_min \n",
+									"y": "0",
+									"z": "(math.cos(tick * 360 / period) + 1) * z_amp\n"
+								}
+							],
+							"uuid": "4ab7c403-8310-6afd-b72f-ed3549802189",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
 						}
 					]
 				}
 			}
 		}
 	],
-	"animation_controllers": []
+	"animation_controllers": [],
+	"animation_variable_placeholders": "tick = time * 20\n\n// 1 second period\ndtime = q.anim_time * 360;\ndtick2 = q.anim_time * 20\n// 1 tick period\ndtick = dtime * 20;\n// anim period (ticks)\nperiod = 10;\n\n// alternating z amplitude\nperiod_tick = 20\nwrap_tick = math.mod(tick, period_tick)\nflipping_tick = wrap_tick <= (period_tick / 2) ? wrap_tick : period_tick - wrap_tick\n\nmin = period_tick / 4 - 0.5\nmax = period_tick / 4 + 0.5\ntemp_scaled = (flipping_tick - min) / (max - min)\nclamp_tick = math.clamp(temp_scaled, 0, 1)\n\n// smooth step\n// https://en.wikipedia.org/wiki/Smoothstep \nsmoothstep_tick = math.hermite_blend(clamp_tick)\n\nz_amp_min = 10\nz_amp_max = 20\ndiff = z_amp_max - z_amp_min\nz_amp = z_amp_min + diff * smoothstep_tick"
 }
