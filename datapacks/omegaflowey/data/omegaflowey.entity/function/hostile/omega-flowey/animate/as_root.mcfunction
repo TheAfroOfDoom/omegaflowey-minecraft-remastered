@@ -1,4 +1,5 @@
 execute if entity @s[tag=aj.omegaflowey_arm_vine.root] run function animated_java:omegaflowey_arm_vine/animations/omegaflowey_move/resume
+execute if entity @s[tag=aj.omegaflowey_arm_vine_right.root] run function animated_java:omegaflowey_arm_vine_right/animations/omegaflowey_move/resume
 
 execute if entity @s[tag=aj.omegaflowey_mouth.root] run function animated_java:omegaflowey_mouth/animations/omegaflowey_move/resume
 

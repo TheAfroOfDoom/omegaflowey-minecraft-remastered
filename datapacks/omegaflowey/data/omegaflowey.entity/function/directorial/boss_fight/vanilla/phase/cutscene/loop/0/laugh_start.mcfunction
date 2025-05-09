@@ -4,6 +4,8 @@ function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: 
 
 $execute as $(arm_vine_left_uuid) run \
   function animated_java:omegaflowey_arm_vine/animations/omegaflowey_intro_shake/tween { duration: 1, to_frame: 0 }
+$execute as $(arm_vine_right_uuid) run \
+  function animated_java:omegaflowey_arm_vine_right/animations/omegaflowey_intro_shake/tween { duration: 1, to_frame: 0 }
 
 $execute as $(attack_lower_eye_left_uuid) run \
   function animated_java:omegaflowey_lower_eye/animations/omegaflowey_intro_shake/tween { duration: 1, to_frame: 0 }
