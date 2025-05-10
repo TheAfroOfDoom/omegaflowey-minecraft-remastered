@@ -21,5 +21,5 @@ function omegaflowey.entity:hostile/omega-flowey/summon/soul/tv_screen
 execute if entity @s[tag=is_looping_music] run function omegaflowey.entity:directorial/boss_fight/music/terminate with entity @s data.looped_music
 
 # Play end-note at end of phases 2 and 4 (index score will be +1, so 3 and 5)
-execute if score @s omegaflowey.boss-fight.attack.phase.i matches 3 run playsound omega-flowey:music.phase.repeat.end-note record @a ~ ~ ~ 1 1
-execute if score @s omegaflowey.boss-fight.attack.phase.i matches 5 run playsound omega-flowey:music.phase.repeat.end-note record @a ~ ~ ~ 1 1
+execute if score @s omegaflowey.boss-fight.attack.phase.i matches 3 run playsound omega-flowey:music.phase.repeat.end-note record @a ~ ~ ~ 10 1
+execute if score @s omegaflowey.boss-fight.attack.phase.i matches 5 run playsound omega-flowey:music.phase.repeat.end-note record @a ~ ~ ~ 10 1
