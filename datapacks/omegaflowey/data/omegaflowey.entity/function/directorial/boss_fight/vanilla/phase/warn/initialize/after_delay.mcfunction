@@ -1,3 +1,6 @@
+tag @s remove is_test_playing
+schedule clear _:test_play/scheduled
+
 # Play WARNING sound
 $execute at $(bossfight_tvscreen_uuid) run function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
   'playsound omega-flowey:boss-fight.alarm ambient @s ~ ~ ~ 5 1' \

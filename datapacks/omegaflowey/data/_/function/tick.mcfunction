@@ -12,4 +12,4 @@
 
 # function _:tick/as_root with storage omegaflowey:test_temp
 
-execute as @p[tag=is_test_playing] run function _:test_play/loop
+# execute as @p[tag=is_test_playing] run function _:test_play/loop
