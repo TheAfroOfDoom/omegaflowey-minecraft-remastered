@@ -34,3 +34,37 @@ LCM = 198 ticks = 9.9s
 
 datapack performance benchmarking?
 https://github.com/SnaveSutit/mcworld-performance-dp/tree/test-tag-branch-selection-vs-macro-uuid-list-selection
+
+# tv inside face analysis
+## permutations
+- 27 28 27 26 25(quick)
+- 8? 9 8 7 6-quick 7 8 9
+- 12 13 12 11 10-quick 11
+  12 13 12 11 10-quick 11
+  12 13 12 11 10-quick 11
+  12 13 12 11 10-quick 11
+  12 13 12 11 10-quick 11 (end)
+
+- 31 32 31 30 29-q 30 ... x5
+  frames 9638..9838
+
+- 27 (28 27 26 25-q 26 ... x5)
+
+- 0 1 0 36 ??? ... 35-q 36 0 1 0 36 35-q 36 ...
+  **CAN WRAP**
+  frames 10280..10560
+  **ATTACKS PAUSE THE FACE ANIM**
+
+**TAKE-DAMAGE FACE ANIM**
+= (10560-10280-200)
+= 80 frames
+= 1.33s
+= 7 ticks
+
+- 8 9 8 7 6-q 7 ... x5
+  frames 9852..10052 (3.33s, 66.6 ticks)
+  (0.66s period? 13 ticks)
+  (x5 => 65 ticks total, -1.6 tick error [too fast])
+
+## timing
+(make end static =  2 ticks to make total period closer to correct)
