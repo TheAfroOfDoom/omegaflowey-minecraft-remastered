@@ -36,3 +36,6 @@ execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 562 run retu
   function omegaflowey.entity:directorial/boss_fight/vanilla/phase/cutscene/loop/0/laugh_stop with storage omegaflowey:bossfight
 execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 564 run return run \
   function omegaflowey.entity:directorial/boss_fight/vanilla/phase/cutscene/loop/0/laugh_stop/screen with storage omegaflowey:bossfight
+
+execute if score @s omegaflowey.boss-fight.cutscene.clock.i matches 575 run return run \
+  function omegaflowey.entity:directorial/boss_fight/vanilla/phase/cutscene/terminate with storage omegaflowey:bossfight
