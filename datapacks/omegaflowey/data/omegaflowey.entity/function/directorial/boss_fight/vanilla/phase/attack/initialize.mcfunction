@@ -8,8 +8,7 @@ execute if score @s omegaflowey.boss-fight.attack.phase.i matches 4 run function
 scoreboard players set @s omegaflowey.boss-fight.attack.clock.i -1
 scoreboard players set @s omegaflowey.boss-fight.attack.delay 10
 
-# Start tvinside-faces loop
-function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face
+function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face/start
 
 # Add tags
 tag @s add boss_fight.phase.attack
