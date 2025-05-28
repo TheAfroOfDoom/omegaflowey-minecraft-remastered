@@ -1,5 +1,5 @@
 tag @s remove is_test_playing
-schedule clear _:test_play/scheduled
+schedule clear omegaflowey.entity:directorial/boss_fight/shared/phase/attack/loop/test_play/scheduled
 
 # Play WARNING sound
 $execute at $(bossfight_tvscreen_uuid) run function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
