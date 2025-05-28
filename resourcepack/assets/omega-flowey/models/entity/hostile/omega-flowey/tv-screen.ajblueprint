@@ -569,14 +569,14 @@
 			"light_emission": 0,
 			"render_order": "default",
 			"allow_mirror_modeling": true,
-			"from": [-121.2, 50.4, -34],
-			"to": [121.2, 223.2, 57.6],
+			"from": [-126.2, 41.4, -34],
+			"to": [126.2, 232.2, 57.6],
 			"autouv": 0,
 			"color": 8,
 			"origin": [6, 0, 43.2],
 			"faces": {
 				"north": {
-					"uv": [3, 0.95, 13, 11.36429],
+					"uv": [2.5, 0.95, 13.5, 11.73929],
 					"texture": 80
 				},
 				"east": {
@@ -674,7 +674,22 @@
 					"autouv": 0,
 					"children": [
 						"08b7d234-49c3-0d44-e451-e9e53c703b21",
-						"f12eeaaf-880b-9167-b404-2da4a44e3864",
+						{
+							"name": "screen_tvinside",
+							"origin": [0, 136.8, 11.8],
+							"color": 0,
+							"configs": {
+								"variants": {}
+							},
+							"uuid": "9212c78a-3bd6-d761-48eb-d21d8456e181",
+							"export": true,
+							"mirror_uv": false,
+							"isOpen": true,
+							"locked": false,
+							"visibility": true,
+							"autouv": 0,
+							"children": ["f12eeaaf-880b-9167-b404-2da4a44e3864"]
+						},
 						"bd646ad9-b7f7-d6b5-db01-8163c38820db",
 						"4e1328a4-7b35-0738-bebf-d5366c6b5b4f",
 						"d72c67f0-2e29-d787-1e47-9eecd0d19799",
@@ -3688,8 +3703,8 @@
 			"override": false,
 			"length": 0.6,
 			"snapping": 20,
-			"selected": false,
-			"saved": true,
+			"selected": true,
+			"saved": false,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -3761,6 +3776,45 @@
 							"bezier_left_value": [0, 0, 0],
 							"bezier_right_time": [0.1, 0.1, 0.1],
 							"bezier_right_value": [0, 0, 0],
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				},
+				"9212c78a-3bd6-d761-48eb-d21d8456e181": {
+					"name": "screen_tvinside",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "Math.random(-xrange, xrange)",
+									"y": "Math.random(-yrange, yrange)",
+									"z": "0"
+								}
+							],
+							"uuid": "49503ad3-5727-f325-0f64-2e96bc46504f",
+							"time": 0,
+							"color": -1,
+							"interpolation": "step",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "Math.random(1-xscalerange, 1+xscalerange)",
+									"y": "Math.random(1-yscalerange, 1+yscalerange)",
+									"z": "1"
+								}
+							],
+							"uuid": "79072bc0-2445-0be6-39db-b0d52131f37f",
+							"time": 0,
+							"color": -1,
+							"uniform": false,
+							"interpolation": "step",
 							"easing": "linear",
 							"easingArgs": []
 						}
@@ -3862,7 +3916,7 @@
 			"override": false,
 			"length": 6,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": false,
 			"path": "",
 			"anim_time_update": "",
@@ -3957,7 +4011,7 @@
 							"uuid": "630625f2-53fb-f735-8622-31e37a797c3b",
 							"time": 6,
 							"color": -1,
-							"interpolation": "linear",
+							"interpolation": "step",
 							"easing": "linear",
 							"easingArgs": []
 						},
@@ -3973,7 +4027,7 @@
 							"uuid": "23fa4273-7ada-91e5-a41c-3a6b65711ac3",
 							"time": 5.95,
 							"color": -1,
-							"interpolation": "linear",
+							"interpolation": "step",
 							"easing": "linear",
 							"easingArgs": []
 						}
@@ -3982,5 +4036,6 @@
 			}
 		}
 	],
-	"animation_controllers": []
+	"animation_controllers": [],
+	"animation_variable_placeholders": "xrange = 3\nyrange = 3\n\nxscalerange = 0.01\nyscalerange = 0.05"
 }
