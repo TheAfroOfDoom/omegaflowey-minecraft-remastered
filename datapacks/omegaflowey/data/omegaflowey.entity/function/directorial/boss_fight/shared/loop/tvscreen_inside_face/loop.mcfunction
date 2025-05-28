@@ -3,7 +3,7 @@ scoreboard players remove #omegaflowey.tvscreen_inside_face.frame_duration omega
 execute if score #omegaflowey.tvscreen_inside_face.frame_duration omegaflowey.math.0 matches 1.. run return 0
 
 execute if score #omegaflowey.tvscreen_inside_face.period_idx omegaflowey.math.0 matches 5.. run return run \
-  function omegaflowey.entity:directorial/boss_fight/shared/phase/attack/loop/tvscreen_inside_face/end \
+  function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face/end \
     with storage omegaflowey:bossfight
 
 ## frame data
@@ -54,9 +54,9 @@ scoreboard players operation \
 execute store result storage omegaflowey:bossfight tvscreen_inside_face_idx int 1 run \
   scoreboard players get #omegaflowey.tvscreen_inside_face.current_frame omegaflowey.math.0
 
-function omegaflowey.entity:directorial/boss_fight/shared/phase/attack/loop/tvscreen_inside_face/loop/as_root \
+function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face/loop/as_root \
   with storage omegaflowey:bossfight
 
 scoreboard players add #omegaflowey.tvscreen_inside_face.sequence_idx omegaflowey.math.0 1
 execute if score #omegaflowey.tvscreen_inside_face.sequence_idx omegaflowey.math.0 matches 6.. run \
-  function omegaflowey.entity:directorial/boss_fight/shared/phase/attack/loop/tvscreen_inside_face/next_sequence
+  function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face/next_sequence

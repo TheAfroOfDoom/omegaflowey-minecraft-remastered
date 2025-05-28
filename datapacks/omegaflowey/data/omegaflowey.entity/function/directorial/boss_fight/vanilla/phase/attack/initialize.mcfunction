@@ -9,7 +9,7 @@ scoreboard players set @s omegaflowey.boss-fight.attack.clock.i -1
 scoreboard players set @s omegaflowey.boss-fight.attack.delay 10
 
 # Start tvinside-faces loop
-function omegaflowey.entity:directorial/boss_fight/shared/phase/attack/loop/tvscreen_inside_face
+function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face
 
 # Add tags
 tag @s add boss_fight.phase.attack
