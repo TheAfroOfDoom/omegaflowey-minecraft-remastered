@@ -30,16 +30,8 @@ execute if score #flowey.test_play.sequence_idx omegaflowey.math.0 matches 5 run
 scoreboard players operation #flowey.test_play.current_frame omegaflowey.math.0 = #flowey.test_play.base_frame omegaflowey.math.0
 scoreboard players operation #flowey.test_play.current_frame omegaflowey.math.0 += #flowey.test_play.idx_add omegaflowey.math.0
 
-# execute if score #flowey.test_play.period_idx omegaflowey.math.0 matches 0 run tellraw @a [\
-#   {"score": {"name": "#flowey.test_play.current_frame", "objective": "omegaflowey.math.0"}}, ", ", \
-#   {"score": {"name": "#flowey.test_play.idx_add", "objective": "omegaflowey.math.0"}} \
-# ]
-
 scoreboard players operation #flowey.test_play.current_frame omegaflowey.math.0 %= #omegaflowey.const.37 omegaflowey.math.const
 
-# execute if score #flowey.test_play.period_idx omegaflowey.math.0 matches 0 run tellraw @a [\
-  # "wrapped: ", {"score": {"name": "#flowey.test_play.current_frame", "objective": "omegaflowey.math.0"}} \
-# ]
 execute store result storage omegaflowey:test_temp idx int 1 run \
   scoreboard players get #flowey.test_play.current_frame omegaflowey.math.0
 
