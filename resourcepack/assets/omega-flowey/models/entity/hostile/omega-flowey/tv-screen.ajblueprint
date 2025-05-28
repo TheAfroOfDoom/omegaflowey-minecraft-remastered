@@ -560,6 +560,53 @@
 			},
 			"type": "cube",
 			"uuid": "bd646ad9-b7f7-d6b5-db01-8163c38820db"
+		},
+		{
+			"name": "screen_tvinside",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-126.2, 41.4, -34],
+			"to": [126.2, 232.2, 57.6],
+			"autouv": 0,
+			"color": 8,
+			"origin": [6, 0, 43.2],
+			"faces": {
+				"north": {
+					"uv": [2.5, 0.95, 13.5, 11.73929],
+					"texture": 80
+				},
+				"east": {
+					"uv": [1.1, 0, 14.9, 9.81429],
+					"rotation": 180,
+					"texture": null
+				},
+				"south": {
+					"uv": [1.1, 0, 14.9, 9.81429],
+					"rotation": 180,
+					"texture": null
+				},
+				"west": {
+					"uv": [1.1, 0, 14.9, 9.81429],
+					"rotation": 180,
+					"texture": null
+				},
+				"up": {
+					"uv": [1.1, 0, 14.9, 9.81429],
+					"rotation": 180,
+					"texture": null
+				},
+				"down": {
+					"uv": [1.1, 0, 14.9, 9.81429],
+					"rotation": 180,
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "f12eeaaf-880b-9167-b404-2da4a44e3864"
 		}
 	],
 	"outliner": [
@@ -627,6 +674,22 @@
 					"autouv": 0,
 					"children": [
 						"08b7d234-49c3-0d44-e451-e9e53c703b21",
+						{
+							"name": "screen_tvinside",
+							"origin": [0, 136.8, 11.8],
+							"color": 0,
+							"configs": {
+								"variants": {}
+							},
+							"uuid": "9212c78a-3bd6-d761-48eb-d21d8456e181",
+							"export": true,
+							"mirror_uv": false,
+							"isOpen": true,
+							"locked": false,
+							"visibility": true,
+							"autouv": 0,
+							"children": ["f12eeaaf-880b-9167-b404-2da4a44e3864"]
+						},
 						"bd646ad9-b7f7-d6b5-db01-8163c38820db",
 						"4e1328a4-7b35-0738-bebf-d5366c6b5b4f",
 						"d72c67f0-2e29-d787-1e47-9eecd0d19799",
@@ -1844,6 +1907,1070 @@
 			"uuid": "31628fa8-f150-cec9-24de-93036ffcb817",
 			"source": "data:image/png;base64,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",
 			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_0.png",
+			"name": "spr_tvinside_old_0.png",
+			"folder": "",
+			"namespace": "",
+			"id": "43",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "e4086d57-af17-f2cb-c01c-7b5b6aa7573f",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_1.png",
+			"name": "spr_tvinside_old_1.png",
+			"folder": "",
+			"namespace": "",
+			"id": "44",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "69424a2e-1e33-00e0-2693-ed15ec0c45f4",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_2.png",
+			"name": "spr_tvinside_old_2.png",
+			"folder": "",
+			"namespace": "",
+			"id": "45",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "aaf0683a-683e-04e3-546a-b0d69fae78b9",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABclJREFUeF7tnOuWWyEIhZP3f+h0nTTOshQElTMR2POnk4kSw/4EvJw+H4/H64Gfsh54AoCy2r+/OACorT8AKK4/AAAAKAJLM4AaoLT8KAKLyw8AAAD2AWozgBqgtv51l4Gv1+v1fD6vCfDzw/0tOx9lI8AldhO3gdD+RsHIDEF6ANqs7gW3CHpBUAGI9ABcYmvi0wjwPiT5AJA9GqQHYBQB+lnORQVJ/Ey1QloAeuG5Ys+SBipEgvQA9CmAC/VWEBoMM+0jtE0LgOR8rR6Q+nHpIkN9kBqAvopfFX40iwHA4THuLgAybSCliwA7Vb+FZ27WR14VpAOAbu1aRB3l/Z3+EfqWBGB1/R9B0NkxpgZAOugZFYQZCrsZCAAA461KEIQFYLXw0paDvfirnzEzA7/dNiwAO46jp3wUin7HMHs0KA0AvQ/QXktA7EB3al8A8Dn6bWcGVY6Bf+CvdilUqwGkqEBnMHej6NRZPtzOrgaAZaNoVANwO42R64SSKUDK9T0cO6JGWj2UBUBLBTsAtHri+nfXzt1ppTQAfcHHAbErXoRIUBYArhbwXAFEEP8doTIWgTPOr/58QEoAdvPmDEDaZ3na0j5r5X0AMPAaHgxZQerQPtJMpH/3Pio+HaL0EWAUgkeHQFaOLQ+PnJwG0gKgbdVq+wBWAGg76bbR7pJydTxav3AAaLPJU1jt6pjq3M/j59qYNTt3vh8OAIszuPN+6Tavxd5qmwj3CsIBYJlNUvjv+85Eit1I4HXGsApiudNACsCM2BYn7wBxWi0QLgJIAnmLPJw1XW63AIMIMOulyfaWgxytTUsPEkg0n0v2tOiDCDApbms+k/s9Cz6LYDPRx2Jv0UVL3cKkAAsAEiy0+KNXv0dree1BUC1ycLaXlLqpU0oAehCu3/vw3b++fu+XjJbwzYFo2VH0PGr2ZCE1ABSE9nr08AcXLei+Qi8AIoAnjr9kSyv0qMDSsLj0wEUcrAIchR2FYC1fzwzDUtjR1MJFmD7N0PQzM5672oZJAXc5YGTXAkETlaslOECwCvglJWdWDZYhcdvIdEdQighIARYPB2kzAktaDdDVxklfFSnAQQ26SuBWDd4RyWHYbxMAYNGTVNB+OSitDlAELjqbW3dTU6szTMrts9U73USi/aUVgoNLtkyUjwBapW/dweM2hLAK2GLzdzqPAFhZsmmRYMXmnZ4oHwHudC5XHAKAOz3+RdtcEThaFn5xqP98NCKAkxIzh0InRQEAsAGAdEo4Oh4+SfyU+wCry8ENDv7r6l1Yeo6N2kIEIJdCdp0t7QpiH2DXswH7c5EAKSCgkLND1mqDkyBACphVd9BeEr51OaE+QQ3gJDh3GETz/ImCA4ANAGY3duhB00mh/wfWjP9J1IbG5q6jU8STQz4igCKxFrZnKnvNlpm2GxuiCPw4d3ShQ/P/qPg7HQIAYKjqueLuvY36eUqYmtiBSYPN+/3yAMyc4kkHPhEufkjglAbAsm5vM5276HG9N7oJ5D1b77BXBgApF48igPSk0exy8A7hvGyWAYBzmGXLVivipMjgJdDddkoDoDnXmiJGBaH2Gd9+HwAs7AtoYHxb1JnPLw+AFuJnnBmxbXkAIormOWYA4OnNgLYAQEDRPIcMADy92dmKUlsAAADweN3kg7JmI20OIQKUxfTvFwcAAAApoDIDiACV1UcKKK4+AAAASAGLDETZ6NG+HgDQPJT8fQCwKDAiwKLj0O0sDyACbOoRPRIAgE0AoncHANEV3Bw/ANh0YPTuAMBBwci3hAGAAwCRTQCAyOo5jB0AODgxsgkAEFk9h7EDAAcnRjYBACKr5zB2AODgxMgmAEBk9RzGDgAcnBjZBACIrJ7D2AGAgxMjmwAAkdVzGDsAcHBiZBMAILJ6DmMHAA5OjGwCAERWz2HsAMDBiZFNAIDI6jmMHQA4ODGyCQAQWT2HsQMABydGNgEAIqvnMHYA4ODEyCb+AAfRjD3aRL/2AAAAAElFTkSuQmCC",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_3.png",
+			"name": "spr_tvinside_old_3.png",
+			"folder": "",
+			"namespace": "",
+			"id": "46",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "73b78190-1eea-9b33-1991-765a1e815db8",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_4.png",
+			"name": "spr_tvinside_old_4.png",
+			"folder": "",
+			"namespace": "",
+			"id": "47",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "92eabbf3-d8a5-5022-3078-9ce228941867",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_5.png",
+			"name": "spr_tvinside_old_5.png",
+			"folder": "",
+			"namespace": "",
+			"id": "48",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "27c505be-7f07-9c03-e590-f143bb33375c",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_6.png",
+			"name": "spr_tvinside_old_6.png",
+			"folder": "",
+			"namespace": "",
+			"id": "49",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "602a6308-6d25-42d6-279e-80fd36569101",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABidJREFUeF7tnOGyIykIhZP3f+hMJZXOeCkFFEz0ePbX7kbslvMJiD1zv91ujxv/OdYDdwJwrPavhROAs/UnAIfrTwAIAIvAoxlgDXC0/CwCD5f/YAAej8fjfr8/I+Dt+e+vI9H7v0+i4pgUcAl+ia2JfBII8ADUBJc7/4Kh9v/RYYAGoAzttZBfiwJPwWVKKG3R0gMsAOXOL0X1CihtUCMBHABlrh8R3gIEDQQ4AC4BvSHfEryVJkbsVrSBAaCWpz0V/4goZbG4e0SAAaAmZCYAteKwFm1GgPqlDSQAmcLLI+IvxZrxbEgApKNqnb4eSHYP82rT65QvguTpoGwBa/0AZPFf7e9TAChF1nZ/KThyA+iT2k4GQOsTaCBIgHaOEkdGAG80aBWArYulHUE4FgDP7aAUVLtYumqK3SCAASAaljUgat8NtE4WBGDGYdUxZ+vmT2sQyTwvx2piEgCHKN8ckhEByve9CsQaBK1TxI4nCKaAt+qjn4jtflSEA6A3B7caRFoE8ES2Worw2H17DAwAMxw3IqIsJnuBnLEOtoIdXtW+HxgRcQQex2umDzk2AtRCv9Yg6k0Ju9QGxwLgady0Gj8ecUvbkQiSvtUbEx4JgDc8e6+Me/sF3xLX85xjABjdkdLOagdfTo/2JTziZYyBB2BU+N4LI9lEkvarpoGjAGjd7nl3Um9KyIDP+26j46AB0AQb3ZFeCLSIMCrWDLvtAOitwFtO6wVA6xN4hOl9nmfOjDFwAFg7NEsI6zlSnKznZoj+JzqhfBJmCZIlgGz19giS9Q49z7TGbhcB5IIs4aOFX3ms074htByd9R7e53jHQQJQ+4Ln6RBP/aA5zlNUWkCuFgW2BUATM9LCHQXgaSfBq81FALyxSYzrFTyzCLN2dc+SCECPt4qxvwLAI75n55cRYtAFU8y2TQFlcaZ5pizcPJc2f45Ijb9FzOrze2qFKWoOTLoNADIC1I5jrTt7efvX+m+Zx73AyHFW1FgpDWwDQAtuT789Wv1bG8sSPLMesd6l9/etAdB2dg2MbBBqUckSYKXd/4p4u3YCyxTQCsGWs7OA6I0AKxWE2wJQ22lWrrd2pywsrZriGl+C5oXBgtP7rtFxkADUKnnLUV7hrHzunYcAWIo4fy/DeKsDqE3lFay22yPzEgCnwD3DZArw2FoA9AhVPl8WoVbvwPOuM8ZsnwIyisEMx1qRaCQtZbyXNcf2ADwX2Nr5IxHBcpj1e61BZdUN1pwzf4cAoIRghSNWK9x7mlYzxa7NDQPABUFPzp7pbKu2WAHU1zvs2giaKV5kbk8K6D1RRN7HsiUAlocGf9ciwCpRihFgUFyPGQHweClpTK3az+rz976i1oxasRcAmQJ+cfyToFhF4CppABKA3l07a/wOaYAAJKpvpSKta5n4Gl1TEYAud9mDvS1hpgDbl1uOWLHbpzkSPgJ8qyCUDSDrU3FGgC33t/3SnmPgKuKzEWTrGRrROgUQgJBb1zXeQXDpPfgaYDYusuOonQJW2vmfCyneBs5BpAXCahAwAiTqL08cWkGY+NjQVAQg5L7/n6O9Kur3Hya9piyB+NZxtHc5BKDXY5Xx1s4vewJMAQkOX2UKz7d/V2T41fW05StGAMeOlkO0417twmdV8dkIsraH8nutypd/RnDl0M9j4KD4td1sFXgrXgMTgAEAWjd9LQB2uBlkDTAAgtfEigzeeWaOIwBO72qh/xNOG3+plPMRPxlGACa4feWqXy6XAEwAYKcpCcBOak14VwJgOHWHSj7CBQGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZAgGIeA/AlgAAiBhZwj/ulYw9EZpvSgAAAABJRU5ErkJggg==",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_7.png",
+			"name": "spr_tvinside_old_7.png",
+			"folder": "",
+			"namespace": "",
+			"id": "50",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "cd49fa6b-45f3-d574-be34-24ff1dff7fbc",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_8.png",
+			"name": "spr_tvinside_old_8.png",
+			"folder": "",
+			"namespace": "",
+			"id": "51",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "27e6f18a-47ef-69a9-aada-31b3990c3c19",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_9.png",
+			"name": "spr_tvinside_old_9.png",
+			"folder": "",
+			"namespace": "",
+			"id": "52",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "c0b8ced9-7787-2ac5-6ef3-275065f89a60",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_10.png",
+			"name": "spr_tvinside_old_10.png",
+			"folder": "",
+			"namespace": "",
+			"id": "53",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "2493b9b2-9d63-87c1-81da-bf82d3a62778",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABeVJREFUeF7tneFyKyEIhZP3f+h00rlmrFcFVth48PRXp1HW5Xygom2fj8fj9eDXsR54EoBjtf99cQJwtv4E4HD9CQAB4CLwaAa4Bjhafi4CD5efABAA1gHOZgB+DfB6vV7P5/P9Ho/6+7Nl1b89LACt8L9VrX8glNd/t+n9XO+e/C3hAeiBUGRrgcgvp/0N4QAoUV2/aj0FzFzQyxCnQwIDQIn0HgCS6HWfWnCuGYC2gT2xWhje4kqAnB7xbbBsnwFa4TUg9DIChe/nSSgAeqt6Rrx94fdn/YRUCGoBmIlfpgNr5J+2Ltg2A8y2d/U2b7YrWIuNM3pvC0BbzOlt+3ptrBHfk/mkAtK2AFwp8Kym79X+iDljewBGe/hS+48s9Z6QCbYDYBSFo9p/lEi9GgNihEtjhgGgfZFZEchjHRC1vpAEufvz7QDQOiBy/19nldkUpB3rzu1SAuBxP6Cdcjyzyk5AQAIgFYQ8xBrtQjxsEwAHD4ymgKsVQGmNURefHIa/jQnoDPDfyZbz1bATqoxwAJTUHLkIrGsMI8i2CeHFgUAC0J4FeKX9E6cBKACkqJ8FgwYSjX2NncWgvLX7NgBIdXht6u95r3dnUHN7aKREpp3ANgBI2Etn/2XeXhFWGkPGnUAKAFphNKlcK/Yso6zY2KUvBABWQduUr702bhEly1oAAoAiTFujvyPdS1CgrwcgANBcDhkVbazZQxI8W10AAoDa6VeEjswUzADWkFlsb43oSPHfr0IAFgW1dveuB1ifzylg1WNO/UeXNizmPbMDaibYag1gvd9nzQYR28EaOEQItgLAEr2l8jfro41wbTvpWdbx79B+GwCkswDJWdrFYV3A0faRno0Y+Z/qKdLvBs6E6F3elM4PvABA3g0clQFGqX51CmAGkHKk4nPrFDCrDioe96fJyuIQ/UxgmwxgFa0+H2gjUHtreHUKqMFBzQLbAGDNACvAXO3LXUCE575kczX6s1QEt8kAXhxYr3J7gICa/n93L+jbQK2AI5G0/SVAUSE4BgBpr16Xla/sCgiAFCJOn2sj1iqI1m62hSBcBhgJZRW8J6QHBFKmcYoDNzNwALi9ecfQKgAeEEa+X882AWi8slphRIOAAHQA+JyUKf72cDeqmv9bcHdUW55HACpvcQqwoJOs7ayApAUDLf2nKAR5cKgVWPMsNAg4BUymAOs9ATTxU2eAK6eL7U1jAqDJeRu3kW4Zt4J7vApaFjhiChiB4Dn3o1UAP1td9NPAUdT2CjqjQ57259rU3+vnkUXutHFUBmgdW6fr3q3i0l47VaCl/7SLQG1qH90lrCuB7++lO4Zt+zsjePVZaTOABgLrub90+XRVjG/0TwmANmJHU0ILD2Jq18KUDgDL4k/jpJn41vuHmufd3SYNALMrXda5vmzpRsWkyEspBOCCB1qhtAWg2aPqraB0oRR5ikiTAWoxJQC0jHnZ0T7vG+1SAqB1pPa8YAaC1oZ2THe3OxqAVWdn2C0QgFUKwPunBUCTmj1Tu+Z5O7KSFgDJ2bPa/6hvD5h6+4lYEk4PgKU+IEEjfY64a0gPgCTa6Z8TgIsEzErOF01+pRsBcHQ7pwBHZ6KY6tUCkHYEzAALpI0ingAsOBW5K6cAZPUMY+9dOEE9EeQUYBBe25RTgNZTSdsRgKTCWkrEKC7gFICiVNA4CYCDYxFX/5+Dq6y/Guag69REWwrmLiDa48H2ewu3OrJnCztmgGBx7jSPtIL38AvXAB5eBLZBAIDF8xg6AfDwIrANAjARL1PNf/SaBECI3izbPQIAnKYjh84MEOldANsEwDAFlKaZagUEACBKI4dIACK9C2CbAACIFDlEAhDpXQDbBABApMghEoBI7wLYJgAAIkUOkQBEehfANgEAEClyiAQg0rsAtgkAgEiRQyQAkd4FsE0AAESKHCIBiPQugG0CACBS5BAJQKR3AWwTAACRIodIACK9C2CbAACIFDlEAhDpXQDbBABApMghEoBI7wLYJgAAIkUO8Qf2s3w9dKQdIAAAAABJRU5ErkJggg==",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_11.png",
+			"name": "spr_tvinside_old_11.png",
+			"folder": "",
+			"namespace": "",
+			"id": "54",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "9d2e8dd0-0b91-4ca3-b38d-af67cc1395e7",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_12.png",
+			"name": "spr_tvinside_old_12.png",
+			"folder": "",
+			"namespace": "",
+			"id": "55",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "15276b31-ff16-20dc-50e3-d357d5688c85",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABaBJREFUeF7tnNGSJCsIRLv//6P7RneEs4ZXBVQsE3Ne9mEsSskjINbs+/V6fV78udYDbwJwrfa/hROAu/UnAJfrTwAIAIvAqxlgDXC1/CwCL5efABAA9gHuZiBcDfD5fD7v9/u7Lv4oPBAGgK/wab0tANIYAvKPDHgAcuFL4EuhU3TI//21Qy+OGPAA5KK3YLhZYCkLQAPQ2/35whMAZQoon78RFFgAyjAukZ6H+t6zt0EAC4Am9GugqIGhfS7COGgA8pCuTQe11FAKedNpAQ6A1nFvBADp2Bhhh0trgAPgu6DaDrUC8M31bBoB3QVYBW6Rf1uRFy4C5LtWAwV3eh8ByBSQliR1AW8q5qSd3oyIKLeBZRs3rwVaxdxKAKLWC8dGAI3DvQTu3RWsfOforl353LEArFxk69QgFYS11rH0zMp577AFD0CtDsh7/7lgrbuA1q3hDQ2iEACkSl979Cs7iOVJoZd+NKlpx85d9Q54ACRHzApWO3ZGSgPhAZAAaf2+1XIetXfqc7AAjOzs2lHyVGF2zSsEAFJxF+3othIOWAByJ1DgcSTgAajl6vJoGKloG5e6/iQ8ALVl9SLCSO1QRptWn2G1ODvshQGgJWxZ+NWig7XjV0adWah2CA1/GSQ5SdMRrI3p2dV8TYyeXkJEgJ746dZQ6hZKgGlAmbHx1LPQALSOf19n5u3d8nbPw9mokQAagF4Xrxa+rSlACwqq+L+NgvJBiFYMaZxXNECF4DoAEiCtumEmSiBCcCUAMyJLESbVH5pxJ4yBAGBlq7c8s6+GAe0r5GMB8GqurBa82WAB+T8HrgJgl/hIaSA0AHkUsYg/0zTKn0UoCkMD0Kv4PQowxEuiIwFYXfQlscvmkAUCS1RA2Pl/PoncCLKEfQsMmrEoEBwZATQO1ozp3RVonp8ZQwBmvLfx2dVRonYJtXE55leFjgCSN/IIsQIEFoGSxw/6fU9wS8HHRtBBoo5MpdZxHI0GrS+IRua165nrUkDtLmDmeNgTCqEQDAWAdH8g5fzaXwnP7EQCMOM9w7PWxlEZ4mtCWdJAWTMgpYIQEcAKQM6Wx4ch6TJIikgGxt2GhgBghXcsO156H9KFEAEo1NSAYKkVTq8DCEAGgNQ6bu1sqacgRYwnf08AGt7XRII81yczSOH/N//It4EjOysVbqMfkyQoRt79xDMEYDICsBX8BLYb3qlNAQRggxg7XzHSKj690u+2q1kD9PHKI4F0/EMEgTVARf9W+NdeGiGBQAAGGkHoeT+fPwEwRACpFkHa+X99C9YA/5d1NAUQAGmLHPz7vAGkmSai2LV1MQUsTAFoXUC2gjPxW3f3moZQ+TUwwncAUDXAUw6VPjTRfFmkSSdPjmEK6Hi/BYDm2vhJUS3vDgvAiqjR2uHS/f+Kd1tEnBkbFgCtUySxWt8MJvu1VrGUOrRz2zHuegA0TrZGgvzvAzX2nxxDABTeJwAKJ0UfIqWK7/oRTwWMAAvJRcr9UH2AhRq5mMqF10QKl0kMGmUEUDgOcWcrlvUbQgC0ngo6jgAohEUL64ol/Q0hAApvaVvCClPHDSEAgiSW3Y9YKxAAw55sVfvlxyRIH4sQAAMA2qGWqKG16TWOAHh5FsQuAQARymuaBMDLsyB2CQCIUF7TJABengWxSwBAhPKaJgHw8iyIXQIAIpTXNAmAl2dB7BIAEKG8pkkAvDwLYpcAgAjlNU0C4OVZELsEAEQor2kSAC/PgtglACBCeU2TAHh5FsQuAQARymuaBMDLsyB2CQCIUF7TJABengWxSwBAhPKaJgHw8iyIXQIAIpTXNAmAl2dB7BIAEKG8pkkAvDwLYpcAgAjlNU0C4OVZELsEAEQor2kSAC/PgtglACBCeU2TAHh5FsQuAQARymuaBMDLsyB2CQCIUF7TJABengWx+x9uBQg9V+ci6gAAAABJRU5ErkJggg==",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_13.png",
+			"name": "spr_tvinside_old_13.png",
+			"folder": "",
+			"namespace": "",
+			"id": "56",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "698d0b7a-6091-808a-9ebc-8f44b2085c90",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_14.png",
+			"name": "spr_tvinside_old_14.png",
+			"folder": "",
+			"namespace": "",
+			"id": "57",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "d547d646-cb61-c3ff-02e1-692f81dd5c28",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABahJREFUeF7tneGW4yAIhdv3f+juac/aZVxUiIRBuPtrZpKI4X4iou0+H4/H64F/ZT3wBABltf+8OACorT8AKK4/AAAASAJLM4AcoLT8SAKLyw8AAADqALUZQA5QW38sA4vrDwAAAOoApRlInwO8Xq/X8/l8v+eD/lxadfLyaQHohf/sfBEQ6O+VYUgLQBvxVNwGQPvbG5LqIKQFoInbj24KAaaEhJXAJuoIgOoj/r8Bka0SKAGgOQHJYYII0IdxCkCf9K2SvYpApMgBaDInCf2S/GAFS5brKQCgYswAWInWrxJW92e4fjwAfcjXADBaFs5WDnR5mQGYFABYjcQ+B6AwZRCb89PxAHAFHysgKqwWjgdAE/KlYGQd7SkjgGbdLwWgUrHouAgwE1y77l8BUSESHAcAJ5rVNFBB8FSlYCvhZzuGqyhx+vWjI0C/nbsLBCLAAThzBz12uv0WfWdbeOfZnX5bPXt0BOidcCUCVBz1P6a8LNvBXNVOAgQASHYqWFsXAACJABid8RttF1cX/1PwyjIFSOoDLeG7s9J3WlKYGoAGxeoAiJVoJ+4elgCgBwGh/1+8LAOA5+gc5SJWa3fLdkoAwCWBd0YBAGCJ6GZbo1PCdwHgGWk2XfN5PH0EmAly10g9CYL0ANBR0gsDAApEAG4peFf4f9vilpx32tudBspEgNW+ACfSlfrAlWd2Rdx5Pj0Amk2ine8P4LapT/ioWSkARiNlN0TflUvsjGzps+kB4JJAuifAOWr0ARHpNHFSHhAWAOu5VLJNPDpVPIoQkj2GH4cv/n5FjXR0etwXFgDrlx9VA3sRZ9FBe62/f3eqsfZJ6EKQZQRYrQC0jh0liys7AEDhaSsAVqK0LlFxZqF9Nr9LbEWDIP0UwIHEhX1axFnBMMoVVnxHEz/0FLBypvb6aFPo4wSSnGnqBrM+cG0CAK1qi/s1my6S0N0LJAnpFCCracvYTdPmjp4CNAUYbhk4GqXa5d1KsIgj/5v7ZD4UyhWB+hHbfpeM9rask9YLNICuILrr+rERQBtuZwKvKoNS58+Sw6hR4FgApKKMSsEt619l/NIIQaNDP/IjR4JSAPTQcMLMIstqmtjZTbwCtMUzpQGga3860q+u83tBTgAiHQDa3GCUKNK/XwUCewEWMeqX2pjVGFaVRG6l8V12BdsRTBcBdnlZrRbotLFaFnJ9ibYaAAC7xDAHQU9aDgIAAQCzZR23x9CaHE0VApNutwCATVf3SadkCtk0afo4ADB0pyY5NDS71RQA2HLfz4c5AKJPAwBgAwCaG9Cp4KRpAABsADBK9riKYNT9AABgAMCoidkhlBvNqpoGACp36W7upwhaIdS1dN/dAMDIt9xykBaEolUAv6XpKieCjHRm/wfyUaGI2gQAVgoEbGeU4M02lKK8BqYAQyVmICACGDo6YlM75xB+830QARTeHxV4Tjj5M3pNAKAAoL9VU9yJGiEAgBCAqAIKuz+8DQBsepDL9DWRYdP89uMA4IILTxJ49XoAYOUhcp0r7UYs7ypeKf9XxWqcIb1XGgGk90nt3nEfIsBFr2ZJCgHABQCkI1t634UumD0CABhXniCcFQEAwMqTh7YDABYR4Opcf/U5b44AAPlkz2jHLvOUAAC8h1wwewAgmCDe3QEA3h4PZg8ABBPEuzsAwNvjwewBgGCCeHcHAHh7PJg9ABBMEO/uAABvjwezBwCCCeLdHQDg7fFg9gBAMEG8uwMAvD0ezB4ACCaId3cAgLfHg9kDAMEE8e4OAPD2eDB7ACCYIN7dAQDeHg9mDwAEE8S7OwDA2+PB7AGAYIJ4dwcAeHs8mD0AEEwQ7+4AAG+PB7MHAIIJ4t0dAODt8WD2AEAwQby7AwC8PR7MHgAIJoh3dwCAt8eD2QMAwQTx7g4A8PZ4MHsAIJgg3t0BAN4eD2bvDyqwGD1POKAzAAAAAElFTkSuQmCC",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_15.png",
+			"name": "spr_tvinside_old_15.png",
+			"folder": "",
+			"namespace": "",
+			"id": "58",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "2b08a3b5-cf19-7acf-da79-d59292cafd00",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABY1JREFUeF7tndtyIyEMROP//2hv2ZtJEQJIwqBpoc7b1jBc1AdJiHHt4+vr6/nFv7QWeBCAtNq/F04AcutPAJLrTwAIAJPA1AwwB0gtP5PA5PITAALAOkBuBpgD5Nafx8Dk+hMAAsA6QGoGmAOklp/HwOTyJwPg+Xw+H4/Hy+vx79sCKULAS/j33TfF/wP+0QBcwperJgS/GTgagNdSS7fPEPA38h0NQMsD0Bsc7AHqWE8A5Fw3rQdgLvAfjuMAuOJ8HfulvZAViGMAqIW3AFCLn+nYeAwAV8Yv7fT6eWvnZzotHAGAlOxpobhgKPvrhYZTIAkPQC3WKhiyVA6PAkC701vtXjs9U+y/bEAAKhpGIJzi9n8Vw6J/FDrj8luxvucVPvEqEd4N7QF64pe72CqCNRRE9wrhALCc72fEt74TvX04AGqDz4SA+kIoY/IXPgn8VHhNQci6uyOCFN4DlBXAsmgzA8iq+4BIeUF4AFoffMyI/+MSi8/GIglp9VbhQ0BrwbXwvUueHe5/VoC73wvvAUaXQKM6fp0I3i3EXeMfAUANgbbQ03L7dwlx17hHADDKvnt1g6vgsyrxu0vAT8c9AgCNEUZVQ837p7ZJAQDF7+ObAoA7dm+UI2Q6AKII4wVtCgBaISB78ndkIUjaNVKhSHpf8zwabCk8wCWc5mNPjciaNlFCTRoARjtztVh1XWJ1/xoAtW1SA/AykkcuQAC0OG5uJ90SamGoBe3lFhG+DzjeA7RKwdI3g/V3BfXdwuxdA6InSAOAVA1sJYiSYFqP4pl8Wp1oGgDKG8ORBygviSRXX94mttpafmpmFW5V+5QArDJe3Y/mAxRtnrFrjn/mHP2HIeUZX2NcyW1fJwMpsWsJVF8xRygKwXoAKf5ad8jVnwYAqe/StbfCSaRfFB8FwAgai/CSK9cCQA8gbSXH563jYC+G95K/UYjRAKYJUY4meQ91hAfQFlzKdr1jX10dlLyKpSZAABbh7VVr7yWCrWVIHgD1G0RYD2BhResByj618dnqAaQag/XUYrHDTNvQAFhOCpZTgPR7As1zTeURISSEBcBaXpWSwF79f2ZX1e/MeKgV42r6CAnAKoPWSeGuHWmFVSPcqjYhAVi1eGmnjoSTcoP6NPH6tyVk7VrjUaXgnQa19t3KMeqw0oLCS+jeOPQADgowBDgYGW2IXtK5K8+YXf9xHsDquiXDWfuTcgO0gtBxAEiCWp/PAHCN0fsgxNqndc6W9gTAYq1BW42oZaKIEgoIwCIARt2sqlvsmCoB+NCqmp1/DWFp++G01K8TALWp2g21oqJ6AQIwCYD2bF9fCqHE/p9E9ZSPQid1nH6tdc7X3BJOD7jpRXqATYZFjvvlkgnAAgC03kCbLyyYkroLAvBtqt3i7O5frXjVkADMWq7xHmKhR1oeAZAstOg5PcAiQ7KbtRagB1hrz2ZvqLv/NVkCMAEAenHHsiQCYLHWgW0JgFFUbQnY2O1tzQnABtMjx/x6uQRACYBm56Pe+I2WSAAMAEg3ea3kEN0bEAAFAD0Ry8rf+0hV/I9jim4hmhAAQYaW+BFdfW+ZBKBjmdENH+sAEM5r7yRGsZsA7LU9TO89V88QACPR/okwB9hvY9cR0I9lrsbgZZC3ufHG4ykATxPXGREAV3PjDUYA8DRxnREBcDU33mAEAE8T1xkRAFdz4w1GAPA0cZ0RAXA1N95gBABPE9cZEQBXc+MNRgDwNHGdEQFwNTfeYAQATxPXGREAV3PjDUYA8DRxnREBcDU33mAEAE8T1xkRAFdz4w1GAPA0cZ0RAXA1N95gBABPE9cZEQBXc+MNRgDwNHGdEQFwNTfeYAQATxPXGREAV3PjDUYA8DRxnREBcDU33mAEAE8T1xkRAFdz4w32D941GD2rJ0vGAAAAAElFTkSuQmCC",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_16.png",
+			"name": "spr_tvinside_old_16.png",
+			"folder": "",
+			"namespace": "",
+			"id": "59",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "057f31d0-e8c5-a97f-605c-9b09c77dacda",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_17.png",
+			"name": "spr_tvinside_old_17.png",
+			"folder": "",
+			"namespace": "",
+			"id": "60",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "aa7ee49b-5584-e8c9-a264-16d42e23d45c",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_18.png",
+			"name": "spr_tvinside_old_18.png",
+			"folder": "",
+			"namespace": "",
+			"id": "61",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "f3ef342c-c026-8f30-da89-1b0cfaf00d09",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_19.png",
+			"name": "spr_tvinside_old_19.png",
+			"folder": "",
+			"namespace": "",
+			"id": "62",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "7a0e60a0-7b82-1854-1307-4075097453d3",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_20.png",
+			"name": "spr_tvinside_old_20.png",
+			"folder": "",
+			"namespace": "",
+			"id": "63",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "a227b66b-cc2d-ab06-af57-0bca9e183f71",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_21.png",
+			"name": "spr_tvinside_old_21.png",
+			"folder": "",
+			"namespace": "",
+			"id": "64",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "1f909c3b-f7e3-762d-8c36-b52932c54ac5",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_22.png",
+			"name": "spr_tvinside_old_22.png",
+			"folder": "",
+			"namespace": "",
+			"id": "65",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "76ed62da-795a-9727-b084-c72efddba7d6",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_23.png",
+			"name": "spr_tvinside_old_23.png",
+			"folder": "",
+			"namespace": "",
+			"id": "66",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "362d8580-9337-bc88-3fd0-5fcbb6e129d9",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_24.png",
+			"name": "spr_tvinside_old_24.png",
+			"folder": "",
+			"namespace": "",
+			"id": "67",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "47eb5635-9731-0e1f-e390-3c9bf954ceef",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABbFJREFUeF7tndGW2yAMRNf//9HpSU6dslSAYMA2o+lrLIw0FwECb4+fn5/Xj/6FjcAhAMJq/3FcAMTWXwAE118ACAAtAkMzoDVAaPm1CHTJ/3q9Plvl4zjeA4bqnzJAJucpdkllNggEQKJ0Lv4ptjIAVdL77cxb3LfQrZFvhYAhG4TNACOClyA4IdpxnIQGIE/xiIC7ZgMB8D4M+bvKFwBIBDaxReb82hRw/rZbJgiTAVLh80Xf6CIwB2I38UOdBuYLtRlpvwTATovCcBngFG0FADtmhLAAvMVaDcEOU0IYANKRf875M7eBuxaKwgCwerTXNkFPzgT0AKQLspUQPFnkKpxRLoVaIMyYAkpbyF2AoM8A6WJvhuDpvYDa6aEAeHBlsDQV5KKlx8Ce6SMFTAA8GABv13IAdhHV61+oSmBPUCI9G2INsFrQnW8MCQAnHVZ9f2fhv6eXUbaBTp3DPaYMMFHyHTOCAJgAQKkeMKHp5U0IgIkhTkHYZcsoAASA/kJIDwO1Ua41QE8kN312BIAngxFiCph9R88r6Oz3rhgzIQCYETjPvYLSYZAXmBn97G1DAFQiZh0GWaeC6RWz2r2DXnGueF4A/I1yq9R7/l7LBKX7Bk/+ylgAODLAt26e/YGIPLXXsoP1mifUCgRAkgFSoUti1tKyB4jU/gkXSMIB4LnZ45l707uApRRvlYifVjYOA0BtjvcI/n4m/54gtxvNAN73r3iOEoDStqs1+nsvjdZGvnVb+ImLQRoAakWX3pHpHWnpIs6qEJbSfa0/Vy8MaQCYsTjryQDWDWKveDUwvG14IW09FwqA0VX+7EpebYoSAC1kG7/nU0Fr3q/tz/Piz4zavtW/O7eD1BkgL+UibKEjM18jWGsGpH+jtpQAjI76mkjnNnA00KUtY9ru7KnG01dKALz7c++iDx39lhD5mcKKdwiA7K+AlFbuaHpujVzP71Zl0SMg+gx1BihNBaWPQNNqX6lm3zsV5CP97pSfA0MNQO9UYD1fKvaMgJBvQ+9K+7/gjvJlUG1L56kiPm3koqn/C2MUAHoClsLSKh5ZU0XPu+5+NvQUMBr8Uil3tL233Ywi08j7QwHQGyDr0KZ1JNz7jvT5OyAIA0ApuK35f8VCzdoW3lUZDAMAMjJHbVulaOREcbRPobeBs4JW2156ytArssqobyEyQKsSNxq8fP72tFMS/475/7O11TbQI1v9mSsAw3tptyAAVkV2k3YFwCZCreqmAFgV2U3aFQAXCmXtEGonk2fXVu4aBMBFANQKUa0uCIBWhAZ/b9X0r1jd3103UAYw4LlC+PO11oWR/6p1C//begEwmD1mmVl3A68sCgmAWUoOtFO6i3jldwICYEC4mSatNcDKBaBKwTOV7GirdUqYNiUAOgJ756OteTv/vTXyr6gBKAPcSIwAuDH4K17dulk08s7V6V8ZYESVxCa/PVwq63o/Qbty//+dYnQfYJyCVsGodPcv/Qys9PYrRr8ywLj2vyxLIFilZqvwM6kbQ82oDjAUtn9G6TRQu+5VS++eNsBuFs0FwKrIZl8mf9LtcRzW9e/WFnJhF3UncFZwrUMda/FnfQYuAGapcGM7d4qIuK0pAIkega0AIBARcUEAINEjsBUABCIiLggAJHoEtgKAQETEBQGARI/AVgAQiIi4IACQ6BHYCgACEREXBAASPQJbAUAgIuKCAECiR2ArAAhERFwQAEj0CGwFAIGIiAsCAIkega0AIBARcUEAINEjsBUABCIiLggAJHoEtgKAQETEBQGARI/AVgAQiIi4IACQ6BHYCgACEREXBAASPQJbAUAgIuKCAECiR2ArAAhERFwQAEj0CGwFAIGIiAsCAIkega0AIBARcUEAINEjsBUABCIiLggAJHoEtgKAQETEBQGARI/AVgAQiIi4IACQ6BHYCgACEREXBAASPQLbP9n6WD1cZvL5AAAAAElFTkSuQmCC",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_25.png",
+			"name": "spr_tvinside_old_25.png",
+			"folder": "",
+			"namespace": "",
+			"id": "68",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "110008bb-2fac-cb2d-4585-b5772572393c",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_26.png",
+			"name": "spr_tvinside_old_26.png",
+			"folder": "",
+			"namespace": "",
+			"id": "69",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "d357273d-1665-8c2d-8095-9825469b2f19",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABY5JREFUeF7tnNF24yAMRJP//+jsSU/dpSowAosAw/RtF4wtzZWQhdvn4/F4PfRzrAeeAuBY7b8MFwBn6y8ADtdfAAgAFYFHM6Aa4Gj5VQT+yP96vV7P5/MdEEf9KAMcJfdfYwXAuxHyev1qhl2ZoPb/LNniaACswFd8IACYksaxAJTE/+qOfdcCKDMwZAEB4Ajnt9AeYBxLLTflSABqYpYUqkGwcyY4EoC3yD0Q1OBYLrSdD3QcAJHCpz7eNQvQA5AKfqXxUpHnDJrqtN1AoAfgUivt9F1QoOKuBwgB0OO1D10zKv3bx98JgqMyQNrouTLCaChWh+EIAEaLjBLYyhAcAcD12jey+KtBIABQiHxoPC3+onsBu74S0meAXPofnQlWjvg/BSvzZ+Gf3Pt3Ev1XtmIGoLazRMKxq/hfJ5+MAETu9ahZtLP4tADYyC+d66ddwvQ7gFqBmAKxu/jHABD1ksH44SjlFhAleLpOSXx72DTi3iPXFABO76LoR+PO23x8mgBocLk9RVQN0OA8pqn2LWNn25QBOtXbNeUf1Qns1NZ1mQBwuYlvUk74UuNphxpBW0ADo95fFNmpRhAADQAwThUAQFWb8kuHSLkWce0oehWYBEBFCe+Jof2+AH1vsFJtIAAcACBBryV65s2GQQBkAEDFnhXcLlHLHLnj5ZkQCACjXvq5ePqbRLlfLCmBgABKM4X9baVP1wYCIPG47fWnAttTPwuKJwvkhE+vm5EJBIBjC2iNylxRiLaF1ntEzRcA3570VPylCEXXouJwRuT/ZDfGbwIv41BHDgn3XqdFdDvXs762gKhc1pHKSx982r269xERADMj/4gMkAqXFm0lQVFF3nMC6IEAZapeAD3X0dUAtdO6mvDvsUghECxo3CNexBw6AGzUp/v47Ep8xbOB7QEoRVLJ2bmGjj3IiY7O2gFSRBTfWWN7AHLG11J5hBhoq8iN12qQmcUgHQCo6Mq1b5GgdyKs53nu3K/1WjoAPBnBtnXTvsHIaExBs2CMvG8NCkoAbER7/u0RILdOrvnjWSt966g1nFojunX+UQCg10DkvOitIno99Py5cUoAehxR2jrSaB4hWPQbR6vtAqDVY2TzBcAigs7KBEcCUErlI1K85WuW0MX6h/k4uDW4PwFA6zONnn9MBpgRebPPHjzwHAOAp0HkcZhnTlTfwXOvu3PoAchFvu3Lexs3rc7eYUuhB6AmWu+2UIrw616tQPU+RyuQagRFeCzgw5GVMsPRGSCIh6ZlStE+KwsIgCb5+ifXhO/dOvqf5v+VAiDCi5k1asVnOn32diAABgGwy7ICYBelBj2nABjkWM+yswq/9NkEgEcpMydi345Yo+PR/1wiACK82LBGej7Q2jBquI17qgBwuyp2YtqOngmCAIjVtXm12XWAAGiWzHeBFdamfmUAnx+XmnUnWhEQswxVBhjs+Vyk2w9FVAMMFmHV5e9klCiblAFuetIrYjpvpVdBAXATgN0vFwA3Fazt8fZvEM3c60tmCoCbAOQuL30NLAAGOHvWkjbyc3t87g9GznpeZYBAz69ykBNhkraACC+CNbxvCh94lD+3EAAzvL7QPQVAgBgrRzgyTwAgD5GPCwBygZF5AgB5iHxcAJALjMwTAMhD5OMCgFxgZJ4AQB4iHxcA5AIj8wQA8hD5uAAgFxiZJwCQh8jHBQC5wMg8AYA8RD4uAMgFRuYJAOQh8nEBQC4wMk8AIA+RjwsAcoGReQIAeYh8XACQC4zMEwDIQ+TjAoBcYGSeAEAeIh8XAOQCI/MEAPIQ+bgAIBcYmScAkIfIxwUAucDIPAGAPEQ+LgDIBUbmCQDkIfJxAUAuMDJPACAPkY8LAHKBkXkCAHmIfFwAkAuMzBMAyEPk4wKAXGBk3j/z3twueH7a/wAAAABJRU5ErkJggg==",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_27.png",
+			"name": "spr_tvinside_old_27.png",
+			"folder": "",
+			"namespace": "",
+			"id": "70",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "1ae5a5cf-3a46-9ee6-4675-cf911e133215",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_28.png",
+			"name": "spr_tvinside_old_28.png",
+			"folder": "",
+			"namespace": "",
+			"id": "71",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "d23b0a28-b5cd-d7d2-4bb4-c63969a57a81",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_29.png",
+			"name": "spr_tvinside_old_29.png",
+			"folder": "",
+			"namespace": "",
+			"id": "72",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "7199e125-8d28-72e8-1772-80a0c6dc268d",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_30.png",
+			"name": "spr_tvinside_old_30.png",
+			"folder": "",
+			"namespace": "",
+			"id": "73",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "77ce6b65-f2f3-fb60-cd17-5d10b8f587e8",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_31.png",
+			"name": "spr_tvinside_old_31.png",
+			"folder": "",
+			"namespace": "",
+			"id": "74",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "1b6f5aba-7c77-1cd8-dd61-21e9dd7e9ac0",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_32.png",
+			"name": "spr_tvinside_old_32.png",
+			"folder": "",
+			"namespace": "",
+			"id": "75",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "f8e2bfd4-fb5b-7116-f6ad-9c1d0b0124cc",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_33.png",
+			"name": "spr_tvinside_old_33.png",
+			"folder": "",
+			"namespace": "",
+			"id": "76",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "116e52b0-a30f-0783-ab3a-f4f633801444",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_34.png",
+			"name": "spr_tvinside_old_34.png",
+			"folder": "",
+			"namespace": "",
+			"id": "77",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "2a4c172b-151f-bffd-128f-67d55f2f5d57",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_35.png",
+			"name": "spr_tvinside_old_35.png",
+			"folder": "",
+			"namespace": "",
+			"id": "78",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "bad706aa-d1c0-b4bb-c9a2-9b5df96695cf",
+			"source": "data:image/png;base64,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",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\tv_screen\\faces\\spr_tvinside_old\\spr_tvinside_old_36.png",
+			"name": "spr_tvinside_old_36.png",
+			"folder": "",
+			"namespace": "",
+			"id": "79",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "f0a937f5-df11-5bd2-7220-b2c501d62142",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABFVJREFUeF7tnNty6jAMReH/P5pOmLrH4+NbTBQj7cUrxjjaS1e3PB+Px+vBS9YCTwCQ1f794ACgrT8AiOsPAABAESjNADWAtPwUgeLyAwAAMAfQZoAaQFt/2kBx/QEAAJgDSDNADSAtP22guPwAAADMAbQZoAbQ1p82UFx/AAAA5gDSDFADSMtPGyguPwAAAHMAbQaoAbT1pw0U1x8AAIA5gDQD1ADS8tMGissPAADAHECbAWoAbf1pA8X1BwAAYA7wZuD1er2ez+eREqVe1AC/4h+qA4AU+/8e9vD+/NETCApRgQiQhf8EAgAEjwQ1ofMU0IoIEc0iHQFaICQYyvcBIJgFSk9Pj6dUDEpHgNT+lVwDQDBPn30chZD/H+xql0G91m5UHM6C5GmdTAqoCU8NIPD3ADWRjxzfEr/mvflcoNYueq4ZZCJAXvCVgvX6/jxyREwRMgDUhGxV/0qj4fAA9ISvpYJRepgJ957uEMIDUOv1WyKuhnhPgku3gbXQ3ioSezVDMmKEuUHoCNCb9fd69VrVPwIlpY6ZFPFNc4LQAOSG7gmYvL3VHbTawG8ScvUsoQEoc3Ovuu/195Gvh0MDMMrVvZrAWygnAnQssOr5q0b19LmwEaAW/ntenda37gyiRoSwAJzxwlE757nPH9lBHoA8PeReHln0HAppAEaeP/KeK9/fBZw0ADUBWxHhSrHLvXZ8ZzoDAGRqjPp9Sy/dFY0AYNA+3lX9A4BljHWwNwB8iUjl3w9YRwDLtDJjUlLAjJVuWEMEuMHIs1+xwysBYFYd1l1qAVLApeZc22yX97+vwNX+M2hNons/dWcKAoAT2l4pzM7pH3cBk6JbilReP18J1+TjvZcRAQbWukuYu76nfFwAOOMuAdcCQEPUPET/3ZwF/B1BAJgAwHocvDOwAEDF+qNr4VnBdvb3s2cEgMxSuWC1DsCDoLPC/6U1BkF1k5UAXBUVzgpkvZ4I0KkB8uLv6pnA3dfOLZAA4NcyZR9eenzNgKvFYZlKdqYWAOjE2LIVvOKfRFu1xSpMn6YIAJiwYMtDV6d3tQgAABNC3LWkVvCVOTvKcIgIcKII3OWlluADwAQAUby9WsgyB+j7V6v9W83/lt68sjcRYGC18t7+WL6zbVsRufcZAJgAgBRwNXbO9hsNbjynAyLABIyRQn75uAAwCUDv10U9t4cAMAFAKvxaPyAJAJNG9L4sYiogAnin8sPzA8CHBvT+cQDwruCH5weAEwakBjhhLJb6sAARwIdOZqcEADPT+tgYAHzoZHZKADAzrY+NAcCHTmanBAAz0/rYGAB86GR2SgAwM62PjQHAh05mpwQAM9P62BgAfOhkdkoAMDOtj40BwIdOZqcEADPT+tgYAHzoZHZKADAzrY+NAcCHTmanBAAz0/rYGAB86GR2SgAwM62PjQHAh05mpwQAM9P62BgAfOhkdkoAMDOtj40BwIdOZqcEADPT+tj4Bw0U6B9csW6YAAAAAElFTkSuQmCC",
+			"mode": "bitmap"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\attacks\\blank_3.png",
+			"name": "blank_3.png",
+			"folder": "",
+			"namespace": "",
+			"id": "80",
+			"group": "",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": false,
+			"saved": true,
+			"uuid": "a7681fe4-da11-40a1-de5a-f629c4ec6f23",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII=",
+			"mode": "bitmap"
 		}
 	],
 	"variants": {
@@ -2062,7 +3189,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "d4eb6468-4da3-addc-185c-af04a9cdad07",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2073,7 +3201,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "aef8a846-8bdb-888d-981f-a971afa21f60",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2084,7 +3213,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "d3f329fa-e7aa-b120-3617-e7068d8debbd",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2095,7 +3225,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "dd624841-2852-d093-f2d3-bd8ce75ec011",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2106,7 +3237,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "ceef91eb-7827-6844-fa21-d3c445581817",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2117,7 +3249,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "14b4c248-7c53-7dca-37f2-1171e2904bab",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2128,7 +3261,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "66357950-02f9-193f-1545-800d3df92997",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2139,7 +3273,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "1027298b-938e-e03c-c46e-4ac178e78553",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2150,7 +3285,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "57ea8b5e-4bf6-de50-b3a4-9f3a85d6bd14",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2161,7 +3297,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "0ff1277f-d325-8bf2-01ca-a1d62ea77f56",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2172,7 +3309,8 @@
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "2a5ee4e8-5ebc-9c13-4001-b534d158c58a",
 					"f4d3290b-8e74-e77f-c372-e0c3af2c203b": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "3dc44e6b-7594-04c0-12fd-29f604f95a5a"
+					"70dac508-a15a-2c61-c69b-5ae6c46952f2": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970",
+					"370b8b73-4e6c-b936-26ae-cafa974e6fc9": "ff79491f-bf1a-0f94-15e5-68d2cd2b3970"
 				},
 				"excluded_nodes": []
 			},
@@ -2182,6 +3320,376 @@
 				"uuid": "5bef8aff-8ed9-163b-8d80-816a01d24556",
 				"texture_map": {
 					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "31628fa8-f150-cec9-24de-93036ffcb817"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_0",
+				"display_name": "tvinside_0",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da6927ef",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "e4086d57-af17-f2cb-c01c-7b5b6aa7573f"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_1",
+				"display_name": "tvinside_1",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69270f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "69424a2e-1e33-00e0-2693-ed15ec0c45f4"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_2",
+				"display_name": "tvinside_2",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69271f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "aaf0683a-683e-04e3-546a-b0d69fae78b9"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_3",
+				"display_name": "tvinside_3",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69272f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "73b78190-1eea-9b33-1991-765a1e815db8"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_4",
+				"display_name": "tvinside_4",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69273f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "92eabbf3-d8a5-5022-3078-9ce228941867"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_5",
+				"display_name": "tvinside_5",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69274f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "27c505be-7f07-9c03-e590-f143bb33375c"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_6",
+				"display_name": "tvinside_6",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69275f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "602a6308-6d25-42d6-279e-80fd36569101"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_7",
+				"display_name": "tvinside_7",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69276f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "cd49fa6b-45f3-d574-be34-24ff1dff7fbc"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_8",
+				"display_name": "tvinside_8",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69277f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "27e6f18a-47ef-69a9-aada-31b3990c3c19"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_9",
+				"display_name": "tvinside_9",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69278f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "c0b8ced9-7787-2ac5-6ef3-275065f89a60"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_10",
+				"display_name": "tvinside_10",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69279f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "2493b9b2-9d63-87c1-81da-bf82d3a62778"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_11",
+				"display_name": "tvinside_11",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da6927af",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "9d2e8dd0-0b91-4ca3-b38d-af67cc1395e7"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_12",
+				"display_name": "tvinside_12",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da6927bf",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "15276b31-ff16-20dc-50e3-d357d5688c85"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_13",
+				"display_name": "tvinside_13",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da6927cf",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "698d0b7a-6091-808a-9ebc-8f44b2085c90"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_14",
+				"display_name": "tvinside_14",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da6927df",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "d547d646-cb61-c3ff-02e1-692f81dd5c28"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_15",
+				"display_name": "tvinside_15",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da6927ff",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "2b08a3b5-cf19-7acf-da79-d59292cafd00"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_16",
+				"display_name": "tvinside_16",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692800",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "057f31d0-e8c5-a97f-605c-9b09c77dacda"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_17",
+				"display_name": "tvinside_17",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692801",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "aa7ee49b-5584-e8c9-a264-16d42e23d45c"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_18",
+				"display_name": "tvinside_18",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692802",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "f3ef342c-c026-8f30-da89-1b0cfaf00d09"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_19",
+				"display_name": "tvinside_19",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692803",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "7a0e60a0-7b82-1854-1307-4075097453d3"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_20",
+				"display_name": "tvinside_20",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692804",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "a227b66b-cc2d-ab06-af57-0bca9e183f71"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_21",
+				"display_name": "tvinside_21",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692805",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "1f909c3b-f7e3-762d-8c36-b52932c54ac5"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_22",
+				"display_name": "tvinside_22",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692806",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "76ed62da-795a-9727-b084-c72efddba7d6"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_23",
+				"display_name": "tvinside_23",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692807",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "362d8580-9337-bc88-3fd0-5fcbb6e129d9"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_24",
+				"display_name": "tvinside_24",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692808",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "47eb5635-9731-0e1f-e390-3c9bf954ceef"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_25",
+				"display_name": "tvinside_25",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692809",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "110008bb-2fac-cb2d-4585-b5772572393c"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_26",
+				"display_name": "tvinside_26",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69280a",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "d357273d-1665-8c2d-8095-9825469b2f19"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_27",
+				"display_name": "tvinside_27",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69280b",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "1ae5a5cf-3a46-9ee6-4675-cf911e133215"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_28",
+				"display_name": "tvinside_28",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69280c",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "d23b0a28-b5cd-d7d2-4bb4-c63969a57a81"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_29",
+				"display_name": "tvinside_29",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69280d",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "7199e125-8d28-72e8-1772-80a0c6dc268d"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_30",
+				"display_name": "tvinside_30",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69280e",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "77ce6b65-f2f3-fb60-cd17-5d10b8f587e8"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_31",
+				"display_name": "tvinside_31",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da69280f",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "1b6f5aba-7c77-1cd8-dd61-21e9dd7e9ac0"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_32",
+				"display_name": "tvinside_32",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692810",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "f8e2bfd4-fb5b-7116-f6ad-9c1d0b0124cc"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_33",
+				"display_name": "tvinside_33",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692811",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "116e52b0-a30f-0783-ab3a-f4f633801444"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_34",
+				"display_name": "tvinside_34",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692812",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "2a4c172b-151f-bffd-128f-67d55f2f5d57"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_35",
+				"display_name": "tvinside_35",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692813",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "bad706aa-d1c0-b4bb-c9a2-9b5df96695cf"
+				},
+				"excluded_nodes": []
+			},
+			{
+				"name": "tvinside_36",
+				"display_name": "tvinside_36",
+				"uuid": "c5011bcb-8edb-1907-cefd-c562da692814",
+				"texture_map": {
+					"32717bc3-fe35-1fc8-9bbf-54407fe854d1": "797174ae-5c58-4a83-a630-eefd51007c80",
+					"a7681fe4-da11-40a1-de5a-f629c4ec6f23": "f0a937f5-df11-5bd2-7220-b2c501d62142"
 				},
 				"excluded_nodes": []
 			}
@@ -2195,8 +3703,8 @@
 			"override": false,
 			"length": 0.6,
 			"snapping": 20,
-			"selected": false,
-			"saved": true,
+			"selected": true,
+			"saved": false,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -2268,6 +3776,45 @@
 							"bezier_left_value": [0, 0, 0],
 							"bezier_right_time": [0.1, 0.1, 0.1],
 							"bezier_right_value": [0, 0, 0],
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				},
+				"9212c78a-3bd6-d761-48eb-d21d8456e181": {
+					"name": "screen_tvinside",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "Math.random(-xrange, xrange)",
+									"y": "Math.random(-yrange, yrange)",
+									"z": "0"
+								}
+							],
+							"uuid": "49503ad3-5727-f325-0f64-2e96bc46504f",
+							"time": 0,
+							"color": -1,
+							"interpolation": "step",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "Math.random(1-xscalerange, 1+xscalerange)",
+									"y": "Math.random(1-yscalerange, 1+yscalerange)",
+									"z": "1"
+								}
+							],
+							"uuid": "79072bc0-2445-0be6-39db-b0d52131f37f",
+							"time": 0,
+							"color": -1,
+							"uniform": false,
+							"interpolation": "step",
 							"easing": "linear",
 							"easingArgs": []
 						}
@@ -2369,7 +3916,7 @@
 			"override": false,
 			"length": 6,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": false,
 			"path": "",
 			"anim_time_update": "",
@@ -2464,7 +4011,7 @@
 							"uuid": "630625f2-53fb-f735-8622-31e37a797c3b",
 							"time": 6,
 							"color": -1,
-							"interpolation": "linear",
+							"interpolation": "step",
 							"easing": "linear",
 							"easingArgs": []
 						},
@@ -2480,7 +4027,7 @@
 							"uuid": "23fa4273-7ada-91e5-a41c-3a6b65711ac3",
 							"time": 5.95,
 							"color": -1,
-							"interpolation": "linear",
+							"interpolation": "step",
 							"easing": "linear",
 							"easingArgs": []
 						}
@@ -2489,5 +4036,6 @@
 			}
 		}
 	],
-	"animation_controllers": []
+	"animation_controllers": [],
+	"animation_variable_placeholders": "xrange = 3\nyrange = 3\n\nxscalerange = 0.01\nyscalerange = 0.05"
 }
