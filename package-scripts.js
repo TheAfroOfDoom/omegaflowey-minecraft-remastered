@@ -52,6 +52,7 @@ module.exports = {
       clean: 'rimraf ./build',
       summit: 'node ./package-scripts/build',
     },
+    'count-bones': 'node ./package-scripts/count-aj-bones',
     export: {
       default: 'nps export.run',
       run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
