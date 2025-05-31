@@ -6,4 +6,6 @@ data modify entity @s CustomName set value '"Bomb Indicator"'
 tag @s add flamethrower
 
 # Set scores
-scoreboard players operation @s omegaflowey.attack.indicator.clock.length = #omegaflowey.attack.flamethrower omegaflowey.attack.indicator.clock.length
+scoreboard players operation @s omegaflowey.attack.indicator.clock.length = #omegaflowey.attack.flamethrower omegaflowey.attack.executor.clock.length
+
+data merge entity @s { block_state: { Name: "minecraft:red_wool" } }

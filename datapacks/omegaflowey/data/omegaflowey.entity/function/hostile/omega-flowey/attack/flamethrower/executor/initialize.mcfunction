@@ -10,3 +10,8 @@ scoreboard players operation @s omegaflowey.attack.executor.rate = #omegaflowey.
 
 # Add tags
 tag @s add flamethrower
+
+# Summon two indicators (flamethrowers) on left/right
+function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at { command: \
+  'execute positioned ^-13 ^ ^ run function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/summon' \
+}

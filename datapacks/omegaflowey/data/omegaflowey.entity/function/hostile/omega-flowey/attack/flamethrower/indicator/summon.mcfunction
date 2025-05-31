@@ -1,2 +1,2 @@
 # Summon and initialize indicator
-execute summon minecraft:marker at @s run function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/initialize
+execute summon minecraft:block_display at @s run function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/initialize
