@@ -16,6 +16,10 @@ scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.finger
 execute if score #omegaflowey.attack.finger-guns omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/finger-guns
 execute if score #omegaflowey.attack.finger-guns omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
 
+scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.flamethrower omegaflowey.attack.weight
+execute if score #omegaflowey.attack.flamethrower omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/flamethrower
+execute if score #omegaflowey.attack.flamethrower omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
+
 scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.flies omegaflowey.attack.weight
 execute if score #omegaflowey.attack.flies omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack/flies
 execute if score #omegaflowey.attack.flies omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return 0
