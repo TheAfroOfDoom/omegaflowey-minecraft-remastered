@@ -1,6 +1,7 @@
 execute if entity @s[tag=bomb] run function omegaflowey.entity:hostile/omega-flowey/attack/bomb/tick
 execute if entity @s[tag=dentata-snakes] run function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/tick
 execute if entity @s[tag=finger-guns] run function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/tick
+execute if entity @s[tag=flamethrower] run function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/tick
 execute if entity @s[tag=flies] run function omegaflowey.entity:hostile/omega-flowey/attack/flies/tick
 execute if entity @s[tag=friendliness-pellets] run function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/tick
 execute if entity @s[tag=homing-vines] run function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/tick

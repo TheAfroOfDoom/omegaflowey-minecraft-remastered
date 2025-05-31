@@ -1,6 +1,7 @@
 function omegaflowey.entity:hostile/omega-flowey/attack/bomb/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/reset_scores
+function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/flies/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/reset_scores
