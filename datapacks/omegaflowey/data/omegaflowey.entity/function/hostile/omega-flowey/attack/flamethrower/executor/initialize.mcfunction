@@ -13,9 +13,9 @@ tag @s add flamethrower
 # Summon two indicators (flamethrowers) on left/right
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
 function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at { command: \
-  'execute positioned ^-13 ^ ^ run function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/summon' \
+  'execute positioned ^-18 ^-1 ^-15 rotated ~-5.0 ~10.0 run function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/summon' \
 }
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 2
 function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at { command: \
-  'execute positioned ^13 ^ ^ run function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/summon' \
+  'execute positioned ^18 ^-1 ^-15 rotated ~5.0 ~10.0 run function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/summon' \
 }
