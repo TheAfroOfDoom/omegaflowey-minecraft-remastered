@@ -6,4 +6,6 @@ execute if score #omegaflowey.attack.flamethrower.rotation_type omegaflowey.glob
   teleport @s ~ ~ ~ ~6.25 ~
 
 stopsound @a hostile omega-flowey:attack.flamethrower.fire
-execute at @s run playsound omega-flowey:attack.flamethrower.fire hostile @a ~ ~ ~ 5 0.85
+function animated_java:flamethrower/as_own_locator_entities { command: \
+  'execute at @s run function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/loop/fire/as_tip_locator' \
+}
