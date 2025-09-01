@@ -3,6 +3,7 @@ tag @s remove attack-bullet-new
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
 
 tag @s add flamethrower
+tag @s add is_falling
 
 # Set scores
 scoreboard players set @s omegaflowey.attack.clock.i -1
@@ -11,7 +12,4 @@ data merge entity @s { block_state: { Name: "redstone_block" }, transformation:[
 data modify entity @s teleport_duration set value 1
 
 # Initialize physics scores
-execute store result score @s omegaflowey.attack.velocity.x run data get storage omegaflowey:attack.flamethrower dir_x 100
-execute store result score @s omegaflowey.attack.velocity.y run data get storage omegaflowey:attack.flamethrower dir_y 100
-execute store result score @s omegaflowey.attack.velocity.z run data get storage omegaflowey:attack.flamethrower dir_z 100
-tag @s add is_falling
+scoreboard players set @s omegaflowey.attack.velocity 100

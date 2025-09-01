@@ -56,9 +56,7 @@ scoreboard objectives add omegaflowey.attack.position.z dummy
 scoreboard objectives add omegaflowey.attack.speed.x dummy
 scoreboard objectives add omegaflowey.attack.speed.y dummy
 scoreboard objectives add omegaflowey.attack.speed.z dummy
-scoreboard objectives add omegaflowey.attack.velocity.x dummy
-scoreboard objectives add omegaflowey.attack.velocity.y dummy
-scoreboard objectives add omegaflowey.attack.velocity.z dummy
+scoreboard objectives add omegaflowey.attack.velocity dummy
 # the weight of an attack during the `random` attack's RNG
 scoreboard objectives add omegaflowey.attack.weight dummy
 

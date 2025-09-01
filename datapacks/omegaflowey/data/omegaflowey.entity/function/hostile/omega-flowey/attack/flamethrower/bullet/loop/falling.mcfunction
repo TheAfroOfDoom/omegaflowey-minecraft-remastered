@@ -1,4 +1,4 @@
-# friction stuff?
+teleport @s ~ ~-0.2 ~
 
 # Check if done falling (hit/below the floor)
 scoreboard players set @s omegaflowey.math.0 0
