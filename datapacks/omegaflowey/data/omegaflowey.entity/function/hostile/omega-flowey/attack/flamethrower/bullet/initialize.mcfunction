@@ -5,6 +5,8 @@ function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
 tag @s add flamethrower
 tag @s add is_falling
 
+execute store result entity @s Rotation[0] float 0.01 run data get storage omegaflowey:attack.flamethrower bullet_yaw
+
 # Set scores
 scoreboard players set @s omegaflowey.attack.clock.i -1
 
