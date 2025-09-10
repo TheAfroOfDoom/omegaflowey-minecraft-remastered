@@ -1,2 +1,1 @@
-kill @s
-# function animated_java:omegaflowey_bomb/remove/this
+function animated_java:flamethrower_fire/remove/this
