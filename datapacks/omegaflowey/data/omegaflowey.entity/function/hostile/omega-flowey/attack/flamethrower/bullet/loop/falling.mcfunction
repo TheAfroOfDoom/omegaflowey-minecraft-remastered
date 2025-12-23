@@ -1,4 +1,4 @@
-teleport @s ~ ~-0.3 ~
+teleport @s ~ ~-0.4 ~
 
 # Check if done falling (hit/below the floor)
 scoreboard players set @s omegaflowey.math.0 0
