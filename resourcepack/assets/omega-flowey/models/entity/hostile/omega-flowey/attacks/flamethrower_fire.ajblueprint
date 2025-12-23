@@ -3,7 +3,7 @@
 		"format": "animated_java_blueprint",
 		"format_version": "1.4.2",
 		"uuid": "2218f331-ab9a-66d6-ea8f-a08d9981a15d",
-		"save_location": "/Users/jordan/src/ofmc/resourcepack/assets/omega-flowey/models/entity/hostile/omega-flowey/attacks/flamethrower_fire.ajblueprint",
+		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\flamethrower_fire.ajblueprint",
 		"last_used_export_namespace": "flamethrower_fire"
 	},
 	"blueprint_settings": {
@@ -18,12 +18,12 @@
 		"custom_model_data_offset": 4654465,
 		"enable_advanced_resource_pack_settings": true,
 		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "/Users/jordan/src/ofmc/resourcepack",
+		"resource_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack",
 		"display_item_path": "",
 		"model_folder": "",
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
-		"data_pack": "/Users/jordan/src/ofmc/datapacks/animated_java",
+		"data_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\datapacks\\animated_java",
 		"summon_commands": "function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/bullet/initialize",
 		"ticking_commands": "",
 		"interpolation_duration": 1,
@@ -81,6 +81,22 @@
 			},
 			"type": "cube",
 			"uuid": "3fda3236-8a4c-c3df-b6df-371bc01d2fb2"
+		},
+		{
+			"name": "hitbox",
+			"position": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"summon_commands": "function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/bullet/hitbox/initialize",
+				"ticking_commands": ""
+			},
+			"uuid": "c6867a97-3ad7-1f2c-3ff1-88163aa3a3cb",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -98,12 +114,12 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
-			"children": ["3fda3236-8a4c-c3df-b6df-371bc01d2fb2"]
+			"children": ["3fda3236-8a4c-c3df-b6df-371bc01d2fb2", "c6867a97-3ad7-1f2c-3ff1-88163aa3a3cb"]
 		}
 	],
 	"textures": [
 		{
-			"path": "/Users/jordan/Library/Application Support/minecraft/versions/1.21.1/assets/minecraft/textures/block/fire_0.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.21.1\\1.21.1\\assets\\minecraft\\textures\\block\\fire_0.png",
 			"name": "fire_0.png",
 			"folder": "",
 			"namespace": "",
