@@ -97,6 +97,45 @@
 			},
 			"uuid": "c6867a97-3ad7-1f2c-3ff1-88163aa3a3cb",
 			"type": "locator"
+		},
+		{
+			"name": "tip",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-12, -3, -136],
+			"to": [12, 21, -40],
+			"autouv": 0,
+			"color": 4,
+			"export": false,
+			"origin": [0, 9, -88],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [1, 0, 10, 6]
+				},
+				"south": {
+					"uv": [0, 0, 6, 6]
+				},
+				"west": {
+					"uv": [1, 0, 10, 6]
+				},
+				"up": {
+					"uv": [1, 0, 10, 6],
+					"rotation": 270
+				},
+				"down": {
+					"uv": [1, 0, 10, 6],
+					"rotation": 90
+				}
+			},
+			"type": "cube",
+			"uuid": "f87fc692-fae1-291f-8b36-c74a8ea5d55e"
 		}
 	],
 	"outliner": [
@@ -115,6 +154,22 @@
 			"visibility": true,
 			"autouv": 0,
 			"children": ["3fda3236-8a4c-c3df-b6df-371bc01d2fb2", "c6867a97-3ad7-1f2c-3ff1-88163aa3a3cb"]
+		},
+		{
+			"name": "tip",
+			"origin": [0, 9, -88],
+			"color": 0,
+			"configs": {
+				"variants": {}
+			},
+			"uuid": "b069c297-1285-5e10-61d6-55698f81659d",
+			"export": false,
+			"mirror_uv": false,
+			"isOpen": true,
+			"locked": false,
+			"visibility": true,
+			"autouv": 0,
+			"children": ["f87fc692-fae1-291f-8b36-c74a8ea5d55e"]
 		}
 	],
 	"textures": [
