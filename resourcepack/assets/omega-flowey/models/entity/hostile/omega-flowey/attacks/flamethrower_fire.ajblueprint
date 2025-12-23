@@ -49,23 +49,23 @@
 			"to": [40, 10, 40],
 			"autouv": 0,
 			"color": 5,
-			"origin": [-35, 0, -35],
+			"origin": [0, 5, 0],
 			"faces": {
 				"north": {
-					"uv": [3, 13, 11, 15],
+					"uv": [3, 14, 11, 15],
 					"texture": 0
 				},
 				"east": {
-					"uv": [3, 8, 5, 16],
+					"uv": [4, 8, 5, 16],
 					"rotation": 90,
 					"texture": 0
 				},
 				"south": {
-					"uv": [2, 14, 10, 16],
+					"uv": [2, 15, 10, 16],
 					"texture": 0
 				},
 				"west": {
-					"uv": [2, 8, 4, 16],
+					"uv": [2, 8, 3, 16],
 					"rotation": 270,
 					"texture": 0
 				},
@@ -141,7 +141,7 @@
 	"outliner": [
 		{
 			"name": "bone",
-			"origin": [0, 0, 0],
+			"origin": [0, 0, -40],
 			"color": 0,
 			"configs": {
 				"variants": {}
@@ -213,6 +213,71 @@
 		},
 		"list": []
 	},
-	"animations": [],
+	"animations": [
+		{
+			"uuid": "7a6833fa-f37b-09bd-d82e-c917ba0a4876",
+			"name": "omegaflowey_grow",
+			"loop": "hold",
+			"override": false,
+			"length": 0.25,
+			"snapping": 20,
+			"selected": true,
+			"saved": false,
+			"path": "",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [
+				{
+					"icon": "folder",
+					"name": "tip",
+					"value": "b069c297-1285-5e10-61d6-55698f81659d"
+				}
+			],
+			"animators": {
+				"46692966-32f5-3e93-4d10-04416cb20787": {
+					"name": "bone",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "1",
+									"y": "1",
+									"z": "1"
+								}
+							],
+							"uuid": "4445084c-7740-b956-a8a5-042ae19afbd9",
+							"time": 0.25,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.2",
+									"y": "0.2",
+									"z": "0.2"
+								}
+							],
+							"uuid": "33d02862-be55-6723-2cd6-26b12bd01568",
+							"time": 0,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				}
+			}
+		}
+	],
 	"animation_controllers": []
 }
