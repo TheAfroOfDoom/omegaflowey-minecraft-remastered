@@ -3,7 +3,7 @@
 scoreboard players remove @s omegaflowey.attack.velocity 4
 
 # Min velocity
-data modify storage omegaflowey:utils.math.max a set value 50
+data modify storage omegaflowey:utils.math.max a set value 75
 execute store result storage omegaflowey:utils.math.max b int 1 run scoreboard players get @s omegaflowey.attack.velocity
 function omegaflowey.utils:math/max
 execute store result score @s omegaflowey.attack.velocity run data get storage omegaflowey:utils.math.max out
