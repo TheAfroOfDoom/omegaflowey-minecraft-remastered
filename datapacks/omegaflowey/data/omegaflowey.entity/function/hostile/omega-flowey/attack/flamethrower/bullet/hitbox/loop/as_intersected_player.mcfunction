@@ -1,5 +1,8 @@
 scoreboard players set #omegaflowey.attack.flamethrower.play_burn_sound omegaflowey.attack.flag 1
-function omegaflowey.entity:utils/damage/as_player
+
+data merge storage omegaflowey:utils.damage { damage: 2, radius: 1, source: 'flamethrower.bullet' }
+function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
+
 scoreboard players set #omegaflowey.attack.flamethrower.play_burn_sound omegaflowey.attack.flag 0
 
 # TODO(288): maybe set player on fire for a second here??
