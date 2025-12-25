@@ -44,4 +44,4 @@ jobs:
           cp -r datapacks world
       - name: Run test server
         run: |
-          java -Xmx2G -Dpacktest.auto -Dpacktest.auto.annotations -jar server.jar nogui
+          java -Xmx2G -Dpacktest.auto -Dpacktest.auto.annotations -Dpacktest.auto.coloring -jar server.jar nogui
