@@ -7,6 +7,7 @@ scoreboard players set #omegaflowey.soul.0 omegaflowey.soul.bullet.position.dz 8
 # x/z start/end points of the bullet grid
 scoreboard players set #omegaflowey.soul.0 omegaflowey.soul.bullet.position.x -4951
 scoreboard players set #omegaflowey.soul.0 omegaflowey.soul.bullet.position.x.end 5175
+scoreboard players set #omegaflowey.soul.0 omegaflowey.soul.bullet.position.y 345000
 scoreboard players set #omegaflowey.soul.0 omegaflowey.soul.bullet.position.z -13001
 scoreboard players set #omegaflowey.soul.0 omegaflowey.soul.bullet.position.z.end -4000
 # NOTE: bullets start summoning _at_ exactly x0/z0, but likely won't finish summoning (their last column/row)

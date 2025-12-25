@@ -6,6 +6,7 @@ scoreboard players operation @s omegaflowey.soul.bullet.position.dx = #omegaflow
 scoreboard players operation @s omegaflowey.soul.bullet.position.dz = #omegaflowey.soul.0 omegaflowey.soul.bullet.position.dz
 scoreboard players operation @s omegaflowey.soul.bullet.position.x = #omegaflowey.soul.0 omegaflowey.soul.bullet.position.x
 scoreboard players operation @s omegaflowey.soul.bullet.position.x.end = #omegaflowey.soul.0 omegaflowey.soul.bullet.position.x.end
+scoreboard players operation @s omegaflowey.soul.bullet.position.y = #omegaflowey.soul.0 omegaflowey.soul.bullet.position.y
 scoreboard players operation @s omegaflowey.soul.bullet.position.z = #omegaflowey.soul.0 omegaflowey.soul.bullet.position.z
 scoreboard players operation @s omegaflowey.soul.bullet.position.z.end = #omegaflowey.soul.0 omegaflowey.soul.bullet.position.z.end
 

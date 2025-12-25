@@ -133,6 +133,8 @@ scoreboard objectives add omegaflowey.soul.bullet.position.dz dummy
 # x start/end points of the bullet grid
 scoreboard objectives add omegaflowey.soul.bullet.position.x dummy
 scoreboard objectives add omegaflowey.soul.bullet.position.x.end dummy
+# y position of a bullet in the bullet grid
+scoreboard objectives add omegaflowey.soul.bullet.position.y dummy
 # yaw bullets will summon at
 scoreboard objectives add omegaflowey.soul.bullet.position.yaw dummy
 # z start/end points of the bullet grid
