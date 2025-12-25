@@ -3,6 +3,7 @@ scoreboard players set @s omegaflowey.math.0 0
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.bomb omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.dentata-snakes omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.finger-guns omegaflowey.attack.weight
+scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.flamethrower omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.flies omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.friendliness-pellets omegaflowey.attack.weight
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.attack.homing-vines omegaflowey.attack.weight
