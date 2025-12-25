@@ -18,9 +18,7 @@ const assetsDir = process.env.ASSETS_DIR;
 const blockbenchPath =
   process.platform === 'darwin'
     ? `open "${process.env.BLOCKBENCH_PATH}" --args`
-    : process.platform === 'win32'
-      ? `"${process.env.BLOCKBENCH_PATH}"`
-      : null;
+    : `"${process.env.BLOCKBENCH_PATH}"`;
 const datapack = process.env.DATAPACK;
 const resourcePack = process.env.RESOURCEPACK;
 
