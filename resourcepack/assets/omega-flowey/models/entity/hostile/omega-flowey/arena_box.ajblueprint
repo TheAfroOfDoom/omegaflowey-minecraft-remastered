@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format_version": "1.5.0",
 		"uuid": "4c5c60b1-c3b5-5ddb-256b-fd5e5a65d108",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\arena_box.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_arena_box"
@@ -14,6 +14,7 @@
 		"enable_plugin_mode": false,
 		"resource_pack_export_mode": "raw",
 		"data_pack_export_mode": "raw",
+		"target_minecraft_version": "1.21.2",
 		"display_item": "minecraft:pink_dye",
 		"custom_model_data_offset": 4654465,
 		"enable_advanced_resource_pack_settings": true,
@@ -29,6 +30,8 @@
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
 		"use_storage_for_animation": false,
+		"show_function_errors": true,
+		"show_outdated_warning": true,
 		"baked_animations": true,
 		"json_file": ""
 	},
@@ -610,7 +613,7 @@
 			"mode": "bitmap"
 		},
 		{
-			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\intro_flashing_red.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/intro_flashing_red.png",
 			"name": "intro_flashing_red.png",
 			"folder": "",
 			"namespace": "",
@@ -628,14 +631,13 @@
 			"render_sides": "auto",
 			"frame_time": 1,
 			"frame_order_type": "custom",
-			"frame_order": "0:4 0:4 1:4 1:5",
+			"frame_order": "0:4 1:6 1:6",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": true,
-			"saved": false,
+			"internal": false,
+			"saved": true,
 			"uuid": "55c7ab60-1ea2-16e7-84e1-043af3beb3f4",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADFJREFUSEtjZGBg+MdAAWAcNYBhNAwYRsOAYXiEQROl5cGoAQyMo2EwGgag8mDopwMAnMooAeNNRDYAAAAASUVORK5CYII=",
-			"image_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADFJREFUSEtjZGBg+MdAAWAcNYBhNAwYRsOAYXiEQROl5cGoAQyMo2EwGgag8mDopwMAnMooAeNNRDYAAAAASUVORK5CYII=",
 			"mode": "bitmap"
 		}
 	],
@@ -643,7 +645,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "b3d386cc-32eb-e009-e8cf-b0a2fe5cbacb",
+			"uuid": "61c19bfd-87de-431b-1dbc-3ebd859d6e1b",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true

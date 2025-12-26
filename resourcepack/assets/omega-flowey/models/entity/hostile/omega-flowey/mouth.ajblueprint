@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format_version": "1.5.0",
 		"uuid": "371712ad-e756-9dec-8a99-cf345a25ce6f",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\mouth.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_mouth"
@@ -14,6 +14,7 @@
 		"enable_plugin_mode": false,
 		"resource_pack_export_mode": "raw",
 		"data_pack_export_mode": "raw",
+		"target_minecraft_version": "1.21.2",
 		"display_item": "minecraft:pink_dye",
 		"custom_model_data_offset": 4654465,
 		"enable_advanced_resource_pack_settings": true,
@@ -29,6 +30,8 @@
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
 		"use_storage_for_animation": false,
+		"show_function_errors": true,
+		"show_outdated_warning": true,
 		"baked_animations": true,
 		"json_file": ""
 	},
@@ -9842,7 +9845,7 @@
 			"mode": "bitmap"
 		},
 		{
-			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\black.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/black.png",
 			"name": "black.png",
 			"folder": "",
 			"namespace": "",
@@ -9863,11 +9866,10 @@
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": true,
-			"saved": false,
+			"internal": false,
+			"saved": true,
 			"uuid": "e7bf6002-9914-9d47-f3dd-c6e09d1be55c",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
-			"image_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
 			"mode": "bitmap"
 		}
 	],
@@ -9875,7 +9877,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "a34d52e2-a7ca-8d56-d74a-da4f272cc20c",
+			"uuid": "99244ecb-530b-86e1-ed83-1d7c15a59299",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true

@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format_version": "1.5.0",
 		"uuid": "08899009-b1a2-f961-d174-2a9257d34a06",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\arm-vine.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_arm_vine"
@@ -14,21 +14,24 @@
 		"enable_plugin_mode": false,
 		"resource_pack_export_mode": "raw",
 		"data_pack_export_mode": "raw",
+		"target_minecraft_version": "1.21.2",
 		"display_item": "minecraft:pink_dye",
 		"custom_model_data_offset": 4654465,
 		"enable_advanced_resource_pack_settings": true,
 		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack",
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"display_item_path": "",
 		"model_folder": "",
 		"texture_folder": "",
 		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\datapacks\\animated_java",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
 		"summon_commands": "function omegaflowey.entity:hostile/omega-flowey/summon/initialize/arm_vine",
 		"ticking_commands": "",
 		"interpolation_duration": 1,
 		"teleportation_duration": 1,
 		"use_storage_for_animation": false,
+		"show_function_errors": true,
+		"show_outdated_warning": true,
 		"baked_animations": true,
 		"json_file": ""
 	},
@@ -3747,7 +3750,7 @@
 	],
 	"textures": [
 		{
-			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\moss_block.png",
+			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/moss_block.png",
 			"name": "moss_block.png",
 			"folder": "",
 			"namespace": "",
@@ -3775,7 +3778,7 @@
 			"mode": "bitmap"
 		},
 		{
-			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\x_bullets_shared\\emissive_redstone_block.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/x_bullets_shared/emissive_redstone_block.png",
 			"name": "emissive_redstone_block.png",
 			"folder": "",
 			"namespace": "",
@@ -3803,11 +3806,11 @@
 			"mode": "bitmap"
 		},
 		{
-			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\ochre_froglight_top.png",
+			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/ochre_froglight_top.png",
 			"name": "ochre_froglight_top.png",
 			"folder": "",
 			"namespace": "",
-			"id": "3",
+			"id": "2",
 			"group": "",
 			"width": 16,
 			"height": 16,
@@ -3831,11 +3834,11 @@
 			"mode": "bitmap"
 		},
 		{
-			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\arm_vine\\base.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/arm_vine/base.png",
 			"name": "base.png",
 			"folder": "",
 			"namespace": "",
-			"id": "9",
+			"id": "3",
 			"group": "",
 			"width": 16,
 			"height": 16,
@@ -3859,11 +3862,11 @@
 			"mode": "bitmap"
 		},
 		{
-			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\black.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/black.png",
 			"name": "black.png",
 			"folder": "",
 			"namespace": "",
-			"id": "12",
+			"id": "4",
 			"group": "",
 			"width": 16,
 			"height": 16,
@@ -3891,7 +3894,7 @@
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "d833c986-cd30-2fab-0d39-738a40097dfb",
+			"uuid": "843264fa-09c6-0a55-46fa-5510d09b6165",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
@@ -4056,7 +4059,7 @@
 			"override": false,
 			"length": 1.5,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
 			"saved": false,
 			"path": "",
 			"anim_time_update": "",
