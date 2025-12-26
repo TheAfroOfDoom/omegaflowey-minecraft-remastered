@@ -10,7 +10,8 @@ const checkAnimationName = (model, { file }) => {
   const fixedModel = structuredClone(model);
   const expectedPrefix = 'omegaflowey_';
 
-  for (const [idx, animation] of model.animations.entries()) {
+  const animations = model.animations ?? [];
+  for (const [idx, animation] of animations.entries()) {
     const { name } = animation;
     const isValidName = name.startsWith(expectedPrefix);
     if (!isValidName) {
