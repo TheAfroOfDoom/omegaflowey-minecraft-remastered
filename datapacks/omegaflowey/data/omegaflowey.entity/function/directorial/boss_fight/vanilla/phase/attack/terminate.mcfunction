@@ -7,6 +7,5 @@ scoreboard players operation @s omegaflowey.boss-fight.attack.phase.i %= @s omeg
 function omegaflowey.entity:directorial/boss_fight/vanilla/phase/warn/initialize
 
 # Remove tags
-tag @s remove attack.random.consider_previous_trials
 function omegaflowey.entity:hostile/omega-flowey/attack/random/remove_previous_tags
 tag @s remove boss_fight.phase.attack
