@@ -111,7 +111,10 @@ export async function script() {
     };
     loadModelFile(fileObj);
     // `false` => don't save the blueprint to disk after exporting
-    await AnimatedJava.API.exportProject(false);
+    await AnimatedJava.exportProject({
+      forceSave: false,
+      debugMode: true,
+    });
     const modelName = model.blueprint_settings.export_namespace;
     lastExported[uuid] = {
       name: modelName,
