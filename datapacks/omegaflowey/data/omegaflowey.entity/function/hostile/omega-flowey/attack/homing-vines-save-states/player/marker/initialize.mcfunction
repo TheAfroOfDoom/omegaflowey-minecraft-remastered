@@ -2,7 +2,7 @@
 data modify entity @s data.root_player_uuid set from storage gu:main out
 
 # Copy rotations from player
-teleport @s ~ ~ ~ ~ ~
+rotate @s ~ ~
 
 data modify entity @s CustomName set value '"Homing-Vines-Save-States Player Marker"'
 

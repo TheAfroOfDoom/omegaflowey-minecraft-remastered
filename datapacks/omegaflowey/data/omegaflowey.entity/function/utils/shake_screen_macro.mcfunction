@@ -1,1 +1,1 @@
-$teleport @s ~ ~ ~ ~$(yaw) ~$(pitch)
+$rotate @s ~$(yaw) ~$(pitch)

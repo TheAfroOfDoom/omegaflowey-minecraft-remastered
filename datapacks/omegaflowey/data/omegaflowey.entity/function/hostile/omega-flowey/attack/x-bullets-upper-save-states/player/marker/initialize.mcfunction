@@ -4,7 +4,7 @@ data modify entity @s data.root_player_uuid set from storage gu:main out
 data modify entity @s CustomName set value '"X-Bullets-Upper-Save-States Player Marker"'
 
 # Copy rotations from player
-teleport @s ~ ~ ~ ~ ~
+rotate @s ~ ~
 
 # Add tags
 tag @s add should-keep-original-entity

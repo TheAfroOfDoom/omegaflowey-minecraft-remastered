@@ -1,6 +1,6 @@
 # Minecraft fails to set `minecraft:marker` Rotation fields upon summon `execute rotated <yaw> <pitch> ...`,
-# so we need to manually transfer that here using `teleport`
-$execute at @s run teleport @s ~ ~ ~ $(rotation_yaw) $(rotation_pitch)
+# so we need to manually transfer that here using `rotate`
+$execute at @s run rotate @s $(rotation_yaw) $(rotation_pitch)
 
 execute store result score @s omegaflowey.attack.bullets.count run data get storage omegaflowey:attack.homing-vines-save-states state_scores.attack_bullets_count
 execute store result score @s omegaflowey.attack.bullets.total run data get storage omegaflowey:attack.homing-vines-save-states state_scores.attack_bullets_total

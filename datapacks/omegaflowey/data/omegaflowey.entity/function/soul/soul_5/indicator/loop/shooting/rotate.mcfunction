@@ -45,5 +45,5 @@ execute if score @s omegaflowey.math.1 matches -460..460 run return 0
 # else, rotate slightly more towards the crosshair
 # TODO(131): this is linear but in Undertale it's not so fix that
 # here, diff is -180..180
-execute unless score @s omegaflowey.math.1 matches 1.. run teleport @s ~ ~ ~ ~-9 ~
-execute if score @s omegaflowey.math.1 matches 1.. run teleport @s ~ ~ ~ ~9 ~
+execute unless score @s omegaflowey.math.1 matches 1.. run rotate @s ~-9 ~
+execute if score @s omegaflowey.math.1 matches 1.. run rotate @s ~9 ~

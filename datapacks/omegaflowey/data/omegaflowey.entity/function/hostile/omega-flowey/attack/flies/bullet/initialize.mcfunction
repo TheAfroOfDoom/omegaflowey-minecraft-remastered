@@ -7,11 +7,11 @@ function omegaflowey.entity:group/copy with storage omegaflowey:attack.flies
 
 # Face indicator (venus fly trap)
 function omegaflowey.entity:group/start
-teleport @s ~ ~ ~ facing entity @e[tag=attack-indicator,tag=flies,scores={omegaflowey.group.id=0},limit=1]
+rotate @s facing entity @e[tag=attack-indicator,tag=flies,scores={omegaflowey.group.id=0},limit=1]
 function omegaflowey.entity:group/end
 
 # Flatten pitch
-execute at @s run teleport @s ~ ~ ~ ~ 0
+execute at @s run rotate @s ~ 0
 
 # Remove tags
 tag @s remove attack-bullet-new

@@ -8,7 +8,7 @@ function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/ind
   with entity @s data
 
 # Rotate yaw to be ready for next bullet
-$teleport @s ~ ~ ~ ~$(yaw_delta) ~
+$rotate @s ~$(yaw_delta) ~
 
 # Increment number of bullets that have been summoned so far
 scoreboard players add @s omegaflowey.attack.bullets.count 1

@@ -6,7 +6,7 @@ execute store result score @s omegaflowey.soul.bullet.position.z run data get en
 execute if score @s omegaflowey.soul.bullet.position.z matches -2600.. run function omegaflowey.entity:soul/soul_0/bullet/terminate
 
 # Rotate animation
-execute unless entity @s[tag=shaking] run teleport @s ~ ~ ~ ~-6 ~
+execute unless entity @s[tag=shaking] run rotate @s ~-6 ~
 
 # Shaking animation
 execute if entity @s[tag=shaking] run function omegaflowey.entity:soul/soul_0/bullet/loop/shaking
