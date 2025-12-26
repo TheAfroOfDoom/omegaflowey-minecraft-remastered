@@ -1,14 +1,10 @@
-## Randomize which attack to run based on `omegaflowey.attack.weight`s
+## Randomize which attack to run based on `omegaflowey.attack.weight` / retry logic
 
-execute if entity @s[tag=attack.random.consider_previous_trials] run function omegaflowey.entity:hostile/omega-flowey/attack/random/reduce_weights
+scoreboard players reset #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag
 
-function omegaflowey.entity:hostile/omega-flowey/attack/random/sum_weights
+scoreboard players set #omegaflowey.attack.random.retry_idx omegaflowey.attack.flag -1
 
-# Get randomized value to choose an attack to run
-execute store result storage omegaflowey:attack.random sum int 1 run scoreboard players get @s omegaflowey.math.0
-function omegaflowey.entity:hostile/omega-flowey/attack/random/get_randomized_value with storage omegaflowey:attack.random
-
-function omegaflowey.entity:hostile/omega-flowey/attack/random/choose_attack
+function omegaflowey.entity:hostile/omega-flowey/attack/random/retry
 
 # Reset weights used
-function omegaflowey.entity:hostile/omega-flowey/attack/random/reset_weights
+function omegaflowey.entity:hostile/omega-flowey/attack/random/reset_scores

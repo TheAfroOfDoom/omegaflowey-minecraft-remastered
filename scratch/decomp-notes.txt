@@ -1,0 +1,47 @@
+# thanks to https://github.com/kittibyte/UndertaleDecomp
+
+1. randomly choose attack
+2. if attack was one of last 2 attacks, try again
+3. repeat 2
+4. continue
+
+# "1" gamemaker unit is 1/60 seconds?
+# so 60 frames per second
+
+# for phase 2/4 (save-states), its the above steps as:
+[1,2,4], but for the last 1 attack
+
+attacks
+1 = lower eye bullet hell => adds random length += "0..30"
+2 = upper eye bullet hell => adds random length += "0..25"
+3 = homing vines => adds random length += "0..25"
+- IF ATTACK LENGTH IS >=90 (random "20..25"), LASER SHOOTS (5/25)
+4 = friendliness pellets
+5 = bomb
+6 = dentata snakes
+7 = finger guns
+8 = flies
+9 = flamethrower
+
+20 = homing-vine save-states
+21 = x-bullets upper save states
+
+22 = slow upper bullets
+23 = slow lower bullets
+for slow attacks, we don't retry if we repeat an attack
+
+99 = laser
+- laser attack can trigger during homing-vines after awhile(?)
+  but only once per boss fight.
+  its the first homing-vines attack only??
+- laser happens "90" units after homing-vines starts. 1.5 SECONDS
+  but then is set to "-999" units, functionally a cooldown(?)
+
+phases
+0 = 1, 2, 3, 4, 9
+1 = 3, 5, 6, 7, 8
+
+3,5,finale(notslow) = 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+during finale, after slow phase, all attack lengths decrease by "10"
+- except flamethrower, which stays the same

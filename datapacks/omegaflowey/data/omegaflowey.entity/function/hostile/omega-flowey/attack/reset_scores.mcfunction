@@ -5,6 +5,7 @@ function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/reset_score
 function omegaflowey.entity:hostile/omega-flowey/attack/flies/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/reset_scores
+function omegaflowey.entity:hostile/omega-flowey/attack/random/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-lower/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/reset_scores
 function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper-save-states/reset_scores
