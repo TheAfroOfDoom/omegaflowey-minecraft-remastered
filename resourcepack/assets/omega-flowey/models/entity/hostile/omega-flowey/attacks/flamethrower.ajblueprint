@@ -1,43 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.5.0",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "b3508af1-a0fe-1dca-f3f2-d1a54b59ce26",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\flamethrower.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_flamethrower"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_flamethrower",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"target_minecraft_version": "1.21.9",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "\nfunction omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/initialize\n",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"show_function_errors": true,
-		"show_outdated_warning": true,
-		"baked_animations": true,
-		"json_file": ""
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_flamethrower",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "\nfunction omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/indicator/initialize\n"
 	},
 	"elements": [
 		{
@@ -548,6 +529,7 @@
 			"name": "bone",
 			"origin": [0, 12, -6],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"variants": {}
 			},
@@ -558,6 +540,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"c7e16215-6008-75f7-0084-d352d80e14f5",
 				"dd1c005b-e2e6-a767-d750-17e3c5feade2",
@@ -570,9 +553,10 @@
 				"6515240c-02bd-3c52-d5bf-79385e6f2cc8",
 				"7ea1a95d-594a-2515-2f28-65867021f031",
 				{
-					"name": "tip",
+					"name": "tip1",
 					"origin": [0, 12, -78],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {}
 					},
@@ -583,6 +567,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": ["d89bc93e-267e-e9c9-f8cd-a3d01b9813d8", "ec13a583-6195-3481-6aa9-1979a8b85a4f"]
 				}
 			]
@@ -606,16 +591,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "622f9675-1f53-5abe-4b30-319fafbcc812",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAATNJREFUOE9jPLWs8P/rfzoMokxXGHDR995LMygJPmWA0TB1DAwMDIxLGjz+s4i6MPx5vYeBEC2oEsrw/s5quDq4AegShAyCyaO4gPv7UYavnNYMpNAfv3yHeOELox6DNPdthqdfVUmiqWvArgMbGdwc/BlIoYPsFSFeePBehuHp0/MM0tKGJNHWOqIQA9TUNEEByvDn1zcwzcLGBaZhACQOEoPJw9TcunUdYoCSgjxD36RDDNICfCgacXGefvjEkJFoyPDi7TuIAfw8nGC1nOycDN9/fgfT2ABMDkSDADwW+pZfIMpmdEVFkQYQF4AMUJDiJ8mQB88+MqAYYK4rzSDOz0KUIS8//mE4efkpwgBQGIhLKWCNCVgMwEz+9PYlAxcvL8PbN68gYdCQbP6fKGtxKAIAilYZ856b1+EAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/loom_front.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAATNJREFUOE9jPLWs8P/rfzoMokxXGHDR995LMygJPmWA0TB1DAwMDIxLGjz+s4i6MPx5vYeBEC2oEsrw/s5quDq4AegShAyCyaO4gPv7UYavnNYMpNAfv3yHeOELox6DNPdthqdfVUmiqWvArgMbGdwc/BlIoYPsFSFeePBehuHp0/MM0tKGJNHWOqIQA9TUNEEByvDn1zcwzcLGBaZhACQOEoPJw9TcunUdYoCSgjxD36RDDNICfCgacXGefvjEkJFoyPDi7TuIAfw8nGC1nOycDN9/fgfT2ABMDkSDADwW+pZfIMpmdEVFkQYQF4AMUJDiJ8mQB88+MqAYYK4rzSDOz0KUIS8//mE4efkpwgBQGIhLKWCNCVgMwEz+9PYlAxcvL8PbN68gYdCQbP6fKGtxKAIAilYZ856b1+EAAAAASUVORK5CYII="
 		},
 		{
 			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/oak_planks.png",
@@ -634,16 +620,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "47fe0014-de57-a294-c657-9fc1c4fa0485",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAVlJREFUOE91U8FKAzEUTJCC21ZZVkR7KcVe+xN+gODFs+ClP+An9O5FvImf4LVn/8MiQtmKsuTQdgWRLfPqlNm05pLk5WXyZt7Ej++vq/Jn6ZJG0zWTPRePZfn7b3zy9u48AHAJIBj59MsladulrX0D5eA5Y3ko7Mg/311VcSL2uBAW37WCAIrBfKvg4fa8mhXr10+z9YvYfxQLW59kLZuxx1rjWBsFcH/NP12/c1x7MY5BD1JBdZ00q1Ng2SgVCWWYb/TQ0lUX/zS6MBEpGl+goGe97paQqo0fXg4MgFyhg2rA2zynVszZaIAD5Xh0eLDlCQ0gF600ABpJE+I2UhfO5p0wd/7l8aaK1VUg9p4x8kcHrALVYJcPqA+1oScIaBWg30DkX0BF1oVQ1LxBX+j/MCtrj+lx5Qpw4/z36bTVBkBe6gUaiT7Y9TcAahqo35UzebLn+hd4tgJnUgM/K1gwfwAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/oak_planks.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAVlJREFUOE91U8FKAzEUTJCC21ZZVkR7KcVe+xN+gODFs+ClP+An9O5FvImf4LVn/8MiQtmKsuTQdgWRLfPqlNm05pLk5WXyZt7Ej++vq/Jn6ZJG0zWTPRePZfn7b3zy9u48AHAJIBj59MsladulrX0D5eA5Y3ko7Mg/311VcSL2uBAW37WCAIrBfKvg4fa8mhXr10+z9YvYfxQLW59kLZuxx1rjWBsFcH/NP12/c1x7MY5BD1JBdZ00q1Ng2SgVCWWYb/TQ0lUX/zS6MBEpGl+goGe97paQqo0fXg4MgFyhg2rA2zynVszZaIAD5Xh0eLDlCQ0gF600ABpJE+I2UhfO5p0wd/7l8aaK1VUg9p4x8kcHrALVYJcPqA+1oScIaBWg30DkX0BF1oVQ1LxBX+j/MCtrj+lx5Qpw4/z36bTVBkBe6gUaiT7Y9TcAahqo35UzebLn+hd4tgJnUgM/K1gwfwAAAABJRU5ErkJggg=="
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/attacks/flamethrower_tip.png",
@@ -662,16 +649,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "35cc3b5d-732b-bc78-30bb-f82c5eaa392d",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGNJREFUOE9j3Lpk7n8GCgDjiqk91DEgtqCSJHcsntAOVg93AdkGzGgsA3sht6WfJBdMrimEuGDgDWjJTwF7oXHaQpK8UJ8VD/ECxQYMfBhQ7AJYUiY7IVHNAJLiEEkxI6XZGQCB4U6rsLukhQAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../../../textures/custom/attacks/flamethrower_tip.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGNJREFUOE9j3Lpk7n8GCgDjiqk91DEgtqCSJHcsntAOVg93AdkGzGgsA3sht6WfJBdMrimEuGDgDWjJTwF7oXHaQpK8UJ8VD/ECxQYMfBhQ7AJYUiY7IVHNAJLiEEkxI6XZGQCB4U6rsLukhQAAAABJRU5ErkJggg=="
 		},
 		{
 			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/netherite_block.png",
@@ -690,16 +678,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "6e30a907-f63a-2eff-6d58-f7d4837916ee",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWpJREFUOE+Fk09Lw0AQxWehoUnTiEawB0tQVFBv9tzv/wEEKYKCLb3kEqVr/rGByNt2trMS6FyS7M789r2ZjVouFn1ZNxRHIZ0KmYd3XZakXp6e+9k8ozRNT9WT3mlKzhKbh/fV2yspKMgeHmm9WVMy3W8Go8DBqrqiIAho1Bm71h32kOMB8jz3ElU4sQWmMw7YNxXVPVHTNpSepz6gKAoyxlCkiFCMZIawHMCQ0+6+aXp5RR/vq6MFVsAQSIVMeIZfDlhiQL7d+ABOgmfZB0CgkEP/atsvTwFbYH//R8LyAQdgsAfyVG4gT4WnAYs4BAo8C+yTPaNAWkKhhR0UOAAu0vzmziVz9yUAmzgVodraPi9m1/4YoYCL8cQU4BURjkMPoKuastv7PYAVFD+Fu4nW/8GrBOB0FCMGAUjox5GzIwvkVJJJZC1svz6PCjAm1zTxL8irLCFYt/cAFvBbeifEsf2U68nAGnL+AK7IFKyaYaryAAAAAElFTkSuQmCC",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/netherite_block.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWpJREFUOE+Fk09Lw0AQxWehoUnTiEawB0tQVFBv9tzv/wEEKYKCLb3kEqVr/rGByNt2trMS6FyS7M789r2ZjVouFn1ZNxRHIZ0KmYd3XZakXp6e+9k8ozRNT9WT3mlKzhKbh/fV2yspKMgeHmm9WVMy3W8Go8DBqrqiIAho1Bm71h32kOMB8jz3ElU4sQWmMw7YNxXVPVHTNpSepz6gKAoyxlCkiFCMZIawHMCQ0+6+aXp5RR/vq6MFVsAQSIVMeIZfDlhiQL7d+ABOgmfZB0CgkEP/atsvTwFbYH//R8LyAQdgsAfyVG4gT4WnAYs4BAo8C+yTPaNAWkKhhR0UOAAu0vzmziVz9yUAmzgVodraPi9m1/4YoYCL8cQU4BURjkMPoKuastv7PYAVFD+Fu4nW/8GrBOB0FCMGAUjox5GzIwvkVJJJZC1svz6PCjAm1zTxL8irLCFYt/cAFvBbeifEsf2U68nAGnL+AK7IFKyaYaryAAAAAElFTkSuQmCC"
 		}
 	],
 	"variants": {
@@ -712,7 +701,5 @@
 			"is_default": true
 		},
 		"list": []
-	},
-	"animations": [],
-	"animation_controllers": []
+	}
 }

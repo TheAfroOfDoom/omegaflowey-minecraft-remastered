@@ -1,44 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.5.0",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "d318c8fb-b217-4cad-6290-d4e647b209f1",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-0-bandaid.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_soul_0_bandaid"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_soul_0_bandaid",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"target_minecraft_version": "1.21.9",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "data merge entity @s {CustomName:\"'Soul 0 Bandaid'\",teleport_duration:1}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add bandaid\ntag @s add bandaid-new\ntag @s add soul_0",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"show_function_errors": true,
-		"show_outdated_warning": true,
-		"baked_animations": true,
-		"json_file": "",
-		"customModelDataOffset": 0
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_soul_0_bandaid",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "data merge entity @s {CustomName:\"'Soul 0 Bandaid'\",teleport_duration:1}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add bandaid\ntag @s add bandaid-new\ntag @s add soul_0"
 	},
 	"elements": [
 		{
@@ -1799,7 +1779,7 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:1.2f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+				"on_summon_function": "data merge entity @s {data:{radius:1.2f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
 			},
 			"uuid": "67f29c04-1852-b8cb-3831-2cb1ef258a65",
 			"type": "locator"
@@ -1930,7 +1910,7 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:1.1f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+				"on_summon_function": "data merge entity @s {data:{radius:1.1f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
 			},
 			"uuid": "71379208-f83a-69ce-b97b-99bd35350da8",
 			"type": "locator"
@@ -2145,7 +2125,7 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:1.1f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+				"on_summon_function": "data merge entity @s {data:{radius:1.1f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
 			},
 			"uuid": "220c9731-e2eb-6c23-2ac7-bc7d80c0c240",
 			"type": "locator"
@@ -2160,7 +2140,7 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:1.2f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+				"on_summon_function": "data merge entity @s {data:{radius:1.2f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
 			},
 			"uuid": "ce21d3ac-5aca-3593-8959-dcee6b5764b2",
 			"type": "locator"
@@ -2171,6 +2151,7 @@
 			"name": "root",
 			"origin": [0, -1, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"default": {
 					"nbt": "{ teleport_duration: 1 }",
@@ -2185,6 +2166,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"85deeae7-f81c-2b0e-b71f-7b70fa2bffb1",
 				"0b2bdb99-d974-9672-7e4b-17d0bd2973a4",
@@ -2259,16 +2241,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "8b56ef7d-ab41-5b95-e537-8aed4f2844d2",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../textures/custom/black.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg=="
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/soul/healing_item_green.png",
@@ -2287,16 +2270,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "75d0ab45-561f-bd28-0d5c-06156936278a",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZPjP+J+BAsA4agDDaBgwjIYBw7AIAwC4PCAB5G/sPwAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../textures/custom/soul/healing_item_green.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZPjP+J+BAsA4agDDaBgwjIYBw7AIAwC4PCAB5G/sPwAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
@@ -2309,7 +2293,5 @@
 			"is_default": true
 		},
 		"list": []
-	},
-	"animations": [],
-	"animation_controllers": []
+	}
 }

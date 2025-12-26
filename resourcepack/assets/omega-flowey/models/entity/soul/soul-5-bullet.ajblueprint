@@ -1,43 +1,25 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.5.0",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "04ccd34b-0f97-bfde-9932-dfeaaec549c6",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-5-bullet.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_soul_5_bullet"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_soul_5_bullet",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"target_minecraft_version": "1.21.9",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "function omegaflowey.entity:soul/soul_5/bullet/initialize with storage omegaflowey:soul.5.indicator",
-		"ticking_commands": "function omegaflowey.entity:soul/soul_5/bullet/cleanup",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"show_function_errors": true,
-		"show_outdated_warning": true,
-		"baked_animations": true,
-		"json_file": ""
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_soul_5_bullet",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "function omegaflowey.entity:soul/soul_5/bullet/initialize with storage omegaflowey:soul.5.indicator",
+		"on_post_tick_function": "function omegaflowey.entity:soul/soul_5/bullet/cleanup"
 	},
 	"elements": [
 		{
@@ -10218,8 +10200,8 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
-				"ticking_commands": ""
+				"ticking_commands": "",
+				"on_summon_function": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5"
 			},
 			"export": false,
 			"uuid": "d0912fad-53a1-e5e3-2830-94599261b429",
@@ -10273,8 +10255,8 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
-				"ticking_commands": ""
+				"ticking_commands": "",
+				"on_summon_function": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5"
 			},
 			"export": false,
 			"uuid": "375352e4-b449-e78b-12aa-f7aac39df571",
@@ -10328,8 +10310,8 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
-				"ticking_commands": ""
+				"ticking_commands": "",
+				"on_summon_function": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5"
 			},
 			"export": false,
 			"uuid": "f2484213-e743-158e-aa5c-62f81340044f",
@@ -10383,8 +10365,8 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
-				"ticking_commands": ""
+				"ticking_commands": "",
+				"on_summon_function": "data merge entity @s {data:{radius:1.0f,damage:1.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5"
 			},
 			"export": false,
 			"uuid": "c5173dcf-cde9-bc4d-7544-6f8c7a5eeb3d",
@@ -10438,8 +10420,8 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:0.45f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
-				"ticking_commands": ""
+				"ticking_commands": "",
+				"on_summon_function": "data merge entity @s {data:{radius:0.45f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5"
 			},
 			"uuid": "29ef4d2e-f582-9a19-5e9e-c7282e29e616",
 			"type": "locator"
@@ -10530,8 +10512,8 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:0.45f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
-				"ticking_commands": ""
+				"ticking_commands": "",
+				"on_summon_function": "data merge entity @s {data:{radius:0.45f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5"
 			},
 			"uuid": "0e11ab5a-7346-912c-72f0-290d64d8f828",
 			"type": "locator"
@@ -10546,8 +10528,8 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:0.45f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
-				"ticking_commands": ""
+				"ticking_commands": "",
+				"on_summon_function": "data merge entity @s {data:{radius:0.45f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5"
 			},
 			"uuid": "5dbb03e8-40e4-814f-dfe6-59d2a4781ba0",
 			"type": "locator"
@@ -10562,8 +10544,8 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{radius:0.45f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5",
-				"ticking_commands": ""
+				"ticking_commands": "",
+				"on_summon_function": "data merge entity @s {data:{radius:0.45f,damage:2.0}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_5"
 			},
 			"uuid": "3bae99b1-dfe6-c2e4-e3da-5f119b03ec60",
 			"type": "locator"
@@ -10574,6 +10556,7 @@
 			"name": "root",
 			"origin": [0, 24, 1.75],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"variants": {},
 				"default": {
@@ -10589,6 +10572,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"7bd7c6b3-2481-428d-40fd-4996696f987d",
 				"2d89e001-77e1-2241-d105-44ac1c97441b",
@@ -10726,6 +10710,7 @@
 			"name": "reference_soul_5_gun",
 			"origin": [0, 0, 39],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"variants": {}
 			},
@@ -10736,11 +10721,13 @@
 			"locked": false,
 			"visibility": false,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				{
 					"name": "root2",
 					"origin": [0, 0, 39],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {}
 					},
@@ -10751,6 +10738,7 @@
 					"locked": false,
 					"visibility": false,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"eca320e5-8f51-69d6-06e2-0ac10dc9a7c5",
 						"5fd3f943-d9ad-ff7c-3ff6-c565a38c7fa6",
@@ -10904,16 +10892,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "074ac52e-2682-a504-9207-9659c8c629ef",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../textures/custom/black.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg=="
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/white.png",
@@ -10932,16 +10921,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "e3081b37-662e-c2ee-ae97-5a244c883f23",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/P///38GCgDjqAEMo2HAMBoGDMMiDAAlHz/RG+BMbgAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../textures/custom/white.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/P///38GCgDjqAEMo2HAMBoGDMMiDAAlHz/RG+BMbgAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
@@ -10954,7 +10944,5 @@
 			"is_default": true
 		},
 		"list": []
-	},
-	"animations": [],
-	"animation_controllers": []
+	}
 }

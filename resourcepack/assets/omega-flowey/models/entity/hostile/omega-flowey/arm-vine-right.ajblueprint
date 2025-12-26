@@ -1,43 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.5.0",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "08899009-b1a2-f961-d174-2a9257d34a08",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\arm-vine-right.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_arm_vine_right"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_arm_vine_right",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"target_minecraft_version": "1.21.9",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "function omegaflowey.entity:hostile/omega-flowey/summon/initialize/arm_vine",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"show_function_errors": true,
-		"show_outdated_warning": true,
-		"baked_animations": true,
-		"json_file": ""
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_arm_vine_right",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "function omegaflowey.entity:hostile/omega-flowey/summon/initialize/arm_vine"
 	},
 	"elements": [
 		{
@@ -3578,6 +3559,7 @@
 			"name": "root",
 			"origin": [0, 40, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"default": {},
 				"variants": {}
@@ -3589,6 +3571,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"92b2c84a-fc7d-b493-3699-d742580e77e0",
 				"5208f5f4-5f63-3fe8-e00e-44d908d563a9",
@@ -3653,6 +3636,7 @@
 			"name": "reference",
 			"origin": [0, 0, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"default": {},
 				"variants": {}
@@ -3664,12 +3648,14 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				{
 					"name": "bone3",
 					"origin": [4.39848, -58.89001, -288.125],
 					"rotation": [0, -22.5, 0],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"default": {},
 						"variants": {}
@@ -3681,6 +3667,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"0fb1f2f7-3655-8f3d-8b3c-e968b3d133f9",
 						"90813bdc-3375-313b-713f-d876f683a441",
@@ -3696,6 +3683,7 @@
 					"name": "bone2",
 					"origin": [4.39848, -59.14001, -288.125],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"default": {},
 						"variants": {}
@@ -3707,6 +3695,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"71692907-6707-d6da-4060-30416b3ca378",
 						"e7cf54ff-1d97-3c80-c39c-d43095e384bb",
@@ -3723,6 +3712,7 @@
 					"origin": [4.39848, -58.89001, -288.125],
 					"rotation": [0, 22.5, 0],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"default": {},
 						"variants": {}
@@ -3734,6 +3724,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"67c8967e-7db3-4d48-80d5-a77a9df386f8",
 						"94941a00-18ac-b633-05b3-b0ce5b113719",
@@ -3766,16 +3757,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "9a7ee297-fa37-c00b-b951-5c94b16bf48c",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAYhJREFUOE9dkz1LA0EQhmcluTMaUsiBhQohFsFPENPa2NnZ2FrZCFb+An+grYqFIaAWQrAI0ZjL4ckz+J5rtrnbvZ33a+bCyXm33Ows2f1dYWkjNxb7l7eZTT9mvl/LmjacTKt9ulz38/ZWsHB1c1BS3NlIbLH17YVZI7VmO7fH29ymk8RaWelnr8Oxgz/1Px2UFY7P9kqY+fA1WrD+c14piZlhXV+tV8oA3j/6BYCBNRoGPyzeaw7GQjoLOwJhz3cUBTKQTDwhG2ZZ4J2Lyqa2Uth4kFTg4fRyt8QfTCggC624MLYnUJ4eYpw4MhUYygQIWLeXODs5YRtbHuL2Ts2TpRgVcagUypKykT0APQMKFZKeqKCtChNbAuMdENQ4QBzQ4OGv5/IKE+yyKkLPgBDpr9KdD26eWXOiPBxAfY5DUyEX1VqBxwMWLq4PSw0LSjQgkq2xpViDpDv/LOAvHiQFOG9J7VRHPERJooW0FAap0pABrqK4O25BLPhWOPF/QHE8vrQaUoB+AF97UlH8RCJUAAAAAElFTkSuQmCC",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/moss_block.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAYhJREFUOE9dkz1LA0EQhmcluTMaUsiBhQohFsFPENPa2NnZ2FrZCFb+An+grYqFIaAWQrAI0ZjL4ckz+J5rtrnbvZ33a+bCyXm33Ows2f1dYWkjNxb7l7eZTT9mvl/LmjacTKt9ulz38/ZWsHB1c1BS3NlIbLH17YVZI7VmO7fH29ymk8RaWelnr8Oxgz/1Px2UFY7P9kqY+fA1WrD+c14piZlhXV+tV8oA3j/6BYCBNRoGPyzeaw7GQjoLOwJhz3cUBTKQTDwhG2ZZ4J2Lyqa2Uth4kFTg4fRyt8QfTCggC624MLYnUJ4eYpw4MhUYygQIWLeXODs5YRtbHuL2Ts2TpRgVcagUypKykT0APQMKFZKeqKCtChNbAuMdENQ4QBzQ4OGv5/IKE+yyKkLPgBDpr9KdD26eWXOiPBxAfY5DUyEX1VqBxwMWLq4PSw0LSjQgkq2xpViDpDv/LOAvHiQFOG9J7VRHPERJooW0FAap0pABrqK4O25BLPhWOPF/QHE8vrQaUoB+AF97UlH8RCJUAAAAAElFTkSuQmCC"
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/x_bullets_shared/emissive_redstone_block.png",
@@ -3794,16 +3786,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "91ccb373-afc1-0919-aa07-c4ae192eaa9b",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQBJREFUOE+lkyESwjAQRbcziIgKRA0OJJIrILkO5+hVkEiugKzEgalAVFQwDPOb/GS7mXaGaU3SJvv69+9u8dy6ryx4CgCaANiLCPevPlE3zu/1Od8zwC0E3rteDmWIVAoBAxwrgCMAD5rOUx4Btguc9coJwSMALkM6AO9PCkYggzTkqIRFBQzmX6d8PVdOkGaWwrX1OUPBFIQqBgNLlzwAUUufqyrTwh2kMqRA5yELBv6tgAaCeFEV0Clp+TA288BWgGnAtLr1lbHy8S3rA1tG2wvsj1OlTGQK/Csh1kxI1080kY0EA3EJB7YybOvZVuaAEIiVQ8WB0griLCyYZvkB7cOf0agMNdAAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "../../../../textures/custom/x_bullets_shared/emissive_redstone_block.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQBJREFUOE+lkyESwjAQRbcziIgKRA0OJJIrILkO5+hVkEiugKzEgalAVFQwDPOb/GS7mXaGaU3SJvv69+9u8dy6ryx4CgCaANiLCPevPlE3zu/1Od8zwC0E3rteDmWIVAoBAxwrgCMAD5rOUx4Btguc9coJwSMALkM6AO9PCkYggzTkqIRFBQzmX6d8PVdOkGaWwrX1OUPBFIQqBgNLlzwAUUufqyrTwh2kMqRA5yELBv6tgAaCeFEV0Clp+TA288BWgGnAtLr1lbHy8S3rA1tG2wvsj1OlTGQK/Csh1kxI1080kY0EA3EJB7YybOvZVuaAEIiVQ8WB0griLCyYZvkB7cOf0agMNdAAAAAASUVORK5CYII="
 		},
 		{
 			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/ochre_froglight_top.png",
@@ -3822,16 +3815,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "b2513093-963d-eebb-fc65-6b422bf8c6a5",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPtJREFUOE+lUzsKwkAQnVVTKZI0IliovSfQO3kMD+BRrLyAdlrZWEWLgNokiCIkMStvYJZNiqDrNjs77PzevKeO67n2e33qBh1q+iN6Jye+G+0BZdGGbRz47/GDgvHE2MntQuq6X2gJRlDxjDgYx7btN/ySUL3CpZaKDW9IRXYm3Bxg2fYbfiSJwwNxAm8wM0Ec+cXJky13YUZwSYJOnDuQMVQarzRAk7m/6N7gA0Pl6U7D+CWBVGcMqlv4pQNswnkEFMImnEYQToCpTiOUMPhnC4xBHZWr9LUpLnqoFVNVQC1/yvooiUnkjM9QJSRrqxNAgeaiTBER/kPOH7fU4bC+s+HhAAAAAElFTkSuQmCC",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/ochre_froglight_top.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPtJREFUOE+lUzsKwkAQnVVTKZI0IliovSfQO3kMD+BRrLyAdlrZWEWLgNokiCIkMStvYJZNiqDrNjs77PzevKeO67n2e33qBh1q+iN6Jye+G+0BZdGGbRz47/GDgvHE2MntQuq6X2gJRlDxjDgYx7btN/ySUL3CpZaKDW9IRXYm3Bxg2fYbfiSJwwNxAm8wM0Ec+cXJky13YUZwSYJOnDuQMVQarzRAk7m/6N7gA0Pl6U7D+CWBVGcMqlv4pQNswnkEFMImnEYQToCpTiOUMPhnC4xBHZWr9LUpLnqoFVNVQC1/yvooiUnkjM9QJSRrqxNAgeaiTBER/kPOH7fU4bC+s+HhAAAAAElFTkSuQmCC"
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/arm_vine/base.png",
@@ -3850,16 +3844,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "2bc0da21-732c-4f6e-c3d5-316af486d009",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAelJREFUOE89k2tuGzEMhD9KWjvJZZI6pyriFu0NWqQGeuLAsSSyHcr2/tgXyOHMcGTH95cYBLerhUGtbA1iwDkGj61mxeiT4Z6lBtRSMAHox9bawnDoGOF5z0orKq64G70PalE7aLAd3w9xDmevQoIZQfi1yYxWKv3OD0wEdoFNvTj27XSIWmFOCJ+MqakBpfBE4ZLNS2JUNZYFJ6SIBdCqmi1/TOBy6eqnZmtlluCpbdnXx3LMSsmB9vPvIcYUfcM9JIKSFql5PXPgVfftO9zZtoL9OB3CzXDB5m0ygBaFnUnCWN8aUZfzTMM1Sgy+n17DXcQjCx+KiMPZJw+tYFHoaVgSv7MR42QmANmi5jEuVKs4TmGZZaorlU0WlcDklX4a9H5n4ERENqZ2M2oY04ImIPNlsq66gPdNnhl2/PMcFkpAYSp6bjzuN2oJPj7PUPfJJXPmhTEGnuu0FaSvv56j1qVIHmrqpo0opg5bVbSDOTRk5UG5kZGKtb39fsltpdYUHemXPJGM/W5Hm4MPn8hLLUEBUaC0Wns7HdLEG3KfUJoRfTA9qFfkTwaVhpSIb9kXiiJ/fP8SISShzwuXa/5va9X+UbTkpWS6M/DMhc5JHqY7hRsTjFqDPpduTcw35cU9467TGf/1/ANe6wkuQX0GSQAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../../textures/custom/arm_vine/base.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAelJREFUOE89k2tuGzEMhD9KWjvJZZI6pyriFu0NWqQGeuLAsSSyHcr2/tgXyOHMcGTH95cYBLerhUGtbA1iwDkGj61mxeiT4Z6lBtRSMAHox9bawnDoGOF5z0orKq64G70PalE7aLAd3w9xDmevQoIZQfi1yYxWKv3OD0wEdoFNvTj27XSIWmFOCJ+MqakBpfBE4ZLNS2JUNZYFJ6SIBdCqmi1/TOBy6eqnZmtlluCpbdnXx3LMSsmB9vPvIcYUfcM9JIKSFql5PXPgVfftO9zZtoL9OB3CzXDB5m0ygBaFnUnCWN8aUZfzTMM1Sgy+n17DXcQjCx+KiMPZJw+tYFHoaVgSv7MR42QmANmi5jEuVKs4TmGZZaorlU0WlcDklX4a9H5n4ERENqZ2M2oY04ImIPNlsq66gPdNnhl2/PMcFkpAYSp6bjzuN2oJPj7PUPfJJXPmhTEGnuu0FaSvv56j1qVIHmrqpo0opg5bVbSDOTRk5UG5kZGKtb39fsltpdYUHemXPJGM/W5Hm4MPn8hLLUEBUaC0Wns7HdLEG3KfUJoRfTA9qFfkTwaVhpSIb9kXiiJ/fP8SISShzwuXa/5va9X+UbTkpWS6M/DMhc5JHqY7hRsTjFqDPpduTcw35cU9467TGf/1/ANe6wkuQX0GSQAAAABJRU5ErkJggg=="
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/black.png",
@@ -3878,16 +3873,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "19927dfd-345c-9b86-2283-bbda626b249f",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../../textures/custom/black.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
@@ -3931,7 +3927,7 @@
 			"length": 6,
 			"snapping": 20,
 			"selected": false,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -4003,7 +3999,7 @@
 			"length": 1,
 			"snapping": 20,
 			"selected": false,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -4060,7 +4056,7 @@
 			"length": 1.5,
 			"snapping": 20,
 			"selected": true,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -4110,6 +4106,5 @@
 			}
 		}
 	],
-	"animation_controllers": [],
 	"animation_variable_placeholders": "tick = time * 20\n\n// 1 second period\ndtime = q.anim_time * 360;\ndtick2 = q.anim_time * 20\n// 1 tick period\ndtick = dtime * 20;\n// anim period (ticks)\nperiod = 10;\n\n// alternating z amplitude\nperiod_tick = 20\nwrap_tick = math.mod(tick, period_tick)\nflipping_tick = wrap_tick <= (period_tick / 2) ? wrap_tick : period_tick - wrap_tick\n\nmin = period_tick / 4 - 0.5\nmax = period_tick / 4 + 0.5\ntemp_scaled = (flipping_tick - min) / (max - min)\nclamp_tick = math.clamp(temp_scaled, 0, 1)\n\n// smooth step\n// https://en.wikipedia.org/wiki/Smoothstep \nsmoothstep_tick = math.hermite_blend(clamp_tick)\n\nz_amp_min = 10\nz_amp_max = 15\ndiff = (z_amp_max - z_amp_min) / 2\nz_amp = z_amp_min + diff * smoothstep_tick\n\n// z scaling\nz_tick_offset = 10\nz_scale_period = period * 2\nz_theta = (tick - z_tick_offset) * 360 / z_scale_period\n// z_scale_min = 1 (assumed)\nz_scale_max = 1.075\nz_scale_amp_factor = (z_scale_max - 1) / 2\nz_scale = (z_scale_amp_factor * math.cos(z_theta)) + z_scale_amp_factor + 1\n// (0.05 * math.cos((((tick - 10) * 360)) / period / 2) + 0.05) + 1\n// x scaling is less than z scaling\nx_scale_amp_factor = z_scale_amp_factor / 4\nx_scale = (x_scale_amp_factor * math.cos(z_theta)) + x_scale_amp_factor + 1\n\n// alternating z amplitude\nperiod_slow = 15;\nperiod_tick_slow = 30\nwrap_tick_slow = math.mod(tick, period_tick_slow)\nflipping_tick_slow = wrap_tick_slow <= (period_tick_slow / 2) ? wrap_tick_slow : period_tick_slow - wrap_tick_slow\n\nmin_slow = period_tick_slow / 4 - 0.5\nmax_slow = period_tick_slow / 4 + 0.5\ntemp_scaled_slow = (flipping_tick_slow - min_slow) / (max_slow - min_slow)\nclamp_tick_slow = math.clamp(temp_scaled_slow, 0, 1)\nsmoothstep_tick_slow = math.hermite_blend(clamp_tick_slow)\n\nz_amp_min_slow = 5\nz_amp_max_slow = 8\ndiff_slow = (z_amp_max_slow - z_amp_min_slow) / 2\nz_amp_slow = z_amp_min_slow + diff_slow * smoothstep_tick_slow\n\n// z scaling slow\nz_tick_offset_slow = 15\nz_scale_period_slow = period_slow * 2\nz_theta_slow = (tick - z_tick_offset_slow) * 360 / z_scale_period_slow\nz_scale_max_slow = 1.075\nz_scale_amp_factor_slow = (z_scale_max_slow - 1) / 2\nz_scale_slow = (z_scale_amp_factor_slow * math.cos(z_theta_slow)) + z_scale_amp_factor_slow + 1\n\nx_scale_amp_factor_slow = z_scale_amp_factor_slow / 4\nx_scale_slow = (x_scale_amp_factor_slow * math.cos(z_theta_slow)) + x_scale_amp_factor_slow + 1\n"
 }

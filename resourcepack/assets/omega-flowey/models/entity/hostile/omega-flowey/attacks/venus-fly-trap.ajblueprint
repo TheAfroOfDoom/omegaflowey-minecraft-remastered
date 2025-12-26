@@ -1,44 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.5.0",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "738b7804-b312-52bc-9340-268c67328f74",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\venus-fly-trap.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_venus_fly_trap"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_venus_fly_trap",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"target_minecraft_version": "1.21.9",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "data merge entity @s {CustomName:\"\\\"Flies Indicator\\\"\"}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add groupable\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-indicator\ntag @s add attack-indicator-new\ntag @s add flies",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"show_function_errors": true,
-		"show_outdated_warning": true,
-		"baked_animations": true,
-		"json_file": "",
-		"customModelDataOffset": 0
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_venus_fly_trap",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "data merge entity @s {CustomName:\"\\\"Flies Indicator\\\"\"}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add groupable\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-indicator\ntag @s add attack-indicator-new\ntag @s add flies"
 	},
 	"elements": [
 		{
@@ -2190,6 +2170,7 @@
 			"origin": [0, 20, 0],
 			"rotation": [0, 90, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"default": {},
 				"variants": {}
@@ -2201,11 +2182,13 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				{
 					"name": "lower_lobe",
 					"origin": [-36.5, 20, 0],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"default": {},
 						"variants": {}
@@ -2217,6 +2200,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"eff2356a-1b13-d4a0-c965-d676777d5d63",
 						"bb1e65da-5f9d-1417-e9d6-6a41e0548abb",
@@ -2251,6 +2235,7 @@
 					"origin": [-36.5, 26, 0],
 					"rotation": [0, 0, 20],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"default": {},
 						"variants": {}
@@ -2262,6 +2247,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"338e851b-9368-b8cf-ff7d-979c5329fcad",
 						"06c8f632-d1d1-bd7b-3ec4-7f31b4ccf1cf",
@@ -2311,16 +2297,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "e81de70c-24e5-4a48-bff6-c9540a4b99a2",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAdlJREFUOE9NU9GO2zAMoyQnvfueu/V+6LBs2J42FMW+fNfYkjbKaTcXKBLHIimKlu3ymp6J+zIIxAzNBOmJWww8tQaeGH1gRNRRAWCqEAJwY2ltYgQwIIjoEAILICowNUQCvQ+YshwgsWyXc+4ZWHgwszarTgATQTPDeOibBLKwmkoC8uV6TiJ6JNIdgzRIiCqeRNGr+GhRWTPZC4kKCNBUipV/DmDfO6iS5yGGkMTzQlqgj1FwJCChfP/1lmSV6pvyHUr9U8dDPH34f2UElmaQb9dzhkwFSfnppcKgWNhCjvkucpippT6QcCr4en3LCH/IP5kV0c0dJzJA0MuwEj5HqNw9ngnAXsnS+36MK6BSDtQ0RA1NgKxJ3TelRnooCGQmImdIWKX0BAkrIH4/GG0Cr6aVC9kuL0k5CYXHKJrn01JT+H37gLS1xDKZ/DY4hYk5g/T+4yXNZkdEJGujqTrNWliogNOmIw+VRCY2AvL552tN65jcNCunJ2zjtK5QH/hwhydKmRA05lRku56P7ng5pJKo7K/3SifHx7XDYfUjmcBWgzDW2+VTFixfxo5+5P+eygmgoJfVZgQ8Axww70ldppnZf4vSafZg3CuPLJ13hQnkrIx5+evTH197CDvWqhWdAAAAAElFTkSuQmCC",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/lime_terracotta.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAdlJREFUOE9NU9GO2zAMoyQnvfueu/V+6LBs2J42FMW+fNfYkjbKaTcXKBLHIimKlu3ymp6J+zIIxAzNBOmJWww8tQaeGH1gRNRRAWCqEAJwY2ltYgQwIIjoEAILICowNUQCvQ+YshwgsWyXc+4ZWHgwszarTgATQTPDeOibBLKwmkoC8uV6TiJ6JNIdgzRIiCqeRNGr+GhRWTPZC4kKCNBUipV/DmDfO6iS5yGGkMTzQlqgj1FwJCChfP/1lmSV6pvyHUr9U8dDPH34f2UElmaQb9dzhkwFSfnppcKgWNhCjvkucpippT6QcCr4en3LCH/IP5kV0c0dJzJA0MuwEj5HqNw9ngnAXsnS+36MK6BSDtQ0RA1NgKxJ3TelRnooCGQmImdIWKX0BAkrIH4/GG0Cr6aVC9kuL0k5CYXHKJrn01JT+H37gLS1xDKZ/DY4hYk5g/T+4yXNZkdEJGujqTrNWliogNOmIw+VRCY2AvL552tN65jcNCunJ2zjtK5QH/hwhydKmRA05lRku56P7ng5pJKo7K/3SifHx7XDYfUjmcBWgzDW2+VTFixfxo5+5P+eygmgoJfVZgQ8Axww70ldppnZf4vSafZg3CuPLJ13hQnkrIx5+evTH197CDvWqhWdAAAAAElFTkSuQmCC"
 		},
 		{
 			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/pink_terracotta.png",
@@ -2339,16 +2326,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "25a5846d-5ac6-51b0-7fc8-7257ad985a43",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAd5JREFUOE89U+1ymzAQ3DsJu3m21Db1C9bjZKaP2Bh0t5k9IPgHBkm3n9jjciVJHJfB0FpDa4YksY6B89SRAMY6kKF/gBlg7jANcAB96jCtJDBoCK6ABhvQ3ODeIaB1WdFcJ4AgYY/rjSuJSadJMAnx0aO5obeGPF4Qxap1A4pJwj7mmdrISDACg5pDuDvO7hjadkh0wFk8AUbJso/bjQcKmYW+LCtcGmtnA414O031JE+Cm6zIhP273zkiYOYYmUDGj0buIw7TyrlCJyJZ5trnPFMLYqmJEAshmGOyhjUXBAxmVqjWHFYyE2OEBtyZMSDyOjj1tlMNTFODwzAiywffGVSEtiVRAzSytL+W6gClbY+qXFAvDJB/Qhdj/eSHfc5/mLkh6ODRElFWGso85ffuvrcN+dS8zLTn5TdFRzoVo7x/O2+Of72+4P1U3nX3YhljbLNyL9Lf9wvLHHVj70BXL8yRSZy6l4FyfRMKuNZVqkjY4/1KbKzqlkZ48sf5X6cTLAb+R1RLBVQyuIHa8zbTypnt41AXqljLUm1VS53EC4GOrlrVPldCGvK83pgFDbR1wWoOb1rMHxaCKpkgMsQu0Qh479vHdOQr+ro6vA4MSWFWqapgEVtaitabzMA3V6wtC94eusYAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/pink_terracotta.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAd5JREFUOE89U+1ymzAQ3DsJu3m21Db1C9bjZKaP2Bh0t5k9IPgHBkm3n9jjciVJHJfB0FpDa4YksY6B89SRAMY6kKF/gBlg7jANcAB96jCtJDBoCK6ABhvQ3ODeIaB1WdFcJ4AgYY/rjSuJSadJMAnx0aO5obeGPF4Qxap1A4pJwj7mmdrISDACg5pDuDvO7hjadkh0wFk8AUbJso/bjQcKmYW+LCtcGmtnA414O031JE+Cm6zIhP273zkiYOYYmUDGj0buIw7TyrlCJyJZ5trnPFMLYqmJEAshmGOyhjUXBAxmVqjWHFYyE2OEBtyZMSDyOjj1tlMNTFODwzAiywffGVSEtiVRAzSytL+W6gClbY+qXFAvDJB/Qhdj/eSHfc5/mLkh6ODRElFWGso85ffuvrcN+dS8zLTn5TdFRzoVo7x/O2+Of72+4P1U3nX3YhljbLNyL9Lf9wvLHHVj70BXL8yRSZy6l4FyfRMKuNZVqkjY4/1KbKzqlkZ48sf5X6cTLAb+R1RLBVQyuIHa8zbTypnt41AXqljLUm1VS53EC4GOrlrVPldCGvK83pgFDbR1wWoOb1rMHxaCKpkgMsQu0Qh479vHdOQr+ro6vA4MSWFWqapgEVtaitabzMA3V6wtC94eusYAAAAASUVORK5CYII="
 		}
 	],
 	"variants": {
@@ -2403,9 +2391,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
-									"y": 0,
-									"z": -10
+									"x": "0",
+									"y": "0",
+									"z": "-10"
 								}
 							],
 							"uuid": "bbecb4f7-bfdf-869e-85db-1b54681cbacf",
@@ -2457,9 +2445,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
-									"y": 0,
-									"z": 45
+									"x": "0",
+									"y": "0",
+									"z": "45"
 								}
 							],
 							"uuid": "56316c4c-42ab-9279-14f9-58679372ce5c",
@@ -2489,6 +2477,5 @@
 				}
 			}
 		}
-	],
-	"animation_controllers": []
+	]
 }
