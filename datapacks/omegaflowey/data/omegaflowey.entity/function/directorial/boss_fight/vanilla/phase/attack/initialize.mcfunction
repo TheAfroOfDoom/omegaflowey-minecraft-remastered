@@ -8,6 +8,14 @@ execute if score @s omegaflowey.boss-fight.attack.phase.i matches 4 run function
 scoreboard players set @s omegaflowey.boss-fight.attack.clock.i -1
 scoreboard players set @s omegaflowey.boss-fight.attack.delay 10
 
+# These default to finger-guns, so we're super unlikely to ever start with finger-guns
+scoreboard players operation \
+  #omegaflowey.attack.random.previous_attack_id omegaflowey.attack.flag = \
+  #omegaflowey.attack.random.id.finger-guns omegaflowey.attack.flag
+scoreboard players operation \
+  #omegaflowey.attack.random.2nd_previous_attack_id omegaflowey.attack.flag = \
+  #omegaflowey.attack.random.id.finger-guns omegaflowey.attack.flag
+
 function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face/start
 
 # Add tags
