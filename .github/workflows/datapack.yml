@@ -3,11 +3,11 @@ name: datapack
 on: [push]
 
 env:
-  ANIMATED_JAVA_URL: https://github.com/Animated-Java/animated-java/releases/download/v1.5.0/animated_java.js
-  BLOCKBENCH_URL: https://github.com/JannisX11/blockbench/releases/download/v4.11.1/Blockbench_4.11.1.deb
-  FABRIC_API: https://cdn.modrinth.com/data/P7dR8mSH/versions/UEjZZNue/fabric-api-0.106.1%2B1.21.2.jar
-  FABRIC_SERVER: https://meta.fabricmc.net/v2/versions/loader/1.21.2/0.18.4/1.1.0/server/jar
-  PACKTEST: https://cdn.modrinth.com/data/XsKUhp45/versions/wjOUK14F/packtest-1.9-mc1.21.2.jar
+  ANIMATED_JAVA_URL: https://github.com/Animated-Java/animated-java/releases/download/v1.8.1/animated_java.js
+  BLOCKBENCH_URL: https://github.com/JannisX11/blockbench/releases/download/v4.12.6/Blockbench_4.12.6.deb
+  FABRIC_API: https://cdn.modrinth.com/data/P7dR8mSH/versions/vczmWJBj/fabric-api-0.134.1%2B1.21.9.jar
+  FABRIC_SERVER: https://meta.fabricmc.net/v2/versions/loader/1.21.9/0.18.4/1.1.0/server/jar
+  PACKTEST: https://cdn.modrinth.com/data/XsKUhp45/versions/J67ns1BC/packtest-2.3-mc1.21.10.jar
 
 jobs:
   lint:
