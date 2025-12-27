@@ -5,12 +5,12 @@ execute unless score @s omegaflowey.attack.bullets.count matches 0 run scoreboar
 # bullet head (begin animation)
 $execute if score @s omegaflowey.attack.bullets.count matches 0 run function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/y { \
   command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:omegaflowey_dentata_snake_ball/summon { \
-    args: { animation: 'omegaflowey_roll_bite', start_animation: true } \
+    args: { animation: 'omegaflowey_roll_bite', start_animation: true, variant: 'default' } \
   }" \
 }
 # bullet tail
 $execute unless score @s omegaflowey.attack.bullets.count matches 0 run function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/y { \
-  command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:omegaflowey_dentata_snake_ball/summon/tail" \
+  command: "execute positioned $(x) ~-4.0 $(z) run function animated_java:omegaflowey_dentata_snake_ball/summon { args: { variant: 'tail' } }" \
 }
 
 # Increment bullets summoned so far
