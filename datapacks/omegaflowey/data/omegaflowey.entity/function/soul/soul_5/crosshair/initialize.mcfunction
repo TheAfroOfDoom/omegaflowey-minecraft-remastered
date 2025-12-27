@@ -1,4 +1,6 @@
 data modify entity @s CustomName set value '"Soul 5 Crosshair"'
+execute on passengers if entity @s[tag=aj.omegaflowey_soul_5_crosshair.bone] run \
+  data merge entity @s { brightness: { block: 15, sky: 0 } }
 
 # Append new crosshair to parent indicator's crosshair array for iteration later
 function gu:generate

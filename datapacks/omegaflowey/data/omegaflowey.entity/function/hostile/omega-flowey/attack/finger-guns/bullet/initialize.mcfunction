@@ -1,6 +1,9 @@
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
 
-data merge entity @s {CustomName:"\"Finger-Guns Bullet\""}
+data merge entity @s { CustomName:"\"Finger-Guns Bullet\"" }
+
+execute on passengers if entity @s[tag=aj.omegaflowey_finger_gun_bullet.bone] run \
+  data merge entity @s { brightness: { block: 13, sky: 0 } }
 
 # Set scores
 scoreboard players operation @s omegaflowey.attack.speed.z = #omegaflowey.attack.finger-guns omegaflowey.attack.speed.z

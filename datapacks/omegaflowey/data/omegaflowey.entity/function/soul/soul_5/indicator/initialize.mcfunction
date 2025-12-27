@@ -1,4 +1,6 @@
 data modify entity @s CustomName set value '"Soul 5 Gun"'
+execute on passengers if entity @s[tag=aj.omegaflowey_soul_5_gun.bone] run \
+  data merge entity @s { brightness: { block: 15, sky: 0 } }
 
 # Set scores
 scoreboard players set @s omegaflowey.soul.clock.i -1
