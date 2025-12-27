@@ -2,7 +2,7 @@ function omegaflowey.entity:hostile/omega-flowey/summon/initialize/shared
 tag @s add omega-flowey-petal-pipe
 tag @s add omega-flowey-petal-pipe-middle
 
-execute on passengers if entity @s[tag=aj.bone] run data merge entity @s { brightness: { block: 12, sky: 0 } }
+execute on passengers if entity @s[tag=aj.global.bone] run data merge entity @s { brightness: { block: 12, sky: 0 } }
 
 function gu:generate
 

@@ -5,7 +5,7 @@ $effect give $(active_player_uuid) minecraft:blindness 1 0 true
 execute as @e[ \
   x=-186, dx=61, y=10, dy=46, z=47, dz=91, \
   type=minecraft:item_display, \
-  tag=aj.rig_root, \
+  tag=aj.global.root, \
   tag=!aj.omegaflowey_arena_box.root, \
   tag=omega-flowey-remastered \
 ] run function omegaflowey.entity:hostile/omega-flowey/animate/intro/brighten/as_root

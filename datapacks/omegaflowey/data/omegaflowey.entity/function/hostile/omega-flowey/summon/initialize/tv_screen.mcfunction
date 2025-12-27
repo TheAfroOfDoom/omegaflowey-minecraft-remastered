@@ -7,5 +7,5 @@ execute if score #omegaflowey.summon.tag_variant omegaflowey.global.flag matches
 
 execute \
   if score #omegaflowey.summon.tag_variant omegaflowey.global.flag matches 1..2 \
-  on passengers if entity @s[type=minecraft:marker, tag=aj.data] \
+  on passengers if entity @s[type=minecraft:marker, tag=aj.global.data] \
   run function omegaflowey.entity:hostile/omega-flowey/summon/initialize/tv_screen/store_locator_uuids
