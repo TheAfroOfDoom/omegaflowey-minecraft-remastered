@@ -10,7 +10,7 @@ summon minecraft:item_display -124.0625 42.6875 34.6875 { \
   ], \
   item: { \
     components: { \
-      "minecraft:custom_model_data": 4654465, \
+      "minecraft:item_model": "omega-flowey:decorative/reward-hat", \
     }, \
     count: 1, \
     id: "minecraft:carved_pumpkin", \
@@ -33,7 +33,7 @@ summon minecraft:item_display -124.0625 42.6875 36.3125 { \
   ], \
   item: { \
     components: { \
-      "minecraft:custom_model_data": 4654466, \
+      "minecraft:item_model": "omega-flowey:decorative/reward-hat", \
       "minecraft:enchantment_glint_override": true, \
     }, \
     count: 1, \

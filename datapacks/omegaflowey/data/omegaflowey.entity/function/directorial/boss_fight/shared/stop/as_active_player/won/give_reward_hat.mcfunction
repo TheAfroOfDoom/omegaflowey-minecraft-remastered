@@ -1,5 +1,5 @@
 give @s carved_pumpkin[ \
-  minecraft:custom_model_data=4654465, \
+  minecraft:item_model="omega-flowey:decorative/reward-hat", \
   minecraft:damage_resistant={types:"#minecraft:is_fire"}, \
   minecraft:rarity=rare, \
   minecraft:enchantment_glint_override=false, \

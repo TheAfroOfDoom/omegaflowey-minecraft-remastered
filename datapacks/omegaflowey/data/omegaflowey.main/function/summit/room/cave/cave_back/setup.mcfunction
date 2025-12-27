@@ -11,7 +11,7 @@ summon minecraft:item_display -156.99 42.0 34.4375 { \
   brightness: { block: 15, sky: 0 }, \
   item: { \
     components: { \
-      "minecraft:custom_model_data": 4654465, \
+      "minecraft:item_model": "omega-flowey:decorative/legacy-flowey-build-scaled-min", \
     }, \
     count: 1, \
     id: "minecraft:gray_dye", \
@@ -36,7 +36,7 @@ summon minecraft:item_display -156.99 42.0 31.5625 { \
   brightness: { block: 15, sky: 0 }, \
   item: { \
     components: { \
-      "minecraft:custom_model_data": 4654466, \
+      "minecraft:item_model": "omega-flowey:decorative/flowey-build-scaled-min", \
     }, \
     count: 1, \
     id: "minecraft:gray_dye", \
@@ -60,7 +60,7 @@ summon minecraft:item_display -144.01 43.0 37.0 { \
   brightness: { block: 15, sky: 0 }, \
   item: { \
     components: { \
-      "minecraft:custom_model_data": 4654467, \
+      "minecraft:item_model": "omega-flowey:decorative/legacy-command-blocks-scaled-min", \
     }, \
     count: 1, \
     id: "minecraft:gray_dye", \
@@ -84,7 +84,7 @@ summon minecraft:item_display -144.01 42.5 42.5 { \
   brightness: { block: 15, sky: 0 }, \
   item: { \
     components: { \
-      "minecraft:custom_model_data": 4654468, \
+      "minecraft:item_model": "omega-flowey:decorative/legacy-hopper-clock-scaled-min", \
     }, \
     count: 1, \
     id: "minecraft:gray_dye", \
@@ -108,7 +108,7 @@ summon minecraft:item_display -151.99 43.0 41.0 { \
   brightness: { block: 15, sky: 0 }, \
   item: { \
     components: { \
-      "minecraft:custom_model_data": 4654469, \
+      "minecraft:item_model": "omega-flowey:decorative/animated-java-logo", \
     }, \
     count: 1, \
     id: "minecraft:gray_dye", \
@@ -142,7 +142,7 @@ summon minecraft:item_display -147.5 42.125 45.5 { \
       ], \
       Age: -32768, \
       Item: { \
-        components: { "minecraft:custom_model_data": 4654470 }, \
+        components: { "minecraft:item_model": "omega-flowey:decorative/housefly", }, \
         id: "minecraft:gray_dye", \
       }, \
       PickupDelay: 32767, \
