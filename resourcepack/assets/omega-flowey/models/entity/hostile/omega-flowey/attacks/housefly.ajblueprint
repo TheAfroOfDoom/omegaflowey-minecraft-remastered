@@ -18,7 +18,7 @@
 		"enable_advanced_resource_pack_settings": true,
 		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"on_summon_function": "data merge entity @s {CustomName:\"\\\"Flies Bullet\\\"\",interpolation_duration:1,teleport_duration:1}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add groupable\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-bullet\ntag @s add attack-bullet-new\ntag @s add flies"
+		"on_summon_function": "data merge entity @s {CustomName:\"\\\"Flies Bullet\\\"\",interpolation_duration:1,teleport_duration:1}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add groupable\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-bullet\ntag @s add attack-bullet-new\ntag @s add flies\nexecute on passengers if entity @s[tag=aj.omegaflowey_housefly.bone] run data merge entity @s { brightness: { block: 13, sky: 0 } }"
 	},
 	"elements": [
 		{
