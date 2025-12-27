@@ -1,9 +1,8 @@
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/initialize
 
 data modify entity @s CustomName set value '"Finger-Guns Laser"'
-
 execute on passengers if entity @s[tag=aj.omegaflowey_finger_gun_laser.bone] run \
-  data merge entity @s { Rotation: [90.0f, 0.0f], brightness: { block: 15, sky: 0 } }
+  data merge entity @s { brightness: { block: 15, sky: 0 } }
 
 # Play laser sound (blink) once
 function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
