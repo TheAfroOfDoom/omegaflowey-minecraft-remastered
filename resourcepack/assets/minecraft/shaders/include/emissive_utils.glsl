@@ -65,8 +65,27 @@ vec4 get_block_face_lighting(vec3 normal, float dimension) {
 
 bool face_lighting_check(int inputAlpha) {
 
-    if (inputAlpha == 252) return false; // Checks for alpha 252, and returns that this face should not be lit. Used in the example pack for redstone ore and the zombie's eyes.
-    if (inputAlpha == 250) return false; // Used in the example pack for lime concrete.
+    if (inputAlpha == 254) return false; // Checks for alpha 254, and returns that this face should not be lit. Used for emissiveness
+    if (inputAlpha == 253) return false; // Checks for alpha 253, and returns that this face should not be lit. Used for Shade false, non-emissive
+
+    
+    if (inputAlpha == 1) return false; // Checks for low alpha levels, and returns that this face should not be lit. Used for transparent Shade false, non-emissive
+    if (inputAlpha == 2) return false;
+    if (inputAlpha == 3) return false;
+    if (inputAlpha == 4) return false;
+    if (inputAlpha == 5) return false;
+    if (inputAlpha == 6) return false;
+    if (inputAlpha == 7) return false;
+    if (inputAlpha == 8) return false;
+
+    if (inputAlpha == 9) return false; // Checks for low alpha levels, and returns that this face should not be lit. Used for transparent emissiveness
+    if (inputAlpha == 10) return false;
+    if (inputAlpha == 11) return false;
+    if (inputAlpha == 12) return false;
+    if (inputAlpha == 13) return false;
+    if (inputAlpha == 14) return false;
+    if (inputAlpha == 15) return false;
+    if (inputAlpha == 16) return false;
 
     return true; // A face should be lit by default
 }
@@ -76,9 +95,27 @@ bool face_lighting_check(int inputAlpha) {
 
 float remap_alpha(int inputAlpha) {
     
-    if (inputAlpha == 252) return 255.0; // Checks for alpha 252 and converts all pixels of that to alpha 255. Used in the example pack for redstone ore and the zombie's eyes.
-    if (inputAlpha == 251) return 190.0; // You can copy & paste this line and change the values to make any transparent block work with this pack. Used in the example pack for ice.
-    if (inputAlpha == 250) return 255.0; // Used in the example pack for lime concrete.
+    if (inputAlpha == 254) return 255.0; // Checks for alpha 252 and converts all pixels of that to alpha 255. Used for emissiveness
+    if (inputAlpha == 253) return 255.0; // Checks for alpha 252 and converts all pixels of that to alpha 255. Used for Shade false, non-emissive
+    
+    
+    if (inputAlpha == 1) return 16.0; // Checks for low alpha levels and converts all pixels of that to the respective transparency value. Used for transparent Shade false, non-emissive
+    if (inputAlpha == 2) return 48.0;
+    if (inputAlpha == 3) return 80.0;
+    if (inputAlpha == 4) return 112.0;
+    if (inputAlpha == 5) return 144.0;
+    if (inputAlpha == 6) return 176.0;
+    if (inputAlpha == 7) return 208.0;
+    if (inputAlpha == 8) return 240.0;    
+
+    if (inputAlpha == 9) return 16.0; // Checks for low alpha levels and converts all pixels of that to the respective transparency value. Used for transparent emissiveness
+    if (inputAlpha == 10) return 48.0;
+    if (inputAlpha == 11) return 80.0;
+    if (inputAlpha == 12) return 112.0;
+    if (inputAlpha == 13) return 144.0;
+    if (inputAlpha == 14) return 176.0;
+    if (inputAlpha == 15) return 208.0;
+    if (inputAlpha == 16) return 240.0;
     
     return float(inputAlpha); // If a pixel doesn't need to have its alpha changed then it simply does not change.
 }
@@ -91,9 +128,18 @@ vec4 make_emissive(vec4 inputColor, vec4 lightColor, vec4 faceLightColor, int in
     if(face_lighting_check(inputAlpha)) inputColor *= faceLightColor; // Applies the face lighting if the face should be lit
     inputColor.a = remap_alpha(inputAlpha) / 255.0; // Remap the alpha value
 
-    if (inputAlpha == 252 || inputAlpha == 250) return inputColor; // Checks for specific alpha values for cases where no lighting should be applied
-	// and just returns the input color if it is a case like that. Used in the example pack for redstone ore, the zombie's eyes and lime concrete.
-    if (inputAlpha == 251) return apply_partial_emissivity(inputColor, lightColor, vec3(0.411, 0.345, 0.388)); // Used in the example pack for ice.
+    if (inputAlpha == 254) return inputColor; // Checks for alpha 254 and just returns the input color if it is. Used for emissiveness
+
+    if (inputAlpha == 9) return inputColor; // Checks for low alpha and just returns the input color if it is. Used for transparent emissiveness
+    if (inputAlpha == 10) return inputColor;
+    if (inputAlpha == 11) return inputColor;
+    if (inputAlpha == 12) return inputColor;
+    if (inputAlpha == 13) return inputColor;
+    if (inputAlpha == 14) return inputColor;
+    if (inputAlpha == 15) return inputColor;
+    if (inputAlpha == 16) return inputColor;
+
+    // if (inputAlpha == 251) return apply_partial_emissivity(inputColor, lightColor, vec3(0.411, 0.345, 0.388)); // Possibility for partial emissiveness
     
     return inputColor * lightColor; // If none of the pixels are supposed to be emissive, then it adds the light.
 }
