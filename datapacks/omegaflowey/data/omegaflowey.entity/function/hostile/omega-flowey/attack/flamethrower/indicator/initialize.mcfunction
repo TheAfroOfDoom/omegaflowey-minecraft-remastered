@@ -1,6 +1,8 @@
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/indicator/initialize
 
-data modify entity @s CustomName set value '"Bomb Indicator"'
+data modify entity @s CustomName set value '"Flamethrower Indicator"'
+execute on passengers if entity @s[tag=aj.omegaflowey_flamethrower.bone] run \
+  data merge entity @s { brightness: { block: 13, sky: 0 } }
 
 # Add tags
 tag @s add flamethrower
