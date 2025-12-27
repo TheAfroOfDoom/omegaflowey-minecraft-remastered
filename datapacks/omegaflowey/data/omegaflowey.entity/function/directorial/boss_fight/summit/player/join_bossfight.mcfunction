@@ -15,7 +15,7 @@ function omegaflowey.entity:directorial/boss_fight/shared/player/join_bossfight
 tag @s add summit.no_regen
 
 teleport @s ~ ~-4.0 ~-27.0 ~180.0 -30.0
-spawnpoint @s -142 43 25 -45
+spawnpoint @s -142 43 25 -45 0
 
 function omegaflowey.main:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 
