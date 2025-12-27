@@ -8,7 +8,7 @@ function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: 
 }
 
 # Flash each player's screen
-$execute as $(active_player_uuid) at @s anchored eyes run particle minecraft:flash ^ ^ ^0.5
+$execute as $(active_player_uuid) at @s anchored eyes run particle minecraft:flash{color:[1,1,1,1]} ^ ^ ^0.5
 
 # Initialize other soul event models
 $execute as $(act_button_uuid) run function omegaflowey.entity:soul/soul_5/act_button/initialize/saved
