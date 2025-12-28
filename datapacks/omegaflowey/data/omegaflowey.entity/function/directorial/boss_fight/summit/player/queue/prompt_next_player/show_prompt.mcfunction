@@ -12,7 +12,7 @@ data modify storage omegaflowey:bossfight player_queue_timeout_uuid set from sto
 # Start timeout
 schedule function omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/timeout 15s replace
 
-function omegaflowey.utils:log/self { text_component: '[ \
+function omegaflowey.utils:log/self { text_component: [ \
   { \
     "text": "", \
     "color": "yellow", \
@@ -38,9 +38,9 @@ function omegaflowey.utils:log/self { text_component: '[ \
       "to be teleported to the arena:" \
     ] \
   } \
-]'}
+]}
 
-function omegaflowey.utils:log/self { text_component: '[ \
+function omegaflowey.utils:log/self { text_component: [ \
   { \
     "text": "", \
     "color": "gray", \
@@ -72,4 +72,4 @@ function omegaflowey.utils:log/self { text_component: '[ \
       } \
     ] \
   } \
-]'}
+]}

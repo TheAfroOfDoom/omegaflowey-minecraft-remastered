@@ -26,7 +26,7 @@ summon minecraft:text_display -156.5 43.0625 76.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "DEMO", "color": "yellow", "bold": true }', \
+  text: { "text": "DEMO", "color": "yellow", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.92387956f, -0.38268352f, 0.0f], \

@@ -14,9 +14,9 @@ summon minecraft:text_display -109.5 78.0 33.0 { \
   see_through: 0b, \
   shadow: 0b, \
   shadow_strength: 1f, \
-  text: '[ \
+  text: [ \
     { "text": "\\uf611", "font": "omega-flowey:custom" } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [ 0.0050161737f, 0.99403214f, -0.052095026f, 0.09571429f], \
@@ -43,9 +43,9 @@ summon minecraft:text_display -109.345947265625 83.625 32.349365234375 { \
   see_through: 0b, \
   shadow: 0b, \
   shadow_strength: 1f, \
-  text: '[ \
+  text: [ \
     { "text": "OMEGA FLOWEY", "color": "yellow", "font": "omega-flowey:determinationmono" } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [ 0.0050161737f, 0.99403214f, -0.052095026f, 0.09571429f], \
@@ -72,9 +72,9 @@ summon minecraft:text_display -109.36833640835407 82.4375 32.46571874706921 { \
   see_through: 0b, \
   shadow: 0b, \
   shadow_strength: 1f, \
-  text: '[ \
+  text: [ \
     { "text": "REMASTERED", "color": "aqua", "italic": true, "font": "omega-flowey:determinationmono" } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [ 0.0050161737f, 0.99403214f, -0.052095026f, 0.09571429f], \
@@ -100,7 +100,7 @@ summon minecraft:text_display -133.5 70.95 36.0 { \
   see_through: 0b, \
   shadow: 0b, \
   shadow_strength: 1f, \
-  text: '[ { "text": "\\u274C EXIT ONLY \\u274C", "color": "red", "bold": true } ]', \
+  text: [ { "text": "\\u274C EXIT ONLY \\u274C", "color": "red", "bold": true } ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \

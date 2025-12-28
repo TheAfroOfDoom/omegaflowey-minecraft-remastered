@@ -5,11 +5,11 @@ function omegaflowey.entity:directorial/boss_fight/summit/player/queue/leave_and
 
 function omegaflowey.entity:directorial/boss_fight/summit/player/queue/prompt_next_player/show_prompt/shared/as_player
 
-function omegaflowey.utils:log/self { text_component: '[\
+function omegaflowey.utils:log/self { text_component: [\
   { "text": "You were ", "color": "yellow" }, \
   { "text": "removed from the boss-fight queue ", "color": "red" }, \
   { "text": "because you ", "color": "yellow" }, \
   { "text": "left the server", "color": "gold" } \
-]' }
+] }
 
 function omegaflowey.entity:directorial/boss_fight/summit/player/queue/check_should_prompt

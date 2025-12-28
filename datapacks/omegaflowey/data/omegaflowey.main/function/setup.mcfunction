@@ -8,4 +8,4 @@ function omegaflowey.main:setup/gamerules
 scoreboard players set #omegaflowey.telemetry.enabled omegaflowey.global.flag 0
 function omegaflowey.entity:setup
 
-function omegaflowey.utils:log { text_component: '[ { "text": "Datapack initialized", "color": "aqua" } ]'}
+function omegaflowey.utils:log { text_component: [ { "text": "Datapack initialized", "color": "aqua" } ] }

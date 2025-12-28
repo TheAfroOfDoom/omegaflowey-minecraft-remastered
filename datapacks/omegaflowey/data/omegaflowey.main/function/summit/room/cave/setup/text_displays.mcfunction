@@ -12,7 +12,7 @@ summon minecraft:text_display -133.5 45.0 44.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[{ "text": "Now playing", "color": "yellow", "bold": true }]', \
+  text: [{ "text": "Now playing", "color": "yellow", "bold": true }], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -102,7 +102,7 @@ summon minecraft:text_display -137.5 43.5 42.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[{ "text": "JOIN QUEUE", "color": "light_purple", "bold": true, "underlined": true }]', \
+  text: [{ "text": "JOIN QUEUE", "color": "light_purple", "bold": true, "underlined": true }], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -147,7 +147,7 @@ summon minecraft:text_display -135.0 39.0 46.25 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[{ "text": "JOIN QUEUE", "color": "light_purple", "bold": true, "underlined": true }]', \
+  text: [{ "text": "JOIN QUEUE", "color": "light_purple", "bold": true, "underlined": true }], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -191,7 +191,7 @@ summon minecraft:text_display -139.99 45.0 39.0 { \
   line_width: 200, \
   see_through: false, \
   shadow: 0b, \
-  text: '[{ "text": "Players in queue", "color": "aqua", "bold": true }]', \
+  text: [{ "text": "Players in queue", "color": "aqua", "bold": true }], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -238,7 +238,7 @@ summon minecraft:text_display -127.0 43.0 43.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[{ "text": "SPECTATE", "color": "gold", "bold": true }]', \
+  text: [{ "text": "SPECTATE", "color": "gold", "bold": true }], \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -261,12 +261,12 @@ summon minecraft:text_display -133.5 43.125 24.01 {\
   line_width: 100, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "Check us out on ", \
     { "text":"GitHub", "color":"gray" }, \
     ": ", \
     { "text": "[link]", "color": "aqua", "underlined": true } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -309,7 +309,7 @@ summon minecraft:text_display -127.5 45.95 22.0 { \
   see_through: 0b, \
   shadow: 0b, \
   shadow_strength: 1f, \
-  text: '[ { "text": "EXIT", "color": "yellow", "bold": true } ]', \
+  text: [ { "text": "EXIT", "color": "yellow", "bold": true } ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -332,7 +332,7 @@ summon minecraft:text_display -124.01 44.0 35.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "REWARD HATS", "underlined": true, "color": "green", "bold": true }', \
+  text: { "text": "REWARD HATS", "underlined": true, "color": "green", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -355,7 +355,7 @@ summon minecraft:text_display -124.01 43.4375 34.6875 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "Survive", "color": "gold" }', \
+  text: { "text": "Survive", "color": "gold" }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -378,7 +378,7 @@ summon minecraft:text_display -124.01 43.375 36.3125 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "Get hit 7 times\\nor less", "color": "aqua" }', \
+  text: { "text": "Get hit 7 times\\nor less", "color": "aqua" }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -401,7 +401,7 @@ summon minecraft:text_display -120.01 39.625 48.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text":"HOW TO PLAY","underlined":true,"color":"yellow","bold":true}', \
+  text: {"text":"HOW TO PLAY","underlined":true,"color":"yellow","bold":true}, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -424,7 +424,7 @@ summon minecraft:text_display -120.01 38.8125 47.25 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text":"1","color":"gray","bold":true}', \
+  text: {"text":"1","color":"gray","bold":true}, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -447,11 +447,11 @@ summon minecraft:text_display -120.01 38.1875 47.25 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "Dodge ", \
-    { "text": "Flowey\'s\\n", "color": "yellow" }, \
+    { "text": "Flowey's\\n", "color": "yellow" }, \
     "attacks" \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -474,7 +474,7 @@ summon minecraft:text_display -120.01 38.8125 49.75 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text":"2","color":"gray","bold":true}', \
+  text: {"text":"2","color":"gray","bold":true}, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -497,11 +497,11 @@ summon minecraft:text_display -120.01 37.9375 49.75 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "Touch the\\n", \
     { "text": "ACT BUTTON\\n", "color": "gold" }, \
     "when it appears" \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -524,7 +524,7 @@ summon minecraft:text_display -124.0 39.625 51.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text":"HOW TO PLAY","underlined":true,"color":"yellow","bold":true}', \
+  text: {"text":"HOW TO PLAY","underlined":true,"color":"yellow","bold":true}, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -547,7 +547,7 @@ summon minecraft:text_display -122.75 38.8125 51.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text":"3","color":"gray","bold":true}', \
+  text: {"text":"3","color":"gray","bold":true}, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -570,12 +570,12 @@ summon minecraft:text_display -122.75 38.1875 51.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "Touch the\\n", \
     { "text": "flowers ", "color": "green" }, \
     "to ", \
     { "text": "heal", "color": "green" } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -598,7 +598,7 @@ summon minecraft:text_display -125.25 38.8125 51.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text":"4","color":"gray","bold":true}', \
+  text: {"text":"4","color":"gray","bold":true}, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -621,9 +621,9 @@ summon minecraft:text_display -125.25 38.3125 51.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     { "text": "Survive", "color": "dark_red", "bold": true } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -646,7 +646,7 @@ summon minecraft:text_display -142.99 45.1875 32.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text":"HISTORY","bold":true}', \
+  text: {"text":"HISTORY","bold":true}, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.70710677f, 0.0f, 0.70710677f], \
@@ -669,12 +669,12 @@ summon minecraft:text_display -133.5 42.125 24.01 {\
   line_width: 100, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "Share your ", \
     { "text":"feedback", "color":"yellow" }, \
     ": ", \
     { "text": "[link]", "color": "aqua", "underlined": true } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -717,7 +717,7 @@ summon minecraft:text_display -137.75 44.0 26.001 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "BOOTH SOUND CATEGORIES", "color": "gold", "bold": true }', \
+  text: { "text": "BOOTH SOUND CATEGORIES", "color": "gold", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
   left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -741,7 +741,7 @@ summon minecraft:text_display -137.75 42.0 26.005 { \
   line_width: 300, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     { "translate": ":musical_note:" }, \
     { "text": " Jukebox/Note Blocks", "color": "yellow", "bold": true }, \
     "\\nbossfight music\\n\\n", \
@@ -754,7 +754,7 @@ summon minecraft:text_display -137.75 42.0 26.005 { \
     { "translate": ":earth_americas:" }, \
     { "text": " Ambient", "color": "yellow", "bold": true }, \
     "\\nmisc. supplemental sounds" \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -797,9 +797,9 @@ summon minecraft:text_display -127.99 39.25 50.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     { "text": "TIP", "color": "green", "bold": true, "underlined": true } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -823,14 +823,14 @@ summon minecraft:text_display -127.99 38.5 50.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     { "text": "We recommend being in\\n", "color": "yellow" }, \
     { "text": "F5 mode ", "color": "aqua", "bold": true }, \
     { "text": "(", "color": "gray" }, \
     { "text": "third-person", "color": "aqua" }, \
     { "text": ")\\n", "color": "gray" }, \
     "for most of the bossfight" \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
