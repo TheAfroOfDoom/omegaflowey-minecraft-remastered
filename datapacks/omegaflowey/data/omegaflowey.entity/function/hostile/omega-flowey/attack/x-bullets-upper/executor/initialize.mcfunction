@@ -18,6 +18,9 @@ data modify entity @s CustomName set value '"X-Bullets-Upper Executor"'
 $execute at $(attack_upper_eye_right_locator_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/initialize/effects
 $execute at $(attack_upper_eye_left_locator_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/initialize/effects
 
+$execute as $(attack_upper_eye_right_uuid) run function animated_java:omegaflowey_upper_eye/variants/white/apply
+$execute as $(attack_upper_eye_left_uuid) run function animated_java:omegaflowey_upper_eye/variants/white/apply
+
 # Set scores
 scoreboard players operation @s omegaflowey.attack.clock.i -= #omegaflowey.attack.x-bullets-upper omegaflowey.attack.executor.clock.delay
 
