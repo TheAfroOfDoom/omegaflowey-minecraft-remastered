@@ -1,4 +1,7 @@
 tag @s remove is_animating_tvscreen_inside_face
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { \
+  'command': 'stopsound @s ambient omega-flowey:ambient' \
+}
 schedule clear omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face/scheduled
 
 # Play WARNING sound

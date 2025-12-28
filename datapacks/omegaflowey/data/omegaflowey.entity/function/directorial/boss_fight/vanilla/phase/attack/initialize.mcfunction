@@ -18,7 +18,7 @@ scoreboard players operation \
   #omegaflowey.attack.random.2nd_previous_attack_id omegaflowey.attack.flag = \
   #omegaflowey.attack.random.id.finger-guns omegaflowey.attack.flag
 
-function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face/start
+function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face/start with storage omegaflowey:bossfight
 
 # Add tags
 tag @s add boss_fight.phase.attack
