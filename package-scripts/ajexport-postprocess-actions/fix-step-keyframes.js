@@ -12,6 +12,7 @@ const setInterpolationDurationZeroAllFrames = (rootDir) => {
     ['omegaflowey_tv_screen', 'omegaflowey_intro_shake'],
     ['omegaflowey_upper_eye', 'omegaflowey_intro_shake'],
     ['omegaflowey_nose', 'omegaflowey_nose_move_slow_shake'],
+    ['omegaflowey_soul', 'omegaflowey_shake'],
   ];
 
   for (const [namespace, animation] of stepAnimations) {
@@ -38,7 +39,7 @@ const setInterpolationDurationZeroAllFrames = (rootDir) => {
       });
       writeFileSync(frameFile, fixedLines.join('\n'));
     }
-    console.log(chalk.greenBright(numChanges));
+    logNumChanges(numChanges);
   }
 };
 
@@ -101,8 +102,14 @@ const setInterpolationDurationMouthFrames = (rootDir) => {
       });
       writeFileSync(frameFile, fixedLines.join('\n'));
     }
-    console.log(chalk.greenBright(numChanges));
+    logNumChanges(numChanges);
   }
+};
+
+const logNumChanges = (numChanges) => {
+  const numChangesStr =
+    numChanges === 0 ? chalk.gray(numChanges) : chalk.greenBright(numChanges);
+  console.log(numChangesStr);
 };
 
 const fixStepKeyframes = (rootDir) => {
