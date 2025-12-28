@@ -13,7 +13,7 @@ execute if score @s omegaflowey.attack.clock.i matches 0 run \
 scoreboard players operation @s omegaflowey.math.0 = @s omegaflowey.attack.clock.i
 scoreboard players operation @s omegaflowey.math.0 %= #omegaflowey.attack.x-bullets-lower.tween_duration omegaflowey.math.const
 execute if score @s omegaflowey.math.0 matches 0 if score @s omegaflowey.attack.indicator.remaining matches 1.. run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-lower/executor/loop/lower_eye/tween_next_frame
+  function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-lower/executor/loop/lower_eye/tween_next_frame with storage omegaflowey:bossfight
 
 # Summon indicators at each lower_eye every `omegaflowey.attack.executor.rate` ticks
 scoreboard players operation @s omegaflowey.math.0 = @s omegaflowey.attack.clock.i
