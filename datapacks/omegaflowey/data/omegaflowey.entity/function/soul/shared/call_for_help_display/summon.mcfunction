@@ -4,13 +4,13 @@ summon block_display ~ ~ ~ { \
     { \
       id: "minecraft:text_display", \
       Tags: ["omega-flowey-remastered", "soul", "call-for-help-display", "call-for-help-display-new"], \
-      text: '[\
+      text: [ \
         { \
           "text": " * You called for help... ", \
           "color": "white", \
           "font": "omega-flowey:determinationmono" \
         } \
-      ]', \
+      ], \
       text_opacity:255, \
       background:-16777216, \
       alignment:"center", \
