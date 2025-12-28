@@ -57,13 +57,14 @@ module.exports = {
     },
     'count-bones': 'node ./package-scripts/count-aj-bones',
     export: {
-      default: 'nps export.run',
+      default: series.nps('export.run', 'export.postprocess'),
       run: `yarn exec ${blockbenchPath} --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
       // forcibly purge the `animated_java` export-cache
       force: series(
         `rimraf ${allAnimatedJavaExportFiles.join(' ')}`,
         'nps export',
       ),
+      postprocess: `node ./package-scripts/ajexport-postprocess`,
     },
     lint: {
       default: 'nps lint.custom lint.scripts',
