@@ -11,14 +11,11 @@ const setInterpolationDurationZeroAllFrames = (rootDir) => {
     ['omegaflowey_petal_pipe_middle_simplified', 'omegaflowey_intro_shake'],
     ['omegaflowey_tv_screen', 'omegaflowey_intro_shake'],
     ['omegaflowey_upper_eye', 'omegaflowey_intro_shake'],
+    ['omegaflowey_nose', 'omegaflowey_nose_move_slow_shake'],
   ];
 
-  const stepAnimationDirs = stepAnimations.map((stepAnimationPair) => {
-    const [namespace, animation] = stepAnimationPair;
-    return `${rootDir}/function/${namespace}/animations/${animation}`;
-  });
-
-  for (const dir of stepAnimationDirs) {
+  for (const [namespace, animation] of stepAnimations) {
+    const dir = `${rootDir}/function/${namespace}/animations/${animation}`;
     process.stdout.write(chalk.gray(`${dir} ... `));
     let numChanges = 0;
 
@@ -46,8 +43,7 @@ const setInterpolationDurationZeroAllFrames = (rootDir) => {
 };
 
 const setInterpolationDurationMouthFrames = (rootDir) => {
-  const stepAnimations = [['omegaflowey_mouth', 'omegaflowey_laugh']];
-  const frames = [
+  const mouthLaughStepFrames = [
     1, 4,
 
     8, 11, 14,
@@ -75,12 +71,13 @@ const setInterpolationDurationMouthFrames = (rootDir) => {
     118,
   ];
 
-  const stepAnimationDirs = stepAnimations.map((stepAnimationPair) => {
-    const [namespace, animation] = stepAnimationPair;
-    return `${rootDir}/function/${namespace}/animations/${animation}`;
-  });
+  const stepAnimations = [
+    ['omegaflowey_mouth', 'omegaflowey_laugh', mouthLaughStepFrames],
+  ];
 
-  for (const dir of stepAnimationDirs) {
+  for (const [namespace, animation, frames] of stepAnimations) {
+    const dir = `${rootDir}/function/${namespace}/animations/${animation}`;
+
     process.stdout.write(chalk.gray(`${dir} ... `));
     let numChanges = 0;
 
