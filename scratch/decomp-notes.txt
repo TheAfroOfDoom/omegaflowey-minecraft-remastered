@@ -5,8 +5,8 @@
 3. repeat 2
 4. continue
 
-# "1" gamemaker unit is 1/60 seconds?
-# so 60 frames per second
+# "1" gamemaker unit is 1/30 seconds?
+# so 30 frames per second
 
 # for phase 2/4 (save-states), its the above steps as:
 [1,2,4], but for the last 1 attack
@@ -34,7 +34,7 @@ for slow attacks, we don't retry if we repeat an attack
 - laser attack can trigger during homing-vines after awhile(?)
   but only once per boss fight.
   its the first homing-vines attack only??
-- laser happens "90" units after homing-vines starts. 1.5 SECONDS
+- laser happens "90" units after homing-vines starts. 3 SECONDS
   but then is set to "-999" units, functionally a cooldown(?)
 
 phases
