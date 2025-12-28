@@ -6,3 +6,5 @@ $execute \
 $execute \
   as $(soul_tvscreen_uuid) \
   run function animated_java:omegaflowey_tv_screen/remove/this
+
+$execute as $(soul_model_uuid) run function animated_java:omegaflowey_soul/remove/this
