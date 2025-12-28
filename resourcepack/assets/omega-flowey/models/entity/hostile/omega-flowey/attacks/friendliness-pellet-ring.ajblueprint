@@ -1,41 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "501d1aaa-ea51-86d3-3bf1-10e9f8004a5c",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\friendliness-pellet-ring.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_friendliness_pellet_ring"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_friendliness_pellet_ring",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/initialize/friendliness-pellet-ring",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"baked_animations": true,
-		"json_file": "",
-		"customModelDataOffset": 0
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_friendliness_pellet_ring",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/initialize/friendliness-pellet-ring"
 	},
 	"elements": [
 		{
@@ -752,12 +735,9 @@
 			"name": "root",
 			"origin": [0, 15, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
-				"default": {
-					"inherit_settings": true,
-					"nbt": "{ brightness: { block: 15, sky: 0 } }",
-					"use_nbt": true
-				},
+				"default": {},
 				"variants": {}
 			},
 			"uuid": "fe3de117-90dc-15fc-ef82-10f07f5095a1",
@@ -767,6 +747,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"53f88f57-31f9-0445-5a6b-e7b4d3dfddbd",
 				"f3f033f4-4298-025d-ace8-b1e52f04b360",
@@ -805,16 +786,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "custom",
 			"frame_order": "0 0 1",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "ef720afa-3971-8de2-93f4-3da52c803b61",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADRJREFUSEtjfHlzwn8GCgDjqAEMo2HAMBoGDMMjDBYaGlFWHowawMA4GgajYQAqD4Z+OgAAVXFVYfqulm0AAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "../../../../../textures/custom/attacks/friendliness-pellet-ring-blinking.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADRJREFUSEtjfHlzwj8GCgDjqAEMo2HAMBoGDMMjDBYaGlFWHowawMA4GgajYQAqD4Z+OgAAz9JVQS8x2WQAAAAASUVORK5CYII="
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/attacks/friendliness-pellet-ring-finished.png",
@@ -833,23 +815,24 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "559ff8c8-97ad-3b90-6075-35c83858b441",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jPL9/x38GCgDjqAEMo2HAMBoGDMMiDACMwDRhgxYSvAAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../../../textures/custom/attacks/friendliness-pellet-ring-finished.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jPL9/xz8GCgDjqAEMo2HAMBoGDMMiDABqeDRRmFyKbAAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "4bfc8b27-bb39-dc95-76fa-a89cb88c7b60",
+			"uuid": "6a789857-ecef-c05c-a2da-9f3e75d91f2c",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
@@ -865,7 +848,5 @@
 				"excluded_nodes": []
 			}
 		]
-	},
-	"animations": [],
-	"animation_controllers": []
+	}
 }

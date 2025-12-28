@@ -1,41 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "674d0912-11ce-726c-2723-b7a00eb2e0ac",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-0-sword.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_soul_0_sword"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_soul_0_sword",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "data merge entity @s {CustomName:\"'Soul 0 Bullet'\"}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-bullet\ntag @s add soul-bullet-new\ntag @s add soul_0",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"baked_animations": true,
-		"json_file": "",
-		"customModelDataOffset": 0
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_soul_0_sword",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "data merge entity @s {CustomName:\"'Soul 0 Bullet'\"}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-bullet\ntag @s add soul-bullet-new\ntag @s add soul_0"
 	},
 	"elements": [
 		{
@@ -1142,7 +1125,7 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{damage:1.0,radius:1.921875f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+				"on_summon_function": "data merge entity @s {data:{damage:1.0,radius:1.921875f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
 			},
 			"uuid": "96a47398-dc5a-1f3e-85bb-a6fe7a3932fc",
 			"type": "locator"
@@ -1157,7 +1140,7 @@
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:marker",
-				"summon_commands": "data merge entity @s {data:{damage:1.0,radius:1.921875f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
+				"on_summon_function": "data merge entity @s {data:{damage:1.0,radius:1.921875f}}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul_0"
 			},
 			"uuid": "856dd22e-cb4f-7ea9-414c-66cb4df2e257",
 			"type": "locator"
@@ -1168,6 +1151,7 @@
 			"name": "root",
 			"origin": [0, -5.625, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"default": {
 					"nbt": "{ teleport_duration: 1 }",
@@ -1182,6 +1166,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"5caefc99-d2f2-faa5-92cc-bc83b5947832",
 				"d7189b54-4ea8-6ffe-207f-1c34efaa688f",
@@ -1231,16 +1216,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "98798206-3aed-004d-8132-3af6539cd88f",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../textures/custom/black.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg=="
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/white.png",
@@ -1259,29 +1245,28 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "2fddbf57-f7c9-d191-8f51-0fe26960e8c5",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/P///38GCgDjqAEMo2HAMBoGDMMiDAAlHz/RG+BMbgAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../textures/custom/white.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/P///38GCgDjqAEMo2HAMBoGDMMiDAAlHz/RG+BMbgAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "1f43bf12-0407-9afa-90d6-9d6151fd99cd",
+			"uuid": "e45ff713-ac30-0f96-4c9d-57f374910531",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
 		},
 		"list": []
-	},
-	"animations": [],
-	"animation_controllers": []
+	}
 }

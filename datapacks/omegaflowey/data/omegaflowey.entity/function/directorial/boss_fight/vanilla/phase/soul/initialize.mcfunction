@@ -17,6 +17,3 @@ tag @s add boss_fight.phase.soul
 function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_models/except_tv_screen
 $execute as $(bossfight_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/remove/this
 $execute as $(soul_model_uuid) run function animated_java:omegaflowey_soul/remove/this
-
-# Split on phase score
-execute if score @s omegaflowey.boss-fight.progress.phase.i matches 0 run function omegaflowey.entity:directorial/boss_fight/vanilla/phase/soul/initialize/0

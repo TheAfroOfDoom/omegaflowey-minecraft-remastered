@@ -1,5 +1,5 @@
 # Face player
-$teleport @s ~ ~ ~ facing $(x) $(y) $(z)
+$rotate @s facing $(x) $(y) $(z)
 
 # Store indicator uuid for blinking_lane to reference later
 function gu:generate

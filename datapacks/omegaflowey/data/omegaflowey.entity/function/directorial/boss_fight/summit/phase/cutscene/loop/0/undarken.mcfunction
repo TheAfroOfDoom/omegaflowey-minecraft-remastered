@@ -5,7 +5,7 @@ $effect give $(active_player_uuid) minecraft:blindness 1 0 true
 execute as @e[ \
   x=-186, dx=61, y=10, dy=46, z=47, dz=91, \
   type=minecraft:item_display, \
-  tag=aj.rig_root, \
+  tag=aj.global.root, \
   tag=!aj.omegaflowey_arena_box.root, \
   tag=omega-flowey-remastered \
 ] run function omegaflowey.entity:hostile/omega-flowey/animate/intro/brighten/as_root
@@ -26,7 +26,7 @@ summon minecraft:text_display -156.5 43.0625 76.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "DEMO", "color": "yellow", "bold": true }', \
+  text: { "text": "DEMO", "color": "yellow", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.92387956f, -0.38268352f, 0.0f], \

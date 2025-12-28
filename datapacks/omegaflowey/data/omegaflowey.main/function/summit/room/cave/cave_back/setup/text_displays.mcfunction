@@ -11,11 +11,11 @@ summon minecraft:text_display -148.01 45.125 21.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "Can you find the \\n", \
     { "text": "rare balloon ", "color": "aqua" }, \
     "hidden\\nin the pillar room?" \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -39,7 +39,7 @@ summon minecraft:text_display -156.99 43.75 33.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "Omega Flowey", "color": "white", "bold": true }', \
+  text: { "text": "Omega Flowey", "color": "white", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -63,7 +63,7 @@ summon minecraft:text_display -156.99 40.3125 33.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "Model History", "color": "white", "bold": true }', \
+  text: { "text": "Model History", "color": "white", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -87,7 +87,7 @@ summon minecraft:text_display -156.99 43.125 34.4375 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "2016", "color": "yellow", "bold": true }', \
+  text: { "text": "2016", "color": "yellow", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -111,7 +111,7 @@ summon minecraft:text_display -156.99 43.125 31.5625 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{ "text": "2024", "color": "aqua", "bold": true }', \
+  text: { "text": "2024", "color": "aqua", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -134,7 +134,7 @@ summon minecraft:text_display -144.01 41.25 40.0 { \
   line_width: 210, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "I released the original ", \
     { "text": "Omega Flowey ", "color": "gold" }, \
     "map for ", \
@@ -177,8 +177,8 @@ summon minecraft:text_display -144.01 41.25 40.0 { \
     "now 😓) and is taking much longer than the original so I can focus on a high quality product. ", \
     "Check out our ", \
     { "text": "GitHub", "color": "aqua", "underlined": true }, \
-    " to stay up-to-date on progress or if you want to see the map\'s development history." \
-  ]', \
+    " to stay up-to-date on progress or if you want to see the map's development history." \
+  ], \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -220,10 +220,10 @@ summon minecraft:text_display -151.99 44.125 41.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "This project was\\nlargely motivated by\\nand possible thanks\\nto ", \
     { "text": "Animated Java", "color": "#00ACED", "underlined": true } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -265,14 +265,14 @@ summon minecraft:text_display -151.99 41.1875 41.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
-    "They\'re here at the\\n", \
+  text: [ \
+    "They're here at the\\n", \
     { "text": "Smithed Summit ", "color": "blue" }, \
     { "translate": ":mountain_snow:" }, \
     "\\ntoo! Go check out\\ntheir ", \
     { "text": "booth", "color": "#00ACED" }, \
     "!" \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
@@ -295,7 +295,7 @@ summon minecraft:text_display -147.5 43.1875 45.99 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "", \
     { "text": "Every model ", "color": "aqua" }, \
     "in the remaster\\nhas been remade ", \
@@ -312,7 +312,7 @@ summon minecraft:text_display -147.5 43.1875 45.99 { \
     \
     "Artist: ", \
     { "text": "Adahy", "color": "yellow" } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
       left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \

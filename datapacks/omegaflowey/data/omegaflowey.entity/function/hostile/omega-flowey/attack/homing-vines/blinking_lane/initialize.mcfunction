@@ -9,6 +9,8 @@ execute if score #omegaflowey.summon.tag_variant omegaflowey.global.flag matches
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/initialize
 
 data modify entity @s CustomName set value '"Homing-Vines Blinking Lane"'
+execute on passengers if entity @s[tag=aj.omegaflowey_homing_vine_blinking_lane.bone] run \
+  data merge entity @s { brightness: { block: 15, sky: 0 }, teleport_duration: 0, view_range: 0 }
 
 # Store blinking_lane uuid to parent indicator
 function gu:generate

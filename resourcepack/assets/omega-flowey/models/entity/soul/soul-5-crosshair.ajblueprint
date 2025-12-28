@@ -1,40 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "201e54ef-18f9-09f6-5b11-5aa1f9c96255",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-5-crosshair.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_soul_5_crosshair"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_soul_5_crosshair",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "function omegaflowey.entity:soul/soul_5/crosshair/initialize with storage omegaflowey:soul.5.indicator",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"baked_animations": true,
-		"json_file": ""
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_soul_5_crosshair",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "function omegaflowey.entity:soul/soul_5/crosshair/initialize with storage omegaflowey:soul.5.indicator"
 	},
 	"elements": [
 		{
@@ -2449,13 +2433,10 @@
 			"name": "root",
 			"origin": [0, 0, 41.5],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"variants": {},
-				"default": {
-					"inherit_settings": true,
-					"nbt": "{ brightness: { block: 15, sky: 0 } }",
-					"use_nbt": true
-				}
+				"default": {}
 			},
 			"uuid": "46b3ab6c-791c-8564-2e10-f861870d8036",
 			"export": true,
@@ -2464,6 +2445,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"6e635e2a-1418-49bd-517e-262ac19a5c55",
 				"56534641-0b54-74ac-0b98-5476db819e7e",
@@ -2493,13 +2475,10 @@
 					"name": "heart",
 					"origin": [10.25, 35, -0.25],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {},
-						"default": {
-							"inherit_settings": true,
-							"nbt": "{ brightness: { block: 15, sky: 0 } }",
-							"use_nbt": true
-						}
+						"default": {}
 					},
 					"uuid": "2e574a6b-f91e-e1a6-42da-cb1144ba6f1a",
 					"export": true,
@@ -2508,6 +2487,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"e1e16152-914e-8ae2-7dfd-6332807e8b2c",
 						"771755a9-7069-c946-5dcc-4df4c06cbf7a",
@@ -2549,7 +2529,7 @@
 	],
 	"textures": [
 		{
-			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/redstone_block.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\redstone_block.png",
 			"name": "redstone_block.png",
 			"folder": "",
 			"namespace": "",
@@ -2565,16 +2545,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "d5ad2c8c-0fa6-db12-e119-b8324d25349b",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQBJREFUOE+lkyESwjAQRbcziIgKRA0OJJIrILkO5+hVkEiugKzEgalAVFQwA/Ob/GS7mXaGaU3SJvv69+9u8dy6ryx4CgCaANiLCPevPlE3zu/1Od8zwC0E3rteDmWIVAoBAxwrgCMAD5rOUx4Btguc9coJwSMALkM6AO9PCkYggzTkqIRFBQzmX6d8PVdOkGaWwrX1OUPBFIQqBgNLlzwAUUufqyrTwh2kMqRA5yELBv6tgAaCeFEV0Clp+TA288BWgGnAtLr1lbHy8S3rA1tG2wvsj1OlTGQK/Csh1kxI1080kY0EA3EJB7YybOvZVuaAEIiVQ8WB0griLCyYZvkBEBqf4WyNTFoAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/redstone_block.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQBJREFUOE+lkyESwjAQRbcziIgKRA0OJJIrILkO5+hVkEiugKzEgalAVFQwA/Ob/GS7mXaGaU3SJvv69+9u8dy6ryx4CgCaANiLCPevPlE3zu/1Od8zwC0E3rteDmWIVAoBAxwrgCMAD5rOUx4Btguc9coJwSMALkM6AO9PCkYggzTkqIRFBQzmX6d8PVdOkGaWwrX1OUPBFIQqBgNLlzwAUUufqyrTwh2kMqRA5yELBv6tgAaCeFEV0Clp+TA288BWgGnAtLr1lbHy8S3rA1tG2wvsj1OlTGQK/Csh1kxI1080kY0EA3EJB7YybOvZVuaAEIiVQ8WB0griLCyYZvkBEBqf4WyNTFoAAAAASUVORK5CYII="
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/attacks/blank.png",
@@ -2593,23 +2574,52 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "a855effb-05f9-4211-0a6a-53ce06cf0a32",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "../../../textures/custom/attacks/blank.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII="
+		},
+		{
+			"path": "",
+			"name": "transparent",
+			"folder": "",
+			"namespace": "",
+			"id": "2",
+			"group": "",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"pbr_channel": "color",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": false,
+			"uuid": "797174ae-5c58-4a83-a630-eefd51007c80",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kTtIA0EURY+JokjEwhQiFltEK21UxFKiKIKBkETwV7i7MVHIrmE3YmMp2AYs/DRGLWystbWwFQTBD4i1hZWijcj6ZhNIEOPAMIc7cy9v3oNAKWdabuMoWHbBSUxGtdm5ea35hSaCQIAR3XTzseREirrr844Gdd72q6z67/5cbell14QGTXjUzDsF4SXh4Y1CXvGecNhc0dPCZ8J9jhQo/KB0o8yvirM+B1Rm2EklxoTDwlq2ho0aNlccS3hIOJK2bMkPzJY5rXhTsZVbNyt1qh+Glu2ZpNJldzPJFDHiaBiss0qOAv1y2qK4JOQ+Wsff5fvj4jLEtYopjnHWsNB9P2oGv3vrZgYHykmhKDQ9e957DzTvwHfR876OPO/7GIJPcGlX/WslGPkQvVjVIofQvgXnV1XN2IWLbeh8zOuO7kv+/DMZeDuVMc1Bxw20LpT7Vrnn5B5S0qvpa9g/gN6sZC/W+XdLbd/+fVPp3w9iNHKgdXImZAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+gFAwAFKkpaLkIAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAEklEQVQ4y2NgGAWjYBSMAggAAAQQAAGFP6pyAAAAAElFTkSuQmCC"
 		}
 	],
 	"variants": {
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "cc98ebf0-25e1-26e6-ff72-292a6a3a6470",
+			"uuid": "a4e6b68b-2288-c41b-4b95-51876eb431eb",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
@@ -2626,7 +2636,5 @@
 				"excluded_nodes": []
 			}
 		]
-	},
-	"animations": [],
-	"animation_controllers": []
+	}
 }

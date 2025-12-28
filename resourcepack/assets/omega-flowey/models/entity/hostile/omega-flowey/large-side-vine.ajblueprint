@@ -1,41 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "b26906cf-6e5f-dd9c-47ed-0283dd0ce8b4",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\large-side-vine.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_large_side_vine"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_large_side_vine",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "function omegaflowey.entity:hostile/omega-flowey/summon/initialize/large_side_vine",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"baked_animations": true,
-		"json_file": "",
-		"customModelDataOffset": 0
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_large_side_vine",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "function omegaflowey.entity:hostile/omega-flowey/summon/initialize/large_side_vine"
 	},
 	"elements": [
 		{
@@ -4473,6 +4456,7 @@
 			"name": "root",
 			"origin": [-4.3985, -59.14, -288.125],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"default": {},
 				"variants": {}
@@ -4484,6 +4468,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"1979fc73-65a3-6399-3ff6-07efe48e3a48",
 				"62ce7188-34cc-fc08-5c89-72ba4b9aeb1c",
@@ -4589,7 +4574,7 @@
 	],
 	"textures": [
 		{
-			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/lime_terracotta.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\lime_terracotta.png",
 			"name": "lime_terracotta.png",
 			"folder": "",
 			"namespace": "",
@@ -4605,19 +4590,20 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "d8c57574-2114-11ea-a187-7b626e0b99d6",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAdlJREFUOE9NU9GO2zAMoyQnvfueu/V+6LBs2J42FMW+fNfYkjbKaTcXKBLHIimKlu3ymp6J+zIIxAzNBOmJWww8tQaeGH1gRNRRAWCqEAJwY2ltYgQwIIjoEAILICowNUQCvQ+YshwgsWyXc+4ZWHgwszarTgATQTPDeOibBLKwmkoC8uV6TiJ6JNIdgzRIiCqeRNGr+GhRWTPZC4kKCNBUipV/DmDfO6iS5yGGkMTzQlqgj1FwJCChfP/1lmSV6pvyHUr9U8dDPH34f2UElmaQb9dzhkwFSfnppcKgWNhCjvkucpippT6QcCr4en3LCH/IP5kV0c0dJzJA0MuwEj5HqNw9ngnAXsnS+36MK6BSDtQ0RA1NgKxJ3TelRnooCGQmImdIWKX0BAkrIH4/GG0Cr6aVC9kuL0k5CYXHKJrn01JT+H37gLS1xDKZ/DY4hYk5g/T+4yXNZkdEJGujqTrNWliogNOmIw+VRCY2AvL552tN65jcNCunJ2zjtK5QH/hwhydKmRA05lRku56P7ng5pJKo7K/3SifHx7XDYfUjmcBWgzDW2+VTFixfxo5+5P+eygmgoJfVZgQ8Axww70ldppnZf4vSafZg3CuPLJ13hQnkrIx5+evTH197CDvWqhWdAAAAAElFTkSuQmCC",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/lime_terracotta.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAdlJREFUOE9NU9GO2zAMoyQnvfueu/V+6LBs2J42FMW+fNfYkjbKaTcXKBLHIimKlu3ymp6J+zIIxAzNBOmJWww8tQaeGH1gRNRRAWCqEAJwY2ltYgQwIIjoEAILICowNUQCvQ+YshwgsWyXc+4ZWHgwszarTgATQTPDeOibBLKwmkoC8uV6TiJ6JNIdgzRIiCqeRNGr+GhRWTPZC4kKCNBUipV/DmDfO6iS5yGGkMTzQlqgj1FwJCChfP/1lmSV6pvyHUr9U8dDPH34f2UElmaQb9dzhkwFSfnppcKgWNhCjvkucpippT6QcCr4en3LCH/IP5kV0c0dJzJA0MuwEj5HqNw9ngnAXsnS+36MK6BSDtQ0RA1NgKxJ3TelRnooCGQmImdIWKX0BAkrIH4/GG0Cr6aVC9kuL0k5CYXHKJrn01JT+H37gLS1xDKZ/DY4hYk5g/T+4yXNZkdEJGujqTrNWliogNOmIw+VRCY2AvL552tN65jcNCunJ2zjtK5QH/hwhydKmRA05lRku56P7ng5pJKo7K/3SifHx7XDYfUjmcBWgzDW2+VTFixfxo5+5P+eygmgoJfVZgQ8Axww70ldppnZf4vSafZg3CuPLJ13hQnkrIx5+evTH197CDvWqhWdAAAAAElFTkSuQmCC"
 		},
 		{
-			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/redstone_block.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\redstone_block.png",
 			"name": "redstone_block.png",
 			"folder": "",
 			"namespace": "",
@@ -4633,19 +4619,20 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "efeae881-1e40-2cbe-0a90-8627cbcd2e4d",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQBJREFUOE+lkyESwjAQRbcziIgKRA0OJJIrILkO5+hVkEiugKzEgalAVFQwA/Ob/GS7mXaGaU3SJvv69+9u8dy6ryx4CgCaANiLCPevPlE3zu/1Od8zwC0E3rteDmWIVAoBAxwrgCMAD5rOUx4Btguc9coJwSMALkM6AO9PCkYggzTkqIRFBQzmX6d8PVdOkGaWwrX1OUPBFIQqBgNLlzwAUUufqyrTwh2kMqRA5yELBv6tgAaCeFEV0Clp+TA288BWgGnAtLr1lbHy8S3rA1tG2wvsj1OlTGQK/Csh1kxI1080kY0EA3EJB7YybOvZVuaAEIiVQ8WB0griLCyYZvkBEBqf4WyNTFoAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/redstone_block.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQBJREFUOE+lkyESwjAQRbcziIgKRA0OJJIrILkO5+hVkEiugKzEgalAVFQwA/Ob/GS7mXaGaU3SJvv69+9u8dy6ryx4CgCaANiLCPevPlE3zu/1Od8zwC0E3rteDmWIVAoBAxwrgCMAD5rOUx4Btguc9coJwSMALkM6AO9PCkYggzTkqIRFBQzmX6d8PVdOkGaWwrX1OUPBFIQqBgNLlzwAUUufqyrTwh2kMqRA5yELBv6tgAaCeFEV0Clp+TA288BWgGnAtLr1lbHy8S3rA1tG2wvsj1OlTGQK/Csh1kxI1080kY0EA3EJB7YybOvZVuaAEIiVQ8WB0griLCyYZvkBEBqf4WyNTFoAAAAASUVORK5CYII="
 		},
 		{
-			"path": "G:\\Coding\\omega-flowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\black.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/black.png",
 			"name": "black.png",
 			"folder": "",
 			"namespace": "",
@@ -4661,24 +4648,24 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
 			"internal": true,
-			"saved": false,
+			"saved": true,
 			"uuid": "408350a5-9e9c-3c4a-2e8d-0a373d135240",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
-			"image_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../../textures/custom/black.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "935e5d91-7e37-fc39-90e1-ef987aeefab4",
+			"uuid": "d8f4ac4f-1b0b-e4c4-2c66-020ee197cfca",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
@@ -4721,9 +4708,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "360",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "ce95d6f8-ac6a-5580-05cc-85333637b074",
@@ -4737,9 +4724,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
-									"y": 0,
-									"z": 0
+									"x": "0",
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "7842f834-ee41-6864-c4b8-ebb6dca9d423",
@@ -4769,9 +4756,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "6dc329b4-a886-596e-5f3d-5d2e796d9d0c",
@@ -4801,9 +4788,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "84c5dae7-8ea5-e933-0a76-219b4f7b0598",
@@ -4833,9 +4820,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "3990ead2-0005-d37b-37fb-1cb5745d6346",
@@ -4865,9 +4852,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "1bab39e6-5362-9add-d339-1bf3726e62b9",
@@ -5074,9 +5061,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "-360",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "ce95d6f8-ac6a-5580-05cc-85333637b074",
@@ -5090,9 +5077,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
-									"y": 0,
-									"z": 0
+									"x": "0",
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "7842f834-ee41-6864-c4b8-ebb6dca9d423",
@@ -5122,9 +5109,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "94be194c-a5bc-eefd-36c4-6cdae6225fa5",
@@ -5154,9 +5141,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "b62555af-7a02-c9f0-2e69-6df96afd9559",
@@ -5186,9 +5173,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "827a3116-a97b-d40d-5398-9d8efcd0f7e5",
@@ -5218,9 +5205,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "e838adaf-658d-165a-ff75-b2dd7743b014",
@@ -5411,7 +5398,7 @@
 			"length": 6.4,
 			"snapping": 20,
 			"selected": false,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -5427,9 +5414,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "360",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "ce95d6f8-ac6a-5580-05cc-85333637b074",
@@ -5443,9 +5430,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
-									"y": 0,
-									"z": 0
+									"x": "0",
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "7842f834-ee41-6864-c4b8-ebb6dca9d423",
@@ -5475,9 +5462,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "6dc329b4-a886-596e-5f3d-5d2e796d9d0c",
@@ -5507,9 +5494,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "84c5dae7-8ea5-e933-0a76-219b4f7b0598",
@@ -5539,9 +5526,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "3990ead2-0005-d37b-37fb-1cb5745d6346",
@@ -5571,9 +5558,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "1bab39e6-5362-9add-d339-1bf3726e62b9",
@@ -5764,7 +5751,7 @@
 			"length": 6.4,
 			"snapping": 20,
 			"selected": true,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -5780,9 +5767,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "-360",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "ce95d6f8-ac6a-5580-05cc-85333637b074",
@@ -5796,9 +5783,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
-									"y": 0,
-									"z": 0
+									"x": "0",
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "7842f834-ee41-6864-c4b8-ebb6dca9d423",
@@ -5828,9 +5815,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "6dc329b4-a886-596e-5f3d-5d2e796d9d0c",
@@ -5860,9 +5847,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "84c5dae7-8ea5-e933-0a76-219b4f7b0598",
@@ -5892,9 +5879,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "3990ead2-0005-d37b-37fb-1cb5745d6346",
@@ -5924,9 +5911,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "12",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "1bab39e6-5362-9add-d339-1bf3726e62b9",
@@ -6109,6 +6096,5 @@
 				}
 			}
 		}
-	],
-	"animation_controllers": []
+	]
 }

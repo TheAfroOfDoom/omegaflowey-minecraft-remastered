@@ -1,41 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "967dbae2-a1da-11ee-8c90-0242ac120002",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\finger-gun-laser.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_finger_gun_laser"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_finger_gun_laser",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/initialize",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"baked_animations": true,
-		"json_file": "",
-		"customModelDataOffset": 0
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_finger_gun_laser",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "function omegaflowey.entity:hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/initialize"
 	},
 	"elements": [
 		{
@@ -88,12 +71,9 @@
 			"name": "root",
 			"origin": [0, 11, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
-				"default": {
-					"inherit_settings": true,
-					"nbt": "{ Rotation: [90.0f, 0.0f], brightness: { block: 15, sky: 0 } }",
-					"use_nbt": true
-				},
+				"default": {},
 				"variants": {}
 			},
 			"uuid": "12b07b44-c52f-fffb-7cfa-cb571609acdb",
@@ -103,6 +83,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": ["9fc6dd09-99ef-9275-9d18-9c8e88af6eab"]
 		}
 	],
@@ -124,29 +105,28 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jXGho9J+BAsA4agDDaBgwjIYBw7AIAwBI6yBBLMQBkQAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "../../../../../textures/custom/attacks/finger-gun-laser.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jXGho9I+BAsA4agDDaBgwjIYBw7AIAwAmoyAx2MOqqQAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "d9e60740-d680-3c5a-d6f4-b5e5c4089966",
+			"uuid": "3677fdad-95a3-4f38-ac18-f4394d10d77e",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
 		},
 		"list": []
-	},
-	"animations": [],
-	"animation_controllers": []
+	}
 }

@@ -1,40 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "4c5c60b1-c3b5-5ddb-256b-fd5e5a65d109",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\arena_box_vanilla.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_arena_box_vanilla"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_arena_box_vanilla",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "function omegaflowey.entity:directorial/boss_fight/shared/arena_box_vanilla/initialize",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"baked_animations": true,
-		"json_file": ""
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_arena_box_vanilla",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "function omegaflowey.entity:directorial/boss_fight/shared/arena_box_vanilla/initialize"
 	},
 	"elements": [
 		{
@@ -307,6 +291,7 @@
 			"name": "root",
 			"origin": [0, 231.42, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"variants": {}
 			},
@@ -317,6 +302,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"a79fccbc-949c-7bb3-0610-118a4ac3caaa",
 				"bbb32b1a-07f4-5331-b7d1-2e15757f6948",
@@ -345,19 +331,20 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "6c842434-6b12-81a2-807f-0fe112fe184b",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "../../../../textures/custom/attacks/blank.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII="
 		},
 		{
-			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\intro_flashing_red.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/intro_flashing_red.png",
 			"name": "intro_flashing_red.png",
 			"folder": "",
 			"namespace": "",
@@ -373,23 +360,24 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "custom",
 			"frame_order": "0:4 1:6 1:6",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "55c7ab60-1ea2-16e7-84e1-043af3beb3f4",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADFJREFUSEtjZGBg+MdAAWAcNYBhNAwYRsOAYXiEQROl5cGoAQyMo2EwGgag8mDopwMAnMooAeNNRDYAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "../../../../textures/custom/intro_flashing_red.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADFJREFUSEtjZGBg+MdAAWAcNYBhNAwYRsOAYXiEQROl5cGoAQyMo2EwGgag8mDopwMAnMooAeNNRDYAAAAASUVORK5CYII="
 		}
 	],
 	"variants": {
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "b3d386cc-32eb-e009-e8cf-b0a2fe5cbacb",
+			"uuid": "b90d5b42-7f47-b4a2-f809-522b991e9bc5",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
@@ -405,7 +393,5 @@
 				"excluded_nodes": []
 			}
 		]
-	},
-	"animations": [],
-	"animation_controllers": []
+	}
 }

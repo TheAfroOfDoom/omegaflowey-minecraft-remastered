@@ -6,6 +6,6 @@ data modify storage omegaflowey:bossfight active_player_uuid set from storage gu
 
 function omegaflowey.main:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 
-function omegaflowey.utils:log/self { text_component: '[ \
+function omegaflowey.utils:log/self { text_component: [ \
   { "text": "Set you as the active bossfight player", "color": "yellow" } \
-]' }
+] }

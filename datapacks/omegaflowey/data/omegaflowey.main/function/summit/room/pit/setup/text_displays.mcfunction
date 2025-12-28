@@ -12,12 +12,12 @@ summon minecraft:text_display -108.5 43.9375 38.5 {\
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "Welcome to the\\n", \
     { "text": "Omega Flowey ", "color": "green" }, \
     { "text": "demo", "color": "aqua" }, \
     "!" \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: {\
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -41,7 +41,7 @@ summon minecraft:text_display -110.5 43.0 38.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ "by ", { "text": "TheAfroOfDoom", "color": "yellow" } ]', \
+  text: [ "by ", { "text": "TheAfroOfDoom", "color": "yellow" } ], \
   text_opacity: 255, \
   transformation: {\
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
@@ -65,12 +65,12 @@ summon minecraft:text_display -101.4375 44.0 32.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "This is a recreation of a boss\\nfrom ", \
     { "text": "Toby Fox", "color": "yellow" }, \
-    "\'s ", \
+    "'s ", \
     { "color": "light_purple", "text": "Undertale" } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -94,15 +94,15 @@ summon minecraft:text_display -101.4375 42.1875 32.5 { \
   line_width: 160, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "The map is still ", \
     { "text": "in development", "color": "gold" }, \
-    ", but we\'ve created a short ", \
+    ", but we've created a short ", \
     { "text": "demo ", "color": "aqua" }, \
     "for you to enjoy during the ", \
     { "text": "Smithed Summit ", "color": "blue" }, \
     { "translate": ":mountain_snow:" } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
@@ -126,11 +126,11 @@ summon minecraft:text_display -108.0 44.0 25.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '[ \
+  text: [ \
     "Special thanks\\nto our ", \
     { "text": "contributors ", "color": "gold" }, \
     { "translate": ":smile:" } \
-  ]', \
+  ], \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -154,7 +154,7 @@ summon minecraft:text_display -109.5625 42.75 25.625 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text": "adahy", "color": "yellow" }', \
+  text: {"text": "adahy", "color": "yellow" }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.1736482f, 0.0f, 0.98480785f], \
@@ -178,7 +178,7 @@ summon minecraft:text_display -108.0 42.75 25.5 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text": "naTia", "color": "yellow" }', \
+  text: {"text": "naTia", "color": "yellow" }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -202,7 +202,7 @@ summon minecraft:text_display -106.1875 42.75 25.5625 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: '{"text": "Wes", "color": "yellow" }', \
+  text: {"text": "Wes", "color": "yellow" }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, -0.1736482f, 0.0f, 0.98480785f], \

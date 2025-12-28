@@ -1,40 +1,24 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "c6b2e4b9-65a2-1684-97c1-6a44d0dbdde6",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\decorative\\summit-flower-bed.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_summitflowerbed"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_summitflowerbed",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "tag @s add omega-flowey-remastered",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"baked_animations": true,
-		"json_file": ""
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_summitflowerbed",
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "tag @s add omega-flowey-remastered"
 	},
 	"elements": [
 		{
@@ -4985,6 +4969,7 @@
 			"name": "bone",
 			"origin": [-40, 0, -24],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"variants": {},
 				"default": {}
@@ -4996,11 +4981,13 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				{
 					"name": "grasspatch",
 					"origin": [-8, 0, -40],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {}
 					},
@@ -5011,6 +4998,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"55b8e21d-3c69-66e2-56bf-5783d8bd7cc0",
 						"90c5751f-21e2-8602-b000-cdc42ce19cd4",
@@ -5052,6 +5040,7 @@
 					"name": "flowers",
 					"origin": [16, 0, 16],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {}
 					},
@@ -5062,6 +5051,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"b9c80b23-8ca2-a4f3-125b-9fc4a7057d73",
 						"7d3aacff-a421-4121-6a52-6595657c91f7",
@@ -5150,7 +5140,7 @@
 	],
 	"textures": [
 		{
-			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/moss_block.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\moss_block.png",
 			"name": "moss_block.png",
 			"folder": "",
 			"namespace": "",
@@ -5166,19 +5156,20 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "f22f038f-1393-fbfb-08e3-5b4d8c04ed15",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAYhJREFUOE9dkz1LA0EQhmcluTMaUsiBhQohFsFPENPa2NnZ2FrZCFb+An+grYqFIaAWQrAI0ZjL4ckz+J5rtrnbvZ33a+bCyXm33Ows2f1dYWkjNxb7l7eZTT9mvl/LmjacTKt9ulz38/ZWsHB1c1BS3NlIbLH17YVZI7VmO7fH29ymk8RaWelnr8Oxgz/1Px2UFY7P9kqY+fA1WrD+c14piZlhXV+tV8oA3j/6BYCBNRoGPyzeaw7GQjoLOwJhz3cUBTKQTDwhG2ZZ4J2Lyqa2Uth4kFTg4fRyt8QfTCggC624MLYnUJ4eYpw4MhUYygQIWLeXODs5YRtbHuL2Ts2TpRgVcagUypKykT0APQMKFZKeqKCtChNbAuMdENQ4QBzQ4OGv5/IKE+yyKkLPgBDpr9KdD26eWXOiPBxAfY5DUyEX1VqBxwMWLq4PSw0LSjQgkq2xpViDpDv/LOAvHiQFOG9J7VRHPERJooW0FAap0pABrqK4O25BLPhWOPF/QHE8vrQaUoB+AF97UlH8RCJUAAAAAElFTkSuQmCC",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/moss_block.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAYhJREFUOE9dkz1LA0EQhmcluTMaUsiBhQohFsFPENPa2NnZ2FrZCFb+An+grYqFIaAWQrAI0ZjL4ckz+J5rtrnbvZ33a+bCyXm33Ows2f1dYWkjNxb7l7eZTT9mvl/LmjacTKt9ulz38/ZWsHB1c1BS3NlIbLH17YVZI7VmO7fH29ymk8RaWelnr8Oxgz/1Px2UFY7P9kqY+fA1WrD+c14piZlhXV+tV8oA3j/6BYCBNRoGPyzeaw7GQjoLOwJhz3cUBTKQTDwhG2ZZ4J2Lyqa2Uth4kFTg4fRyt8QfTCggC624MLYnUJ4eYpw4MhUYygQIWLeXODs5YRtbHuL2Ts2TpRgVcagUypKykT0APQMKFZKeqKCtChNbAuMdENQ4QBzQ4OGv5/IKE+yyKkLPgBDpr9KdD26eWXOiPBxAfY5DUyEX1VqBxwMWLq4PSw0LSjQgkq2xpViDpDv/LOAvHiQFOG9J7VRHPERJooW0FAap0pABrqK4O25BLPhWOPF/QHE8vrQaUoB+AF97UlH8RCJUAAAAAElFTkSuQmCC"
 		},
 		{
-			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/sunflower_front.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\sunflower_front.png",
 			"name": "sunflower_front.png",
 			"folder": "",
 			"namespace": "",
@@ -5194,29 +5185,28 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "984db99b-0bfd-ba3a-2660-045e7511ff66",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAALdJREFUOE9jZKAQMFKon2EQG/B1l/p/LiMNsA+/nbvBwO12E6trsQr+f+P///+rVwyMYmIMIBoEQGxGkY0Y6jEEQDZzyggxfH/yjuHP439gzSyyTAwwMXSXYBgAsh2k6dPGawyPHvAyvHr7gcHEmJmBz18L4hI0V2A1AOTsz8ffMJw5+5dBTFiAQU7hMwOvpQhWb1DfCyBnYgtEkDiT1nHCgQhLmbDABPFBAUpSNJKSvAdxUibWGwBNtVYR59oJMwAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/sunflower_front.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAALdJREFUOE9jZKAQMFKon2EQG/B1l/p/LiMNsA+/nbvBwO12E6trsQr+f+P///+rVwyMYmIMIBoEQGxGkY0Y6jEEQDZzyggxfH/yjuHP439gzSyyTAwwMXSXYBgAsh2k6dPGawyPHvAyvHr7gcHEmJmBz18L4hI0V2A1AOTsz8ffMJw5+5dBTFiAQU7hMwOvpQhWb1DfCyBnYgtEkDiT1nHCgQhLmbDABPFBAUpSNJKSvAdxUibWGwBNtVYR59oJMwAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "bf82db68-b8da-95a8-82ca-549a077c9840",
+			"uuid": "b2f57769-8ff2-0bef-61f7-deef20a40043",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
 		},
 		"list": []
-	},
-	"animations": [],
-	"animation_controllers": []
+	}
 }

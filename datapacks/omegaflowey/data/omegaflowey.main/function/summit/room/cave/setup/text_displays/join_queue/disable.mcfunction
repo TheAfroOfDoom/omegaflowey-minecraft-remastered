@@ -3,10 +3,10 @@ execute as @e[ \
   type=minecraft:text_display, \
   tag=join-queue-title, \
   limit=1 \
-] run data modify entity @s text set value '[ \
+] run data modify entity @s text set value [ \
   { "text": "FIGHT\\n", "color": "red", "bold": true, "underlined": false }, \
   { "text": "DISABLED", "underlined": true } \
-]'
+]
 
 execute as @e[ \
   x=-137.5, y=43.5, z=42.5, distance=..0.01, \
@@ -20,10 +20,10 @@ execute as @e[ \
   type=minecraft:text_display, \
   tag=join-queue-2-title, \
   limit=1 \
-] run data modify entity @s text set value '[ \
+] run data modify entity @s text set value [ \
   { "text": "FIGHT\\n", "color": "red", "bold": true, "underlined": false }, \
   { "text": "DISABLED", "underlined": true } \
-]'
+]
 
 execute as @e[ \
   x=-135.0, y=39.0, z=46.25, distance=..0.01, \

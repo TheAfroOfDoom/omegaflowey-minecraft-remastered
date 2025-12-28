@@ -1,5 +1,8 @@
 function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
 
+execute on passengers if entity @s[tag=aj.omegaflowey_dentata_snake_ball.bone] run \
+  data merge entity @s { brightness: { block: 13, sky: 0 } }
+
 # Set scores
 scoreboard players operation @s omegaflowey.attack.speed.z = #omegaflowey.attack.dentata-snakes omegaflowey.attack.speed.z
 

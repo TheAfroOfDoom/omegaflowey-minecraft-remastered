@@ -1,4 +1,4 @@
-execute on target run function omegaflowey.utils:log/self { text_component: ' \
+execute on target run function omegaflowey.utils:log/self { text_component: \
   [ \
     { \
       "text": "", "extra": [ \
@@ -9,5 +9,5 @@ execute on target run function omegaflowey.utils:log/self { text_component: ' \
         "action": "open_url", \
         "value": "https://forms.gle/AkksowKZeQYoZ2z46" \
       } } \
-  ]' \
+  ] \
 }

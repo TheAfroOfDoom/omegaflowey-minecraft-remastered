@@ -1,41 +1,26 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.4.2",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "04f4fdec-cc4d-27b1-2266-45572d03dcd6",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\dentata-snake-ball.ajblueprint",
 		"last_used_export_namespace": "omegaflowey_dentata_snake_ball"
 	},
-	"blueprint_settings": {
-		"export_namespace": "omegaflowey_dentata_snake_ball",
-		"show_bounding_box": true,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"display_item": "minecraft:pink_dye",
-		"custom_model_data_offset": 4654465,
-		"enable_advanced_resource_pack_settings": true,
-		"enable_advanced_resource_pack_folders": false,
-		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
-		"display_item_path": "",
-		"model_folder": "",
-		"texture_folder": "",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"summon_commands": "function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/initialize",
-		"ticking_commands": "function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/cleanup",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"baked_animations": true,
-		"json_file": "",
-		"customModelDataOffset": 0
-	},
 	"resolution": {
 		"width": 16,
 		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_dentata_snake_ball",
+		"show_render_box": true,
+		"render_box": [48, 48],
+		"display_item": "minecraft:pink_dye",
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
+		"on_summon_function": "function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/initialize",
+		"on_post_tick_function": "function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/bullet/cleanup"
 	},
 	"elements": [
 		{
@@ -4578,12 +4563,9 @@
 			"name": "root",
 			"origin": [0, 24, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
-				"default": {
-					"inherit_settings": true,
-					"nbt": "{ brightness: { block: 13, sky: 0 } }",
-					"use_nbt": true
-				},
+				"default": {},
 				"variants": {}
 			},
 			"uuid": "97616a2b-9d30-02d1-9941-e0fc81ca0417",
@@ -4593,6 +4575,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				"3e5e4a1f-d5c2-11de-0846-c584c829cdeb",
 				"b593beba-e879-ddd1-6663-4370fcf3bdc5",
@@ -4615,12 +4598,9 @@
 					"name": "spikes",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
-						"default": {
-							"inherit_settings": true,
-							"nbt": "{ brightness: { block: 13, sky: 0 } }",
-							"use_nbt": true
-						},
+						"default": {},
 						"variants": {}
 					},
 					"uuid": "44797ee0-1238-c65b-0242-69aeb241999a",
@@ -4630,6 +4610,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"c4b7d1c5-785b-0223-c9b4-93d78835253d",
 						"c329a8b4-c2b8-5697-af90-13d961d1ead8",
@@ -4686,12 +4667,9 @@
 			"origin": [0, 27.75, 9],
 			"rotation": [0, 90, 0],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
-				"default": {
-					"inherit_settings": true,
-					"nbt": "{ brightness: { block: 13, sky: 0 } }",
-					"use_nbt": true
-				},
+				"default": {},
 				"variants": {}
 			},
 			"uuid": "9153aa22-400e-34e4-5266-e10e2c923f79",
@@ -4701,17 +4679,15 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
+			"selected": false,
 			"children": [
 				{
 					"name": "lower",
 					"origin": [-0.75, 34.5, 9],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
-						"default": {
-							"inherit_settings": true,
-							"nbt": "{ brightness: { block: 13, sky: 0 } }",
-							"use_nbt": true
-						},
+						"default": {},
 						"variants": {}
 					},
 					"uuid": "825de80a-1450-13a4-adc8-05c63ffe4048",
@@ -4721,6 +4697,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"6236ae8f-c7a0-9a4a-9b47-c5c3d591cabe",
 						"df3f8424-3f3d-669e-7f86-5ad873da2fdc",
@@ -4747,12 +4724,9 @@
 					"name": "upper",
 					"origin": [-0.75, 27, 9],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
-						"default": {
-							"inherit_settings": true,
-							"nbt": "{ brightness: { block: 13, sky: 0 } }",
-							"use_nbt": true
-						},
+						"default": {},
 						"variants": {}
 					},
 					"uuid": "bc5bb0e0-f4de-224d-97a5-ce8b1ce2bd87",
@@ -4762,6 +4736,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
+					"selected": false,
 					"children": [
 						"ee79b825-bafc-dca1-c87c-2c2f98431b63",
 						"1f890823-d6a2-672b-cccc-ef3f411b1e7f",
@@ -4790,7 +4765,7 @@
 	],
 	"textures": [
 		{
-			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/azalea_top.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\azalea_top.png",
 			"name": "azalea_top.png",
 			"folder": "",
 			"namespace": "",
@@ -4806,19 +4781,20 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "245ffcf4-9444-c826-8a51-958cd97f8b6c",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAT9JREFUOE99k71Kg0EQRXcl/kGwkICFFmkFLcQX8SFsBAvxCXwGX842hRZCsJCIxgRXzsj5GBZ1m82GmXvv3Dtfvbg6adPjWjizh1Ymu9tlZ++rjPbXZTHbKuPp56/3/H0ZPVUAimnkfLxuDCDrl1GAcT8+rwpk/PbUy9vzRiNNHJEttJkbhUcHm0MtffXm/rTRiAKaHQcWQB1BElXSg6JQ0LM6AgUweqNCMgFDgWxZgYpowFhPNjhGUAFMzpv9oLkHFiRS0AMe2XFjdLw+3mEEU8hu9/Izo7sxxKgC2d0HjFN+9oBU3An+r9d3Z824/ouur1FVmGjWLlJeIiX3G6knscomkOUD4lt2NjGDRwqOwANZeXaLASANWX1DHAA6mvc9fzhGmj82ep7mi5+v0W3769PVeZmpX76tyuFkXL4BTrBPGRr2AzwAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/azalea_top.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAT9JREFUOE99k71Kg0EQRXcl/kGwkICFFmkFLcQX8SFsBAvxCXwGX842hRZCsJCIxgRXzsj5GBZ1m82GmXvv3Dtfvbg6adPjWjizh1Ymu9tlZ++rjPbXZTHbKuPp56/3/H0ZPVUAimnkfLxuDCDrl1GAcT8+rwpk/PbUy9vzRiNNHJEttJkbhUcHm0MtffXm/rTRiAKaHQcWQB1BElXSg6JQ0LM6AgUweqNCMgFDgWxZgYpowFhPNjhGUAFMzpv9oLkHFiRS0AMe2XFjdLw+3mEEU8hu9/Izo7sxxKgC2d0HjFN+9oBU3An+r9d3Z824/ouur1FVmGjWLlJeIiX3G6knscomkOUD4lt2NjGDRwqOwANZeXaLASANWX1DHAA6mvc9fzhGmj82ep7mi5+v0W3769PVeZmpX76tyuFkXL4BTrBPGRr2AzwAAAAASUVORK5CYII="
 		},
 		{
-			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/quartz_block_top.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\quartz_block_top.png",
 			"name": "quartz_block_top.png",
 			"folder": "",
 			"namespace": "",
@@ -4834,19 +4810,20 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "446aa129-839a-9cb1-9857-ba3d7414ddc7",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAN5JREFUOE+lU9EKwjAMTKGDPez/v8sv8EHQh8Esm0UrDUxS3UyTbD7YxzZ3yd2lbgrDDH8cRwSYnwCYKhpEVLS+7aq7GHt4EzzG8mCB6N57D+DbmhAThNsA7tpfZkxRdyNQQTOgmLIiKF3Y4dMsb3LChPffErbA1EsRqJHJFyGPT1okrClYUQrNskQTfACWfpUCAIRwtj0wY5Ptlxh3JVSxJLUnXxNpE40Ou8vVdkwCJ2A+8AhX99liKQ94RwtQb5pYZQKQ+7tAEWtME7jT8VC+c855bdA0zeYH53VU9AIPBdWpk9ajcwAAAABJRU5ErkJggg==",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/quartz_block_top.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAN5JREFUOE+lU9EKwjAMTKGDPez/v8sv8EHQh8Esm0UrDUxS3UyTbD7YxzZ3yd2lbgrDDH8cRwSYnwCYKhpEVLS+7aq7GHt4EzzG8mCB6N57D+DbmhAThNsA7tpfZkxRdyNQQTOgmLIiKF3Y4dMsb3LChPffErbA1EsRqJHJFyGPT1okrClYUQrNskQTfACWfpUCAIRwtj0wY5Ptlxh3JVSxJLUnXxNpE40Ou8vVdkwCJ2A+8AhX99liKQ94RwtQb5pYZQKQ+7tAEWtME7jT8VC+c855bdA0zeYH53VU9AIPBdWpk9ajcwAAAABJRU5ErkJggg=="
 		},
 		{
-			"path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/copper_block.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\1.20.1\\1.20.1\\assets\\minecraft\\textures\\block\\copper_block.png",
 			"name": "copper_block.png",
 			"folder": "",
 			"namespace": "",
@@ -4862,16 +4839,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "ec431f9e-22c6-2225-19ac-bb79cbdd50d2",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWdJREFUOE+FU01PwkAQnR5woQpYYsCkidHEgyf/kH/Bf+DNP8Uf4OCB4EUMCYokpkFJI19aqBwgb+tsp2sDc9nN7r43b2beOu/3txv6i0U8obLyCCsCeztwN4/X9LuMKJh8kwOCYD7W73CIOCi5eq2oQoYQZ+F0pu+myzV9fM1SAr9Sp8dhn+q16k7wReNcv0MYgrfPoWG8vjzLZIZcKLEzn9aqNBiNEwUgkLK5boBlaagZcVhUdFwqUGcQZHuATLvAi2hFZbdIvnekFRsFaKJsWF5mG4xEhkCObx+YJ4BmP3T7SQk45PlyzZD4s4pJZpZg7A1BHhgPQIBAzRyy2a3u638jITODudt5YLi02WmnBHAhgxmAUdmyZbONAviAHQbZMjNIbXeyY00PpDXhMGRmNRIMNS+jUFv4yj9JjdTqPelu7wODgH8i9r0gJOf57maDWuAwkCCiOCZXKb02vORz6VFb9zjbAjzTWY8vG83jAAAAAElFTkSuQmCC",
-			"mode": "bitmap"
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/1.20.1/1.20.1/assets/minecraft/textures/block/copper_block.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWdJREFUOE+FU01PwkAQnR5woQpYYsCkidHEgyf/kH/Bf+DNP8Uf4OCB4EUMCYokpkFJI19aqBwgb+tsp2sDc9nN7r43b2beOu/3txv6i0U8obLyCCsCeztwN4/X9LuMKJh8kwOCYD7W73CIOCi5eq2oQoYQZ+F0pu+myzV9fM1SAr9Sp8dhn+q16k7wReNcv0MYgrfPoWG8vjzLZIZcKLEzn9aqNBiNEwUgkLK5boBlaagZcVhUdFwqUGcQZHuATLvAi2hFZbdIvnekFRsFaKJsWF5mG4xEhkCObx+YJ4BmP3T7SQk45PlyzZD4s4pJZpZg7A1BHhgPQIBAzRyy2a3u638jITODudt5YLi02WmnBHAhgxmAUdmyZbONAviAHQbZMjNIbXeyY00PpDXhMGRmNRIMNS+jUFv4yj9JjdTqPelu7wODgH8i9r0gJOf57maDWuAwkCCiOCZXKb02vORz6VFb9zjbAjzTWY8vG83jAAAAAElFTkSuQmCC"
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/dentata_snake_ball/blank.png",
@@ -4890,16 +4868,17 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "414cca79-8ba4-7d19-64dd-42056e4fd857",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "../../../../../textures/custom/dentata_snake_ball/blank.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII="
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/dentata_snake_ball/black.png",
@@ -4918,23 +4897,24 @@
 			"sync_to_project": "",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
 			"visible": true,
-			"internal": false,
+			"internal": true,
 			"saved": true,
 			"uuid": "6cec6f87-078a-08eb-a808-21f0edec4a6e",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAChJREFUOE9jZGBg+M+AHTDiEEcRJkoRPoNGDWBgGA2D0TAA5ZGBTwcAMrwBETEH2YMAAAAASUVORK5CYII=",
-			"mode": "bitmap"
+			"relative_path": "../../../../../textures/custom/dentata_snake_ball/black.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAChJREFUOE9jZGBg+M+AHTDiEEcRJkoRPoNGDWBgGA2D0TAA5ZGBTwcAMrwBETEH2YMAAAAASUVORK5CYII="
 		}
 	],
 	"variants": {
 		"default": {
 			"name": "default",
 			"display_name": "Default",
-			"uuid": "60866a3d-85b6-e270-602d-b9cd96bdcde3",
+			"uuid": "3d986f90-2d2f-b2de-9de8-a893df04022d",
 			"texture_map": {},
 			"excluded_nodes": [],
 			"is_default": true
@@ -4996,8 +4976,8 @@
 							"data_points": [
 								{
 									"x": "180",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
@@ -5012,8 +4992,8 @@
 							"data_points": [
 								{
 									"x": "360",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
@@ -5134,9 +5114,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "-4",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "873ea56b-b965-87f7-6da4-f7c1f8c5e792",
@@ -5166,9 +5146,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
-									"y": 0,
-									"z": 0
+									"x": "0",
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "6421620f-6f75-87ce-6d95-740f7fd92898",
@@ -5182,9 +5162,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "-4",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "88961069-153f-10a0-a58c-207beec1093b",
@@ -5220,9 +5200,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "4",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "3e62338b-67f8-a631-654b-a48f0fa5ccaf",
@@ -5252,9 +5232,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
-									"y": 0,
-									"z": 0
+									"x": "0",
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "381e904d-faec-75ff-5e83-5199689468bf",
@@ -5268,9 +5248,9 @@
 							"channel": "position",
 							"data_points": [
 								{
-									"x": 0,
+									"x": "0",
 									"y": "4",
-									"z": 0
+									"z": "0"
 								}
 							],
 							"uuid": "0d28fc4c-70ed-d294-82e8-e153b4593033",
@@ -5325,8 +5305,8 @@
 							"data_points": [
 								{
 									"x": "180",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
@@ -5341,8 +5321,8 @@
 							"data_points": [
 								{
 									"x": "360",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
@@ -5482,8 +5462,8 @@
 							"data_points": [
 								{
 									"x": "180",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
@@ -5498,8 +5478,8 @@
 							"data_points": [
 								{
 									"x": "360",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
@@ -5639,8 +5619,8 @@
 							"data_points": [
 								{
 									"x": "180",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
@@ -5655,8 +5635,8 @@
 							"data_points": [
 								{
 									"x": "360",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
@@ -5796,8 +5776,8 @@
 							"data_points": [
 								{
 									"x": "180",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
@@ -5812,8 +5792,8 @@
 							"data_points": [
 								{
 									"x": "360",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
@@ -5953,8 +5933,8 @@
 							"data_points": [
 								{
 									"x": "180",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "bc2e16ac-007f-44ef-cb6d-b5519ff8004f",
@@ -5969,8 +5949,8 @@
 							"data_points": [
 								{
 									"x": "360",
-									"y": 0,
-									"z": 0
+									"y": "0",
+									"z": "0"
 								}
 							],
 							"uuid": "4d8e236a-d73d-bd2e-9590-4111e0998f66",
@@ -6069,6 +6049,5 @@
 				}
 			}
 		}
-	],
-	"animation_controllers": []
+	]
 }

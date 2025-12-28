@@ -1,6 +1,9 @@
 function omegaflowey.entity:soul/shared/initialize
 
 data modify entity @s CustomName set value '"Act Button"'
+execute on passengers if entity @s[tag=aj.omegaflowey_act_button.bone] run \
+  data merge entity @s { brightness: { block: 15, sky: 0 } }
+
 tag @s add act-button
 
 function gu:generate

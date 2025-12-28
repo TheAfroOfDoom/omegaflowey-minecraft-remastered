@@ -1,3 +1,6 @@
+execute on passengers if entity @s[tag=aj.omegaflowey_homing_vine.bone] run \
+  data merge entity @s { brightness: { block: 13, sky: 0 } }
+
 execute if score #omegaflowey.summon.tag_variant omegaflowey.global.flag matches 1 run \
   function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/bullet/initialize
 execute if score #omegaflowey.summon.tag_variant omegaflowey.global.flag matches 2 run \

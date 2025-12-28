@@ -93,7 +93,7 @@ bool face_lighting_check(int inputAlpha) {
 
 // Makes sure transparent things don't become solid and vice versa.
 
-float remap_alpha(float inputAlpha) {
+float remap_alpha(int inputAlpha) {
     
     if (inputAlpha == 254) return 255.0; // Checks for alpha 252 and converts all pixels of that to alpha 255. Used for emissiveness
     if (inputAlpha == 253) return 255.0; // Checks for alpha 252 and converts all pixels of that to alpha 255. Used for Shade false, non-emissive
@@ -117,7 +117,7 @@ float remap_alpha(float inputAlpha) {
     if (inputAlpha == 15) return 208.0;
     if (inputAlpha == 16) return 240.0;
     
-    return inputAlpha; // If a pixel doesn't need to have its alpha changed then it simply does not change.
+    return float(inputAlpha); // If a pixel doesn't need to have its alpha changed then it simply does not change.
 }
 
 
@@ -142,4 +142,9 @@ vec4 make_emissive(vec4 inputColor, vec4 lightColor, vec4 faceLightColor, int in
     // if (inputAlpha == 251) return apply_partial_emissivity(inputColor, lightColor, vec3(0.411, 0.345, 0.388)); // Possibility for partial emissiveness
     
     return inputColor * lightColor; // If none of the pixels are supposed to be emissive, then it adds the light.
+}
+
+// Adding this since it was removed from minecraft:light.glsl
+vec4 minecraft_sample_lightmap(sampler2D lightMap, ivec2 uv) {
+    return texture(lightMap, clamp(uv / 256.0, vec2(0.5 / 16.0), vec2(15.5 / 16.0)));
 }
