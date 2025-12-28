@@ -97,7 +97,7 @@
 					"texture": 0
 				},
 				"up": {
-					"uv": [2, 2, 14, 14],
+					"uv": [2, 14, 14, 2],
 					"rotation": 180,
 					"texture": 26
 				},
@@ -173,7 +173,7 @@
 					"texture": 26
 				},
 				"east": {
-					"uv": [2, 2, 14, 14],
+					"uv": [13, 2, 1, 14],
 					"texture": 26
 				},
 				"south": {
@@ -887,7 +887,7 @@
 			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "custom",
-			"frame_order": "0:2 0:1 0:2 1:2 1:1 1:2",
+			"frame_order": "0:4 1:1 2:4 1:1",
 			"frame_interpolate": false,
 			"visible": true,
 			"internal": true,
@@ -1513,7 +1513,7 @@
 			"id": "28",
 			"group": "",
 			"width": 16,
-			"height": 32,
+			"height": 48,
 			"uv_width": 16,
 			"uv_height": 16,
 			"particle": false,
@@ -1525,14 +1525,14 @@
 			"pbr_channel": "color",
 			"frame_time": 1,
 			"frame_order_type": "custom",
-			"frame_order": "0:2 0:1 0:2 1:2 1:1 1:2",
+			"frame_order": "0:4 1:1 2:4 1:1",
 			"frame_interpolate": false,
 			"visible": true,
 			"internal": true,
 			"saved": true,
 			"uuid": "15fe8aec-f16a-c8f3-25f6-c8e27fc7cf90",
 			"relative_path": "../../../../textures/custom/tv_screen/faces/netherite_block_warning_glow.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAAqZJREFUSEuFVF1v00AQXJPYsZOYFpMmIKII1CIVEA/0mX/EI/8UCVVIIJESJBKqENWJHX9hNOfM5S4K6r7Yvpudm9nds/P+6qrepFvpBb7cFyYO7/FmI867V6/r0XgiURTdly/xXSzhw1Dh8H79+ZM4UDB5eSnTm6mE/WbTbbuaLEkTcV1X2mWh1srdHjAWwXw+t4CO31UJRVlownqbSFqLbLOtRKeRTbBcLqUoCgkcESQDTBLKARkw2d0f6T8eytcv13sLVEASSIVMeIZfBiyRYD67sQkIgmezDiCBQka8jlW9LAW0QH+HLaF8kIPgaA3MU1lAdoXdgEUcAgWWBfqkZySYlpCoyHYKNAEGafz8XINZfZMAmzgV4WSpej4aPbPbCAVMxhNdgFeE3/EtgjhJZfLioiGgguVqqSdR+d95NQlwOpIRRwkAqDuBtmMmmF0Ju4GyMPv+ba8AbdJFM+6COcomCdbVHMACrqV1Qq+nPs318MiaKurHN2+rbVaI39nfwMMh4reJwzs643y4uKxOBwOrgP8jSJNEgm5zS/E++zFtFJw9Hcvi90KCoClg+0FLc2R5Lq12S1pVpdaqVrMHjEWwWq0soON6Clj+rTRhXeSS1yJ5kUvY69sEGJqqrMTD/8D1BGCSUA7IgCnStfjhifz6OdtboAKSQCpkwjP8MmCJBKvbW5uAIHg26wASjrUqYJqqelkKaIH+DjtB+SAHwdEamKeygKw4uwGLOAQKLAv0Sc9IMC0hEUEFmgCDNBiONJjVNwmwiVPV6JbNs38S2W2EAibjiS7AK8JzPYsgzXI5Gz5pCKgg3qz1JKqJ23k1CXA6khFHCQCo280EUi4TzK4EHU9ZuF3M9wrQJobZDXOUTRKsqzmABf4wCcA/EGGuH1sD5h/LBCz3AkgiKgAAAABJRU5ErkJggg=="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAwCAYAAAAYX/pXAAAAAXNSR0IArs4c6QAAA+pJREFUSEuFVl2P20QUvSa2YycOm4TNLi1R1EKrfiCk0mcknvktPPJPkaBQFdHdhorsrrJp7djxF0ZnnDOZCUZ7X+yMzz1zzr3X4zjfvXzZbLOdDMNA7goTh/t4uxXn22fPm/P5QqbT6V35En+MZfTpSOFw/+qXn8WBgsXjp3JxeSGjqH3ouZ4mS7NUPM8TtyrVWrV/BoxFsFqtLKATDFRCWZWasNmlkjUiu3wn0/HUJliv11KWpYSOCJIBJgnlgAyY/OOtRJ+dyZvfXx0sUAFJIBUy4Rl+GbBEgtXy0iYgCJ7NOoAEChlxEqt6WQpogf6OW0L5IAdBZw3MXVlAdoXdgEVsAgWWBfqkZySYlpCoyPYKNAEGaf7gKw1m9U0CPMSuCCfP1HVy/oXdRihgMq7oArwign5gEcRpJouHj1oCKlhv1noSlf+9V5MAuyMZ0UkAQNMPtR0zwezKaBAqC8u3fxwUoE26aMa7YI6ySYJ1NQewgNfS2mE4VD/N9VHHmirqDy9e1GmWyyDsH8/Of36bONwnaSrO90+e1bP7c5lMxncSJHEi0ShSONy//u3XVsH8y8fybrmUaNg+9FxXk2W7VFzXF7cu1FrV8zXGIri+vrKATp/nQaUJmzyVnToPCpmcjG0Ft7cbqapCApwH/YEATBLKKatKYfL4gwwnM/nzzeuDBSogCaTCCjzDLwOWSHD9fmkTEATPZh1AAoWMZJuoelkKaIH+jltC+SAHQWcNzF3V+1BVuuLsBixiEyiwLNAnPSPBtIREBBVoAgzS/cUDDWb1TQI8xK5qdIv2bRzP7tlthAIm44ouwCsi6PsWQZLtZL542BJQwe2HjZ5ENXF7ryYBdkcyopMAgMY3zgMjwexKFAbKwvvLtwcFrPjxu4D14+6wQ2oOYAGvpbXDoH0PzPWoY00V9aevv6l3eSlB//BFPh4i/jZxuMdJ7fz46Gk9Pj21DtT/I8jSVMK9Etwv3120Cmb35nJ1fSVh2BbQ/aSnOfKikJ7bk15dq7W61z4DxiLYbDYW0PHag6P6p9aETVlI0YgUZSGjYWQT4CNSV7X4OA88XwAmCeWADJgySyQYncjffy0PFqiAJJAKmfAMvwxYIsHm5sYmIAiezTqAhJ85YLIsU/WyFNAC/R13gvJBDoLOGpi7soCsOLsBi9gECiwL9EnPSDAtIRFBBZoAg3R6dq7BrL5JgIfYVY3u/mCJTqZ2G6GAybiiC/CK8D3fIsjyQmZnn7cEVBBvEz2JauL2Xk0C7I5kRCcBAI3bTiDlMsHsStj3BRZurlYHBWgTw+yGOcomCdbVHMAC/0ARgP9ECHO9aw2YfwG6IEJWVKv0lgAAAABJRU5ErkJggg=="
 		},
 		{
 			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/tv_screen/faces/netherite_block_static_glow.png",
