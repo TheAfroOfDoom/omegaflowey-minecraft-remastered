@@ -9187,7 +9187,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
-			"selected": false,
+			"selected": true,
 			"children": [
 				"b5039a1d-a3a8-3749-7b76-40f7ccfb614e",
 				"ce618e88-87f9-ccd3-92af-354bbc90313a",
@@ -9672,7 +9672,7 @@
 			"override": false,
 			"length": 0.75,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": true,
 			"path": "",
 			"anim_time_update": "",
@@ -9754,6 +9754,80 @@
 					]
 				}
 			}
+		},
+		{
+			"uuid": "a1119166-5d20-5693-a2f8-9585086d4a2b",
+			"name": "omegaflowey_soul_1",
+			"loop": "loop",
+			"override": false,
+			"length": 2.5,
+			"snapping": 20,
+			"selected": true,
+			"saved": true,
+			"path": "",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [],
+			"animators": {
+				"e96625fa-5fd0-3b7e-324e-f76471232df3": {
+					"name": "root",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "90",
+									"z": "0"
+								}
+							],
+							"uuid": "af1fd4af-bc1a-10e9-05ef-83d79bd6102c",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "(math.cos((tick - soul_1_offset) * 360 / soul_1_period) * soul_1_amp) + soul_1_amp\n"
+								}
+							],
+							"uuid": "e5342d58-1b0d-cc49-2629-facb8792fcd5",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.75",
+									"y": "0.75",
+									"z": "0.75"
+								}
+							],
+							"uuid": "739e72c5-9a1f-b7d6-8b2b-73f3d1a591b6",
+							"time": 0,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				}
+			}
 		}
-	]
+	],
+	"animation_variable_placeholders": "tick = time * 20\n\nsoul_1_offset = 25\nsoul_1_period = 50\nsoul_1_amp = -30"
 }

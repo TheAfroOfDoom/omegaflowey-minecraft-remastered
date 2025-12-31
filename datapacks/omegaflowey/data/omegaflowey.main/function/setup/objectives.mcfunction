@@ -157,6 +157,8 @@ scoreboard objectives add omegaflowey.soul.indicator.bullets.remaining dummy
 scoreboard objectives add omegaflowey.soul.indicator.bullets.total dummy
 # boolean flags used to mark state changes during soul events
 scoreboard objectives add omegaflowey.soul.flag dummy
+# various velocities related to a soul event
+scoreboard objectives add omegaflowey.soul.velocity dummy
 
 # the final yaw an entity has after running bounce calculations
 scoreboard objectives add omegaflowey.util.bounce.yaw dummy
