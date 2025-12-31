@@ -17,7 +17,9 @@ const setInterpolationDurationZeroAllFrames = (rootDir) => {
 
   for (const [namespace, animation] of stepAnimations) {
     const dir = `${rootDir}/function/${namespace}/animations/${animation}`;
-    process.stdout.write(chalk.gray(`${dir} ... `));
+    process.stdout.write(
+      chalk.gray(`${namespace}/animations/${animation} ... `),
+    );
     let numChanges = 0;
 
     const frameFiles = globSync(`${dir}/zzz/frames/**`).filter((path) =>
@@ -79,7 +81,9 @@ const setInterpolationDurationMouthFrames = (rootDir) => {
   for (const [namespace, animation, frames] of stepAnimations) {
     const dir = `${rootDir}/function/${namespace}/animations/${animation}`;
 
-    process.stdout.write(chalk.gray(`${dir} ... `));
+    process.stdout.write(
+      chalk.gray(`${namespace}/animations/${animation} ... `),
+    );
     let numChanges = 0;
 
     const frameFiles = frames.map(

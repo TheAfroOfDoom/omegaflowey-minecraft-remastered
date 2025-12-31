@@ -79,7 +79,7 @@ const checkEnableAdvancedResourcePackSettings = (model) => {
     model.blueprint_settings.enable_advanced_resource_pack_settings;
   const isValid = actual === expected;
   if (!isValid) {
-    let error = `custom model data offset is incorrect: `;
+    let error = `enable_advanced_resource_pack_settings is incorrect: `;
     error += chalk.redBright(actual);
     error += ` (expected `;
     error += chalk.blueBright(expected);
@@ -112,7 +112,7 @@ const checkExportNamespace = (model) => {
 const checkRigItem = (model) => {
   const expected = 'minecraft:pink_dye';
   const actual = model.blueprint_settings.display_item;
-  if (actual === expected) {
+  if (actual === expected || actual === undefined) {
     return [];
   }
 

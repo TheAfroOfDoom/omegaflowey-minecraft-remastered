@@ -1,0 +1,154 @@
+{
+	"meta": {
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
+		"uuid": "938ceb29-434e-8abf-e50c-322c309f0bab",
+		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-1-glove.ajblueprint",
+		"last_used_export_namespace": "omegaflowey_soul_1_glove"
+	},
+	"resolution": {
+		"width": 16,
+		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_soul_1_glove",
+		"render_box": [48, 48],
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack",
+		"data_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\datapacks\\animated_java",
+		"on_summon_function": "function omegaflowey.entity:soul/soul_1/bullet/initialize"
+	},
+	"elements": [
+		{
+			"uuid": "c65adf67-43a0-d49b-2d76-38ad49e1d3ac",
+			"type": "animated_java:vanilla_item_display",
+			"name": "item_display",
+			"position": [0, 0, 0],
+			"rotation": [90, 0, 90],
+			"scale": [7, 7, 2.25],
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"item": "minecraft:diamond",
+			"itemDisplay": "none",
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			}
+		},
+		{
+			"name": "interaction_hitbox",
+			"position": [0, -4, 16],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "data merge entity @s {width: 5.0, height: 0.4375, response: false}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul-interaction",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "0f64c2e4-0831-2ef4-4d83-0dbe95510ccc",
+			"type": "locator"
+		},
+		{
+			"name": "interaction_hitbox2",
+			"position": [0, -4, -16],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "data merge entity @s {width: 5.0, height: 0.4375, response: false}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-locator\ntag @s add soul-interaction",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "ef1a3b6e-4cce-747a-ef69-73bcfbe2169b",
+			"type": "locator"
+		}
+	],
+	"outliner": [
+		{
+			"name": "bone",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
+			"uuid": "37399b4d-1701-9ef3-9e85-bb1ca4c4d971",
+			"export": true,
+			"mirror_uv": false,
+			"isOpen": true,
+			"locked": false,
+			"visibility": true,
+			"autouv": 0,
+			"selected": false,
+			"children": ["c65adf67-43a0-d49b-2d76-38ad49e1d3ac", "0f64c2e4-0831-2ef4-4d83-0dbe95510ccc", "ef1a3b6e-4cce-747a-ef69-73bcfbe2169b"]
+		}
+	],
+	"textures": [],
+	"variants": {
+		"default": {
+			"name": "default",
+			"display_name": "Default",
+			"uuid": "55fea4e6-3b50-9d07-0788-56bc2e0c208c",
+			"texture_map": {},
+			"excluded_nodes": [],
+			"is_default": true
+		},
+		"list": []
+	},
+	"animations": [
+		{
+			"uuid": "098431a4-2c4d-31ae-580a-928133ff2859",
+			"name": "omegaflowey_move",
+			"loop": "loop",
+			"override": false,
+			"length": 2.5,
+			"snapping": 20,
+			"selected": true,
+			"saved": true,
+			"path": "",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [],
+			"animators": {
+				"37399b4d-1701-9ef3-9e85-bb1ca4c4d971": {
+					"name": "bone",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "(math.cos((tick - offset) * 360 / period) * amp) + amp"
+								}
+							],
+							"uuid": "bfa1155e-755f-392f-bb56-c690c5921096",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				}
+			}
+		}
+	],
+	"animation_variable_placeholders": "tick = time * 20\n\noffset = 25\nperiod = 50\namp = -30"
+}
