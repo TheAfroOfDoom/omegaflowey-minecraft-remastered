@@ -13,6 +13,9 @@ scoreboard players reset @s omegaflowey.soul.clock.touched_act_button
 scoreboard players set #omegaflowey.soul.2.saved omegaflowey.soul.flag 0
 scoreboard players set #omegaflowey.soul.2.touched omegaflowey.soul.flag 0
 
+scoreboard players set #omegaflowey.soul.2.bullet.speed omegaflowey.soul.velocity -40
+scoreboard players set #omegaflowey.soul.2.slow_down omegaflowey.soul.flag 0
+
 # Store this UUID to a global storage for later reference
 function gu:generate
 data modify storage omegaflowey:soul.2 executor_uuid set from storage gu:main out
