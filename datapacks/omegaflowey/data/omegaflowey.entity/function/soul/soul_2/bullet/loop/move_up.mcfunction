@@ -1,8 +1,5 @@
 scoreboard players add @s omegaflowey.soul.clock.i 1
 
-execute if score @s omegaflowey.soul.clock.i matches 0 run \
-  function animated_java:omegaflowey_soul_2_shoe/animations/omegaflowey_tap/pause
-
 # slowly over 1.5s (30t)
 # https://www.desmos.com/calculator/ddvglkliir
 execute if score @s omegaflowey.soul.clock.i matches 0 run \
