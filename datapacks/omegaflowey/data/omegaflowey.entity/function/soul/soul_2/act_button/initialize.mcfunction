@@ -9,7 +9,7 @@ data modify storage omegaflowey:soul.2 act_button_uuid set from storage gu:main 
 
 # Update tags on locator children
 function animated_java:omegaflowey_act_button/as_all_locators { \
-  command: 'function omegaflowey.entity:soul/soul_2/act_button/initialize/locator' \
+  command: 'function omegaflowey.entity:soul/soul_2/act_button/locator/initialize' \
 }
 
 # Randomize animation frame index so the rows of shoes aren't

@@ -14868,6 +14868,272 @@
 			},
 			"type": "cube",
 			"uuid": "68d81fed-014f-db13-3c49-bcdd4e09c9a3"
+		},
+		{
+			"name": "interaction_hitbox_soul2_reference",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-63, -7, -26],
+			"to": [63, 7, -12],
+			"autouv": 1,
+			"color": 9,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 0, -19],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 90
+				},
+				"east": {
+					"uv": [0, 0, 14, 14],
+					"rotation": 270
+				},
+				"south": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				},
+				"west": {
+					"uv": [0, 0, 14, 14],
+					"rotation": 270
+				},
+				"up": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				},
+				"down": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				}
+			},
+			"type": "cube",
+			"uuid": "399ed41f-0a5d-c614-1498-fa3237452342"
+		},
+		{
+			"name": "interaction_hitbox_soul2_reference",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-63, -7, -12],
+			"to": [63, 7, 2],
+			"autouv": 1,
+			"color": 9,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 0, -5],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 90
+				},
+				"east": {
+					"uv": [0, 0, 14, 14],
+					"rotation": 270
+				},
+				"south": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				},
+				"west": {
+					"uv": [0, 0, 14, 14],
+					"rotation": 270
+				},
+				"up": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				},
+				"down": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				}
+			},
+			"type": "cube",
+			"uuid": "856185bd-b9a8-d7f1-8750-bbc69d3ffc5e"
+		},
+		{
+			"name": "interaction_hitbox_soul2_reference",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-63, -7, 2],
+			"to": [63, 7, 16],
+			"autouv": 1,
+			"color": 9,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 0, 9],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 90
+				},
+				"east": {
+					"uv": [0, 0, 14, 14],
+					"rotation": 270
+				},
+				"south": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				},
+				"west": {
+					"uv": [0, 0, 14, 14],
+					"rotation": 270
+				},
+				"up": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				},
+				"down": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				}
+			},
+			"type": "cube",
+			"uuid": "9f88c054-885a-bc79-9529-f49d5c7d89ba"
+		},
+		{
+			"name": "interaction_hitbox_soul2_2",
+			"position": [-63, 0, 9],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "tag @s add soul_2.only",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "4dd1cda0-fab7-5c05-787d-d3b2edd9d3bf",
+			"type": "locator"
+		},
+		{
+			"name": "interaction_hitbox_soul2_reference",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-63, -7, 12],
+			"to": [63, 7, 26],
+			"autouv": 1,
+			"color": 9,
+			"visibility": false,
+			"export": false,
+			"origin": [0, 0, 19],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 90
+				},
+				"east": {
+					"uv": [0, 0, 14, 14],
+					"rotation": 270
+				},
+				"south": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				},
+				"west": {
+					"uv": [0, 0, 14, 14],
+					"rotation": 270
+				},
+				"up": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				},
+				"down": {
+					"uv": [0, 0, 14, 16],
+					"rotation": 270
+				}
+			},
+			"type": "cube",
+			"uuid": "fcaa59bd-164a-741e-2edb-27dd8b366c85"
+		},
+		{
+			"name": "interaction_hitbox_soul2_3",
+			"position": [-63, 0, 19],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "tag @s add soul_2.only",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "46554715-b60e-0b6a-23b2-4e8813b9c93b",
+			"type": "locator"
+		},
+		{
+			"name": "interaction_hitbox_soul2_1",
+			"position": [-63, 0, -9],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "tag @s add soul_2.only",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "21b9b94f-104c-361e-9e5a-fa1ca284a4c1",
+			"type": "locator"
+		},
+		{
+			"name": "interaction_hitbox_soul2_0",
+			"position": [-63, 0, -19],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "tag @s add soul_2.only",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "6c8a3fdc-07cd-ada2-36bd-c9a022689977",
+			"type": "locator"
+		},
+		{
+			"name": "interaction_hitbox_soul2_4",
+			"position": [-63, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "tag @s add soul_2.only",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "c6521f61-e86c-b7dc-592f-1cf395feec17",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -14883,7 +15149,7 @@
 			"uuid": "e96625fa-5fd0-3b7e-324e-f76471232df3",
 			"export": true,
 			"mirror_uv": false,
-			"isOpen": false,
+			"isOpen": true,
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
@@ -14987,7 +15253,16 @@
 				"d36656af-f859-9567-bebe-dec701f939e9",
 				"8de91c82-8780-20eb-65a7-7cf12d6e879a",
 				"2769de42-3dc5-ad0c-3bc1-8935a9e676f2",
-				"8590ab4d-9043-a8c6-00b3-fb129913f58e"
+				"8590ab4d-9043-a8c6-00b3-fb129913f58e",
+				"6c8a3fdc-07cd-ada2-36bd-c9a022689977",
+				"399ed41f-0a5d-c614-1498-fa3237452342",
+				"21b9b94f-104c-361e-9e5a-fa1ca284a4c1",
+				"856185bd-b9a8-d7f1-8750-bbc69d3ffc5e",
+				"4dd1cda0-fab7-5c05-787d-d3b2edd9d3bf",
+				"9f88c054-885a-bc79-9529-f49d5c7d89ba",
+				"46554715-b60e-0b6a-23b2-4e8813b9c93b",
+				"c6521f61-e86c-b7dc-592f-1cf395feec17",
+				"fcaa59bd-164a-741e-2edb-27dd8b366c85"
 			]
 		},
 		{
