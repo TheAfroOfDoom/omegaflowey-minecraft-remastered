@@ -1,4 +1,4 @@
-scoreboard players set #omegaflowey.soul.2.touched omegaflowey.soul.flag 1
+scoreboard players set #omegaflowey.soul.3.touched omegaflowey.soul.flag 1
 
 # Apply yellow-highlighted variant
 function animated_java:omegaflowey_act_button/variants/selected/apply
@@ -16,4 +16,4 @@ function omegaflowey.entity:directorial/boss_fight/vanilla/soul_origin/at/positi
 
 # TODO(36): transparent fade-out of `act_button` model?
 
-$execute as $(executor_uuid) run function omegaflowey.entity:soul/soul_2/executor/initialize/touch
+$execute as $(executor_uuid) run function omegaflowey.entity:soul/soul_3/executor/initialize/touch

@@ -11,4 +11,4 @@ scoreboard players operation @s omegaflowey.math.0 += @s omegaflowey.soul.bullet
 # reset bullets remaining to summon
 scoreboard players operation @s omegaflowey.soul.indicator.bullets.remaining = @s omegaflowey.soul.indicator.bullets.total
 
-function omegaflowey.entity:soul/soul_2/indicator/loop/next_row/shoes/iterate
+function omegaflowey.entity:soul/soul_3/indicator/loop/next_row/shoes/iterate

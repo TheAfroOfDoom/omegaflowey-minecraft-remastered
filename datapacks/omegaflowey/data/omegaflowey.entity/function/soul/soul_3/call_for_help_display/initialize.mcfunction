@@ -1,1 +1,1 @@
-tag @s add soul_2
+tag @s add soul_3

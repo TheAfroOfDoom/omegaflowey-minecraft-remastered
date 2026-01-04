@@ -1,6 +1,6 @@
 function omegaflowey.entity:soul/shared/indicator/initialize
-tag @s add soul_2
-data merge entity @s { CustomName:'"Soul 2 Indicator"' }
+tag @s add soul_3
+data merge entity @s { CustomName:'"Soul 3 Indicator"' }
 
 # Set scores
 scoreboard players set @s omegaflowey.soul.clock.i -1
@@ -18,4 +18,4 @@ scoreboard players set @s omegaflowey.soul.indicator.bullets.cumulative-total 0
 
 # Store this UUID to a global storage for later reference
 function gu:generate
-data modify storage omegaflowey:soul.2 indicator_uuid set from storage gu:main out
+data modify storage omegaflowey:soul.3 indicator_uuid set from storage gu:main out
