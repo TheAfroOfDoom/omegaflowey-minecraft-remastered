@@ -9,8 +9,10 @@ execute if score @s omegaflowey.boss-fight.progress.phase.i matches 1 run \
   function omegaflowey.entity:soul/soul_1/start
 execute if score @s omegaflowey.boss-fight.progress.phase.i matches 2 run \
   function omegaflowey.entity:soul/soul_2/start
+execute if score @s omegaflowey.boss-fight.progress.phase.i matches 3 run \
+  function omegaflowey.entity:soul/soul_3/start
 execute if score @s omegaflowey.boss-fight.progress.phase.i matches 5 run \
   function omegaflowey.entity:soul/soul_5/start
 # TEMP FOR DEV
-execute if score @s omegaflowey.boss-fight.progress.phase.i matches 3..4 run \
+execute if score @s omegaflowey.boss-fight.progress.phase.i matches 4 run \
   function omegaflowey.entity:directorial/boss_fight/vanilla/phase/soul/loop/tempdevskipsouls
