@@ -4,6 +4,8 @@ scoreboard players set #omegaflowey.const.2 omegaflowey.math.const 2
 scoreboard players set #omegaflowey.const.4 omegaflowey.math.const 4
 scoreboard players set #omegaflowey.const.10 omegaflowey.math.const 10
 scoreboard players set #omegaflowey.const.20 omegaflowey.math.const 20
+scoreboard players set #omegaflowey.const.50 omegaflowey.math.const 50
+scoreboard players set #omegaflowey.const.100 omegaflowey.math.const 100
 scoreboard players set #omegaflowey.const.180 omegaflowey.math.const 180
 
 # Attack IDs

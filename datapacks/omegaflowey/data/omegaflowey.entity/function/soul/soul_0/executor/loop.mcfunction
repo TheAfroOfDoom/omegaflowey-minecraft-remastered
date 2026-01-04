@@ -12,13 +12,15 @@ execute if score @s omegaflowey.soul.clock.i matches 0 run function omegaflowey.
 # Begin moving bullets after 20 ticks (1s)
 execute if score @s omegaflowey.soul.clock.i matches 20 run function omegaflowey.entity:soul/soul_0/executor/loop/start_moving_bullets
 
+# Run new logic if the player grabs the act_button
+execute if score #omegaflowey.soul.0.touched omegaflowey.soul.flag matches 1 run \
+  function omegaflowey.entity:soul/soul_0/executor/loop/saved
+
 # Replay song after it ends (only if we haven't yet started `saved` state)
 execute if score #omegaflowey.soul.0.saved omegaflowey.soul.flag matches 0 if score @s omegaflowey.soul.clock.i matches 303 run function omegaflowey.entity:soul/soul_0/executor/play_music
 
-# Run new logic if the player grabs the act_button
-execute if score #omegaflowey.soul.0.touched omegaflowey.soul.flag matches 1 run function omegaflowey.entity:soul/soul_0/executor/loop/saved
-execute if score #omegaflowey.soul.0.touched omegaflowey.soul.flag matches 1 run return 0
-
 # Terminate
-execute if score @s omegaflowey.soul.clock.i >= @s omegaflowey.soul.executor.clock.length run \
+execute \
+  if score #omegaflowey.soul.0.touched omegaflowey.soul.flag matches 0 \
+  if score @s omegaflowey.soul.clock.i >= @s omegaflowey.soul.executor.clock.length run \
   function omegaflowey.entity:soul/soul_0/executor/terminate with storage omegaflowey:bossfight

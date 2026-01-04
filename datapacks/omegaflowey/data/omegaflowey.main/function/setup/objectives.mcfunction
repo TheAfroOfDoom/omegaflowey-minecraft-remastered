@@ -155,6 +155,8 @@ scoreboard objectives add omegaflowey.soul.indicator.bullets.cumulative-total du
 # number of bullets left to summon in a set
 scoreboard objectives add omegaflowey.soul.indicator.bullets.remaining dummy
 scoreboard objectives add omegaflowey.soul.indicator.bullets.total dummy
+# how often (in ticks) a soul-indicator summons a soul-bullet(s)
+scoreboard objectives add omegaflowey.soul.indicator.rate dummy
 # boolean flags used to mark state changes during soul events
 scoreboard objectives add omegaflowey.soul.flag dummy
 # various velocities related to a soul event

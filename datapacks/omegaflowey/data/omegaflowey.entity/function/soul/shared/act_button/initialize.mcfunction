@@ -13,5 +13,7 @@ execute if score #omegaflowey.soul.summon_type omegaflowey.global.flag matches 0
   function omegaflowey.entity:soul/soul_0/act_button/initialize with storage omegaflowey:soul.0.indicator
 execute if score #omegaflowey.soul.summon_type omegaflowey.global.flag matches 1 run \
   function omegaflowey.entity:soul/soul_1/act_button/initialize with storage omegaflowey:soul.1.indicator
+execute if score #omegaflowey.soul.summon_type omegaflowey.global.flag matches 2 run \
+  function omegaflowey.entity:soul/soul_2/act_button/initialize
 execute if score #omegaflowey.soul.summon_type omegaflowey.global.flag matches 5 run \
   function omegaflowey.entity:soul/soul_5/act_button/initialize with storage omegaflowey:soul.5.indicator
