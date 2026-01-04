@@ -23,5 +23,5 @@ execute \
 # Terminate
 execute \
   if score #omegaflowey.soul.2.touched omegaflowey.soul.flag matches 0 \
-  if score @s omegaflowey.soul.clock.i >= @s omegaflowey.soul.executor.clock.length run \
+  if score @s omegaflowey.soul.clock.i matches 365.. run \
   function omegaflowey.entity:soul/soul_2/executor/terminate
