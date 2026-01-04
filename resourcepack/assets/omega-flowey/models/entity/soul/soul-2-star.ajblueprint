@@ -4,21 +4,20 @@
 		"format_version": "1.8.1",
 		"uuid": "f758e200-7935-e499-19f8-4c7b49e12dba",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-2-star.ajblueprint",
-		"last_used_export_namespace": "soul_2_star"
+		"last_used_export_namespace": "omegaflowey_soul_2_star"
 	},
-
+	"resolution": {
+		"width": 16,
+		"height": 16
+	},
 	"blueprint_settings": {
-		"export_namespace": "soul_2_star",
+		"export_namespace": "omegaflowey_soul_2_star",
 		"render_box": [48, 48],
 		"custom_model_data_offset": 4654465,
 		"enable_advanced_resource_pack_settings": true,
 		"resource_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack",
 		"data_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\datapacks\\animated_java",
-		"on_summon_function": "data merge entity @s {CustomName:\"'Soul 2 Star'\"}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-star\ntag @s add soul-star-new\ntag @s add soul_2"
-	},
-  "resolution": {
-		"width": 16,
-		"height": 16
+		"on_summon_function": "function omegaflowey.entity:soul/soul_2/star/initialize"
 	},
 	"elements": [
 		{
@@ -4841,7 +4840,7 @@
 	"animations": [
 		{
 			"uuid": "0e85bfb9-e9f4-0e30-1d88-9f05c50d8a02",
-			"name": "roll",
+			"name": "omegaflowey_roll",
 			"loop": "loop",
 			"override": false,
 			"length": 3,

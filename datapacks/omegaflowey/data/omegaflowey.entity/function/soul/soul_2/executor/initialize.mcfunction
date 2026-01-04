@@ -1,18 +1,21 @@
+function omegaflowey.entity:soul/shared/executor/initialize
+tag @s add soul_2
+data merge entity @s { CustomName: '"Soul 2 Executor"' }
+
 # Set scores
-scoreboard players set @s soul.clock.i -1
+# TODO(164): validate these soul parameters
+scoreboard players set @s omegaflowey.soul.clock.i -1
 
-scoreboard players operation @s soul.executor.clock.length = #soul-2 soul.executor.clock.length
+# length this soul event will last if the act button is never grabbed
+scoreboard players set @s omegaflowey.soul.executor.clock.length 365
 
-scoreboard players reset @s soul.clock.touched_act_button
-scoreboard players set #soul_2.saved soul.flag 0
-scoreboard players set #soul_2.touched soul.flag 0
+scoreboard players reset @s omegaflowey.soul.clock.touched_act_button
+scoreboard players set #omegaflowey.soul.2.saved omegaflowey.soul.flag 0
+scoreboard players set #omegaflowey.soul.2.touched omegaflowey.soul.flag 0
 
 # Store this UUID to a global storage for later reference
 function gu:generate
-data modify storage soul:soul_2 executor_uuid set from storage gu:main out
-
-# Remove tags
-tag @s remove soul-executor-new
+data modify storage omegaflowey:soul.2 executor_uuid set from storage gu:main out
 
 # Play music
-function entity:soul/soul_2/executor/play_music
+function omegaflowey.entity:soul/soul_2/executor/play_music

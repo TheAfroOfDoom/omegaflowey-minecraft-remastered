@@ -7,7 +7,7 @@ execute as @e[ \
 ] run function omegaflowey.entity:soul/soul_1/executor/terminate/as_root
 
 function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
-  'function omegaflowey.entity:soul/soul_1/executor/terminate/as_player' \
+  'stopsound @s record omega-flowey:music.soul.1' \
 }
 
 kill @s

@@ -1,15 +1,21 @@
 # Update state flag
-scoreboard players set #soul_2.saved soul.flag 1
+scoreboard players set #omegaflowey.soul.2.saved omegaflowey.soul.flag 1
 
-# Stop event music
-stopsound @a record omega-flowey:music.soul.2
-
-# Play saved music + sound effect
-playsound omega-flowey:soul.saved record @a ~ ~ ~ 10 1
-playsound omega-flowey:soul.transition record @a ~ ~ ~ 10 1
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+  'execute at @s run function omegaflowey.entity:soul/soul_2/executor/initialize/saved/as_player' \
+}
 
 # Flash each player/spectator's screen
-execute as @a unless entity @s[team=!player,team=!spectator] at @s anchored eyes run particle minecraft:flash ^ ^ ^0.2
+$execute as $(active_player_uuid) at @s anchored eyes run particle minecraft:flash{color:[1,1,1,1]} ^ ^ ^0.5
 
 # Initialize other soul event models
-execute as @e[tag=boss_fight] run function entity:directorial/boss_fight/vanilla/phase/soul/loop/saved
+$execute as $(act_button_uuid) run function omegaflowey.entity:soul/soul_2/act_button/terminate
+# $execute as $(indicator_uuid) at @s run function omegaflowey.entity:soul/soul_2/indicator/initialize/saved
+$execute as $(soul_model_uuid) run function animated_java:omegaflowey_soul/variants/3/apply
+function omegaflowey.entity:directorial/boss_fight/shared/phase/soul/loop/saved with storage omegaflowey:bossfight
+
+# NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
+execute as @e[ \
+  tag=soul_2, \
+  tag=omega-flowey-remastered \
+] run function omegaflowey.entity:soul/soul_2/executor/initialize/saved/as_root

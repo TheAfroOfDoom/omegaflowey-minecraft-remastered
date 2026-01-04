@@ -1,12 +1,11 @@
-scoreboard players add @s soul.clock.i 1
+$execute unless entity $(executor_uuid) run return run function omegaflowey.entity:soul/soul_2/star/terminate
+
+scoreboard players add @s omegaflowey.soul.clock.i 1
 
 # Terminate bullets once they go far enough in the -X direction
-execute store result score @s soul.bullet.position.x run data get entity @s Pos[0] 100
-execute if score @s soul.bullet.position.x matches ..-3300 run function entity:soul/soul_2/star/terminate
-execute if score @s soul.bullet.position.x matches ..-3300 run return 0
+execute store result score @s omegaflowey.soul.bullet.position.x run data get entity @s Pos[0] 100
+execute if score @s omegaflowey.soul.bullet.position.x matches ..-3300 run return run \
+  function omegaflowey.entity:soul/soul_2/star/terminate
 
 # Move forward
 teleport @s ~-0.4 ~ ~
-
-# Start animation
-# execute if score @s soul.clock.i matches 0 run function entity:soul/soul_2/bullet/animation/play

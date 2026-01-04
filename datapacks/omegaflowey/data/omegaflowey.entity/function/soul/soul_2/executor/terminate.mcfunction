@@ -1,9 +1,14 @@
-execute as @e[tag=boss_fight] run function entity:soul/shared/executor/terminate/as_boss_fight
+function omegaflowey.entity:soul/shared/executor/terminate with storage omegaflowey:bossfight
 
-execute as @e[tag=soul_2] run function entity:soul/soul_2/executor/terminate/as_root
+# NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
+execute as @e[ \
+  tag=soul_2, \
+  tag=omega-flowey-remastered \
+] run \
+  function omegaflowey.entity:soul/soul_2/executor/terminate/as_root
 
-stopsound @a record omega-flowey:music.soul.2
-stopsound @a record omega-flowey:soul.saved
-effect clear @a[team=player] minecraft:resistance
+function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+  'stopsound @s record omega-flowey:music.soul.2' \
+}
 
 kill @s
