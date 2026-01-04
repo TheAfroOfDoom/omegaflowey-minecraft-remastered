@@ -16,6 +16,8 @@ scoreboard players set #omegaflowey.soul.2.touched omegaflowey.soul.flag 0
 # Store this UUID to a global storage for later reference
 function gu:generate
 data modify storage omegaflowey:soul.2 executor_uuid set from storage gu:main out
+data modify storage omegaflowey:soul.2 active_player_uuid set from storage omegaflowey:bossfight active_player_uuid
+data modify storage omegaflowey:soul.2 soul_model_uuid set from storage omegaflowey:bossfight soul_model_uuid
 
 # Play music
 function omegaflowey.entity:soul/soul_2/executor/play_music
