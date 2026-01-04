@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 const { copy, readFile, writeFile } = require('fs-extra');
 const { glob } = require('glob');
 const { difference, findKey } = require('lodash');
-const { parse } = require('path');
+const { parse, relative } = require('path');
 const { rimraf } = require('rimraf');
 
 const { ajblueprintDir } = require('./shared-consts');
@@ -16,10 +16,12 @@ const {
 
 dotenv.config();
 assertEnvironmentVariables([
+  'COPY_COMMAND_ALIASES',
   'MINECRAFT_PATH',
   'RESOURCEPACK_NAME',
   'WORLD_NAME',
 ]);
+const copyCommandAliases = Boolean(process.env.COPY_COMMAND_ALIASES);
 const minecraftPath = process.env.MINECRAFT_PATH;
 const resourcePackName = process.env.RESOURCEPACK_NAME;
 const worldName = process.env.WORLD_NAME;
@@ -48,7 +50,7 @@ const watchDatapacks = async (showVerbose) => {
     }
   };
 
-  log('World path:', worldPath);
+  log(`path: ${worldPath}/datapacks`);
 
   const ignored = [
     regexDotFiles,
@@ -142,6 +144,48 @@ const watchResourcepack = async (showVerbose) => {
   });
 };
 
+const watchCommandAliases = async () => {
+  const log = (...args) => {
+    const prefix = chalk.bgYellow(chalk.bold('[mods/commandaliases]'));
+    console.log(prefix, ...args);
+  };
+  const logPath = (prefix, path) => {
+    log(prefix, normalizePath(path));
+  };
+
+  const rootFrom = 'mods/commandaliases';
+  const rootTo = `${minecraftPath}/config/commandaliases`;
+  log(`path: ${rootTo}`);
+
+  // Clean copy on script start
+  await rimraf(rootTo);
+  await copy(rootFrom, rootTo);
+
+  const watcher = watch(rootFrom, {
+    awaitWriteFinish,
+    ignoreInitial: true,
+  });
+
+  watcher.on('ready', async () => {
+    log('initialized');
+  });
+  watcher.on('add', async (path) => {
+    const relativePath = relative(rootFrom, path);
+    await copy(path, `${rootTo}/${relativePath}`);
+    logPath(chalk.green('add:'), path);
+  });
+  watcher.on('change', async (path) => {
+    const relativePath = relative(rootFrom, path);
+    await copy(path, `${rootTo}/${relativePath}`);
+    logPath(chalk.yellow('change:'), path);
+  });
+  watcher.on('unlink', async (path) => {
+    const relativePath = relative(rootFrom, path);
+    await rimraf(`${rootTo}/${relativePath}`);
+    logPath(chalk.red('delete:'), path);
+  });
+};
+
 /** Deletes the exported AJ files associated with the input `.ajblueprint` file path */
 const deleteExportedFiles = async (path) => {
   // We have to match the model's info from `last_exported_hashes` since
@@ -223,6 +267,9 @@ const main = async () => {
   const SHOW_VERBOSE = false;
   watchDatapacks(SHOW_VERBOSE);
   watchResourcepack(SHOW_VERBOSE);
+  if (copyCommandAliases) {
+    watchCommandAliases(SHOW_VERBOSE);
+  }
 };
 
 main();

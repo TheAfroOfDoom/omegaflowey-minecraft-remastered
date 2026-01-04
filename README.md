@@ -77,8 +77,12 @@ Install the following apps:
 1. [paint.net](https://www.getpaint.net/download.html) -- for image editing
 2. [ScreenToGif](https://www.screentogif.com/) -- lightweight GIF recorder
 3. [DaVinci Resolve](https://www.blackmagicdesign.com/event/davinciresolvedownload) -- for video editing / frame-by-frame video analysis (of the original fight in Undertale)
+4. [Fabric](https://fabricmc.net/use/installer/) -- for some helpful mods used to speed up development
 
-We also recommend using [blockcolors.app](https://blockcolors.app/) to get a representative vanilla block texture for a desired color while texturing models.
+   1. [Fabric API](https://modrinth.com/mod/fabric-api)
+   2. [Command Aliases](https://modrinth.com/mod/commandaliases) -- set `COPY_COMMAND_ALIASES=1` in `.env` if desired. Use `/commandaliases reload` in-game upon changes.
+
+5. [blockcolors.app](https://blockcolors.app/) to get a representative vanilla block texture for a desired color while texturing models.
 
 </details>
 
