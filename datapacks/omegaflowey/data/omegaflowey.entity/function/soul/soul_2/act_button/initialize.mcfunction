@@ -11,3 +11,10 @@ data modify storage omegaflowey:soul.2 act_button_uuid set from storage gu:main 
 function animated_java:omegaflowey_act_button/as_all_locators { \
   command: 'function omegaflowey.entity:soul/soul_2/act_button/initialize/locator' \
 }
+
+# Randomize animation frame index so the rows of shoes aren't
+# all tapping at the same animation index
+execute store result score @s aj.omegaflowey_soul_2.frame run random value 0..26
+
+# Start animation
+function animated_java:omegaflowey_act_button/animations/omegaflowey_soul_2/resume
