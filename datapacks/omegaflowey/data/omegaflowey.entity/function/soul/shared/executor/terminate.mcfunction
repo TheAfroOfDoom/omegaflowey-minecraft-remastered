@@ -3,4 +3,4 @@ $execute as $(boss_fight_uuid) run \
     with storage omegaflowey:bossfight
 
 $effect clear $(active_player_uuid) minecraft:resistance
-$stopsound $(active_player_uuid) record omega-flowey:soul.saved
+$execute as $(active_player_uuid) run stopsound @s record omega-flowey:soul.saved
