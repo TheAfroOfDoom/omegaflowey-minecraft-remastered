@@ -146,14 +146,14 @@ const watchResourcepack = async (showVerbose) => {
 
 const watchCommandAliases = async () => {
   const log = (...args) => {
-    const prefix = chalk.bgYellow(chalk.bold('[mods/commandaliases]'));
+    const prefix = chalk.bgYellow(chalk.bold('[commandaliases]'));
     console.log(prefix, ...args);
   };
   const logPath = (prefix, path) => {
     log(prefix, normalizePath(path));
   };
 
-  const rootFrom = 'mods/commandaliases';
+  const rootFrom = 'commandaliases';
   const rootTo = `${minecraftPath}/config/commandaliases`;
   log(`path: ${rootTo}`);
 
