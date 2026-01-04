@@ -10,7 +10,6 @@ $execute as $(active_player_uuid) at @s anchored eyes run particle minecraft:fla
 
 # Initialize other soul event models
 $execute as $(act_button_uuid) run function omegaflowey.entity:soul/soul_2/act_button/terminate
-# $execute as $(indicator_uuid) at @s run function omegaflowey.entity:soul/soul_2/indicator/initialize/saved
 $execute as $(soul_model_uuid) run function animated_java:omegaflowey_soul/variants/3/apply
 function omegaflowey.entity:directorial/boss_fight/shared/phase/soul/loop/saved with storage omegaflowey:bossfight
 

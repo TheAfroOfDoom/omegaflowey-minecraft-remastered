@@ -19,4 +19,3 @@ scoreboard players set @s omegaflowey.soul.indicator.bullets.cumulative-total 0
 # Store this UUID to a global storage for later reference
 function gu:generate
 data modify storage omegaflowey:soul.2 indicator_uuid set from storage gu:main out
-data modify storage omegaflowey:soul.2.indicator indicator_uuid set from storage gu:main out
