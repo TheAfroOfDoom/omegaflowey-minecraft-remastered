@@ -1,7 +1,7 @@
 ## Iteratively summons the next row of stars
 
 # randomize number of stars to summon
-execute store result score @s omegaflowey.soul.indicator.bullets.remaining run random value 1..3
+execute store result score @s omegaflowey.soul.indicator.bullets.remaining run random value 2..5
 
 # stars row is centered in X between two rows of shoes
 scoreboard players operation @s omegaflowey.math.0 = @s omegaflowey.soul.bullet.position.x
