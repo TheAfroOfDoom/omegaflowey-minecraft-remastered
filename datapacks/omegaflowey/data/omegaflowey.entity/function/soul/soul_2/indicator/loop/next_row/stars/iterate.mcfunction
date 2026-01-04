@@ -1,5 +1,8 @@
+scoreboard players set #omegaflowey.soul.2.star_pos_retry_idx omegaflowey.soul.flag -1
+scoreboard players add #omegaflowey.soul.2.star_idx omegaflowey.soul.flag 1
+
 # summon a bullet in the current row
-function omegaflowey.entity:soul/soul_2/indicator/loop/next_row/stars/presummon
+function omegaflowey.entity:soul/soul_2/indicator/loop/next_row/stars/check_near_other_stars
 
 scoreboard players remove @s omegaflowey.soul.indicator.bullets.remaining 1
 
