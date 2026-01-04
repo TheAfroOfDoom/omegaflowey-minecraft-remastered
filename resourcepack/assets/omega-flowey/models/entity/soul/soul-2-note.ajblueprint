@@ -4317,12 +4317,19 @@
 		},
 		{
 			"name": "locator2",
-			"position": [1, 5, 0],
+			"position": [0, 5, 0],
 			"rotation": [0, 0, 0],
 			"ignore_inherited_scale": false,
 			"visibility": true,
 			"locked": false,
-			"config": null,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
 			"uuid": "c98af986-3120-8a56-7c38-fc1bb8709686",
 			"type": "locator"
 		}
@@ -4510,7 +4517,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
-			"selected": true,
+			"selected": false,
 			"children": [
 				"371765ff-5cd8-df8e-d0be-6b92136a0cf2",
 				"303c3446-34f2-c257-2824-1c2c3623fcc0",
