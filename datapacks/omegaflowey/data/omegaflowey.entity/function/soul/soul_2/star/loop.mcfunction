@@ -7,5 +7,7 @@ execute store result score @s omegaflowey.soul.bullet.position.x run data get en
 execute if score @s omegaflowey.soul.bullet.position.x matches ..-3300 run return run \
   function omegaflowey.entity:soul/soul_2/star/terminate
 
-# Move forward
-teleport @s ~-0.4 ~ ~
+execute if score #omegaflowey.soul.2.slow_down omegaflowey.soul.flag matches 0 run \
+  teleport @s ~-0.4 ~ ~
+execute if score #omegaflowey.soul.2.slow_down omegaflowey.soul.flag matches 1 run \
+  function omegaflowey.entity:soul/soul_2/star/loop/move_self
