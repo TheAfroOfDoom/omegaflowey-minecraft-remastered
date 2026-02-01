@@ -2,10 +2,7 @@ function omegaflowey.entity:soul/shared/executor/initialize
 tag @s add soul_3
 data merge entity @s { CustomName: '"Soul 3 Executor"' }
 
-# Set scores
 # TODO(296): validate these soul parameters
-scoreboard players set @s omegaflowey.soul.clock.i -1
-
 scoreboard players reset @s omegaflowey.soul.clock.touched_act_button
 scoreboard players set #omegaflowey.soul.3.saved omegaflowey.soul.flag 0
 scoreboard players set #omegaflowey.soul.3.touched omegaflowey.soul.flag 0
