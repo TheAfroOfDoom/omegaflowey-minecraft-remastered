@@ -2,6 +2,8 @@ function omegaflowey.entity:soul/shared/indicator/initialize
 tag @s add soul_3
 data merge entity @s { CustomName:'"Soul 3 Indicator"' }
 
+execute if score #omegaflowey.soul.3.book.is_eastward omegaflowey.soul.flag matches 1 run tag @s add is_eastward
+
 # Set scores
 scoreboard players set @s omegaflowey.soul.clock.i -1
 
