@@ -1,0 +1,72 @@
+{
+	"meta": {
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
+		"uuid": "e2c862ff-aa52-d5a7-87ea-74a77033747a",
+		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-3-word.ajblueprint",
+		"last_used_export_namespace": "omegaflowey_soul_3_word"
+	},
+	"resolution": {
+		"width": 16,
+		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_soul_3_word",
+		"render_box": [48, 48],
+		"resource_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack",
+		"data_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\datapacks\\animated_java",
+		"on_summon_function": "function omegaflowey.entity:soul/soul_3/bullet/initialize"
+	},
+	"elements": [
+		{
+			"uuid": "e61cc7fb-5147-4351-47ae-0552eb631410",
+			"type": "animated_java:vanilla_block_display",
+			"name": "block_display",
+			"position": [-8, 0, -8],
+			"rotation": [0, 0, 0],
+			"scale": [1, 1, 1],
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"block": "minecraft:stone",
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			}
+		}
+	],
+	"outliner": [
+		{
+			"name": "bone",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
+			"uuid": "9200ebe6-763f-1304-bc12-fafe0a843693",
+			"export": true,
+			"mirror_uv": false,
+			"isOpen": true,
+			"locked": false,
+			"visibility": true,
+			"autouv": 0,
+			"selected": false,
+			"children": ["e61cc7fb-5147-4351-47ae-0552eb631410"]
+		}
+	],
+	"textures": [],
+	"variants": {
+		"default": {
+			"name": "default",
+			"display_name": "Default",
+			"uuid": "c5b0eef0-b7d2-9491-af0f-76839f200ddf",
+			"texture_map": {},
+			"excluded_nodes": [],
+			"is_default": true
+		},
+		"list": []
+	}
+}

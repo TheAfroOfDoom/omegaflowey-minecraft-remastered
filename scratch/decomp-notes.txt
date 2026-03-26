@@ -45,3 +45,11 @@ phases
 
 during finale, after slow phase, all attack lengths decrease by "10"
 - except flamethrower, which stays the same
+
+soul 3 (books)
+x each row has an independent timer. check gamemaker
+- some rows stop summoning once the act button is summoned
+- act button is summoned on the 4th word of row 2
+x each row summons a new word on left/right randomly
+x each row has its own Z pos
+x when a word is summoned, all row timers get +5 frames (5/30 sec => 0.167s => 3 ticks)

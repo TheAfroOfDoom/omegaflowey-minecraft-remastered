@@ -2,9 +2,8 @@ function omegaflowey.entity:soul/shared/bullet/initialize
 tag @s add soul_3
 data merge entity @s { CustomName: "'Soul 3 Shoe'" }
 
-# Randomize animation frame index so the rows of shoes aren't
-# all tapping at the same animation index
-execute store result score @s aj.omegaflowey_tap.frame run random value 0..26
+# TODO randomize what word this is?
 
-# Start animation
-function animated_java:omegaflowey_soul_3_shoe/animations/omegaflowey_tap/resume
+# track what direction this word will move
+execute if score #omegaflowey.soul.3.summon_word_on_east omegaflowey.soul.flag matches 1 run \
+  tag @s add is_east

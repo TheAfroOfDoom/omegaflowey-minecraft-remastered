@@ -10,6 +10,11 @@ scoreboard players set #omegaflowey.soul.3.touched omegaflowey.soul.flag 0
 scoreboard players set #omegaflowey.soul.3.bullet.speed omegaflowey.soul.velocity -40
 scoreboard players set #omegaflowey.soul.3.slow_down omegaflowey.soul.flag 0
 
+# these are decrementing clocks
+scoreboard players set #omegaflowey.soul.3.row.0 omegaflowey.soul.clock.i 20
+scoreboard players set #omegaflowey.soul.3.row.1 omegaflowey.soul.clock.i 25
+scoreboard players set #omegaflowey.soul.3.row.2 omegaflowey.soul.clock.i 30
+
 # Store this UUID to a global storage for later reference
 function gu:generate
 data modify storage omegaflowey:soul.3 executor_uuid set from storage gu:main out

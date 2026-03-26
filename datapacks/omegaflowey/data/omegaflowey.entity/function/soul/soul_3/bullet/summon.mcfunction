@@ -1,2 +1,3 @@
-$execute positioned $(next_bullet_x) 34.0 $(next_bullet_z) rotated -90 0 run \
-  function animated_java:omegaflowey_soul_3_shoe/summon { args: {} }
+# LINK: /soul/soul_3/bullet/initialize.mcfunction
+$execute positioned $(x) 33.0 $(z) rotated 0 0 run \
+  function animated_java:omegaflowey_soul_3_word/summon { args: {} }
