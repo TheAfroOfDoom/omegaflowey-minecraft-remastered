@@ -8,5 +8,7 @@ data modify storage omegaflowey:soul.3 z set value -73.5f
 
 function omegaflowey.entity:soul/soul_3/bullet/summon with storage omegaflowey:soul.3
 
-scoreboard players set #omegaflowey.soul.3.row.1 omegaflowey.soul.clock.i 20
+execute store result score #omegaflowey.soul.3.row.1 omegaflowey.soul.clock.i run random value 0..7
+scoreboard players add #omegaflowey.soul.3.row.1 omegaflowey.soul.clock.i 37
+
 function omegaflowey.entity:soul/soul_3/executor/loop/rows/increase_all_timers

@@ -1,3 +1,5 @@
+# TODO STOP when act button is summoned
+
 scoreboard players remove #omegaflowey.soul.3.row.2 omegaflowey.soul.clock.i 1
 execute if score #omegaflowey.soul.3.row.2 omegaflowey.soul.clock.i matches 1.. run return 0
 
@@ -8,5 +10,7 @@ data modify storage omegaflowey:soul.3 z set value -69.5f
 
 function omegaflowey.entity:soul/soul_3/bullet/summon with storage omegaflowey:soul.3
 
-scoreboard players set #omegaflowey.soul.3.row.2 omegaflowey.soul.clock.i 20
+execute store result score #omegaflowey.soul.3.row.2 omegaflowey.soul.clock.i run random value 0..27
+scoreboard players add #omegaflowey.soul.3.row.2 omegaflowey.soul.clock.i 30
+
 function omegaflowey.entity:soul/soul_3/executor/loop/rows/increase_all_timers
