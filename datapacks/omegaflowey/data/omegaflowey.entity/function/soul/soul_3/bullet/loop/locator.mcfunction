@@ -1,8 +1,9 @@
+execute if score #omegaflowey.soul.3.saved omegaflowey.soul.flag matches 1 run return run \
+  function omegaflowey.entity:soul/soul_3/bullet/loop/locator/check_heal
+
 data modify storage omegaflowey:utils.damage damage set value 2.0
 data modify storage omegaflowey:utils.damage radius set value 0.75
-data modify storage omegaflowey:utils.damage source set value 'soul.3.shoe'
+data modify storage omegaflowey:utils.damage source set value 'soul.3.word'
 
 execute positioned ~ ~-0.5 ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 execute positioned ~ ~-1.5 ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
-
-# TODO if #omegaflowey.soul.3.saved omegaflowey.soul.flag then do heal instead of damage
