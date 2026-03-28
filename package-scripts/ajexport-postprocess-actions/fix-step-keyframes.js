@@ -13,8 +13,8 @@ const setInterpolationDurationZeroAllFrames = (rootDir) => {
     ['omegaflowey_upper_eye', 'omegaflowey_intro_shake'],
     ['omegaflowey_nose', 'omegaflowey_nose_move_slow_shake'],
     ['omegaflowey_soul', 'omegaflowey_shake'],
-    ['omegaflowey_soul_3_word_8', 'shake'],
-    ['omegaflowey_soul_3_word_9', 'shake'],
+    ['omegaflowey_soul_3_word_8', 'omegaflowey_shake'],
+    ['omegaflowey_soul_3_word_9', 'omegaflowey_shake'],
   ];
 
   for (const [namespace, animation] of stepAnimations) {
