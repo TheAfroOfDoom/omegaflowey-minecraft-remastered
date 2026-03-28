@@ -4,3 +4,5 @@ data modify storage omegaflowey:utils.damage source set value 'soul.3.shoe'
 
 execute positioned ~ ~-0.5 ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
 execute positioned ~ ~-1.5 ~ run function omegaflowey.entity:utils/damage with storage omegaflowey:utils.damage
+
+# TODO if #omegaflowey.soul.3.saved omegaflowey.soul.flag then do heal instead of damage
