@@ -9,8 +9,6 @@ scoreboard players reset @s omegaflowey.soul.clock.touched_act_button
 scoreboard players set #omegaflowey.soul.3.saved omegaflowey.soul.flag 0
 scoreboard players set #omegaflowey.soul.3.touched omegaflowey.soul.flag 0
 
-scoreboard players set #omegaflowey.soul.3.bullet.speed omegaflowey.soul.velocity -40
-
 # these are decrementing clocks
 scoreboard players set #omegaflowey.soul.3.row.0 omegaflowey.soul.clock.i 13
 scoreboard players set #omegaflowey.soul.3.row.1 omegaflowey.soul.clock.i 27

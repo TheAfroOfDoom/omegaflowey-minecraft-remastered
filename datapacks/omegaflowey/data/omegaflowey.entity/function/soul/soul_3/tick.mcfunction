@@ -4,4 +4,3 @@ execute if entity @s[tag=soul-executor] run function omegaflowey.entity:soul/sou
 execute if entity @s[tag=soul-healer] run function omegaflowey.entity:soul/soul_3/healer/loop with storage omegaflowey:soul.3
 execute if entity @s[tag=soul-indicator] run function omegaflowey.entity:soul/soul_3/indicator/loop with storage omegaflowey:soul.3
 execute if entity @s[tag=soul-locator] run function omegaflowey.entity:soul/soul_3/locator/loop
-execute if entity @s[tag=soul-star] run function omegaflowey.entity:soul/soul_3/star/loop with storage omegaflowey:soul.3
