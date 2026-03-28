@@ -13,12 +13,6 @@ function omegaflowey.entity:soul/soul_3/executor/loop/rows
 execute if score #omegaflowey.soul.3.touched omegaflowey.soul.flag matches 1 run \
   function omegaflowey.entity:soul/soul_3/executor/loop/saved
 
-# Replay song after it ends (only if we haven't yet started `saved` state)
-execute \
-  if score #omegaflowey.soul.3.saved omegaflowey.soul.flag matches 0 \
-  if score @s omegaflowey.soul.clock.i matches 303 run \
-  function omegaflowey.entity:soul/soul_3/executor/play_music
-
 # Terminate
 execute \
   if score #omegaflowey.soul.3.touched omegaflowey.soul.flag matches 0 \
