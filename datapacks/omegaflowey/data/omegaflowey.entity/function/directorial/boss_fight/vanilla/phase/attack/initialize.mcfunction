@@ -10,6 +10,8 @@ execute if score @s omegaflowey.boss-fight.attack.phase.i matches 5 run function
 scoreboard players set @s omegaflowey.boss-fight.attack.clock.i -1
 scoreboard players set @s omegaflowey.boss-fight.attack.delay 10
 
+function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize/disable_soul_event_3_barriers
+
 # These default to finger-guns, so we're super unlikely to ever start with finger-guns
 scoreboard players operation \
   #omegaflowey.attack.random.previous_attack_id omegaflowey.attack.flag = \
