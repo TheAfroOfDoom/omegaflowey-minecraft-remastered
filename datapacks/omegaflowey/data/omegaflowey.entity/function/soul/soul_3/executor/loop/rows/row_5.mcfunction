@@ -4,7 +4,7 @@ execute if score #omegaflowey.soul.3.row.5 omegaflowey.soul.clock.i matches 1.. 
 # summon word if at clock 0
 
 function omegaflowey.entity:soul/soul_3/executor/loop/rows/randomize_x
-data modify storage omegaflowey:soul.3 z set value -57.5f
+data modify storage omegaflowey:soul.3 z set value -59.64285714f
 
 function omegaflowey.entity:soul/soul_3/bullet/summon with storage omegaflowey:soul.3
 
