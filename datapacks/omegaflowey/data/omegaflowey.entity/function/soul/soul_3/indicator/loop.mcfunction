@@ -5,6 +5,7 @@ execute if score @s omegaflowey.soul.clock.i matches ..-1 run return 0
 
 function omegaflowey.entity:soul/soul_3/indicator/loop/check_reenable_visible
 
+# TODO slow down books a lot
 execute if entity @s[tag= is_eastward] run teleport @s ~ ~ ~1
 execute if entity @s[tag=!is_eastward] run teleport @s ~ ~ ~-1
 
