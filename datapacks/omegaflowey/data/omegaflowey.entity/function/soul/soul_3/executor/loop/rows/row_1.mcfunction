@@ -7,7 +7,7 @@ execute if score #omegaflowey.soul.3.row.1 omegaflowey.soul.indicator.bullets.to
 
 scoreboard players add #omegaflowey.soul.3.row.1 omegaflowey.soul.indicator.bullets.total 1
 
-function omegaflowey.entity:soul/soul_3/executor/loop/rows/randomize_params
+function omegaflowey.entity:soul/soul_3/executor/loop/rows/set_bullet_params
 data modify storage omegaflowey:soul.3 z set value -73.92857143f
 
 execute if score #omegaflowey.soul.3.row.1 omegaflowey.soul.indicator.bullets.total matches 4 run return run \

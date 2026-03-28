@@ -22,6 +22,8 @@ scoreboard players set #omegaflowey.soul.3.row.6 omegaflowey.soul.clock.i 70
 
 scoreboard players set #omegaflowey.soul.3.row.1 omegaflowey.soul.indicator.bullets.total 0
 
+scoreboard players set #omegaflowey.soul.3.word.shake_frame_idx omegaflowey.soul.clock.animation -1
+
 # Store this UUID to a global storage for later reference
 function gu:generate
 data modify storage omegaflowey:soul.3 executor_uuid set from storage gu:main out

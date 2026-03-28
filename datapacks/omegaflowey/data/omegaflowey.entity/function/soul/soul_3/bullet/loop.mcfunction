@@ -1,6 +1,9 @@
 $execute unless entity $(executor_uuid) run return run \
   function omegaflowey.entity:soul/soul_3/bullet/terminate
 
+execute if score #omegaflowey.soul.3.word.shake_frame_idx omegaflowey.soul.clock.animation matches 0 run \
+  function omegaflowey.entity:soul/soul_3/bullet/play_animation
+
 execute if entity @s[tag=is_east] run teleport @s ~-0.4 ~ ~
 execute if entity @s[tag=!is_east] run teleport @s ~0.4 ~ ~
 
