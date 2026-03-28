@@ -2087,6 +2087,171 @@
 			},
 			"type": "cube",
 			"uuid": "7f50b717-81a9-a97f-23f1-54ff7793d286"
+		},
+		{
+			"name": "locator",
+			"position": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "8c810096-7b09-63bf-58c5-d9ec242f59f5",
+			"type": "locator"
+		},
+		{
+			"name": "locator_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-18, 0, -18],
+			"to": [18, 28, 18],
+			"autouv": 1,
+			"color": 1,
+			"export": false,
+			"origin": [0, 14, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "c4e077e7-ec77-59ad-a1f7-fe77e7f0de89"
+		},
+		{
+			"name": "locator2",
+			"position": [28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "cc5493d4-13b8-e795-f388-96d72e0e58f2",
+			"type": "locator"
+		},
+		{
+			"name": "locator2_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [10, 0, -18],
+			"to": [46, 28, 18],
+			"autouv": 1,
+			"color": 1,
+			"export": false,
+			"origin": [28, 14, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "b16d5ff6-5aa8-de23-d302-4452d3d14ec8"
+		},
+		{
+			"name": "locator3",
+			"position": [-28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "5e0cb5ab-28d5-370b-54cf-2f4be649d63b",
+			"type": "locator"
+		},
+		{
+			"name": "locator3_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-46, 0, -18],
+			"to": [-10, 28, 18],
+			"autouv": 1,
+			"color": 1,
+			"export": false,
+			"origin": [-28, 14, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "8c292ed7-d4ae-86a1-a501-63bc4e1ae8e5"
 		}
 	],
 	"outliner": [
@@ -2149,7 +2314,13 @@
 				"02b949fb-34f4-c6a9-295f-3f4b646a428d",
 				"5a313a4e-45f9-ce0b-8e7a-7556d2358f1d",
 				"5b2cf7be-7a29-aa9b-5716-10541a8055e2",
-				"52a2ca32-5136-0a61-2c26-7a258100acb7"
+				"52a2ca32-5136-0a61-2c26-7a258100acb7",
+				"8c810096-7b09-63bf-58c5-d9ec242f59f5",
+				"c4e077e7-ec77-59ad-a1f7-fe77e7f0de89",
+				"cc5493d4-13b8-e795-f388-96d72e0e58f2",
+				"b16d5ff6-5aa8-de23-d302-4452d3d14ec8",
+				"5e0cb5ab-28d5-370b-54cf-2f4be649d63b",
+				"8c292ed7-d4ae-86a1-a501-63bc4e1ae8e5"
 			]
 		},
 		{

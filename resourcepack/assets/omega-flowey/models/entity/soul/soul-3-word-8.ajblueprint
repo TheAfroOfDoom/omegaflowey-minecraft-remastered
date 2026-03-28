@@ -1056,7 +1056,7 @@
 			"autouv": 0,
 			"color": 6,
 			"export": false,
-			"origin": [0, -4, -4],
+			"origin": [0, -4, 0],
 			"faces": {
 				"north": {
 					"uv": [0, 0, 16, 2]
@@ -1751,6 +1751,171 @@
 			},
 			"type": "cube",
 			"uuid": "6c5c666a-5c88-f44e-d637-0ac527a13328"
+		},
+		{
+			"name": "locator",
+			"position": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "8021cf1e-c97d-184d-25b6-5b93bcbde4c7",
+			"type": "locator"
+		},
+		{
+			"name": "locator_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-18, 0, -18],
+			"to": [18, 28, 18],
+			"autouv": 1,
+			"color": 1,
+			"export": false,
+			"origin": [0, 14, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "a21af446-4927-a73c-3615-af42b272ac98"
+		},
+		{
+			"name": "locator2_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [10, 0, -18],
+			"to": [46, 28, 18],
+			"autouv": 1,
+			"color": 1,
+			"export": false,
+			"origin": [28, 14, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "2adaf11c-c1d6-0ea2-cec9-a7f6d88eacb0"
+		},
+		{
+			"name": "locator3_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-46, 0, -18],
+			"to": [-10, 28, 18],
+			"autouv": 1,
+			"color": 1,
+			"export": false,
+			"origin": [-28, 14, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16]
+				},
+				"east": {
+					"uv": [0, 0, 16, 16]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16]
+				},
+				"west": {
+					"uv": [0, 0, 16, 16]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16]
+				}
+			},
+			"type": "cube",
+			"uuid": "50e0807c-97ba-f8cb-492f-31ecab47d69f"
+		},
+		{
+			"name": "locator2",
+			"position": [28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "a8dcf32f-2e86-1607-d66b-8c1769d545c4",
+			"type": "locator"
+		},
+		{
+			"name": "locator3",
+			"position": [-28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "eb9970b3-b9ce-b2cd-f711-2487a5aaabac",
+			"type": "locator"
 		}
 	],
 	"outliner": [
@@ -1772,6 +1937,12 @@
 			"autouv": 0,
 			"selected": false,
 			"children": [
+				"8021cf1e-c97d-184d-25b6-5b93bcbde4c7",
+				"a21af446-4927-a73c-3615-af42b272ac98",
+				"a8dcf32f-2e86-1607-d66b-8c1769d545c4",
+				"2adaf11c-c1d6-0ea2-cec9-a7f6d88eacb0",
+				"eb9970b3-b9ce-b2cd-f711-2487a5aaabac",
+				"50e0807c-97ba-f8cb-492f-31ecab47d69f",
 				"7365aa0c-e62f-605a-2745-58cda272cab6",
 				"0218c129-3028-b430-132d-fc6766019818",
 				"c79c9094-86e3-c126-fea2-be1d2cf5aa90",
