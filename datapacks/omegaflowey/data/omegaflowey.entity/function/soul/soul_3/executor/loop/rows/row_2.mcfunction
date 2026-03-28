@@ -1,5 +1,3 @@
-# TODO STOP when act button is summoned
-
 scoreboard players remove #omegaflowey.soul.3.row.2 omegaflowey.soul.clock.i 1
 execute if score #omegaflowey.soul.3.row.2 omegaflowey.soul.clock.i matches 1.. run return 0
 
