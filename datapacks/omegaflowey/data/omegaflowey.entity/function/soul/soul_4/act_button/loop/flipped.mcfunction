@@ -5,7 +5,7 @@ execute if entity @s[tag=!is_east] run teleport @s ~-0.25 ~ ~
 execute store result score @s omegaflowey.soul.bullet.position.x run data get entity @s Pos[0] 100
 
 execute if score @s[tag=!is_east] omegaflowey.soul.bullet.position.x matches ..-950 run return run \
-  function omegaflowey.entity:soul/soul_3/act_button/terminate
+  function omegaflowey.entity:soul/soul_4/act_button/terminate
 
 execute if score @s[tag=is_east] omegaflowey.soul.bullet.position.x matches 1050.. run return run \
-  function omegaflowey.entity:soul/soul_3/act_button/terminate
+  function omegaflowey.entity:soul/soul_4/act_button/terminate

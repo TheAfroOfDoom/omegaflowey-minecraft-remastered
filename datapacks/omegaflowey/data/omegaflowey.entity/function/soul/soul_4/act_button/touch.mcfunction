@@ -1,4 +1,4 @@
-scoreboard players set #omegaflowey.soul.3.touched omegaflowey.soul.flag 1
+scoreboard players set #omegaflowey.soul.4.touched omegaflowey.soul.flag 1
 
 # Apply yellow-highlighted variant
 function animated_java:omegaflowey_act_button/variants/selected/apply
@@ -9,11 +9,11 @@ function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: 
 }
 
 # Summon and initialize call for help display
-scoreboard players set #omegaflowey.soul.summon_type omegaflowey.global.flag 3
+scoreboard players set #omegaflowey.soul.summon_type omegaflowey.global.flag 4
 function omegaflowey.entity:directorial/boss_fight/vanilla/soul_origin/at/position { \
   command: "execute positioned ~ ~7.0 ~9.5 run function omegaflowey.entity:soul/shared/call_for_help_display/summon" \
 }
 
 # TODO(36): transparent fade-out of `act_button` model?
 
-$execute as $(executor_uuid) run function omegaflowey.entity:soul/soul_3/executor/initialize/touch
+$execute as $(executor_uuid) run function omegaflowey.entity:soul/soul_4/executor/initialize/touch
