@@ -27,7 +27,7 @@ data modify storage omegaflowey:soul.4 active_player_uuid set from storage omega
 data modify storage omegaflowey:soul.4 soul_model_uuid set from storage omegaflowey:bossfight soul_model_uuid
 
 function omegaflowey.entity:directorial/boss_fight/vanilla/soul_origin/at { \
-  command: 'function omegaflowey.entity:soul/soul_4/executor/initialize/summon_books' \
+  command: 'function omegaflowey.entity:soul/soul_4/executor/initialize/summon_pans' \
 }
 
 # Play music

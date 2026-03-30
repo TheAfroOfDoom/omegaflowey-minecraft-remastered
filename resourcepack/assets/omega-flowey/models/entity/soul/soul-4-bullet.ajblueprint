@@ -1,0 +1,74 @@
+{
+	"meta": {
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
+		"uuid": "ad26f6ff-270f-eef9-0d3b-092f757050a6",
+		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-4-bullet.ajblueprint",
+		"last_used_export_namespace": "omegaflowey_soul_4_bullet"
+	},
+	"resolution": {
+		"width": 16,
+		"height": 16
+	},
+	"blueprint_settings": {
+		"export_namespace": "omegaflowey_soul_4_bullet",
+		"render_box": [48, 48],
+		"custom_model_data_offset": 4654465,
+		"enable_advanced_resource_pack_settings": true,
+		"resource_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack",
+		"data_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\datapacks\\animated_java",
+		"on_summon_function": "function omegaflowey.entity:soul/soul_4/bullet/initialize"
+	},
+	"elements": [
+		{
+			"uuid": "f3511d9d-11a6-b128-f7f8-efce09e2954a",
+			"type": "animated_java:vanilla_block_display",
+			"name": "block_display",
+			"position": [-8, 0, -8],
+			"rotation": [0, 0, 0],
+			"scale": [1, 1, 1],
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"block": "minecraft:yellow_wool",
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			}
+		}
+	],
+	"outliner": [
+		{
+			"name": "bone",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
+			"uuid": "4a544d0a-75a8-4cb5-bd1b-4acb7e1dae0a",
+			"export": true,
+			"mirror_uv": false,
+			"isOpen": true,
+			"locked": false,
+			"visibility": true,
+			"autouv": 0,
+			"selected": false,
+			"children": ["f3511d9d-11a6-b128-f7f8-efce09e2954a"]
+		}
+	],
+	"textures": [],
+	"variants": {
+		"default": {
+			"name": "default",
+			"display_name": "Default",
+			"uuid": "e5dc33be-ee65-e46b-c188-d5b0cc7f421e",
+			"texture_map": {},
+			"excluded_nodes": [],
+			"is_default": true
+		},
+		"list": []
+	}
+}

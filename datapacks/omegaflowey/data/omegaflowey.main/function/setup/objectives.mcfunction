@@ -161,6 +161,8 @@ scoreboard objectives add omegaflowey.soul.indicator.rate dummy
 scoreboard objectives add omegaflowey.soul.flag dummy
 # various velocities related to a soul event
 scoreboard objectives add omegaflowey.soul.velocity dummy
+scoreboard objectives add omegaflowey.soul.velocity.y dummy
+scoreboard objectives add omegaflowey.soul.velocity.z dummy
 
 # the final yaw an entity has after running bounce calculations
 scoreboard objectives add omegaflowey.util.bounce.yaw dummy

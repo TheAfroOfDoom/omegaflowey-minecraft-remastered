@@ -1,19 +1,12 @@
 $execute unless entity $(executor_uuid) run return run \
   function omegaflowey.entity:soul/soul_4/bullet/terminate
 
-execute if score #omegaflowey.soul.4.word.shake_frame_idx omegaflowey.soul.clock.animation matches 0 run \
-  function omegaflowey.entity:soul/soul_4/bullet/play_animation
+function omegaflowey.entity:soul/soul_4/bullet/loop/move
 
-execute if entity @s[tag=is_east] run teleport @s ~-0.4 ~ ~
-execute if entity @s[tag=!is_east] run teleport @s ~0.4 ~ ~
+# Terminate bullets once they go far down in the Y direction
+execute store result score @s omegaflowey.soul.bullet.position.y run data get entity @s Pos[1] 100
 
-# Terminate bullets once they go far enough in the +/- X direction
-execute store result score @s omegaflowey.soul.bullet.position.x run data get entity @s Pos[0] 100
-
-execute if score @s[tag=is_east] omegaflowey.soul.bullet.position.x matches ..-950 run return run \
-  function omegaflowey.entity:soul/soul_4/bullet/terminate
-
-execute if score @s[tag=!is_east] omegaflowey.soul.bullet.position.x matches 1050.. run return run \
+execute if score @s omegaflowey.soul.bullet.position.y matches ..2500 run return run \
   function omegaflowey.entity:soul/soul_4/bullet/terminate
 
 # Check if should heal player if this is SAVED phase
