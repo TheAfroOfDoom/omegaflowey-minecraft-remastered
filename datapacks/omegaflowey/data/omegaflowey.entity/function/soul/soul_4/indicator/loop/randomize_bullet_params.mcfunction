@@ -3,3 +3,6 @@ execute store result storage omegaflowey:soul.4 bullet_velocity_y float 0.01 run
 
 execute store result storage omegaflowey:soul.4 bullet_velocity_z float 0.01 run \
   random value 10..100
+
+execute store result storage omegaflowey:soul.4 bullet_yaw float 0.01 run \
+  random value -3000..3000
