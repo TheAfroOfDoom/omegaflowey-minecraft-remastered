@@ -6,9 +6,6 @@ scoreboard players add @s omegaflowey.soul.clock.i 1
 # Ignore logic while `soul.clock.i` is negative
 execute if score @s omegaflowey.soul.clock.i matches ..-1 run return 0
 
-# Summon bullets (words) per row
-function omegaflowey.entity:soul/soul_4/executor/loop/rows
-
 # Run new logic if the player grabs the act_button
 execute if score #omegaflowey.soul.4.touched omegaflowey.soul.flag matches 1 run \
   function omegaflowey.entity:soul/soul_4/executor/loop/saved

@@ -7,19 +7,6 @@ scoreboard players reset @s omegaflowey.soul.clock.touched_act_button
 scoreboard players set #omegaflowey.soul.4.saved omegaflowey.soul.flag 0
 scoreboard players set #omegaflowey.soul.4.touched omegaflowey.soul.flag 0
 
-# these are decrementing clocks
-scoreboard players set #omegaflowey.soul.4.row.0 omegaflowey.soul.clock.i 13
-scoreboard players set #omegaflowey.soul.4.row.1 omegaflowey.soul.clock.i 27
-scoreboard players set #omegaflowey.soul.4.row.2 omegaflowey.soul.clock.i 67
-scoreboard players set #omegaflowey.soul.4.row.4 omegaflowey.soul.clock.i 20
-scoreboard players set #omegaflowey.soul.4.row.4 omegaflowey.soul.clock.i 33
-scoreboard players set #omegaflowey.soul.4.row.5 omegaflowey.soul.clock.i 53
-scoreboard players set #omegaflowey.soul.4.row.6 omegaflowey.soul.clock.i 70
-
-scoreboard players set #omegaflowey.soul.4.row.1 omegaflowey.soul.indicator.bullets.total 0
-
-scoreboard players set #omegaflowey.soul.4.word.shake_frame_idx omegaflowey.soul.clock.animation -1
-
 # Store this UUID to a global storage for later reference
 function gu:generate
 data modify storage omegaflowey:soul.4 executor_uuid set from storage gu:main out
