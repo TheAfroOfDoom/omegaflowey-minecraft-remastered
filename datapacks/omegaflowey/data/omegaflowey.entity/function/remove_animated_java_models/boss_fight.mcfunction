@@ -28,6 +28,9 @@ function animated_java:omegaflowey_soul_0_bandaid/remove/all
 function animated_java:omegaflowey_soul_0_sword/remove/all
 function animated_java:omegaflowey_soul_1_glove/remove/all
 function animated_java:omegaflowey_soul_1_thumb/remove/all
+# TODO add missing models here
+function animated_java:omegaflowey_soul_4_bullet/remove/all
+function animated_java:omegaflowey_soul_4_pan/remove/all
 function animated_java:omegaflowey_soul_5_bullet/remove/all
 function animated_java:omegaflowey_soul_5_crosshair/remove/all
 function animated_java:omegaflowey_soul_5_flower/remove/all
