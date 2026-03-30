@@ -1,1 +1,1 @@
-execute positioned ^-7.5 ^11.0 ^22.51 rotated ~ 0 run function omegaflowey.entity:soul/soul_4/indicator/summon
+execute positioned ^-9.5 ^13.0 ^34.7 rotated ~180 40 run function omegaflowey.entity:soul/soul_4/indicator/summon
