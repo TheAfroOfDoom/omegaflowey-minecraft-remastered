@@ -569,6 +569,226 @@
 			},
 			"type": "cube",
 			"uuid": "4f9d603a-a702-89f9-c78b-915d181606fc"
+		},
+		{
+			"name": "locator",
+			"position": [0, 14, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_4/bullet/initialize/locator\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "ac7623aa-dcad-38e4-bbfc-63c68b21ce58",
+			"type": "locator"
+		},
+		{
+			"name": "locator_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-7, 0, -7],
+			"to": [7, 14, 7],
+			"autouv": 1,
+			"color": 2,
+			"export": false,
+			"origin": [0, 6, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 14, 14]
+				},
+				"east": {
+					"uv": [0, 0, 14, 14]
+				},
+				"south": {
+					"uv": [0, 0, 14, 14]
+				},
+				"west": {
+					"uv": [0, 0, 14, 14]
+				},
+				"up": {
+					"uv": [0, 0, 14, 14]
+				},
+				"down": {
+					"uv": [0, 0, 14, 14]
+				}
+			},
+			"type": "cube",
+			"uuid": "683f0e76-049e-e409-8e3c-a48a675c549a"
+		},
+		{
+			"name": "locator_2_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [0, 7, -7],
+			"to": [14, 21, 7],
+			"autouv": 1,
+			"color": 2,
+			"export": false,
+			"origin": [7, 13, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 14, 14]
+				},
+				"east": {
+					"uv": [0, 0, 14, 14]
+				},
+				"south": {
+					"uv": [0, 0, 14, 14]
+				},
+				"west": {
+					"uv": [0, 0, 14, 14]
+				},
+				"up": {
+					"uv": [0, 0, 14, 14]
+				},
+				"down": {
+					"uv": [0, 0, 14, 14]
+				}
+			},
+			"type": "cube",
+			"uuid": "60b4bb21-1178-2954-0756-bf9d2eb04891"
+		},
+		{
+			"name": "locator2",
+			"position": [7, 13, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_4/bullet/initialize/locator\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "33f8e7b7-c30d-018b-f6b9-52c152484205",
+			"type": "locator"
+		},
+		{
+			"name": "locator_3_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-14, 7, -7],
+			"to": [0, 21, 7],
+			"autouv": 1,
+			"color": 2,
+			"export": false,
+			"origin": [-7, 13, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 14, 14]
+				},
+				"east": {
+					"uv": [0, 0, 14, 14]
+				},
+				"south": {
+					"uv": [0, 0, 14, 14]
+				},
+				"west": {
+					"uv": [0, 0, 14, 14]
+				},
+				"up": {
+					"uv": [0, 0, 14, 14]
+				},
+				"down": {
+					"uv": [0, 0, 14, 14]
+				}
+			},
+			"type": "cube",
+			"uuid": "744ea842-437f-9a81-61db-61bebe01ff0d"
+		},
+		{
+			"name": "locator3",
+			"position": [-7, 13, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_4/bullet/initialize/locator\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "0b1eebd3-f79a-adba-e403-906c025bbddc",
+			"type": "locator"
+		},
+		{
+			"name": "locator4",
+			"position": [0, 35, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:marker",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey.entity:soul/soul_4/bullet/initialize/locator\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "3a5f5406-b4b4-4526-ed4f-ca4317547b36",
+			"type": "locator"
+		},
+		{
+			"name": "locator_4_ref",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-7, 21, -7],
+			"to": [7, 35, 7],
+			"autouv": 1,
+			"color": 2,
+			"export": false,
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 14, 14]
+				},
+				"east": {
+					"uv": [0, 0, 14, 14]
+				},
+				"south": {
+					"uv": [0, 0, 14, 14]
+				},
+				"west": {
+					"uv": [0, 0, 14, 14]
+				},
+				"up": {
+					"uv": [0, 0, 14, 14]
+				},
+				"down": {
+					"uv": [0, 0, 14, 14]
+				}
+			},
+			"type": "cube",
+			"uuid": "f705648e-977c-87f2-081f-07718e0d80d4"
 		}
 	],
 	"outliner": [
@@ -588,7 +808,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
-			"selected": true,
+			"selected": false,
 			"children": [
 				"bc371a57-03d4-139a-963f-153cf4281899",
 				"d8188f17-236a-a5e7-bab0-8f47bb8c4dc3",
@@ -602,7 +822,15 @@
 				"6e6adefa-3c78-7088-7513-7df5c052e37b",
 				"d2eb17cf-3815-5bcc-2ba8-d5db313ce259",
 				"949c3b1a-bf2f-a7cb-c46c-f9e3037062b6",
-				"9f6005b3-27d3-88f9-53a8-8855a1204ec6"
+				"9f6005b3-27d3-88f9-53a8-8855a1204ec6",
+				"ac7623aa-dcad-38e4-bbfc-63c68b21ce58",
+				"683f0e76-049e-e409-8e3c-a48a675c549a",
+				"33f8e7b7-c30d-018b-f6b9-52c152484205",
+				"60b4bb21-1178-2954-0756-bf9d2eb04891",
+				"0b1eebd3-f79a-adba-e403-906c025bbddc",
+				"744ea842-437f-9a81-61db-61bebe01ff0d",
+				"3a5f5406-b4b4-4526-ed4f-ca4317547b36",
+				"f705648e-977c-87f2-081f-07718e0d80d4"
 			]
 		}
 	],
@@ -737,8 +965,7 @@
 							"time": 0.3,
 							"color": -1,
 							"interpolation": "step",
-							"easing": "linear",
-							"easingArgs": []
+							"easing": "linear"
 						},
 						{
 							"channel": "rotation",
