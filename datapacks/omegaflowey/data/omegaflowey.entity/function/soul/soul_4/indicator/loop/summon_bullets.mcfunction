@@ -1,5 +1,9 @@
 execute if score @s omegaflowey.soul.indicator.bullets.remaining matches ..0 run return 0
 
+# summon act button instead on a certain flip
+execute if score @s[tag=is_act_button_pan] omegaflowey.soul.indicator.bullets.total matches 11 run return run \
+  function omegaflowey.entity:soul/soul_4/indicator/loop/summon_act_button
+
 function omegaflowey.entity:soul/soul_4/indicator/loop/randomize_bullet_params
 
 execute \
