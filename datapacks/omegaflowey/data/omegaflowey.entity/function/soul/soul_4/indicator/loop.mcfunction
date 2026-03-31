@@ -9,6 +9,17 @@ execute if score @s omegaflowey.soul.clock.i matches -3 run \
 
 execute if score @s omegaflowey.soul.clock.i matches ..-1 run return 0
 
+# if this is the paused pan, switch to idle animation after some ticks
+scoreboard players operation @s[tag=pause_flipping] omegaflowey.math.0 = @s omegaflowey.soul.clock.i
+scoreboard players operation @s[tag=pause_flipping] omegaflowey.math.0 -= #omegaflowey.soul.4.act_button_pan_pause_clock_idx omegaflowey.soul.flag
+
+execute if score @s[tag=pause_flipping] omegaflowey.math.0 matches 10 run \
+  function omegaflowey.entity:soul/soul_4/indicator/switch_to_idle_animation
+
+# unpause the paused pan after some more ticks
+execute if score @s[tag=pause_flipping] omegaflowey.math.0 matches 60 run \
+  function omegaflowey.entity:soul/soul_4/indicator/unpause
+
 # summon clump of bullets every N ticks
 scoreboard players operation @s omegaflowey.math.0 = @s omegaflowey.soul.clock.i
 scoreboard players operation @s omegaflowey.math.0 %= @s omegaflowey.soul.indicator.rate
