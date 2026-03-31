@@ -808,7 +808,7 @@
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
-			"selected": true,
+			"selected": false,
 			"children": [
 				"bc371a57-03d4-139a-963f-153cf4281899",
 				"d8188f17-236a-a5e7-bab0-8f47bb8c4dc3",
@@ -892,6 +892,64 @@
 			"uuid": "673a568a-6d7e-a609-1a54-578abae715aa",
 			"relative_path": "../../../textures/custom/soul/soul_4_fire.png",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAACxJREFUOE9j/P///38GCgDjMDaAkZERJWRwBRXOMBg1gIFhGIQBsdljGOQFAAVvV9Fpigs2AAAAAElFTkSuQmCC"
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\attacks\\blank.png",
+			"name": "blank.png",
+			"folder": "",
+			"namespace": "",
+			"id": "2",
+			"group": "",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"pbr_channel": "color",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": true,
+			"uuid": "f14a1ec8-16b7-9cf1-5918-b3b812912a52",
+			"relative_path": "../../../textures/custom/attacks/blank.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII="
+		},
+		{
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\healing_item_green.png",
+			"name": "healing_item_green.png",
+			"folder": "",
+			"namespace": "",
+			"id": "3",
+			"group": "",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"pbr_channel": "color",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": true,
+			"uuid": "71d8e442-3bf7-4c99-65d2-8406dfd651e5",
+			"relative_path": "../../../textures/custom/soul/healing_item_green.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZPjP+J+BAsA4agDDaBgwjIYBw7AIAwC4PCAB5G/sPwAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
@@ -903,7 +961,19 @@
 			"excluded_nodes": [],
 			"is_default": true
 		},
-		"list": []
+		"list": [
+			{
+				"name": "egg",
+				"display_name": "egg",
+				"uuid": "d2ea9183-def7-6a51-1bfa-21b5be09de7f",
+				"texture_map": {
+					"c54a58cc-c505-74ca-8ca2-6bf09bced355": "f14a1ec8-16b7-9cf1-5918-b3b812912a52",
+					"673a568a-6d7e-a609-1a54-578abae715aa": "f14a1ec8-16b7-9cf1-5918-b3b812912a52",
+					"f14a1ec8-16b7-9cf1-5918-b3b812912a52": "71d8e442-3bf7-4c99-65d2-8406dfd651e5"
+				},
+				"excluded_nodes": []
+			}
+		]
 	},
 	"animations": [
 		{
