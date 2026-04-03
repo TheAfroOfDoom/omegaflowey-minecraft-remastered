@@ -11,6 +11,7 @@ execute if score @s omegaflowey.boss-fight.attack.phase.i matches 4 run \
   function omegaflowey.entity:hostile/omega-flowey/attack/random/attack_phase/4
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 5 run \
   function omegaflowey.entity:hostile/omega-flowey/attack/random/attack_phase/5
+# TODO(302): if attack.phase.i >= 6 AND this is NOT the finale, it's a different attack pattern than just looping back to attack phase 0
 
 # Add tag
 tag @s add boss_fight.is_attacking

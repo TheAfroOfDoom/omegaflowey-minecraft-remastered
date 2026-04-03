@@ -15,6 +15,7 @@ const setInterpolationDurationZeroAllFrames = (rootDir) => {
     ['omegaflowey_soul', 'omegaflowey_shake'],
     ['omegaflowey_soul_3_word_8', 'omegaflowey_shake'],
     ['omegaflowey_soul_3_word_9', 'omegaflowey_shake'],
+    ['omegaflowey_soul_4_bullet', 'omegaflowey_idle'],
   ];
 
   for (const [namespace, animation] of stepAnimations) {
