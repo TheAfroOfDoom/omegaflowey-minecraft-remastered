@@ -134,7 +134,7 @@ const getSummitDatapackPaths = () => {
       'animated_java/tags/function/',
       'daylight_cycle',
       'minecraft',
-      'omegaflowey.admin/function/',
+      'omegaflowey/function/admin/',
       ...entityPaths,
       'omegaflowey.main/function/',
       'omegaflowey.main/tags/',

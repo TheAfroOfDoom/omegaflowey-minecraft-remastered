@@ -9,7 +9,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:set_admin" \
+          "value": "/function omegaflowey:admin/set_admin" \
         } \
       }, \
       ": sets the current player as an omegaflowey admin (they will see dev/error logs)", \
@@ -19,7 +19,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:remove_admin" \
+          "value": "/function omegaflowey:admin/remove_admin" \
         } \
       }, \
       ": removes omegaflowey admin tag from current player (use `execute as`)", \
@@ -31,7 +31,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:set_active_player" \
+          "value": "/function omegaflowey:admin/set_active_player" \
         } \
       }, \
       ": sets the active bossfight player as the current player (so attacks will target them)", \
@@ -41,7 +41,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:unset_active_player" \
+          "value": "/function omegaflowey:admin/unset_active_player" \
         } \
       }, \
       ": unsets the active bossfight player tag from the current player", \
@@ -54,7 +54,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:attack/bomb" \
+          "value": "/function omegaflowey:admin/attack/bomb" \
         } \
       }, \
       { \
@@ -62,7 +62,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:attack/dentata-snakes" \
+          "value": "/function omegaflowey:admin/attack/dentata-snakes" \
         } \
       }, \
       { \
@@ -70,7 +70,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:attack/finger-guns" \
+          "value": "/function omegaflowey:admin/attack/finger-guns" \
         } \
       }, \
       "\\n", \
@@ -80,7 +80,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:attack/friendliness-pellets" \
+          "value": "/function omegaflowey:admin/attack/friendliness-pellets" \
         } \
       }, \
       { \
@@ -88,7 +88,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:attack/homing-vines" \
+          "value": "/function omegaflowey:admin/attack/homing-vines" \
         } \
       }, \
       "\\n", \
@@ -98,7 +98,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:attack/x-bullets-lower" \
+          "value": "/function omegaflowey:admin/attack/x-bullets-lower" \
         } \
       }, \
       { \
@@ -106,7 +106,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:attack/x-bullets-upper" \
+          "value": "/function omegaflowey:admin/attack/x-bullets-upper" \
         } \
       }, \
       "\\n", \
@@ -118,7 +118,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:soul/5" \
+          "value": "/function omegaflowey:admin/soul/5" \
         } \
       }, \
       "\\n", \
@@ -129,7 +129,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:bossfight/join" \
+          "value": "/function omegaflowey:admin/bossfight/join" \
         } \
       }, \
       ": joins the bossfight queue", \
@@ -139,7 +139,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:bossfight/stop" \
+          "value": "/function omegaflowey:admin/bossfight/stop" \
         } \
       }, \
       ": stops the bossfight", \
@@ -151,7 +151,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:give/reward_hat" \
+          "value": "/function omegaflowey:admin/give/reward_hat" \
         } \
       }, \
       ": gives the yellow default reward hat item", \
@@ -161,7 +161,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:give/reward_hat_low_hits" \
+          "value": "/function omegaflowey:admin/give/reward_hat_low_hits" \
         } \
       }, \
       ": gives the low-hits cyan reward hat item", \
@@ -173,7 +173,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:summon/flowey_model" \
+          "value": "/function omegaflowey:admin/summon/flowey_model" \
         } \
       }, \
       ": summons the Omega Flowey model in the bossfight arena", \
@@ -183,7 +183,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:summon/decorations" \
+          "value": "/function omegaflowey:admin/summon/decorations" \
         } \
       }, \
       ": summons the Omega Flowey booth\'s decorations", \
@@ -195,7 +195,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:kill/all" \
+          "value": "/function omegaflowey:admin/kill/all" \
         } \
       }, \
       ": kills all omegaflowey entities and actively running logic", \
@@ -207,7 +207,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:kill/decorations" \
+          "value": "/function omegaflowey:admin/kill/decorations" \
         } \
       }, \
       ": kills all decorative AJ models and display entities", \
@@ -217,7 +217,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:kill/bossfight" \
+          "value": "/function omegaflowey:admin/kill/bossfight" \
         } \
       }, \
       ": ends the bossfight and kills related entities (if active)", \
@@ -227,7 +227,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:kill/flowey_model" \
+          "value": "/function omegaflowey:admin/kill/flowey_model" \
         } \
       }, \
       ": kills all Omega Flowey models in the bossfight arena (not the bossfight itself)", \
@@ -237,7 +237,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:kill/petalpipes" \
+          "value": "/function omegaflowey:admin/kill/petalpipes" \
         } \
       }, \
       ": kills the performance-heavy AJ petal pipe models", \
@@ -247,7 +247,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:kill/queue" \
+          "value": "/function omegaflowey:admin/kill/queue" \
         } \
       }, \
       ": resets the bossfight player queue", \
@@ -258,7 +258,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:queue/enable" \
+          "value": "/function omegaflowey:admin/queue/enable" \
         } \
       }, \
       ": enables the join queue buttons and shows their text", \
@@ -268,7 +268,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:queue/disable" \
+          "value": "/function omegaflowey:admin/queue/disable" \
         } \
       }, \
       ": disables the join queue buttons and hides their text", \
@@ -280,7 +280,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:death_message/set_global" \
+          "value": "/function omegaflowey:admin/death_message/set_global" \
         } \
       }, \
       " ", \
@@ -289,7 +289,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.admin:death_message/set_local" \
+          "value": "/function omegaflowey:admin/death_message/set_local" \
         } \
       }, \
       "\\n", \
