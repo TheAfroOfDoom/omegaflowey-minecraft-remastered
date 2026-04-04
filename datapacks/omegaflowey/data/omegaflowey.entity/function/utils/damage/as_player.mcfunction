@@ -1,7 +1,7 @@
 $data modify storage omegaflowey:telemetry temp.data set value { d: $(damage) }
-function omegaflowey.main:telemetry/data/minify_damage_source with storage omegaflowey:utils.damage
-function omegaflowey.main:telemetry/data/active_player/gamemode with storage omegaflowey:bossfight
-function omegaflowey.main:telemetry/bossfight/tag/instant { name: "player.damage" }
+function omegaflowey:main/telemetry/data/minify_damage_source with storage omegaflowey:utils.damage
+function omegaflowey:main/telemetry/data/active_player/gamemode with storage omegaflowey:bossfight
+function omegaflowey:main/telemetry/bossfight/tag/instant { name: "player.damage" }
 
 # If player is going to die to this hit, disable `showDeathMessages` temporarily and display a custom death message
 scoreboard players set #omegaflowey.bossfight.player_died omegaflowey.global.flag 0
@@ -36,7 +36,7 @@ scoreboard players add #omegaflowey.bossfight.player_hit_count omegaflowey.globa
 scoreboard players set #omegaflowey.bossfight.player_is_damage_immune omegaflowey.global.flag 1
 
 # TODO(266): vanilla map active player display
-# schedule function omegaflowey.main:summit/room/cave/active_player_health_display/scheduled 2t append
+# schedule function omegaflowey:main/summit/room/cave/active_player_health_display/scheduled 2t append
 
 # Reset damage immunity after 0.5s
 # https://minecraft.wiki/w/Damage#Immunity

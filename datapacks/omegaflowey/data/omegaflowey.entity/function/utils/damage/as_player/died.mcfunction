@@ -3,7 +3,7 @@
 function omegaflowey:entity/utils/damage/as_player/died/show_death_message
 
 # Run outside tvscreen death animation
-function omegaflowey.main:summit/room/outside/setup/tv_screen/death_animation with storage omegaflowey:decorative
+function omegaflowey:main/summit/room/outside/setup/tv_screen/death_animation with storage omegaflowey:decorative
 
 # Re-enable `showDeathMessages` if it was enabled previously
 execute if score @s omegaflowey.math.0 matches 1 run gamerule showDeathMessages true

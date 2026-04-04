@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/bossfight/tag/start { name: "cutscene.intro" }
+function omegaflowey:main/telemetry/bossfight/tag/start { name: "cutscene.intro" }
 
 # Summon and animate Omega Flowey entity
 function omegaflowey:entity/directorial/boss_fight/summit/origin/at { \

@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/bossfight/tag/end { name: "cutscene.intro.laugh" }
+function omegaflowey:main/telemetry/bossfight/tag/end { name: "cutscene.intro.laugh" }
 
 data modify storage omegaflowey:bossfight temp set value { duration: 1 }
 execute store result storage omegaflowey:bossfight temp.to_frame int 1 run scoreboard players get @s aj.omegaflowey_nose_move_slow_shake.frame

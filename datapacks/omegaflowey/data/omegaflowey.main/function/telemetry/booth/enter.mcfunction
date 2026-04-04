@@ -5,4 +5,4 @@ scoreboard players add #omegaflowey.telemetry.next_player_id omegaflowey.global.
 
 function gu:generate
 execute store result storage omegaflowey:telemetry temp.i int 1 run scoreboard players get @s omegaflowey.player.telemetry.id
-function omegaflowey.main:telemetry/booth/enter/macro with storage omegaflowey:telemetry temp
+function omegaflowey:main/telemetry/booth/enter/macro with storage omegaflowey:telemetry temp

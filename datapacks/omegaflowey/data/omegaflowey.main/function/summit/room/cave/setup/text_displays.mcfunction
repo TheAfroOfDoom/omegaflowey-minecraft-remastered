@@ -84,7 +84,7 @@ execute as @e[ \
 data modify storage omegaflowey:bossfight active_player_health_display_uuid set from storage gu:main out
 
 # Player name display updates both the name (+ skull) and the health counter
-function omegaflowey.main:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
+function omegaflowey:main/summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 
 scoreboard players set #omegaflowey.bossfight.queue_disabled omegaflowey.global.flag 0
 summon minecraft:text_display -137.5 43.5 42.5 { \
@@ -223,7 +223,7 @@ summon minecraft:text_display -139.99 43.3125 39.0 { \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
-function omegaflowey.main:summit/room/cave/player_queue_counter/update_value
+function omegaflowey:main/summit/room/cave/player_queue_counter/update_value
 
 summon minecraft:text_display -127.0 43.0 43.99 { \
   Tags: [ \

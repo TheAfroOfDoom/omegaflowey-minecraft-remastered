@@ -299,7 +299,7 @@
         "color": "yellow", \
         "clickEvent": { \
           "action": "suggest_command", \
-          "value": "/function omegaflowey.main:setup" \
+          "value": "/function omegaflowey:main/setup" \
         } \
       }, \
       ": re-runs the setup function that normally runs on `/reload`" \

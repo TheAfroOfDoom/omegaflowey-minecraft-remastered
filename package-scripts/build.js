@@ -136,14 +136,14 @@ const getSummitDatapackPaths = () => {
       'minecraft',
       'omegaflowey/function/admin/',
       ...entityPaths,
-      'omegaflowey.main/function/',
-      'omegaflowey.main/tags/',
+      'omegaflowey/function/main/',
+      'omegaflowey/tags/main/',
       ...utilsPaths,
       'summit/',
     ]),
   ]);
   const removeResetFunction = async ({ compiledPath }) => {
-    const resetFunctionFile = `${compiledPath}/datapacks/omegaflowey/data/omegaflowey.main/function/reset.mcfunction`;
+    const resetFunctionFile = `${compiledPath}/datapacks/omegaflowey/data/omegaflowey/function/main/reset.mcfunction`;
     await rimraf(resetFunctionFile);
   };
   postProcessors.push(removeResetFunction);

@@ -3,4 +3,4 @@ function omegaflowey.utils:log { text_component: [ \
   { "text": " disabled the JOIN QUEUE buttons ", "color": "yellow" } \
 ]}
 
-function omegaflowey.main:summit/room/cave/setup/text_displays/join_queue/disable
+function omegaflowey:main/summit/room/cave/setup/text_displays/join_queue/disable

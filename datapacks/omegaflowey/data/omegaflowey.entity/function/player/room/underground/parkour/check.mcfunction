@@ -50,7 +50,7 @@ execute if entity @s[tag=omegaflowey.player.room.is_within.parkour.south_wall] r
 # parkour.south_glow_vines
 execute \
   if entity @s[x=-108.0, dx=1.0, y=44.0, dy=8.0, z=39.0, dz=2.0] \
-  if block ~ ~ ~ #omegaflowey.main:parkour/vines \
+  if block ~ ~ ~ #omegaflowey:main/parkour/vines \
   run tag @s add omegaflowey.player.room.is_within.parkour.south_glow_vines
 
 execute if entity @s[tag=!omegaflowey.player.room.parkour.south_glow_vines, tag=omegaflowey.player.room.is_within.parkour.south_glow_vines] run \
@@ -63,7 +63,7 @@ execute if entity @s[tag=omegaflowey.player.room.is_within.parkour.south_glow_vi
 # parkour.final_vines
 execute \
   if entity @s[x=-105.0, dx=1.0, y=45.0, dy=7.0, z=37.0, dz=1.0] \
-  if block ~ ~ ~ #omegaflowey.main:parkour/vines \
+  if block ~ ~ ~ #omegaflowey:main/parkour/vines \
   run tag @s add omegaflowey.player.room.is_within.parkour.final_vines
 
 execute if entity @s[tag=!omegaflowey.player.room.parkour.final_vines, tag=omegaflowey.player.room.is_within.parkour.final_vines] run \

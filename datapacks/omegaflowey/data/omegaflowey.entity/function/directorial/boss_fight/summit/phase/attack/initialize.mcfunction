@@ -1,7 +1,7 @@
 data modify storage omegaflowey:telemetry temp.data set value {}
 execute store result storage omegaflowey:telemetry temp.data.i int 1 run \
   scoreboard players get @s omegaflowey.boss-fight.attack.phase.i
-function omegaflowey.main:telemetry/bossfight/tag/start { name: "bossfight.phase.attack" }
+function omegaflowey:main/telemetry/bossfight/tag/start { name: "bossfight.phase.attack" }
 
 # End the bossfight (timeout) if a player has completed 4 attack rounds already to beat it somehow (stalling)
 # stop_reason 6 = fight timeout
