@@ -1,3 +1,4 @@
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_6.root] run data modify storage omegaflowey:soul.3 idx set value 6
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_7.root] run data modify storage omegaflowey:soul.3 idx set value 7
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_8.root] run data modify storage omegaflowey:soul.3 idx set value 8
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_9.root] run data modify storage omegaflowey:soul.3 idx set value 9
