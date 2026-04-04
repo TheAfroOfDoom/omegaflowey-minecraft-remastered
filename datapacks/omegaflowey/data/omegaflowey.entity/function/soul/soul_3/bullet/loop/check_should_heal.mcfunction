@@ -1,3 +1,7 @@
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_5.root] run return run \
+  function animated_java:omegaflowey_soul_3_word_5/as_all_locators { \
+    command: 'function omegaflowey.entity:soul/soul_3/bullet/loop/as_heal_locator' \
+  }
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_6.root] run return run \
   function animated_java:omegaflowey_soul_3_word_6/as_all_locators { \
     command: 'function omegaflowey.entity:soul/soul_3/bullet/loop/as_heal_locator' \
