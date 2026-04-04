@@ -10,14 +10,14 @@ scoreboard players set @s omegaflowey.math.0 -1400
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.origin.x omegaflowey.global.flag
 execute store result storage omegaflowey:utils.math.max a int 1 run scoreboard players get @s omegaflowey.math.0
 execute store result storage omegaflowey:utils.math.max b int 1 run scoreboard players get @s omegaflowey.attack.position.x
-function omegaflowey.utils:math/max
+function omegaflowey:utils/math/max
 execute store result score @s omegaflowey.attack.position.x run data get storage omegaflowey:utils.math.max out
 # upper-bound
 scoreboard players set @s omegaflowey.math.0 1400
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.origin.x omegaflowey.global.flag
 execute store result storage omegaflowey:utils.math.min a int 1 run scoreboard players get @s omegaflowey.math.0
 execute store result storage omegaflowey:utils.math.min b int 1 run scoreboard players get @s omegaflowey.attack.position.x
-function omegaflowey.utils:math/min
+function omegaflowey:utils/math/min
 execute store result score @s omegaflowey.attack.position.x run data get storage omegaflowey:utils.math.min out
 
 # Bound y-position so it doesn't aim the blinking lane too high, else
@@ -27,7 +27,7 @@ scoreboard players set @s omegaflowey.math.0 400
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.origin.y omegaflowey.global.flag
 execute store result storage omegaflowey:utils.math.min a int 1 run scoreboard players get @s omegaflowey.math.0
 execute store result storage omegaflowey:utils.math.min b int 1 run scoreboard players get @s omegaflowey.attack.position.y
-function omegaflowey.utils:math/min
+function omegaflowey:utils/math/min
 execute store result score @s omegaflowey.attack.position.y run data get storage omegaflowey:utils.math.min out
 
 # Randomize delta-z-position of indicator at (z: omegaflowey.player.Position.z, dx: [-1.00..1.00])
@@ -42,14 +42,14 @@ scoreboard players set @s omegaflowey.math.0 950
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
 execute store result storage omegaflowey:utils.math.max a int 1 run scoreboard players get @s omegaflowey.math.0
 execute store result storage omegaflowey:utils.math.max b int 1 run scoreboard players get @s omegaflowey.attack.position.z
-function omegaflowey.utils:math/max
+function omegaflowey:utils/math/max
 execute store result score @s omegaflowey.attack.position.z run data get storage omegaflowey:utils.math.max out
 # upper-bound
 scoreboard players set @s omegaflowey.math.0 3050
 scoreboard players operation @s omegaflowey.math.0 += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
 execute store result storage omegaflowey:utils.math.min a int 1 run scoreboard players get @s omegaflowey.math.0
 execute store result storage omegaflowey:utils.math.min b int 1 run scoreboard players get @s omegaflowey.attack.position.z
-function omegaflowey.utils:math/min
+function omegaflowey:utils/math/min
 execute store result score @s omegaflowey.attack.position.z run data get storage omegaflowey:utils.math.min out
 
 # Store new position to NBT

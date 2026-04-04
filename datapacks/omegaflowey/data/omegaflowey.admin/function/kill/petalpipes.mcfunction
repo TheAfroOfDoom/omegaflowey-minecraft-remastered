@@ -1,4 +1,4 @@
-function omegaflowey.utils:log { text_component: [ \
+function omegaflowey:utils/log { text_component: [ \
   { "selector": "@s", "color": "gold" }, \
   { "text": " killed the petal pipe models", "color": "yellow" } \
 ]}

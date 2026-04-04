@@ -1,4 +1,4 @@
-function omegaflowey.utils:log { text_component: [ \
+function omegaflowey:utils/log { text_component: [ \
   { "selector": "@s", "color": "gold" }, \
   { "text": " disabled the JOIN QUEUE buttons ", "color": "yellow" } \
 ]}

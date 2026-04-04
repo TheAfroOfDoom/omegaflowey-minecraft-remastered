@@ -1,6 +1,6 @@
 execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matches 1 run return 0
 
-$execute unless entity @s[type=player] run return run function omegaflowey.utils:error { error: [ \
+$execute unless entity @s[type=player] run return run function omegaflowey:utils/error { error: [ \
   { "text": "Booth tags must be added as a player entity (name: " }, \
   { "text": "$(name)", "color": "aqua" }, \
   { "text": ")" } \
@@ -12,7 +12,7 @@ execute unless score @s omegaflowey.player.telemetry.id matches 0.. run function
 data modify storage omegaflowey:telemetry temp.booth_next set value {}
 
 $function omegaflowey:main/telemetry/booth/schema/get { n: "$(name)" }
-$execute unless data storage omegaflowey:telemetry temp.n run return run function omegaflowey.utils:error { error: [ \
+$execute unless data storage omegaflowey:telemetry temp.n run return run function omegaflowey:utils/error { error: [ \
   { "text": "Name not found in ", "color": "yellow" }, \
   { "text": "booth ", "color": "green" }, \
   { "text": "schema: ", "color": "yellow" }, \
