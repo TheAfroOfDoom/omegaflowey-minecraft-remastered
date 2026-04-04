@@ -5,7 +5,7 @@ execute store result score @s omegaflowey.attack.position.x run data get entity 
 execute store result score @s omegaflowey.attack.position.y run data get entity @s Pos[1] 100
 execute store result score @s omegaflowey.attack.position.z run data get entity @s Pos[2] 100
 
-function omegaflowey.entity:utils/face_closest_player
+function omegaflowey:entity/utils/face_closest_player
 
 execute store result score @s omegaflowey.attack.indicator.yaw run data get entity @s Rotation[0]
 execute store result score @s omegaflowey.attack.theta run data get entity @s Rotation[1]

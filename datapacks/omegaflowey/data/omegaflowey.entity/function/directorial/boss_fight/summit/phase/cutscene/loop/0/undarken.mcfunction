@@ -8,7 +8,7 @@ execute as @e[ \
   tag=aj.global.root, \
   tag=!aj.omegaflowey_arena_box.root, \
   tag=omega-flowey-remastered \
-] run function omegaflowey.entity:hostile/omega-flowey/animate/intro/brighten/as_root
+] run function omegaflowey:entity/hostile/omega-flowey/animate/intro/brighten/as_root
 
 $execute as $(arena_box_uuid) run function animated_java:omegaflowey_arena_box/variants/default/apply
 

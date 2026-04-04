@@ -1,1 +1,1 @@
-function omegaflowey.entity:hostile/omega-flowey/attack/dentata-snakes/start
+function omegaflowey:entity/hostile/omega-flowey/attack/dentata-snakes/start

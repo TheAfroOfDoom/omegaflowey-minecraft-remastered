@@ -1,4 +1,4 @@
-function omegaflowey.entity:directorial/boss_fight/shared/player/set_active_player
+function omegaflowey:entity/directorial/boss_fight/shared/player/set_active_player
 
 execute at @s run playsound omega-flowey:cutscene.intro.battle_start_end ambient @s ~ ~ ~ 5
 

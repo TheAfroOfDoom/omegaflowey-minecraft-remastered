@@ -6,9 +6,9 @@ $execute \
   positioned ~ ~-0.5 ~ \
   if entity @a[distance=..0.7, tag=omegaflowey.player.fighting_flowey] \
   as $(soul_act_button_uuid) run return run \
-  function omegaflowey.entity:soul/soul_2/act_button/touch with storage omegaflowey:soul.2
+  function omegaflowey:entity/soul/soul_2/act_button/touch with storage omegaflowey:soul.2
 $execute \
   positioned ~ ~0.5 ~ \
   if entity @a[distance=..0.7, tag=omegaflowey.player.fighting_flowey] \
   as $(soul_act_button_uuid) run return run \
-  function omegaflowey.entity:soul/soul_2/act_button/touch with storage omegaflowey:soul.2
+  function omegaflowey:entity/soul/soul_2/act_button/touch with storage omegaflowey:soul.2

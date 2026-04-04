@@ -1,6 +1,6 @@
 ## The active player died after being damaged by a Flowey attack
 
-function omegaflowey.entity:utils/damage/as_player/died/show_death_message
+function omegaflowey:entity/utils/damage/as_player/died/show_death_message
 
 # Run outside tvscreen death animation
 function omegaflowey.main:summit/room/outside/setup/tv_screen/death_animation with storage omegaflowey:decorative

@@ -14,4 +14,4 @@
 execute \
   positioned ~-2.0 ~-0.375 ~-2.0 \
   as @a[dx=3.0, dy=0, dz=3.0, tag=omegaflowey.player.fighting_flowey] at @s run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/bullet/hitbox/loop/as_intersected_player
+  function omegaflowey:entity/hostile/omega-flowey/attack/flamethrower/bullet/hitbox/loop/as_intersected_player

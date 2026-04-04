@@ -4,7 +4,7 @@ scoreboard players reset #omegaflowey.attack.random.chosen_attack_id omegaflowey
 
 scoreboard players set #omegaflowey.attack.random.retry_idx omegaflowey.attack.flag -1
 
-function omegaflowey.entity:hostile/omega-flowey/attack/random/retry
+function omegaflowey:entity/hostile/omega-flowey/attack/random/retry
 
 # Reset weights used
-function omegaflowey.entity:hostile/omega-flowey/attack/random/reset_scores
+function omegaflowey:entity/hostile/omega-flowey/attack/random/reset_scores

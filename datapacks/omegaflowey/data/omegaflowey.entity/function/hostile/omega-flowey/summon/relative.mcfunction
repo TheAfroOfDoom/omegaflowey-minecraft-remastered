@@ -1,4 +1,4 @@
-function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_models with storage omegaflowey:bossfight
+function omegaflowey:entity/hostile/omega-flowey/summon/remove_preexisting_models with storage omegaflowey:bossfight
 
 ## Arm vines
 # Right arm vine
@@ -48,7 +48,7 @@ execute positioned ^ ^ ^ rotated ~ ~10 run function animated_java:omegaflowey_no
 
 ## TV-screen
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 1
-# LINK: /omegaflowey.entity:hostile/omega-flowey/summon/initialize/tv_screen.mcfunction
+# LINK: /omegaflowey:entity/hostile/omega-flowey/summon/initialize/tv_screen.mcfunction
 execute unless score #omegaflowey.bossfight.skip_resummon_tvscreen omegaflowey.global.flag matches 1 \
   positioned ^ ^12.5 ^7.5 rotated ~ ~45 run function animated_java:omegaflowey_tv_screen/summon { args: {} }
 

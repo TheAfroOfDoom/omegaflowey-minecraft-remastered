@@ -6,17 +6,17 @@ $execute \
   run scoreboard players set #omegaflowey.attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag 0
 
 # throw an error if no model exists
-execute if score #omegaflowey.attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "lower" }
+execute if score #omegaflowey.attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag matches 0 run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "lower" }
 execute if score #omegaflowey.attack.x-bullets-lower.lower_eye_exists omegaflowey.attack.flag matches 0 run return fail
 
 function omegaflowey.main:telemetry/bossfight/tag/start { name: "attack.x_bullets_lower" }
 
-function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initialize
+function omegaflowey:entity/hostile/omega-flowey/attack/shared/executor/initialize
 
 data modify entity @s CustomName set value '"X-Bullets-Lower Executor"'
 
-$execute at $(attack_lower_eye_right_locator_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
-$execute at $(attack_lower_eye_left_locator_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
+$execute at $(attack_lower_eye_right_locator_uuid) run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
+$execute at $(attack_lower_eye_left_locator_uuid) run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
 
 $execute as $(attack_lower_eye_right_uuid) run function animated_java:omegaflowey_lower_eye/variants/white/apply
 $execute as $(attack_lower_eye_left_uuid) run function animated_java:omegaflowey_lower_eye/variants/white/apply

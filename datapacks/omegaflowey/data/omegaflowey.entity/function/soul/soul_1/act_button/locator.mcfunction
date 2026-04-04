@@ -5,4 +5,4 @@ execute if score #omegaflowey.soul.1.touched omegaflowey.soul.flag matches 1 run
 $execute \
   if entity @a[dx=0, dy=0, dz=0, tag=omegaflowey.player.fighting_flowey] \
   as $(soul_act_button_uuid) run \
-  function omegaflowey.entity:soul/soul_1/act_button/touch with storage omegaflowey:soul.1
+  function omegaflowey:entity/soul/soul_1/act_button/touch with storage omegaflowey:soul.1

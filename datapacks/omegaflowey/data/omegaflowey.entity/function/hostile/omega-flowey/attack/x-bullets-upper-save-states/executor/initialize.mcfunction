@@ -1,4 +1,4 @@
-function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/initialize \
+function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper/executor/initialize \
   with storage omegaflowey:bossfight
 
 scoreboard players operation @s omegaflowey.attack.executor.clock.length = #omegaflowey.attack.x-bullets-upper-save-states omegaflowey.attack.executor.clock.length

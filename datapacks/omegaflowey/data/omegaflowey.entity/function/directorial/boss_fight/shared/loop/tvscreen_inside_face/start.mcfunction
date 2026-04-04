@@ -7,6 +7,6 @@ scoreboard players set #omegaflowey.tvscreen_inside_face.sequence_idx omegaflowe
 scoreboard players set #omegaflowey.tvscreen_inside_face.frame_duration omegaflowey.math.0 0
 
 $execute at $(bossfight_tvscreen_uuid) run \
-  function omegaflowey.entity:shared/run_as_active_player_or_spectator { \
+  function omegaflowey:entity/shared/run_as_active_player_or_spectator { \
     'command': 'playsound omega-flowey:ambient ambient @s ~ ~ ~ 5 0.6' \
   }

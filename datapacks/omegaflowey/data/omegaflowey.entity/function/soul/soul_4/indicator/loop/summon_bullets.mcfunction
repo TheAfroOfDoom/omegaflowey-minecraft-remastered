@@ -2,26 +2,26 @@ execute if score @s omegaflowey.soul.indicator.bullets.remaining matches ..0 run
 
 # summon act button instead on a certain flip
 execute if score @s[tag=is_act_button_pan] omegaflowey.soul.indicator.bullets.total matches 11 run return run \
-  function omegaflowey.entity:soul/soul_4/indicator/loop/summon_act_button
+  function omegaflowey:entity/soul/soul_4/indicator/loop/summon_act_button
 
-function omegaflowey.entity:soul/soul_4/indicator/loop/randomize_bullet_params
+function omegaflowey:entity/soul/soul_4/indicator/loop/randomize_bullet_params
 
 execute \
   if score @s omegaflowey.soul.indicator.bullets.remaining matches 1 \
   positioned ^ ^1 ^ run \
-  function omegaflowey.entity:soul/soul_4/bullet/summon with storage omegaflowey:soul.4
+  function omegaflowey:entity/soul/soul_4/bullet/summon with storage omegaflowey:soul.4
 execute \
   if score @s omegaflowey.soul.indicator.bullets.remaining matches 2 \
   positioned ^0.2 ^0.5 ^0.4 run \
-  function omegaflowey.entity:soul/soul_4/bullet/summon with storage omegaflowey:soul.4
+  function omegaflowey:entity/soul/soul_4/bullet/summon with storage omegaflowey:soul.4
 execute \
   if score @s omegaflowey.soul.indicator.bullets.remaining matches 3 \
   positioned ^0.4 ^0.5 ^0.2 run \
-  function omegaflowey.entity:soul/soul_4/bullet/summon with storage omegaflowey:soul.4
+  function omegaflowey:entity/soul/soul_4/bullet/summon with storage omegaflowey:soul.4
 execute \
   if score @s omegaflowey.soul.indicator.bullets.remaining matches 4 \
   positioned ^0.3 ^0.5 ^0.3 run \
-  function omegaflowey.entity:soul/soul_4/bullet/summon with storage omegaflowey:soul.4
+  function omegaflowey:entity/soul/soul_4/bullet/summon with storage omegaflowey:soul.4
 
 scoreboard players remove @s omegaflowey.soul.indicator.bullets.remaining 1
-function omegaflowey.entity:soul/soul_4/indicator/loop/summon_bullets
+function omegaflowey:entity/soul/soul_4/indicator/loop/summon_bullets

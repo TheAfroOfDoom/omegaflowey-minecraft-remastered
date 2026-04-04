@@ -27,9 +27,9 @@ $execute unless entity $(boss_fight_uuid) run damage @s $(damage) minecraft:mob_
 $execute if entity $(boss_fight_uuid) run damage @s $(damage) minecraft:mob_projectile by $(boss_fight_uuid)
 
 # Play custom damage sound
-function omegaflowey.entity:shared/run_as_active_player_or_spectator { \
+function omegaflowey:entity/shared/run_as_active_player_or_spectator { \
   command: 'execute if entity @s[gamemode=!creative, gamemode=!spectator] run \
-    function omegaflowey.entity:utils/damage/as_player/as_players' \
+    function omegaflowey:entity/utils/damage/as_player/as_players' \
 }
 
 scoreboard players add #omegaflowey.bossfight.player_hit_count omegaflowey.global.flag 1
@@ -40,9 +40,9 @@ scoreboard players set #omegaflowey.bossfight.player_is_damage_immune omegaflowe
 
 # Reset damage immunity after 0.5s
 # https://minecraft.wiki/w/Damage#Immunity
-schedule function omegaflowey.entity:utils/damage/reset_immunity_flag 10t replace
+schedule function omegaflowey:entity/utils/damage/reset_immunity_flag 10t replace
 
 # Show custom death message
 # TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
 execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 run \
-  function omegaflowey.entity:utils/damage/as_player/died
+  function omegaflowey:entity/utils/damage/as_player/died

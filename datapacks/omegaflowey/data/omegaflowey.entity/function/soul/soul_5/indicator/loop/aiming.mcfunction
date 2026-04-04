@@ -6,4 +6,4 @@ execute if score @s omegaflowey.soul.clock.i matches ..-1 run return 0
 scoreboard players operation @s omegaflowey.math.0 = @s omegaflowey.soul.clock.i
 scoreboard players operation @s omegaflowey.math.0 %= #omegaflowey.const.4 omegaflowey.math.const
 $execute if score @s omegaflowey.math.0 matches 0 at $(active_player_uuid) run \
-  function omegaflowey.entity:soul/soul_5/indicator/loop/aiming/next_crosshair
+  function omegaflowey:entity/soul/soul_5/indicator/loop/aiming/next_crosshair

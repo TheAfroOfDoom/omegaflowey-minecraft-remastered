@@ -1,11 +1,11 @@
-function omegaflowey.entity:hostile/omega-flowey/summon/initialize/shared
+function omegaflowey:entity/hostile/omega-flowey/summon/initialize/shared
 tag @s add omega-flowey-lower-eye
 
-execute on passengers if entity @s[tag=aj.global.bone] run function omegaflowey.entity:hostile/omega-flowey/summon/initialize/shared/bone
+execute on passengers if entity @s[tag=aj.global.bone] run function omegaflowey:entity/hostile/omega-flowey/summon/initialize/shared/bone
 
 function gu:generate
 
 execute if score #omegaflowey.summon.tag_variant omegaflowey.global.flag matches 1 run \
-  function omegaflowey.entity:hostile/omega-flowey/summon/initialize/lower_eye/right
+  function omegaflowey:entity/hostile/omega-flowey/summon/initialize/lower_eye/right
 execute if score #omegaflowey.summon.tag_variant omegaflowey.global.flag matches 2 run \
-  function omegaflowey.entity:hostile/omega-flowey/summon/initialize/lower_eye/left
+  function omegaflowey:entity/hostile/omega-flowey/summon/initialize/lower_eye/left

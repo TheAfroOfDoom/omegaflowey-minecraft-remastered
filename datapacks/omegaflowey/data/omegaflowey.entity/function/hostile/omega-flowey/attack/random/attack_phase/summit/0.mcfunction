@@ -4,4 +4,4 @@ scoreboard players set #omegaflowey.attack.x-bullets-lower omegaflowey.attack.we
 scoreboard players set #omegaflowey.attack.x-bullets-upper omegaflowey.attack.weight 5
 
 # Run base `start` function
-function omegaflowey.entity:hostile/omega-flowey/attack/random/start
+function omegaflowey:entity/hostile/omega-flowey/attack/random/start

@@ -4,7 +4,7 @@
 # omegaflowey.math.0 = current yaw
 execute store result score @s omegaflowey.math.0 run data get entity @s Rotation[0] 100
 # omegaflowey.math.1 = yaw when facing crosshair
-function omegaflowey.entity:soul/soul_5/indicator/loop/shooting/rotate/marker/summon
+function omegaflowey:entity/soul/soul_5/indicator/loop/shooting/rotate/marker/summon
 execute store result score @s omegaflowey.math.1 run data get storage omegaflowey:soul.5.indicator yaw_to_crosshair
 
 # normalize yaw ranges (-180..180 => 0..360)
@@ -38,7 +38,7 @@ execute if entity @s[tag=rotate_other_direction] run scoreboard players operatio
 execute if entity @s[tag=is_negative_diff] run scoreboard players operation @s omegaflowey.math.1 *= #omegaflowey.const.-1 omegaflowey.math.const
 
 # stop rotating + shoot a bullet if we are facing the crosshair (eps = 4.6 degrees, just over the 9 degree rotational velocity)
-execute if score @s omegaflowey.math.1 matches -460..460 run function omegaflowey.entity:soul/soul_5/indicator/loop/shooting/shoot_bullet with storage omegaflowey:soul.5.indicator
+execute if score @s omegaflowey.math.1 matches -460..460 run function omegaflowey:entity/soul/soul_5/indicator/loop/shooting/shoot_bullet with storage omegaflowey:soul.5.indicator
 execute if score @s omegaflowey.math.1 matches -460..460 run return 0
 
 # ---

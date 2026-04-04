@@ -4,4 +4,4 @@ tag @s remove pause_flipping
 scoreboard players add @s aj.omegaflowey_idle.frame 1
 scoreboard players add @s omegaflowey.soul.clock.i 1
 
-function omegaflowey.entity:soul/soul_4/indicator/switch_to_flip_animation
+function omegaflowey:entity/soul/soul_4/indicator/switch_to_flip_animation

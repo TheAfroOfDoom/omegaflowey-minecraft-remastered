@@ -9,4 +9,4 @@ scoreboard players operation @s omegaflowey.math.0 *= #omegaflowey.const.-1 omeg
 execute store result storage omegaflowey:attack.homing-vines bullet_pitch float 0.01 run scoreboard players get @s omegaflowey.math.0
 
 # Summon bullet
-execute at @s run function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/indicator/loop/summon_bullet with storage omegaflowey:attack.homing-vines
+execute at @s run function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines/indicator/loop/summon_bullet with storage omegaflowey:attack.homing-vines

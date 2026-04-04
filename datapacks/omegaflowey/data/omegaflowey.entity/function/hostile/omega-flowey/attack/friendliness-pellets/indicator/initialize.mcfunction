@@ -1,4 +1,4 @@
-function omegaflowey.entity:hostile/omega-flowey/attack/shared/indicator/initialize
+function omegaflowey:entity/hostile/omega-flowey/attack/shared/indicator/initialize
 
 data modify entity @s CustomName set value '"Friendliness-Pellets Indicator"'
 

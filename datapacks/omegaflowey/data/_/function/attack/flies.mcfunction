@@ -1,1 +1,1 @@
-function omegaflowey.entity:hostile/omega-flowey/attack/flies/start
+function omegaflowey:entity/hostile/omega-flowey/attack/flies/start

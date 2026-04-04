@@ -1,2 +1,2 @@
-function omegaflowey.entity:soul/shared/locator/initialize
+function omegaflowey:entity/soul/shared/locator/initialize
 tag @s add soul_3

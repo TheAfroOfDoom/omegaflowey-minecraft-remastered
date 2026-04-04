@@ -6,5 +6,5 @@ scoreboard players operation #omegaflowey.soul.2.healer_frame omegaflowey.soul.f
 execute store result entity @s data.yaw int 10 run random value 0..35
 execute store result entity @s data.pitch int 2 run random value -5..5
 
-function omegaflowey.entity:soul/soul_2/healer/summon with entity @s data
-function omegaflowey.entity:soul/soul_2/star/terminate
+function omegaflowey:entity/soul/soul_2/healer/summon with entity @s data
+function omegaflowey:entity/soul/soul_2/star/terminate

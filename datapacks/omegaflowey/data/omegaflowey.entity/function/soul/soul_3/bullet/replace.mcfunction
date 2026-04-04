@@ -14,4 +14,4 @@ execute if entity @s[tag=aj.omegaflowey_soul_3_word_12.root] run data modify sto
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_13.root] run data modify storage omegaflowey:soul.3 idx set value 13
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_14.root] run data modify storage omegaflowey:soul.3 idx set value 14
 
-function omegaflowey.entity:soul/soul_3/bullet/replace/macro with storage omegaflowey:soul.3
+function omegaflowey:entity/soul/soul_3/bullet/replace/macro with storage omegaflowey:soul.3

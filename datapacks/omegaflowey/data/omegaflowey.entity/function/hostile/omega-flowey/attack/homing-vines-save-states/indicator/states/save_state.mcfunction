@@ -6,7 +6,7 @@ data modify storage omegaflowey:attack.homing-vines-save-states current_state.sc
 ## Data used to re-summon this entity ordered by priority
 
 # Important functions/tags for later
-data modify storage omegaflowey:attack.homing-vines-save-states current_state.summon_function set value "omegaflowey.entity:hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/load_state/resummon"
+data modify storage omegaflowey:attack.homing-vines-save-states current_state.summon_function set value "omegaflowey:entity/hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/load_state/resummon"
 
 # Positional data
 data modify storage omegaflowey:attack.homing-vines-save-states current_state.pos_x set from entity @s Pos[0]
@@ -27,7 +27,7 @@ execute store result storage omegaflowey:attack.homing-vines-save-states current
 function gu:generate
 data modify storage omegaflowey:attack.homing-vines-save-states indicator_uuid set from storage gu:main out
 
-function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/save_state/check_for_blinking_lane with entity @s data
+function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/save_state/check_for_blinking_lane with entity @s data
 
 # Append this entity's saved_state to the executor's NBT list
 $data modify entity $(executor_uuid) data.saved_states append from storage omegaflowey:attack.homing-vines-save-states current_state

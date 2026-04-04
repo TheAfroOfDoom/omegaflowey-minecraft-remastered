@@ -3,23 +3,23 @@
 scoreboard players set @s omegaflowey.boss-fight.progress.clock.i -26
 scoreboard players set @s omegaflowey.boss-fight.progress.clock.total 27
 
-function omegaflowey.entity:directorial/boss_fight/shared/phase/soul/static with storage omegaflowey:bossfight
+function omegaflowey:entity/directorial/boss_fight/shared/phase/soul/static with storage omegaflowey:bossfight
 
 execute if score @s omegaflowey.boss-fight.progress.phase.i matches 3 run \
-  function omegaflowey.entity:directorial/boss_fight/vanilla/phase/soul/initialize/enable_soul_event_3_barriers
+  function omegaflowey:entity/directorial/boss_fight/vanilla/phase/soul/initialize/enable_soul_event_3_barriers
 
 scoreboard players operation \
   #omegaflowey.bossfight.progress.phase omegaflowey.boss-fight.progress.phase.i = \
   @s omegaflowey.boss-fight.progress.phase.i
 # Move players to soul arena
-function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
-  "execute at @s run function omegaflowey.entity:directorial/boss_fight/vanilla/phase/soul/initialize/as_player_move_to_soul_arena" \
+function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: \
+  "execute at @s run function omegaflowey:entity/directorial/boss_fight/vanilla/phase/soul/initialize/as_player_move_to_soul_arena" \
 }
 
 # Add tags
 tag @s add boss_fight.phase.soul
 
 # Delete main flowey models for performance reasons
-function omegaflowey.entity:hostile/omega-flowey/summon/remove_preexisting_models/except_tv_screen
+function omegaflowey:entity/hostile/omega-flowey/summon/remove_preexisting_models/except_tv_screen
 $execute as $(bossfight_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/remove/this
 $execute as $(soul_model_uuid) run function animated_java:omegaflowey_soul/remove/this

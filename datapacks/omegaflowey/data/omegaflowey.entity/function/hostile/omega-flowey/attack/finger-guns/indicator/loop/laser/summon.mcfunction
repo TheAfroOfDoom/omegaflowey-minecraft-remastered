@@ -1,5 +1,5 @@
 # Summon and initialize laser
-$function omegaflowey.entity:directorial/boss_fight/vanilla/origin/at/x { \
+$function omegaflowey:entity/directorial/boss_fight/vanilla/origin/at/x { \
   command: "execute positioned ~ ~0.5 $(z) rotated 90 0 run function animated_java:omegaflowey_finger_gun_laser/summon { args: {} }" \
 }
 data modify entity @s data.corresponding_laser_uuid set from storage gu:main out

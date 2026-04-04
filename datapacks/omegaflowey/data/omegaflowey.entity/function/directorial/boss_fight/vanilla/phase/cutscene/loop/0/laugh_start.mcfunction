@@ -1,4 +1,4 @@
-function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: "\
+function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: "\
   execute at @s run playsound omega-flowey:cutscene.intro.laugh ambient @s ~ ~ ~ 1 1\
 "}
 

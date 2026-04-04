@@ -10,12 +10,12 @@ execute \
 # Special exit logic if player enters the exit hallway
 execute if entity @s[tag=omegaflowey.player.room.underground, x=-131, dx=7, y=39, dy=11, z=12, dz=3] \
   run tag @s add omegaflowey.player.room.underground.exit_hall
-execute if entity @s[tag=omegaflowey.player.room.underground.exit_hall] run function omegaflowey.entity:player/room/underground/exit/hallway
+execute if entity @s[tag=omegaflowey.player.room.underground.exit_hall] run function omegaflowey:entity/player/room/underground/exit/hallway
 
 execute if entity @s[tag=!omegaflowey.player.room.underground, tag=omegaflowey.room.is_within.underground] run \
-  function omegaflowey.entity:player/room/underground/enter
+  function omegaflowey:entity/player/room/underground/enter
 execute if entity @s[tag=omegaflowey.player.room.underground, tag=!omegaflowey.room.is_within.underground] run \
-  function omegaflowey.entity:player/room/underground/exit
+  function omegaflowey:entity/player/room/underground/exit
 
 execute if entity @s[tag=!omegaflowey.player.room.underground] run return 0
 
@@ -24,5 +24,5 @@ execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matc
 
 # TAG_SUMMIT_HARDCODED_PARKOUR_FULL
 execute if entity @s[x=-122, dx=27, y=41, dy=14, z=31, dz=14] run return run \
-  function omegaflowey.entity:player/room/underground/parkour/check
-function omegaflowey.entity:player/room/underground/back_cave/check
+  function omegaflowey:entity/player/room/underground/parkour/check
+function omegaflowey:entity/player/room/underground/back_cave/check

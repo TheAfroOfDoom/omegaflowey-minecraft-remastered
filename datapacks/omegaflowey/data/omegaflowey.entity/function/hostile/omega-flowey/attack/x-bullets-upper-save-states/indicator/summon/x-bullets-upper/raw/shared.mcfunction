@@ -1,5 +1,5 @@
 # Summon indicator and _DON'T_ initialize
-function omegaflowey.entity:hostile/omega-flowey/attack/shared/indicator/initialize
+function omegaflowey:entity/hostile/omega-flowey/attack/shared/indicator/initialize
 
 data modify entity @s CustomName set value '"X-Bullets-Upper-Save-States X-Bullets-Upper Indicator"'
 

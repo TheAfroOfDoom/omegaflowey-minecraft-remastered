@@ -1,4 +1,4 @@
-function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
+function omegaflowey:entity/hostile/omega-flowey/attack/shared/bullet/initialize
 
 tag @s add flamethrower
 tag @s add is_falling

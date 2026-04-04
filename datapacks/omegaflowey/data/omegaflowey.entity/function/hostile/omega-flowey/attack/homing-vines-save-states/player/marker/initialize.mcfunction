@@ -7,7 +7,7 @@ rotate @s ~ ~
 data modify entity @s CustomName set value '"Homing-Vines-Save-States Player Marker"'
 
 # Add tags
-function omegaflowey.entity:hostile/omega-flowey/attack/shared/initialize
+function omegaflowey:entity/hostile/omega-flowey/attack/shared/initialize
 tag @s add player-marker
 tag @s add homing-vines-save-states
 tag @s add should-keep-original-entity

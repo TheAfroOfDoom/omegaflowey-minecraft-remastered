@@ -4,8 +4,8 @@ scoreboard players add @s omegaflowey.attack.clock.i 1
 execute if score @s omegaflowey.attack.clock.i matches ..-1 run return 0
 
 execute if score @s omegaflowey.attack.clock.i matches 50 run return run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/executor/unblock_next_attack with storage omegaflowey:bossfight
+  function omegaflowey:entity/hostile/omega-flowey/attack/flamethrower/executor/unblock_next_attack with storage omegaflowey:bossfight
 
 # Terminate
 execute if score @s omegaflowey.attack.clock.i = @s omegaflowey.attack.executor.clock.length run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/executor/terminate
+  function omegaflowey:entity/hostile/omega-flowey/attack/flamethrower/executor/terminate
