@@ -1,5 +1,5 @@
 ## Initializes the boss fight
-function omegaflowey.entity:directorial/boss_fight/shared/initialize
+function omegaflowey:entity/directorial/boss_fight/shared/initialize
 
 # Add tags
 tag @s add boss_fight.vanilla
@@ -14,4 +14,4 @@ scoreboard players set @s omegaflowey.boss-fight.progress.phase.total 6
 scoreboard players set #omegaflowey.bossfight.player_died omegaflowey.global.flag 0
 
 # Initialize first cutscene
-function omegaflowey.entity:directorial/boss_fight/vanilla/phase/cutscene/initialize
+function omegaflowey:entity/directorial/boss_fight/vanilla/phase/cutscene/initialize

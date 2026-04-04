@@ -18,4 +18,4 @@ scoreboard players set #omegaflowey.soul.2.star_2.z omegaflowey.soul.flag -10000
 scoreboard players set #omegaflowey.soul.2.star_3.z omegaflowey.soul.flag -10000
 scoreboard players set #omegaflowey.soul.2.star_4.z omegaflowey.soul.flag -10000
 
-function omegaflowey.entity:soul/soul_2/indicator/loop/next_row/stars/iterate
+function omegaflowey:entity/soul/soul_2/indicator/loop/next_row/stars/iterate

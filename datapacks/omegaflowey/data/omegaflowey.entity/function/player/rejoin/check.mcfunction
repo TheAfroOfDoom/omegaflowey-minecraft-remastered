@@ -6,4 +6,4 @@ execute if score @s omegaflowey.player.leave.current = @s omegaflowey.player.lea
 
 # otherwise they left the server and we should handle that accordingly
 scoreboard players operation @s omegaflowey.player.leave.previous = @s omegaflowey.player.leave.current
-function omegaflowey.entity:player/rejoin/check/success
+function omegaflowey:entity/player/rejoin/check/success

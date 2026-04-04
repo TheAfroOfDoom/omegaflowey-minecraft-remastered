@@ -34,4 +34,4 @@ execute as @e[ \
 
 scoreboard players set #omegaflowey.bossfight.queue_disabled omegaflowey.global.flag 1
 
-function omegaflowey.entity:directorial/boss_fight/summit/player/queue/reset
+function omegaflowey:entity/directorial/boss_fight/summit/player/queue/reset

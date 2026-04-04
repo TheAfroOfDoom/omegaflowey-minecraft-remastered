@@ -86,7 +86,7 @@ const getSummitDatapackPaths = () => {
   ]);
 
   const advancementPaths = prefixPaths(
-    'advancement/player_interacted_with_',
+    'advancement/entity/player_interacted_with_',
     suffixPaths(
       [
         'animated_java_link',
@@ -101,9 +101,9 @@ const getSummitDatapackPaths = () => {
     ),
   );
 
-  const entityPaths = prefixPaths('omegaflowey.entity/', [
+  const entityPaths = prefixPaths('omegaflowey/', [
     ...advancementPaths,
-    ...prefixPaths('function/', [
+    ...prefixPaths('function/entity/', [
       ...bossFightPaths,
       'decorative',
       'directorial/tick.mcfunction',

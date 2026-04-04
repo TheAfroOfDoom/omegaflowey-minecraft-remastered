@@ -4,4 +4,4 @@ data modify storage omegaflowey:attack.homing-vines-save-states root_player_uuid
 
 # Summon marker entity at current position/rotation to teleport to upon loading state
 execute summon minecraft:marker run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines-save-states/player/marker/initialize
+  function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines-save-states/player/marker/initialize

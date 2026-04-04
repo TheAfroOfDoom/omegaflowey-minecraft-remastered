@@ -1,1 +1,1 @@
-function omegaflowey.entity:reset_scores
+function omegaflowey:entity/reset_scores

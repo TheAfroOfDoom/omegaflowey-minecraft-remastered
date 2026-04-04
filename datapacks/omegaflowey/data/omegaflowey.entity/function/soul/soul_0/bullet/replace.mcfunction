@@ -4,6 +4,6 @@
 execute store result storage omegaflowey:soul.0 x float 0.01 run data get entity @s Pos[0] 100
 execute store result storage omegaflowey:soul.0 z float 0.01 run data get entity @s Pos[2] 100
 
-function omegaflowey.entity:soul/soul_0/act_button/summon with storage omegaflowey:soul.0
+function omegaflowey:entity/soul/soul_0/act_button/summon with storage omegaflowey:soul.0
 
-function omegaflowey.entity:soul/soul_0/bullet/terminate
+function omegaflowey:entity/soul/soul_0/bullet/terminate

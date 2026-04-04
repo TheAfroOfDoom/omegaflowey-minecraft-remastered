@@ -1,4 +1,4 @@
-function omegaflowey.entity:soul/shared/indicator/initialize
+function omegaflowey:entity/soul/shared/indicator/initialize
 tag @s add soul_2
 data merge entity @s { CustomName:'"Soul 2 Indicator"' }
 

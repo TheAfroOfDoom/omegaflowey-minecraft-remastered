@@ -1,5 +1,5 @@
 # Play static sound
-function omegaflowey.entity:shared/run_as_active_player_or_spectator { command: \
+function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: \
   'playsound omega-flowey:boss-fight.static ambient @s ~ ~ ~ 10' \
 }
 

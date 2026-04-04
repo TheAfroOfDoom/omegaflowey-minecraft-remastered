@@ -6,6 +6,6 @@ execute store result storage omegaflowey:soul.2 next_bullet_z float 0.01 run \
 scoreboard players add @s omegaflowey.soul.indicator.bullets.cumulative-total 1
 
 execute if score @s omegaflowey.soul.indicator.bullets.cumulative-total matches 41 run \
-  function omegaflowey.entity:soul/soul_2/act_button/summon with storage omegaflowey:soul.2
+  function omegaflowey:entity/soul/soul_2/act_button/summon with storage omegaflowey:soul.2
 execute unless score @s omegaflowey.soul.indicator.bullets.cumulative-total matches 41 run \
-  function omegaflowey.entity:soul/soul_2/bullet/summon with storage omegaflowey:soul.2
+  function omegaflowey:entity/soul/soul_2/bullet/summon with storage omegaflowey:soul.2

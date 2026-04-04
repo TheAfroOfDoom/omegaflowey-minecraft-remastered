@@ -1,4 +1,4 @@
-function omegaflowey.entity:soul/shared/healer/initialize
+function omegaflowey:entity/soul/shared/healer/initialize
 data modify entity @s CustomName set value '"Soul 1 Thumb"'
 tag @s add soul_1
 

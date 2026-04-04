@@ -1,1 +1,1 @@
-function omegaflowey.entity:soul/soul_0/start
+function omegaflowey:entity/soul/soul_0/start

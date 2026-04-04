@@ -4,4 +4,4 @@ execute store result entity @s data.z float 0.01 run scoreboard players get @s o
 execute store result entity @s data.yaw float 1 run scoreboard players get @s omegaflowey.attack.phi
 execute store result entity @s data.pitch float 1 run scoreboard players get @s omegaflowey.attack.theta
 
-function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/indicator/loop/summon_bullet with entity @s data
+function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper/indicator/loop/summon_bullet with entity @s data

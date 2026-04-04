@@ -6,17 +6,17 @@ $execute \
   run scoreboard players set #omegaflowey.attack.x-bullets-upper.upper_eye_exists omegaflowey.attack.flag 0
 
 # throw an error if no model exists
-execute if score #omegaflowey.attack.x-bullets-upper.upper_eye_exists omegaflowey.attack.flag matches 0 run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "upper" }
+execute if score #omegaflowey.attack.x-bullets-upper.upper_eye_exists omegaflowey.attack.flag matches 0 run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-shared/executor/initialize/error { "type": "upper" }
 execute if score #omegaflowey.attack.x-bullets-upper.upper_eye_exists omegaflowey.attack.flag matches 0 run return fail
 
 function omegaflowey.main:telemetry/bossfight/tag/start { name: "attack.x_bullets_upper" }
 
-function omegaflowey.entity:hostile/omega-flowey/attack/shared/executor/initialize
+function omegaflowey:entity/hostile/omega-flowey/attack/shared/executor/initialize
 
 data modify entity @s CustomName set value '"X-Bullets-Upper Executor"'
 
-$execute at $(attack_upper_eye_right_locator_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/initialize/effects
-$execute at $(attack_upper_eye_left_locator_uuid) run function omegaflowey.entity:hostile/omega-flowey/attack/x-bullets-upper/executor/initialize/effects
+$execute at $(attack_upper_eye_right_locator_uuid) run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper/executor/initialize/effects
+$execute at $(attack_upper_eye_left_locator_uuid) run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper/executor/initialize/effects
 
 $execute as $(attack_upper_eye_right_uuid) run function animated_java:omegaflowey_upper_eye/variants/white/apply
 $execute as $(attack_upper_eye_left_uuid) run function animated_java:omegaflowey_upper_eye/variants/white/apply

@@ -4,9 +4,9 @@
 #   type=minecraft:item_display, \
 #   tag=aj.global.root, \
 #   tag=omega-flowey-remastered \
-# ] run function omegaflowey.entity:hostile/omega-flowey/animate/as_root
+# ] run function omegaflowey:entity/hostile/omega-flowey/animate/as_root
 execute as @e[ \
   type=minecraft:item_display, \
   tag=aj.global.root, \
   tag=omega-flowey-remastered \
-] run function omegaflowey.entity:hostile/omega-flowey/animate/as_root
+] run function omegaflowey:entity/hostile/omega-flowey/animate/as_root

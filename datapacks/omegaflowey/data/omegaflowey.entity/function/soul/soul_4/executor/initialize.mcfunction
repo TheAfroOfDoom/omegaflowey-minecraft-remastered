@@ -1,4 +1,4 @@
-function omegaflowey.entity:soul/shared/executor/initialize
+function omegaflowey:entity/soul/shared/executor/initialize
 tag @s add soul_4
 data merge entity @s { CustomName: '"Soul 4 Executor"' }
 
@@ -13,9 +13,9 @@ data modify storage omegaflowey:soul.4 executor_uuid set from storage gu:main ou
 data modify storage omegaflowey:soul.4 active_player_uuid set from storage omegaflowey:bossfight active_player_uuid
 data modify storage omegaflowey:soul.4 soul_model_uuid set from storage omegaflowey:bossfight soul_model_uuid
 
-function omegaflowey.entity:directorial/boss_fight/vanilla/soul_origin/at { \
-  command: 'function omegaflowey.entity:soul/soul_4/executor/initialize/summon_pans' \
+function omegaflowey:entity/directorial/boss_fight/vanilla/soul_origin/at { \
+  command: 'function omegaflowey:entity/soul/soul_4/executor/initialize/summon_pans' \
 }
 
 # Play music
-function omegaflowey.entity:soul/soul_4/executor/play_music
+function omegaflowey:entity/soul/soul_4/executor/play_music

@@ -1,16 +1,16 @@
 # Split on phase score
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 0 run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/random/attack_phase/0
+  function omegaflowey:entity/hostile/omega-flowey/attack/random/attack_phase/0
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 1 run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/random/attack_phase/1
+  function omegaflowey:entity/hostile/omega-flowey/attack/random/attack_phase/1
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 2 run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/random/attack_phase/2
+  function omegaflowey:entity/hostile/omega-flowey/attack/random/attack_phase/2
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 3 run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/random/attack_phase/3
+  function omegaflowey:entity/hostile/omega-flowey/attack/random/attack_phase/3
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 4 run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/random/attack_phase/4
+  function omegaflowey:entity/hostile/omega-flowey/attack/random/attack_phase/4
 execute if score @s omegaflowey.boss-fight.attack.phase.i matches 5 run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/random/attack_phase/5
+  function omegaflowey:entity/hostile/omega-flowey/attack/random/attack_phase/5
 # TODO(302): if attack.phase.i >= 6 AND this is NOT the finale, it's a different attack pattern than just looping back to attack phase 0
 
 # Add tag

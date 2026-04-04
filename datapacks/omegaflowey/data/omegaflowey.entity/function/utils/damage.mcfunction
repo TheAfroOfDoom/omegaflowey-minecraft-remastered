@@ -4,7 +4,7 @@ execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matc
 
 # Check if player is within some radius
 $execute as $(active_player_uuid) if entity @s[distance=..$(radius), tag=omegaflowey.player.fighting_flowey] run \
-  function omegaflowey.entity:utils/damage/as_player with storage omegaflowey:utils.damage
+  function omegaflowey:entity/utils/damage/as_player with storage omegaflowey:utils.damage
 
 # NOTE: UNCOMMENT THIS TO TEST DAMAGE HITBOXES
 # $execute as $(active_player_uuid) if entity @s[distance=..$(radius), tag=omegaflowey.player.fighting_flowey] run \

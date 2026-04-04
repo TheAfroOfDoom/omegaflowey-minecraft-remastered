@@ -1,4 +1,4 @@
-function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines/executor/initialize
+function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines/executor/initialize
 
 data modify entity @s CustomName set value '"Homing-Vines-Save-States Executor"'
 

@@ -2,4 +2,4 @@
 $scoreboard players set @s omegaflowey.group.id $(group_id)
 scoreboard players set @s omegaflowey.group.id.tree.level 0
 
-function omegaflowey.entity:group/assert
+function omegaflowey:entity/group/assert

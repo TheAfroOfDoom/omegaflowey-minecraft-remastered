@@ -18,7 +18,7 @@
 		"enable_advanced_resource_pack_settings": true,
 		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"on_summon_function": "function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/bullet/initialize"
+		"on_summon_function": "function omegaflowey:entity/hostile/omega-flowey/attack/flamethrower/bullet/initialize"
 	},
 	"elements": [
 		{
@@ -77,7 +77,7 @@
 				"use_entity": true,
 				"entity_type": "minecraft:interaction",
 				"ticking_commands": "",
-				"on_summon_function": "function omegaflowey.entity:hostile/omega-flowey/attack/flamethrower/bullet/hitbox/initialize"
+				"on_summon_function": "function omegaflowey:entity/hostile/omega-flowey/attack/flamethrower/bullet/hitbox/initialize"
 			},
 			"uuid": "c6867a97-3ad7-1f2c-3ff1-88163aa3a3cb",
 			"type": "locator"

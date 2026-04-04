@@ -5,4 +5,4 @@ execute if score @s omegaflowey.math.0 matches -1 run scoreboard players operati
 execute store result storage omegaflowey:soul.0 yaw float 1 run scoreboard players get @s omegaflowey.soul.bullet.position.yaw
 
 # Add tag to act_button so it can begin moving
-execute as @e[tag=soul_0,tag=act-button] run function omegaflowey.entity:soul/soul_0/act_button/initialize/can_move
+execute as @e[tag=soul_0,tag=act-button] run function omegaflowey:entity/soul/soul_0/act_button/initialize/can_move

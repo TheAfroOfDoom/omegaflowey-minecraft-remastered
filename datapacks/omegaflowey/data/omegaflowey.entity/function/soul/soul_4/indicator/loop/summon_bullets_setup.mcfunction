@@ -12,7 +12,7 @@ execute if entity @s[tag=pause_flipping] run return 0
 
 scoreboard players set @s omegaflowey.soul.indicator.bullets.remaining 4
 
-function omegaflowey.entity:soul/soul_4/indicator/loop/summon_bullets
+function omegaflowey:entity/soul/soul_4/indicator/loop/summon_bullets
 
 scoreboard players add @s omegaflowey.soul.indicator.bullets.total 1
 

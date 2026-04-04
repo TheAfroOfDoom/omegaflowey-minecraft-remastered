@@ -9,7 +9,7 @@ execute unless score @s omegaflowey.player.summit.has_fought_flowey matches 1 ru
   scoreboard players add #omegaflowey.telemetry.stats.total_distinct_fights omegaflowey.global.flag 1
 scoreboard players set @s omegaflowey.player.summit.has_fought_flowey 1
 
-function omegaflowey.entity:directorial/boss_fight/shared/player/join_bossfight
+function omegaflowey:entity/directorial/boss_fight/shared/player/join_bossfight
 
 # Required by summit to disable regen during the fight
 tag @s add summit.no_regen
@@ -19,4 +19,4 @@ spawnpoint @s -142 43 25 -45 0
 
 function omegaflowey.main:summit/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
 
-function omegaflowey.entity:directorial/boss_fight/summit/start
+function omegaflowey:entity/directorial/boss_fight/summit/start

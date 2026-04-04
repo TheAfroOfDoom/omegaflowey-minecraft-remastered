@@ -10,7 +10,7 @@ execute if score @s omegaflowey.soul.bullet.position.x matches -3071..3170 if sc
 execute if score @s omegaflowey.math.0 matches 1 store result storage omegaflowey:soul.0.bullet x float 0.01 run scoreboard players get @s omegaflowey.soul.bullet.position.x
 execute if score @s omegaflowey.math.0 matches 1 store result storage omegaflowey:soul.0.bullet y float 0.0001 run scoreboard players get @s omegaflowey.soul.bullet.position.y
 execute if score @s omegaflowey.math.0 matches 1 store result storage omegaflowey:soul.0.bullet z float 0.01 run scoreboard players get @s omegaflowey.soul.bullet.position.z
-execute if score @s omegaflowey.math.0 matches 1 run function omegaflowey.entity:soul/soul_0/bandaid/summon with storage omegaflowey:soul.0.bullet
+execute if score @s omegaflowey.math.0 matches 1 run function omegaflowey:entity/soul/soul_0/bandaid/summon with storage omegaflowey:soul.0.bullet
 
 # Terminate
-function omegaflowey.entity:soul/soul_0/bullet/terminate
+function omegaflowey:entity/soul/soul_0/bullet/terminate

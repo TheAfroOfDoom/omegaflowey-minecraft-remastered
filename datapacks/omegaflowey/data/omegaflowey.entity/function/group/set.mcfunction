@@ -5,4 +5,4 @@ scoreboard players set @s omegaflowey.group.id.tree.level 0
 
 scoreboard players add #omegaflowey.group.id.next omegaflowey.group.id 1
 
-function omegaflowey.entity:group/assert
+function omegaflowey:entity/group/assert

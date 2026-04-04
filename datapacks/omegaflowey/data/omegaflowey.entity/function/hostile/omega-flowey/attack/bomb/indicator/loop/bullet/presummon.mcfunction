@@ -12,4 +12,4 @@ execute store result storage omegaflowey:attack.bomb x double 0.01 run scoreboar
 execute store result storage omegaflowey:attack.bomb z double 0.01 run scoreboard players get @s omegaflowey.attack.position.z
 
 # Summon bullet
-function omegaflowey.entity:hostile/omega-flowey/attack/bomb/indicator/loop/bullet/summon with storage omegaflowey:attack.bomb
+function omegaflowey:entity/hostile/omega-flowey/attack/bomb/indicator/loop/bullet/summon with storage omegaflowey:attack.bomb

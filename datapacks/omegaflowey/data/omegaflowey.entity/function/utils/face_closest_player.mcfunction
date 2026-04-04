@@ -7,4 +7,4 @@ execute store result storage omegaflowey:entity.utils.face_closest_player z floa
 data modify storage omegaflowey:entity.utils.face_closest_player active_player_uuid set from \
   storage omegaflowey:bossfight active_player_uuid
 
-function omegaflowey.entity:utils/face_closest_player_macro with storage omegaflowey:entity.utils.face_closest_player
+function omegaflowey:entity/utils/face_closest_player_macro with storage omegaflowey:entity.utils.face_closest_player

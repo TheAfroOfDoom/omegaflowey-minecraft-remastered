@@ -7,15 +7,15 @@ execute if score #omegaflowey.soul.3.row.1 omegaflowey.soul.indicator.bullets.to
 
 scoreboard players add #omegaflowey.soul.3.row.1 omegaflowey.soul.indicator.bullets.total 1
 
-function omegaflowey.entity:soul/soul_3/executor/loop/rows/set_bullet_params
+function omegaflowey:entity/soul/soul_3/executor/loop/rows/set_bullet_params
 data modify storage omegaflowey:soul.3 z set value -73.92857143f
 
 execute if score #omegaflowey.soul.3.row.1 omegaflowey.soul.indicator.bullets.total matches 4 run return run \
-  function omegaflowey.entity:soul/soul_3/act_button/summon with storage omegaflowey:soul.3
+  function omegaflowey:entity/soul/soul_3/act_button/summon with storage omegaflowey:soul.3
 
-function omegaflowey.entity:soul/soul_3/bullet/summon with storage omegaflowey:soul.3
+function omegaflowey:entity/soul/soul_3/bullet/summon with storage omegaflowey:soul.3
 
 execute store result score #omegaflowey.soul.3.row.1 omegaflowey.soul.clock.i run random value 0..7
 scoreboard players add #omegaflowey.soul.3.row.1 omegaflowey.soul.clock.i 37
 
-function omegaflowey.entity:soul/soul_3/executor/loop/rows/increase_all_timers
+function omegaflowey:entity/soul/soul_3/executor/loop/rows/increase_all_timers

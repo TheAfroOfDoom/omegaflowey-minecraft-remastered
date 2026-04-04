@@ -1,4 +1,4 @@
-function omegaflowey.entity:hostile/omega-flowey/attack/shared/bullet/initialize
+function omegaflowey:entity/hostile/omega-flowey/attack/shared/bullet/initialize
 
 execute on passengers if entity @s[tag=aj.omegaflowey_dentata_snake_ball.bone] run \
   data merge entity @s { brightness: { block: 13, sky: 0 } }

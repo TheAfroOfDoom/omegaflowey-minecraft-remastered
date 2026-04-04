@@ -10,8 +10,8 @@ execute store result score @s omegaflowey.attack.position.y run data get storage
 execute store result score @s omegaflowey.attack.position.z run data get storage omegaflowey:attack.homing-vines-save-states state_scores.attack_position_z
 
 # Resummon blinking_lane if it existed when we saved state
-execute if data storage omegaflowey:attack.homing-vines-save-states entity_specific_params.has_blinking_lane run function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/load_state/resummon/blinking_lane with storage omegaflowey:attack.homing-vines-save-states entity_specific_params.blinking_lane
+execute if data storage omegaflowey:attack.homing-vines-save-states entity_specific_params.has_blinking_lane run function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/load_state/resummon/blinking_lane with storage omegaflowey:attack.homing-vines-save-states entity_specific_params.blinking_lane
 
 # Manually summon blinking lane from indicator/initialize function if this indicator was save-stated on spawn-frame 0
 execute if score @s omegaflowey.attack.clock.i matches -7 run \
-  function omegaflowey.entity:hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/load_state/manual_summon_blinking_lane
+  function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines-save-states/indicator/states/load_state/manual_summon_blinking_lane

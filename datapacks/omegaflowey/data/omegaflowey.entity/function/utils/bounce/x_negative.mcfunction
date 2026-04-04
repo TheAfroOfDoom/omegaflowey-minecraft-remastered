@@ -1,1 +1,1 @@
-function omegaflowey.entity:utils/bounce/shared/x
+function omegaflowey:entity/utils/bounce/shared/x

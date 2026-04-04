@@ -18,4 +18,4 @@ scoreboard players set #omegaflowey.soul.0.touched omegaflowey.soul.flag 0
 tag @s remove soul-executor-new
 
 # Play music
-function omegaflowey.entity:soul/soul_0/executor/play_music
+function omegaflowey:entity/soul/soul_0/executor/play_music

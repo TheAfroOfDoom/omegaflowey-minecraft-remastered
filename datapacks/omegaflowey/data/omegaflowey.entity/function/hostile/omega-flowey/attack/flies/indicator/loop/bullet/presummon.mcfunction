@@ -1,10 +1,10 @@
 execute store result score @s omegaflowey.math.0 run random value 0..99
 # 47% chance the bullet spawns along the top wall
-execute if score @s omegaflowey.math.0 matches 0..46 run function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_top
+execute if score @s omegaflowey.math.0 matches 0..46 run function omegaflowey:entity/hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_top
 # 49% chance the bullet spawns along the wall across from the indicator
-execute if score @s omegaflowey.math.0 matches 47..95 run function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_side
+execute if score @s omegaflowey.math.0 matches 47..95 run function omegaflowey:entity/hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_side
 # otherwise (4% chance) the bullet spawns along the bottom wall
-execute if score @s omegaflowey.math.0 matches 96..99 run function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_bottom
+execute if score @s omegaflowey.math.0 matches 96..99 run function omegaflowey:entity/hostile/omega-flowey/attack/flies/indicator/loop/bullet/presummon/along_bottom
 
 # y: -3.50
 scoreboard players set @s omegaflowey.attack.position.y -350
@@ -18,4 +18,4 @@ execute store result storage omegaflowey:attack.flies z double 0.01 run scoreboa
 execute store result storage omegaflowey:attack.flies group_id int 1 run scoreboard players get @s omegaflowey.group.id
 
 # Summon bullet
-function omegaflowey.entity:hostile/omega-flowey/attack/flies/indicator/loop/bullet/summon with storage omegaflowey:attack.flies
+function omegaflowey:entity/hostile/omega-flowey/attack/flies/indicator/loop/bullet/summon with storage omegaflowey:attack.flies

@@ -13,4 +13,4 @@ scoreboard players set #omegaflowey.attack.random.previous_attacks_to_consider o
 scoreboard players set #omegaflowey.attack.random.retry_max omegaflowey.attack.flag 2
 
 # Run base `start` function
-function omegaflowey.entity:hostile/omega-flowey/attack/random/start
+function omegaflowey:entity/hostile/omega-flowey/attack/random/start

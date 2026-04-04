@@ -9,5 +9,5 @@ scoreboard players add @s omegaflowey.math.0 18000
 execute store result storage omegaflowey:attack.friendliness-pellets.bullet_params bullet_yaw int 0.01 run \
   scoreboard players get @s omegaflowey.math.0
 
-function omegaflowey.entity:hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/summon_bullet \
+function omegaflowey:entity/hostile/omega-flowey/attack/friendliness-pellets/indicator/loop/summon_bullet \
   with storage omegaflowey:attack.friendliness-pellets.bullet_params

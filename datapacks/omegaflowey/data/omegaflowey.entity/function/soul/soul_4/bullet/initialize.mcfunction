@@ -1,4 +1,4 @@
-function omegaflowey.entity:soul/shared/bullet/initialize
+function omegaflowey:entity/soul/shared/bullet/initialize
 tag @s add soul_4
 data merge entity @s { CustomName: "'Soul 4 Bullet'" }
 

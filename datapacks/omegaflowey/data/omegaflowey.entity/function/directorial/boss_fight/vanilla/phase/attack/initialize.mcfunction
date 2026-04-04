@@ -1,16 +1,16 @@
 # Split on phase score
-execute if score @s omegaflowey.boss-fight.attack.phase.i matches 0 run function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize/0
-execute if score @s omegaflowey.boss-fight.attack.phase.i matches 1 run function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize/1
-execute if score @s omegaflowey.boss-fight.attack.phase.i matches 2 run function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize/2
-execute if score @s omegaflowey.boss-fight.attack.phase.i matches 3 run function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize/3
-execute if score @s omegaflowey.boss-fight.attack.phase.i matches 4 run function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize/4
-execute if score @s omegaflowey.boss-fight.attack.phase.i matches 5 run function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize/5
+execute if score @s omegaflowey.boss-fight.attack.phase.i matches 0 run function omegaflowey:entity/directorial/boss_fight/vanilla/phase/attack/initialize/0
+execute if score @s omegaflowey.boss-fight.attack.phase.i matches 1 run function omegaflowey:entity/directorial/boss_fight/vanilla/phase/attack/initialize/1
+execute if score @s omegaflowey.boss-fight.attack.phase.i matches 2 run function omegaflowey:entity/directorial/boss_fight/vanilla/phase/attack/initialize/2
+execute if score @s omegaflowey.boss-fight.attack.phase.i matches 3 run function omegaflowey:entity/directorial/boss_fight/vanilla/phase/attack/initialize/3
+execute if score @s omegaflowey.boss-fight.attack.phase.i matches 4 run function omegaflowey:entity/directorial/boss_fight/vanilla/phase/attack/initialize/4
+execute if score @s omegaflowey.boss-fight.attack.phase.i matches 5 run function omegaflowey:entity/directorial/boss_fight/vanilla/phase/attack/initialize/5
 
 # Set scores
 scoreboard players set @s omegaflowey.boss-fight.attack.clock.i -1
 scoreboard players set @s omegaflowey.boss-fight.attack.delay 10
 
-function omegaflowey.entity:directorial/boss_fight/vanilla/phase/attack/initialize/disable_soul_event_3_barriers
+function omegaflowey:entity/directorial/boss_fight/vanilla/phase/attack/initialize/disable_soul_event_3_barriers
 
 # These default to finger-guns, so we're super unlikely to ever start with finger-guns
 scoreboard players operation \
@@ -20,7 +20,7 @@ scoreboard players operation \
   #omegaflowey.attack.random.2nd_previous_attack_id omegaflowey.attack.flag = \
   #omegaflowey.attack.random.id.finger-guns omegaflowey.attack.flag
 
-function omegaflowey.entity:directorial/boss_fight/shared/loop/tvscreen_inside_face/start with storage omegaflowey:bossfight
+function omegaflowey:entity/directorial/boss_fight/shared/loop/tvscreen_inside_face/start with storage omegaflowey:bossfight
 
 # Add tags
 tag @s add boss_fight.phase.attack
