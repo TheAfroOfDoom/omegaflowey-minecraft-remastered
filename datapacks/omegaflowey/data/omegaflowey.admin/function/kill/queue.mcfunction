@@ -1,4 +1,4 @@
-function omegaflowey.utils:log { text_component: [ \
+function omegaflowey:utils/log { text_component: [ \
   { "selector": "@s", "color": "gold" }, \
   { "text": " reset the bossfight queue ", "color": "yellow" } \
 ]}

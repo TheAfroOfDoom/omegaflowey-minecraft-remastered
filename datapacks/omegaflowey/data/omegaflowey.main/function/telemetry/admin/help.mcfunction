@@ -1,4 +1,4 @@
-function omegaflowey.utils:log/self { text_component: [ \
+function omegaflowey:utils/log/self { text_component: [ \
   "", \
   { "text": "Telemetry menu:", "color": "light_purple", "bold": true }, \
   "\\n", \

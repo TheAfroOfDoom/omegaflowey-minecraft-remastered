@@ -1,4 +1,4 @@
-function omegaflowey.utils:log/self { text_component: [ \
+function omegaflowey:utils/log/self { text_component: [ \
   "", \
   { "text": "Displaying current ", "color": "aqua" }, \
   { "text": "booth ", "color": "yellow", "bold": true }, \

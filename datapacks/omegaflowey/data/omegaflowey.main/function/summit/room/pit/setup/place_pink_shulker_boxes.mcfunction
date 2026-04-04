@@ -4,7 +4,7 @@ execute \
   if block -113 319 29 minecraft:barrier \
 run return 0
 
-function omegaflowey.utils:log { text_component: [ \
+function omegaflowey:utils/log { text_component: [ \
   { "text": "Filled a small section of sky from ", "color": "yellow" }, \
   { "text": "[", "color": "white" }, \
   { "text": "-113,318,29", "color": "aqua" }, \
