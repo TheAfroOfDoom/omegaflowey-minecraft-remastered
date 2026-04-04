@@ -1,5 +1,15 @@
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_0.root] run return run function animated_java:omegaflowey_soul_3_word_0/remove/this
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_1.root] run return run function animated_java:omegaflowey_soul_3_word_1/remove/this
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_2.root] run return run function animated_java:omegaflowey_soul_3_word_2/remove/this
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_3.root] run return run function animated_java:omegaflowey_soul_3_word_3/remove/this
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_4.root] run return run function animated_java:omegaflowey_soul_3_word_4/remove/this
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_5.root] run return run function animated_java:omegaflowey_soul_3_word_5/remove/this
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_6.root] run return run function animated_java:omegaflowey_soul_3_word_6/remove/this
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_7.root] run return run function animated_java:omegaflowey_soul_3_word_7/remove/this
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_8.root] run return run function animated_java:omegaflowey_soul_3_word_8/remove/this
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_9.root] run return run function animated_java:omegaflowey_soul_3_word_9/remove/this
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_10.root] run return run function animated_java:omegaflowey_soul_3_word_10/remove/this
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_11.root] run return run function animated_java:omegaflowey_soul_3_word_11/remove/this
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_12.root] run return run function animated_java:omegaflowey_soul_3_word_12/remove/this
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_13.root] run return run function animated_java:omegaflowey_soul_3_word_13/remove/this
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_14.root] run return run function animated_java:omegaflowey_soul_3_word_14/remove/this

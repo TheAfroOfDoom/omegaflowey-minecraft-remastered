@@ -1,5 +1,15 @@
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_0.root] run return run function animated_java:omegaflowey_soul_3_word_0/animations/omegaflowey_shake/play
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_1.root] run return run function animated_java:omegaflowey_soul_3_word_1/animations/omegaflowey_shake/play
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_2.root] run return run function animated_java:omegaflowey_soul_3_word_2/animations/omegaflowey_shake/play
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_3.root] run return run function animated_java:omegaflowey_soul_3_word_3/animations/omegaflowey_shake/play
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_4.root] run return run function animated_java:omegaflowey_soul_3_word_4/animations/omegaflowey_shake/play
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_5.root] run return run function animated_java:omegaflowey_soul_3_word_5/animations/omegaflowey_shake/play
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_6.root] run return run function animated_java:omegaflowey_soul_3_word_6/animations/omegaflowey_shake/play
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_7.root] run return run function animated_java:omegaflowey_soul_3_word_7/animations/omegaflowey_shake/play
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_8.root] run return run function animated_java:omegaflowey_soul_3_word_8/animations/omegaflowey_shake/play
 execute if entity @s[tag=aj.omegaflowey_soul_3_word_9.root] run return run function animated_java:omegaflowey_soul_3_word_9/animations/omegaflowey_shake/play
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_10.root] run return run function animated_java:omegaflowey_soul_3_word_10/animations/omegaflowey_shake/play
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_11.root] run return run function animated_java:omegaflowey_soul_3_word_11/animations/omegaflowey_shake/play
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_12.root] run return run function animated_java:omegaflowey_soul_3_word_12/animations/omegaflowey_shake/play
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_13.root] run return run function animated_java:omegaflowey_soul_3_word_13/animations/omegaflowey_shake/play
+execute if entity @s[tag=aj.omegaflowey_soul_3_word_14.root] run return run function animated_java:omegaflowey_soul_3_word_14/animations/omegaflowey_shake/play
