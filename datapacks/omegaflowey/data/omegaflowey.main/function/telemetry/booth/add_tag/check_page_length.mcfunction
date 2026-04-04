@@ -11,4 +11,4 @@ execute \
   if score \
     #omegaflowey.telemetry.booth.page.length omegaflowey.global.flag >= \
     #omegaflowey.telemetry.page.max_length omegaflowey.global.flag \
-run function omegaflowey.main:telemetry/booth/add_tag/new_page
+run function omegaflowey:main/telemetry/booth/add_tag/new_page

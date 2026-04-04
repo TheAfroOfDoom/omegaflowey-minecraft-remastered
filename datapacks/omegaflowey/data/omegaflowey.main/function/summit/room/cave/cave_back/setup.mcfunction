@@ -1,4 +1,4 @@
-function omegaflowey.main:summit/room/cave/cave_back/setup/text_displays
+function omegaflowey:main/summit/room/cave/cave_back/setup/text_displays
 
 summon minecraft:item_display -156.99 42.0 34.4375 { \
   Tags: [ \

@@ -9,8 +9,8 @@ tellraw @s [ \
 
 execute store result storage omegaflowey:telemetry temp.page_index int 1 run \
   scoreboard players get @s omegaflowey.math.1
-function omegaflowey.main:telemetry/admin/show/bossfight/get_page with storage omegaflowey:telemetry temp
+function omegaflowey:main/telemetry/admin/show/bossfight/get_page with storage omegaflowey:telemetry temp
 
 scoreboard players add @s omegaflowey.math.1 1
 
-function omegaflowey.main:telemetry/admin/show/bossfight/iterate
+function omegaflowey:main/telemetry/admin/show/bossfight/iterate

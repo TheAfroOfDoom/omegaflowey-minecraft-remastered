@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/admin/show/bossfight
+function omegaflowey:main/telemetry/admin/show/bossfight
 
 execute if entity @s[name=!TheAfroOfDoom] run return run function omegaflowey.utils:log/self { text_component: [ \
   { "text": "Only ", "color": "red" }, \

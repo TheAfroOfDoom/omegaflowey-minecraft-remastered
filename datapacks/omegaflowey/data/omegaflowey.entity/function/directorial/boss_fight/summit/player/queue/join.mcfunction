@@ -6,7 +6,7 @@ execute unless score @s omegaflowey.player.summit.has_joined_queue_before matche
   scoreboard players add #omegaflowey.telemetry.stats.total_distinct_queue_joins omegaflowey.global.flag 1
 scoreboard players set @s omegaflowey.player.summit.has_joined_queue_before 1
 
-function omegaflowey.main:telemetry/booth/add_tag { name: "player.queue.join" }
+function omegaflowey:main/telemetry/booth/add_tag { name: "player.queue.join" }
 
 # Play select sound if this was called from the interaction (and not manually)
 execute if score #omegaflowey.play_join_queue_select_sound omegaflowey.global.flag matches 1 run \
@@ -19,7 +19,7 @@ data modify storage omegaflowey:bossfight add_player_to_queue.player_uuid set fr
 data modify storage omegaflowey:bossfight player_queue append from storage omegaflowey:bossfight add_player_to_queue
 
 scoreboard players add #omegaflowey.bossfight.player_queue_count omegaflowey.global.flag 1
-function omegaflowey.main:summit/room/cave/player_queue_counter/update_value
+function omegaflowey:main/summit/room/cave/player_queue_counter/update_value
 
 # tell the player they joined the queue if either...
 # - the queue already has other player(s) in it

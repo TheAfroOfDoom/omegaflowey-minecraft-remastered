@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/admin/show/booth
+function omegaflowey:main/telemetry/admin/show/booth
 
 execute if entity @s[name=!TheAfroOfDoom] run return run function omegaflowey.utils:log/self { text_component: [ \
   { "text": "Only ", "color": "red" }, \
@@ -10,7 +10,7 @@ execute if entity @s[name=!TheAfroOfDoom] run return run function omegaflowey.ut
 data modify storage omegaflowey:telemetry temp.latest_page set from storage omegaflowey:telemetry data.booth[-1]
 data modify storage omegaflowey:telemetry data.booth set value []
 data modify storage omegaflowey:telemetry data.booth append from storage omegaflowey:telemetry temp.latest_page
-function omegaflowey.main:telemetry/setup/initialize_booth_data
+function omegaflowey:main/telemetry/setup/initialize_booth_data
 
 function omegaflowey.utils:log/self { text_component: [ \
   "", \

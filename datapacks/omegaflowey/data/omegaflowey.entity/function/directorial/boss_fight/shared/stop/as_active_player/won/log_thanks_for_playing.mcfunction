@@ -1,4 +1,4 @@
-function omegaflowey.main:telemetry/booth/add_tag { name: "player.shown_feedback_link.won_fight" }
+function omegaflowey:main/telemetry/booth/add_tag { name: "player.shown_feedback_link.won_fight" }
 
 function omegaflowey.utils:log/self { text_component: [ \
   "", \

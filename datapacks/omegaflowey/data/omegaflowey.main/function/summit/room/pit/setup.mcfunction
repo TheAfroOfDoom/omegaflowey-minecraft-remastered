@@ -9,7 +9,7 @@ execute positioned -109.5625 41.0 25.625 rotated -20 0 run function animated_jav
 execute positioned -108.0 41.0 25.5 rotated 0 0 run function animated_java:omegaflowey_flowercontributor/summon { args: { variant: 'natia' } }
 execute positioned -106.1875 41.0 25.5625 rotated 20 0 run function animated_java:omegaflowey_flowercontributor/summon { args: { variant: 'wes' } }
 
-function omegaflowey.main:summit/room/pit/setup/text_displays
+function omegaflowey:main/summit/room/pit/setup/text_displays
 
 execute unless score #omegaflowey.setup_flags.dont_place_blocks omegaflowey.global.flag matches 1 run \
-  function omegaflowey.main:summit/room/pit/setup/place_pink_shulker_boxes
+  function omegaflowey:main/summit/room/pit/setup/place_pink_shulker_boxes

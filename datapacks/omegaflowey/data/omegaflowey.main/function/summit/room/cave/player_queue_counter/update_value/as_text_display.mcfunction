@@ -4,4 +4,4 @@ execute if score #omegaflowey.bossfight.player_queue_count omegaflowey.global.fl
 
 execute store result storage omegaflowey:bossfight player_queue_count int 1 run \
   scoreboard players get #omegaflowey.bossfight.player_queue_count omegaflowey.global.flag
-function omegaflowey.main:summit/room/cave/player_queue_counter/update_value/non_zero with storage omegaflowey:bossfight
+function omegaflowey:main/summit/room/cave/player_queue_counter/update_value/non_zero with storage omegaflowey:bossfight

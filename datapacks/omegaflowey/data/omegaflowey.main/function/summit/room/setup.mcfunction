@@ -1,8 +1,8 @@
 function omegaflowey:entity/decorative/remove
 
-function omegaflowey.main:summit/room/cave/setup
-function omegaflowey.main:summit/room/outside/setup
-function omegaflowey.main:summit/room/pit/setup
+function omegaflowey:main/summit/room/cave/setup
+function omegaflowey:main/summit/room/outside/setup
+function omegaflowey:main/summit/room/pit/setup
 
 # Tag all decorative entities the summit-required decoration tag
 # NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME

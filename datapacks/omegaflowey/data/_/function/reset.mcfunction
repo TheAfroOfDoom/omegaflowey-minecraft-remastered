@@ -1,1 +1,1 @@
-function omegaflowey.main:reset
+function omegaflowey:main/reset

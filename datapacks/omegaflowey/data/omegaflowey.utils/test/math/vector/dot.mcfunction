@@ -4,7 +4,7 @@
 data remove storage omegaflowey:utils.math.vector.dot u
 data remove storage omegaflowey:utils.math.vector.dot v
 data remove storage omegaflowey:utils.math.vector.dot out
-function omegaflowey.main:reset
+function omegaflowey:main/reset
 
 ## cases
 # 0-vectors
