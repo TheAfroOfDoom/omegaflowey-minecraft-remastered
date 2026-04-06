@@ -12,10 +12,12 @@ $execute if score @s omegaflowey.math.0 matches 0 as $(corresponding_root_uuid) 
 $execute if score @s omegaflowey.math.0 matches 1 as $(corresponding_root_uuid) run function animated_java:omegaflowey_upper_eye/variants/bright/apply
 
 # Summon and initialize bullet
-execute if entity @s[tag=!x-bullets-upper-save-states] run \
+execute if entity @s[tag=!x-bullets-upper-save-states, tag=!x-bullets-upper-weak] run \
   scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 1
 execute if entity @s[tag=x-bullets-upper-save-states] run \
   scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 2
+execute if entity @s[tag=x-bullets-upper-weak] run \
+  scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 5
 $execute positioned $(x) $(y) $(z) rotated $(yaw) $(pitch) run \
   function animated_java:omegaflowey_projectile_star/summon { args: {} }
 scoreboard players set #omegaflowey.attack.xbullets.type omegaflowey.global.flag 0

@@ -35,9 +35,17 @@ execute if score #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.
   function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower/start
 
 execute if score #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag = \
+  #omegaflowey.attack.random.id.x-bullets-lower-weak omegaflowey.attack.flag run return run \
+  function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower-weak/start
+
+execute if score #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag = \
   #omegaflowey.attack.random.id.x-bullets-upper omegaflowey.attack.flag run return run \
   function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper/start
 
 execute if score #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag = \
   #omegaflowey.attack.random.id.x-bullets-upper-save-states omegaflowey.attack.flag run return run \
   function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper-save-states/start
+
+execute if score #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag = \
+  #omegaflowey.attack.random.id.x-bullets-upper-weak omegaflowey.attack.flag run return run \
+  function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper-weak/start

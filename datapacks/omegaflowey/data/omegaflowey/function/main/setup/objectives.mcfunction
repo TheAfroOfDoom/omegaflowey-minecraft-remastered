@@ -3,6 +3,7 @@
 scoreboard objectives add omegaflowey.attack.bullets.clock.delay dummy
 # time ticker for bullet-summoning logic
 scoreboard objectives add omegaflowey.attack.bullets.clock.i dummy
+scoreboard objectives add omegaflowey.attack.bullets.clock.length dummy
 # number of bullets an indicator has summoned so far
 scoreboard objectives add omegaflowey.attack.bullets.count dummy
 # x-coordinate for indicator to summon bullet at
