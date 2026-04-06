@@ -1,16 +1,13 @@
-execute if score #omegaflowey.attack.indicator.type omegaflowey.global.flag matches 2 run return run \
-  function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower-weak/indicator/initialize
-
 function omegaflowey:entity/hostile/omega-flowey/attack/shared/indicator/initialize
 
-data modify entity @s CustomName set value '"X-Bullets-Lower Indicator"'
+data modify entity @s CustomName set value '"X-Bullets-Lower-Weak Indicator"'
 
 # Add tags
-tag @s add x-bullets-lower
+tag @s add x-bullets-lower-weak
 
 # Set scores
-scoreboard players operation @s omegaflowey.attack.bullets.total = #omegaflowey.attack.x-bullets-lower omegaflowey.attack.bullets.total
-scoreboard players operation @s omegaflowey.attack.cone = #omegaflowey.attack.x-bullets-lower omegaflowey.attack.cone
+scoreboard players set @s omegaflowey.attack.bullets.total 7
+scoreboard players set @s omegaflowey.attack.cone 105
 
 scoreboard players operation @s omegaflowey.attack.bullets.remaining = @s omegaflowey.attack.bullets.total
 

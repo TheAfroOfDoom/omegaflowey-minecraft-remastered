@@ -1,4 +1,7 @@
-function omegaflowey:main/telemetry/bossfight/tag/end { name: "attack.x_bullets_lower" }
+execute if entity @s[tag=!x-bullets-lower-weak] run \
+  function omegaflowey:main/telemetry/bossfight/tag/end { name: "attack.x_bullets_lower" }
+execute if entity @s[tag= x-bullets-lower-weak] run \
+  function omegaflowey:main/telemetry/bossfight/tag/end { name: "attack.x_bullets_lower_weak" }
 
 $execute as $(attack_lower_eye_right_uuid) run \
   function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower/executor/terminate/lower_eye
