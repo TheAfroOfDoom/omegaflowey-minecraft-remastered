@@ -8,5 +8,7 @@ scoreboard players reset #omegaflowey.attack.friendliness-pellets omegaflowey.at
 scoreboard players reset #omegaflowey.attack.homing-vines omegaflowey.attack.weight
 scoreboard players reset #omegaflowey.attack.homing-vines-save-states omegaflowey.attack.weight
 scoreboard players reset #omegaflowey.attack.x-bullets-lower omegaflowey.attack.weight
+scoreboard players reset #omegaflowey.attack.x-bullets-lower-weak omegaflowey.attack.weight
 scoreboard players reset #omegaflowey.attack.x-bullets-upper omegaflowey.attack.weight
 scoreboard players reset #omegaflowey.attack.x-bullets-upper-save-states omegaflowey.attack.weight
+scoreboard players reset #omegaflowey.attack.x-bullets-upper-weak omegaflowey.attack.weight

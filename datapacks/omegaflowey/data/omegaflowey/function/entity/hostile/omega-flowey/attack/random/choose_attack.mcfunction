@@ -40,6 +40,10 @@ scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.x-bull
 execute if score #omegaflowey.attack.x-bullets-lower omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return run \
   scoreboard players operation #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag = #omegaflowey.attack.random.id.x-bullets-lower omegaflowey.attack.flag
 
+scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.x-bullets-lower-weak omegaflowey.attack.weight
+execute if score #omegaflowey.attack.x-bullets-lower-weak omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return run \
+  scoreboard players operation #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag = #omegaflowey.attack.random.id.x-bullets-lower-weak omegaflowey.attack.flag
+
 scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.x-bullets-upper omegaflowey.attack.weight
 execute if score #omegaflowey.attack.x-bullets-upper omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return run \
   scoreboard players operation #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag = #omegaflowey.attack.random.id.x-bullets-upper omegaflowey.attack.flag
@@ -47,3 +51,7 @@ execute if score #omegaflowey.attack.x-bullets-upper omegaflowey.attack.weight m
 scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.x-bullets-upper-save-states omegaflowey.attack.weight
 execute if score #omegaflowey.attack.x-bullets-upper-save-states omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return run \
   scoreboard players operation #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag = #omegaflowey.attack.random.id.x-bullets-upper-save-states omegaflowey.attack.flag
+
+scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.attack.x-bullets-upper-weak omegaflowey.attack.weight
+execute if score #omegaflowey.attack.x-bullets-upper-weak omegaflowey.attack.weight matches 1.. if score @s omegaflowey.math.0 matches ..0 run return run \
+  scoreboard players operation #omegaflowey.attack.random.chosen_attack_id omegaflowey.attack.flag = #omegaflowey.attack.random.id.x-bullets-upper-weak omegaflowey.attack.flag
