@@ -44,7 +44,7 @@ const minecraftWorldPath = `${minecraftPath}/saves/${worldName}`;
 const worldSyncArgs = `--backup-path="${floweyWorldSyncPath}" --world-path="${minecraftWorldPath}"`;
 
 const smithedSummitWorldSyncPath =
-  './bin/smithed-summit-2024/world/smithed-summit-2024-omegaflowey-plot.zip';
+  './bin/smithed-summit-2026/world/smithed-summit-2026-omegaflowey-plot.zip';
 const smithedSummitWorldSyncArgs = `--backup-path="${smithedSummitWorldSyncPath}" --world-path="${process.env.SMITHED_SUMMIT_WORLD_PATH}"`;
 
 module.exports = {
@@ -107,7 +107,7 @@ module.exports = {
       sounds: `yarn exec pwsh -Command "./package-scripts/list-sound-stats.ps1" -Path "resourcepack/assets/omega-flowey/sounds" -Out "resourcepack/assets/omega-flowey/sounds/stats.txt"`,
     },
     sync: {
-      default: 'nps sync.world',
+      default: 'nps sync.summit',
       world: {
         default: 'nps sync.world.up',
         down: `node ./package-scripts/sync-world --down ${worldSyncArgs}`,
