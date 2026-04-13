@@ -36,7 +36,8 @@ function animated_java:omegaflowey_soul_2_shoe/remove/all
 function animated_java:omegaflowey_soul_2_star/remove/all
 
 function animated_java:omegaflowey_soul_3_book/remove/all
-function animated_java:omegaflowey_soul_3_word/remove/all
+function animated_java:omegaflowey_soul_3_word_5/remove/all
+function animated_java:omegaflowey_soul_3_word_6/remove/all
 function animated_java:omegaflowey_soul_3_word_7/remove/all
 function animated_java:omegaflowey_soul_3_word_8/remove/all
 function animated_java:omegaflowey_soul_3_word_9/remove/all
