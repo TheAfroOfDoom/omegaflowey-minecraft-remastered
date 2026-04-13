@@ -1,1 +1,1 @@
-$execute positioned -156.5 ~ ~ run $(command)
+$execute positioned -70.5 ~ ~ run $(command)
