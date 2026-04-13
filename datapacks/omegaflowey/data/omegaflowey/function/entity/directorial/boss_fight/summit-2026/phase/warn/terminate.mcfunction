@@ -15,4 +15,4 @@ execute as @e[ \
 ] run function omegaflowey:entity/hostile/omega-flowey/attack/dentata-snakes/bullet/terminate
 
 # Next phase
-function omegaflowey:entity/directorial/boss_fight/summit-2024/phase/soul/initialize with storage omegaflowey:bossfight
+function omegaflowey:entity/directorial/boss_fight/summit-2026/phase/soul/initialize with storage omegaflowey:bossfight

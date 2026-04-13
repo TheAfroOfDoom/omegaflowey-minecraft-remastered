@@ -1,2 +1,2 @@
-function omegaflowey:entity/directorial/boss_fight/summit-2024/player/queue/pop
-function omegaflowey:entity/directorial/boss_fight/summit-2024/player/queue/check_should_prompt
+function omegaflowey:entity/directorial/boss_fight/summit-2026/player/queue/pop
+function omegaflowey:entity/directorial/boss_fight/summit-2026/player/queue/check_should_prompt

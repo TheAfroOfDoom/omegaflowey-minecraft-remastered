@@ -6,7 +6,7 @@ scoreboard players add @s omegaflowey.boss-fight.attack.phase.i 1
 scoreboard players operation @s omegaflowey.boss-fight.attack.phase.i %= @s omegaflowey.boss-fight.attack.phase.total
 
 # Next phase
-function omegaflowey:entity/directorial/boss_fight/summit-2024/phase/warn/initialize
+function omegaflowey:entity/directorial/boss_fight/summit-2026/phase/warn/initialize
 
 # Remove tags
 function omegaflowey:entity/hostile/omega-flowey/attack/random/remove_previous_tags
