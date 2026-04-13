@@ -1,6 +1,6 @@
 function omegaflowey:entity/soul/shared/executor/terminate with storage omegaflowey:bossfight
 
-# NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
+# NOTE: TAG_SUMMIT_2024_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
   tag=soul_1, \
   tag=omega-flowey-remastered \

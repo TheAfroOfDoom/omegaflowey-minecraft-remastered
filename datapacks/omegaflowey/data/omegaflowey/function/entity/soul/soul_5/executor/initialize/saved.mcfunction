@@ -16,7 +16,7 @@ $execute as $(indicator_uuid) at @s run function omegaflowey:entity/soul/soul_5/
 $execute as $(soul_model_uuid) run function omegaflowey:entity/soul/soul_5/soul/saved
 function omegaflowey:entity/directorial/boss_fight/shared/phase/soul/loop/saved with storage omegaflowey:bossfight
 
-# NOTE: TAG_SUMMIT_HARDCODED_GLOBAL_VOLUME
+# NOTE: TAG_SUMMIT_2024_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
   tag=soul_5, \
   tag=omega-flowey-remastered \

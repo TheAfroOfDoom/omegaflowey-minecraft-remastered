@@ -1,6 +1,6 @@
 function omegaflowey:entity/directorial/boss_fight/shared/stop/as_spectator
 
-# NOTE: TAG_SUMMIT_HARDCODED
+# NOTE: TAG_SUMMIT_2024_HARDCODED
 # Teleport player to finish position unless stop reason is that:
 # - (3) they have left the arena bounds
 # - (4) they have died
