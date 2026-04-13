@@ -14,14 +14,14 @@ $execute if data storage omegaflowey:bossfight.remove_from_queue { current_eleme
 # if match, remove current element
 $execute if score @s omegaflowey.math.0 matches 1 run data remove storage omegaflowey:bossfight player_queue[$(i)]
 execute if score @s omegaflowey.math.0 matches 1 run scoreboard players remove #omegaflowey.bossfight.player_queue_count omegaflowey.global.flag 1
-execute if score @s omegaflowey.math.0 matches 1 run function omegaflowey:main/summit/room/cave/player_queue_counter/update_value
+execute if score @s omegaflowey.math.0 matches 1 run function omegaflowey:main/summit-2024/room/cave/player_queue_counter/update_value
 # if rejoining player was the next player in queue and was prompted,
 # we need to reset the following global state flag
 execute \
   if score @s omegaflowey.math.0 matches 1 \
   if score #omegaflowey.bossfight.remove_player_from_queue.i omegaflowey.global.flag matches 0 \
   if entity @s[tag=omegaflowey.player.in_queue.prompted] \
-  run function omegaflowey:entity/directorial/boss_fight/summit/player/queue/leave_and_rejoin/remove_from_queue_array/reset_prompted_player
+  run function omegaflowey:entity/directorial/boss_fight/summit-2024/player/queue/leave_and_rejoin/remove_from_queue_array/reset_prompted_player
 execute if score @s omegaflowey.math.0 matches 1 run return 0
 
 # else, increment and try next element
@@ -29,5 +29,5 @@ scoreboard players add #omegaflowey.bossfight.remove_player_from_queue.i omegafl
 execute store result storage omegaflowey:bossfight.remove_from_queue i int 1 run \
   scoreboard players get #omegaflowey.bossfight.remove_player_from_queue.i omegaflowey.global.flag
 
-function omegaflowey:entity/directorial/boss_fight/summit/player/queue/leave_and_rejoin/remove_from_queue_array/next_element \
+function omegaflowey:entity/directorial/boss_fight/summit-2024/player/queue/leave_and_rejoin/remove_from_queue_array/next_element \
   with storage omegaflowey:bossfight.remove_from_queue

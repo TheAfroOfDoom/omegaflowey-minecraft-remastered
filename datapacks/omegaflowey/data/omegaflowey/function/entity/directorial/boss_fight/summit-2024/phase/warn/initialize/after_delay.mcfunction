@@ -13,4 +13,4 @@ function omegaflowey:entity/hostile/omega-flowey/animate/pipe with storage omega
 
 # Summon and begin animating soul heart model in front of WARNING screen
 function omegaflowey:entity/hostile/omega-flowey/summon/warning/soul with storage omegaflowey:bossfight
-function omegaflowey:entity/directorial/boss_fight/summit/phase/warn/initialize/after_delay/target_soul_model with storage omegaflowey:bossfight
+function omegaflowey:entity/directorial/boss_fight/summit-2024/phase/warn/initialize/after_delay/target_soul_model with storage omegaflowey:bossfight

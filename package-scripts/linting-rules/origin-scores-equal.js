@@ -2,8 +2,8 @@ const chalk = require('chalk');
 const { readFileSync, writeFileSync } = require('fs');
 
 const applicableExtensions = [
-  'datapacks/omegaflowey/data/entity/function/directorial/boss_fight/summit/origin/setup.mcfunction',
-  'datapacks/omegaflowey/data/entity/function/directorial/boss_fight/summit/soul_origin/setup.mcfunction',
+  'datapacks/omegaflowey/data/entity/function/directorial/boss_fight/summit-2024/origin/setup.mcfunction',
+  'datapacks/omegaflowey/data/entity/function/directorial/boss_fight/summit-2024/soul_origin/setup.mcfunction',
 ];
 
 /**
@@ -34,7 +34,7 @@ const originScoresEqual = (file, options) => {
     ? 'soul_origin'
     : 'origin';
   const getFunctionPath = (subpath) =>
-    `datapacks/omegaflowey/data/entity/function/directorial/boss_fight/summit/${originType}/at/${subpath}.mcfunction`;
+    `datapacks/omegaflowey/data/entity/function/directorial/boss_fight/summit-2024/${originType}/at/${subpath}.mcfunction`;
   const readOriginFunction = (subpath) =>
     readFileSync(getFunctionPath(subpath), 'utf8');
 
