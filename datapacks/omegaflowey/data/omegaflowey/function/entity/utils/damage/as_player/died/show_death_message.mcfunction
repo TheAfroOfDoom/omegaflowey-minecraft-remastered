@@ -1,7 +1,7 @@
 ## Show custom death message
 
 # Locally
-# TAG_SUMMIT_2024_HARDCODED_GLOBAL_VOLUME
+# TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 execute \
   unless score #omegaflowey.bossfight.show_death_message_globally omegaflowey.global.flag matches 1 \
 run tellraw @a[ \

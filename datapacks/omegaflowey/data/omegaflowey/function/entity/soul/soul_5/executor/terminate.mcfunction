@@ -1,6 +1,6 @@
 $execute as $(boss_fight_uuid) run function omegaflowey:entity/soul/soul_5/executor/terminate/as_boss_fight
 
-# NOTE: TAG_SUMMIT_2024_HARDCODED_GLOBAL_VOLUME
+# NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
   tag=soul_5, \
   tag=omega-flowey-remastered \

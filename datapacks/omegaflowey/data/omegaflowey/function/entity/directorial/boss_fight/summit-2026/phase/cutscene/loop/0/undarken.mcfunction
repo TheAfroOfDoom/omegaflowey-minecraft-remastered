@@ -1,7 +1,7 @@
 # Blind player for transition to bright model
 $effect give $(active_player_uuid) minecraft:blindness 1 0 true
 
-### TAG_SUMMIT_2024_HARDCODED_ARENA_VOLUME (and +31 blocks in Z direction)
+### TAG_SUMMIT_2026_HARDCODED_ARENA_VOLUME (and +31 blocks in Z direction)
 execute as @e[ \
   x=-186, dx=61, y=10, dy=46, z=47, dz=91, \
   type=minecraft:item_display, \

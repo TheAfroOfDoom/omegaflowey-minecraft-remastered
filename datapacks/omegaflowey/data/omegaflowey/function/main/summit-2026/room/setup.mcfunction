@@ -5,7 +5,7 @@ function omegaflowey:main/summit-2026/room/outside/setup
 function omegaflowey:main/summit-2026/room/pit/setup
 
 # Tag all decorative entities the summit-required decoration tag
-# NOTE: TAG_SUMMIT_2024_HARDCODED_GLOBAL_VOLUME
+# NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 tag @e[\
   x=-186, dx=91, y=10, dy=95, z=12, dz=95, \
   tag=decorative, \
