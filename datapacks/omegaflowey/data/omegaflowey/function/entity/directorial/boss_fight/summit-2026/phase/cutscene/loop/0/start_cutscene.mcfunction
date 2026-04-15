@@ -2,10 +2,11 @@ function omegaflowey:main/telemetry/bossfight/tag/start { name: "cutscene.intro"
 
 # Summon and animate Omega Flowey entity
 function omegaflowey:entity/directorial/boss_fight/summit-2026/origin/at { \
-  command: "execute positioned ~ ~ ~29.4 run function omegaflowey:entity/hostile/omega-flowey/summon/relative" \
+  command: "execute positioned ~-29.4 ~ ~ run function omegaflowey:entity/hostile/omega-flowey/summon/relative" \
 }
+# TAG_SUMMIT_2026_HARDCODED_ARENA_VOLUME (and -31 blocks in X direction)
 execute as @e[ \
-  x=-186, dx=61, y=12, dy=44, z=47, dz=91, \
+  x=5, dx=91, y=-6, dy=45, z=-44, dz=61, \
   type=minecraft:item_display, \
   tag=aj.global.root, \
   tag=omega-flowey-remastered \

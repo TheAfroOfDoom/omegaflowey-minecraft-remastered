@@ -6,4 +6,4 @@ execute as @e[ \
   tag=aj.global.root, \
   tag=!aj.omegaflowey_arena_box.root, \
   tag=omega-flowey-remastered \
-] at @s run teleport @s ~ ~ ~-0.1
+] at @s run teleport @s ~0.1 ~ ~
