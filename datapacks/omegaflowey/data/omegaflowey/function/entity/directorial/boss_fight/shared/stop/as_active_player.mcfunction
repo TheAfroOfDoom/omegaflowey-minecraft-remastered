@@ -7,7 +7,7 @@ function omegaflowey:entity/directorial/boss_fight/shared/stop/as_spectator
 execute \
   unless score #omegaflowey.bossfight.stop_reason omegaflowey.global.flag matches 3 \
   unless score #omegaflowey.bossfight.stop_reason omegaflowey.global.flag matches 4 \
-  run teleport @s -141.5 43.0 25.5 -45 0
+  run teleport @s 94 82 -15 90 0
 
 function omegaflowey:entity/directorial/boss_fight/shared/stop/as_active_player/modify_health_and_tags
 
