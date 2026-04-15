@@ -13,11 +13,11 @@ $execute \
 execute \
   if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 \
   store result score @s omegaflowey.math.0 \
-  run gamerule showDeathMessages
+  run gamerule show_death_messages
 execute \
   if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 \
   if score @s omegaflowey.math.0 matches 1 \
-  run gamerule showDeathMessages false
+  run gamerule show_death_messages false
 
 # TODO(39): remove these `unless entity @e[tag=boss_fight]`/`if entity @e[tag=boss_fight]` checks when boss fight is fully setup
 # we have it here for development so that the boss entity (omega-flowey)

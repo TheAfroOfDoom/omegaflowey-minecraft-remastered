@@ -6,7 +6,7 @@ function omegaflowey:entity/utils/damage/as_player/died/show_death_message
 function omegaflowey:main/summit-2026/room/outside/setup/tv_screen/death_animation with storage omegaflowey:decorative
 
 # Re-enable `showDeathMessages` if it was enabled previously
-execute if score @s omegaflowey.math.0 matches 1 run gamerule showDeathMessages true
+execute if score @s omegaflowey.math.0 matches 1 run gamerule show_death_messages true
 
 # TODO(265): maybe vanilla map telemetry? unlikely though
 # Summit stats
