@@ -13,7 +13,6 @@ $execute as $(soul_model_uuid) run function animated_java:omegaflowey_soul/varia
 function omegaflowey:entity/directorial/boss_fight/shared/phase/soul/loop/saved with storage omegaflowey:bossfight
 
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
-# x=-186, dx=91, y=10, dy=95, z=12, dz=95,
 execute as @e[ \
   tag=soul_1, \
   tag=omega-flowey-remastered \

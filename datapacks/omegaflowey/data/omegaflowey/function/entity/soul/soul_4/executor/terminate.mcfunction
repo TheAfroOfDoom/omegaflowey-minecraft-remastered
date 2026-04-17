@@ -2,6 +2,7 @@ function omegaflowey:entity/soul/shared/executor/terminate with storage omegaflo
 
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
+  x=33, dx=88, y=-10, dy=171, z=-47, dz=73, \
   tag=soul_4, \
   tag=omega-flowey-remastered \
 ] run \

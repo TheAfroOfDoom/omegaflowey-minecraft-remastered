@@ -43,6 +43,5 @@ scoreboard players set #omegaflowey.bossfight.player_is_damage_immune omegaflowe
 schedule function omegaflowey:entity/utils/damage/reset_immunity_flag 10t replace
 
 # Show custom death message
-# TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 run \
   function omegaflowey:entity/utils/damage/as_player/died
