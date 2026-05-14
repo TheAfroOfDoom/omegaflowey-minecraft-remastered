@@ -1,0 +1,8 @@
+data modify storage animated_java:smithie_direct rig_hash set value "bac557876e810e1eb3be21e65761fafb8e3b0e692c9c42956d842ed6ff2efb59"
+scoreboard objectives add aj.animation_smithie_direct_intro.frame dummy
+scoreboard objectives add aj.animation_smithie_direct_flex.frame dummy
+scoreboard objectives add aj.animation_smithie_direct_gangsta.frame dummy
+scoreboard objectives add aj.animation_smithie_direct_idle.frame dummy
+scoreboard objectives add aj.animation_smithie_direct_smile.frame dummy
+scoreboard objectives add aj.animation_smithie_direct_speaking.frame dummy
+scoreboard objectives add aj.animation_smithie_direct_surprised.frame dummy

@@ -1,0 +1,5 @@
+data remove storage animated_java:temp args
+data remove storage animated_java:temp uuids
+data modify storage animated_java:temp uuids set from entity @s data.uuids
+execute store result score #aj.length aj.i run data get storage animated_java:temp uuids
+execute if score #aj.length aj.i matches 1.. run function animated_java:global/remove/as_data/loop_over_uuids

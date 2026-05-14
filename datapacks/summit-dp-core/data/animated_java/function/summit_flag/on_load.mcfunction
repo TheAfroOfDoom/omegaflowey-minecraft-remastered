@@ -1,0 +1,3 @@
+data modify storage animated_java:summit_flag rig_hash set value "d7e0ad8244e823f5b5b699b340d6117f2866ba1b8c0443da17ab27cf410ce7df"
+scoreboard objectives add aj.animation_model_sway.frame dummy
+scoreboard objectives add aj.animation_sway_large.frame dummy

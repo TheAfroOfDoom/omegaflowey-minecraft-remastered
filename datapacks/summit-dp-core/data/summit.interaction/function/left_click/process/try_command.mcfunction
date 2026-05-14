@@ -1,0 +1,3 @@
+scoreboard players set #interaction.command_success summit.temp 0
+function summit.interaction:left_click/process/try_command/nested_macro_0 with entity @s data.summit_interactable
+execute if score #interaction.command_success summit.temp matches 0 run tellraw @p[tag=summit.interaction.player] [{text: "", color: "red"}, "Left click interaction failed: ", {text: "on_left_click ", color: "yellow"}, {text: ": ", color: "white"}, {text: '"', color: "aqua"}, {entity: "@s", nbt: "data.summit_interactable.on_left_click", interpret: true, color: "green"}, {text: '"', color: "aqua"}, " is not a valid command!"]

@@ -1,0 +1,2 @@
+$execute on target run dialog show @s {type:"minecraft:multi_action",title:"Node Information",body:[{type:"minecraft:plain_message",contents:{text:"\ua000",font:"summit_technical:dialog"}},$(name), $(owner), $(claimer), {type:"minecraft:plain_message",contents:{text:"Description:",underlined:1}}, $(desc) ],inputs:[],after_action:"close",columns:3,actions:[$(claim),$(ref_tp),$(completed),$(edit_name),$(edit_desc),$(edit_ref),$(assign),$(delete)]}
+scoreboard players set #temp summit.temp 67

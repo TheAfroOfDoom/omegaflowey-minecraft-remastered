@@ -1,0 +1,10 @@
+$data merge entity $(bone_eyes) {transformation: [-1.8305f,-0.0325f,0.1431f,-0.0765f,-0.0126f,1.822f,0.2465f,2.337f,-0.1476f,0.2476f,-1.7951f,0.7401f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_eyebrows) {transformation: [-1.8119f,-0.0198f,0.1431f,-0.0824f,-0.0003f,1.7976f,0.2465f,3.0006f,-0.1444f,0.2453f,-1.7951f,0.8307f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_hat) {transformation: [0f,0f,0f,-0.0232f,0f,0f,0f,3.2988f,0f,0f,0f,0.0712f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_glasses) {transformation: [0f,0f,0f,0.044f,0f,0f,0f,-0.4762f,0f,0f,0f,-0.4418f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_head) {transformation: [-1.8117f,-0.032f,0.1431f,0f,-0.0124f,1.7976f,0.2465f,1.9955f,-0.1461f,0.2443f,-1.7951f,-0.1059f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_chain) {transformation: [0f,0f,0f,0f,0f,0f,0f,-0.7446f,0f,0f,0f,0.1271f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_body) {transformation: [-2f,0f,0f,0f,0f,1.9928f,-0.1694f,0.75f,0f,-0.1694f,-1.9928f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_thumb_right) {transformation: [-1.239f,1.3833f,-0.7426f,-1.4111f,1.1898f,1.4444f,0.7056f,1.9045f,1.0243f,-0.0047f,-1.7178f,1.3695f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_fingers_right) {transformation: [-0.3662f,0.6425f,-0.3711f,-1.5034f,1.9214f,0.1436f,0.3492f,2.2325f,0.4172f,-0.0974f,-1.934f,1.5757f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_hand_right) {transformation: [-0.3662f,1.9308f,-0.3711f,-1.5924f,1.9214f,0.4315f,0.3492f,1.7658f,0.4172f,-0.2926f,-1.934f,1.25f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

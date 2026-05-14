@@ -1,0 +1,4 @@
+execute on passengers if entity @s[tag=aj.summit_flag.node.split_2] run data merge entity @s {transformation: [-1.6667f, 0.0f, 0.0f, 3.0f, 0.0f, 1.6667f, 0.0f, 2.5f, 0.0f, 0.0f, -1.6667f, -0.0094f, 0.0f, 0.0f, 0.0f, 1.0f], start_interpolation: -1}
+execute on passengers if entity @s[tag=aj.summit_flag.node.split_1] run data merge entity @s {transformation: [-1.6667f, 0.0f, 0.0f, 1.5f, 0.0f, 1.6667f, 0.0f, 2.5f, 0.0f, 0.0f, -1.6667f, -0.0031f, 0.0f, 0.0f, 0.0f, 1.0f], start_interpolation: -1}
+execute on passengers if entity @s[tag=aj.summit_flag.node.flag] run data merge entity @s {transformation: [-1.6667f, 0.0f, 0.0f, 0.25f, 0.0f, 1.6667f, 0.0f, 2.5f, 0.0f, 0.0f, -1.6667f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f], start_interpolation: -1}
+execute on passengers if entity @s[tag=aj.summit_flag.node.base] run data merge entity @s {transformation: [-1.0f, 0.0f, 0.0f, 0.25f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f], start_interpolation: -1}

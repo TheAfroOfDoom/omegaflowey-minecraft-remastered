@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags: [\"summit.vehicles.node\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "summit.dev:zz/vehicle/node/interact"
+  }
+}

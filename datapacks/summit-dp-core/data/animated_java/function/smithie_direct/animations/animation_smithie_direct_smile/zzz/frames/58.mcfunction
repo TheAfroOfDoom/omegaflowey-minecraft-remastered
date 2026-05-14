@@ -1,0 +1,1 @@
+$data merge entity $(bone_eyebrows) {transformation: [-2f,0.0018f,-0.0103f,0.0054f,0.0014f,1.9981f,0.0872f,2.9544f,0.0104f,0.0872f,-1.9981f,0.7548f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

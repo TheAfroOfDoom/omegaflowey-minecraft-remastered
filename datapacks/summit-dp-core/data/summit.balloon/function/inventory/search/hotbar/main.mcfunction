@@ -1,0 +1,9 @@
+execute if items entity @s hotbar.0 minecraft:bundle[minecraft:custom_data~{summit: {balloon: {}}}] run function summit.balloon:inventory/search/hotbar/0
+execute if items entity @s hotbar.1 minecraft:bundle[minecraft:custom_data~{summit: {balloon: {}}}] run function summit.balloon:inventory/search/hotbar/1
+execute if items entity @s hotbar.2 minecraft:bundle[minecraft:custom_data~{summit: {balloon: {}}}] run function summit.balloon:inventory/search/hotbar/2
+execute if items entity @s hotbar.3 minecraft:bundle[minecraft:custom_data~{summit: {balloon: {}}}] run function summit.balloon:inventory/search/hotbar/3
+execute if items entity @s hotbar.4 minecraft:bundle[minecraft:custom_data~{summit: {balloon: {}}}] run function summit.balloon:inventory/search/hotbar/4
+execute if items entity @s hotbar.5 minecraft:bundle[minecraft:custom_data~{summit: {balloon: {}}}] run function summit.balloon:inventory/search/hotbar/5
+execute if items entity @s hotbar.6 minecraft:bundle[minecraft:custom_data~{summit: {balloon: {}}}] run function summit.balloon:inventory/search/hotbar/6
+execute if items entity @s hotbar.7 minecraft:bundle[minecraft:custom_data~{summit: {balloon: {}}}] run function summit.balloon:inventory/search/hotbar/7
+execute if items entity @s hotbar.8 minecraft:bundle[minecraft:custom_data~{summit: {balloon: {}}}] run function summit.balloon:inventory/search/hotbar/8

@@ -1,0 +1,1 @@
+$execute if data storage summit.climbing:master {blocks:{current_tile:{direction:$(direction)b}}} run loot insert ~ ~ ~ loot {functions:[{function:"minecraft:set_count",count:$(count)}],pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:structure_void"}]}]}

@@ -1,0 +1,2 @@
+tellraw @a [{color: "red", text: ""}, {color: "gray", text: "\n "}, {color: "#00aced", text: "\u1d00\u0274\u026a\u1d0d\u1d00\u1d1b\u1d07\u1d05 \u1d0a\u1d00\u1d20\u1d00"}, {color: "dark_gray", italic: true, text: "\n (animated_java:smithie_direct)"}, "\n \u2192 \u1d07\u0280\u0280\u1d0f\u0280: ", {color: "red", underlined: true, text: "Frame cannot be negative"}, "\n\n ", {color: "yellow", text: "frame"}, {color: "red", text: " must be a non-negative integer.\n"}]
+function animated_java:smithie_direct/remove/this/without_on_remove_function

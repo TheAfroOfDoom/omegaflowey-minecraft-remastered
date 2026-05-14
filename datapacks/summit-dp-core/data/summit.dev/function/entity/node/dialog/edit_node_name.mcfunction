@@ -1,0 +1,2 @@
+$dialog show @s {type:"minecraft:confirmation",title:"Edit Node Name",body:{type:"minecraft:plain_message",contents:"Edit your node's name in the text box below.",width:250},inputs:[{type:"minecraft:text",key:"data",width:320,max_length:100,label:"New Name",initial:"$(text)"}],can_close_with_escape:1,after_action:"close",yes:{label:"Set Name",action:{type:"minecraft:dynamic/run_command",template:"function summit.dev:entity/node/dialog/edit_node_confirm {type:name,id:\"$(id)\",data:\"$(data)\"}"}},no:{label:"Cancel"}}
+scoreboard players set #temp summit.temp 69
