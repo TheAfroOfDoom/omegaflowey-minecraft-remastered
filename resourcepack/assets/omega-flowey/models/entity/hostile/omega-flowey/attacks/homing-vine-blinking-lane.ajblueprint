@@ -1,17 +1,17 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.8.1",
+		"format_version": "1.10.0-beta.6",
 		"uuid": "548e36d4-c419-e5a0-7385-8f1062b9691f",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\attacks\\homing-vine-blinking-lane.ajblueprint",
-		"last_used_export_namespace": "omegaflowey_homing_vine_blinking_lane"
+		"last_used_blueprint_id": "aj:omegaflowey_homing_vine_blinking_lane"
 	},
 	"resolution": {
 		"width": 16,
 		"height": 16
 	},
 	"blueprint_settings": {
-		"export_namespace": "omegaflowey_homing_vine_blinking_lane",
+		"blueprint_id": "aj:omegaflowey_homing_vine_blinking_lane",
 		"render_box": [48, 48],
 		"display_item": "minecraft:pink_dye",
 		"custom_model_data_offset": 4654465,
@@ -24,10 +24,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-8, 12, -501.1],
 			"to": [-7.5, 12, 382.9],
@@ -37,29 +40,29 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 0.5, 0],
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
 				},
 				"east": {
 					"uv": [0, 0, 9.55, 0],
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
 				},
 				"south": {
 					"uv": [0, 0, 0.5, 0],
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
 				},
 				"west": {
 					"uv": [0, 0, 9.55, 0],
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
 				},
 				"up": {
 					"uv": [0, 0, 9.55, 0.5],
-					"rotation": 90,
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"rotation": 90
 				},
 				"down": {
 					"uv": [0, 0, 9.55, 0.5],
-					"rotation": 270,
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"rotation": 270
 				}
 			},
 			"type": "cube",
@@ -68,10 +71,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [7.5, 12, -501.1],
 			"to": [8, 12, 382.9],
@@ -81,64 +87,82 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 0.5, 0],
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
 				},
 				"east": {
 					"uv": [0, 0, 9.55, 0],
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
 				},
 				"south": {
 					"uv": [0, 0, 0.5, 0],
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
 				},
 				"west": {
 					"uv": [0, 0, 9.55, 0],
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
 				},
 				"up": {
 					"uv": [0, 0, 9.55, 0.5],
-					"rotation": 90,
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"rotation": 90
 				},
 				"down": {
 					"uv": [0, 0, 9.55, 0.5],
-					"rotation": 270,
-					"texture": 0
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"rotation": 270
 				}
 			},
 			"type": "cube",
 			"uuid": "f588704b-c374-2686-2d92-a4ca2b48098a"
 		}
 	],
-	"outliner": [
+	"groups": [
 		{
 			"name": "root",
+			"uuid": "12b07b44-c52f-fffb-7cfa-cb571609acdb",
+			"export": true,
+			"locked": false,
+			"scope": 0,
+			"selected": false,
+			"_static": {
+				"properties": {},
+				"temp_data": {}
+			},
 			"origin": [0, 11, 0],
+			"rotation": [0, 0, 0],
 			"color": 0,
 			"onSummonFunction": "",
 			"configs": {
 				"default": {},
 				"variants": {}
 			},
-			"uuid": "12b07b44-c52f-fffb-7cfa-cb571609acdb",
-			"export": true,
+			"children": [],
+			"reset": false,
+			"shade": true,
 			"mirror_uv": false,
-			"isOpen": true,
-			"locked": false,
 			"visibility": true,
 			"autouv": 0,
-			"selected": false,
+			"isOpen": true,
+			"primary_selected": false
+		}
+	],
+	"outliner": [
+		{
+			"uuid": "12b07b44-c52f-fffb-7cfa-cb571609acdb",
+			"isOpen": true,
 			"children": ["9fc6dd09-99ef-9275-9d18-9c8e88af6eab", "f588704b-c374-2686-2d92-a4ca2b48098a"]
 		}
 	],
 	"textures": [
 		{
-			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/attacks/homing-vine-blinking-lane.png",
 			"name": "homing-vine-blinking-lane.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/attacks/homing-vine-blinking-lane.png",
+			"relative_path": "../../../../../textures/custom/attacks/homing-vine-blinking-lane.png",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
 			"group": "",
+			"scope": 0,
 			"width": 16,
 			"height": 32,
 			"uv_width": 16,
@@ -147,19 +171,21 @@
 			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
+			"file_format": "png",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"wrap_mode": "limited",
 			"pbr_channel": "color",
+			"fps": 7,
 			"frame_time": 1,
 			"frame_order_type": "custom",
 			"frame_order": "0 0 1",
-			"frame_interpolate": false,
+			"frame_interpolate": true,
 			"visible": true,
 			"internal": true,
 			"saved": true,
 			"uuid": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
-			"relative_path": "../../../../../textures/custom/attacks/homing-vine-blinking-lane.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADRJREFUSEtjfHlzwj8GCgDjqAEMo2HAMBoGDMMjDBYaGlFWHowawMA4GgajYQAqD4Z+OgAAz9JVQS8x2WQAAAAASUVORK5CYII="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAARElEQVR4AeyTQQ0AIAwDm6lEFhpQgRUkYIKQauhnj1vS75JernXPfElK4fFAggEMPKMGHuyxlKRBBZNMQgXWaH/wQPoAAAD//zwPIEcAAAAGSURBVAMA6I1QYcxKhvAAAAAASUVORK5CYII="
 		}
 	],
 	"variants": {
