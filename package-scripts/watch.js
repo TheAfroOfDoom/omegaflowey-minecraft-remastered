@@ -201,7 +201,7 @@ const deleteExportedFiles = async (path) => {
     `datapacks/animated_java/data/animated_java/functions/${name}`,
     `datapacks/animated_java/data/animated_java/tags/functions/${name}`,
     // resourcepack things
-    `resourcepack/assets/animated_java/models/item/${name}`,
+    `resourcepack/assets/aj/models/item/${name}`,
   ];
   for (const path of pathsToDeleteEntirely) {
     rimraf(path);
