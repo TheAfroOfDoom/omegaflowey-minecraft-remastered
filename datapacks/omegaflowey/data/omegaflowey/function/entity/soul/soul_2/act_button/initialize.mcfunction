@@ -8,7 +8,7 @@ function gu:generate
 data modify storage omegaflowey:soul.2 act_button_uuid set from storage gu:main out
 
 # Update tags on locator children
-function animated_java:omegaflowey_act_button/as_all_locators { \
+function aj:omegaflowey_act_button/as_all_locators { \
   command: 'function omegaflowey:entity/soul/soul_2/act_button/locator/initialize' \
 }
 
@@ -17,4 +17,4 @@ function animated_java:omegaflowey_act_button/as_all_locators { \
 execute store result score @s aj.omegaflowey_soul_2.frame run random value 0..26
 
 # Start animation
-function animated_java:omegaflowey_act_button/animations/omegaflowey_soul_2/resume
+function aj:omegaflowey_act_button/animations/omegaflowey_soul_2/resume

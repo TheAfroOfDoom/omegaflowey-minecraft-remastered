@@ -1,1 +1,1 @@
-function animated_java:omegaflowey_bomb/remove/this
+function aj:omegaflowey_bomb/remove/this

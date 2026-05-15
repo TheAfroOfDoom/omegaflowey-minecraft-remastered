@@ -1,2 +1,2 @@
-function animated_java:omegaflowey_upper_eye/animations/omegaflowey_look_around/resume
-function animated_java:omegaflowey_upper_eye/variants/default/apply
+function aj:omegaflowey_upper_eye/animations/omegaflowey_look_around/resume
+function aj:omegaflowey_upper_eye/variants/default/apply

@@ -14,7 +14,7 @@ execute unless score #omegaflowey.soul.4.saved omegaflowey.soul.flag matches 1 r
 
 # Check if any of this word's locator's hitboxes intersect with a player
 scoreboard players set #omegaflowey.soul.4.should_heal omegaflowey.soul.flag 0
-function animated_java:omegaflowey_soul_4_bullet/as_all_locators { \
+function aj:omegaflowey_soul_4_bullet/as_all_locators { \
   command: 'function omegaflowey:entity/soul/soul_4/bullet/loop/as_heal_locator' \
 }
 execute if score #omegaflowey.soul.4.should_heal omegaflowey.soul.flag matches 1 run return run \

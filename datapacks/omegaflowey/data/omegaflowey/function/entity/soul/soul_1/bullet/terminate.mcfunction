@@ -1,1 +1,1 @@
-function animated_java:omegaflowey_soul_1_glove/remove/this
+function aj:omegaflowey_soul_1_glove/remove/this

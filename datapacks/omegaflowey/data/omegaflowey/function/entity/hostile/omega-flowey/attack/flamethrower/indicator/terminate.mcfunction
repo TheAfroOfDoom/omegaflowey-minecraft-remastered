@@ -1,1 +1,1 @@
-function animated_java:omegaflowey_flamethrower/remove/this
+function aj:omegaflowey_flamethrower/remove/this

@@ -8,4 +8,4 @@ data merge entity @s { CustomName: "'Soul 2 Star'" }
 execute store result score @s aj.omegaflowey_roll.frame run random value 0..59
 
 # Start animation
-function animated_java:omegaflowey_soul_2_star/animations/omegaflowey_roll/resume
+function aj:omegaflowey_soul_2_star/animations/omegaflowey_roll/resume

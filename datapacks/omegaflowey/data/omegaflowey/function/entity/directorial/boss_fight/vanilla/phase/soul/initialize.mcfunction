@@ -21,5 +21,5 @@ tag @s add boss_fight.phase.soul
 
 # Delete main flowey models for performance reasons
 function omegaflowey:entity/hostile/omega-flowey/summon/remove_preexisting_models/except_tv_screen
-$execute as $(bossfight_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/remove/this
-$execute as $(soul_model_uuid) run function animated_java:omegaflowey_soul/remove/this
+$execute as $(bossfight_tvscreen_uuid) run function aj:omegaflowey_tv_screen/remove/this
+$execute as $(soul_model_uuid) run function aj:omegaflowey_soul/remove/this

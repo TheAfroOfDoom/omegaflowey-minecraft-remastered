@@ -1,1 +1,1 @@
-function animated_java:omegaflowey_venus_fly_trap/remove/this
+function aj:omegaflowey_venus_fly_trap/remove/this

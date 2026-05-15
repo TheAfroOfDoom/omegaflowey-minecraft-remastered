@@ -9,6 +9,6 @@ execute if score #omegaflowey.soul.3.summon_word_on_east omegaflowey.soul.flag m
   tag @s add is_east
 
 # Update tags on locator children
-function animated_java:omegaflowey_act_button/as_all_locators { \
+function aj:omegaflowey_act_button/as_all_locators { \
   command: 'function omegaflowey:entity/soul/soul_3/act_button/locator/initialize' \
 }

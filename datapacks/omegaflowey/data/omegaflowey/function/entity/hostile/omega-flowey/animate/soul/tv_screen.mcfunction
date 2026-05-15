@@ -1,2 +1,2 @@
-function animated_java:omegaflowey_tv_screen/animations/omegaflowey_move/play
-function animated_java:omegaflowey_tv_screen/variants/default/apply
+function aj:omegaflowey_tv_screen/animations/omegaflowey_move/play
+function aj:omegaflowey_tv_screen/variants/default/apply

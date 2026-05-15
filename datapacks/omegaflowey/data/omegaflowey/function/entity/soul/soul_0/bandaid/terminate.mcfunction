@@ -1,1 +1,1 @@
-function animated_java:omegaflowey_soul_0_bandaid/remove/this
+function aj:omegaflowey_soul_0_bandaid/remove/this

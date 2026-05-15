@@ -7,7 +7,7 @@ execute store result storage omegaflowey:attack.finger-guns yaw float 1 run data
 function omegaflowey:entity/hostile/omega-flowey/attack/finger-guns/indicator/loop/laser/terminate with entity @s data
 
 # Play shoot animation
-function animated_java:omegaflowey_finger_gun/animations/omegaflowey_shoot/play
+function aj:omegaflowey_finger_gun/animations/omegaflowey_shoot/play
 
 # Summon bullet
 function omegaflowey:entity/hostile/omega-flowey/attack/finger-guns/indicator/loop/bullet/summon with storage omegaflowey:attack.finger-guns
