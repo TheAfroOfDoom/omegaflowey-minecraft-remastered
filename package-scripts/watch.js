@@ -7,12 +7,12 @@ const { difference, findKey } = require('lodash');
 const { parse, relative } = require('path');
 const { rimraf } = require('rimraf');
 
-const { ajblueprintDir } = require('./shared-consts');
+const { ajblueprintDir } = require('./modules/shared-consts');
 const {
   assertEnvironmentVariables,
   parseLastExportedHashes,
   updateLastExportedHashes,
-} = require('./utils');
+} = require('./utils-commonjs');
 
 dotenv.config();
 assertEnvironmentVariables([

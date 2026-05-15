@@ -1,21 +1,34 @@
 // With thanks to elenterius on discord for troubleshooting
 // https://discord.com/channels/314078526104141834/1189404550986211329/1189517519262855229
 
-/* global Project, loadModelFile, AnimatedJava, electron */
+/* global Project, loadModelFile, AnimatedJava, Blockbench, PathModule, osfs */
 
-const { existsSync, mkdirSync, readdirSync, readFileSync } = require('fs');
-const { resolve } = require('path');
+const { resolve } = PathModule;
 
-const requireWithCwd = (cwd = '') => {
-  const { hash, parseLastExportedHashes, updateLastExportedHashes } = require(
-    resolve(`${cwd}/package-scripts/utils`),
+/**
+ * Generates a hash of an input
+ * https://stackoverflow.com/a/57385857/13789724
+ */
+const hash = async (m) => {
+  const msgUint8 = new TextEncoder().encode(m);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('');
+  return hashHex;
+};
+
+const requireWithCwd = async (cwd = '') => {
+  const { parseLastExportedHashes, updateLastExportedHashes } = await import(
+    resolve(`${cwd}/package-scripts/modules/utils-esm.js`)
   );
   const {
     ajblueprintDir,
     ajblueprintPathsDontOpenSuffix,
     ajExporterPassthroughFlagEnd,
     ajExporterPassthroughFlagStart,
-  } = require(resolve(`${cwd}/package-scripts/shared-consts`));
+  } = await import(resolve(`${cwd}/package-scripts/modules/shared-consts.js`));
 
   return {
     ajblueprintDir: `${cwd}/${ajblueprintDir}`,
@@ -29,7 +42,7 @@ const requireWithCwd = (cwd = '') => {
 };
 
 const getArg = (argName) => {
-  const { argv } = electron.getGlobal('process');
+  const { argv } = Blockbench;
   const arg = argv.find((arg) => arg.startsWith(argName));
   return arg?.replace(argName, '')?.replaceAll('\\', '/');
 };
@@ -37,7 +50,9 @@ const getArg = (argName) => {
 const MODEL_FILE_EXTENSION = '.ajblueprint';
 const DEV_MODEL_FLAG = '_dev';
 
-export async function script() {
+export async function script(fs) {
+  const { existsSync, mkdirSync, readFileSync } = fs;
+
   if (typeof AnimatedJava === 'undefined') {
     throw new Error('Failed to load Animated Java plugin before CLI plugin');
   }
@@ -50,7 +65,7 @@ export async function script() {
     hash,
     parseLastExportedHashes,
     updateLastExportedHashes,
-  } = requireWithCwd(cwd);
+  } = await requireWithCwd(cwd);
 
   const log = (...args) => {
     console.log(
@@ -69,7 +84,7 @@ export async function script() {
     mkdirSync(datapackDir);
   }
 
-  const lastExported = parseLastExportedHashes(ajblueprintDir);
+  const lastExported = parseLastExportedHashes(fs, ajblueprintDir);
 
   // We catch `console.error` since `safeExportProject` doesn't actually throw an error itself
   console.error = (data) => {
@@ -78,7 +93,7 @@ export async function script() {
   };
 
   const getAllModelFiles = async () =>
-    (await getFiles(ajblueprintDir))
+    (await getFiles(fs, ajblueprintDir))
       .filter((file) => file.endsWith(MODEL_FILE_EXTENSION))
       .filter(
         (file) => !file.endsWith(`${DEV_MODEL_FLAG}${MODEL_FILE_EXTENSION}`),
@@ -127,7 +142,7 @@ export async function script() {
     log(`exported ${modelName}`);
   }
 
-  updateLastExportedHashes(ajblueprintDir, lastExported);
+  updateLastExportedHashes(fs, ajblueprintDir, lastExported);
 
   log('Finished exporting ajblueprints');
 }
@@ -136,12 +151,12 @@ export async function script() {
  * Recursively walks a directory path and returns a list of files.
  * Slighty modified version of https://stackoverflow.com/a/45130990/13789724
  */
-async function getFiles(dir) {
-  const dirents = readdirSync(dir, { withFileTypes: true });
+async function getFiles(fs, dir) {
+  const dirents = fs.readdirSync(dir, { withFileTypes: true });
   const files = await Promise.all(
     dirents.map((dirent) => {
       const res = resolve(dir, dirent.name);
-      return dirent.isDirectory() ? getFiles(res) : res;
+      return dirent.isDirectory() ? getFiles(fs, res) : res;
     }),
   );
   return Array.prototype.concat(...files);

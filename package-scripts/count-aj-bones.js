@@ -1,6 +1,6 @@
 const { readdirSync, readFileSync } = require('fs');
 const { resolve } = require('path');
-const { ajblueprintDir } = require(`./shared-consts`);
+const { ajblueprintDir } = require(`./modules/shared-consts`);
 
 const MODEL_FILE_EXTENSION = '.ajblueprint';
 

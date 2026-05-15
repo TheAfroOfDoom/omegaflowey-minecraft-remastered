@@ -7,7 +7,7 @@ const { glob } = require('glob');
 const minimist = require('minimist');
 const { rimraf } = require('rimraf');
 
-const { assertEnvironmentVariables } = require('./utils');
+const { assertEnvironmentVariables } = require('./utils-commonjs');
 
 dotenv.config();
 

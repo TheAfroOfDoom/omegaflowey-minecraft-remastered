@@ -2,8 +2,10 @@ const dotenv = require('dotenv');
 const { series } = require('nps-utils');
 const { resolve } = require('path');
 
-const { ajblueprintDir } = require('./package-scripts/shared-consts');
-const { assertEnvironmentVariables } = require('./package-scripts/utils');
+const { ajblueprintDir } = require('./package-scripts/modules/shared-consts');
+const {
+  assertEnvironmentVariables,
+} = require('./package-scripts/utils-commonjs');
 
 dotenv.config();
 
