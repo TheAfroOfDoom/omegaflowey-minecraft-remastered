@@ -198,8 +198,8 @@ const deleteExportedFiles = async (path) => {
 
   const pathsToDeleteEntirely = [
     // datapacks things
-    `datapacks/animated_java/data/animated_java/functions/${name}`,
-    `datapacks/animated_java/data/animated_java/tags/functions/${name}`,
+    `datapacks/animated_java/data/aj/functions/${name}`,
+    `datapacks/animated_java/data/aj/tags/functions/${name}`,
     // resourcepack things
     `resourcepack/assets/aj/models/item/${name}`,
   ];
@@ -213,7 +213,7 @@ const deleteExportedFiles = async (path) => {
   const deleteFromValues = async (path) => {
     const json = JSON.parse(await readFile(path, 'utf8'));
     json.values = json.values.filter(
-      (value) => !value.startsWith(`animated_java:${name}/zzzzzzzz/`),
+      (value) => !value.startsWith(`aj:${name}/zzzzzzzz/`),
     );
     await writeFile(path, JSON.stringify(json, null, 2));
   };
