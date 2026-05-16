@@ -130,7 +130,7 @@ export async function script(fs) {
       forceSave: false,
       debugMode: true,
     });
-    const modelName = model.blueprint_settings.export_namespace;
+    const modelName = model.blueprint_settings.blueprint_id;
     lastExported[uuid] = {
       name: modelName,
       hash: currentHash,

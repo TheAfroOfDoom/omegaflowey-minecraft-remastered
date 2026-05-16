@@ -96,8 +96,8 @@ const checkEnableAdvancedResourcePackSettings = (model) => {
  */
 const checkExportNamespace = (model) => {
   const errors = [];
-  const namespace = model.blueprint_settings.export_namespace;
-  const isValidName = namespace.startsWith('omegaflowey_');
+  const namespace = model.blueprint_settings.blueprint_id;
+  const isValidName = namespace.startsWith('aj:omegaflowey_');
   if (!isValidName) {
     let error = 'export namespace is missing ';
     error += chalk.blueBright('omegaflowey_');

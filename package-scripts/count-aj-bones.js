@@ -43,7 +43,7 @@ const main = async () => {
       nextBones = children;
     }
 
-    const name = model.blueprint_settings.export_namespace;
+    const name = model.blueprint_settings.blueprint_id;
 
     res.push({ name, boneCount: count });
   }
