@@ -18,7 +18,8 @@
 		"enable_advanced_resource_pack_settings": true,
 		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"on_summon_function": "function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines/blinking_lane/initialize with storage omegaflowey:attack.homing-vines"
+		"on_summon_function": "function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines/blinking_lane/initialize with storage omegaflowey:attack.homing-vines",
+		"use_entity_stacking": true
 	},
 	"elements": [
 		{
@@ -28,7 +29,7 @@
 			"rescale": false,
 			"locked": false,
 			"shade": true,
-			"light_emission": 0,
+			"light_emission": 15,
 			"export": true,
 			"scope": 0,
 			"allow_mirror_modeling": true,
@@ -40,29 +41,35 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 0.5, 0],
-					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"tint": 0
 				},
 				"east": {
 					"uv": [0, 0, 9.55, 0],
-					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 0, 0.5, 0],
-					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"tint": 0
 				},
 				"west": {
 					"uv": [0, 0, 9.55, 0],
-					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"tint": 0
 				},
 				"up": {
 					"uv": [0, 0, 9.55, 0.5],
 					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
-					"rotation": 90
+					"rotation": 90,
+					"tint": 0
 				},
 				"down": {
 					"uv": [0, 0, 9.55, 0.5],
 					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
-					"rotation": 270
+					"rotation": 270,
+					"tint": 0
 				}
 			},
 			"type": "cube",
@@ -75,7 +82,7 @@
 			"rescale": false,
 			"locked": false,
 			"shade": true,
-			"light_emission": 0,
+			"light_emission": 15,
 			"export": true,
 			"scope": 0,
 			"allow_mirror_modeling": true,
@@ -87,29 +94,35 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 0.5, 0],
-					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"tint": 0
 				},
 				"east": {
 					"uv": [0, 0, 9.55, 0],
-					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 0, 0.5, 0],
-					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"tint": 0
 				},
 				"west": {
 					"uv": [0, 0, 9.55, 0],
-					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea"
+					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
+					"tint": 0
 				},
 				"up": {
 					"uv": [0, 0, 9.55, 0.5],
 					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
-					"rotation": 90
+					"rotation": 90,
+					"tint": 0
 				},
 				"down": {
 					"uv": [0, 0, 9.55, 0.5],
 					"texture": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
-					"rotation": 270
+					"rotation": 270,
+					"tint": 0
 				}
 			},
 			"type": "cube",
@@ -143,7 +156,7 @@
 			"visibility": true,
 			"autouv": 0,
 			"isOpen": true,
-			"primary_selected": false
+			"primary_selected": true
 		}
 	],
 	"outliner": [
@@ -185,7 +198,7 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "f5af35d5-3b6f-d0f1-08ce-40d942d8a3ea",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAARElEQVR4AeyTQQ0AIAwDm6lEFhpQgRUkYIKQauhnj1vS75JernXPfElK4fFAggEMPKMGHuyxlKRBBZNMQgXWaH/wQPoAAAD//zwPIEcAAAAGSURBVAMA6I1QYcxKhvAAAAAASUVORK5CYII="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAQ0lEQVR4AeyTQQ0AIAwDm6lEFhpQgRUkoAJSDf3scUv6XdLLte6ZL0kpPB5IMICBZ9TAgz2WkjSoYJJJqMAa7Q8eSB8AAP//iR28sgAAAAZJREFUAwBofFBxiKI5SAAAAABJRU5ErkJggg=="
 		}
 	],
 	"variants": {
