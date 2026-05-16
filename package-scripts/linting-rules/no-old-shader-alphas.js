@@ -5,7 +5,7 @@ const fs = require('fs-extra');
 const applicableExtensions = ['.png'];
 const exclude = /datapacks\//;
 
-const isEmissive = (alpha) => alpha === 254 || (9 <= alpha && alpha <= 16);
+const isEmissive = (alpha) => alpha === 254; // || (9 <= alpha && alpha <= 16);
 
 const isEmissiveNoShading = (alpha) => false;
 // return alpha === 253 || (1 <= alpha && alpha <= 8);

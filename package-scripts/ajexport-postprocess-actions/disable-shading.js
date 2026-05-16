@@ -5,7 +5,10 @@ const disableShading = ({ resourcePackRootDir }) => {
   const cases = [
     // blueprint, bone, variant
     ['omegaflowey_arena_box', 'root', 'intro_flashing_red'],
+    ['omegaflowey_finger_gun_laser', 'root'],
   ];
+
+  const tints = [{ type: 'minecraft:constant', value: 66046 }];
 
   for (const [blueprint, bone, variant] of cases) {
     process.stdout.write(chalk.gray(`${blueprint}/${bone} > ${variant} ... `));
@@ -13,20 +16,23 @@ const disableShading = ({ resourcePackRootDir }) => {
     let numChanges = 0;
 
     const model = JSON.parse(readFileSync(path, 'utf8'));
-    for (const [caseIdx, modelCase] of model.model.cases.entries()) {
-      if (modelCase.when !== variant) {
-        continue;
-      }
-      model.model.cases[caseIdx].model.tints = [
-        { type: 'minecraft:constant', value: 66046 },
-      ];
-      numChanges += 1;
-      break;
-    }
-    if (numChanges === 0) {
-      throw new Error(`Case failed: ${path} > ${variant}`);
-    }
 
+    if (variant === undefined) {
+      numChanges += 1;
+      model.model.tints = tints;
+    } else {
+      for (const [caseIdx, modelCase] of model.model.cases.entries()) {
+        if (modelCase.when !== variant) {
+          continue;
+        }
+        model.model.cases[caseIdx].model.tints = tints;
+        numChanges += 1;
+        break;
+      }
+      if (numChanges === 0) {
+        throw new Error(`Case failed: ${path} > ${variant}`);
+      }
+    }
     writeFileSync(path, JSON.stringify(model, null, 2) + '\n');
     logNumChanges(numChanges);
   }
