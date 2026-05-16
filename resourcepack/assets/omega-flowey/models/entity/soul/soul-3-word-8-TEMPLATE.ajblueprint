@@ -17,7 +17,8 @@
 		"enable_advanced_resource_pack_settings": true,
 		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize"
+		"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize",
+		"use_entity_stacking": true
 	},
 	"elements": [
 		{
@@ -1817,7 +1818,7 @@
 			"visibility": true,
 			"autouv": 0,
 			"isOpen": true,
-			"primary_selected": true
+			"primary_selected": false
 		},
 		{
 			"name": "player_reference",
