@@ -6,20 +6,29 @@ const disableShading = ({ resourcePackRootDir }) => {
     // blueprint, bone, variant
     ['omegaflowey_arena_box', 'root', 'intro_flashing_red'],
     ['omegaflowey_finger_gun_laser', 'root'],
+    ['omegaflowey_friendliness_pellet_ring', 'root'],
   ];
 
   const tints = [{ type: 'minecraft:constant', value: 66046 }];
 
   for (const [blueprint, bone, variant] of cases) {
-    process.stdout.write(chalk.gray(`${blueprint}/${bone} > ${variant} ... `));
+    process.stdout.write(
+      chalk.gray(`${blueprint}/${bone} > ${variant ?? 'Default'} ... `),
+    );
     const path = `${resourcePackRootDir}/items/blueprint/${blueprint}/${bone}.json`;
     let numChanges = 0;
 
     const model = JSON.parse(readFileSync(path, 'utf8'));
 
     if (variant === undefined) {
-      numChanges += 1;
-      model.model.tints = tints;
+      // Default variant
+      if (model.model.cases === undefined) {
+        model.model.tints = tints;
+        numChanges += 1;
+      } else {
+        model.model.fallback.tints = tints;
+        numChanges += 1;
+      }
     } else {
       for (const [caseIdx, modelCase] of model.model.cases.entries()) {
         if (modelCase.when !== variant) {
