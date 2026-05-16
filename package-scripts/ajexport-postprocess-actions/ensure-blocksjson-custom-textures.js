@@ -12,6 +12,7 @@ const ensureCustomTexturesInBlocks = () => {
 
   const sources = blocks.sources.map((element) => element.source);
   if (sources.includes('custom')) {
+    console.log();
     return;
   }
 

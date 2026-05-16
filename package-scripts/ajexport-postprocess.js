@@ -14,8 +14,9 @@ const actions = globSync(
 
 const main = () => {
   const datapackRootDir = './datapacks/animated_java/data/aj';
+  const resourcePackRootDir = './resourcepack/assets/aj';
   for (const action of actions) {
-    action.fn({ datapackRootDir }, argv);
+    action.fn({ datapackRootDir, resourcePackRootDir }, argv);
   }
 };
 
