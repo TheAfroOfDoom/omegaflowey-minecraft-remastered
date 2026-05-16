@@ -1,4 +1,4 @@
-function animated_java:omegaflowey_large_side_vine/variants/default/apply
+function aj:omegaflowey_large_side_vine/variants/default/apply
 
 scoreboard players operation @s aj.omegaflowey_rotate_clockwise_slow.frame = @s aj.omegaflowey_rotate_clockwise.frame
 
@@ -16,5 +16,5 @@ execute store result storage omegaflowey:bossfight.large_side_vine.tween to_fram
   scoreboard players get @s aj.omegaflowey_rotate_clockwise_slow.frame
 data merge storage omegaflowey:bossfight.large_side_vine.tween { duration: 1 }
 
-function animated_java:omegaflowey_large_side_vine/animations/omegaflowey_rotate_clockwise_slow/tween \
+function aj:omegaflowey_large_side_vine/animations/omegaflowey_rotate_clockwise_slow/tween \
   with storage omegaflowey:bossfight.large_side_vine.tween

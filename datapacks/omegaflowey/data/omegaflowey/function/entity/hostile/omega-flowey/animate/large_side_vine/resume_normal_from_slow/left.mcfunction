@@ -14,5 +14,5 @@ execute store result storage omegaflowey:bossfight.large_side_vine.tween to_fram
   scoreboard players get @s aj.omegaflowey_rotate_counterclockwise.frame
 data merge storage omegaflowey:bossfight.large_side_vine.tween { duration: 1 }
 
-function animated_java:omegaflowey_large_side_vine/animations/omegaflowey_rotate_counterclockwise/tween \
+function aj:omegaflowey_large_side_vine/animations/omegaflowey_rotate_counterclockwise/tween \
   with storage omegaflowey:bossfight.large_side_vine.tween

@@ -26,4 +26,4 @@ function omegaflowey:entity/directorial/boss_fight/shared/loop/tvscreen_inside_f
 tag @s add boss_fight.phase.attack
 
 # Remove tv_screen.soul model(s) if they exist
-$execute as $(soul_tvscreen_uuid) run function animated_java:omegaflowey_tv_screen/remove/this
+$execute as $(soul_tvscreen_uuid) run function aj:omegaflowey_tv_screen/remove/this

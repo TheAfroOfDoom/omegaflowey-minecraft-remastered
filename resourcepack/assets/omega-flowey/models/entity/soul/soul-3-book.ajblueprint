@@ -1,39 +1,41 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.8.1",
+		"format_version": "1.10.0-beta.6",
 		"uuid": "cd373d49-9fe7-d25f-e875-1016aa8d08d3",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-3-book.ajblueprint",
-		"last_used_export_namespace": "omegaflowey_soul_3_book"
+		"last_used_blueprint_id": "aj:omegaflowey_soul_3_book"
 	},
 	"resolution": {
 		"width": 16,
 		"height": 16
 	},
 	"blueprint_settings": {
-		"export_namespace": "omegaflowey_soul_3_book",
+		"blueprint_id": "aj:omegaflowey_soul_3_book",
 		"render_box": [48, 48],
 		"custom_model_data_offset": 4654465,
 		"enable_advanced_resource_pack_settings": true,
-		"resource_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack",
-		"data_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\datapacks\\animated_java",
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
 		"on_summon_function": "function omegaflowey:entity/soul/soul_3/indicator/initialize"
 	},
 	"elements": [
 		{
 			"name": "Head",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": false,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-4, 24, 2],
 			"to": [4, 32, 10],
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
-			"export": false,
 			"origin": [0, 0, 6],
 			"faces": {
 				"north": {
@@ -61,17 +63,19 @@
 		{
 			"name": "Body",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": false,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-4, 12, 4],
 			"to": [4, 24, 8],
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
-			"export": false,
 			"origin": [0, 0, 6],
 			"uv_offset": [16, 16],
 			"faces": {
@@ -100,17 +104,19 @@
 		{
 			"name": "Right Arm",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": false,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [4, 12, 4],
 			"to": [8, 24, 8],
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
-			"export": false,
 			"origin": [0, 0, 6],
 			"uv_offset": [40, 16],
 			"faces": {
@@ -139,17 +145,19 @@
 		{
 			"name": "Left Arm",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": false,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-8, 12, 4],
 			"to": [-4, 24, 8],
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
-			"export": false,
 			"origin": [0, 0, 6],
 			"uv_offset": [32, 48],
 			"faces": {
@@ -178,17 +186,19 @@
 		{
 			"name": "Right Leg",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": false,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-0.1, 0, 4],
 			"to": [3.9, 12, 8],
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
-			"export": false,
 			"origin": [0, 0, 6],
 			"uv_offset": [0, 16],
 			"faces": {
@@ -217,17 +227,19 @@
 		{
 			"name": "Left Leg",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": false,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-3.9, 0, 4],
 			"to": [0.1, 12, 8],
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
-			"export": false,
 			"origin": [0, 0, 6],
 			"uv_offset": [16, 48],
 			"faces": {
@@ -256,10 +268,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-4, 0, -44],
 			"to": [4, 64, 44],
@@ -269,31 +284,31 @@
 			"faces": {
 				"north": {
 					"uv": [0.75, 7.25, 15.25, 8.75],
-					"rotation": 90,
-					"texture": 0
+					"texture": "a888b1f7-2c6f-14a7-fc0c-98f340c85eee",
+					"rotation": 90
 				},
 				"east": {
 					"uv": [5, 12.875, 12.5, 2.875],
-					"rotation": 90,
-					"texture": 1
+					"texture": "12e7007e-e87a-ae8f-7c90-c00949824787",
+					"rotation": 90
 				},
 				"south": {
 					"uv": [0.75, 8.75, 15.25, 7.25],
-					"rotation": 90,
-					"texture": 0
+					"texture": "a888b1f7-2c6f-14a7-fc0c-98f340c85eee",
+					"rotation": 90
 				},
 				"west": {
 					"uv": [5, 2.875, 12.5, 12.875],
-					"rotation": 90,
-					"texture": 1
+					"texture": "12e7007e-e87a-ae8f-7c90-c00949824787",
+					"rotation": 90
 				},
 				"up": {
 					"uv": [0, 0, 8, 16],
-					"texture": 2
+					"texture": "4abf1fb2-ffbc-afe5-89fa-c2839620daf8"
 				},
 				"down": {
 					"uv": [0, 0, 8, 16],
-					"texture": 2
+					"texture": "4abf1fb2-ffbc-afe5-89fa-c2839620daf8"
 				}
 			},
 			"type": "cube",
@@ -302,10 +317,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-4, 64, -44],
 			"to": [4, 75, 44],
@@ -315,54 +333,98 @@
 			"faces": {
 				"north": {
 					"uv": [1.625, 13.125, 3.125, 14.625],
-					"rotation": 90,
-					"texture": 1
+					"texture": "12e7007e-e87a-ae8f-7c90-c00949824787",
+					"rotation": 90
 				},
 				"east": {
 					"uv": [1.625, 12.875, 3.125, 3.25],
-					"rotation": 90,
-					"texture": 1
+					"texture": "12e7007e-e87a-ae8f-7c90-c00949824787",
+					"rotation": 90
 				},
 				"south": {
 					"uv": [1.625, 13.125, 3.125, 14.625],
-					"rotation": 90,
-					"texture": 1
+					"texture": "12e7007e-e87a-ae8f-7c90-c00949824787",
+					"rotation": 90
 				},
 				"west": {
 					"uv": [1.625, 3.25, 3.125, 12.875],
-					"rotation": 90,
-					"texture": 1
+					"texture": "12e7007e-e87a-ae8f-7c90-c00949824787",
+					"rotation": 90
 				},
 				"up": {
 					"uv": [0, 3.25, 1.5, 12.875],
-					"texture": 1
+					"texture": "12e7007e-e87a-ae8f-7c90-c00949824787"
 				},
 				"down": {
 					"uv": [0, 0, 8, 16],
-					"texture": 2
+					"texture": "4abf1fb2-ffbc-afe5-89fa-c2839620daf8"
 				}
 			},
 			"type": "cube",
 			"uuid": "6c502c00-cb9c-99d2-8afb-c7805ba5b6c2"
 		}
 	],
-	"outliner": [
+	"groups": [
 		{
 			"name": "player_reference",
+			"uuid": "50fe9591-0de7-03ed-e779-dba2c601e1c0",
+			"export": false,
+			"locked": false,
+			"scope": 0,
+			"selected": false,
+			"_static": {
+				"properties": {},
+				"temp_data": {}
+			},
 			"origin": [0, 0, 6],
+			"rotation": [0, 0, 0],
 			"color": 0,
 			"onSummonFunction": "",
 			"configs": {
 				"variants": {}
 			},
-			"uuid": "50fe9591-0de7-03ed-e779-dba2c601e1c0",
-			"export": false,
+			"children": [],
+			"reset": false,
+			"shade": true,
 			"mirror_uv": false,
-			"isOpen": false,
-			"locked": false,
 			"visibility": false,
 			"autouv": 0,
+			"isOpen": false,
+			"primary_selected": false
+		},
+		{
+			"name": "root",
+			"uuid": "9a964239-7cbe-401a-5721-f40657dd591d",
+			"export": true,
+			"locked": false,
+			"scope": 0,
 			"selected": false,
+			"_static": {
+				"properties": {},
+				"temp_data": {}
+			},
+			"origin": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"color": 0,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
+			"children": [],
+			"reset": false,
+			"shade": true,
+			"mirror_uv": false,
+			"visibility": true,
+			"autouv": 0,
+			"isOpen": true,
+			"primary_selected": false
+		}
+	],
+	"outliner": [
+		{
+			"uuid": "50fe9591-0de7-03ed-e779-dba2c601e1c0",
+			"isOpen": false,
 			"children": [
 				"05327091-4773-3e8e-ef0b-7c464d550c14",
 				"812bf103-6323-bf85-fc6d-e91254f18632",
@@ -373,33 +435,21 @@
 			]
 		},
 		{
-			"name": "root",
-			"origin": [0, 0, 0],
-			"color": 0,
-			"onSummonFunction": "",
-			"configs": {
-				"default": {},
-				"variants": {}
-			},
 			"uuid": "9a964239-7cbe-401a-5721-f40657dd591d",
-			"export": true,
-			"mirror_uv": false,
 			"isOpen": true,
-			"locked": false,
-			"visibility": true,
-			"autouv": 0,
-			"selected": false,
 			"children": ["19e2ec3b-c377-07d4-4c4b-7b057f0a76d2", "6c502c00-cb9c-99d2-8afb-c7805ba5b6c2"]
 		}
 	],
 	"textures": [
 		{
-			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\soul_3_book_edge.png",
 			"name": "soul_3_book_edge.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/soul/soul_3_book_edge.png",
+			"relative_path": "../../../textures/custom/soul/soul_3_book_edge.png",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
 			"group": "",
+			"scope": 0,
 			"width": 64,
 			"height": 64,
 			"uv_width": 16,
@@ -408,9 +458,12 @@
 			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
+			"file_format": "png",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"wrap_mode": "limited",
 			"pbr_channel": "color",
+			"fps": 7,
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
@@ -419,16 +472,17 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "a888b1f7-2c6f-14a7-fc0c-98f340c85eee",
-			"relative_path": "../../../textures/custom/soul/soul_3_book_edge.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAN9JREFUeF7tlkEKgDAQA7v/f3QFUSmVQjGnmPHsipmdWKuFXxWevwEAA8IJUIFwAfgIUgEqEE6ACoQLwClABahAOAEqEC4ApwAVoALhBKhAuACcAlSACoQTmCvQQ3g8uV8Aev83g6ozMgBu07cNuMh9ashs1e6zVjbO8+N9m8/ONGCAswbwacV+Q0sAflHEN+ZPUARoP44B9isUA2CACNB+HAPsVygGwAARoP04BtivUAyAASJA+3EMsF+hGAADRID24xhgv0IxAAaIAO3HMcB+hWIADBAB2o9jgP0KxQAHYKobQe+ngoQAAAAASUVORK5CYII="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABJklEQVR4AeyV4Q6DIBCD6d7/nRmEEKGSG5m/pF1EPQ6c7X23fZL4xwaIA5BMgAkQd8AtIA6AfwTdAm4BcQfcAuIA+F9ArgWYeBvAjqjFJkCt4qzXBLAjarEJUKs46zUB7IhabALUKs56TQA5kkusMIrMdtwIyDmnk0eTfZ1vBlypM+5+qdg2AEAC/hv8EsDec3hfj4F5f5+vV2DOAXNc14xj24AnbTF+Yb3ffVZduxq8f1zDuTEe1/X7mwHA7BhwTtxFj1c2ACWpMIrMdrABbVbobAOEir2UagKWtghNmgChYi+lmoClLUKTJkCo2EupxxGwVBlM2oDAHImUCZAocyDSBATmSKRMgESZA5EmIDBHImUCJMociDQBgTkSKRPw9jI/ff8vAAAA//8hWW0UAAAABklEQVQDACBSTpDnnc9BAAAAAElFTkSuQmCC"
 		},
 		{
-			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\soul\\soul_3_book_face.png",
 			"name": "soul_3_book_face.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/soul/soul_3_book_face.png",
+			"relative_path": "../../../textures/custom/soul/soul_3_book_face.png",
 			"folder": "",
 			"namespace": "",
 			"id": "1",
 			"group": "",
+			"scope": 0,
 			"width": 128,
 			"height": 128,
 			"uv_width": 16,
@@ -437,9 +491,12 @@
 			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
+			"file_format": "png",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"wrap_mode": "limited",
 			"pbr_channel": "color",
+			"fps": 7,
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
@@ -448,16 +505,17 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "12e7007e-e87a-ae8f-7c90-c00949824787",
-			"relative_path": "../../../textures/custom/soul/soul_3_book_face.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABYRJREFUeF7tne124yAMROP3f+jsSRp3qYPNDB8WSLM/tzIgzbWYYDfdHvoXugJb6OyV/EMABIdAAAiA4BUInr46gAAIXoHg6asDCIDgFQievjqAAAhegeDpqwMIgOAVCJ6+OoAACF6B4OmrAwiA4BUInr46gAAIXoHg6asDCIDgFQievjqAAAhegeDpvzrAk6xB7TXHadh5yWUuG35rV64VkxUvlxQ7xrKKkgsXALmCPZ/fvGzb9sj9P1nwKcJfuXz+CQABcB+T1VsAeud9yD7dAq7GSe6K7J2uDtAOyvZEldz707a9r0nFuVrGa/gtH/ye+mqc9OfaAtrFzo1Q3QHI5WQ7AMLeDogAICsOhpsCAK7xHSYAmGrhsdUAIHfvaxnyAJgYZp8CvHiAo5dAAcXkGR9lBoDlSSAiEuIBzowkMv54abEZQgKAleYn6soDCACmkn9jXXgAAdAAgAcPUAsAepZRU152+wm5BSBFQjxA8mnjV6vS2KNPEdnxQwLA3Fm9zwFYgZi17kCWIEzHXA4ANLlZzwFQAHLbBJI7Ov4OgRkAHjwAe3cid2hp6zn7ZJIKioBiDoCHc4DeAKB371UcOkZoABjh7vIAOeHSbeC4jjOh3QOAtrfVPEA4AOQBDidjmdfM1AH6nB4eOz7EXsmMoZ3oOHmP/bvHGPIAoBG4ywMcBTmbN/ynAPTOW80D5DpFpnUVsV3GBEJ9OEn39X6fh3cCWYGKih8C2PHNDoJ0DsBKi8ULgG/j+NVJsVL+RPX2APtpILMGJhbdIpc1gWiCs3oARsw7Ys22gKge4A5RmTnMAIjqARhx7ogNCQBT2BEegJl/dOxyAMgD9EXCDAB5gL5C1o5mBoA8QK1kfa8LCQBTQnkAplp4rIvfC8gd6qAeBS/V2EizDuDBA+Re3Dw7PRwrY/3oZgB48AACoAE8SwCYZet3A5lq4bEuPEBtBzi7Di/feSTrQcy2AA8eoMYEso9rWSjY8c0AsNwCkLvE4p1AVuxcvAD4W5XmbwrtfQ7ACsRCwY6/XAdA7t6kNU/3PYFHgRA/sOd8jO0BpxkAXjzA6Dt09PhmAMgDsNJi8e63AKwMv1HTe4Czts7+/56xewC8eQAS6GL4MgDIAxS1rApYBgB5gB99r04Tc9tA6ZOAANA5APXHLJb7FCAPcL0zLNMB5AHyW8DZoc8u++vn6TaAfnPIGTbLdQDSGU339wLYO5TM9w0H2iUPHkR/MyhX7B7Hrem4rEAC4H8F3u8QoHR/WttSzwLS9n5s9a8y5LaHZbcAWMkPAPp+AKwXsB1GHuCkrnofAAOuNqr6lTByQjfPAs7yXnYLqD0J9OYBSKCL4ctsAfIARS2rApYBoLYDkFXROUChYCFNIANR73OAqwdAzLpQT1AaczkAZvMApadzJQGsf24GgAcPcPUo11pYdH4zADx4AAGAYvYd5+IcQAAYADCTBxAADQB48AA5R48CWl+6vlfKA9z8LKCvfO2jhQSAKduIcwBm/tGxywGAtthZ3wcYLSg7vhkAXjwAW/DZ4s0A8HAOMJuY6XrS9xn2B0S5B0UhAWCEW9UDXAGQgrAcAPIADL7lWDMA5AHK4twRYQbAKh7gDhEmmUO/FzCJEFbLuB0Aq0Q17wQVuJW2CfLVEg4VqAUA9o4XJ4ESY4IKVAHQ6S+HTpC+ljAcgE+Jq+aRPOMrUCUM0wEEwHgRW2YQAC3Vc3CtAHAgYksKAqCleg6uFQAORGxJQQC0VM/BtQLAgYgtKQwH4PMdO1XztCSma7EK1Aqjo2CsvtNH1QIwfWJaIFYBAYDVyW2UAHArLZaYAMDq5DZKALiVFktMAGB1chslANxKiyUmALA6uY0SAG6lxRITAFid3EYJALfSYon9A/2hS9v0FMuOAAAAAElFTkSuQmCC"
+			"source": "data:image/png;base64,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"
 		},
 		{
-			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\black.png",
 			"name": "black.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/black.png",
+			"relative_path": "../../../textures/custom/black.png",
 			"folder": "",
 			"namespace": "",
 			"id": "2",
 			"group": "",
+			"scope": 0,
 			"width": 16,
 			"height": 16,
 			"uv_width": 16,
@@ -466,9 +524,12 @@
 			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
+			"file_format": "png",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"wrap_mode": "limited",
 			"pbr_channel": "color",
+			"fps": 7,
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
@@ -477,8 +538,7 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "4abf1fb2-ffbc-afe5-89fa-c2839620daf8",
-			"relative_path": "../../../textures/custom/black.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9jZGBg+M9AAWAcNYBhNAwYRsOAYViEAQBOThABC541RwAAAABJRU5ErkJggg=="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAALElEQVR4AeyTsQ0AAAjCGv//WeUFHVhIYIShgQL6YxVs/q4UQBiEgR7k38EAAAD//16LopYAAAAGSURBVAMA7eIQERhjxOYAAAAASUVORK5CYII="
 		}
 	],
 	"variants": {

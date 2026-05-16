@@ -2,8 +2,10 @@ const dotenv = require('dotenv');
 const { series } = require('nps-utils');
 const { resolve } = require('path');
 
-const { ajblueprintDir } = require('./package-scripts/shared-consts');
-const { assertEnvironmentVariables } = require('./package-scripts/utils');
+const { ajblueprintDir } = require('./package-scripts/modules/shared-consts');
+const {
+  assertEnvironmentVariables,
+} = require('./package-scripts/utils-commonjs');
 
 dotenv.config();
 
@@ -18,7 +20,7 @@ const assetsDir = process.env.ASSETS_DIR;
 const blockbenchPath =
   process.platform === 'darwin'
     ? `open "${process.env.BLOCKBENCH_PATH}" --args`
-    : `"${process.env.BLOCKBENCH_PATH}"`;
+    : `'${process.env.BLOCKBENCH_PATH}'`;
 const datapack = process.env.DATAPACK;
 const resourcePack = process.env.RESOURCEPACK;
 
@@ -30,12 +32,13 @@ const allAnimatedJavaExportFiles = [
   'datapacks/animated_java/data',
   'datapacks/animated_java/data.ajmeta',
   'resourcepack/assets.ajmeta',
-  'resourcepack/assets/animated_java',
+  'resourcepack/assets/aj',
   'resourcepack/assets/minecraft/models/item/pink_dye.json',
   `${ajblueprintDir}/last_exported_hashes.json`,
 ];
 const allAnimatedJavaExportFilesFormatted =
   allAnimatedJavaExportFiles.join(',');
+const exclude = `${allAnimatedJavaExportFilesFormatted},datapacks/summit-dp-core/**/*`;
 
 const floweyWorldSyncPath = './world.zip';
 const minecraftPath = process.env.MINECRAFT_PATH;
@@ -58,7 +61,7 @@ module.exports = {
     'count-bones': 'node ./package-scripts/count-aj-bones',
     export: {
       default: series.nps('export.run', 'export.postprocess'),
-      run: `yarn exec ${blockbenchPath} --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
+      run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
       // forcibly purge the `animated_java` export-cache
       force: series(
         `rimraf ${allAnimatedJavaExportFiles.join(' ')}`,
@@ -95,8 +98,8 @@ module.exports = {
           'lint.custom.other',
         ),
         fix: 'nps "lint.custom.datapacks --fix"',
-        datapacks: `node ./package-scripts/run-linting-rules --fix --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
-        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
+        datapacks: `node ./package-scripts/run-linting-rules --fix --include "datapacks/**/*" --exclude "${exclude}"`,
+        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${exclude}"`,
         other:
           'node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"',
       },

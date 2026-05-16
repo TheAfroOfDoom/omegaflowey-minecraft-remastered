@@ -212,6 +212,7 @@ const getSummitResourcepackPaths = () => {
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
   const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
 
+  // TODO(318): fix this method
   const pruneAnimatedJavaDisplayItem = async ({ compiledPath }) => {
     const displayItemPath = `${compiledPath}/assets/minecraft/models/item/pink_dye.json`;
     const displayItemJson = await readJson(displayItemPath);

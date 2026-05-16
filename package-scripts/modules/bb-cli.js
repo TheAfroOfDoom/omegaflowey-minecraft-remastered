@@ -2,7 +2,7 @@
 // https://discord.com/channels/314078526104141834/1189404550986211329/1189517519262855229
 
 /* eslint-env browser */
-/* global BBPlugin, electron */
+/* global BBPlugin, Blockbench, requireNativeModule */
 
 BBPlugin.register('bb-cli', {
   title: 'Blockbench CLI',
@@ -12,16 +12,17 @@ BBPlugin.register('bb-cli', {
   version: '1.0.0',
   variant: 'both',
   onload() {
-    const { argv } = electron.getGlobal('process');
+    const { argv } = Blockbench;
     const scriptArg = argv.find((arg) => arg.startsWith('--script'));
     if (typeof scriptArg !== 'undefined') {
       const scriptPath = scriptArg.replace('--script=', '');
       console.log('BB-CLI: importing script:', scriptPath);
+      const fs = requireNativeModule('fs');
       const script = import(scriptPath);
       script
         .then(async (module) => {
           await new Promise((resolve) => setTimeout(resolve, 1000));
-          await module.script();
+          await module.script(fs);
         })
         .finally(() => {
           window.close();

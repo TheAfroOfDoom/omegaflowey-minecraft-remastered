@@ -1,7 +1,7 @@
 scoreboard players set #omegaflowey.soul.3.touched omegaflowey.soul.flag 1
 
 # Apply yellow-highlighted variant
-function animated_java:omegaflowey_act_button/variants/selected/apply
+function aj:omegaflowey_act_button/variants/selected/apply
 
 # Play select sound
 function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: \

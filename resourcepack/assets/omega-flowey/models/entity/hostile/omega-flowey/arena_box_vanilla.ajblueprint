@@ -1,17 +1,17 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.8.1",
+		"format_version": "1.10.0-beta.6",
 		"uuid": "4c5c60b1-c3b5-5ddb-256b-fd5e5a65d109",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\hostile\\omega-flowey\\arena_box_vanilla.ajblueprint",
-		"last_used_export_namespace": "omegaflowey_arena_box_vanilla"
+		"last_used_blueprint_id": "aj:omegaflowey_arena_box_vanilla"
 	},
 	"resolution": {
 		"width": 16,
 		"height": 16
 	},
 	"blueprint_settings": {
-		"export_namespace": "omegaflowey_arena_box_vanilla",
+		"blueprint_id": "aj:omegaflowey_arena_box_vanilla",
 		"render_box": [48, 48],
 		"display_item": "minecraft:pink_dye",
 		"custom_model_data_offset": 4654465,
@@ -24,10 +24,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [502.74, 510.72, 494.75],
 			"to": [-502.74, -47.88, -399],
@@ -37,29 +40,29 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 16, 16],
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b"
 				},
 				"east": {
 					"uv": [0, 0, 16, 16],
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b"
 				},
 				"south": {
 					"uv": [0, 0, 16, 16],
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b"
 				},
 				"west": {
 					"uv": [0, 0, 16, 16],
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b"
 				},
 				"up": {
 					"uv": [0, 0, 16, 16],
-					"rotation": 180,
-					"texture": null
+					"texture": null,
+					"rotation": 180
 				},
 				"down": {
 					"uv": [0, 0, 16, 16],
-					"rotation": 180,
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b",
+					"rotation": 180
 				}
 			},
 			"type": "cube",
@@ -68,10 +71,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-503.14007, -79.79985, -399],
 			"to": [502.73993, -47.87985, -191.52],
@@ -89,7 +95,7 @@
 				},
 				"south": {
 					"uv": [0, 0, 16, 2],
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b"
 				},
 				"west": {
 					"uv": [0, 0, 13, 2],
@@ -97,13 +103,13 @@
 				},
 				"up": {
 					"uv": [0, 0, 16, 13],
-					"rotation": 180,
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b",
+					"rotation": 180
 				},
 				"down": {
 					"uv": [0, 0, 16, 13],
-					"rotation": 180,
-					"texture": null
+					"texture": null,
+					"rotation": 180
 				}
 			},
 			"type": "cube",
@@ -112,10 +118,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-503.14007, -79.79985, 191.52002],
 			"to": [502.73993, -47.87985, 495.00002],
@@ -125,7 +134,7 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 16, 2],
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b"
 				},
 				"east": {
 					"uv": [0, 0, 13, 2],
@@ -141,13 +150,13 @@
 				},
 				"up": {
 					"uv": [0, 0, 16, 13],
-					"rotation": 180,
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b",
+					"rotation": 180
 				},
 				"down": {
 					"uv": [0, 0, 16, 13],
-					"rotation": 180,
-					"texture": null
+					"texture": null,
+					"rotation": 180
 				}
 			},
 			"type": "cube",
@@ -156,10 +165,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [231.42, -79.8, -191.52],
 			"to": [502.94, -47.88, 191.52],
@@ -181,17 +193,17 @@
 				},
 				"west": {
 					"uv": [0, 0, 16, 2],
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b"
 				},
 				"up": {
 					"uv": [0, 0, 11, 16],
-					"rotation": 180,
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b",
+					"rotation": 180
 				},
 				"down": {
 					"uv": [0, 0, 11, 16],
-					"rotation": 180,
-					"texture": null
+					"texture": null,
+					"rotation": 180
 				}
 			},
 			"type": "cube",
@@ -200,10 +212,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-247.38, -95.76, -191.52],
 			"to": [247.38, -63.84, 191.52],
@@ -229,13 +244,13 @@
 				},
 				"up": {
 					"uv": [0, 0, 16, 16],
-					"rotation": 180,
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b",
+					"rotation": 180
 				},
 				"down": {
 					"uv": [0, 0, 16, 16],
-					"rotation": 180,
-					"texture": null
+					"texture": null,
+					"rotation": 180
 				}
 			},
 			"type": "cube",
@@ -244,10 +259,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [-502.94, -79.8, -191.52],
 			"to": [-231.42, -47.88, 191.52],
@@ -261,7 +279,7 @@
 				},
 				"east": {
 					"uv": [0, 0, 16, 2],
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b"
 				},
 				"south": {
 					"uv": [0, 0, 11, 2],
@@ -273,36 +291,52 @@
 				},
 				"up": {
 					"uv": [0, 0, 11, 16],
-					"rotation": 180,
-					"texture": 0
+					"texture": "6c842434-6b12-81a2-807f-0fe112fe184b",
+					"rotation": 180
 				},
 				"down": {
 					"uv": [0, 0, 11, 16],
-					"rotation": 180,
-					"texture": null
+					"texture": null,
+					"rotation": 180
 				}
 			},
 			"type": "cube",
 			"uuid": "fa4c02c5-7b04-902d-2aae-bbf1d1b8d926"
 		}
 	],
-	"outliner": [
+	"groups": [
 		{
 			"name": "root",
+			"uuid": "f7aefda7-e507-8323-105d-d119f86cc570",
+			"export": true,
+			"locked": false,
+			"scope": 0,
+			"selected": false,
+			"_static": {
+				"properties": {},
+				"temp_data": {}
+			},
 			"origin": [0, 231.42, 0],
+			"rotation": [0, 0, 0],
 			"color": 0,
 			"onSummonFunction": "",
 			"configs": {
 				"variants": {}
 			},
-			"uuid": "f7aefda7-e507-8323-105d-d119f86cc570",
-			"export": true,
+			"children": [],
+			"reset": false,
+			"shade": true,
 			"mirror_uv": false,
-			"isOpen": true,
-			"locked": false,
 			"visibility": true,
 			"autouv": 0,
-			"selected": false,
+			"isOpen": true,
+			"primary_selected": false
+		}
+	],
+	"outliner": [
+		{
+			"uuid": "f7aefda7-e507-8323-105d-d119f86cc570",
+			"isOpen": true,
 			"children": [
 				"a79fccbc-949c-7bb3-0610-118a4ac3caaa",
 				"bbb32b1a-07f4-5331-b7d1-2e15757f6948",
@@ -315,12 +349,14 @@
 	],
 	"textures": [
 		{
-			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/attacks/blank.png",
 			"name": "blank.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/attacks/blank.png",
+			"relative_path": "../../../../textures/custom/attacks/blank.png",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
 			"group": "",
+			"scope": 0,
 			"width": 16,
 			"height": 16,
 			"uv_width": 16,
@@ -329,9 +365,12 @@
 			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
+			"file_format": "png",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"wrap_mode": "limited",
 			"pbr_channel": "color",
+			"fps": 7,
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
@@ -340,16 +379,17 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "6c842434-6b12-81a2-807f-0fe112fe184b",
-			"relative_path": "../../../../textures/custom/attacks/blank.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB9JREFUOE9jZKAQMFKon2HUAIbRMGAYDQNQPhr4vAAAJpgAEX/anFwAAAAASUVORK5CYII="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAJUlEQVR4AeyTsQ0AAAyCSP8/uvEGN4MHOBA4ynkAMpBBMhrw4AEAAP//uBwiawAAAAZJREFUAwBJIAAhJFoqZwAAAABJRU5ErkJggg=="
 		},
 		{
-			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/intro_flashing_red.png",
 			"name": "intro_flashing_red.png",
+			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/intro_flashing_red.png",
+			"relative_path": "../../../../textures/custom/intro_flashing_red.png",
 			"folder": "",
 			"namespace": "",
 			"id": "1",
 			"group": "",
+			"scope": 0,
 			"width": 16,
 			"height": 32,
 			"uv_width": 16,
@@ -358,19 +398,21 @@
 			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
+			"file_format": "png",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"wrap_mode": "limited",
 			"pbr_channel": "color",
+			"fps": 7,
 			"frame_time": 1,
 			"frame_order_type": "custom",
 			"frame_order": "0:4 1:6 1:6",
-			"frame_interpolate": false,
+			"frame_interpolate": true,
 			"visible": true,
 			"internal": true,
 			"saved": true,
 			"uuid": "55c7ab60-1ea2-16e7-84e1-043af3beb3f4",
-			"relative_path": "../../../../textures/custom/intro_flashing_red.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAADFJREFUSEtjZGBg+MdAAWAcNYBhNAwYRsOAYXiEQROl5cGoAQyMo2EwGgag8mDopwMAnMooAeNNRDYAAAAASUVORK5CYII="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAPklEQVR4AeyTwQkAMAwCj47ewUt1hfjJQ9BnJIoe4CW0gO7nqAA0g2bgBS3owdUfCRdYkIMItdA1ukDtAXwAAAD//1QsB74AAAAGSURBVAMABAAYQbrAFWYAAAAASUVORK5CYII="
 		}
 	],
 	"variants": {

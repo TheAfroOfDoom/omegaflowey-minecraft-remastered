@@ -11,4 +11,4 @@ execute store result storage omegaflowey:attack.x-bullets-lower to_frame int 1 r
 execute store result storage omegaflowey:attack.x-bullets-lower duration int 1 \
   run scoreboard players get #omegaflowey.attack.x-bullets-lower.tween_duration omegaflowey.math.const
 
-function animated_java:omegaflowey_lower_eye/animations/omegaflowey_look_around/tween with storage omegaflowey:attack.x-bullets-lower
+function aj:omegaflowey_lower_eye/animations/omegaflowey_look_around/tween with storage omegaflowey:attack.x-bullets-lower

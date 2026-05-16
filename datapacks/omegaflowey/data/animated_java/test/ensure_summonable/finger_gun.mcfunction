@@ -1,4 +1,4 @@
-# @batch animated_java:ensure_summonable
+# @batch aj:ensure_summonable
 
-function animated_java:omegaflowey_finger_gun/summon { args: {} }
+function aj:omegaflowey_finger_gun/summon { args: {} }
 assert entity @e[tag=aj.omegaflowey_finger_gun.root]

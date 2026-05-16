@@ -1,2 +1,2 @@
-function animated_java:omegaflowey_petal_pipe_circle_simplified/animations/omegaflowey_float_and_pulsate/resume
-function animated_java:omegaflowey_petal_pipe_circle_simplified/variants/default/apply
+function aj:omegaflowey_petal_pipe_circle_simplified/animations/omegaflowey_float_and_pulsate/resume
+function aj:omegaflowey_petal_pipe_circle_simplified/variants/default/apply

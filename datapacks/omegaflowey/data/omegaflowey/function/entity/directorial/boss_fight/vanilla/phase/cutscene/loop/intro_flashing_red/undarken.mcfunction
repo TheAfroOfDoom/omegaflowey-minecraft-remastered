@@ -8,4 +8,4 @@ execute as @e[ \
   tag=omega-flowey-remastered \
 ] run function omegaflowey:entity/hostile/omega-flowey/animate/intro/brighten/as_root
 
-$execute as $(arena_box_uuid) run function animated_java:omegaflowey_arena_box_vanilla/remove/this
+$execute as $(arena_box_uuid) run function aj:omegaflowey_arena_box_vanilla/remove/this

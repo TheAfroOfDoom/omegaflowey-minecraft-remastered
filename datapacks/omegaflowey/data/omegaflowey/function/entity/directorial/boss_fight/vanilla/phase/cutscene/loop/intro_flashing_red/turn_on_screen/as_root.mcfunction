@@ -1,4 +1,4 @@
-function animated_java:omegaflowey_tv_screen/variants/reveal_1/apply
+function aj:omegaflowey_tv_screen/variants/reveal_1/apply
 execute on passengers if entity @s[tag=aj.omegaflowey_tv_screen.bone] run \
   data merge entity @s { brightness: { block: 11, sky: 0 } }
 

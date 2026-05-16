@@ -7,12 +7,12 @@ const { difference, findKey } = require('lodash');
 const { parse, relative } = require('path');
 const { rimraf } = require('rimraf');
 
-const { ajblueprintDir } = require('./shared-consts');
+const { ajblueprintDir } = require('./modules/shared-consts');
 const {
   assertEnvironmentVariables,
   parseLastExportedHashes,
   updateLastExportedHashes,
-} = require('./utils');
+} = require('./utils-commonjs');
 
 dotenv.config();
 assertEnvironmentVariables([
@@ -198,10 +198,10 @@ const deleteExportedFiles = async (path) => {
 
   const pathsToDeleteEntirely = [
     // datapacks things
-    `datapacks/animated_java/data/animated_java/functions/${name}`,
-    `datapacks/animated_java/data/animated_java/tags/functions/${name}`,
+    `datapacks/animated_java/data/aj/functions/${name}`,
+    `datapacks/animated_java/data/aj/tags/functions/${name}`,
     // resourcepack things
-    `resourcepack/assets/animated_java/models/item/${name}`,
+    `resourcepack/assets/aj/models/item/${name}`,
   ];
   for (const path of pathsToDeleteEntirely) {
     rimraf(path);
@@ -213,7 +213,7 @@ const deleteExportedFiles = async (path) => {
   const deleteFromValues = async (path) => {
     const json = JSON.parse(await readFile(path, 'utf8'));
     json.values = json.values.filter(
-      (value) => !value.startsWith(`animated_java:${name}/zzzzzzzz/`),
+      (value) => !value.startsWith(`aj:${name}/zzzzzzzz/`),
     );
     await writeFile(path, JSON.stringify(json, null, 2));
   };

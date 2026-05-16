@@ -1,1 +1,1 @@
-function animated_java:omegaflowey_soul/variants/1/apply
+function aj:omegaflowey_soul/variants/1/apply

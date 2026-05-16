@@ -8,20 +8,20 @@ const applicableExtensions = ['.ajblueprint'];
  * and returns a (deduplicated) list of found textures
  */
 const getDefaultVariantTextures = (ajblueprint) => {
-  const defaultVariantTextureIdxs = [];
+  const defaultVariantTextureUuids = [];
   const cubes = ajblueprint.elements.filter(({ type }) => type === 'cube');
   for (const element of cubes) {
     // side = 'north', 'south', etc.
     for (const side of Object.keys(element.faces)) {
-      const textureIdx = element.faces[side].texture;
-      if (typeof textureIdx !== 'undefined' && textureIdx !== null) {
-        defaultVariantTextureIdxs.push(textureIdx);
+      const textureUuid = element.faces[side].texture;
+      if (typeof textureUuid !== 'undefined' && textureUuid !== null) {
+        defaultVariantTextureUuids.push(textureUuid);
       }
     }
   }
   // Deduplicate and convert from texture-index to texture object
-  const defaultTextures = uniq(defaultVariantTextureIdxs).map(
-    (idx) => ajblueprint.textures[idx],
+  const defaultTextures = uniq(defaultVariantTextureUuids).map((uuid) =>
+    ajblueprint.textures.find((texture) => texture.uuid === uuid),
   );
 
   return defaultTextures;

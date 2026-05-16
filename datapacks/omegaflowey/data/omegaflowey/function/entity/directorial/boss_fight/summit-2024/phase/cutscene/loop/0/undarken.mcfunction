@@ -10,7 +10,7 @@ execute as @e[ \
   tag=omega-flowey-remastered \
 ] run function omegaflowey:entity/hostile/omega-flowey/animate/intro/brighten/as_root
 
-$execute as $(arena_box_uuid) run function animated_java:omegaflowey_arena_box/variants/default/apply
+$execute as $(arena_box_uuid) run function aj:omegaflowey_arena_box/variants/default/apply
 
 summon minecraft:text_display -156.5 43.0625 76.0 { \
   Tags: [ \

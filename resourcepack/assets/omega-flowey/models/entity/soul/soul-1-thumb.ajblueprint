@@ -1,31 +1,30 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.8.1",
+		"format_version": "1.10.0-beta.6",
 		"uuid": "5a5a2f1c-6e36-4732-1b2c-c5587ef4b3da",
 		"save_location": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\models\\entity\\soul\\soul-1-thumb.ajblueprint",
-		"last_used_export_namespace": "omegaflowey_soul_1_thumb"
+		"last_used_blueprint_id": "aj:omegaflowey_soul_1_thumb"
 	},
 	"resolution": {
 		"width": 16,
 		"height": 16
 	},
 	"blueprint_settings": {
-		"export_namespace": "omegaflowey_soul_1_thumb",
+		"blueprint_id": "aj:omegaflowey_soul_1_thumb",
 		"render_box": [48, 48],
 		"custom_model_data_offset": 4654465,
 		"enable_advanced_resource_pack_settings": true,
-		"resource_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack",
-		"data_pack": "G:\\Coding\\omegaflowey-minecraft-remastered\\datapacks\\animated_java",
+		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
+		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
 		"on_summon_function": "function omegaflowey:entity/soul/soul_1/healer/initialize"
 	},
 	"elements": [
 		{
-			"uuid": "596bb1d7-ae2f-2482-61d4-63138abb6d0d",
-			"type": "animated_java:vanilla_item_display",
 			"name": "item_display",
 			"position": [0, 0, 0],
 			"rotation": [90, 0, 90],
+			"pivotOffset": [0, 0, 0],
 			"scale": [7, 7, 2.25],
 			"visibility": true,
 			"locked": false,
@@ -36,7 +35,10 @@
 			"configs": {
 				"default": {},
 				"variants": {}
-			}
+			},
+			"scope": 0,
+			"uuid": "596bb1d7-ae2f-2482-61d4-63138abb6d0d",
+			"type": "animated_java:vanilla_item_display"
 		},
 		{
 			"name": "interaction_hitbox",
@@ -45,6 +47,7 @@
 			"ignore_inherited_scale": false,
 			"visibility": true,
 			"locked": false,
+			"scope": 0,
 			"config": {
 				"use_entity": true,
 				"entity_type": "minecraft:interaction",
@@ -57,24 +60,40 @@
 			"type": "locator"
 		}
 	],
-	"outliner": [
+	"groups": [
 		{
 			"name": "bone",
+			"uuid": "8e4df028-5808-878b-2b6c-08676da9ea1d",
+			"export": true,
+			"locked": false,
+			"scope": 0,
+			"selected": false,
+			"_static": {
+				"properties": {},
+				"temp_data": {}
+			},
 			"origin": [0, -4, 0],
+			"rotation": [0, 0, 0],
 			"color": 0,
 			"onSummonFunction": "",
 			"configs": {
 				"default": {},
 				"variants": {}
 			},
-			"uuid": "8e4df028-5808-878b-2b6c-08676da9ea1d",
-			"export": true,
+			"children": [],
+			"reset": false,
+			"shade": true,
 			"mirror_uv": false,
-			"isOpen": true,
-			"locked": false,
 			"visibility": true,
 			"autouv": 0,
-			"selected": false,
+			"isOpen": true,
+			"primary_selected": false
+		}
+	],
+	"outliner": [
+		{
+			"uuid": "8e4df028-5808-878b-2b6c-08676da9ea1d",
+			"isOpen": true,
 			"children": ["488a0c66-ee06-839b-9545-2e9b9fe11911", "596bb1d7-ae2f-2482-61d4-63138abb6d0d"]
 		}
 	],
@@ -101,6 +120,7 @@
 			"selected": true,
 			"saved": true,
 			"path": "",
+			"scope": 0,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
@@ -110,6 +130,8 @@
 				"8e4df028-5808-878b-2b6c-08676da9ea1d": {
 					"name": "bone",
 					"type": "bone",
+					"rotation_global": false,
+					"quaternion_interpolation": false,
 					"keyframes": [
 						{
 							"channel": "position",
@@ -128,6 +150,18 @@
 							"easingArgs": []
 						}
 					]
+				},
+				"596bb1d7-ae2f-2482-61d4-63138abb6d0d": {
+					"name": "item_display",
+					"type": "animated_java:vanilla_item_display",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				},
+				"488a0c66-ee06-839b-9545-2e9b9fe11911": {
+					"name": "interaction_hitbox",
+					"type": "locator",
+					"rotation_global": false,
+					"quaternion_interpolation": false
 				}
 			}
 		}

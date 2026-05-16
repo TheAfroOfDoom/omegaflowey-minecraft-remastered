@@ -1,6 +1,6 @@
 const { readdirSync, readFileSync } = require('fs');
 const { resolve } = require('path');
-const { ajblueprintDir } = require(`./shared-consts`);
+const { ajblueprintDir } = require(`./modules/shared-consts`);
 
 const MODEL_FILE_EXTENSION = '.ajblueprint';
 
@@ -43,7 +43,7 @@ const main = async () => {
       nextBones = children;
     }
 
-    const name = model.blueprint_settings.export_namespace;
+    const name = model.blueprint_settings.blueprint_id;
 
     res.push({ name, boneCount: count });
   }
