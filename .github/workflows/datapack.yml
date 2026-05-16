@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: valeriangalliat/action-sshd-cloudflared@v4
       - uses: ./.github/actions/setup-animated-java-exports
         timeout-minutes: 4
       - run: echo "$(cat blockbench.log)"
