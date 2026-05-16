@@ -134,6 +134,18 @@ const checkSummonCommands = (model) => {
   return [error];
 };
 
+const checkUseEntityStacking = (model) => {
+  const errors = [];
+  const { use_entity_stacking = false } = model.blueprint_settings;
+  if (!use_entity_stacking) {
+    let error = chalk.blueBright('use_entity_stacking');
+    error += ' must be set to ';
+    error += chalk.blueBright('true');
+    errors.push(error);
+  }
+  return errors;
+};
+
 /**
  * Errors for wrong settings values in .ajblueprint files. Limited to trivial checks
  * (like a setting's defined value not matching an exact pattern).
@@ -156,6 +168,7 @@ const correctAjblueprintSettings = (file) => {
     checkExportNamespace,
     checkRigItem,
     checkSummonCommands,
+    checkUseEntityStacking,
   ];
   for (const settingsCheck of settingsChecks) {
     errors.push(...settingsCheck(ajblueprint, { file }));
