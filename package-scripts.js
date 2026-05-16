@@ -38,6 +38,7 @@ const allAnimatedJavaExportFiles = [
 ];
 const allAnimatedJavaExportFilesFormatted =
   allAnimatedJavaExportFiles.join(',');
+const exclude = `${allAnimatedJavaExportFilesFormatted},datapacks/summit-dp-core/**/*`;
 
 const floweyWorldSyncPath = './world.zip';
 const minecraftPath = process.env.MINECRAFT_PATH;
@@ -97,8 +98,8 @@ module.exports = {
           'lint.custom.other',
         ),
         fix: 'nps "lint.custom.datapacks --fix"',
-        datapacks: `node ./package-scripts/run-linting-rules --fix --include "datapacks/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
-        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${allAnimatedJavaExportFilesFormatted}"`,
+        datapacks: `node ./package-scripts/run-linting-rules --fix --include "datapacks/**/*" --exclude "${exclude}"`,
+        resourcepack: `node ./package-scripts/run-linting-rules --include "resourcepack/**/*" --exclude "${exclude}"`,
         other:
           'node ./package-scripts/run-linting-rules --include "**/*" --exclude "resourcepack/**/*,datapacks/**/*"',
       },
