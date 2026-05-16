@@ -2,7 +2,7 @@ const chalk = require('chalk');
 const { lstatSync, readFileSync, writeFileSync } = require('fs');
 const { globSync } = require('glob');
 
-const setInterpolationDurationZeroAllFrames = (rootDir) => {
+const setInterpolationDurationZeroAllFrames = ({ datapackRootDir }) => {
   const stepAnimations = [
     ['omegaflowey_arm_vine', 'omegaflowey_intro_shake'],
     ['omegaflowey_arm_vine_right', 'omegaflowey_intro_shake'],
@@ -32,7 +32,7 @@ const setInterpolationDurationZeroAllFrames = (rootDir) => {
   ];
 
   for (const [namespace, animation] of stepAnimations) {
-    const dir = `${rootDir}/function/${namespace}/animations/${animation}`;
+    const dir = `${datapackRootDir}/function/${namespace}/animations/${animation}`;
     process.stdout.write(
       chalk.gray(`${namespace}/animations/${animation} ... `),
     );
@@ -61,7 +61,7 @@ const setInterpolationDurationZeroAllFrames = (rootDir) => {
   }
 };
 
-const setInterpolationDurationMouthFrames = (rootDir) => {
+const setInterpolationDurationMouthFrames = ({ datapackRootDir }) => {
   const mouthLaughStepFrames = [
     1, 4,
 
@@ -95,7 +95,7 @@ const setInterpolationDurationMouthFrames = (rootDir) => {
   ];
 
   for (const [namespace, animation, frames] of stepAnimations) {
-    const dir = `${rootDir}/function/${namespace}/animations/${animation}`;
+    const dir = `${datapackRootDir}/function/${namespace}/animations/${animation}`;
 
     process.stdout.write(
       chalk.gray(`${namespace}/animations/${animation} ... `),
@@ -132,10 +132,10 @@ const logNumChanges = (numChanges) => {
   console.log(numChangesStr);
 };
 
-const fixStepKeyframes = (rootDir) => {
+const fixStepKeyframes = ({ datapackRootDir }) => {
   console.log(`Setting step-animation bones' interpolation duration to 0...`);
-  setInterpolationDurationZeroAllFrames(rootDir);
-  setInterpolationDurationMouthFrames(rootDir);
+  setInterpolationDurationZeroAllFrames({ datapackRootDir });
+  setInterpolationDurationMouthFrames({ datapackRootDir });
 };
 
 module.exports = fixStepKeyframes;

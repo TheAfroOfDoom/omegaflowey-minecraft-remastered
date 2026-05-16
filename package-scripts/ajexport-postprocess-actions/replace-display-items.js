@@ -1,14 +1,14 @@
 const chalk = require('chalk');
 const { readFileSync, writeFileSync } = require('fs');
 
-const replaceDiamondDisplayItems = (rootDir) => {
+const replaceDiamondDisplayItems = ({ datapackRootDir }) => {
   const blueprints = [
     ['omegaflowey_soul_1_glove', 'omega-flowey:soul/soul-1-glove'],
     ['omegaflowey_soul_1_thumb', 'omega-flowey:soul/soul-1-thumb'],
   ];
 
   for (const [namespace, displayItem] of blueprints) {
-    const blueprintDir = `${rootDir}/function/${namespace}`;
+    const blueprintDir = `${datapackRootDir}/function/${namespace}`;
 
     process.stdout.write(chalk.gray(`${namespace} ... `));
 
@@ -38,9 +38,9 @@ const logNumChanges = (numChanges) => {
   console.log(numChangesStr);
 };
 
-const replaceDisplayItems = (rootDir) => {
+const replaceDisplayItems = ({ datapackRootDir }) => {
   console.log(`Replacing display items...`);
-  replaceDiamondDisplayItems(rootDir);
+  replaceDiamondDisplayItems({ datapackRootDir });
 };
 
 module.exports = replaceDisplayItems;
