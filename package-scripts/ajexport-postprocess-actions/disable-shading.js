@@ -7,6 +7,7 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_arena_box', 'root', 'intro_flashing_red'],
     ['omegaflowey_finger_gun_laser', 'root'],
     ['omegaflowey_friendliness_pellet_ring', 'root'],
+    ['omegaflowey_friendliness_pellet_ring', 'root', 'finished_blinking'],
   ];
 
   const tints = [{ type: 'minecraft:constant', value: 66046 }];
