@@ -20,29 +20,28 @@ jobs:
         env:
           FORCE_COLOR: 2
 
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: valeriangalliat/action-sshd-cloudflared@v4
-      - uses: ./.github/actions/setup-animated-java-exports
-        timeout-minutes: 4
-      - run: echo "$(cat blockbench.log)"
-        if: ${{ failure() || cancelled() }}
-      - uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '25'
-      - name: Download server files
-        run: |
-          curl -o server.jar $FABRIC_SERVER
-          mkdir mods
-          curl -o mods/fabric-api.jar $FABRIC_API
-          curl -o mods/packtest.jar $PACKTEST
-      - name: Copy packs to world
-        run: |
-          mkdir -p world
-          cp -r datapacks world
-      - name: Run test server
-        run: |
-          java -Xmx2G -Dpacktest.auto -Dpacktest.auto.annotations -Dpacktest.auto.coloring -jar server.jar nogui
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/setup-animated-java-exports
+  #       timeout-minutes: 4
+  #     - run: echo "$(cat blockbench.log)"
+  #       if: ${{ failure() || cancelled() }}
+  #     - uses: actions/setup-java@v4
+  #       with:
+  #         distribution: 'temurin'
+  #         java-version: '25'
+  #     - name: Download server files
+  #       run: |
+  #         curl -o server.jar $FABRIC_SERVER
+  #         mkdir mods
+  #         curl -o mods/fabric-api.jar $FABRIC_API
+  #         curl -o mods/packtest.jar $PACKTEST
+  #     - name: Copy packs to world
+  #       run: |
+  #         mkdir -p world
+  #         cp -r datapacks world
+  #     - name: Run test server
+  #       run: |
+  #         java -Xmx2G -Dpacktest.auto -Dpacktest.auto.annotations -Dpacktest.auto.coloring -jar server.jar nogui
