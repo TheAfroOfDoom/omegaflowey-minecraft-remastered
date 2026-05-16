@@ -3,9 +3,11 @@ function omegaflowey:entity/directorial/boss_fight/shared/initialize
 
 # Summon and initialize `arena_box` entity
 # LINK: /omegaflowey:entity/directorial/boss_fight/shared/arena_box/initialize.mcfunction
-function omegaflowey:entity/directorial/boss_fight/summit-2026/origin/at { command: "\
-  execute positioned ~20.5 ~ ~ rotated ~180 0 run function aj:omegaflowey_arena_box/summon { args: { variant: 'default' } } \
-"}
+# NOTE: TAG_SUMMIT_2026_HARDCODED
+execute \
+  positioned 47.5 3.0 -14.5 rotated -90 0 \
+  positioned ~20.5 ~ ~ rotated ~180 0 \
+  run function aj:omegaflowey_arena_box/summon { args: { variant: 'default' } }
 
 # Add tags
 tag @s add boss_fight.summit

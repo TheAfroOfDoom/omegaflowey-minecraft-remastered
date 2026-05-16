@@ -5,15 +5,15 @@ execute store result score @s omegaflowey.attack.position.x run random value 800
 execute store result score @s omegaflowey.math.bool run random value 0..1
 execute if score @s omegaflowey.math.bool matches 1 run \
   scoreboard players operation @s omegaflowey.attack.position.x *= #omegaflowey.const.-1 omegaflowey.math.const
-scoreboard players operation @s omegaflowey.attack.position.x += #omegaflowey.bossfight.vanilla.origin.x omegaflowey.global.flag
+scoreboard players operation @s omegaflowey.attack.position.x += #omegaflowey.bossfight.summit.origin.x omegaflowey.global.flag
 
 # Randomize y-position to summon bullet at
 execute store result score @s omegaflowey.attack.position.y run random value -200..300
-scoreboard players operation @s omegaflowey.attack.position.y += #omegaflowey.bossfight.vanilla.origin.y omegaflowey.global.flag
+scoreboard players operation @s omegaflowey.attack.position.y += #omegaflowey.bossfight.summit.origin.y omegaflowey.global.flag
 
 # Set z-position to summon bullet at
 scoreboard players set @s omegaflowey.attack.position.z 850
-scoreboard players operation @s omegaflowey.attack.position.z += #omegaflowey.bossfight.vanilla.origin.z omegaflowey.global.flag
+scoreboard players operation @s omegaflowey.attack.position.z += #omegaflowey.bossfight.summit.origin.z omegaflowey.global.flag
 
 execute store result storage omegaflowey:attack.homing-vines x float 0.01 run scoreboard players get @s omegaflowey.attack.position.x
 execute store result storage omegaflowey:attack.homing-vines y float 0.01 run scoreboard players get @s omegaflowey.attack.position.y
