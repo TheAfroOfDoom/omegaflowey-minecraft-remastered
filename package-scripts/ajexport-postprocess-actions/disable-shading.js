@@ -11,6 +11,13 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_homing_vine', 'hand'],
     ['omegaflowey_homing_vine', 'vine'],
     ['omegaflowey_homing_vine_blinking_lane', 'root'],
+    ['omegaflowey_soul', 'root'],
+    ['omegaflowey_soul', 'root', '0'],
+    ['omegaflowey_soul', 'root', '1'],
+    ['omegaflowey_soul', 'root', '2'],
+    ['omegaflowey_soul', 'root', '3'],
+    ['omegaflowey_soul', 'root', '4'],
+    ['omegaflowey_soul', 'root', '5'],
   ];
 
   const tints = [{ type: 'minecraft:constant', value: 66046 }];
