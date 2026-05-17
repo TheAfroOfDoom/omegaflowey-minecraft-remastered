@@ -53,6 +53,9 @@ const smithedSummitWorldSyncArgs = `--backup-path="${smithedSummitWorldSyncPath}
 module.exports = {
   scripts: {
     default: 'nps watch',
+    aseprite: {
+      emissive: `node ./package-scripts/aseprite-replace-alpha --fromAlpha 254 --toAlpha 255 --exclude "${exclude}"`,
+    },
     build: {
       default: 'nps build.summit',
       clean: 'rimraf ./build',
