@@ -29,7 +29,7 @@ const main = () => {
   excludePatterns.push('tmp/**');
   excludePatterns.push('telemetry/**');
   const paths = globSync(include, { ignore: excludePatterns });
-  const files = paths.filter((path) => lstatSync(path).isFile());
+  const files = paths.filter((path) => lstatSync(path).isFile()).sort();
 
   for (const file of files) {
     const errors = [];
