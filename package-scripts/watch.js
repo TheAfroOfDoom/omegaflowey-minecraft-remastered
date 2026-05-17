@@ -109,7 +109,7 @@ const watchResourcepack = async (showVerbose) => {
   ];
   /** silenced files are still watched, but aren't logged */
   const silenced = [
-    /^resourcepack[/\\]assets[/\\]animated_java/,
+    /^resourcepack[/\\]assets[/\\]aj/,
     /^resourcepack[/\\]assets[/\\]minecraft[/\\]models[/\\]item[/\\]pink_dye\.json$/,
   ];
   const isSilenced = (path) => silenced.some((pattern) => pattern.test(path));
