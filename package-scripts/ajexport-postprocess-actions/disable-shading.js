@@ -13,7 +13,11 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_homing_vine', 'hand'],
     ['omegaflowey_homing_vine', 'vine'],
     ['omegaflowey_homing_vine_blinking_lane', 'root'],
+    ['omegaflowey_lower_eye', 'lid', 'colorful'],
+    ['omegaflowey_lower_eye', 'iris', 'colorful'],
+    ['omegaflowey_lower_eye', 'pupil1', 'colorful'],
     ['omegaflowey_lower_eye', 'pupil1', 'dark'],
+    ['omegaflowey_lower_eye', 'sclera', 'colorful'],
     ['omegaflowey_soul', 'root'],
     ['omegaflowey_soul', 'root', '0'],
     ['omegaflowey_soul', 'root', '1'],
@@ -88,7 +92,10 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_34'],
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_35'],
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_36'],
+    ['omegaflowey_upper_eye', 'iris', 'colorful'],
+    ['omegaflowey_upper_eye', 'pupil1', 'colorful'],
     ['omegaflowey_upper_eye', 'pupil1', 'dark'],
+    ['omegaflowey_upper_eye', 'sclera', 'colorful'],
   ];
 
   const tints = [{ type: 'minecraft:constant', value: 66046 }];
