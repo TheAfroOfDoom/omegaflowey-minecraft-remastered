@@ -20,6 +20,19 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_soul', 'root', '5'],
     ['omegaflowey_tv_screen', 'screen', 'static'],
     ['omegaflowey_tv_screen', 'screen', 'warning'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_idle'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_break'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_0'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_1'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_2'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_3'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_4'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_5'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_6'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_7'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_8'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_9'],
+    ['omegaflowey_tv_screen', 'screen', 'soul_shatter_10'],
   ];
 
   const tints = [{ type: 'minecraft:constant', value: 66046 }];
