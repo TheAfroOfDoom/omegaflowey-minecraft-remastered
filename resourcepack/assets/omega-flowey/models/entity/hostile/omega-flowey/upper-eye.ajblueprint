@@ -1237,8 +1237,8 @@
 				"default": {
 					"on_apply_function": "",
 					"billboard": "fixed",
-					"override_brightness": false,
-					"brightness_override": 0,
+					"override_brightness": true,
+					"brightness_override": 15,
 					"enchanted": false,
 					"glowing": false,
 					"override_glow_color": false,
@@ -1303,6 +1303,19 @@
 				},
 				"variants": {
 					"03d99a04-118c-54c2-dc76-451ce553a312": {
+						"on_apply_function": "",
+						"billboard": "fixed",
+						"override_brightness": true,
+						"brightness_override": 15,
+						"enchanted": false,
+						"glowing": false,
+						"override_glow_color": false,
+						"glow_color": "#ffffff",
+						"invisible": false,
+						"shadow_radius": 0,
+						"shadow_strength": 1
+					},
+					"e5853047-f931-6202-7fd6-db756e2fc46b": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
@@ -1381,6 +1394,19 @@
 						"invisible": false,
 						"shadow_radius": 0,
 						"shadow_strength": 1
+					},
+					"e5853047-f931-6202-7fd6-db756e2fc46b": {
+						"on_apply_function": "",
+						"billboard": "fixed",
+						"override_brightness": true,
+						"brightness_override": 15,
+						"enchanted": false,
+						"glowing": false,
+						"override_glow_color": false,
+						"glow_color": "#ffffff",
+						"invisible": false,
+						"shadow_radius": 0,
+						"shadow_strength": 1
 					}
 				}
 			},
@@ -1440,9 +1466,9 @@
 	],
 	"textures": [
 		{
-			"name": "emissive_quartz_block_side.png",
-			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/x_bullets_shared/emissive_quartz_block_side.png",
-			"relative_path": "../../../../textures/custom/x_bullets_shared/emissive_quartz_block_side.png",
+			"name": "quartz_block_side.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\26.1.2\\26.1.2\\assets\\minecraft\\textures\\block\\quartz_block_side.png",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/26.1.2/26.1.2/assets/minecraft/textures/block/quartz_block_side.png",
 			"folder": "",
 			"namespace": "",
 			"id": "0",
@@ -1470,7 +1496,7 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "43c7499b-810c-e305-aa49-1e7c13c77d34",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABO0lEQVR4AaRT0U7DMAy0Kkfsgf//Qd6QpsJWQVAjxN3FDsl4ZOrVi+2zz2673fbr93+wGX7t/LL2+b6g3q/2COUxN/C2v5gKWKsoY9ZaG5Ajbu5ufnmOUxhwzvO0TVWDGCEZkTyIfpFPjUCU7Z5QgMMgkAQMNfWANCgEcfiiYSnFNi9PRjJqDPlM5JmYYzw/ou8gvEzmrDNYjIgUNVMeVGoHCnDGhBxxg+xMThuRYRYFWg5IDXMLmHVkZoPZItgLgEQypRLqhsfGUSwJSF4ucuDoBSKJBEIkBJcLBKma1BU+hSVpPoAgVRNhDrPR7xLnSBJjfo7DMK2Qo9EJ9BGCpI4g5h4QN47DbrSCnLiRAzNeZfzXi6Qu7iIad8NAgqQEfNrBcbxabR+24+u744ukPerN6P8D+BlPcAc/AAAA//9HmRHTAAAABklEQVQDAIQlP6f6s9J+AAAAAElFTkSuQmCC"
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABO0lEQVR4AaRT0U7DMAy0Kkfsgf//Qd6QpsJWQVAjwd3FDsl4ZOrVi+2zz2673fbr93+wGX7t/LL2+b6g3q/2COUxN/C2v5gKWKsoY9ZaG5Ajbu5ufnmOUxhwzvO0TVWDGCEZkTyIfpFPjUCU7Z5QgMMgkAQMNfWANCgEcfiiYSnFNi9PRjJqDPlM5JmYYzw/ou8gvEzmrDNYjIgUNVMeVGoHCnDGhBxxg+xMThuRYRYFWg5IDXMLmHVkZoPZItgLgEQypRLqhsfGUSwJSF4ucuDoBSKJBEIkBJcLBKma1BU+hSVpPoAgVRNhDrPR7xLnSBJjfo7DMK2Qo9EJ9BGCpI4g5h4QN47DbrSCnLiRAzNeZfzXi6Qu7iIad8NAgqQEfNrBcbxabR+24+u744ukPerN6P8D+BlPcAc/AAAA//9kuInfAAAABklEQVQDAMMFP7fZiuR+AAAAAElFTkSuQmCC"
 		},
 		{
 			"name": "granite.png",
@@ -1506,9 +1532,9 @@
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACEUlEQVR4AVSTu0ujURDFh69Z9vNuo2QXFnbRoIIawQfxgY0KWggWWoiFWIiN+gdY2tpqa2FjI4KVL/DZ+EYJ+GgUjQYEDdHCqFjF/E4MxsC9c+/cM2fOzHzxFqYmUtMjvanJgS7ZsZ522Vwf585wSP6F8VFZfLOjgykvHtm157d3O7qKme+cFQbyrTxUZtH4o/36+cP4ca4p+svR4rEbveG7jyfMw0twc0WxvSaTXG3/MGIFLk+EACEdHB5SIIDow6MSBUtLMwQ4WSjBkpnHpf2IgL5ztrO8KFIIa4P/gEmNl+tIJF9UDr65lXWBIM0rrtQZYpTpkt7AecjjgUt50X/7EyhQJkoq/J2v3tAn6oUMbLCxWeUQKwVpMknFslCCBQAR5BCzfOfsaneLZ5FIAQA8NBG5BJJt/uBUIJrGO+v8+lbToRSWphCuqVbtAJALIdn6WhuMsiiFQMqAHBwqKcfznbOXpwS+b2MjQM7PjUAmw5UE3H3nvsZIY8iQK5eS8HW0NBGnsREMBotTJXBAOh9UR30VVzUV0OrJhS1tbsuX3cAcX98Z5N7Mxp4OgPlAcqUjk08YS1PBcEZZW2WJdfX3m9ddFxIxzaJxuqQ3ArbOLtMnU4N5A4MfJw1cm5vN9KA+nJHNA6MhU7YcMuLPLgIDVY0aLz5NIRqN6Y+ENJoJCeVQI2QEURrvBNEvrO+cfQAAAP//LUyESAAAAAZJREFUAwABkzz4MR4JcwAAAABJRU5ErkJggg=="
 		},
 		{
-			"name": "emissive_light_gray_concrete.png",
-			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/x_bullets_shared/emissive_light_gray_concrete.png",
-			"relative_path": "../../../../textures/custom/x_bullets_shared/emissive_light_gray_concrete.png",
+			"name": "light_gray_concrete.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\26.1.2\\26.1.2\\assets\\minecraft\\textures\\block\\light_gray_concrete.png",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/26.1.2/26.1.2/assets/minecraft/textures/block/light_gray_concrete.png",
 			"folder": "",
 			"namespace": "",
 			"id": "2",
@@ -1536,7 +1562,7 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "aff1612c-e069-f3fa-76b8-d53c474570a6",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMElEQVR4AVySUXbDMAgENTpy288kR7fLLKZOo+cVsLAIy96v18/xfH4Hj8fXYSw+OXNy5vTH7lXrPM/a1wKWa2J9cRxHcvL6e0e2tHsI+C+GjoGIAXvF11GnrSZ72dngE9Ci4YE0UFzC6LZiYdFYfYuEvjAn5ICI5TegDaATFkrAnTP2VLg5YGUCE3Ye4aoFd2GFecxDHwJtM8EkgNwstHj4dS1jYTg2E0jALTK2AJqDPg3uGJpLA4sFkFu2AXSBvIDOQVs5X72wM7bEALBHmsHtS1rjfUEfkB/JxAA6YQysKTZWLKB5/fyTFlkgJIGcLg9I57ubq5HjA5k8X2HVek8otLjoPONDnzy18rlE4K+rYiATQNt0qQ3IqQrXtfIKlx8D3SxBbe/FNi8qD3TzXwAAAP//QtP1YwAAAAZJREFUAwCHkxDg03ETbAAAAABJRU5ErkJggg=="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMElEQVR4AVySUXbDMAgENTpy288kR7fLLKZOo+cVsLAIy96v18/5fH4Hj8fXaSw+OXNy5vTH7lXrPM/a1wKWa2J9cRxHcvL6e0e2tHsI+C+GjoGIAXvF11GnrSZ72dngE9Ci4YE0UFzC6LZiYdFYfYuEvjAn5ICI5TegDaATFkrAnTP2VLg5YGUCE3Ye4aoFd2GFecxDHwJtM8EkgNwstHj4dS1jYTg2E0jALTK2AJqDPg3uGJpLA4sFkFu2AXSBvIDOQVs5X72wM7bEALBHmsHtS1rjfUEfkB/JxAA6YQysKTZWLKB5/fyTFlkgJIGcLg9I57ubq5HjA5k8X2HVek8otLjoPONDnzy18rlE4K+rYiATQNt0qQ3IqQrXtfIKlx8D3SxBbe/FNi8qD3TzXwAAAP//J0dV/QAAAAZJREFUAwDGcxDwRIzs8AAAAABJRU5ErkJggg=="
 		},
 		{
 			"name": "coal_block.png",
@@ -1704,9 +1730,9 @@
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLElEQVR4AaTSLU4EQRAF4M4GMQKBxYFcyRU4AvfiKkgkV0CuxIFBIBArSKC+yjwYdsftJC/1/+p192xer6bvU7AZ9e1mlBnxn/ZjBMkt63LiJuAEbzUIz5/lzEkxIJTis/CPQMPlNMbH135cl0UCYjDw+P5HLG6CLW/Gbt78Un1Ibs6nwVdGIr4t8sw0gfOQpUEzGGApiC82TKkZ+SbgaLw4m1q6eA0UPZRCi1JvAtsVFWxJ8dCmZpEZ9SbgSG7rvIjEa0jNIpetpwkS5GLS6MLixxqyjIUm4IDzsZHqXu5K1TKX4Sz7JaAixWxj7+d35yMiH/HRK+RS1kgyrAaOlv5WQA4F2G0hWyMfHCmxPrnYJogcr+BHSYPYoI0GIDUWmoCCQBISI4TES6vvBwAA///lwV0AAAAABklEQVQDALpzp/G55vs9AAAAAElFTkSuQmCC"
 		},
 		{
-			"name": "emissive_bright_coal_block.png",
-			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/x_bullets_shared/emissive_bright_coal_block.png",
-			"relative_path": "../../../../textures/custom/x_bullets_shared/emissive_bright_coal_block.png",
+			"name": "bright_coal_block.png",
+			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\x_bullets_shared\\bright_coal_block.png",
+			"relative_path": "../../../../textures/custom/x_bullets_shared/bright_coal_block.png",
 			"folder": "",
 			"namespace": "",
 			"id": "8",
@@ -1734,7 +1760,7 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "3728880c-0deb-e14b-f607-5b73a416df01",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABP0lEQVR4AUzSua7CMBCFYctVSBUut4P3SJkyLbx/y9KAlCqkiuAbaVjEr9nOGRuLejoeV4zjuGIYhojyvu9XyGGmhlyvzs9nQXl/lmUpTdMUcZqmd+f71YN513Xlb7st7WZTKokBQ0Y9IshzJrdAdCgqEzQNmQ77fWzXUyfqhMfiWKDJDNea5/nzs8xSLIca8mq7hFl0LciJnCKqoRb5UDWYnWwAhkRtDgbI9RGPqPF7KrMhMbz477uY0Tg8FmRDExbCrWD5/fGIdzFnFPligYaCKUkjMzHo3Mat6BGPmCYiuUEamfTBmH06dXWSggDMIvSJRP1cpgZvvd5uJQfEjMSu+r/bxR+KGOb6jDRuE2+gADNhiNq2eLg8QJ+RCbQO/iwgQIrOl0vczGJ9kVFkhrwaupqoQWSozr7cDGaQ4wUAAP//5+5YcQAAAAZJREFUAwANMDNwxA1CLwAAAABJRU5ErkJggg=="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABP0lEQVR4AUzSua7CMBCFYctVSBUut4P3SJkyLbx/y9KAlCqkC3wjDYv4Nds5Y2NRT8fjinEcVwzDEFHe9/0KOczUkOvV+fksKO/PsiylaZoiTtP07ny/ejDvuq78bbel3WxKJTFgyKhHBHnO5BaIDkVlgqYh02G/j+166kSd8FgcCzSZ4VrzPH9+llmK5VBDXm2XMIuuBTmRU0Q11CIfqgazkw3AkKjNwQC5PuIRNX5PZTYkhhf/fRczGofHgmxowkK4FSy/Px7xLuaMIl8s0FAwJWlkJgad27gVPeIR00QkN0gjkz4Ys0+nrk5SEIBZhD6RqJ/L1OCt19ut5ICYkdhV/3e7+EMRw1yfkcZt4g0UYCYMUdsWD5cH6DMygdbBnwUESNH5combWawvMorMkFdDVxM1iAzV2ZebwQxyvAAAAP//GjAfFQAAAAZJREFUAwBMEDOAYlXJiwAAAABJRU5ErkJggg=="
 		},
 		{
 			"name": "quartz_block_side.png",

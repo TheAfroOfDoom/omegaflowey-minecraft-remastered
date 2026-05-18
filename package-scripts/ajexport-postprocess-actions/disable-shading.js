@@ -92,9 +92,12 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_34'],
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_35'],
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_36'],
+    ['omegaflowey_upper_eye', 'iris', 'bright'],
     ['omegaflowey_upper_eye', 'iris', 'colorful'],
+    ['omegaflowey_upper_eye', 'pupil1', 'bright'],
     ['omegaflowey_upper_eye', 'pupil1', 'colorful'],
     ['omegaflowey_upper_eye', 'pupil1', 'dark'],
+    ['omegaflowey_upper_eye', 'sclera', 'bright'],
     ['omegaflowey_upper_eye', 'sclera', 'colorful'],
   ];
 
