@@ -1011,32 +1011,38 @@
 				"north": {
 					"uv": [2, 13, 1, 14],
 					"texture": "91f4647e-d482-ceca-1b5c-12a72e28cad1",
-					"rotation": 270
+					"rotation": 270,
+					"tint": 0
 				},
 				"east": {
 					"uv": [2, 13, 1, 14],
 					"texture": "91f4647e-d482-ceca-1b5c-12a72e28cad1",
-					"rotation": 270
+					"rotation": 270,
+					"tint": 0
 				},
 				"south": {
 					"uv": [2, 13, 1, 14],
 					"texture": "91f4647e-d482-ceca-1b5c-12a72e28cad1",
-					"rotation": 270
+					"rotation": 270,
+					"tint": 0
 				},
 				"west": {
 					"uv": [2, 13, 1, 14],
 					"texture": "91f4647e-d482-ceca-1b5c-12a72e28cad1",
-					"rotation": 270
+					"rotation": 270,
+					"tint": 0
 				},
 				"up": {
 					"uv": [2, 13, 1, 14],
 					"texture": "91f4647e-d482-ceca-1b5c-12a72e28cad1",
-					"rotation": 270
+					"rotation": 270,
+					"tint": 0
 				},
 				"down": {
 					"uv": [2, 13, 1, 14],
 					"texture": "91f4647e-d482-ceca-1b5c-12a72e28cad1",
-					"rotation": 270
+					"rotation": 270,
+					"tint": 0
 				}
 			},
 			"type": "cube",
@@ -2264,8 +2270,34 @@
 			"color": 0,
 			"onSummonFunction": "",
 			"configs": {
-				"default": {},
-				"variants": {}
+				"default": {
+					"on_apply_function": "",
+					"billboard": "fixed",
+					"override_brightness": false,
+					"brightness_override": 0,
+					"enchanted": false,
+					"glowing": false,
+					"override_glow_color": false,
+					"glow_color": "#ffffff",
+					"invisible": false,
+					"shadow_radius": 0,
+					"shadow_strength": 1
+				},
+				"variants": {
+					"b91ac4d2-5302-2bde-859e-84985699299b": {
+						"on_apply_function": "",
+						"billboard": "fixed",
+						"override_brightness": true,
+						"brightness_override": 15,
+						"enchanted": false,
+						"glowing": false,
+						"override_glow_color": false,
+						"glow_color": "#ffffff",
+						"invisible": false,
+						"shadow_radius": 0,
+						"shadow_strength": 1
+					}
+				}
 			},
 			"children": [],
 			"reset": false,
@@ -2578,9 +2610,9 @@
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAALUlEQVR4AeyTsQkAAAzCxP//bOkRpfQGBxcFV4dg2FOrlBCTASAMwuA18v/gAAAA//96Tu3fAAAABklEQVQDAEAmO5GqDEXrAAAAAElFTkSuQmCC"
 		},
 		{
-			"name": "emissive_redstone_block.png",
-			"path": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack/assets/omega-flowey/textures/custom/x_bullets_shared/emissive_redstone_block.png",
-			"relative_path": "../../../../textures/custom/x_bullets_shared/emissive_redstone_block.png",
+			"name": "redstone_block.png",
+			"path": "C:\\Users\\afro\\AppData\\Roaming\\.minecraft\\versions\\26.1.2\\26.1.2\\assets\\minecraft\\textures\\block\\redstone_block.png",
+			"relative_path": "C:/Users/afro/AppData/Roaming/.minecraft/versions/26.1.2/26.1.2/assets/minecraft/textures/block/redstone_block.png",
 			"folder": "",
 			"namespace": "",
 			"id": "6",
@@ -2608,7 +2640,7 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "7af71311-1188-adbb-0391-ffa2173d1081",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLElEQVR4AaTSLU4EQRAF4M4GMQKBxYFcyRU4AvfiKkgkV0CuxIFBIBArCKG+yjwYdsftJC/1/+p192xer6bvU7AZ9e1mlBnxn/ZjBMkt63LiJuAEbzUIz5/lzEkxIJTis/CPQMPlNMbH135cl0UCYjDw+P5HLG6CLW/Gbt78Un1Ibs6nwVdGIr4t8sw0gfOQpUEzGGApiC82TKkZ+SbgaLw4m1q6eA0UPZRCi1JvAtsVFWxJ8dCmZpEZ9SbgSG7rvIjEa0jNIpetpwkS5GLS6MLixxqyjIUm4IDzsZHqXu5K1TKX4Sz7JaAixWxj7+d35yMiH/HRK+RS1kgyrAaOlv5WQA4F2G0hWyMfHCmxPrnYJogcr+BHSYPYoI0GIDUWmoCCQBISI4TES6vvBwAA//9ko2VeAAAABklEQVQDAHuTp+HDQrKaAAAAAElFTkSuQmCC"
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLElEQVR4AaTSLU4EQRAF4M4GMQKBxYFcyRU4AvfiKkgkV0CuxIFBIBArSKC+yjwYdsftJC/1/+p192xer6bvU7AZ9e1mlBnxn/ZjBMkt63LiJuAEbzUIz5/lzEkxIJTis/CPQMPlNMbH135cl0UCYjDw+P5HLG6CLW/Gbt78Un1Ibs6nwVdGIr4t8sw0gfOQpUEzGGApiC82TKkZ+SbgaLw4m1q6eA0UPZRCi1JvAtsVFWxJ8dCmZpEZ9SbgSG7rvIjEa0jNIpetpwkS5GLS6MLixxqyjIUm4IDzsZHqXu5K1TKX4Sz7JaAixWxj7+d35yMiH/HRK+RS1kgyrAaOlv5WQA4F2G0hWyMfHCmxPrnYJogcr+BHSYPYoI0GIDUWmoCCQBISI4TES6vvBwAA///lwV0AAAAABklEQVQDALpzp/G55vs9AAAAAElFTkSuQmCC"
 		},
 		{
 			"name": "colorful_iris.png",

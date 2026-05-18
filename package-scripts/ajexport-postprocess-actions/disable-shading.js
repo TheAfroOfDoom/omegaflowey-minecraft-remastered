@@ -4,6 +4,8 @@ const { readFileSync, writeFileSync } = require('fs');
 const disableShading = ({ resourcePackRootDir }) => {
   const cases = [
     // blueprint, bone, [variant]
+    ['omegaflowey_arm_vine', 'root'],
+    ['omegaflowey_arm_vine_right', 'root'],
     ['omegaflowey_arena_box', 'root', 'intro_flashing_red'],
     ['omegaflowey_finger_gun_laser', 'root'],
     ['omegaflowey_friendliness_pellet_ring', 'root'],
@@ -11,6 +13,7 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_homing_vine', 'hand'],
     ['omegaflowey_homing_vine', 'vine'],
     ['omegaflowey_homing_vine_blinking_lane', 'root'],
+    ['omegaflowey_lower_eye', 'pupil1', 'dark'],
     ['omegaflowey_soul', 'root'],
     ['omegaflowey_soul', 'root', '0'],
     ['omegaflowey_soul', 'root', '1'],
@@ -85,6 +88,7 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_34'],
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_35'],
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_36'],
+    ['omegaflowey_upper_eye', 'pupil1', 'dark'],
   ];
 
   const tints = [{ type: 'minecraft:constant', value: 66046 }];
