@@ -7,6 +7,7 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_arm_vine', 'root'],
     ['omegaflowey_arm_vine_right', 'root'],
     ['omegaflowey_arena_box', 'root', 'intro_flashing_red'],
+    ['omegaflowey_bomb', 'fire', 'explode'],
     ['omegaflowey_finger_gun_laser', 'root'],
     ['omegaflowey_friendliness_pellet_ring', 'root'],
     ['omegaflowey_friendliness_pellet_ring', 'root', 'finished_blinking'],
