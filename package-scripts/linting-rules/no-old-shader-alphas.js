@@ -6,8 +6,10 @@ const applicableExtensions = ['.png'];
 const exclude = /datapacks\//;
 
 const isEmissive = (alpha) => alpha === 254 || (9 <= alpha && alpha <= 16);
+const isTransparentEmissive = (alpha) => alpha === 254;
 
-const isNoShading = (alpha) => alpha === 253; // || (1 <= alpha && alpha <= 8);
+const isNoShading = (alpha) => alpha === 253;
+const isTransparentNoShading = (alpha) => 1 <= alpha && alpha <= 8;
 
 /**
  * If a texture's dimensions aren't minimum powers of 16, Minecraft outputs a warning
@@ -31,7 +33,9 @@ const noOldShaderAlphas = (file) => {
   const subpixels = Array.from(pngWithMetadata.data);
 
   const emissiveIdxs = [];
+  const transparentEmissiveIdxs = [];
   const noShadeIdxs = [];
+  const transparentNoShadeIdxs = [];
 
   for (let i = 0; i < subpixels.length; i += 4) {
     // eslint-disable-next-line no-unused-vars
@@ -42,16 +46,28 @@ const noOldShaderAlphas = (file) => {
     if (isEmissive(a)) {
       emissiveIdxs.push([[col, row]]);
     }
+    if (isTransparentEmissive(a)) {
+      transparentEmissiveIdxs.push([[col, row]]);
+    }
     if (isNoShading(a)) {
       noShadeIdxs.push([[col, row]]);
+    }
+    if (isTransparentNoShading(a)) {
+      transparentNoShadeIdxs.push([[col, row]]);
     }
   }
 
   if (emissiveIdxs.length > 0) {
     errors.push(`${chalk.blueBright('emissive')} pixels found`);
   }
+  if (transparentEmissiveIdxs.length > 0) {
+    errors.push(`${chalk.blueBright('emissive (transparent)')} pixels found`);
+  }
   if (noShadeIdxs.length > 0) {
     errors.push(`${chalk.greenBright('no shade')} pixels found`);
+  }
+  if (transparentNoShadeIdxs.length > 0) {
+    errors.push(`${chalk.greenBright('no shade (transparent)')} pixels found`);
   }
 
   return errors;
