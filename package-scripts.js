@@ -55,6 +55,7 @@ module.exports = {
     default: 'nps watch',
     aseprite: {
       emissive: `node ./package-scripts/aseprite-replace-alpha --fromAlpha 254 --toAlpha 255 --exclude "${exclude}"`,
+      noshading: `node ./package-scripts/aseprite-replace-alpha --fromAlpha 253 --toAlpha 255 --exclude "${exclude}"`,
     },
     build: {
       default: 'nps build.summit',
