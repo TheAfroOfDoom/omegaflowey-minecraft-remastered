@@ -19,6 +19,7 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_soul', 'root', '4'],
     ['omegaflowey_soul', 'root', '5'],
     ['omegaflowey_tv_screen', 'screen'],
+    ['omegaflowey_tv_screen', 'screen', 'intro_laughing'],
     ['omegaflowey_tv_screen', 'screen', 'reveal_1'],
     ['omegaflowey_tv_screen', 'screen', 'reveal_2'],
     ['omegaflowey_tv_screen', 'screen', 'reveal_3'],
