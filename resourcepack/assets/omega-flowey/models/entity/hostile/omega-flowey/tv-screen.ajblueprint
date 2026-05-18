@@ -442,7 +442,7 @@
 			"rescale": false,
 			"locked": false,
 			"shade": true,
-			"light_emission": 0,
+			"light_emission": 15,
 			"export": true,
 			"scope": 0,
 			"allow_mirror_modeling": true,
@@ -458,7 +458,8 @@
 				},
 				"east": {
 					"uv": [0, 0, 16, 16],
-					"texture": "f4d3290b-8e74-e77f-c372-e0c3af2c203b"
+					"texture": "f4d3290b-8e74-e77f-c372-e0c3af2c203b",
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 0, 0, 0],
@@ -466,17 +467,20 @@
 				},
 				"west": {
 					"uv": [16, 0, 0, 16],
-					"texture": "f4d3290b-8e74-e77f-c372-e0c3af2c203b"
+					"texture": "f4d3290b-8e74-e77f-c372-e0c3af2c203b",
+					"tint": 0
 				},
 				"up": {
 					"uv": [16, 16, 0, 0],
 					"texture": "f4d3290b-8e74-e77f-c372-e0c3af2c203b",
-					"rotation": 90
+					"rotation": 90,
+					"tint": 0
 				},
 				"down": {
 					"uv": [0, 0, 16, 16],
 					"texture": "f4d3290b-8e74-e77f-c372-e0c3af2c203b",
-					"rotation": 90
+					"rotation": 90,
+					"tint": 0
 				}
 			},
 			"type": "cube",
@@ -1379,7 +1383,7 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "f68699ff-08b0-7875-d080-7e8dc0c76406",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAOUlEQVR4AeyTIQ4AIAwDGyTw/++WYQjpxORMl1ScOdGsA3Ikp2QF/9nBL0kgvhItANyBO7hD6f+DAwAA//9nFjmwAAAABklEQVQDAGbqJIFnDcTXAAAAAElFTkSuQmCC"
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAPElEQVR4AeyTIQ4AIAwDG17EU3gK/zdlGEI6MTnTJRVnTjTrgBzJKVnBf3bwSxKIr0QLAHfgDu5Q+v/gAAAA//9Z7BdgAAAABklEQVQDAPQGJ73U/ut4AAAAAElFTkSuQmCC"
 		},
 		{
 			"name": "warning-edge.png",
