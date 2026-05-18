@@ -7,8 +7,7 @@ const exclude = /datapacks\//;
 
 const isEmissive = (alpha) => alpha === 254; // || (9 <= alpha && alpha <= 16);
 
-const isEmissiveNoShading = (alpha) => false;
-// return alpha === 253 || (1 <= alpha && alpha <= 8);
+const isNoShading = (alpha) => alpha === 253; // || (1 <= alpha && alpha <= 8);
 
 /**
  * If a texture's dimensions aren't minimum powers of 16, Minecraft outputs a warning
@@ -42,8 +41,9 @@ const noOldShaderAlphas = (file) => {
 
     if (isEmissive(a)) {
       emissiveIdxs.push([[col, row]]);
-    } else if (isEmissiveNoShading(a)) {
-      noShadeIdxs.append([[col, row]]);
+    }
+    if (isNoShading(a)) {
+      noShadeIdxs.push([[col, row]]);
     }
   }
 
@@ -51,7 +51,7 @@ const noOldShaderAlphas = (file) => {
     errors.push(`${chalk.blueBright('emissive')} pixels found`);
   }
   if (noShadeIdxs.length > 0) {
-    errors.push(`${chalk.greenBright('no shade + emissive')} pixels found`);
+    errors.push(`${chalk.greenBright('no shade')} pixels found`);
   }
 
   return errors;
