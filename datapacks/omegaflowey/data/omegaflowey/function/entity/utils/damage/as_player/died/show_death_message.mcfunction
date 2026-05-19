@@ -5,7 +5,7 @@
 execute \
   unless score #omegaflowey.bossfight.show_death_message_globally omegaflowey.global.flag matches 1 \
 run tellraw @a[ \
-  x=33, dx=88, y=-10, dy=171, z=-47, dz=73, \
+  x=25, dx=96, y=-10, dy=171, z=-47, dz=73, \
   tag=omegaflowey.player \
 ] [ \
   { "selector": "@s"}, \
