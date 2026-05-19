@@ -10,8 +10,8 @@ function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: 
 
 # Summon and initialize call for help display
 scoreboard players set #omegaflowey.soul.summon_type omegaflowey.global.flag 3
-function omegaflowey:entity/directorial/boss_fight/vanilla/soul_origin/at/position { \
-  command: "execute positioned ~ ~7.0 ~9.5 run function omegaflowey:entity/soul/shared/call_for_help_display/summon" \
+function omegaflowey:entity/directorial/boss_fight/summit-2026/soul_origin/at/position { \
+  command: "execute positioned ~9.5 ~7.0 ~ run function omegaflowey:entity/soul/shared/call_for_help_display/summon" \
 }
 
 # TODO(36): transparent fade-out of `act_button` model?

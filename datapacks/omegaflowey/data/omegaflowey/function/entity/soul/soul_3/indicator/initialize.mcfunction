@@ -7,10 +7,10 @@ execute if score #omegaflowey.soul.3.book.is_eastward omegaflowey.soul.flag matc
 # Set scores
 scoreboard players set @s omegaflowey.soul.clock.i -1
 
-# x start point of each bullet row
-scoreboard players set @s omegaflowey.soul.bullet.position.x 2250
-# z start/end points of each bullet row
-scoreboard players set @s omegaflowey.soul.bullet.position.z -7700
+# z start point of each bullet row
+scoreboard players set @s omegaflowey.soul.bullet.position.z 2250
+# x start/end points of each bullet row
+scoreboard players set @s omegaflowey.soul.bullet.position.x -7700
 # z-distance between bullets in the bullet grid
 scoreboard players set @s omegaflowey.soul.bullet.position.dz 400
 scoreboard players set @s omegaflowey.soul.indicator.bullets.total 6
