@@ -11,7 +11,6 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_finger_gun_laser', 'root'],
     ['omegaflowey_friendliness_pellet_ring', 'root'],
     ['omegaflowey_friendliness_pellet_ring', 'root', 'finished_blinking'],
-    ['omegaflowey_homing_vine', 'hand'],
     ['omegaflowey_homing_vine', 'vine'],
     ['omegaflowey_homing_vine_blinking_lane', 'root'],
     ['omegaflowey_lower_eye', 'lid', 'bright'],
