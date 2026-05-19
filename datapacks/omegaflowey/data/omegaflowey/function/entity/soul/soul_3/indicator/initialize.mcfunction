@@ -11,8 +11,6 @@ scoreboard players set @s omegaflowey.soul.clock.i -1
 scoreboard players set @s omegaflowey.soul.bullet.position.z 2250
 # x start/end points of each bullet row
 scoreboard players set @s omegaflowey.soul.bullet.position.x -7700
-# z-distance between bullets in the bullet grid
-scoreboard players set @s omegaflowey.soul.bullet.position.dz 400
 scoreboard players set @s omegaflowey.soul.indicator.bullets.total 6
 scoreboard players set @s omegaflowey.soul.indicator.rate 20
 
