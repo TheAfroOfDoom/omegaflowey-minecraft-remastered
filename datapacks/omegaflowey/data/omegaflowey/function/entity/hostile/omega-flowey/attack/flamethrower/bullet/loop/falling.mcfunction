@@ -2,8 +2,8 @@ teleport @s ~ ~-0.4 ~
 
 # Check if done falling (hit/below the floor)
 scoreboard players set @s omegaflowey.math.0 0
-function omegaflowey:entity/directorial/boss_fight/vanilla/origin/at/position { \
-  command: "execute positioned ~100.0 ~-5.0 ~87.5 if entity @s[dx=-200,dy=-20,dz=-200] run \
+function omegaflowey:entity/directorial/boss_fight/summit-2026/origin/at/position { \
+  command: "execute positioned ~87.5 ~-5.0 ~100.0 if entity @s[dx=-200,dy=-20,dz=-200] run \
     scoreboard players set @s omegaflowey.math.0 1\
   " \
 }
