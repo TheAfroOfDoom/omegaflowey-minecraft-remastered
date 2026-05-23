@@ -4,8 +4,9 @@
 tag @s remove boss_fight.phase.cutscene
 
 # Kill DEMO title
+# NOTE: TAG_SUMMIT_2026_HARDCODED
 kill @e[ \
-  x=-156.5, y=43.0625, z=76.0, distance=..0.01, \
+  x=67.5, y=26.0625, z=-14.5, distance=..0.01, \
   type=minecraft:text_display, \
   tag=demo-intro-title, \
   limit=1 \

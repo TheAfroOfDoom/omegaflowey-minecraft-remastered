@@ -12,7 +12,8 @@ execute as @e[ \
 
 $execute as $(arena_box_uuid) run function aj:omegaflowey_arena_box/variants/default/apply
 
-summon minecraft:text_display -156.5 43.0625 76.0 { \
+# NOTE: TAG_SUMMIT_2026_HARDCODED
+summon minecraft:text_display 67.5 26.0625 -14.5 { \
   Tags: [ \
     "omega-flowey-remastered", \
     "directorial", \
@@ -29,7 +30,7 @@ summon minecraft:text_display -156.5 43.0625 76.0 { \
   text: { "text": "DEMO", "color": "yellow", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, 0.92387956f, -0.38268352f, 0.0f], \
+    left_rotation: [0.2705981f, 0.6532815f, -0.2705981f, 0.6532815f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [10.0f, 10.0f, 10.0f], \
     translation: [0.0f, 0.0f, 0.0f] \
