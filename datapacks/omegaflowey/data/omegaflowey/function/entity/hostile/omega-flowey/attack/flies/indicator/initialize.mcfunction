@@ -24,5 +24,6 @@ scoreboard players set @s omegaflowey.attack.bullets.summoned 0
 scoreboard players set @s omegaflowey.attack.bullets.terminated 0
 
 # Play sound
-# TODO
-playsound omega-flowey:attack.flies.summon hostile @a ~ ~ ~ 5 1 1
+function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: \
+  'playsound omega-flowey:attack.flies.summon hostile @s ~ ~ ~ 5 1 1' \
+}

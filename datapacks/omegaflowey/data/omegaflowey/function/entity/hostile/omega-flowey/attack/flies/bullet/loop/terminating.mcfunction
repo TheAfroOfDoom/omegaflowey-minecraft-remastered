@@ -1,7 +1,10 @@
 scoreboard players add @s omegaflowey.attack.clock.i 1
 
 # Play sound
-execute if score @s omegaflowey.attack.clock.i matches 0 run playsound omega-flowey:attack.flies.swallow hostile @a ~ ~ ~ 5 1 1
+execute if score @s omegaflowey.attack.clock.i matches 0 run \
+  function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: \
+    'playsound omega-flowey:attack.flies.swallow hostile @s ~ ~ ~ 5 1 1' \
+  }
 
 # Start animation
 execute if score @s omegaflowey.attack.clock.i matches 0 run function aj:omegaflowey_housefly/animations/omegaflowey_shrink/play
