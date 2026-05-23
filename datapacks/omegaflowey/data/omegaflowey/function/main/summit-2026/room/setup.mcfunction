@@ -1,7 +1,7 @@
 function omegaflowey:entity/decorative/remove
 
-function omegaflowey:main/summit-2026/room/outside/setup
-function omegaflowey:main/summit-2026/room/pit/setup
+# function omegaflowey:main/summit-2026/room/outside/setup
+# function omegaflowey:main/summit-2026/room/pit/setup
 function omegaflowey:main/summit-2026/room/ruins/setup
 
 # Tag all decorative entities the summit-required decoration tag
