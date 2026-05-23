@@ -96,9 +96,6 @@ scoreboard objectives add omegaflowey.decorative.clock.i dummy
 
 scoreboard objectives add omegaflowey.global.flag dummy
 
-scoreboard objectives add omegaflowey.group.id dummy
-scoreboard objectives add omegaflowey.group.id.tree.level dummy
-
 scoreboard objectives add omegaflowey.math.0 dummy
 scoreboard objectives add omegaflowey.math.1 dummy
 scoreboard objectives add omegaflowey.math.2 dummy
