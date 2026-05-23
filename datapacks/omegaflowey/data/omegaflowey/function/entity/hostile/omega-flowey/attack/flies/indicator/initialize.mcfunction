@@ -5,8 +5,9 @@ scoreboard players operation @s omegaflowey.attack.clock.i -= #omegaflowey.attac
 scoreboard players operation @s omegaflowey.attack.bullets.remaining = #omegaflowey.attack.flies omegaflowey.attack.bullets.total
 scoreboard players operation @s omegaflowey.attack.indicator.rate = #omegaflowey.attack.flies omegaflowey.attack.indicator.rate
 
-# Store if this is a flipped indicator (across x-axis) or not
-execute store result score @s omegaflowey.math.0 run data get entity @s Pos[0] 1
+# Store if this is a flipped indicator (across z-axis) or not
+execute store result score @s omegaflowey.math.0 run data get entity @s Pos[2] 100
+scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.bossfight.summit.origin.z omegaflowey.global.flag
 execute if score @s omegaflowey.math.0 matches ..0 run tag @s add is_flipped
 
 # Set group ID
