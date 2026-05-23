@@ -1,7 +1,11 @@
-const { execFileSync } = require('child_process');
+const { spawn } = require('child_process');
 const { resolve } = require('path');
 
 const { assertEnvironmentVariables } = require('./utils-commonjs');
+const {
+  ajExporterPassthroughFlagStart,
+  ajExporterPassthroughFlagEnd,
+} = require(`./modules/shared-consts`);
 
 assertEnvironmentVariables([
   'ASSETS_DIR',
@@ -27,5 +31,21 @@ const blockbenchOptions = [
   `--resourcepack="${resourcePack}"`,
 ];
 
-const stdout = execFileSync(blockbenchPath, blockbenchOptions);
-process.stdout.write(stdout);
+const pipeData = (std, data) => {
+  const str = data.toString();
+  if (!str.includes(ajExporterPassthroughFlagStart)) {
+    return;
+  }
+  const filtered = str
+    .split(ajExporterPassthroughFlagStart + ' ')[1]
+    .split(ajExporterPassthroughFlagEnd)[0];
+  std.write(filtered + '\n');
+};
+
+const subprocess = spawn(blockbenchPath, blockbenchOptions);
+subprocess.stdout.on('data', (data) => {
+  pipeData(process.stdout, data);
+});
+subprocess.stderr.on('data', (data) => {
+  pipeData(process.stderr, data);
+});
