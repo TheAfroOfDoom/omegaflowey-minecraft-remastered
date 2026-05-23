@@ -23,6 +23,7 @@ const main = () => {
   }
 
   let errorCount = 0;
+  const globals = {};
   const excludePatterns = exclude?.split(',') ?? [];
   excludePatterns.push('build/**');
   excludePatterns.push('**/node_modules/**');
@@ -34,7 +35,7 @@ const main = () => {
   for (const file of files) {
     const errors = [];
     for (const rule of rules) {
-      const ruleErrors = rule.function(file, argv);
+      const ruleErrors = rule.function(file, argv, globals);
       errors.push(
         ...ruleErrors.map((error) => `${chalk.yellow(rule.name)}: ${error}`),
       );

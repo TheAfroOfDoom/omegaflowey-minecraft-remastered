@@ -146,11 +146,30 @@ const checkUseEntityStacking = (model) => {
   return errors;
 };
 
+/** Ensures each model's UUID is unique. */
+const checkUniqueUuids = (model, { globals }) => {
+  const errors = [];
+
+  globals.checkUniqueUuids ??= {};
+  const { uuid } = model.meta;
+  if (uuid in globals.checkUniqueUuids) {
+    const duplicateModelName = globals.checkUniqueUuids[uuid];
+    let error = chalk.blueBright('uuid');
+    error += ' must be unique; same as ';
+    error += chalk.yellowBright(duplicateModelName);
+    errors.push(error);
+  } else {
+    globals.checkUniqueUuids[uuid] = model.blueprint_settings.blueprint_id;
+  }
+  return errors;
+};
+
 /**
  * Errors for wrong settings values in .ajblueprint files. Limited to trivial checks
  * (like a setting's defined value not matching an exact pattern).
  */
-const correctAjblueprintSettings = (file) => {
+// eslint-disable-next-line no-unused-vars
+const correctAjblueprintSettings = (file, argv, globals) => {
   // Return early if file does not match any applicable extension
   if (applicableExtensions.every((extension) => !file.endsWith(extension))) {
     return [];
@@ -168,10 +187,11 @@ const correctAjblueprintSettings = (file) => {
     checkExportNamespace,
     checkRigItem,
     checkSummonCommands,
+    checkUniqueUuids,
     checkUseEntityStacking,
   ];
   for (const settingsCheck of settingsChecks) {
-    errors.push(...settingsCheck(ajblueprint, { file }));
+    errors.push(...settingsCheck(ajblueprint, { file, globals }));
   }
 
   return errors;
