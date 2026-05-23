@@ -1,5 +1,5 @@
 execute as @e[ \
-  x=-137.5, y=43.5, z=42.5, distance=..0.01, \
+  x=-97.0, y=51.375, z=-15.0, distance=..0.01, \
   type=minecraft:text_display, \
   tag=join-queue-title, \
   limit=1 \
@@ -8,7 +8,7 @@ execute as @e[ \
 ]
 
 execute as @e[ \
-  x=-137.5, y=43.5, z=42.5, distance=..0.01, \
+  x=-97.0, y=51.375, z=-15.0, distance=..0.01, \
   type=minecraft:interaction, \
   tag=join-queue-interaction, \
   limit=1 \
