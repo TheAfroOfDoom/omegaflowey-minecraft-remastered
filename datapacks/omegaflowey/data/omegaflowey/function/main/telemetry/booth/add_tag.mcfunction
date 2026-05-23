@@ -6,6 +6,8 @@ $execute unless entity @s[type=player] run return run function omegaflowey:utils
   { "text": ")" } \
 ]}
 
+$execute if entity TheAfroOfDoom run tellraw @s ["tag: ", { "text": "$(name)", "color": "yellow" } ]
+
 # Ensure numeric player ID is set
 execute unless score @s omegaflowey.player.telemetry.id matches 0.. run function omegaflowey:main/telemetry/booth/enter
 
