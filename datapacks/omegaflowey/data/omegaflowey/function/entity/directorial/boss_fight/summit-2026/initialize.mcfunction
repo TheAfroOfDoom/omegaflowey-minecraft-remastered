@@ -15,11 +15,10 @@ tag @s add boss_fight.summit
 # Set scores
 scoreboard players set @s omegaflowey.boss-fight.attack.delay -1
 scoreboard players set @s omegaflowey.boss-fight.attack.phase.i 0
-scoreboard players set @s omegaflowey.boss-fight.attack.phase.total 2
+scoreboard players set @s omegaflowey.boss-fight.attack.phase.total 3
 scoreboard players set @s omegaflowey.boss-fight.cutscene.phase.i 0
-scoreboard players set @s omegaflowey.boss-fight.cutscene.phase.total 2
 scoreboard players set @s omegaflowey.boss-fight.progress.phase.i 0
-scoreboard players set @s omegaflowey.boss-fight.progress.phase.total 2
+scoreboard players set @s omegaflowey.boss-fight.progress.phase.total 3
 
 scoreboard players set #omegaflowey.bossfight.attack_phase_total_count omegaflowey.global.flag 0
 scoreboard players set #omegaflowey.bossfight.player_died omegaflowey.global.flag 0
