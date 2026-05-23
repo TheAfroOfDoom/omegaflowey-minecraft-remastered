@@ -2,7 +2,7 @@ function omegaflowey:entity/directorial/boss_fight/shared/player/set_active_play
 
 execute at @s run playsound omega-flowey:cutscene.intro.battle_start_end ambient @s ~ ~ ~ 5
 
-# effect clear @s
+effect clear @s
 effect give @s minecraft:blindness 5 0 true
 effect give @s minecraft:instant_health 1 4 true
 
