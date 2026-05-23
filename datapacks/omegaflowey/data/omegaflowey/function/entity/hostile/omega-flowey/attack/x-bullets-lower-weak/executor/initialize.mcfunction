@@ -15,8 +15,14 @@ function omegaflowey:entity/hostile/omega-flowey/attack/shared/executor/initiali
 
 data modify entity @s CustomName set value '"X-Bullets-Lower-Weak Executor"'
 
-$execute at $(attack_lower_eye_right_locator_uuid) run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
-$execute at $(attack_lower_eye_left_locator_uuid) run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects
+$execute as $(attack_lower_eye_right_uuid) run function aj:omegaflowey_lower_eye/at_locator { \
+  name: 'pupil', \
+  command: 'function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects' \
+}
+$execute as $(attack_lower_eye_left_uuid) run function aj:omegaflowey_lower_eye/at_locator { \
+  name: 'pupil', \
+  command: 'function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower/executor/initialize/effects' \
+}
 
 $execute as $(attack_lower_eye_right_uuid) run function aj:omegaflowey_lower_eye/variants/white/apply
 $execute as $(attack_lower_eye_left_uuid) run function aj:omegaflowey_lower_eye/variants/white/apply
