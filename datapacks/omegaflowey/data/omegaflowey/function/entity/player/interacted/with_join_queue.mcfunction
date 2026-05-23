@@ -1,4 +1,4 @@
-advancement revoke @s only omegaflowey:entity/player_interacted_with_join_queue
+# advancement revoke @s only omegaflowey:entity/player_interacted_with_join_queue
 
 execute if score #omegaflowey.bossfight.queue_disabled omegaflowey.global.flag matches 1 run return 0
 

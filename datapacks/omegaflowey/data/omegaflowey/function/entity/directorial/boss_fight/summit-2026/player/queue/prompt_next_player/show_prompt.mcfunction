@@ -23,9 +23,9 @@ function omegaflowey:utils/log/self { text_component: [ \
       { \
         "text": "", \
         "color": "gray", \
-        "clickEvent": { \
+        "click_event": { \
           "action": "run_command", \
-          "value": "/trigger omegaflowey.player.trigger.bossfight.confirm set 1" \
+          "command": "/trigger omegaflowey.player.trigger.bossfight.confirm set 1" \
         }, \
         "extra": [ \
           "[", \
@@ -47,9 +47,9 @@ function omegaflowey:utils/log/self { text_component: [ \
     "extra": [ \
       { \
         "text": "", \
-        "clickEvent": { \
+        "click_event": { \
           "action": "run_command", \
-          "value": "/trigger omegaflowey.player.trigger.bossfight.confirm set 1" \
+          "command": "/trigger omegaflowey.player.trigger.bossfight.confirm set 1" \
         }, \
         "extra": [ \
           "[", \
@@ -60,9 +60,9 @@ function omegaflowey:utils/log/self { text_component: [ \
       " | ", \
       { \
         "text": "", \
-        "clickEvent": { \
+        "click_event": { \
           "action": "run_command", \
-          "value": "/trigger omegaflowey.player.trigger.bossfight.deny set 1" \
+          "command": "/trigger omegaflowey.player.trigger.bossfight.deny set 1" \
         }, \
         "extra": [ \
           "[", \

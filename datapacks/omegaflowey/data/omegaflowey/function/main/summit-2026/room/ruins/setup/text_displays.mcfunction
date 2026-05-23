@@ -2,10 +2,12 @@ scoreboard players set #omegaflowey.bossfight.queue_disabled omegaflowey.global.
 
 summon minecraft:text_display 97.0 51.375 -15.0 { \
   Tags: [ \
-    "entityview.ignore", \
+    "summit.booth_entity.omegaflowey", \
+    "summit.dynamic", \
+    "summit.interactable", \
     "omega-flowey-remastered", \
     "decorative", \
-    "decorative-cave", \
+    "decorative.ruins", \
     "join-queue-title", \
   ], \
   alignment: "center", \
@@ -26,18 +28,25 @@ summon minecraft:text_display 97.0 51.375 -15.0 { \
 }
 summon minecraft:interaction 97.0 51.375 -15.0 { \
   Tags: [ \
-    "entityview.ignore", \
+    "summit.booth_entity.omegaflowey", \
+    "summit.dynamic", \
+    "summit.interactable", \
     "omega-flowey-remastered", \
     "decorative", \
-    "decorative-cave", \
+    "decorative.ruins", \
     "join-queue-interaction", \
   ], \
   width: 2.5, \
   height: 0.5, \
   response: true, \
+  data: { \
+    summit_interactable: { \
+      on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_join_queue" \
+    } \
+  } \
 }
 execute as @e[ \
-  x=-138.0, dx=2, y=42.0, dy=2, z=42.0, dz=2, \
+  x=97.0, y=51.375, z=-15.0, distance=..0.1, \
   type=minecraft:interaction, \
   tag=join-queue-interaction, \
   tag=omega-flowey-remastered, \
