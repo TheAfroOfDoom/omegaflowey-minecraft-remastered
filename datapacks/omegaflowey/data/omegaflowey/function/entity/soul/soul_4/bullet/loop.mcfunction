@@ -6,7 +6,8 @@ function omegaflowey:entity/soul/soul_4/bullet/loop/move
 # Terminate bullets once they go far down in the Y direction
 execute store result score @s omegaflowey.soul.bullet.position.y run data get entity @s Pos[1] 100
 
-execute if score @s omegaflowey.soul.bullet.position.y matches ..2500 run return run \
+# NOTE: this value is -12 Y blocks from y-origin
+execute if score @s omegaflowey.soul.bullet.position.y matches ..-900 run return run \
   function omegaflowey:entity/soul/soul_4/bullet/terminate
 
 # Check if should heal player if this is SAVED phase
