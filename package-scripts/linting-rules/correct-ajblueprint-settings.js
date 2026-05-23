@@ -134,6 +134,27 @@ const checkSummonCommands = (model) => {
   return [error];
 };
 
+const checkTags = (model) => {
+  const errors = [];
+  const tagsStr = model.blueprint_settings.custom_rig_entity_tags ?? '';
+  const currentTags = new Set(tagsStr.split(','));
+  const requiredTags = [
+    'summit.booth_entity.omegaflowey',
+    'summit.dynamic',
+    'omega-flowey-remastered',
+  ];
+
+  for (const requiredTag of requiredTags) {
+    if (currentTags.has(requiredTag)) {
+      continue;
+    }
+    const error = `missing tag: ${chalk.blueBright(requiredTag)}`;
+    errors.push(error);
+  }
+
+  return errors;
+};
+
 const checkUseEntityStacking = (model) => {
   const errors = [];
   const { use_entity_stacking = false } = model.blueprint_settings;
@@ -187,6 +208,7 @@ const correctAjblueprintSettings = (file, argv, globals) => {
     checkExportNamespace,
     checkRigItem,
     checkSummonCommands,
+    checkTags,
     checkUniqueUuids,
     checkUseEntityStacking,
   ];
