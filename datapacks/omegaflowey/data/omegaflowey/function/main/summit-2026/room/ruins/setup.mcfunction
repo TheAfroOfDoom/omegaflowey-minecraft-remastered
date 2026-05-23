@@ -1,5 +1,5 @@
-function omegaflowey:main/summit-2026/room/cave/setup/text_displays
-function omegaflowey:main/summit-2026/room/cave/cave_back/setup
+function omegaflowey:main/summit-2026/room/ruins/setup/text_displays
+function omegaflowey:main/summit-2026/room/ruins/cave_back/setup
 
 summon minecraft:item_display -124.0625 42.6875 34.6875 { \
   Tags: [ \

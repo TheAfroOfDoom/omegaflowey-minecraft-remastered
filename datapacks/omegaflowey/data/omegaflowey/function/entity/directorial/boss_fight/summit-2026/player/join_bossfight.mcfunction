@@ -17,6 +17,6 @@ tag @s add summit.no_regen
 teleport @s ~27.0 ~-4.0 ~ ~180.0 -30.0
 spawnpoint @s 98 50 -16 90 0
 
-function omegaflowey:main/summit-2026/room/cave/active_player_display/update_value with storage omegaflowey:bossfight
+function omegaflowey:main/summit-2026/room/ruins/active_player_display/update_value with storage omegaflowey:bossfight
 
 function omegaflowey:entity/directorial/boss_fight/summit-2026/start
