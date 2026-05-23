@@ -4,8 +4,8 @@ function omegaflowey:main/setup/objectives
 function omegaflowey:main/setup/const
 # function omegaflowey:main/setup/gamerules
 
+scoreboard players set #omegaflowey.telemetry.enabled omegaflowey.global.flag 1
 function omegaflowey:main/telemetry/setup
-scoreboard players set #omegaflowey.telemetry.enabled omegaflowey.global.flag 0
 function omegaflowey:entity/setup
 
 # don't run room setup if there are no players on, as this duplicates entities due to them

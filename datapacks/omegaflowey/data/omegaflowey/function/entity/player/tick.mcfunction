@@ -9,6 +9,6 @@ execute if entity @s[tag=omegaflowey.player.in_queue.prompted] run \
 
 # function omegaflowey:entity/player/room
 
-# TODO(264): fix admin menu
-# execute if entity @s[name=TheAfroOfDoom] run function omegaflowey:main/telemetry/admin/tick
-# execute if entity @s[tag=omegaflowey.admin, name=!TheAfroOfDoom] run function omegaflowey:main/telemetry/admin/tick
+# TODO(264): fix admin menu for vanilla
+execute if entity @s[name=TheAfroOfDoom] run function omegaflowey:main/telemetry/admin/tick
+execute if entity @s[tag=omegaflowey.admin, name=!TheAfroOfDoom] run function omegaflowey:main/telemetry/admin/tick
