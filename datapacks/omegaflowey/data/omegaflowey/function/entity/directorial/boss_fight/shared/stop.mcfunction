@@ -8,7 +8,11 @@ function omegaflowey:main/telemetry/bossfight/tag/root/end
 schedule clear omegaflowey:entity/directorial/boss_fight/summit-2026/phase/cutscene/terminate/scheduled
 
 function omegaflowey:entity/remove_animated_java_models/boss_fight
-execute as @e[tag=omega-flowey-remastered] run function omegaflowey:entity/directorial/boss_fight/shared/stop/as_root
+# TAG_SUMMIT_2026_HARDCODED_ARENA_VOLUME
+execute as @e[ \
+  x=5, dx=91, y=-6, dy=45, z=-44, dz=61, \
+  tag=omega-flowey-remastered \
+] run function omegaflowey:entity/directorial/boss_fight/shared/stop/as_root
 
 function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: \
   'execute unless entity @s[tag=omegaflowey.player.fighting_flowey] run \
