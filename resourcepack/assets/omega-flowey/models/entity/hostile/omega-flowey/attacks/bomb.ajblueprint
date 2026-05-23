@@ -18,7 +18,7 @@
 		"enable_advanced_resource_pack_settings": true,
 		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"on_summon_function": "data merge entity @s {CustomName:\"'Bomb Bullet'\",teleport_duration:1}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-bullet\ntag @s add attack-bullet-new\ntag @s add bomb\nexecute on passengers if entity @s[tag=aj.omegaflowey_bomb.bone.bomb] run data merge entity @s { brightness: { block: 13, sky: 0 } }\nexecute on passengers if entity @s[tag=aj.omegaflowey_bomb.bone.fire] run data merge entity @s { brightness: { block: 15, sky: 0 } }",
+		"on_summon_function": "data merge entity @s {CustomName:\"'Bomb Bullet'\",teleport_duration:1}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-bullet\ntag @s add attack-bullet-new\ntag @s add bomb\n",
 		"use_entity_stacking": true
 	},
 	"elements": [
@@ -1264,9 +1264,21 @@
 			"origin": [0.5, -31, 0.5],
 			"rotation": [0, 0, 0],
 			"color": 0,
-			"onSummonFunction": "",
+			"onSummonFunction": "data merge entity @s { brightness: { block: 13, sky: 0 } }",
 			"configs": {
-				"default": {},
+				"default": {
+					"on_apply_function": "",
+					"billboard": "fixed",
+					"override_brightness": false,
+					"brightness_override": 0,
+					"enchanted": false,
+					"glowing": false,
+					"override_glow_color": false,
+					"glow_color": "#ffffff",
+					"invisible": false,
+					"shadow_radius": 0,
+					"shadow_strength": 1
+				},
 				"variants": {}
 			},
 			"children": [],

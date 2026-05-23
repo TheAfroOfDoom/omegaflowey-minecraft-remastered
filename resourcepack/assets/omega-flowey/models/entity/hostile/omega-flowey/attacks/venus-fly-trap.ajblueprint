@@ -18,7 +18,7 @@
 		"enable_advanced_resource_pack_settings": true,
 		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"on_summon_function": "data merge entity @s {CustomName:\"\\\"Flies Indicator\\\"\"}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add groupable\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-indicator\ntag @s add attack-indicator-new\ntag @s add flies\nexecute on passengers if entity @s[tag=aj.omegaflowey_venus_fly_trap.bone] run data merge entity @s { brightness: { block: 13, sky: 0 } }",
+		"on_summon_function": "data merge entity @s {CustomName:\"\\\"Flies Indicator\\\"\"}\ntag @s add omega-flowey-remastered\ntag @s add hostile\ntag @s add groupable\ntag @s add omega-flowey\ntag @s add attack\ntag @s add attack-indicator\ntag @s add attack-indicator-new\ntag @s add flies\n",
 		"use_entity_stacking": true
 	},
 	"elements": [
@@ -2361,9 +2361,21 @@
 			"origin": [-36.5, 20, 0],
 			"rotation": [0, 0, 0],
 			"color": 0,
-			"onSummonFunction": "",
+			"onSummonFunction": "data merge entity @s { brightness: { block: 13, sky: 0 } }",
 			"configs": {
-				"default": {},
+				"default": {
+					"on_apply_function": "",
+					"billboard": "fixed",
+					"override_brightness": false,
+					"brightness_override": 0,
+					"enchanted": false,
+					"glowing": false,
+					"override_glow_color": false,
+					"glow_color": "#ffffff",
+					"invisible": false,
+					"shadow_radius": 0,
+					"shadow_strength": 1
+				},
 				"variants": {}
 			},
 			"children": [],
@@ -2372,7 +2384,7 @@
 			"mirror_uv": false,
 			"visibility": true,
 			"autouv": 0,
-			"isOpen": false,
+			"isOpen": true,
 			"primary_selected": false
 		},
 		{
@@ -2389,9 +2401,21 @@
 			"origin": [-36.5, 26, 0],
 			"rotation": [0, 0, 20],
 			"color": 0,
-			"onSummonFunction": "",
+			"onSummonFunction": "data merge entity @s { brightness: { block: 13, sky: 0 } }",
 			"configs": {
-				"default": {},
+				"default": {
+					"on_apply_function": "",
+					"billboard": "fixed",
+					"override_brightness": false,
+					"brightness_override": 0,
+					"enchanted": false,
+					"glowing": false,
+					"override_glow_color": false,
+					"glow_color": "#ffffff",
+					"invisible": false,
+					"shadow_radius": 0,
+					"shadow_strength": 1
+				},
 				"variants": {}
 			},
 			"children": [],
@@ -2400,7 +2424,7 @@
 			"mirror_uv": false,
 			"visibility": true,
 			"autouv": 0,
-			"isOpen": false,
+			"isOpen": true,
 			"primary_selected": false
 		}
 	],
@@ -2411,7 +2435,7 @@
 			"children": [
 				{
 					"uuid": "5df3e100-8feb-f979-09c5-61d9aead3202",
-					"isOpen": false,
+					"isOpen": true,
 					"children": [
 						"eff2356a-1b13-d4a0-c965-d676777d5d63",
 						"bb1e65da-5f9d-1417-e9d6-6a41e0548abb",
@@ -2443,7 +2467,7 @@
 				},
 				{
 					"uuid": "ba5ee458-f8b5-974c-c61f-c586dc675dac",
-					"isOpen": false,
+					"isOpen": true,
 					"children": [
 						"338e851b-9368-b8cf-ff7d-979c5329fcad",
 						"06c8f632-d1d1-bd7b-3ec4-7f31b4ccf1cf",
