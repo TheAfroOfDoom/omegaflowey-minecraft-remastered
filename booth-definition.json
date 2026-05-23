@@ -1,29 +1,26 @@
 {
-  "namespace": "<booth_id>",
-  "booth_name": "<Booth Name>",
+  "namespace": "omegaflowey",
+  "booth_name": "Omega Flowey",
   "bounding_boxes": {
-    "my_box": {
+    "global": {
       "position": {
-        "x": { "min": -135, "max": -102 },
-        "y": { "min": 70, "max": 95 },
-        "z": { "min": -39, "max": -20 }
-      },
-      "on_player_enter": "<function_location>",
-      "on_player_exit": "<function_location>"
+        "x": { "min": 25, "max": 121 },
+        "y": { "min": -10, "max": 161 },
+        "z": { "min": -47, "max": 26 }
+      }
     }
   },
-  "on_player_enter": "<function_location>",
-  "on_player_exit": "<function_location>",
+  "on_player_enter": "omegaflowey:entity/player/room/enter",
+  "on_player_exit": "omegaflowey:entity/player/room/exit",
   "ticking_functions": {
-    "<booth_id>:tick": "1t",
-    "<booth_id>:sec": "1s"
+    "omegaflowey:main/tick": "1t"
   },
   "sticker_book": {
-    "background_color": "#1a48c3",
-    "region": "textured_tropics",
+    "background_color": "#1a48c3", // TODO
+    "region": "welded_woodlands",
     "stickers": [
       {
-        "sticker_id": "<sticker_id>",
+        "sticker_id": "welcome",
         "sticker_texture": "<texture_location>",
         "sticker_name": "Welcome to Booth",
         "unobtained_text": "Enter the Booth",
@@ -33,9 +30,9 @@
   },
   "balloons": [
     {
-      "balloon_id": "smithie",
-      "balloon_name": "Smithie",
-      "balloon_model": "summit_balloons:item/smithie"
+      "balloon_id": "soul_red",
+      "balloon_name": "Red Soul",
+      "balloon_model": "summit_balloons:item/smithie" // TODO
     }
   ]
 }
