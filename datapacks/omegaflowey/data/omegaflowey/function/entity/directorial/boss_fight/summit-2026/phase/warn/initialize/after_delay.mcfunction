@@ -6,7 +6,11 @@ $execute at $(bossfight_tvscreen_uuid) run function omegaflowey:entity/shared/ru
 # Set tv screen to WARNING variant
 $execute as $(bossfight_tvscreen_uuid) run function omegaflowey:entity/hostile/omega-flowey/animate/warning/tv_screen
 
-execute store result storage omegaflowey:bossfight soul_index int 1 run scoreboard players get @s omegaflowey.boss-fight.progress.phase.i
+# NOTE: temp for summit-2026
+# execute store result storage omegaflowey:bossfight soul_index int 1 run scoreboard players get @s omegaflowey.boss-fight.progress.phase.i
+execute if score @s omegaflowey.boss-fight.progress.phase.i matches 0 run data modify storage omegaflowey:bossfight soul_index set value 3
+execute if score @s omegaflowey.boss-fight.progress.phase.i matches 1 run data modify storage omegaflowey:bossfight soul_index set value 4
+execute if score @s omegaflowey.boss-fight.progress.phase.i matches 2 run data modify storage omegaflowey:bossfight soul_index set value 5
 
 # Set applicable petal-pipe to soul-color variant
 function omegaflowey:entity/hostile/omega-flowey/animate/pipe with storage omegaflowey:bossfight
