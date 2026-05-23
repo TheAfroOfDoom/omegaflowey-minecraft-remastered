@@ -1,31 +1,10 @@
 const dotenv = require('dotenv');
 const { series } = require('nps-utils');
-const { resolve } = require('path');
 
 const { ajblueprintDir } = require('./package-scripts/modules/shared-consts');
-const {
-  assertEnvironmentVariables,
-} = require('./package-scripts/utils-commonjs');
 
 dotenv.config();
 
-assertEnvironmentVariables([
-  'ASSETS_DIR',
-  'BLOCKBENCH_PATH',
-  'DATAPACK',
-  'RESOURCEPACK',
-]);
-
-const assetsDir = process.env.ASSETS_DIR;
-const blockbenchPath =
-  process.platform === 'darwin'
-    ? `open "${process.env.BLOCKBENCH_PATH}" --args`
-    : `'${process.env.BLOCKBENCH_PATH}'`;
-const datapack = process.env.DATAPACK;
-const resourcePack = process.env.RESOURCEPACK;
-
-// we have to resolve this path so we can use it with Blockbench
-const ajexportScriptPath = resolve('./package-scripts/modules/ajexport.js');
 const watchScriptPath = './package-scripts/watch.js';
 
 const allAnimatedJavaExportFiles = [
@@ -65,7 +44,7 @@ module.exports = {
     'count-bones': 'node ./package-scripts/count-aj-bones',
     export: {
       default: series.nps('export.run', 'export.postprocess'),
-      run: `yarn exec "${blockbenchPath}" --script="${ajexportScriptPath}" --cwd="${process.cwd()}" --assets-dir="${assetsDir}" --datapack="${datapack}" --resourcepack="${resourcePack}"`,
+      run: 'node ./package-scripts/run-exporter',
       // forcibly purge the `animated_java` export-cache
       force: series(
         `rimraf ${allAnimatedJavaExportFiles.join(' ')}`,

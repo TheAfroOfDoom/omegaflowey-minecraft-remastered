@@ -44,7 +44,9 @@ const requireWithCwd = async (cwd = '') => {
 const getArg = (argName) => {
   const { argv } = Blockbench;
   const arg = argv.find((arg) => arg.startsWith(argName));
-  return arg?.replace(argName, '')?.replaceAll('\\', '/');
+  // every arg has surrounding quotes, so remove them
+  const withQuotes = arg?.replace(argName, '')?.replaceAll('\\', '/');
+  return withQuotes?.slice(1, -1);
 };
 
 const MODEL_FILE_EXTENSION = '.ajblueprint';

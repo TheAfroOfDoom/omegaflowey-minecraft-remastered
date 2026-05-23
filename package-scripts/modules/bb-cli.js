@@ -15,7 +15,8 @@ BBPlugin.register('bb-cli', {
     const { argv } = Blockbench;
     const scriptArg = argv.find((arg) => arg.startsWith('--script'));
     if (typeof scriptArg !== 'undefined') {
-      const scriptPath = scriptArg.replace('--script=', '');
+      // remove `--script=` and surrounding quotes
+      const scriptPath = scriptArg.replace('--script="', '').slice(0, -1);
       console.log('BB-CLI: importing script:', scriptPath);
       const fs = requireNativeModule('fs');
       const script = import(scriptPath);
