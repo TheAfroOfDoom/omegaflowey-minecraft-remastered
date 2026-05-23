@@ -1,0 +1,41 @@
+{
+  "namespace": "<booth_id>",
+  "booth_name": "<Booth Name>",
+  "bounding_boxes": {
+    "my_box": {
+      "position": {
+        "x": { "min": -135, "max": -102 },
+        "y": { "min": 70, "max": 95 },
+        "z": { "min": -39, "max": -20 }
+      },
+      "on_player_enter": "<function_location>",
+      "on_player_exit": "<function_location>"
+    }
+  },
+  "on_player_enter": "<function_location>",
+  "on_player_exit": "<function_location>",
+  "ticking_functions": {
+    "<booth_id>:tick": "1t",
+    "<booth_id>:sec": "1s"
+  },
+  "sticker_book": {
+    "background_color": "#1a48c3",
+    "region": "textured_tropics",
+    "stickers": [
+      {
+        "sticker_id": "<sticker_id>",
+        "sticker_texture": "<texture_location>",
+        "sticker_name": "Welcome to Booth",
+        "unobtained_text": "Enter the Booth",
+        "obtained_text": "Rewarded for entering the Booth"
+      }
+    ]
+  },
+  "balloons": [
+    {
+      "balloon_id": "smithie",
+      "balloon_name": "Smithie",
+      "balloon_model": "summit_balloons:item/smithie"
+    }
+  ]
+}
