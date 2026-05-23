@@ -14,6 +14,9 @@ scoreboard objectives add omegaflowey.attack.bullets.position.z dummy
 scoreboard objectives add omegaflowey.attack.bullets.radius dummy
 # number of bullets left to summon in a set
 scoreboard objectives add omegaflowey.attack.bullets.remaining dummy
+# count variables used in attack.flies
+scoreboard objectives add omegaflowey.attack.bullets.summoned dummy
+scoreboard objectives add omegaflowey.attack.bullets.terminated dummy
 # visual scale at which bullet is summoned
 scoreboard objectives add omegaflowey.attack.bullets.scale dummy
 # total number of bullets to summon each set

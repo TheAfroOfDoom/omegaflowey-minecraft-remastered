@@ -14,6 +14,11 @@ execute unless data storage omegaflowey:bossfight bossfight_tvscreen_warning_loc
 execute unless data storage omegaflowey:bossfight soul_model_uuid run data modify storage omegaflowey:bossfight soul_model_uuid set value "0"
 execute unless data storage omegaflowey:bossfight soul_tvscreen_uuid run data modify storage omegaflowey:bossfight soul_tvscreen_uuid set value "0"
 
+execute unless data storage omegaflowey:attack.flies.flipped indicator_uuid run \
+  data modify storage omegaflowey:attack.flies.flipped indicator_uuid set value "0"
+execute unless data storage omegaflowey:attack.flies.nonflipped indicator_uuid run \
+  data modify storage omegaflowey:attack.flies.nonflipped indicator_uuid set value "0"
+
 # reset tag-variant flag
 scoreboard players set #omegaflowey.summon.tag_variant omegaflowey.global.flag 0
 

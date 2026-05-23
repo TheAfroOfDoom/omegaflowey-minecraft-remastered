@@ -1,6 +1,7 @@
 # Check if indicator should terminate
-function omegaflowey:entity/group/start
-execute as @e[scores={omegaflowey.group.id=0},tag=attack-indicator,tag=flies] run function omegaflowey:entity/hostile/omega-flowey/attack/flies/indicator/maybe_terminate
-function omegaflowey:entity/group/end
+execute if entity @s[tag=is_flipped] run \
+  function omegaflowey:entity/hostile/omega-flowey/attack/flies/indicator/maybe_terminate with storage omegaflowey:attack.flies.flipped
+execute if entity @s[tag=!is_flipped] run \
+  function omegaflowey:entity/hostile/omega-flowey/attack/flies/indicator/maybe_terminate with storage omegaflowey:attack.flies.nonflipped
 
 function aj:omegaflowey_housefly/remove/this

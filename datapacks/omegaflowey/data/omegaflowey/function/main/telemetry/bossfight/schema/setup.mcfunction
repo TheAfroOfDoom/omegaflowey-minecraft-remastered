@@ -43,6 +43,8 @@ data modify storage omegaflowey:telemetry schema_bossfight_name set value { \
   "soul.touch": 33, \
   "soul.saved": 34, \
   "player.heal": 35, \
+  "attack.flies.start": 36, \
+  "attack.flies.end": 37, \
 }
 
 ## bossfight.summit.end data

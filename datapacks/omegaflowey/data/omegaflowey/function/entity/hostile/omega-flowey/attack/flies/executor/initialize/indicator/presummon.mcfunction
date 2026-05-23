@@ -1,8 +1,8 @@
 # check for pre-existence of flipped/non-flipped indicators
-scoreboard players set #omegaflowey.attack.flies.flipped_exists omegaflowey.math.0 0
-execute if entity @e[tag=attack-indicator,tag=flies,tag=is_flipped] run scoreboard players set #omegaflowey.attack.flies.flipped_exists omegaflowey.math.0 1
-scoreboard players set #omegaflowey.attack.flies.nonflipped_exists omegaflowey.math.0 0
-execute if entity @e[tag=attack-indicator,tag=flies,tag=!is_flipped] run scoreboard players set #omegaflowey.attack.flies.nonflipped_exists omegaflowey.math.0 1
+function omegaflowey:entity/hostile/omega-flowey/attack/flies/indicator/check_exists with storage omegaflowey:attack.flies.flipped
+scoreboard players operation #omegaflowey.attack.flies.flipped_exists omegaflowey.math.0 = @s omegaflowey.attack.flag
+function omegaflowey:entity/hostile/omega-flowey/attack/flies/indicator/check_exists with storage omegaflowey:attack.flies.nonflipped
+scoreboard players operation #omegaflowey.attack.flies.nonflipped_exists omegaflowey.math.0 = @s omegaflowey.attack.flag
 
 # throw an error if both indicators (flipped + non-flipped) already exist
 execute if score #omegaflowey.attack.flies.nonflipped_exists omegaflowey.math.0 matches 1 if score #omegaflowey.attack.flies.flipped_exists omegaflowey.math.0 matches 1 run function omegaflowey:entity/hostile/omega-flowey/attack/flies/executor/initialize/indicator/error

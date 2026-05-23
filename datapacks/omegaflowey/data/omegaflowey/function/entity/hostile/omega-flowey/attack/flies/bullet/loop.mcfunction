@@ -8,9 +8,10 @@ execute if entity @s[tag=is_terminating] run return 0
 function omegaflowey:entity/hostile/omega-flowey/attack/flies/bullet/loop/move
 
 # Begin terminating after reaching the venus fly trap's mouth
-function omegaflowey:entity/group/start
-execute if entity @e[scores={omegaflowey.group.id=0},tag=attack-indicator,tag=flies,distance=..5] run tag @s add is_terminating
-function omegaflowey:entity/group/end
+execute if entity @s[tag=is_flipped] run \
+  function omegaflowey:entity/hostile/omega-flowey/attack/flies/bullet/loop/check_begin_terminating with storage omegaflowey:attack.flies.flipped
+execute if entity @s[tag=!is_flipped] run \
+  function omegaflowey:entity/hostile/omega-flowey/attack/flies/bullet/loop/check_begin_terminating with storage omegaflowey:attack.flies.nonflipped
 
 # guard against flies who move past the fly trap and outside the arena due to e.g. lag
 # NOTE: TAG_SUMMIT_2026_HARDCODED

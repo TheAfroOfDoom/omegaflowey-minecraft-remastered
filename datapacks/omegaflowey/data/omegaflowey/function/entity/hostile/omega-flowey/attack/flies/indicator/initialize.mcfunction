@@ -1,5 +1,9 @@
+function omegaflowey:entity/hostile/omega-flowey/attack/shared/indicator/initialize
+
+tag @s add flies
+data modify entity @s CustomName set value '"Flies Indicator"'
+
 # Set scores
-scoreboard players set @s omegaflowey.attack.clock.i -1
 scoreboard players operation @s omegaflowey.attack.clock.i -= #omegaflowey.attack.flies omegaflowey.attack.indicator.clock.delay
 
 scoreboard players operation @s omegaflowey.attack.bullets.remaining = #omegaflowey.attack.flies omegaflowey.attack.bullets.total
@@ -10,11 +14,15 @@ execute store result score @s omegaflowey.math.0 run data get entity @s Pos[2] 1
 scoreboard players operation @s omegaflowey.math.0 -= #omegaflowey.bossfight.summit.origin.z omegaflowey.global.flag
 execute if score @s omegaflowey.math.0 matches ..0 run tag @s add is_flipped
 
-# Set group ID
-function omegaflowey:entity/group/set
+function gu:generate
+execute if entity @s[tag=is_flipped] run \
+  data modify storage omegaflowey:attack.flies.flipped indicator_uuid set from storage gu:main out
+execute if entity @s[tag=!is_flipped] run \
+  data modify storage omegaflowey:attack.flies.nonflipped indicator_uuid set from storage gu:main out
+
+scoreboard players set @s omegaflowey.attack.bullets.summoned 0
+scoreboard players set @s omegaflowey.attack.bullets.terminated 0
 
 # Play sound
+# TODO
 playsound omega-flowey:attack.flies.summon hostile @a ~ ~ ~ 5 1 1
-
-# Remove tags
-tag @s remove attack-indicator-new
