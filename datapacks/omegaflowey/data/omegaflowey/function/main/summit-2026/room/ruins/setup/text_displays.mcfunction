@@ -202,7 +202,7 @@ execute as @e[ \
 data modify storage omegaflowey:decorative players_in_queue_count_uuid set from storage gu:main out
 function omegaflowey:main/summit-2026/room/ruins/player_queue_counter/update_value with storage omegaflowey:decorative
 
-summon minecraft:text_display 98.0 51.3125 -9.5 { \
+summon minecraft:text_display 97.99 51.3125 -9.5 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.static", \
@@ -224,5 +224,80 @@ summon minecraft:text_display 98.0 51.3125 -9.5 { \
       right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
       scale: [2.0f, 2.0f, 2.0f], \
       translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display 89.5 55.5 -3.01 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "picture-before-after-flowey-build-title-top", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: { "text": "Model History", "color": "white", "bold": true }, \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.875f, 1.875f, 0.0f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display 90.9375 54.25 -3.01 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "picture-legacy-flowey-build-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: { "text": "2016", "color": "yellow", "bold": true }, \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.75f, 1.75f, 1.75f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display 88.0625 54.25 -3.01 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "picture-flowey-build-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: { "text": "2024", "color": "aqua", "bold": true }, \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.75f, 1.75f, 1.75f], \
+    translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
