@@ -361,7 +361,7 @@ summon minecraft:text_display 89.375 53.625 -26.99 { \
     { "text": "in development", "color": "gold" }, \
     ", but we've created a short ", \
     { "text": "demo ", "color": "aqua" }, \
-    "for you to play during the ", \
+    "for you to play during\n", \
     { "text": "Smithed Summit ", "color": "blue" }, \
     { "translate": ":mountain_snow:" } \
   ], \
@@ -489,3 +489,65 @@ execute as @e[ \
   limit=1 \
 ] run function gu:generate
 data modify storage omegaflowey:decorative feedback_form_interaction_uuid set from storage gu:main out
+
+summon minecraft:text_display 100.875 54.875 -6.01 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "omega-flower-remastered-animated-java-shoutout", \
+  ], \
+  alignment: "left", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: [ \
+    "This project was\nlargely motivated by\nand possible thanks\nto ", \
+    { "text": "Animated Java", "color": "#00ACED", "underlined": true }, \
+    "\n\n", \
+    "They're here at\n", \
+    { "text": "Smithed Summit ", "color": "blue" }, \
+    { "translate": ":mountain_snow:" }, \
+    "\ntoo! Go check out\ntheir ", \
+    { "text": "booth", "color": "#00ACED" }, \
+    "!" \
+  ], \
+  text_opacity: 255, \
+  transformation: { \
+      left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+      right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+      scale: [0.6875f, 0.6875f, 0.6875f], \
+      translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+summon minecraft:interaction 100.875 55.6875 -5.5 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.dynamic", \
+    "summit.interactable", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "omega-flower-remastered-animated-java-shoutout-interaction", \
+  ], \
+  width: 1.25, \
+  height: 0.2, \
+  response: true, \
+  data: { \
+    summit_interactable: { \
+      on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_animated_java_link" \
+    } \
+  } \
+}
+execute as @e[ \
+  x=100.875, y=55.6875, z=-5.5, distance=..0.1, \
+  type=minecraft:interaction, \
+  tag=omega-flower-remastered-animated-java-shoutout-interaction, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:decorative animated_java_interaction_uuid set from storage gu:main out
