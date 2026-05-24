@@ -76,6 +76,24 @@ function omegaflowey:utils/log/self { text_component: '[ \
       "\\n", \
       { "text": "          " }, \
       { \
+        "text": "flamethrower ", \
+        "color": "yellow", \
+        "click_event": { \
+          "action": "suggest_command", \
+          "command": "/function omegaflowey:admin/attack/flamethrower" \
+        } \
+      }, \
+      { \
+        "text": "flies ", \
+        "color": "yellow", \
+        "click_event": { \
+          "action": "suggest_command", \
+          "command": "/function omegaflowey:admin/attack/flies" \
+        } \
+      }, \
+      "\\n", \
+      { "text": "          " }, \
+      { \
         "text": "friendliness-pellets ", \
         "color": "yellow", \
         "click_event": { \
@@ -114,11 +132,19 @@ function omegaflowey:utils/log/self { text_component: '[ \
 \
       { "text": "soul/ ", "color": "aqua" }, \
       { \
-        "text": "5 ", \
+        "text": "3 ", \
         "color": "yellow", \
         "click_event": { \
           "action": "suggest_command", \
-          "command": "/function omegaflowey:admin/soul/5" \
+          "command": "/function omegaflowey:admin/soul/3" \
+        } \
+      }, \
+      { \
+        "text": "4 ", \
+        "color": "yellow", \
+        "click_event": { \
+          "action": "suggest_command", \
+          "command": "/function omegaflowey:admin/soul/4" \
         } \
       }, \
       "\\n", \
