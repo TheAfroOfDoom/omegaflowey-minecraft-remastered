@@ -1,1 +1,0 @@
-function animated_java:summit_flag/remove/this/without_on_remove_function

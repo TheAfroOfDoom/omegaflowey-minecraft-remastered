@@ -1,3 +1,0 @@
-$data merge entity $(bone_split_2) {transformation: [-1.4945f,0.1799f,1.1715f,2.9605f,0.1588f,1.6755f,-0.095f,2.4793f,-1.365f,0.0428f,-1.1488f,0.2451f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(bone_split_1) {transformation: [-1.7721f,0.0203f,0.3775f,1.3642f,0.0229f,1.6784f,-0.0143f,2.5f,-0.5649f,-0.0082f,-1.6025f,-0.2574f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(bone_flag) {transformation: [-1.4866f,0f,-0.372f,0.25f,0f,1.6726f,0f,2.5f,0.3391f,0f,-1.6307f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

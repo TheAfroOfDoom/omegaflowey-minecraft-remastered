@@ -11,4 +11,5 @@ execute on vehicle at @s rotated as @s positioned ^ ^0.5 ^-0.35 summon minecraft
 playsound minecraft:block.chain.place player @a ~ ~ ~ 1 1
 playsound minecraft:block.wool.break player @a ~ ~ ~ 1 1
 playsound minecraft:entity.item_frame.add_item player @a ~ ~ ~ 1 1
+playsound summit_ziplines:block.zipline.move block @a ~ ~ ~ 5 1
 execute on target run tag @s remove summit.interact_zipline

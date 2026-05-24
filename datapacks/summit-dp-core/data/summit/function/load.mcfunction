@@ -16,9 +16,9 @@ scoreboard players set $-1 summit.constants -1
 scoreboard players set $10 summit.constants 10
 scoreboard players set $15 summit.constants 15
 scoreboard players set $20 summit.constants 20
+scoreboard players set $60 summit.constants 60
 function summit.dev:zz/displays/rope/loop
 scoreboard objectives add summit.vehicles.speed dummy
-scoreboard objectives add summit.vehicles.track dummy
-scoreboard objectives add summit.vehicles.node dummy
+scoreboard objectives add summit.vehicles.step dummy
 scoreboard objectives add summit.vehicles.effect dummy
 scoreboard objectives add summit.vehicles.direction dummy

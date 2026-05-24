@@ -30,11 +30,15 @@ execute if block ~1 ~ ~1 oxidized_copper_chain run setblock ~1 ~ ~1 oxidized_cop
 execute if block ~-1 ~ ~1 oxidized_copper_chain run setblock ~-1 ~ ~1 oxidized_copper_bars[east=false, north=false, south=true, west=true, waterlogged=false] strict
 execute if block ~1 ~ ~-1 oxidized_copper_chain run setblock ~1 ~ ~-1 oxidized_copper_bars[east=true, north=true, south=false, west=false, waterlogged=false] strict
 execute if block ~-1 ~ ~-1 oxidized_copper_chain run setblock ~-1 ~ ~-1 oxidized_copper_bars[east=false, north=true, south=false, west=true, waterlogged=false] strict
+tag @s[tag=summit.elevator.moving_up] add summit.elevator.raised
+tag @s[tag=summit.elevator.moving_down] remove summit.elevator.raised
 scoreboard players operation #curr summit.elevator.id = @s summit.elevator.id
 execute as @a[scores={summit.elevator.id=1..}] if score @s summit.elevator.id = #curr summit.elevator.id run attribute @s minecraft:gravity base reset
 execute as @a[scores={summit.elevator.id=1..}] if score @s summit.elevator.id = #curr summit.elevator.id run scoreboard players reset @s summit.elevator.id
-tag @s remove summit.elevator.moving
+tag @s remove summit.elevator.moving_up
+tag @s remove summit.elevator.moving_down
 scoreboard players set @s summit.elevator.timer 0
+execute store result score @s summit.elevator.cooldown run random value 5..20
 execute positioned ~ ~-4 ~ run tp @e[type=item_display, tag=summit.elevator.mover, distance=..3] ~ ~-10000 ~
 execute positioned ~ ~-10004 ~ run kill @e[tag=summit.elevator.mover, distance=..3]
 data merge entity @s {item: {id: "minecraft:diamond", count: 1, components: {"minecraft:item_model": "summit_transport:elevator/4_open"}}}

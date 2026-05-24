@@ -1,4 +1,5 @@
-execute store result storage player_motion:tmp convert double 1.00557 run scoreboard players get #crystal player_motion.internal.dummy
+# Bucket 3: crystal 6001 to 8000
+execute store result storage player_motion:tmp convert double 1.005570 run scoreboard players get #crystal player_motion.internal.dummy
 execute store result score #crystal player_motion.internal.dummy store result score #temp player_motion.internal.dummy run data get storage player_motion:tmp convert 10
 scoreboard players operation #temp player_motion.internal.dummy %= #constant.10 player_motion.internal.const
 execute if score #temp player_motion.internal.dummy matches 5.. run scoreboard players add #crystal player_motion.internal.dummy 10

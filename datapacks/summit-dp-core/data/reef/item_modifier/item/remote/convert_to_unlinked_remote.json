@@ -1,0 +1,34 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": [
+        "",
+        {
+          "text": "Unlinked Remote",
+          "color": "light_purple"
+        }
+      ],
+      "minecraft:item_model": "reef:remote",
+      "!minecraft:food": {},
+      "minecraft:max_stack_size": 1,
+      "minecraft:consumable": {
+        "consume_seconds": 9999999
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "reef": {
+        "item": {
+          "components": {
+            "reef:link": {
+              "linked": false
+            }
+          }
+        }
+      }
+    }
+  }
+]

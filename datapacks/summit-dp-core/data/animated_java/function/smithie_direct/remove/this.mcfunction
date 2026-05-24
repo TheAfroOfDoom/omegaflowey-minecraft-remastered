@@ -1,1 +1,0 @@
-function animated_java:smithie_direct/remove/this/without_on_remove_function

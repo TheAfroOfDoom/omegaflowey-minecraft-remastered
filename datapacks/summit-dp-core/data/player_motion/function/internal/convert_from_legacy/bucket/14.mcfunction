@@ -1,3 +1,4 @@
+# Bucket 14: crystal 28001 to 30000
 execute store result storage player_motion:tmp convert double 0.922249 run scoreboard players get #crystal player_motion.internal.dummy
 execute store result score #crystal player_motion.internal.dummy store result score #temp player_motion.internal.dummy run data get storage player_motion:tmp convert 10
 scoreboard players operation #temp player_motion.internal.dummy %= #constant.10 player_motion.internal.const

@@ -7,3 +7,4 @@ execute on passengers if entity @s[type=minecraft:player] run function summit.zi
 execute store result storage summit:temp zipline.speed double 0.001 run scoreboard players add @s summit.zipline_speed 20
 data modify storage summit:temp zipline.target set from entity @s data.summit_zipline.target
 function summit.zipline:move/macro with storage summit:temp zipline
+execute if predicate {condition: "minecraft:entity_properties", entity: "this", predicate: {periodic_tick: 10}} at @s run playsound summit_ziplines:block.zipline.move block @a ~ ~ ~ 5 1

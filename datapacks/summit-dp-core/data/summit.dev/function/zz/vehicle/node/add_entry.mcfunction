@@ -1,4 +1,4 @@
 tag @s add summit.interacted
-$data modify entity $(uuid) data.node.$(path) append value "$(value)"
+$data modify entity $(uuid) data.$(path) append value "$(value)"
 $execute as $(uuid) run function summit.dev:zz/vehicle/node/show_editor
 tag @s remove summit.interacted

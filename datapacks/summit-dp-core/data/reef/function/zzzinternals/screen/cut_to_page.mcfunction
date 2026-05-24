@@ -1,0 +1,2 @@
+function reef:zzzinternals/screen/thy_shall_kill_elements
+function reef:zzzinternals/screen/advance_page_sequence

@@ -1,4 +1,4 @@
-data modify storage summit.vehicles:temp dialog set value {type: "minecraft:multi_action", title: "Node Editor", body: {type: "minecraft:plain_message", contents: [""]}, inputs: [], actions: [{label: "Close"}]}
+data modify storage summit.vehicles:temp dialog set value {type: "minecraft:multi_action", title: "", body: {type: "minecraft:plain_message", contents: [""]}, inputs: [], actions: [{label: "Close"}]}
 data modify storage summit.vehicles:temp dialog.title set value ""
 $data modify storage summit.vehicles:temp dialog.inputs append value {type: "minecraft:text", label: "$(path)", key: "value", initial: "$(value)"}
 $data modify storage summit.vehicles:temp template set value 'function summit.dev:zz/vehicle/node/edit/confirm {uuid: "$(uuid)", path: "$(path)", value: "$'
