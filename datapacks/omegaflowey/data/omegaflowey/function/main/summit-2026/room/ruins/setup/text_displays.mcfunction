@@ -3,7 +3,6 @@ summon minecraft:text_display 97.0 51.375 -15.0 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
-    "summit.interactable", \
     "omega-flowey-remastered", \
     "decorative", \
     "decorative.ruins", \
@@ -239,6 +238,7 @@ summon minecraft:text_display 89.5 55.5 -3.01 { \
   alignment: "center", \
   background: 0, \
   default_background: 0b, \
+  brightness: { block: 15, sky: 0 }, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
@@ -264,6 +264,7 @@ summon minecraft:text_display 90.9375 54.25 -3.01 { \
   alignment: "center", \
   background: 0, \
   default_background: 0b, \
+  brightness: { block: 15, sky: 0 }, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
@@ -289,6 +290,7 @@ summon minecraft:text_display 88.0625 54.25 -3.01 { \
   alignment: "center", \
   background: 0, \
   default_background: 0b, \
+  brightness: { block: 15, sky: 0 }, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
@@ -301,3 +303,186 @@ summon minecraft:text_display 88.0625 54.25 -3.01 { \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
+
+summon minecraft:text_display 89.25 55.625 -26.99 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "description-top", \
+  ], \
+  alignment: "left", \
+  background: 0, \
+  default_background: 0b, \
+  brightness: { block: 15, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: [ \
+    "This is a recreation of a boss\nfrom ", \
+    { "text": "Toby Fox", "color": "yellow" }, \
+    "'s ", \
+    { "color": "light_purple", "text": "Undertale" } \
+  ], \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5000005f, 1.5000002f, 1.4999999f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display 89.375 53.625 -26.99 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "description-bottom", \
+  ], \
+  alignment: "left", \
+  background: 0, \
+  default_background: 0b, \
+  brightness: { block: 15, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 160, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: [ \
+    "The map is still ", \
+    { "text": "in development", "color": "gold" }, \
+    ", but we've created a short ", \
+    { "text": "demo ", "color": "aqua" }, \
+    "for you to play during the ", \
+    { "text": "Smithed Summit ", "color": "blue" }, \
+    { "translate": ":mountain_snow:" } \
+  ], \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5000001f, 1.5000001f, 1.4999995f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display 93.375 52.375 -26.99 {\
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "description-github", \
+  ], \
+  alignment: "right", \
+  background: 0, \
+  default_background: 0b, \
+  brightness: { block: 15, sky: 0 }, \
+  line_width: 100, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: [ \
+    { "text":"GitHub", "color":"gray" }, \
+    ": ", \
+    { "text": "[link]", "color": "aqua", "underlined": true } \
+  ], \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.3749996f, 1.375f, 1.3749993f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+summon minecraft:interaction 94.0 52.3125 -27.25 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.dynamic", \
+    "summit.interactable", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "description-github", \
+  ], \
+  width: 1, \
+  height: 0.5, \
+  response: true, \
+  data: { \
+    summit_interactable: { \
+      on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_github_description" \
+    } \
+  } \
+}
+execute as @e[ \
+  x=94.0, y=52.3125, z=-27.25, distance=..0.1, \
+  type=minecraft:interaction, \
+  tag=description-github, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:decorative github_interaction_uuid set from storage gu:main out
+
+
+summon minecraft:text_display 92.5 51.75 -26.99 {\
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "description-feedback-form", \
+  ], \
+  alignment: "right", \
+  background: 0, \
+  default_background: 0b, \
+  brightness: { block: 15, sky: 0 }, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: [ \
+    "Share ", \
+    { "text":"feedback", "color":"yellow" }, \
+    ": ", \
+    { "text": "[link]", "color": "aqua", "underlined": true } \
+  ], \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.3749996f, 1.375f, 1.3749993f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+summon minecraft:interaction 94.0 51.6875 -27.25 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.dynamic", \
+    "summit.interactable", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "description-feedback-form-interaction", \
+  ], \
+  width: 1, \
+  height: 0.5, \
+  response: true, \
+  data: { \
+    summit_interactable: { \
+      on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_feedback_form_link" \
+    } \
+  } \
+}
+execute as @e[ \
+  x=94.0, y=51.6875, z=-27.25, distance=..0.1, \
+  type=minecraft:interaction, \
+  tag=description-feedback-form-interaction, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:decorative feedback_form_interaction_uuid set from storage gu:main out
