@@ -4,7 +4,7 @@ summon minecraft:text_display 64.0 52.75 -15.0 {\
     "summit.static", \
     "omega-flowey-remastered", \
     "decorative", \
-    "decorative.ruins", \
+    "decorative.pit", \
     "welcome-to-flowey-demo", \
   ], \
   alignment: "center", \
@@ -35,7 +35,7 @@ summon minecraft:text_display 64.0 52.0 -15.0 { \
     "summit.static", \
     "omega-flowey-remastered", \
     "decorative", \
-    "decorative.ruins", \
+    "decorative.pit", \
     "by-theafroofdoom", \
   ], \
   alignment: "center", \
