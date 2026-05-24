@@ -201,3 +201,28 @@ execute as @e[ \
 ] run function gu:generate
 data modify storage omegaflowey:decorative players_in_queue_count_uuid set from storage gu:main out
 function omegaflowey:main/summit-2026/room/ruins/player_queue_counter/update_value with storage omegaflowey:decorative
+
+summon minecraft:text_display 98.0 51.3125 -9.5 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "spectate-title", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: [{ "text": "SPECTATE", "color": "gold", "bold": true }], \
+  text_opacity: 255, \
+  transformation: { \
+      left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+      right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+      scale: [2.0f, 2.0f, 2.0f], \
+      translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
