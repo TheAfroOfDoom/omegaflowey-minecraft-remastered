@@ -140,7 +140,6 @@ const checkTags = (model) => {
   const currentTags = new Set(tagsStr.split(','));
   const requiredTags = [
     'summit.booth_entity.omegaflowey',
-    'summit.dynamic',
     'omega-flowey-remastered',
   ];
 
@@ -149,6 +148,15 @@ const checkTags = (model) => {
       continue;
     }
     const error = `missing tag: ${chalk.blueBright(requiredTag)}`;
+    errors.push(error);
+  }
+
+  const hasSummitDynamic = currentTags.has('summit.dynamic');
+  const hasSummitStatic = currentTags.has('summit.static');
+  if (hasSummitDynamic === hasSummitStatic) {
+    const error = `missing tag: one of ${chalk.blueBright(
+      'summit.dynamic',
+    )} or ${chalk.blueBright('summit.static')}`;
     errors.push(error);
   }
 
