@@ -5,9 +5,9 @@ execute on target run function omegaflowey:utils/log/self { text_component: \
         { "text": "Click here to visit our ", "color": "aqua" }, \
         { "text": "GitHub", "underlined": true, "color": "gray" } \
       ], \
-      "clickEvent": { \
+      "click_event": { \
         "action": "open_url", \
-        "value": "https://github.com/TheAfroOfDoom/omegaflowey-minecraft-remastered" \
+        "url": "https://github.com/TheAfroOfDoom/omegaflowey-minecraft-remastered" \
       } } \
   ] \
 }

@@ -8,18 +8,18 @@ function omegaflowey:utils/log/self { text_component: [ \
   { \
     "text": "booth", \
     "color": "yellow", \
-    "clickEvent": { \
+    "click_event": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.show.booth" \
+      "command": "/trigger omegaflowey.player.telemetry.trigger.show.booth" \
     } \
   }, \
   " ", \
   { \
     "text": "bossfight", \
     "color": "yellow", \
-    "clickEvent": { \
+    "click_event": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.show.bossfight" \
+      "command": "/trigger omegaflowey.player.telemetry.trigger.show.bossfight" \
     } \
   }, \
   "\\n", \
@@ -27,18 +27,18 @@ function omegaflowey:utils/log/self { text_component: [ \
   { \
     "text": "booth", \
     "color": "yellow", \
-    "clickEvent": { \
+    "click_event": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.pop.booth" \
+      "command": "/trigger omegaflowey.player.telemetry.trigger.pop.booth" \
     } \
   }, \
   " ", \
   { \
     "text": "bossfight", \
     "color": "yellow", \
-    "clickEvent": { \
+    "click_event": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.pop.bossfight" \
+      "command": "/trigger omegaflowey.player.telemetry.trigger.pop.bossfight" \
     } \
   }, \
   "\\n", \
@@ -46,18 +46,18 @@ function omegaflowey:utils/log/self { text_component: [ \
   { \
     "text": "booth", \
     "color": "yellow", \
-    "clickEvent": { \
+    "click_event": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.new_page.booth" \
+      "command": "/trigger omegaflowey.player.telemetry.trigger.new_page.booth" \
     } \
   }, \
   " ", \
   { \
     "text": "bossfight", \
     "color": "yellow", \
-    "clickEvent": { \
+    "click_event": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.new_page.bossfight" \
+      "command": "/trigger omegaflowey.player.telemetry.trigger.new_page.bossfight" \
     } \
   }, \
   "\\n", \
@@ -65,9 +65,9 @@ function omegaflowey:utils/log/self { text_component: [ \
   { \
     "text": "stats", \
     "color": "yellow", \
-    "clickEvent": { \
+    "click_event": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.stats" \
+      "command": "/trigger omegaflowey.player.telemetry.trigger.stats" \
     } \
   }, \
   "\\n", \
@@ -75,18 +75,18 @@ function omegaflowey:utils/log/self { text_component: [ \
   { \
     "text": "enable", \
     "color": "yellow", \
-    "clickEvent": { \
+    "click_event": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.enable" \
+      "command": "/trigger omegaflowey.player.telemetry.trigger.enable" \
     } \
   }, \
   "\\n", \
   { \
     "text": "disable", \
     "color": "yellow", \
-    "clickEvent": { \
+    "click_event": { \
       "action": "suggest_command", \
-      "value": "/trigger omegaflowey.player.telemetry.trigger.disable" \
+      "command": "/trigger omegaflowey.player.telemetry.trigger.disable" \
     } \
   } \
 ]}

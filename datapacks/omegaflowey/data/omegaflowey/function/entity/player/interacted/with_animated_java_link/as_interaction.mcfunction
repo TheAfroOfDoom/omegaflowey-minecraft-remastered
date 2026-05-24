@@ -6,9 +6,9 @@ execute on target run function omegaflowey:utils/log/self { text_component: \
         { "text": "Animated Java's", "underlined": true, "color": "#00ACED" }, \
         { "text": " website", "color": "aqua" } \
       ], \
-      "clickEvent": { \
+      "click_event": { \
         "action": "open_url", \
-        "value": "https://animated-java.dev/" \
+        "url": "https://animated-java.dev/" \
       } } \
   ] \
 }

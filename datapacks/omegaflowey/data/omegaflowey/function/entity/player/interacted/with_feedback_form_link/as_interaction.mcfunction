@@ -5,9 +5,9 @@ execute on target run function omegaflowey:utils/log/self { text_component: \
         { "text": "Click here to leave us ", "color": "aqua" }, \
         { "text": "feedback", "underlined": true, "color": "yellow" } \
       ], \
-      "clickEvent": { \
+      "click_event": { \
         "action": "open_url", \
-        "value": "https://forms.gle/AkksowKZeQYoZ2z46" \
+        "url": "https://forms.gle/AkksowKZeQYoZ2z46" \
       } } \
   ] \
 }

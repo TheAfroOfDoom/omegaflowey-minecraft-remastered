@@ -17,9 +17,9 @@ function omegaflowey:utils/log/self { text_component: [ \
       " ", \
       { "text": "[link]", "color": "light_purple", "underlined": true } \
     ], \
-    "clickEvent": { \
+    "click_event": { \
       "action": "open_url", \
-      "value": "https://forms.gle/AkksowKZeQYoZ2z46" \
+      "url": "https://forms.gle/AkksowKZeQYoZ2z46" \
     } \
   } \
 ]}

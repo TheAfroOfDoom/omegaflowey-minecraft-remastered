@@ -11,9 +11,9 @@ execute if score #omegaflowey.admin.is_active_player omegaflowey.global.flag mat
     { \
       "text": "set_active_player", \
       "color": "yellow", \
-      "clickEvent": { \
+      "click_event": { \
         "action": "suggest_command", \
-        "value": "/function omegaflowey:admin/set_active_player" \
+        "command": "/function omegaflowey:admin/set_active_player" \
       } \
     } \
   ] \
