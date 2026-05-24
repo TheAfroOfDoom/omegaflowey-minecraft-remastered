@@ -1,8 +1,8 @@
 function omegaflowey:utils/log/self { text_component: [ \
   "", \
   { "text": "Telemetry menu:", "color": "light_purple", "bold": true }, \
-  "\\n", \
-  "\\n", \
+  "\n", \
+  "\n", \
 \
   { "text": "show: ", "color": "aqua" }, \
   { \
@@ -22,7 +22,7 @@ function omegaflowey:utils/log/self { text_component: [ \
       "command": "/trigger omegaflowey.player.telemetry.trigger.show.bossfight" \
     } \
   }, \
-  "\\n", \
+  "\n", \
   { "text": "pop: ", "color": "aqua" }, \
   { \
     "text": "booth", \
@@ -41,7 +41,7 @@ function omegaflowey:utils/log/self { text_component: [ \
       "command": "/trigger omegaflowey.player.telemetry.trigger.pop.bossfight" \
     } \
   }, \
-  "\\n", \
+  "\n", \
   { "text": "new_page: ", "color": "aqua" }, \
   { \
     "text": "booth", \
@@ -60,8 +60,8 @@ function omegaflowey:utils/log/self { text_component: [ \
       "command": "/trigger omegaflowey.player.telemetry.trigger.new_page.bossfight" \
     } \
   }, \
-  "\\n", \
-  "\\n", \
+  "\n", \
+  "\n", \
   { \
     "text": "stats", \
     "color": "yellow", \
@@ -70,8 +70,8 @@ function omegaflowey:utils/log/self { text_component: [ \
       "command": "/trigger omegaflowey.player.telemetry.trigger.stats" \
     } \
   }, \
-  "\\n", \
-  "\\n", \
+  "\n", \
+  "\n", \
   { \
     "text": "enable", \
     "color": "yellow", \
@@ -80,7 +80,7 @@ function omegaflowey:utils/log/self { text_component: [ \
       "command": "/trigger omegaflowey.player.telemetry.trigger.enable" \
     } \
   }, \
-  "\\n", \
+  "\n", \
   { \
     "text": "disable", \
     "color": "yellow", \
