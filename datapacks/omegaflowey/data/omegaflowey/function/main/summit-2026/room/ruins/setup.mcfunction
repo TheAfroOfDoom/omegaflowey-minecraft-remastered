@@ -77,3 +77,55 @@ summon minecraft:item_display 99.0 55.625 -6.01 { \
     translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+
+summon minecraft:item_display 108.99 55.5 -21.5 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "picture-legacy-command-blocks", \
+  ], \
+  brightness: { block: 15, sky: 0 }, \
+  item: { \
+    components: { \
+      "minecraft:item_model": "omega-flowey:decorative/legacy-command-blocks-scaled-min", \
+    }, \
+    count: 1, \
+    id: "minecraft:gray_dye", \
+  }, \
+  item_display: "fixed", \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [2.5f, 2.5f, 0.0f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:item_display 108.99 55.5 -18.5 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "picture-legacy-hopper-clock", \
+  ], \
+  brightness: { block: 15, sky: 0 }, \
+  item: { \
+    components: { \
+      "minecraft:item_model": "omega-flowey:decorative/legacy-hopper-clock-scaled-min", \
+    }, \
+    count: 1, \
+    id: "minecraft:gray_dye", \
+  }, \
+  item_display: "fixed", \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [2.5f, 2.5f, 0.0f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}

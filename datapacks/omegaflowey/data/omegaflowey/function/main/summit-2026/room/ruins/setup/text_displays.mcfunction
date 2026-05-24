@@ -551,3 +551,99 @@ execute as @e[ \
   limit=1 \
 ] run function gu:generate
 data modify storage omegaflowey:decorative animated_java_interaction_uuid set from storage gu:main out
+
+summon minecraft:text_display 107.99 54.3125 -14.0 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "flowey-development-history-description", \
+  ], \
+  alignment: "left", \
+  background: 0, \
+  default_background: 0b, \
+  line_width: 300, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: [ \
+    "I released the original ", \
+    { "text": "Omega Flowey ", "color": "gold" }, \
+    "map for ", \
+    { "text": "Minecraft 1.9 ", "color": "green" }, \
+    "in ", \
+    { "text": "March 2016", "color": "yellow" }, \
+    ". It used over ", \
+    { "text": "8000 ", "color": "light_purple" }, \
+    { "text": "command blocks ", "color": "aqua" }, \
+    "and various ", \
+    { "text": "redstone circuits ", "color": "aqua" }, \
+    "to simulate the boss-fight with the limited mapmaking tools Minecraft provided. ", \
+    "Development time was about ", \
+    { "text": "two months ", "color": "yellow" }, \
+    "from start to finish.", \
+    \
+    "\n\n", \
+    \
+    "I decided to make a remaster after seeing some comments on ", \
+    { "text": "YouTube ", "color": "red" }, \
+    "playthroughs of the old map mentioning their enjoyment of it and desire for it to be updated to ", \
+    "modern Minecraft versions. It was also a great excuse to dive into all the amazing ", \
+    { "text": "new Minecraft features ", "color": "green" }, \
+    "that were added since the last map I made in ", \
+    { "text": "2019 ", "color": "yellow" }, \
+    "(a Jevil boss-fight from Deltarune), like ", \
+    { "text": "macros", "color": "aqua" }, \
+    ", ", \
+    { "text": "display entities", "color": "aqua" }, \
+    ", and ", \
+    { "text": "data storage", "color": "aqua" }, \
+    ".", \
+    \
+    "\n\n", \
+    \
+    "Development of the remaster has been ongoing since ", \
+    { "text": "September 2023 ", "color": "yellow" }, \
+    "(nearly ", \
+    { "text": "3 years ", "color": "yellow" }, \
+    "now 😓) and is taking much longer than the original so I can focus on a higher quality map. ", \
+    "Check out our ", \
+    { "text": "GitHub", "color": "aqua", "underlined": true }, \
+    " to stay up-to-date on progress or if you want to see the map's development history." \
+  ], \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+      right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+      scale: [0.5f, 0.5f, 0.5f], \
+      translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+summon minecraft:interaction 108.0 54.4375 -14.4375 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.dynamic", \
+    "summit.interactable", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "description-github-interaction-back-cave", \
+  ], \
+  width: 0.4, \
+  height: 0.15, \
+  response: true, \
+  data: { \
+    summit_interactable: { \
+      on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_back_cave_github_link" \
+    } \
+  } \
+}
+execute as @e[ \
+  x=108.0, y=54.4375, z=-14.4375, distance=..0.1, \
+  type=minecraft:interaction, \
+  tag=description-github-interaction-back-cave, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:decorative back_cave_github_interaction_uuid set from storage gu:main out
