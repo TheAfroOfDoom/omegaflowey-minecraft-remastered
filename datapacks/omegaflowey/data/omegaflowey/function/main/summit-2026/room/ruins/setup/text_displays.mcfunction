@@ -1,5 +1,5 @@
 scoreboard players set #omegaflowey.bossfight.queue_disabled omegaflowey.global.flag 0
-summon minecraft:text_display 97.0 51.375 -15.0 { \
+summon minecraft:text_display 97.0 51.375 -14.5 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -24,7 +24,7 @@ summon minecraft:text_display 97.0 51.375 -15.0 { \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
-summon minecraft:interaction 97.0 51.375 -15.0 { \
+summon minecraft:interaction 97.0 51.375 -14.5 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -44,7 +44,7 @@ summon minecraft:interaction 97.0 51.375 -15.0 { \
   } \
 }
 execute as @e[ \
-  x=97.0, y=51.375, z=-15.0, distance=..0.1, \
+  x=97.0, y=51.375, z=-14.5, distance=..0.1, \
   type=minecraft:interaction, \
   tag=join-queue-interaction, \
   tag=omega-flowey-remastered, \
@@ -52,7 +52,7 @@ execute as @e[ \
 ] run function gu:generate
 data modify storage omegaflowey:decorative join_queue_interaction_uuid set from storage gu:main out
 
-summon minecraft:text_display 97.4375 56.25 -15.0 { \
+summon minecraft:text_display 96.99 57.25 -14.5 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.static", \
@@ -78,7 +78,7 @@ summon minecraft:text_display 97.4375 56.25 -15.0 { \
   } \
 }
 
-summon minecraft:text_display 97.4375 55.25 -15.0 { \
+summon minecraft:text_display 96.99 56.25 -14.5 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -103,7 +103,7 @@ summon minecraft:text_display 97.4375 55.25 -15.0 { \
   } \
 }
 execute as @e[ \
-  x=97.4375, y=55.25, z=-15.0, distance=..0.1, \
+  x=96.99, y=56.25, z=-14.5, distance=..0.1, \
   type=minecraft:text_display, \
   tag=now-playing-player-name, \
   tag=omega-flowey-remastered, \
@@ -111,7 +111,7 @@ execute as @e[ \
 ] run function gu:generate
 data modify storage omegaflowey:bossfight active_player_display_uuid set from storage gu:main out
 
-summon minecraft:text_display 97.4375 54.4375 -16.0 { \
+summon minecraft:text_display 96.99 55.4375 -13.5 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -134,7 +134,7 @@ summon minecraft:text_display 97.4375 54.4375 -16.0 { \
   } \
 }
 execute as @e[ \
-  x=97.4375, y=54.4375, z=-16.0, distance=..0.1, \
+  x=96.99, y=55.4375, z=-13.5, distance=..0.1, \
   type=minecraft:text_display, \
   tag=now-playing-player-health, \
   tag=omega-flowey-remastered, \
@@ -145,7 +145,7 @@ data modify storage omegaflowey:bossfight active_player_health_display_uuid set 
 # Player name display updates both the name (+ skull) and the health counter
 function omegaflowey:main/summit-2026/room/ruins/active_player_display/update_value with storage omegaflowey:bossfight
 
-summon minecraft:text_display 97.4375 57.25 -15.4375 { \
+summon minecraft:text_display 83.0 56.125 -9.0 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.static", \
@@ -163,14 +163,14 @@ summon minecraft:text_display 97.4375 57.25 -15.4375 { \
   text: [{ "text": "In queue", "color": "aqua", "bold": true }], \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     scale: [ 2.0f, 2.0f, 2.0f], \
     translation: [ 0.0f, 0.0f, 0.0f] \
   } \
 }
 
-summon minecraft:text_display 97.4375 57.1875 -13.5625 { \
+summon minecraft:text_display 83.0 54.5 -9.0 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -188,14 +188,14 @@ summon minecraft:text_display 97.4375 57.1875 -13.5625 { \
   shadow: 0b, \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-    scale: [2.5f, 2.5f, 2.5f], \
+    scale: [5.0f, 5.0f, 5.0f], \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
 execute as @e[ \
-  x=97.4375, y=57.1875, z=-13.5625, distance=..10, \
+  x=83.0, y=54.5, z=-9.0, distance=..10, \
   type=minecraft:text_display, \
   tag=players-in-queue-count, \
   tag=omega-flowey-remastered, \
@@ -204,7 +204,7 @@ execute as @e[ \
 data modify storage omegaflowey:decorative players_in_queue_count_uuid set from storage gu:main out
 function omegaflowey:main/summit-2026/room/ruins/player_queue_counter/update_value with storage omegaflowey:decorative
 
-summon minecraft:text_display 97.99 51.3125 -9.5 { \
+summon minecraft:text_display 97.99 51.3125 -9.0 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.static", \
