@@ -48,6 +48,7 @@ data modify storage omegaflowey:telemetry schema_bossfight_name set value { \
 }
 
 ## bossfight.summit.end data
+# e: player_heal_count
 # h: player_hit_count
 # s: stop_reason
 
@@ -74,4 +75,6 @@ data modify storage omegaflowey:telemetry schema_bossfight_damage_source set val
   "dentata_snakes.bullet": 5, \
   "finger_guns.bullet": 6, \
   "soul.5.bullet": 7, \
+  "soul.3.word": 8, \
+  "soul.4.fire": 9, \
 }
