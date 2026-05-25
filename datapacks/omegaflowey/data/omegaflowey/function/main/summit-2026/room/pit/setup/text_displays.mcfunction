@@ -9,7 +9,7 @@ summon minecraft:text_display 64.0 52.75 -15.0 {\
   ], \
   alignment: "center", \
   background: 1073741824, \
-  brightness: { block: 12, sky: 0 }, \
+  brightness: { block: 15, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
@@ -40,7 +40,7 @@ summon minecraft:text_display 64.0 52.0 -15.0 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
-  brightness: { block: 12, sky: 0 }, \
+  brightness: { block: 15, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
@@ -66,7 +66,7 @@ summon minecraft:text_display 72.0 52.0 -23.0 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
-  brightness: { block: 12, sky: 0 }, \
+  brightness: { block: 15, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
@@ -92,7 +92,7 @@ summon minecraft:text_display 72.0 52.5 -23.0 { \
   ], \
   alignment: "center", \
   background: 1073741824, \
-  brightness: { block: 12, sky: 0 }, \
+  brightness: { block: 15, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
