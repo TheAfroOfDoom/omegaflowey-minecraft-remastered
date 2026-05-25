@@ -3,7 +3,7 @@ const { PNG } = require('pngjs');
 const fs = require('fs-extra');
 
 const applicableExtensions = ['.png'];
-const exclude = /datapacks\//;
+const exclude = /datapacks\/|adahy\.png$/;
 
 const isEmissive = (alpha) => alpha === 254;
 const isTransparentEmissive = (alpha) => 9 <= alpha && alpha <= 16;
