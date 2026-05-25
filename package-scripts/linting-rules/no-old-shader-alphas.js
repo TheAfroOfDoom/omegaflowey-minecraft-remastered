@@ -40,8 +40,8 @@ const noOldShaderAlphas = (file) => {
   for (let i = 0; i < subpixels.length; i += 4) {
     // eslint-disable-next-line no-unused-vars
     const [r, g, b, a] = subpixels.slice(i, i + 4);
-    const col = i % pngWithMetadata.width;
-    const row = Math.floor(i / pngWithMetadata.height);
+    const col = Math.floor(i / 4) % pngWithMetadata.width;
+    const row = Math.floor(Math.floor(i / 4) / pngWithMetadata.width);
 
     if (isEmissive(a)) {
       emissiveIdxs.push([[col, row]]);
