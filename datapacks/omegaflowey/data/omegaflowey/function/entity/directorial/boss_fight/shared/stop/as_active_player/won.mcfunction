@@ -9,6 +9,9 @@ execute if score #omegaflowey.bossfight.player_hit_count omegaflowey.global.flag
 execute unless score #omegaflowey.bossfight.player_hit_count omegaflowey.global.flag matches ..5 run \
   function omegaflowey:entity/directorial/boss_fight/shared/stop/as_active_player/won/give_reward_hat
 
+execute if score #omegaflowey.bossfight.player_heal_count omegaflowey.global.flag matches 7.. run \
+  function omegaflowey:entity/directorial/boss_fight/shared/stop/as_active_player/won/give_reward_hat_heal_items
+
 # Play custom item pickup sound
 stopsound @s player minecraft:entity.item.pickup
 playsound omega-flowey:player.get-item player @s ~ ~ ~ 10

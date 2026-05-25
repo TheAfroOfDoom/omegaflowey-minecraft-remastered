@@ -192,6 +192,16 @@ function omegaflowey:utils/log/self { text_component: '[ \
       }, \
       ": gives the low-hits magenta reward hat item", \
       "\\n", \
+      { \
+        "text": "give/reward_hat_heal_items", \
+        "color": "yellow", \
+        "click_event": { \
+          "action": "suggest_command", \
+          "command": "/function omegaflowey:admin/give/reward_hat_heal_items" \
+        } \
+      }, \
+      ": gives the heal-items green reward hat item", \
+      "\\n", \
       "\\n", \
 \
       { \
