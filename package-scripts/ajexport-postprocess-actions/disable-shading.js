@@ -63,6 +63,7 @@ const disableShading = ({ resourcePackRootDir }) => {
     ['omegaflowey_tv_screen', 'screen', 'soul_shatter_9'],
     ['omegaflowey_tv_screen', 'screen', 'soul_shatter_10'],
     ['omegaflowey_tv_screen', 'screen', 'static'],
+    ['omegaflowey_tv_screen', 'screen', 'static_noglow'],
     ['omegaflowey_tv_screen', 'screen', 'thumbs_up'],
     ['omegaflowey_tv_screen', 'screen', 'warning'],
     ['omegaflowey_tv_screen', 'screen_tvinside', 'tvinside_0'],
