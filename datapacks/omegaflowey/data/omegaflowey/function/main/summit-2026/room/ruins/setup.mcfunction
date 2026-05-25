@@ -130,7 +130,7 @@ summon minecraft:item_display 108.99 55.5 -18.5 { \
   }, \
 }
 
-summon minecraft:item_display 87.25 51.875 -26.9375 { \
+summon minecraft:item_display 87.125 51.875 -26.9375 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.static", \
@@ -181,7 +181,7 @@ summon minecraft:item_display 88.5 51.875 -26.9375 { \
   }, \
 }
 
-summon minecraft:item_display 89.75 51.875 -26.9375 { \
+summon minecraft:item_display 89.875 51.875 -26.9375 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.static", \

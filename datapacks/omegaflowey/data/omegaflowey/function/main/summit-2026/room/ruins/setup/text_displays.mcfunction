@@ -374,7 +374,7 @@ summon minecraft:text_display 89.375 53.875 -26.99 { \
   } \
 }
 
-summon minecraft:text_display 93.375 52.375 -26.99 {\
+summon minecraft:text_display 93.625 52.375 -26.99 {\
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.static", \
@@ -403,7 +403,7 @@ summon minecraft:text_display 93.375 52.375 -26.99 {\
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
-summon minecraft:interaction 94.0 52.3125 -27.25 { \
+summon minecraft:interaction 94.25 52.3125 -27.25 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -423,7 +423,7 @@ summon minecraft:interaction 94.0 52.3125 -27.25 { \
   } \
 }
 execute as @e[ \
-  x=94.0, y=52.3125, z=-27.25, distance=..0.1, \
+  x=94.25, y=52.3125, z=-27.25, distance=..0.1, \
   type=minecraft:interaction, \
   tag=description-github, \
   tag=omega-flowey-remastered, \
@@ -432,7 +432,7 @@ execute as @e[ \
 data modify storage omegaflowey:decorative github_interaction_uuid set from storage gu:main out
 
 
-summon minecraft:text_display 92.5 51.75 -26.99 {\
+summon minecraft:text_display 92.75 51.75 -26.99 {\
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.static", \
@@ -458,11 +458,11 @@ summon minecraft:text_display 92.5 51.75 -26.99 {\
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-    scale: [1.3749996f, 1.375f, 1.3749993f], \
+    scale: [1.375f, 1.375f, 0.0f], \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
-summon minecraft:interaction 94.0 51.6875 -27.25 { \
+summon minecraft:interaction 94.25 51.6875 -27.25 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -482,7 +482,7 @@ summon minecraft:interaction 94.0 51.6875 -27.25 { \
   } \
 }
 execute as @e[ \
-  x=94.0, y=51.6875, z=-27.25, distance=..0.1, \
+  x=94.25, y=51.6875, z=-27.25, distance=..0.1, \
   type=minecraft:interaction, \
   tag=description-feedback-form-interaction, \
   tag=omega-flowey-remastered, \
@@ -659,6 +659,7 @@ summon minecraft:text_display 88.5 53.1875 -27.0 { \
   ], \
   alignment: "center", \
   background: 0, \
+  brightness: { block: 15, sky: 0 }, \
   default_background: false, \
   line_width: 200, \
   see_through: 0b, \
@@ -673,15 +674,18 @@ summon minecraft:text_display 88.5 53.1875 -27.0 { \
   }, \
 }
 
-# summon minecraft:text_display -124.01 43.4375 34.6875 { \
+summon minecraft:text_display 87.125 52.5 -26.9375 { \
   Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
     "omega-flowey-remastered", \
     "decorative", \
-    "decorative-cave", \
+    "decorative.ruins", \
     "reward-hats-yellow-description", \
   ], \
   alignment: "center", \
   background: 0, \
+  brightness: { block: 15, sky: 0 }, \
   default_background: false, \
   line_width: 200, \
   see_through: 0b, \
@@ -689,32 +693,61 @@ summon minecraft:text_display 88.5 53.1875 -27.0 { \
   text: { "text": "Survive", "color": "gold" }, \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-    scale: [1.25f, 1.25f, 1.25f], \
+    scale: [1.0f, 1.0f, 1.0f], \
     translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
 
-# summon minecraft:text_display -124.01 43.375 36.3125 { \
+summon minecraft:text_display 88.5 52.5 -26.9375 { \
   Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
     "omega-flowey-remastered", \
     "decorative", \
-    "decorative-cave", \
-    "reward-hats-cyan-description", \
+    "decorative.ruins", \
+    "reward-hats-magenta-description", \
   ], \
   alignment: "center", \
   background: 0, \
+  brightness: { block: 15, sky: 0 }, \
   default_background: false, \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: { "text": "Get hit 7 times\\nor less", "color": "aqua" }, \
+  text: { "text": "Get hit 5 times\nor less", "color": "light_purple" }, \
   text_opacity: 255, \
   transformation: { \
-    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-    scale: [0.875f, 0.875f, 0.875f], \
+    scale: [0.625f, 0.625f, 0.0f], \
+    translation: [0.0f, 0.0f, 0.0f], \
+  }, \
+}
+
+summon minecraft:text_display 89.875 52.5 -26.9375 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "reward-hats-green-description", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  brightness: { block: 15, sky: 0 }, \
+  default_background: false, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: { "text": "Grab 7 or more\nhealing items", "color": "green" }, \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [0.625f, 0.625f, 0.0f], \
     translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
