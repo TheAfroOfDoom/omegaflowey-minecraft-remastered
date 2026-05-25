@@ -19,7 +19,6 @@
 		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
 		"on_summon_function": "tag @s add omega-flowey-remastered",
-    "use_entity_stacking": true,
 		"custom_rig_entity_tags": "summit.booth_entity.omegaflowey,summit.static,omega-flowey-remastered,decorative,decorative.pit"
 	},
 	"elements": [
@@ -224,7 +223,8 @@
 			"faces": {
 				"north": {
 					"uv": [6, 10, 10, 12],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [4, 7, 5, 10],
@@ -270,7 +270,8 @@
 			"faces": {
 				"north": {
 					"uv": [6, 9, 10, 12],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [10, 10, 11, 7],
@@ -317,7 +318,8 @@
 			"faces": {
 				"north": {
 					"uv": [7, 10, 10, 11],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [4, 9, 5, 10],
@@ -363,7 +365,8 @@
 			"faces": {
 				"north": {
 					"uv": [6, 9, 10, 12],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [10, 10, 11, 7],
@@ -410,7 +413,8 @@
 			"faces": {
 				"north": {
 					"uv": [6, 10, 10, 12],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [4, 7, 5, 10],
@@ -457,7 +461,8 @@
 			"faces": {
 				"north": {
 					"uv": [6, 10, 7, 11],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [6, 10, 7, 11],
@@ -504,7 +509,8 @@
 			"faces": {
 				"north": {
 					"uv": [6, 10, 7, 11],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [6, 10, 7, 11],
@@ -551,7 +557,8 @@
 			"faces": {
 				"north": {
 					"uv": [6, 9, 11, 11],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [4, 8, 5, 10],
@@ -598,7 +605,8 @@
 			"faces": {
 				"north": {
 					"uv": [10, 10, 7, 11],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [4, 9, 5, 10],
@@ -645,7 +653,8 @@
 			"faces": {
 				"north": {
 					"uv": [11, 9, 6, 11],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [4, 8, 5, 10],
@@ -738,7 +747,8 @@
 			"faces": {
 				"north": {
 					"uv": [6, 10, 7, 11],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [6, 10, 7, 11],
@@ -785,7 +795,8 @@
 			"faces": {
 				"north": {
 					"uv": [6, 10, 7, 11],
-					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780"
+					"texture": "f0a83ae0-083e-7b0f-89da-798bb4654780",
+					"tint": 0
 				},
 				"east": {
 					"uv": [6, 10, 7, 11],
@@ -841,7 +852,7 @@
 			"visibility": true,
 			"autouv": 0,
 			"isOpen": true,
-			"primary_selected": true
+			"primary_selected": false
 		}
 	],
 	"outliner": [

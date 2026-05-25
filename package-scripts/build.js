@@ -344,8 +344,7 @@ const getSummitResourcepackPaths = () => {
         'adahy',
         'gulag-kamina-cape',
         'natia',
-        'sunflower_front_cyan_noshade',
-        'sunflower_front_noshade',
+        'sunflower_front_cyan',
         'theafroofdoom',
         ...prefixPaths('picture/', [
           ...suffixPaths(
