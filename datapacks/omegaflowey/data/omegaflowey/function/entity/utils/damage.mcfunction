@@ -7,5 +7,5 @@ $execute as $(active_player_uuid) if entity @s[distance=..$(radius), tag=omegafl
   function omegaflowey:entity/utils/damage/as_player with storage omegaflowey:utils.damage
 
 # NOTE: UNCOMMENT THIS TO TEST DAMAGE HITBOXES
-# $execute as $(active_player_uuid) if entity @s[distance=..$(radius), tag=omegaflowey.player.fighting_flowey] run \
+$execute as $(active_player_uuid) if entity @s[distance=..$(radius), tag=omegaflowey.player.fighting_flowey] run \
   playsound omega-flowey:soul.touch master @a ~ ~ ~
