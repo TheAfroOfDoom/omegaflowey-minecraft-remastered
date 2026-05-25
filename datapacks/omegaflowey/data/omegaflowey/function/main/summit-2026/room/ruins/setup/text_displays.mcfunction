@@ -298,7 +298,7 @@ summon minecraft:text_display 88.0625 54.25 -3.01 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: { "text": "2024", "color": "aqua", "bold": true }, \
+  text: { "text": "2026", "color": "aqua", "bold": true }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \

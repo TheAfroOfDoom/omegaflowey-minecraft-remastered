@@ -38,7 +38,7 @@ summon minecraft:item_display 88.0625 53.0 -3.01 { \
   brightness: { block: 15, sky: 0 }, \
   item: { \
     components: { \
-      "minecraft:item_model": "omega-flowey:decorative/flowey-build-scaled-min", \
+      "minecraft:item_model": "omega-flowey:decorative/flowey-build-scaled-min-2026", \
     }, \
     count: 1, \
     id: "minecraft:gray_dye", \
