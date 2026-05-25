@@ -1,5 +1,5 @@
-data merge storage omegaflowey:utils.damage { damage: 1, radius: 1.5, source: 'friendliness_pellets.bullet' }
-function omegaflowey:entity/utils/damage with storage omegaflowey:utils.damage
+data merge storage omegaflowey:utils.damage { damage: 1, radius: 1.3, source: 'friendliness_pellets.bullet' }
+execute positioned ~ ~-1 ~ run function omegaflowey:entity/utils/damage with storage omegaflowey:utils.damage
 
 # Do nothing (except damage) while `stationary`
 execute if entity @s[tag=stationary] run return 0
