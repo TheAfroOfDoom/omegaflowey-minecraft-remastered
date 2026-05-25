@@ -89,7 +89,8 @@
 			"faces": {
 				"north": {
 					"uv": [0, 14, 16, 16],
-					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2"
+					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2",
+					"tint": 0
 				},
 				"east": {
 					"uv": [5, 14, 16, 16],
@@ -106,7 +107,8 @@
 				"up": {
 					"uv": [2, 14, 14, 2],
 					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2",
-					"rotation": 180
+					"rotation": 180,
+					"tint": 0
 				},
 				"down": {
 					"uv": [2, 2, 14, 14],
@@ -136,7 +138,8 @@
 			"faces": {
 				"north": {
 					"uv": [0, 6, 3, 15],
-					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2"
+					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2",
+					"tint": 0
 				},
 				"east": {
 					"uv": [5, 3, 16, 14],
@@ -148,7 +151,8 @@
 				},
 				"west": {
 					"uv": [2, 2, 14, 14],
-					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2"
+					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2",
+					"tint": 0
 				},
 				"up": {
 					"uv": [2, 2, 14, 14],
@@ -183,11 +187,13 @@
 			"faces": {
 				"north": {
 					"uv": [13, 5, 16, 15],
-					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2"
+					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2",
+					"tint": 0
 				},
 				"east": {
 					"uv": [13, 2, 1, 14],
-					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2"
+					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2",
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 3, 2, 14],
@@ -230,7 +236,8 @@
 			"faces": {
 				"north": {
 					"uv": [16, 0, 0, 2],
-					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2"
+					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2",
+					"tint": 0
 				},
 				"east": {
 					"uv": [5, 0, 16, 2],
@@ -252,7 +259,8 @@
 				"down": {
 					"uv": [2, 2, 14, 14],
 					"texture": "70dac508-a15a-2c61-c69b-5ae6c46952f2",
-					"rotation": 180
+					"rotation": 180,
+					"tint": 0
 				}
 			},
 			"type": "cube",
@@ -2134,7 +2142,7 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "3dc44e6b-7594-04c0-12fd-29f604f95a5a",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABlElEQVR4AYSSTU/CQBCGx1JoaSM1YgT8Svw3evCgFzn6v43BREM0poSi/YI22GfI1tYLTd+Z2d2Zd2Zn1nqaTsvH+4cSvQ9NP+y7m9vSSvO1DEdjmVxd78Xo7KL2wZbqs/pOT4JBIPOPuUSrSBHHsRiEYah7P4tQtnmmNn5VrP6Wyko4XaeSIp2iUEddVMLu2mJ3bDlw3GolUmwKiZNYbURNgCOHbOJMNmyC0aC0bZQcrHMpykLtmoBgSPKtaAXG2fd9dUQ0yVh7/b7UBGxAgibYONMLSMgISLLt7a6bpOkfAQcE55tc74xtAAm2SYBtErQqcF1XgsOAcwUZAQuCSYLWddWD1hUMI+XikGWZdpyA/yScG+hDMiWyybzRTUDC1UCyXOgUSKg94CGZrIzOjJByCQBNMuwky1GKuoLoOxK6T7mqqwejHg3B/JvBHLWaSHm8MkBmAtLVSpbhl6BNsOfuxthqou/54h0dC5pJgMHwVE7GExmfX7bAPpVqDyhj9vIsb6+zGp/zdwFmH80aYAP8if0FAAD//y8JedIAAAAGSURBVAMAn1QmbL8usqcAAAAASUVORK5CYII="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABlElEQVR4AYSSTU/CQBCGx1JoaSM1YgT8Svw3evCgFzn6v43BREM0poSi/YKS2mfI1tYLTd+Z2d2Zd2Zn1nqaTsvH+4cSvQ9NP+y7m9vSSvO1DEdjmVxd78Xo7KL2wZbqs/pOT4JBIPOPuUSrSBHHsRiEYah7P4tQyjxTG78qVn9LZSWcrlNJkU5RqKMuKmF3bbE7thw4brUSKTaFxEmsNqImwJFDNnEmGzbBaLC1bZQcrHMptoXaNQHBkOSlaAXG2fd9dUQ0yVh7/b7UBGxAgibYONMLSMgISFL2dtdN0vSPgAOC802ud8Y2gATbJMA2CVoVuK4rwWHAuYKMgAXBJEHruupB6wqGkXJxyLJMO07AfxLODfQhmRLZZN7oJiDhaiBZLnQKJNQe8JBMVkZnRki5BIAmGXaS5ShFXUH0HQndp1zV1YNRj4Zg/s1gjlpNpDxeGSAzAelqJcvwS9Am2HN3Y2w10fd88Y6OBc0kwGB4KifjiYzPL1tgn0q1B5Qxe3mWt9dZjc/5uwCzj2YNsAH+xP4CAAD//+LbkdYAAAAGSURBVAMAHSMmjAnKULoAAAAASUVORK5CYII="
 		},
 		{
 			"name": "netherite_block_warning_glow.png",
