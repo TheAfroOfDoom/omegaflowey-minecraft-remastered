@@ -19,7 +19,6 @@
 		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
 		"on_summon_function": "data merge entity @s {CustomName:\"'Soul 0 Bullet'\"}\ntag @s add omega-flowey-remastered\ntag @s add soul\ntag @s add soul-bullet\ntag @s add soul-bullet-new\ntag @s add soul_0",
-		"use_entity_stacking": true,
 		"custom_rig_entity_tags": "summit.booth_entity.omegaflowey,summit.dynamic,omega-flowey-remastered"
 	},
 	"elements": [
@@ -1247,6 +1246,9 @@
 					"use_nbt": true
 				},
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,

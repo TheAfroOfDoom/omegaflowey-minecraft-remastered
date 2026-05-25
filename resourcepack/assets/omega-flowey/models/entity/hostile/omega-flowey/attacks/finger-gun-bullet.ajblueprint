@@ -20,7 +20,6 @@
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
 		"on_summon_function": "function omegaflowey:entity/hostile/omega-flowey/attack/finger-guns/bullet/initialize",
 		"on_post_tick_function": "function omegaflowey:entity/hostile/omega-flowey/attack/finger-guns/bullet/cleanup",
-		"use_entity_stacking": true,
 		"custom_rig_entity_tags": "summit.booth_entity.omegaflowey,summit.dynamic,omega-flowey-remastered"
 	},
 	"elements": [
@@ -1247,6 +1246,9 @@
 				"default": {},
 				"variants": {}
 			},
+			"itemModelProperties": {
+				"tints": []
+			},
 			"children": [],
 			"reset": false,
 			"shade": true,
@@ -1274,6 +1276,9 @@
 			"configs": {
 				"default": {},
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
