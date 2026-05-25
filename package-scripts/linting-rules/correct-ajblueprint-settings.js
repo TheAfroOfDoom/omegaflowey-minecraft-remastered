@@ -165,11 +165,12 @@ const checkTags = (model) => {
 
 const checkUseEntityStacking = (model) => {
   const errors = [];
-  const { use_entity_stacking = false } = model.blueprint_settings;
-  if (!use_entity_stacking) {
+  const { use_entity_stacking } = model.blueprint_settings;
+  if (use_entity_stacking !== undefined) {
     let error = chalk.blueBright('use_entity_stacking');
-    error += ' must be set to ';
+    error += ' must not be set (default behavior is )';
     error += chalk.blueBright('true');
+    error += ')';
     errors.push(error);
   }
   return errors;
