@@ -18,8 +18,7 @@
 		"enable_advanced_resource_pack_settings": true,
 		"resource_pack": "G:/Coding/omegaflowey-minecraft-remastered/resourcepack",
 		"data_pack": "G:/Coding/omegaflowey-minecraft-remastered/datapacks/animated_java",
-		"on_summon_function": "tag @s add omega-flowey-remastered",
-		"use_entity_stacking": true,
+		"on_summon_function": "function omegaflowey:entity/decorative/summitpetalpiperight/initialize",
 		"custom_rig_entity_tags": "summit.booth_entity.omegaflowey,summit.dynamic,omega-flowey-remastered"
 	},
 	"elements": [
@@ -2096,6 +2095,9 @@
 					"use_nbt": true
 				}
 			},
+			"itemModelProperties": {
+				"tints": []
+			},
 			"children": [],
 			"reset": false,
 			"shade": true,
@@ -2122,6 +2124,9 @@
 			"onSummonFunction": "",
 			"configs": {
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
@@ -2151,6 +2156,9 @@
 				"default": {},
 				"variants": {}
 			},
+			"itemModelProperties": {
+				"tints": []
+			},
 			"children": [],
 			"reset": false,
 			"shade": true,
@@ -2178,6 +2186,9 @@
 			"configs": {
 				"default": {},
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
@@ -2352,6 +2363,22 @@
 					"rotation_global": false,
 					"quaternion_interpolation": false,
 					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "-10"
+								}
+							],
+							"uuid": "0079a826-5aa6-6af5-82a1-32e161aea212",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
 						{
 							"channel": "position",
 							"data_points": [
