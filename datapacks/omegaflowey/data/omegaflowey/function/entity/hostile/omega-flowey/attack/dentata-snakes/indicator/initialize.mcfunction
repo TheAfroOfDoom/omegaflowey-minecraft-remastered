@@ -13,8 +13,17 @@ scoreboard players operation @s omegaflowey.attack.bullets.scale = #omegaflowey.
 scoreboard players operation @s omegaflowey.attack.bullets.total = #omegaflowey.attack.dentata-snakes omegaflowey.attack.bullets.total
 
 # Randomize position to summon bullet at
-execute store result score @s omegaflowey.attack.bullets.position.z run random value -800..800
+scoreboard players set #omegaflowey.attack.dentata-snakes.indicator.remaining-retries omegaflowey.attack.flag 3
+function omegaflowey:entity/hostile/omega-flowey/attack/dentata-snakes/indicator/initialize/randomize_position
 scoreboard players operation @s omegaflowey.attack.bullets.position.z += #omegaflowey.bossfight.summit.origin.z omegaflowey.global.flag
+
+# execute if score #omegaflowey.attack.dentata-snakes.indicator.2.summon-coord omegaflowey.attack.flag matches -2147483648..2147483647 run \
+  tellraw @a [ \
+    "1st: ", { score: {name: "#omegaflowey.attack.dentata-snakes.indicator.0.summon-coord", "objective": "omegaflowey.attack.flag"}}, \
+    "\n2nd: ", { score: {name: "#omegaflowey.attack.dentata-snakes.indicator.1.summon-coord", "objective": "omegaflowey.attack.flag"}}, \
+    "\n3rd: ", { score: {name: "#omegaflowey.attack.dentata-snakes.indicator.2.summon-coord", "objective": "omegaflowey.attack.flag"}} \
+  ]
+
 scoreboard players set @s omegaflowey.attack.bullets.position.x 750
 scoreboard players operation @s omegaflowey.attack.bullets.position.x += #omegaflowey.bossfight.summit.origin.x omegaflowey.global.flag
 

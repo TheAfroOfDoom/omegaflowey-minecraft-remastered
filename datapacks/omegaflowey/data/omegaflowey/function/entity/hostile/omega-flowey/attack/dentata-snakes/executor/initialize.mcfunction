@@ -8,5 +8,9 @@ data modify entity @s CustomName set value '"Dentata-Snakes Executor"'
 scoreboard players operation @s omegaflowey.attack.executor.rate = #omegaflowey.attack.dentata-snakes omegaflowey.attack.executor.rate
 scoreboard players operation @s omegaflowey.attack.executor.clock.length = #omegaflowey.attack.dentata-snakes omegaflowey.attack.executor.clock.length
 
+scoreboard players reset #omegaflowey.attack.dentata-snakes.indicator.0.summon-coord omegaflowey.attack.flag
+scoreboard players reset #omegaflowey.attack.dentata-snakes.indicator.1.summon-coord omegaflowey.attack.flag
+scoreboard players reset #omegaflowey.attack.dentata-snakes.indicator.2.summon-coord omegaflowey.attack.flag
+
 # Add tags
 tag @s add dentata-snakes
