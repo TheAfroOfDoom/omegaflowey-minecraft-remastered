@@ -190,7 +190,7 @@ function omegaflowey:utils/log/self { text_component: '[ \
           "command": "/function omegaflowey:admin/give/reward_hat_low_hits" \
         } \
       }, \
-      ": gives the low-hits cyan reward hat item", \
+      ": gives the low-hits magenta reward hat item", \
       "\\n", \
       "\\n", \
 \
