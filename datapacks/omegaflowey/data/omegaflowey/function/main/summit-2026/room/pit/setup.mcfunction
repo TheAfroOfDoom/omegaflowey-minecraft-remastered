@@ -7,6 +7,4 @@ execute positioned 72.0 50.0 -15.25 rotated 180 0 run \
 # player flowers
 function aj:omegaflowey_flowercontributor/remove/all
 execute positioned 64.0 50.0 -15.0 rotated -90 0 run function aj:omegaflowey_flowercontributor/summon { args: { variant: 'default' } }
-# execute positioned -109.5625 41.0 25.625 rotated -20 0 run function aj:omegaflowey_flowercontributor/summon { args: { variant: 'adahy' } }
-# execute positioned -108.0 41.0 25.5 rotated 0 0 run function aj:omegaflowey_flowercontributor/summon { args: { variant: 'natia' } }
-# execute positioned -106.1875 41.0 25.5625 rotated 20 0 run function aj:omegaflowey_flowercontributor/summon { args: { variant: 'wes' } }
+execute positioned 72.0 50.0 -23.0 rotated 0 0 run function aj:omegaflowey_flowercontributor/summon { args: { variant: 'adahy' } }
