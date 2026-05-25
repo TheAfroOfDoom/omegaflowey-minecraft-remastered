@@ -1,15 +1,17 @@
 {
 	"meta": {
-		"format_version": "4.10",
+		"format_version": "5.0",
 		"model_format": "java_block",
 		"box_uv": false
 	},
 	"name": "balloon_soul_red",
 	"parent": "",
+	"java_block_version": "1.21.11",
 	"ambientocclusion": true,
 	"front_gui_light": false,
 	"visible_box": [1, 1, 0],
 	"variable_placeholders": "",
+	"multi_file_ruleset": "",
 	"variable_placeholder_buttons": [],
 	"unhandled_root_fields": {},
 	"resolution": {
@@ -20,10 +22,13 @@
 		{
 			"name": "rope",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": true,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [7.5, -15, 7.5],
 			"to": [8.5, 17, 8.5],
@@ -62,10 +67,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [6.125, 15.9375, 5.5],
 			"to": [9.875, 17.8125, 10.5],
@@ -75,19 +83,23 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"east": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"west": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"up": {
 					"uv": [0, 0, 4, 2],
@@ -95,7 +107,8 @@
 				},
 				"down": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				}
 			},
 			"type": "cube",
@@ -104,10 +117,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [0.5, 21.5625, 3.5],
 			"to": [15.5, 27.1875, 12.5],
@@ -117,27 +133,33 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 8, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"east": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 0, 8, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"west": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"up": {
 					"uv": [0, 0, 8, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"down": {
 					"uv": [0, 0, 8, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				}
 			},
 			"type": "cube",
@@ -146,10 +168,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [8.9375, 27.1875, 3.5],
 			"to": [15.5, 29.0625, 12.5],
@@ -159,23 +184,28 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"east": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"west": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"up": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"down": {
 					"uv": [0, 0, 4, 2],
@@ -188,10 +218,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [9.875, 29.0625, 4.5],
 			"to": [14.5625, 30.9375, 11.5],
@@ -201,23 +234,28 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"east": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"west": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"up": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"down": {
 					"uv": [0, 0, 4, 2],
@@ -230,10 +268,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [0.5, 27.1875, 3.5],
 			"to": [7.0625, 29.0625, 12.5],
@@ -243,23 +284,28 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"east": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"west": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"up": {
 					"uv": [0, 0, 4, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"down": {
 					"uv": [0, 0, 4, 2],
@@ -272,10 +318,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [1.4375, 29.0625, 4.5],
 			"to": [6.125, 30.9375, 11.5],
@@ -285,23 +334,28 @@
 			"faces": {
 				"north": {
 					"uv": [4, 0, 0, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"east": {
 					"uv": [2, 0, 0, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"south": {
 					"uv": [4, 0, 0, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"west": {
 					"uv": [2, 0, 0, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"up": {
 					"uv": [4, 0, 0, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"down": {
 					"uv": [4, 0, 0, 2],
@@ -314,10 +368,13 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": false,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": true,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [3.3125, 17.8125, 4],
 			"to": [12.6875, 21.5625, 12],
@@ -327,19 +384,23 @@
 			"faces": {
 				"north": {
 					"uv": [0, 0, 8, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"east": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"south": {
 					"uv": [0, 0, 8, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"west": {
 					"uv": [0, 0, 2, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				},
 				"up": {
 					"uv": [0, 0, 8, 2],
@@ -347,7 +408,8 @@
 				},
 				"down": {
 					"uv": [0, 0, 8, 2],
-					"texture": 1
+					"texture": 1,
+					"tint": 0
 				}
 			},
 			"type": "cube",
@@ -356,17 +418,19 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": true,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": false,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [4.25, 17.8125, 4.5],
 			"to": [11.75, 19.6875, 11.5],
 			"autouv": 0,
 			"color": 1,
 			"visibility": false,
-			"export": false,
 			"origin": [8, 15.9375, 8],
 			"faces": {
 				"north": {
@@ -394,17 +458,19 @@
 		{
 			"name": "cube",
 			"box_uv": false,
+			"render_order": "default",
 			"rescale": false,
 			"locked": true,
+			"shade": true,
 			"light_emission": 0,
-			"render_order": "default",
+			"export": false,
+			"scope": 0,
 			"allow_mirror_modeling": true,
 			"from": [2.375, 19.6875, 3.5],
 			"to": [13.625, 21.5625, 12.5],
 			"autouv": 0,
 			"color": 1,
 			"visibility": false,
-			"export": false,
 			"origin": [8, 17.8125, 8],
 			"faces": {
 				"north": {
@@ -430,6 +496,7 @@
 			"uuid": "04cc19d5-158e-8304-01ea-0886764461d0"
 		}
 	],
+	"groups": [],
 	"outliner": [
 		"39b6e0e8-29b6-e8a2-9960-0b6b74efa38f",
 		"7358ba6a-e70e-2660-d117-370bac76f70f",
@@ -444,12 +511,13 @@
 	],
 	"textures": [
 		{
-			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\decorative\\balloon_rope.png",
 			"name": "balloon_rope.png",
+			"relative_path": "../../../textures/custom/decorative/balloon_rope.png",
 			"folder": "custom/decorative",
 			"namespace": "omega-flowey",
 			"id": "1",
 			"group": "",
+			"scope": 0,
 			"width": 32,
 			"height": 32,
 			"uv_width": 32,
@@ -458,8 +526,12 @@
 			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
+			"file_format": "png",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"wrap_mode": "limited",
+			"pbr_channel": "color",
+			"fps": 7,
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
@@ -468,16 +540,16 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "ec8d5423-2920-a2a4-e4e6-edb121a19bc3",
-			"relative_path": "../../../textures/custom/decorative/balloon_rope.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAI1JREFUWEdjnFLu8f/zp58MvHzsDDA6p3MHIwOdAGN7puN/dLsqp++nnwMOLUlGcYBdzFy6WQ7yOCPIAZ8+fWHg4+NhANE+WSvp64At08JRQoDuDgAlQuQ0QM8ECI4C9FxAzwQIdgB6LqC7A0ZzwWguGM0Fo7lgNBeM5oLRXDCaC0ZzwWguGM0FIz4XAAAmIMIhY4NKJwAAAABJRU5ErkJggg=="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAu0lEQVR4AexWwQ3CMBALNwpr9MWPVZgAMQELIDEOq8AIBD68imzJUdQ++nOl6ipdnOYeVmW7l7idj+P1dBh7LMYnPvVHuiny0LDEMOxLX5f7Y2fgbRSBXa1fQBHyxbSESIUm3kYTz9e79NU6pg0lWMuA+MZZCnDorFkKnOTgogQyoBANV2UKKEGmoJ8FLvOJhxLI/UI1HZgpoASZgkwB4rZGBMGbN6K8EfFHJAMKYQ5X5SygBJueBUte+gMAAP//QoSk1gAAAAZJREFUAwCrvMoBpl79TAAAAABJRU5ErkJggg=="
 		},
 		{
-			"path": "G:\\Coding\\omegaflowey-minecraft-remastered\\resourcepack\\assets\\omega-flowey\\textures\\custom\\decorative\\soul_red_balloon.png",
 			"name": "soul_red_balloon.png",
+			"relative_path": "../../../textures/custom/decorative/soul_red_balloon.png",
 			"folder": "custom/decorative",
 			"namespace": "omega-flowey",
 			"id": "2",
 			"group": "",
+			"scope": 0,
 			"width": 16,
 			"height": 16,
 			"uv_width": 32,
@@ -486,8 +558,12 @@
 			"use_as_default": false,
 			"layers_enabled": false,
 			"sync_to_project": "",
+			"file_format": "png",
 			"render_mode": "default",
 			"render_sides": "auto",
+			"wrap_mode": "limited",
+			"pbr_channel": "color",
+			"fps": 7,
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
@@ -496,8 +572,7 @@
 			"internal": true,
 			"saved": true,
 			"uuid": "8f9b7a0e-b60f-2ebd-dfdb-23612aaf2986",
-			"relative_path": "../../../textures/custom/decorative/soul_red_balloon.png",
-			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAB5JREFUOE9j/M/AwMZAAWAcNYBhNAwYRsOAYViEAQBL3RBhCePKeAAAAABJRU5ErkJggg=="
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAKklEQVR4AeyToQ0AAAzCGsT+/3jLbkBgIMEiGqqFcSrMdADKoAxeo/wPDgAA//9Tu9BKAAAABklEQVQDAJcQEHHnE0L4AAAAAElFTkSuQmCC"
 		}
 	],
 	"display": {
@@ -524,7 +599,7 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [30, 225, 22.5],
+			"rotation": [30, -135, 22.5],
 			"scale": [0.4, 0.4, 0.4]
 		}
 	}
