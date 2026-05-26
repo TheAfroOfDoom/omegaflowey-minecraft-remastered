@@ -5,8 +5,7 @@ scoreboard players set @s omegaflowey.boss-fight.progress.clock.total 27
 
 function omegaflowey:entity/directorial/boss_fight/shared/phase/soul/static with storage omegaflowey:bossfight
 
-# TODO(322): re-enable this after summit-2026
-# execute if score @s omegaflowey.boss-fight.progress.phase.i matches 3 run \
+execute if score @s omegaflowey.boss-fight.progress.phase.i matches 3 run \
   function omegaflowey:entity/directorial/boss_fight/vanilla/phase/soul/initialize/enable_soul_event_3_barriers
 
 scoreboard players operation \
