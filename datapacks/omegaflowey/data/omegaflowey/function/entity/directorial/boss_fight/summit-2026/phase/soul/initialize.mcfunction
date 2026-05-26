@@ -4,7 +4,8 @@ execute store result storage omegaflowey:telemetry temp.data.i int 1 run \
 function omegaflowey:main/telemetry/bossfight/tag/start { name: "bossfight.phase.soul" }
 
 execute if score @s omegaflowey.boss-fight.progress.phase.i matches 0 run \
-  function omegaflowey:entity/directorial/boss_fight/summit-2026/phase/soul/initialize/enable_soul_event_3_barriers
+  function omegaflowey:entity/directorial/boss_fight/summit-2026/phase/soul/initialize/enable_soul_event_3_barriers \
+    with storage omegaflowey:bossfight
 
 ## Set scores
 # the negative time duration is how long the static length lasts (25 ticks)
