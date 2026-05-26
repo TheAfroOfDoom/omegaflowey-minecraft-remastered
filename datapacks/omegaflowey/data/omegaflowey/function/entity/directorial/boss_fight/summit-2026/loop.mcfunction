@@ -5,6 +5,9 @@ function omegaflowey:entity/directorial/boss_fight/shared/loop/check_active_play
 execute unless score #omegaflowey.bossfight.stop_reason omegaflowey.global.flag matches 0 run return run \
   function omegaflowey:entity/directorial/boss_fight/shared/stop with storage omegaflowey:bossfight
 
+execute if entity @s[tag=is_animating_tvscreen_inside_face] run \
+  function omegaflowey:entity/directorial/boss_fight/shared/loop/tvscreen_inside_face/loop
+
 # Run loop logic based on what phase the boss_fight is in
 execute if entity @s[tag=boss_fight.phase.attack] run function omegaflowey:entity/directorial/boss_fight/summit-2026/phase/attack/loop
 execute if entity @s[tag=boss_fight.phase.cutscene] run function omegaflowey:entity/directorial/boss_fight/summit-2026/phase/cutscene/loop

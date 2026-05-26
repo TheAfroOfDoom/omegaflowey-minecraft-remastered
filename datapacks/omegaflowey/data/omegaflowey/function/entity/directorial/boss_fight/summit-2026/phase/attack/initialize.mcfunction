@@ -20,5 +20,7 @@ scoreboard players set @s omegaflowey.boss-fight.attack.clock.i -1
 scoreboard players set @s omegaflowey.boss-fight.attack.delay 10
 scoreboard players add #omegaflowey.bossfight.attack_phase_total_count omegaflowey.global.flag 1
 
+function omegaflowey:entity/directorial/boss_fight/shared/loop/tvscreen_inside_face/start with storage omegaflowey:bossfight
+
 # Add tags
 tag @s add boss_fight.phase.attack
