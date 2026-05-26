@@ -20,6 +20,15 @@ scoreboard players set @s omegaflowey.boss-fight.attack.clock.i -1
 scoreboard players set @s omegaflowey.boss-fight.attack.delay 10
 scoreboard players add #omegaflowey.bossfight.attack_phase_total_count omegaflowey.global.flag 1
 
+# function omegaflowey:entity/directorial/boss_fight/vanilla/phase/attack/initialize/disable_soul_event_3_barriers
+# These default to finger-guns, so we're super unlikely to ever start with finger-guns
+scoreboard players operation \
+  #omegaflowey.attack.random.previous_attack_id omegaflowey.attack.flag = \
+  #omegaflowey.attack.random.id.finger-guns omegaflowey.attack.flag
+scoreboard players operation \
+  #omegaflowey.attack.random.2nd_previous_attack_id omegaflowey.attack.flag = \
+  #omegaflowey.attack.random.id.finger-guns omegaflowey.attack.flag
+
 function omegaflowey:entity/directorial/boss_fight/shared/loop/tvscreen_inside_face/start with storage omegaflowey:bossfight
 
 # Add tags
