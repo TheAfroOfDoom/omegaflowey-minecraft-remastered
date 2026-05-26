@@ -216,6 +216,7 @@ summon minecraft:text_display 97.99 51.3125 -9.0 { \
   ], \
   alignment: "center", \
   background: 0, \
+  brightness: { block: 8, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
