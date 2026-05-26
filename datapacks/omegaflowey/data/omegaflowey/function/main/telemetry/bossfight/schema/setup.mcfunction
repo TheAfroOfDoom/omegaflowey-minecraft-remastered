@@ -45,6 +45,8 @@ data modify storage omegaflowey:telemetry schema_bossfight_name set value { \
   "player.heal": 35, \
   "attack.flies.start": 36, \
   "attack.flies.end": 37, \
+  "attack.flamethrower.start": 38, \
+  "attack.flamethrower.end": 39, \
 }
 
 ## bossfight.summit.end data
@@ -77,4 +79,6 @@ data modify storage omegaflowey:telemetry schema_bossfight_damage_source set val
   "soul.5.bullet": 7, \
   "soul.3.word": 8, \
   "soul.4.fire": 9, \
+  "flamethrower.bullet": 10, \
+  "flies.bullet": 11, \
 }
