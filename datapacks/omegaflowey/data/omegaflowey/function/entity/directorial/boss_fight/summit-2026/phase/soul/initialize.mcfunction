@@ -3,16 +3,16 @@ execute store result storage omegaflowey:telemetry temp.data.i int 1 run \
   scoreboard players get @s omegaflowey.boss-fight.progress.phase.i
 function omegaflowey:main/telemetry/bossfight/tag/start { name: "bossfight.phase.soul" }
 
-execute if score @s omegaflowey.boss-fight.progress.phase.i matches 0 run \
-  function omegaflowey:entity/directorial/boss_fight/summit-2026/phase/soul/initialize/enable_soul_event_3_barriers \
-    with storage omegaflowey:bossfight
-
 ## Set scores
 # the negative time duration is how long the static length lasts (25 ticks)
 scoreboard players set @s omegaflowey.boss-fight.progress.clock.i -26
 scoreboard players set @s omegaflowey.boss-fight.progress.clock.total 27
 
 function omegaflowey:entity/directorial/boss_fight/shared/phase/soul/static with storage omegaflowey:bossfight
+
+execute if score @s omegaflowey.boss-fight.progress.phase.i matches 0 run \
+  function omegaflowey:entity/directorial/boss_fight/summit-2026/phase/soul/initialize/enable_soul_event_3_barriers \
+    with storage omegaflowey:bossfight
 
 # # Move players to soul arena
 # execute as @a at @s unless entity @s[tag=!omegaflowey.player.fighting_flowey, tag=!omegaflowey.player.room.spectator_box] run function omegaflowey:entity/directorial/boss_fight/summit-2026/origin/to_soul_origin
