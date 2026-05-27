@@ -142,9 +142,6 @@ execute as @e[ \
 ] run function gu:generate
 data modify storage omegaflowey:bossfight active_player_health_display_uuid set from storage gu:main out
 
-# Player name display updates both the name (+ skull) and the health counter
-function omegaflowey:main/summit-2026/room/ruins/active_player_display/update_value with storage omegaflowey:bossfight
-
 summon minecraft:text_display 83.0 56.125 -9.0 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
