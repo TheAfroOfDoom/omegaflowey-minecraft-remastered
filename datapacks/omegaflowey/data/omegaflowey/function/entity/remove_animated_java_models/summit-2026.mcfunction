@@ -1,4 +1,5 @@
 # Summit models
+function aj:omegaflowey_balloon_bundle/remove/all
 function aj:omegaflowey_flowercontributor/remove/all
 function aj:omegaflowey_summitflowerbed/remove/all
 function aj:omegaflowey_summitpetalpipeleft/remove/all

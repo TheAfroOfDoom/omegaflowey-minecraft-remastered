@@ -206,3 +206,28 @@ summon minecraft:item_display 89.875 51.875 -26.9375 { \
     translation: [0.0f, 0.0f, 0.0f], \
   }, \
 }
+
+function aj:omegaflowey_balloon_bundle/remove/all
+execute positioned 91.0 51.01 -9.0 rotated -40 0 run \
+  function aj:omegaflowey_balloon_bundle/summon { args: {} }
+summon minecraft:interaction 91.0 51.0 -9.0 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "summit.interactable", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "balloon-bundle-interaction", \
+  ], \
+  width: 0.5, \
+  height: 2.5, \
+  response: true, \
+  data: { \
+    summit_interactable: { \
+      special: "balloon_vendor", \
+      namespace: "omegaflowey", \
+      balloon_id: "soul_red" \
+    } \
+  } \
+}
