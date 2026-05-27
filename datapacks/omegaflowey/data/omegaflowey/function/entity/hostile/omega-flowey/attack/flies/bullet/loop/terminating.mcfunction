@@ -1,5 +1,3 @@
-scoreboard players add @s omegaflowey.attack.clock.i 1
-
 # Play sound
 execute if score @s omegaflowey.attack.clock.i matches 0 run \
   function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: \
