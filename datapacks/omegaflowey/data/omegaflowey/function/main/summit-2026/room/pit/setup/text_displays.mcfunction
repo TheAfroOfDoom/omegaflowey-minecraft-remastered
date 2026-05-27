@@ -97,7 +97,7 @@ summon minecraft:text_display 72.0 52.5 -23.0 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: [ { "text": "Builder + Modeller", "color": "gold" } ], \
+  text: [ { "text": "Builder", "color": "gold" } ], \
   text_opacity: 255, \
   transformation: {\
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
