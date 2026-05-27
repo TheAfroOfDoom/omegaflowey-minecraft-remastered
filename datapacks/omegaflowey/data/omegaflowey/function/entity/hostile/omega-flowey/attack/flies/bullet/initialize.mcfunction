@@ -14,6 +14,10 @@ scoreboard players operation @s omegaflowey.attack.speed.z = #omegaflowey.attack
 execute if score #omegaflowey.summon.tag_variant omegaflowey.global.flag matches 2 run \
   tag @s add is_flipped
 
+# make invisible for 1 tick so can face correct direction
+execute on passengers if entity @s[tag=aj.omegaflowey_housefly.bone] run \
+  data merge entity @s { teleport_duration: 0, view_range: 0 }
+
 # Face indicator (venus fly trap)
 execute if entity @s[tag=is_flipped] run \
   function omegaflowey:entity/hostile/omega-flowey/attack/flies/bullet/initialize/face_indicator with storage omegaflowey:attack.flies.flipped
