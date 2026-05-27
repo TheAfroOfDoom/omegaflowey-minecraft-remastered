@@ -408,7 +408,7 @@ summon minecraft:text_display 93.625 52.375 -26.99 {\
 summon minecraft:interaction 94.25 52.3125 -27.25 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
-    "summit.dynamic", \
+    "summit.static", \
     "summit.interactable", \
     "omega-flowey-remastered", \
     "decorative", \
@@ -467,7 +467,7 @@ summon minecraft:text_display 92.75 51.75 -26.99 {\
 summon minecraft:interaction 94.25 51.6875 -27.25 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
-    "summit.dynamic", \
+    "summit.static", \
     "summit.interactable", \
     "omega-flowey-remastered", \
     "decorative", \
@@ -529,7 +529,7 @@ summon minecraft:text_display 100.875 54.875 -6.01 { \
 summon minecraft:interaction 100.875 55.6875 -5.5 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
-    "summit.dynamic", \
+    "summit.static", \
     "summit.interactable", \
     "omega-flowey-remastered", \
     "decorative", \
@@ -626,7 +626,7 @@ summon minecraft:text_display 107.99 54.3125 -14.0 { \
 summon minecraft:interaction 108.0 54.4375 -14.4375 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
-    "summit.dynamic", \
+    "summit.static", \
     "summit.interactable", \
     "omega-flowey-remastered", \
     "decorative", \
