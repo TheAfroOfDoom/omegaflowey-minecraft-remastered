@@ -33,6 +33,40 @@ const checkAnimationName = (model, { file }) => {
   return errors;
 };
 
+/** Double checks we don't accidentally delete animation variable placeholders in various animations. */
+const checkAnimationVariablePlaceholders = (model) => {
+  const allowlist = [
+    'aj:omegaflowey_act_button',
+    'aj:omegaflowey_arm_vine',
+    'aj:omegaflowey_arm_vine_right',
+    'aj:omegaflowey_mouth',
+    'aj:omegaflowey_soul_1_glove',
+    'aj:omegaflowey_soul_1_thumb',
+    'aj:omegaflowey_soul_2_note',
+    'aj:omegaflowey_soul_4_pan',
+    'aj:omegaflowey_soul_3_word_5',
+    'aj:omegaflowey_soul_3_word_6',
+    'aj:omegaflowey_soul_3_word_7',
+    'aj:omegaflowey_soul_3_word_8',
+    'aj:omegaflowey_soul_3_word_8_template',
+    'aj:omegaflowey_soul_3_word_9',
+    'aj:omegaflowey_tv_screen',
+  ];
+
+  const blueprintId = model.blueprint_settings.blueprint_id;
+  if (!allowlist.includes(blueprintId)) {
+    return [];
+  }
+
+  const { animation_variable_placeholders = '' } = model;
+  if (animation_variable_placeholders !== '') {
+    return [];
+  }
+
+  const error = `missing ${chalk.blue('animation_variable_placeholders')}; `;
+  return [error];
+};
+
 /**
  * Custom model data offset need to be some large, arbitrary value to avoid collision
  * with other Summit booths
@@ -211,6 +245,7 @@ const correctAjblueprintSettings = (file, argv, globals) => {
 
   const settingsChecks = [
     checkAnimationName,
+    checkAnimationVariablePlaceholders,
     checkCustomModelDataOffset,
     checkDatapack,
     checkEnableAdvancedResourcePackSettings,
