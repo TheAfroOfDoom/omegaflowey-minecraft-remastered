@@ -251,7 +251,6 @@ const getSummitResourcepackPaths = () => {
   ]);
 
   const soundPaths = prefixPaths('sounds/', [
-    'vanilla_ambient_modified',
     ...suffixPaths(
       [
         'battle_start',
