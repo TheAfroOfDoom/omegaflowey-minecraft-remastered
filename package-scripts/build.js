@@ -15,6 +15,8 @@ const animatedJavaExportsToPrune = prefixPaths('omegaflowey_', [
   'petal_pipe_middle',
   'soul_0_bandaid',
   'soul_0_sword',
+  'soul_1_glove',
+  'soul_1_thumb',
   'soul_2_note',
   'soul_2_shoe',
   'soul_2_star',
@@ -31,6 +33,8 @@ const getSummitDatapackPaths = () => {
     'bomb',
     'dentata-snakes',
     'finger-guns',
+    'flamethrower',
+    'flies',
     'friendliness-pellets',
     'homing-vines',
     'random',
@@ -67,13 +71,13 @@ const getSummitDatapackPaths = () => {
     'rejoin',
     'room',
     'room.mcfunction',
-    'shake_screen.mcfunction',
     'tick.mcfunction',
   ]);
 
   const soulPaths = prefixPaths('soul/', [
     'shared',
-    'soul_5',
+    'soul_3',
+    'soul_4',
     'reset_scores.mcfunction',
     'tick.mcfunction',
   ]);
@@ -87,35 +91,19 @@ const getSummitDatapackPaths = () => {
     'face_closest_player.mcfunction',
     'move_directional.mcfunction',
     'move_forward.mcfunction',
-    'shake_screen_macro.mcfunction',
-    'shake_screen.mcfunction',
   ]);
 
-  const advancementPaths = prefixPaths(
-    'advancement/entity/player_interacted_with_',
-    suffixPaths(
-      [
-        'animated_java_link',
-        'back_cave_github_link',
-        'feedback_form_link',
-        'github_description',
-        'join_queue',
-        'join_queue_2',
-        'soul_act_button_locator',
-      ],
-      '.json',
-    ),
-  );
-
   const entityPaths = prefixPaths('omegaflowey/', [
-    ...advancementPaths,
     ...prefixPaths('function/entity/', [
       ...bossFightPaths,
       'decorative',
       'directorial/tick.mcfunction',
       ...hostilePaths,
       ...playerPaths,
-      'remove_animated_java_models',
+      ...prefixPaths('remove_animated_java_models/', [
+        'boss_fight.mcfunction',
+        'summit-2026.mcfunction',
+      ]),
       'shared',
       ...soulPaths,
       ...entityUtilsPaths,
@@ -124,6 +112,14 @@ const getSummitDatapackPaths = () => {
       'setup.mcfunction',
       'tick.mcfunction',
     ]),
+  ]);
+
+  const mainPaths = prefixPaths('omegaflowey/function/main/', [
+    ...prefixPaths('setup/', ['const.mcfunction', 'objectives.mcfunction']),
+    'summit-2026',
+    'telemetry',
+    'setup.mcfunction',
+    'tick.mcfunction',
   ]);
 
   const utilsPaths = prefixPaths('omegaflowey/function/utils/', [
@@ -137,22 +133,16 @@ const getSummitDatapackPaths = () => {
   const primaryDatapackPaths = prefixPaths('omegaflowey/', [
     'pack.mcmeta',
     ...prefixPaths('data/', [
-      'animated_java/tags/function/',
       'daylight_cycle',
       'minecraft',
       'omegaflowey/function/admin/',
       ...entityPaths,
-      'omegaflowey/function/main/',
-      'omegaflowey/tags/main/',
+      ...mainPaths,
       ...utilsPaths,
       'summit/',
+      'summit.booth/',
     ]),
   ]);
-  const removeResetFunction = async ({ compiledPath }) => {
-    const resetFunctionFile = `${compiledPath}/datapacks/omegaflowey/data/omegaflowey/function/main/reset.mcfunction`;
-    await rimraf(resetFunctionFile);
-  };
-  postProcessors.push(removeResetFunction);
 
   const datapackPaths = prefixPaths('datapacks/', [
     'animated_java/data',
@@ -170,13 +160,8 @@ const getSummitDatapackPaths = () => {
   const pruneAnimatedJavaDatapackExports = async ({ compiledPath }) => {
     const prunePromises = [];
     for (const dir of animatedJavaExportsToPrune) {
-      const pruneFunctionDir = `${compiledPath}/datapacks/animated_java/data/animated_java/function/${dir}`;
+      const pruneFunctionDir = `${compiledPath}/datapacks/animated_java/data/aj/function/${dir}`;
       prunePromises.push(rimraf(pruneFunctionDir));
-      prunePromises.push(
-        rimraf(
-          `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/${dir}`,
-        ),
-      );
     }
     await Promise.all(prunePromises);
   };
@@ -188,20 +173,10 @@ const getSummitDatapackPaths = () => {
         `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/on_load.json`,
         '/on_load',
       ],
-      [
-        `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/root/on_load.json`,
-        '/root/on_load',
-      ],
-      [
-        `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/root/on_tick.json`,
-        '/root/on_tick',
-      ],
     ]) {
       const loadTagJson = await readJson(tagPath);
       loadTagJson.values = loadTagJson.values.filter((modelTag) => {
-        const namespace = modelTag
-          .replace('animated_java:', '')
-          .replace(suffix, '');
+        const namespace = modelTag.replace('aj:', '').replace(suffix, '');
         return !animatedJavaExportsToPrune.includes(namespace);
       });
       await writeJson(tagPath, loadTagJson);
