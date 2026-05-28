@@ -1,6 +1,5 @@
-# Set scores
-scoreboard players set @s omegaflowey.attack.clock.i -1
-scoreboard players operation @s omegaflowey.attack.speed.z = #omegaflowey.attack.bomb omegaflowey.attack.speed.z
+function omegaflowey:entity/hostile/omega-flowey/attack/shared/bullet/initialize
 
-# Remove tags
-tag @s remove attack-bullet-new
+data merge entity @s {CustomName:"'Bomb Bullet'",teleport_duration:1}
+
+tag @s add bomb
