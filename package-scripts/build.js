@@ -333,6 +333,7 @@ const getSummitResourcepackPaths = () => {
         'adahy',
         'balloon_rope_summit_2026',
         'lead_knot',
+        'red-ruins-leaves',
         'soul_red_balloon',
         'sunflower_front_green',
         'sunflower_front_magenta',

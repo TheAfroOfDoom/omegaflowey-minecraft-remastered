@@ -231,3 +231,15 @@ summon minecraft:interaction 91.0 51.0 -9.0 { \
     } \
   } \
 }
+
+function aj:omegaflowey_red_ruins_leaves_0/remove/all
+execute positioned 92.5 50.0 -23.5 rotated 90 0 run \
+  function aj:omegaflowey_red_ruins_leaves_0/summon { args: {} }
+
+function aj:omegaflowey_red_ruins_leaves_1/remove/all
+execute positioned 97.5 50.0 -14.5 rotated 180 0 run \
+  function aj:omegaflowey_red_ruins_leaves_1/summon { args: {} }
+
+function aj:omegaflowey_red_ruins_leaves_2/remove/all
+execute positioned 90.5 49.0 -6.5 rotated -90 0 run \
+  function aj:omegaflowey_red_ruins_leaves_2/summon { args: {} }
