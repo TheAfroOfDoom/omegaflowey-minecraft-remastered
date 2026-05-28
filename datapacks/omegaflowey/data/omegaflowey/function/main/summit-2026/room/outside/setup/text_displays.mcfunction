@@ -87,3 +87,33 @@ summon minecraft:text_display 97.1875 91.25 -15.0 { \
   }, \
   view_range: 2.0f, \
 }
+
+summon minecraft:text_display 91.0 86.1875 -8.0 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.outside", \
+    "grillbys-sign", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  brightness: { block: 13, sky: 0 }, \
+  default_background: false, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  shadow_strength: 1f, \
+  text: [ \
+    { "text": "GRILLBY'S", "color": "#ff8858", "font": "omega-flowey:grillbys" } \
+  ], \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [6.f, 6.f, 2.5f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  }, \
+  view_range: 2.0f, \
+}
