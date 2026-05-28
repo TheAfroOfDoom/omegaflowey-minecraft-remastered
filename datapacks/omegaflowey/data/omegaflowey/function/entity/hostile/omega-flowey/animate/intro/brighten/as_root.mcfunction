@@ -28,7 +28,7 @@ execute if entity @s[tag=aj.omegaflowey_tv_screen.root, tag=tv_screen.boss_fight
 execute \
   if entity @s[tag=aj.omegaflowey_tv_screen.root, tag=tv_screen.boss_fight] \
   on passengers \
-  if entity @s[tag=aj.omegaflowey_tv_screen.bone] \
+  if entity @s[tag=aj.omegaflowey_tv_screen.bone.box] \
   run data merge entity @s { brightness: { block: 11, sky: 0 }}
 
 execute if entity @s[tag=aj.omegaflowey_upper_eye.root] run function aj:omegaflowey_upper_eye/animations/omegaflowey_look_around/pause
