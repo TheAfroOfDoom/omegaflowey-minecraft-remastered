@@ -10,12 +10,18 @@ const prefixPaths = (prefix, paths) => paths.map((path) => `${prefix}${path}`);
 const suffixPaths = (paths, suffix) => paths.map((path) => `${path}${suffix}`);
 
 const animatedJavaExportsToPrune = prefixPaths('omegaflowey_', [
-  'housefly',
+  'arena_box_vanilla',
   'petal_pipe_circle',
   'petal_pipe_middle',
   'soul_0_bandaid',
   'soul_0_sword',
-  'venus_fly_trap',
+  'soul_2_note',
+  'soul_2_shoe',
+  'soul_2_star',
+  'soul_5_bullet',
+  'soul_5_crosshair',
+  'soul_5_flower',
+  'soul_5_gun',
 ]);
 
 const getSummitDatapackPaths = () => {
@@ -38,7 +44,7 @@ const getSummitDatapackPaths = () => {
 
   const bossFightPaths = prefixPaths('directorial/boss_fight/', [
     'shared',
-    'summit',
+    'summit-2026',
     'tick.mcfunction',
   ]);
 
@@ -210,45 +216,47 @@ const getSummitResourcepackPaths = () => {
   const finalPostProcessors = [];
 
   // Not `minecraft/sounds.json` since we just use that to disable ambient sounds
-  const minecraftPaths = prefixPaths('minecraft/', ['atlases', 'models']);
+  const minecraftPaths = prefixPaths('minecraft/', ['atlases']);
 
-  // TODO(318): fix this method
-  const pruneAnimatedJavaDisplayItem = async ({ compiledPath }) => {
-    const displayItemPath = `${compiledPath}/assets/minecraft/models/item/pink_dye.json`;
-    const displayItemJson = await readJson(displayItemPath);
-
-    const filteredOverrides = displayItemJson.overrides.filter((override) => {
-      if (!override.model.startsWith('animated_java:item/')) {
-        return true;
-      }
-
-      const modelName = override.model
-        .replace('animated_java:item/', '')
-        .split('/')[0];
-      return !animatedJavaExportsToPrune.includes(modelName);
-    });
-
-    displayItemJson.overrides = filteredOverrides;
-
-    displayItemJson.animated_java = undefined;
-
-    await writeJson(displayItemPath, displayItemJson, { spaces: 2 });
-  };
-  postProcessors.push(pruneAnimatedJavaDisplayItem);
-
-  const modelPaths = prefixPaths('models/entity/decorative/', [
-    'housefly.json',
-    'picture',
-    'reward_hat.json',
-    'reward_hat_cyan.json',
-  ]);
-
-  const soundPaths = prefixPaths(
-    'sounds/',
+  const itemPaths = prefixPaths(
+    'items/decorative/',
     suffixPaths(
       [
+        'animated-java-logo',
+        'flowey-build-scaled-min-2026',
+        'legacy-command-blocks-scaled-min',
+        'legacy-flowey-build-scaled-min',
+        'legacy-hopper-clock-scaled-min',
+        'reward-hat',
+        'reward-hat-green',
+        'reward-hat-magenta',
+      ],
+      '.json',
+    ),
+  );
+
+  const modelPaths = prefixPaths('models/entity/decorative/', [
+    'balloon_soul_red_summit_2026.json',
+    'housefly.json',
+    ...prefixPaths('picture/', [
+      'animated-java-logo.json',
+      'flowey-build-scaled-min-2026.json',
+      'legacy-command-blocks-scaled-min.json',
+      'legacy-flowey-build-scaled-min.json',
+      'legacy-hopper-clock-scaled-min.json',
+    ]),
+    'reward_hat.json',
+    'reward_hat_green.json',
+    'reward_hat_magenta.json',
+  ]);
+
+  const soundPaths = prefixPaths('sounds/', [
+    'vanilla_ambient_modified',
+    ...suffixPaths(
+      [
         'battle_start',
-        'mus_f_6s_6',
+        'mus_f_6s_4',
+        'mus_f_6s_5',
         'mus_f_alarm',
         'mus_f_intro',
         'mus_f_laugh',
@@ -267,9 +275,13 @@ const getSummitResourcepackPaths = () => {
         'snd_break1',
         'snd_break2',
         'snd_break2_c',
+        'snd_buzzing',
         'snd_dumbvictory',
+        'snd_elecdoor_open',
+        'snd_elecdoor_close',
         'snd_elecdoor_shutheavy',
         'snd_escaped',
+        'snd_flameloop',
         'snd_heal_c',
         'snd_hurt1_c',
         'snd_impact',
@@ -277,10 +289,12 @@ const getSummitResourcepackPaths = () => {
         'snd_noise',
         'snd_select',
         'snd_shakerbreaker',
+        'snd_spearrise',
+        'snd_swallow',
       ],
       '.ogg',
     ),
-  );
+  ]);
 
   // NOTE: this needs to be kept updated with the sounds we export above (`soundPaths`).
   // Do this by loading the build pack in Minecraft and checking the log for `File ... does not exist` warnings
@@ -289,9 +303,6 @@ const getSummitResourcepackPaths = () => {
     const soundsJson = await readJson(pathSoundsJson);
 
     const keysToPrune = [
-      'attack.flies.buzzing',
-      'attack.flies.summon',
-      'attack.flies.swallow',
       'music.generic.boss-fight.repeat.0',
       'music.generic.boss-fight.repeat.1',
       'music.generic.boss-fight.end-note',
@@ -299,6 +310,9 @@ const getSummitResourcepackPaths = () => {
       'music.phase.repeat.1',
       'music.phase.repeat.end-note',
       'music.soul.0',
+      'music.soul.1',
+      'music.soul.2',
+      'music.soul.5',
     ];
 
     for (const key of keysToPrune) {
@@ -315,11 +329,12 @@ const getSummitResourcepackPaths = () => {
         'blank',
         'blank_1',
         'blank_2',
+        'blank_3',
         'finger-gun-laser',
+        'flamethrower_tip',
         'flowery',
         'friendliness-pellet-ring-blinking',
         'friendliness-pellet-ring-finished',
-        'homing_vine_orange_shulker_box_emissive',
         'homing-vine',
         'homing-vine-noshade',
         'homing-vine-blinking-lane',
@@ -342,20 +357,17 @@ const getSummitResourcepackPaths = () => {
     ...suffixPaths(
       [
         'adahy',
-        'gulag-kamina-cape',
-        'natia',
-        'sunflower_front_cyan',
+        'balloon_rope_summit_2026',
+        'lead_knot',
+        'soul_red_balloon',
+        'sunflower_front_green',
+        'sunflower_front_magenta',
         'theafroofdoom',
         ...prefixPaths('picture/', [
-          ...suffixPaths(
-            [
-              'flowey-build',
-              'legacy-command-blocks',
-              'legacy-flowey-build',
-              'legacy-hopper-clock',
-            ],
-            '-scaled-min',
-          ),
+          'flowey-build-scaled-min-2026',
+          'legacy-command-blocks-scaled-min',
+          'legacy-flowey-build-scaled-min',
+          'legacy-hopper-clock-scaled-min',
           'animated_java_2023_256x256',
         ]),
       ],
@@ -366,13 +378,16 @@ const getSummitResourcepackPaths = () => {
   const pipeTexturePaths = prefixPaths('pipe/polished_andesite', [
     '.png',
     '_disabled.png',
-    '_soul_0.png',
-    '_soul_0.png.mcmeta',
-    '_soul_1.png',
-    '_soul_1.png.mcmeta',
+    '_soul_3.png',
+    '_soul_3.png.mcmeta',
+    '_soul_4.png',
+    '_soul_4.png.mcmeta',
+    '_soul_5.png',
+    '_soul_5.png.mcmeta',
   ]);
 
   const texturePaths = prefixPaths('textures/custom/', [
+    'arm_vine',
     ...attackTexturePaths,
     ...decorativeTexturePaths,
     'dentata_snake_ball',
@@ -400,13 +415,18 @@ const getSummitResourcepackPaths = () => {
   const omegaFloweyPaths = prefixPaths('omega-flowey/', [
     'font',
     ...soundPaths,
+    ...itemPaths,
     ...modelPaths,
     ...texturePaths,
     'sounds.json',
   ]);
 
   const assetsPaths = prefixPaths('assets/', [
-    'animated_java',
+    ...prefixPaths('aj/', [
+      'items',
+      'models',
+      'textures/blueprint/omegaflowey_tv_screen',
+    ]),
     ...minecraftPaths,
     ...omegaFloweyPaths,
   ]);
@@ -414,8 +434,12 @@ const getSummitResourcepackPaths = () => {
   const pruneAnimatedJavaResourcepackExports = async ({ compiledPath }) => {
     const prunePromises = [];
     for (const dir of animatedJavaExportsToPrune) {
-      const compiledPruneDir = `${compiledPath}/assets/animated_java/models/item/${dir}`;
-      prunePromises.push(rimraf(compiledPruneDir));
+      prunePromises.push(
+        rimraf(`${compiledPath}/assets/aj/items/blueprint/${dir}`),
+      );
+      prunePromises.push(
+        rimraf(`${compiledPath}/assets/aj/models/blueprint/${dir}`),
+      );
     }
     await Promise.all(prunePromises);
   };
