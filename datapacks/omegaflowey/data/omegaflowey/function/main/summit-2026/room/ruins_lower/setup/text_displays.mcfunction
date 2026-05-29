@@ -93,7 +93,9 @@ summon minecraft:text_display 95.5 21.5 5.01 { \
     "decorative.ruins-lower", \
     "now-playing-player-health-2", \
   ], \
-  alignment: "center", background: 0, \
+  alignment: "center", \
+  background: 0, \
+  brightness: { block: 15, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
