@@ -10,8 +10,8 @@ execute if entity @s[tag=!is_eastward] run teleport @s ~-0.5 ~ ~
 
 # wrap if this has moved far enough outside arena
 execute if entity @s[tag=is_eastward] at @s \
-  unless entity @s[x=45, dx=48, y=-30, dy=100, z=-30, dz=32] run \
+  unless entity @s[x=39, dx=60, y=-30, dy=100, z=-30, dz=32] run \
   function omegaflowey:entity/soul/soul_3/indicator/loop/wrap
 execute if entity @s[tag=!is_eastward] at @s \
-  unless entity @s[x=45, dx=48, y=-30, dy=100, z=-30, dz=32] run \
+  unless entity @s[x=39, dx=60, y=-30, dy=100, z=-30, dz=32] run \
   function omegaflowey:entity/soul/soul_3/indicator/loop/wrap
