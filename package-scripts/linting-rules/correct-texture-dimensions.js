@@ -2,7 +2,7 @@ const chalk = require('chalk');
 const sizeOf = require('image-size');
 
 const applicableExtensions = ['.png'];
-const exclude = /scratch\//;
+const exclude = /scratch\/|stickers/;
 
 /**
  * If a texture's dimensions aren't minimum powers of 16, Minecraft outputs a warning
