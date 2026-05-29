@@ -37,4 +37,6 @@ data modify storage omegaflowey:telemetry schema_booth_n set value { \
   'room.underground.back_cave.waterfall_secret.enter': 31, \
   'room.underground.back_cave.exit': 32, \
   'room.underground.back_cave.waterfall_secret.exit': 33, \
+  "room.underground.pit-lower.enter": 34, \
+  "room.underground.pit-lower.exit": 35, \
 }

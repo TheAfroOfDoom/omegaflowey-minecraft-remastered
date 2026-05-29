@@ -30,3 +30,5 @@ execute unless score #omegaflowey.telemetry.enabled omegaflowey.global.flag matc
 # execute if entity @s[x=-122, dx=27, y=41, dy=14, z=31, dz=14] run return run \
 #   function omegaflowey:entity/player/room/underground/parkour/check
 # function omegaflowey:entity/player/room/underground/back_cave/check
+
+function omegaflowey:entity/player/room/underground/pit-lower/check
