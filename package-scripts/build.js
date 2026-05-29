@@ -278,6 +278,7 @@ const getSummitResourcepackPaths = () => {
     const soundsJson = await readJson(pathSoundsJson);
 
     const keysToPrune = [
+      'ambient',
       'music.generic.boss-fight.repeat.0',
       'music.generic.boss-fight.repeat.1',
       'music.generic.boss-fight.end-note',
