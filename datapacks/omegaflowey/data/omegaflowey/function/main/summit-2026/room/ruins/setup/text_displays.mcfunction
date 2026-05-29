@@ -368,7 +368,67 @@ summon minecraft:text_display 89.375 53.875 -26.99 { \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
     right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-    scale: [1.5000001f, 1.5000001f, 1.4999995f], \
+    scale: [1.5f, 1.5f, 1.5f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display 93.75 54.1875 -26.99 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "description-third-person-title", \
+  ], \
+  alignment: "left", \
+  background: 0, \
+  default_background: 0b, \
+  brightness: { block: 15, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 160, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: [ \
+    { "text": "TIP", "color": "yellow", "bold": true, "underlined": true }, \
+  ], \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.5f, 1.5f, 0.0f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+
+summon minecraft:text_display 93.75 53.5 -26.99 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "description-third-person", \
+  ], \
+  alignment: "center", \
+  background: 0, \
+  default_background: 0b, \
+  brightness: { block: 15, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 160, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text: [ \
+    "Try playing in\n", \
+    { "text": "third-person", "color": "gold" }, \
+    "!", \
+  ], \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [1.125f, 1.125f, 0.0f], \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
