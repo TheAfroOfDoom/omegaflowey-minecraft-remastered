@@ -328,7 +328,7 @@ const getSummitResourcepackPaths = () => {
   ]);
 
   const decorativeTexturePaths = prefixPaths('decorative/', [
-    'sticker',
+    'stickers',
     ...suffixPaths(
       [
         'adahy',
