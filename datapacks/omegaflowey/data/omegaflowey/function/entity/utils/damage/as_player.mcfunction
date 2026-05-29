@@ -45,3 +45,5 @@ schedule function omegaflowey:entity/utils/damage/reset_immunity_flag 10t replac
 # Show custom death message
 execute if score #omegaflowey.bossfight.player_died omegaflowey.global.flag matches 1 run \
   function omegaflowey:entity/utils/damage/as_player/died
+
+scoreboard players set #omegaflowey.bossfight.player_died omegaflowey.global.flag 0
