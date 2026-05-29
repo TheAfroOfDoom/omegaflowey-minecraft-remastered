@@ -11,6 +11,7 @@ const suffixPaths = (paths, suffix) => paths.map((path) => `${path}${suffix}`);
 
 const animatedJavaExportsToPrune = prefixPaths('omegaflowey_', [
   'arena_box_vanilla',
+  'climbing_hold',
   'petal_pipe_circle',
   'petal_pipe_middle',
   'soul_0_bandaid',
