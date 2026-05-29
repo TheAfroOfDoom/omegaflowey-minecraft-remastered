@@ -1,4 +1,4 @@
-summon minecraft:text_display 99.5 21.375 7.6875 { \
+summon minecraft:text_display 101.0 21.375 9.0 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -23,7 +23,7 @@ summon minecraft:text_display 99.5 21.375 7.6875 { \
     translation: [0.0f, 0.0f, 0.0f] \
   } \
 }
-summon minecraft:interaction 99.5 21.375 7.6875 { \
+summon minecraft:interaction 101.0 21.375 9.0 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -43,7 +43,7 @@ summon minecraft:interaction 99.5 21.375 7.6875 { \
   } \
 }
 execute as @e[ \
-  x=99.5, y=21.375, z=7.6875, distance=..0.1, \
+  x=101.0, y=21.375, z=9.0, distance=..0.1, \
   type=minecraft:interaction, \
   tag=join-queue-2-interaction, \
   tag=omega-flowey-remastered, \
