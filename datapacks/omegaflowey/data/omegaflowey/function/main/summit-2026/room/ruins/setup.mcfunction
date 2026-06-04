@@ -232,6 +232,30 @@ summon minecraft:interaction 91.0 51.0 -9.0 { \
   } \
 }
 
+execute positioned 92.25 50.0725 -23.5 rotated 40 0 run \
+  function aj:omegaflowey_balloon_bundle/summon { args: { variant: 'trans' } }
+summon minecraft:interaction 92.25 50.0625 -23.5 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.static", \
+    "summit.interactable", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "balloon-bundle-trans-interaction", \
+  ], \
+  width: 0.5, \
+  height: 2.5, \
+  response: true, \
+  data: { \
+    summit_interactable: { \
+      special: "balloon_vendor", \
+      namespace: "omegaflowey", \
+      balloon_id: "soul_trans" \
+    } \
+  } \
+}
+
 function aj:omegaflowey_red_ruins_leaves_0/remove/all
 execute positioned 92.5 50.0 -23.5 rotated 90 0 run \
   function aj:omegaflowey_red_ruins_leaves_0/summon { args: {} }
