@@ -14,10 +14,7 @@ assertEnvironmentVariables([
   'RESOURCEPACK',
 ]);
 const assetsDir = process.env.ASSETS_DIR;
-const blockbenchPath =
-  process.platform === 'darwin'
-    ? `open "${process.env.BLOCKBENCH_PATH}" --args`
-    : process.env.BLOCKBENCH_PATH;
+const blockbenchPath = process.env.BLOCKBENCH_PATH;
 const datapack = process.env.DATAPACK;
 const resourcePack = process.env.RESOURCEPACK;
 
