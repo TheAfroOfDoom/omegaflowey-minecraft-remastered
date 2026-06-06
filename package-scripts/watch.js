@@ -16,7 +16,6 @@ const {
 
 dotenv.config();
 assertEnvironmentVariables([
-  'COPY_COMMAND_ALIASES',
   'MINECRAFT_PATH',
   'RESOURCEPACK_NAME',
   'WORLD_NAME',
