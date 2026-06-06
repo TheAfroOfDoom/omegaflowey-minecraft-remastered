@@ -1,3 +1,3 @@
-function omegaflowey:entity/shared/run_if_outside_arena_volume { command: \
+function omegaflowey:entity/shared/run_if_outside_arena_volume_2 { command: \
   "function omegaflowey:entity/soul/soul_4/bullet/terminate" \
 }
