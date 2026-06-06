@@ -2,10 +2,19 @@ const dotenv = require('dotenv');
 const { series } = require('nps-utils');
 
 const { ajblueprintDir } = require('./package-scripts/modules/shared-consts');
+const {
+  assertEnvironmentVariables,
+} = require('./package-scripts/utils-commonjs');
 
 dotenv.config();
 
 const watchScriptPath = './package-scripts/watch.js';
+
+assertEnvironmentVariables([
+  'MINECRAFT_PATH',
+  'SMITHED_SUMMIT_WORLD_PATH',
+  'WORLD_NAME',
+]);
 
 const allAnimatedJavaExportFiles = [
   'datapacks/animated_java/data',
