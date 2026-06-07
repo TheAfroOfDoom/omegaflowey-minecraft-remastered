@@ -37,11 +37,20 @@ function aj:omegaflowey_soul_2_star/remove/all
 
 function aj:omegaflowey_soul_3_book/remove/all
 function aj:omegaflowey_soul_3_word_0/remove/all
+function aj:omegaflowey_soul_3_word_1/remove/all
+function aj:omegaflowey_soul_3_word_2/remove/all
+function aj:omegaflowey_soul_3_word_3/remove/all
+function aj:omegaflowey_soul_3_word_4/remove/all
 function aj:omegaflowey_soul_3_word_5/remove/all
 function aj:omegaflowey_soul_3_word_6/remove/all
 function aj:omegaflowey_soul_3_word_7/remove/all
 function aj:omegaflowey_soul_3_word_8/remove/all
 function aj:omegaflowey_soul_3_word_9/remove/all
+function aj:omegaflowey_soul_3_word_10/remove/all
+function aj:omegaflowey_soul_3_word_11/remove/all
+function aj:omegaflowey_soul_3_word_12/remove/all
+function aj:omegaflowey_soul_3_word_13/remove/all
+function aj:omegaflowey_soul_3_word_14/remove/all
 
 function aj:omegaflowey_soul_4_bullet/remove/all
 function aj:omegaflowey_soul_4_pan/remove/all
