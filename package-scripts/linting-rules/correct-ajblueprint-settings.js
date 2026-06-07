@@ -44,6 +44,7 @@ const checkAnimationVariablePlaceholders = (model) => {
     'aj:omegaflowey_soul_1_thumb',
     'aj:omegaflowey_soul_2_note',
     'aj:omegaflowey_soul_4_pan',
+    'aj:omegaflowey_soul_3_word_0',
     'aj:omegaflowey_soul_3_word_5',
     'aj:omegaflowey_soul_3_word_6',
     'aj:omegaflowey_soul_3_word_7',

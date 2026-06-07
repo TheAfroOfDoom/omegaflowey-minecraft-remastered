@@ -36,6 +36,7 @@ function aj:omegaflowey_soul_2_shoe/remove/all
 function aj:omegaflowey_soul_2_star/remove/all
 
 function aj:omegaflowey_soul_3_book/remove/all
+function aj:omegaflowey_soul_3_word_0/remove/all
 function aj:omegaflowey_soul_3_word_5/remove/all
 function aj:omegaflowey_soul_3_word_6/remove/all
 function aj:omegaflowey_soul_3_word_7/remove/all
