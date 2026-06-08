@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.10.0-beta.6",
+		"format_version": "1.10.0-beta.7",
 		"uuid": "738b7804-b312-52bc-9340-268c67328f74",
 		"save_location": "/Users/jordan/src/ofmc/resourcepack/assets/omega-flowey/models/entity/hostile/omega-flowey/attacks/venus-fly-trap.ajblueprint",
 		"last_used_blueprint_id": "aj:omegaflowey_venus_fly_trap"
@@ -2338,6 +2338,9 @@
 				"default": {},
 				"variants": {}
 			},
+			"itemModelProperties": {
+				"tints": []
+			},
 			"children": [],
 			"reset": false,
 			"shade": true,
@@ -2367,16 +2370,20 @@
 					"on_apply_function": "",
 					"billboard": "fixed",
 					"override_brightness": false,
-					"brightness_override": 0,
 					"enchanted": false,
 					"glowing": false,
 					"override_glow_color": false,
 					"glow_color": "#ffffff",
 					"invisible": false,
 					"shadow_radius": 0,
-					"shadow_strength": 1
+					"shadow_strength": 1,
+					"sky_brightness": 0,
+					"block_brightness": 0
 				},
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
@@ -2407,16 +2414,20 @@
 					"on_apply_function": "",
 					"billboard": "fixed",
 					"override_brightness": false,
-					"brightness_override": 0,
 					"enchanted": false,
 					"glowing": false,
 					"override_glow_color": false,
 					"glow_color": "#ffffff",
 					"invisible": false,
 					"shadow_radius": 0,
-					"shadow_strength": 1
+					"shadow_strength": 1,
+					"sky_brightness": 0,
+					"block_brightness": 0
 				},
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,

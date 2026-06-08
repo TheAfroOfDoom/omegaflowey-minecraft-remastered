@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.10.0-beta.6",
+		"format_version": "1.10.0-beta.7",
 		"uuid": "2d31b9db-c641-46e6-a875-94380ff05f63",
 		"save_location": "/Users/jordan/src/ofmc/resourcepack/assets/omega-flowey/models/entity/hostile/omega-flowey/lower-eye.ajblueprint",
 		"last_used_blueprint_id": "aj:omegaflowey_lower_eye"
@@ -2299,6 +2299,9 @@
 				"default": {},
 				"variants": {}
 			},
+			"itemModelProperties": {
+				"tints": []
+			},
 			"children": [],
 			"reset": false,
 			"shade": true,
@@ -2328,82 +2331,91 @@
 					"on_apply_function": "",
 					"billboard": "fixed",
 					"override_brightness": false,
-					"brightness_override": 0,
 					"enchanted": false,
 					"glowing": false,
 					"override_glow_color": false,
 					"glow_color": "#ffffff",
 					"invisible": false,
 					"shadow_radius": 0,
-					"shadow_strength": 1
+					"shadow_strength": 1,
+					"sky_brightness": 0,
+					"block_brightness": 0
 				},
 				"variants": {
 					"6659e3dc-75cd-b379-5cc7-3bc2cc56a15a": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"0463c19a-d0e3-3f38-c2fa-9e3b26443e96": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"06a6a41e-70a5-c0da-71ae-10b7a8010b24": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"3df8e230-6c32-a280-b9a2-9ef7e88514bc": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": false,
-						"brightness_override": 0,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 0,
+						"block_brightness": 0
 					},
 					"b91ac4d2-5302-2bde-859e-84985699299b": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": false,
-						"brightness_override": 0,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 0,
+						"block_brightness": 0
 					}
 				}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
@@ -2434,56 +2446,63 @@
 					"on_apply_function": "",
 					"billboard": "fixed",
 					"override_brightness": false,
-					"brightness_override": 0,
 					"enchanted": false,
 					"glowing": false,
 					"override_glow_color": false,
 					"glow_color": "#ffffff",
 					"invisible": false,
 					"shadow_radius": 0,
-					"shadow_strength": 1
+					"shadow_strength": 1,
+					"sky_brightness": 0,
+					"block_brightness": 0
 				},
 				"variants": {
 					"6659e3dc-75cd-b379-5cc7-3bc2cc56a15a": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"0463c19a-d0e3-3f38-c2fa-9e3b26443e96": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"06a6a41e-70a5-c0da-71ae-10b7a8010b24": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					}
 				}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
@@ -2514,56 +2533,63 @@
 					"on_apply_function": "",
 					"billboard": "fixed",
 					"override_brightness": false,
-					"brightness_override": 0,
 					"enchanted": false,
 					"glowing": false,
 					"override_glow_color": false,
 					"glow_color": "#ffffff",
 					"invisible": false,
 					"shadow_radius": 0,
-					"shadow_strength": 1
+					"shadow_strength": 1,
+					"sky_brightness": 0,
+					"block_brightness": 0
 				},
 				"variants": {
 					"6659e3dc-75cd-b379-5cc7-3bc2cc56a15a": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"0463c19a-d0e3-3f38-c2fa-9e3b26443e96": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"06a6a41e-70a5-c0da-71ae-10b7a8010b24": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					}
 				}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
@@ -2594,69 +2620,77 @@
 					"on_apply_function": "",
 					"billboard": "fixed",
 					"override_brightness": false,
-					"brightness_override": 0,
 					"enchanted": false,
 					"glowing": false,
 					"override_glow_color": false,
 					"glow_color": "#ffffff",
 					"invisible": false,
 					"shadow_radius": 0,
-					"shadow_strength": 1
+					"shadow_strength": 1,
+					"sky_brightness": 0,
+					"block_brightness": 0
 				},
 				"variants": {
 					"b91ac4d2-5302-2bde-859e-84985699299b": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"6659e3dc-75cd-b379-5cc7-3bc2cc56a15a": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"0463c19a-d0e3-3f38-c2fa-9e3b26443e96": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					},
 					"06a6a41e-70a5-c0da-71ae-10b7a8010b24": {
 						"on_apply_function": "",
 						"billboard": "fixed",
 						"override_brightness": true,
-						"brightness_override": 15,
 						"enchanted": false,
 						"glowing": false,
 						"override_glow_color": false,
 						"glow_color": "#ffffff",
 						"invisible": false,
 						"shadow_radius": 0,
-						"shadow_strength": 1
+						"shadow_strength": 1,
+						"sky_brightness": 15,
+						"block_brightness": 15
 					}
 				}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
@@ -2685,6 +2719,9 @@
 			"configs": {
 				"default": {},
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,

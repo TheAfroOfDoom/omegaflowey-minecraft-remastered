@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.10.0-beta.6",
+		"format_version": "1.10.0-beta.7",
 		"uuid": "953ff968-9e3b-f3b7-78d6-3e2254ba4dc0",
 		"save_location": "/Users/jordan/src/ofmc/resourcepack/assets/omega-flowey/models/entity/soul/soul.ajblueprint",
 		"last_used_blueprint_id": "aj:omegaflowey_soul"
@@ -552,11 +552,15 @@
 			"configs": {
 				"default": {
 					"override_brightness": true,
-					"brightness_override": 15,
 					"inherit_settings": false,
-					"nbt": ""
+					"nbt": "",
+					"sky_brightness": 15,
+					"block_brightness": 15
 				},
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,

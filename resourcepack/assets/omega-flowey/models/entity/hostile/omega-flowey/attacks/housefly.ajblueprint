@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.10.0-beta.6",
+		"format_version": "1.10.0-beta.7",
 		"uuid": "890a34a9-3930-0214-31a3-cabe57429bb9",
 		"save_location": "/Users/jordan/src/ofmc/resourcepack/assets/omega-flowey/models/entity/hostile/omega-flowey/attacks/housefly.ajblueprint",
 		"last_used_blueprint_id": "aj:omegaflowey_housefly"
@@ -3441,6 +3441,9 @@
 				"default": {},
 				"variants": {}
 			},
+			"itemModelProperties": {
+				"tints": []
+			},
 			"children": [],
 			"reset": false,
 			"shade": true,
@@ -3470,16 +3473,20 @@
 					"on_apply_function": "",
 					"billboard": "fixed",
 					"override_brightness": false,
-					"brightness_override": 0,
 					"enchanted": false,
 					"glowing": false,
 					"override_glow_color": false,
 					"glow_color": "#ffffff",
 					"invisible": false,
 					"shadow_radius": 0,
-					"shadow_strength": 1
+					"shadow_strength": 1,
+					"sky_brightness": 0,
+					"block_brightness": 0
 				},
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
@@ -3510,16 +3517,20 @@
 					"on_apply_function": "",
 					"billboard": "fixed",
 					"override_brightness": false,
-					"brightness_override": 0,
 					"enchanted": false,
 					"glowing": false,
 					"override_glow_color": false,
 					"glow_color": "#ffffff",
 					"invisible": false,
 					"shadow_radius": 0,
-					"shadow_strength": 1
+					"shadow_strength": 1,
+					"sky_brightness": 0,
+					"block_brightness": 0
 				},
 				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
 			},
 			"children": [],
 			"reset": false,
