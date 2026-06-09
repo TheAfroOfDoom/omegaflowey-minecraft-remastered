@@ -111,6 +111,39 @@ execute as @e[ \
 ] run function gu:generate
 data modify storage omegaflowey:bossfight active_player_display_uuid set from storage gu:main out
 
+summon minecraft:text_display 96.99 55.1 -15.57025 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.dynamic", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins", \
+    "now-playing-player-head", \
+  ], \
+  alignment: "left", \
+  background: 0, \
+  brightness: { block: 15, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [2.75f, 2.75f, 0.0f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+execute as @e[ \
+  x=96.99, y=55.1, z=-15.57025, distance=..0.1, \
+  type=minecraft:text_display, \
+  tag=now-playing-player-head, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:bossfight active_player_head_display_uuid set from storage gu:main out
+
 summon minecraft:text_display 96.99 55.4375 -13.5 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
@@ -120,7 +153,9 @@ summon minecraft:text_display 96.99 55.4375 -13.5 { \
     "decorative.ruins", \
     "now-playing-player-health", \
   ], \
-  alignment: "center", background: 0, \
+  alignment: "center", \
+  background: 0, \
+  brightness: { block: 15, sky: 0 }, \
   default_background: 0b, \
   line_width: 200, \
   see_through: 0b, \
