@@ -5,3 +5,5 @@ $execute \
 
 $execute as $(active_player_head_display_uuid) run \
   function omegaflowey:main/summit-2026/room/ruins/active_player_head_display/as_text_display with storage omegaflowey:bossfight
+$execute as $(active_player_head_display_2_uuid) run \
+  function omegaflowey:main/summit-2026/room/ruins/active_player_head_display/as_text_display with storage omegaflowey:bossfight

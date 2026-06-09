@@ -51,7 +51,7 @@ execute as @e[ \
 ] run function gu:generate
 data modify storage omegaflowey:decorative join_queue_2_interaction_uuid set from storage gu:main out
 
-summon minecraft:text_display 95.5 22.125 5.01 { \
+summon minecraft:text_display 95.5 22.5 5.01 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -76,7 +76,7 @@ summon minecraft:text_display 95.5 22.125 5.01 { \
   } \
 }
 execute as @e[ \
-  x=95.5, y=22.125, z=5.01, distance=..0.1, \
+  x=95.5, y=22.5, z=5.01, distance=..0.1, \
   type=minecraft:text_display, \
   tag=now-playing-player-name-2, \
   tag=omega-flowey-remastered, \
@@ -84,7 +84,40 @@ execute as @e[ \
 ] run function gu:generate
 data modify storage omegaflowey:bossfight active_player_display_2_uuid set from storage gu:main out
 
-summon minecraft:text_display 95.5 21.5 5.01 { \
+summon minecraft:text_display 95.37 21.5 5.01 { \
+  Tags: [ \
+    "summit.booth_entity.omegaflowey", \
+    "summit.dynamic", \
+    "omega-flowey-remastered", \
+    "decorative", \
+    "decorative.ruins-lower", \
+    "now-playing-player-head-2", \
+  ], \
+  alignment: "left", \
+  background: 0, \
+  brightness: { block: 15, sky: 0 }, \
+  default_background: 0b, \
+  line_width: 200, \
+  see_through: 0b, \
+  shadow: 0b, \
+  text_opacity: 255, \
+  transformation: { \
+    left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
+    scale: [2.75f, 2.75f, 0.0f], \
+    translation: [0.0f, 0.0f, 0.0f] \
+  } \
+}
+execute as @e[ \
+  x=95.37, y=21.5, z=5.01, distance=..0.1, \
+  type=minecraft:text_display, \
+  tag=now-playing-player-head-2, \
+  tag=omega-flowey-remastered, \
+  limit=1 \
+] run function gu:generate
+data modify storage omegaflowey:bossfight active_player_head_display_2_uuid set from storage gu:main out
+
+summon minecraft:text_display 95.5 21.0 5.01 { \
   Tags: [ \
     "summit.booth_entity.omegaflowey", \
     "summit.dynamic", \
@@ -110,7 +143,7 @@ summon minecraft:text_display 95.5 21.5 5.01 { \
   } \
 }
 execute as @e[ \
-  x=95.5, y=21.5, z=5.01, distance=..0.1, \
+  x=95.5, y=21.0, z=5.01, distance=..0.1, \
   type=minecraft:text_display, \
   tag=now-playing-player-health-2, \
   tag=omega-flowey-remastered, \
