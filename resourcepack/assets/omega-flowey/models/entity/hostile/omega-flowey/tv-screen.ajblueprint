@@ -646,6 +646,120 @@
 			},
 			"type": "cube",
 			"uuid": "f12eeaaf-880b-9167-b404-2da4a44e3864"
+		},
+		{
+			"name": "now_playing_title",
+			"position": [0, 166, -34.05],
+			"rotation": [0, 0, 0],
+			"pivotOffset": [0, 0, 0],
+			"scale": [7, 7, 1],
+			"color": 9,
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"text": "\"\"\n",
+			"lineWidth": 200,
+			"backgroundColor": "#00000000",
+			"align": "center",
+			"shadow": false,
+			"seeThrough": false,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {
+					"on_apply_function": "",
+					"billboard": "fixed",
+					"override_brightness": true,
+					"sky_brightness": 0,
+					"block_brightness": 15,
+					"enchanted": false,
+					"glowing": false,
+					"override_glow_color": false,
+					"glow_color": "#ffffff",
+					"invisible": false,
+					"shadow_radius": 0,
+					"shadow_strength": 1
+				},
+				"variants": {}
+			},
+			"scope": 0,
+			"uuid": "64be9409-6fbf-df81-d638-543d6c5eb1d2",
+			"type": "animated_java:text_display"
+		},
+		{
+			"name": "now_playing_player_head",
+			"position": [2.5, 108, -34.05],
+			"rotation": [0, 0, 0],
+			"pivotOffset": [0, 0, 0],
+			"scale": [14, 14, 1],
+			"color": 9,
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"text": "\"\"",
+			"lineWidth": 200,
+			"backgroundColor": "#00000000",
+			"align": "center",
+			"shadow": false,
+			"seeThrough": false,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {
+					"on_apply_function": "",
+					"billboard": "fixed",
+					"override_brightness": true,
+					"sky_brightness": 0,
+					"block_brightness": 15,
+					"enchanted": false,
+					"glowing": false,
+					"override_glow_color": false,
+					"glow_color": "#ffffff",
+					"invisible": false,
+					"shadow_radius": 0,
+					"shadow_strength": 1
+				},
+				"variants": {}
+			},
+			"scope": 0,
+			"uuid": "789ee0f5-3d13-fb5d-35f1-d44b75db8515",
+			"type": "animated_java:text_display"
+		},
+		{
+			"name": "now_playing_player_name",
+			"position": [0, 82, -34.05],
+			"rotation": [0, 0, 0],
+			"pivotOffset": [0, 0, 0],
+			"scale": [6, 6, 1],
+			"color": 9,
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"text": "\"\"\n",
+			"lineWidth": 200,
+			"backgroundColor": "#00000000",
+			"align": "center",
+			"shadow": false,
+			"seeThrough": false,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {
+					"on_apply_function": "",
+					"billboard": "fixed",
+					"override_brightness": true,
+					"sky_brightness": 0,
+					"block_brightness": 15,
+					"enchanted": false,
+					"glowing": false,
+					"override_glow_color": false,
+					"glow_color": "#ffffff",
+					"invisible": false,
+					"shadow_radius": 0,
+					"shadow_strength": 1
+				},
+				"variants": {}
+			},
+			"scope": 0,
+			"uuid": "483f6e05-fa04-d46b-a36b-6530fe9d3a85",
+			"type": "animated_java:text_display"
 		}
 	],
 	"groups": [
@@ -1271,7 +1385,10 @@
 						"4e1328a4-7b35-0738-bebf-d5366c6b5b4f",
 						"d72c67f0-2e29-d787-1e47-9eecd0d19799",
 						"1d42e3f8-19ee-bf07-fd0b-28fe3e44877c",
-						"ef11bc42-2b8d-f574-45ea-f5eb20bd1a98"
+						"ef11bc42-2b8d-f574-45ea-f5eb20bd1a98",
+						"64be9409-6fbf-df81-d638-543d6c5eb1d2",
+						"789ee0f5-3d13-fb5d-35f1-d44b75db8515",
+						"483f6e05-fa04-d46b-a36b-6530fe9d3a85"
 					]
 				}
 			]
@@ -4989,7 +5106,7 @@
 			"override": false,
 			"length": 6,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": true,
 			"path": "",
 			"scope": 0,
