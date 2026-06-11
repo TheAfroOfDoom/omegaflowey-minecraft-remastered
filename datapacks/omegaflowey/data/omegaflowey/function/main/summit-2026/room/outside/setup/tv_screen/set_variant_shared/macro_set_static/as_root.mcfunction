@@ -1,7 +1,7 @@
-playsound omega-flowey:decorative.static ambient @a[distance=..64] ~ ~ ~ 4
-
 # Don't switch to day/night variant if in the middle of another animation
 execute unless entity @s[tag=!is_active_death_animation, tag=!is_now_playing] run return 0
+
+playsound omega-flowey:decorative.static ambient @a[distance=..64] ~ ~ ~ 4
 
 # Check current time of day and play set_variant_day/night accordingly
 execute store result score @s omegaflowey.math.0 run time query minecraft:day

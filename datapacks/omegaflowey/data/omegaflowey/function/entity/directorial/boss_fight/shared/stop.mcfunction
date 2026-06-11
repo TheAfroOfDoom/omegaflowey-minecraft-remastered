@@ -6,6 +6,7 @@ function omegaflowey:main/telemetry/bossfight/tag/end { name: "bossfight.summit"
 function omegaflowey:main/telemetry/bossfight/tag/root/end
 
 schedule clear omegaflowey:entity/directorial/boss_fight/summit-2026/phase/cutscene/terminate/scheduled
+schedule clear omegaflowey:main/summit-2026/room/outside/setup/tv_screen/now_playing/scheduled_start
 
 function omegaflowey:entity/remove_animated_java_models/boss_fight
 # TAG_SUMMIT_2026_HARDCODED_ARENA_VOLUME
