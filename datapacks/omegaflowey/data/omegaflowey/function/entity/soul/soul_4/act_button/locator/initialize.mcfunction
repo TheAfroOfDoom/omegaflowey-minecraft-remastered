@@ -12,6 +12,7 @@ data merge entity @s { \
   response: true, \
   data: { \
     summit_interactable: { \
+      on_left_click: "execute on target run function omegaflowey:entity/player/interacted/with_soul_act_button_locator", \
       on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_soul_act_button_locator" \
     } \
   } \

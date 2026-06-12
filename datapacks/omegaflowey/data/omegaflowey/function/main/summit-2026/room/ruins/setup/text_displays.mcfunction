@@ -39,6 +39,7 @@ summon minecraft:interaction 97.0 51.375 -14.5 { \
   response: true, \
   data: { \
     summit_interactable: { \
+      on_left_click: "execute on target run function omegaflowey:entity/player/interacted/with_join_queue", \
       on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_join_queue" \
     } \
   } \
@@ -512,6 +513,7 @@ summon minecraft:interaction 94.25 52.3125 -27.25 { \
   response: true, \
   data: { \
     summit_interactable: { \
+      on_left_click: "execute on target run function omegaflowey:entity/player/interacted/with_github_description", \
       on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_github_description" \
     } \
   } \
@@ -571,6 +573,7 @@ summon minecraft:interaction 94.25 51.6875 -27.25 { \
   response: true, \
   data: { \
     summit_interactable: { \
+      on_left_click: "execute on target run function omegaflowey:entity/player/interacted/with_feedback_form_link", \
       on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_feedback_form_link" \
     } \
   } \
@@ -633,6 +636,7 @@ summon minecraft:interaction 100.875 55.6875 -5.5 { \
   response: true, \
   data: { \
     summit_interactable: { \
+      on_left_click: "execute on target run function omegaflowey:entity/player/interacted/with_animated_java_link", \
       on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_animated_java_link" \
     } \
   } \
@@ -730,6 +734,7 @@ summon minecraft:interaction 108.0 54.4375 -14.4375 { \
   response: true, \
   data: { \
     summit_interactable: { \
+      on_left_click: "execute on target run function omegaflowey:entity/player/interacted/with_back_cave_github_link", \
       on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_back_cave_github_link" \
     } \
   } \

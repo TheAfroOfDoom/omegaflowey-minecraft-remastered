@@ -38,6 +38,7 @@ summon minecraft:interaction 101.0 21.375 9.0 { \
   response: true, \
   data: { \
     summit_interactable: { \
+      on_left_click: "execute on target run function omegaflowey:entity/player/interacted/with_join_queue_2", \
       on_right_click: "execute on target run function omegaflowey:entity/player/interacted/with_join_queue_2" \
     } \
   } \
