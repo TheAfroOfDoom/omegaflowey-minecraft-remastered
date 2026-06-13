@@ -14,6 +14,8 @@ function aj:omegaflowey_tv_screen/as_node { \
   command: 'function omegaflowey:main/summit-2026/room/outside/setup/tv_screen/now_playing/macro/as_player_name_node with storage omegaflowey:bossfight', \
 }
 
+playsound omega-flowey:decorative.soul.show ambient @a[distance=..64] ~ ~ ~ 4
+
 schedule function omegaflowey:main/summit-2026/room/outside/setup/tv_screen/reset_variant 100t replace
 tag @s add is_now_playing
 
