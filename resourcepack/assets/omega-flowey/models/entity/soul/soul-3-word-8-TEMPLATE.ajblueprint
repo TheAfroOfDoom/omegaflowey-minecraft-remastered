@@ -1790,6 +1790,63 @@
 			},
 			"type": "cube",
 			"uuid": "6c5c666a-5c88-f44e-d637-0ac527a13328"
+		},
+		{
+			"name": "locator",
+			"position": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"scope": 0,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "04f3c90b-3806-4de4-b9f0-7395440b4e30",
+			"type": "locator"
+		},
+		{
+			"name": "locator2",
+			"position": [28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"scope": 0,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "884dc35f-3f8c-8032-d419-0954e303f080",
+			"type": "locator"
+		},
+		{
+			"name": "locator3",
+			"position": [-28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"scope": 0,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "ce58438f-0832-4504-26e9-13a38f4284bd",
+			"type": "locator"
 		}
 	],
 	"groups": [
@@ -1822,7 +1879,7 @@
 			"visibility": true,
 			"autouv": 0,
 			"isOpen": true,
-			"primary_selected": false
+			"primary_selected": true
 		},
 		{
 			"name": "player_reference",
@@ -1967,7 +2024,10 @@
 						"9d47659e-d074-3351-387b-a13307566536",
 						"6c5c666a-5c88-f44e-d637-0ac527a13328"
 					]
-				}
+				},
+				"04f3c90b-3806-4de4-b9f0-7395440b4e30",
+				"884dc35f-3f8c-8032-d419-0954e303f080",
+				"ce58438f-0832-4504-26e9-13a38f4284bd"
 			]
 		},
 		{
@@ -2147,7 +2207,7 @@
 			"override": false,
 			"length": 5,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": true,
 			"path": "",
 			"scope": 0,
