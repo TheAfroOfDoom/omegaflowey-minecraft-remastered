@@ -6751,6 +6751,63 @@
 			},
 			"type": "cube",
 			"uuid": "c4a8c702-4470-c525-82cc-00dd396ecfaf"
+		},
+		{
+			"name": "locator",
+			"position": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"scope": 0,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "8f44be34-7b4f-b0c3-72f8-351810ffb5af",
+			"type": "locator"
+		},
+		{
+			"name": "locator2",
+			"position": [28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"scope": 0,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "4104810b-3552-7eaf-46ee-1aedb63e5c49",
+			"type": "locator"
+		},
+		{
+			"name": "locator3",
+			"position": [-28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"scope": 0,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "12dae6bc-7fde-d958-a605-7afc499ff3fa",
+			"type": "locator"
 		}
 	],
 	"groups": [
@@ -6874,8 +6931,8 @@
 			"mirror_uv": false,
 			"visibility": true,
 			"autouv": 0,
-			"isOpen": false,
-			"primary_selected": true
+			"isOpen": true,
+			"primary_selected": false
 		}
 	],
 	"outliner": [
@@ -6961,7 +7018,7 @@
 		},
 		{
 			"uuid": "d4796fea-535a-7902-4b09-6b63699b9238",
-			"isOpen": false,
+			"isOpen": true,
 			"children": [
 				"5a50ed37-0be1-1bb1-bf7c-da8d130b2e5d",
 				"27134e35-0be9-3b31-dfbd-d52b8982cde2",
@@ -7037,7 +7094,10 @@
 				"041b0c57-22dd-5238-008a-0b2ef835feb2",
 				"5b9ba686-2b7f-6b7c-a6dd-6f68e41031b8",
 				"2b028a5d-89fd-4217-3cd0-9eddf6ea7e2c",
-				"77ee89ac-f167-58b9-3dce-b2be6b6026ee"
+				"77ee89ac-f167-58b9-3dce-b2be6b6026ee",
+				"8f44be34-7b4f-b0c3-72f8-351810ffb5af",
+				"4104810b-3552-7eaf-46ee-1aedb63e5c49",
+				"12dae6bc-7fde-d958-a605-7afc499ff3fa"
 			]
 		},
 		{
@@ -7290,6 +7350,24 @@
 				"1118629d-a50d-28b0-aa38-eb72fe117c31": {
 					"name": "boneref1",
 					"type": "bone",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				},
+				"8f44be34-7b4f-b0c3-72f8-351810ffb5af": {
+					"name": "locator",
+					"type": "locator",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				},
+				"4104810b-3552-7eaf-46ee-1aedb63e5c49": {
+					"name": "locator2",
+					"type": "locator",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				},
+				"12dae6bc-7fde-d958-a605-7afc499ff3fa": {
+					"name": "locator3",
+					"type": "locator",
 					"rotation_global": false,
 					"quaternion_interpolation": false
 				}

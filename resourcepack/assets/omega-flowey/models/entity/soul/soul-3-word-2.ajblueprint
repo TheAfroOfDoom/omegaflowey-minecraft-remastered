@@ -3185,6 +3185,63 @@
 			},
 			"type": "cube",
 			"uuid": "03304c6c-6179-f64d-b926-c10542f6a49a"
+		},
+		{
+			"name": "locator",
+			"position": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"scope": 0,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "214b78e7-1870-32c4-89f9-ce1d2b5c220e",
+			"type": "locator"
+		},
+		{
+			"name": "locator2",
+			"position": [28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"scope": 0,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "1e06d5a3-0ca1-0ec8-6d26-8c7bf0eb6235",
+			"type": "locator"
+		},
+		{
+			"name": "locator3",
+			"position": [-28, 0, 0],
+			"rotation": [0, 0, 0],
+			"ignore_inherited_scale": false,
+			"visibility": true,
+			"locked": false,
+			"scope": 0,
+			"config": {
+				"use_entity": true,
+				"entity_type": "minecraft:interaction",
+				"sync_passenger_rotation": false,
+				"on_summon_function": "function omegaflowey:entity/soul/soul_3/bullet/initialize/locator\n\n",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"uuid": "e2e25c3c-0238-97c6-a570-5346682239bc",
+			"type": "locator"
 		}
 	],
 	"groups": [
@@ -3319,7 +3376,10 @@
 				"8e6e3a5b-57ec-4edf-9a2e-a6d7419abd5f",
 				"aa154596-0d4b-d1a2-a7d3-11f896b9333e",
 				"5b65593e-ba6b-625c-bfc5-2c0fc30c95ee",
-				"b22efc4c-faf5-c258-c48d-bce97e5a7842"
+				"b22efc4c-faf5-c258-c48d-bce97e5a7842",
+				"214b78e7-1870-32c4-89f9-ce1d2b5c220e",
+				"1e06d5a3-0ca1-0ec8-6d26-8c7bf0eb6235",
+				"e2e25c3c-0238-97c6-a570-5346682239bc"
 			]
 		},
 		{
@@ -3572,6 +3632,24 @@
 				"1118629d-a50d-28b0-aa38-eb72fe117c31": {
 					"name": "boneref1",
 					"type": "bone",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				},
+				"214b78e7-1870-32c4-89f9-ce1d2b5c220e": {
+					"name": "locator",
+					"type": "locator",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				},
+				"1e06d5a3-0ca1-0ec8-6d26-8c7bf0eb6235": {
+					"name": "locator2",
+					"type": "locator",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				},
+				"e2e25c3c-0238-97c6-a570-5346682239bc": {
+					"name": "locator3",
+					"type": "locator",
 					"rotation_global": false,
 					"quaternion_interpolation": false
 				}
