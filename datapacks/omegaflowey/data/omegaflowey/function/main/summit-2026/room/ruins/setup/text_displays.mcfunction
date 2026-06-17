@@ -816,7 +816,7 @@ summon minecraft:text_display 88.5 52.5 -26.9375 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: { "text": "Get hit 5 times\nor less", "color": "light_purple" }, \
+  text: { "text": "Get hit 7 times\nor less", "color": "light_purple" }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
