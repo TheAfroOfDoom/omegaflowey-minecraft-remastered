@@ -3,6 +3,7 @@ const { lstatSync, readFileSync, writeFileSync } = require('fs');
 const { globSync } = require('glob');
 
 const setInterpolationDurationZeroAllFrames = ({ datapackRootDir }) => {
+  // model, animation, [excluded bones]
   const stepAnimations = [
     ['omegaflowey_arm_vine', 'omegaflowey_intro_shake'],
     ['omegaflowey_arm_vine_right', 'omegaflowey_intro_shake'],
@@ -10,6 +11,11 @@ const setInterpolationDurationZeroAllFrames = ({ datapackRootDir }) => {
     ['omegaflowey_petal_pipe_circle_simplified', 'omegaflowey_intro_shake'],
     ['omegaflowey_petal_pipe_middle_simplified', 'omegaflowey_intro_shake'],
     ['omegaflowey_tv_screen', 'omegaflowey_intro_shake'],
+    [
+      'omegaflowey_tv_screen',
+      'omegaflowey_winner',
+      ['box', 'screen', 'winner_title', 'winner_player_head'],
+    ],
     ['omegaflowey_upper_eye', 'omegaflowey_intro_shake'],
     ['omegaflowey_nose', 'omegaflowey_nose_move_slow_shake'],
     ['omegaflowey_soul', 'omegaflowey_shake'],
@@ -31,7 +37,7 @@ const setInterpolationDurationZeroAllFrames = ({ datapackRootDir }) => {
     ['omegaflowey_soul_4_bullet', 'omegaflowey_idle'],
   ];
 
-  for (const [namespace, animation] of stepAnimations) {
+  for (const [namespace, animation, excludedBones = []] of stepAnimations) {
     const dir = `${datapackRootDir}/function/${namespace}/animations/${animation}`;
     process.stdout.write(
       chalk.gray(`${namespace}/animations/${animation} ... `),
@@ -45,7 +51,9 @@ const setInterpolationDurationZeroAllFrames = ({ datapackRootDir }) => {
       const content = readFileSync(frameFile, 'utf8');
       const lines = content.split('\n');
       const fixedLines = lines.map((line) => {
-        if (line.endsWith('interpolation_duration: 1}')) {
+        if (excludedBones.some((bone) => line.includes(`$(${bone})`))) {
+          return line;
+        } else if (line.endsWith('interpolation_duration: 1}')) {
           numChanges += 1;
           return line.replace(
             /interpolation_duration: 1}$/,

@@ -1,5 +1,5 @@
 # Don't switch to day/night variant if in the middle of another animation
-execute unless entity @s[tag=!is_active_death_animation, tag=!is_now_playing] run return 0
+execute unless entity @s[tag=!is_active_death_animation, tag=!is_now_playing, tag=!is_winner_animation] run return 0
 
 playsound omega-flowey:decorative.static ambient @a[distance=..64] ~ ~ ~ 4
 
