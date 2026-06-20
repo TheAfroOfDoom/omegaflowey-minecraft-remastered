@@ -12,6 +12,9 @@ execute unless score #omegaflowey.bossfight.player_hit_count omegaflowey.global.
 execute if score #omegaflowey.bossfight.player_heal_count omegaflowey.global.flag matches 7.. run \
   function omegaflowey:entity/directorial/boss_fight/shared/stop/as_active_player/won/give_reward_hat_heal_items
 
+# Play WINNER animation on outside tvscreen
+function omegaflowey:entity/directorial/boss_fight/shared/stop/as_active_player/won/play_winner_animation_outside_tvscreen
+
 # Play custom item pickup sound
 stopsound @s player minecraft:entity.item.pickup
 playsound omega-flowey:player.get-item player @s ~ ~ ~ 10
