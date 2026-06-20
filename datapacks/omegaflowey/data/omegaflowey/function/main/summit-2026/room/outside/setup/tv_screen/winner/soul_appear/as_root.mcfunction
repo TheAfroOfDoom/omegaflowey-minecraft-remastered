@@ -1,4 +1,4 @@
-playsound omega-flowey:decorative.soul.show ambient @a[distance=..64] ~ ~ ~ 4
+playsound omega-flowey:decorative.soul.show ambient @a[distance=..64] ~ ~ ~ 3
 
 scoreboard players add #omegaflowey.decorative.tvscreen.winner.soul_idx omegaflowey.global.flag 1
 

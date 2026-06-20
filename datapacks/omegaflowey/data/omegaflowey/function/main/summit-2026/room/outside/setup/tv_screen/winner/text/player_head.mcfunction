@@ -1,4 +1,4 @@
-playsound omega-flowey:decorative.soul.show ambient @a[distance=..64] ~ ~ ~ 4
+playsound omega-flowey:decorative.soul.show ambient @a[distance=..64] ~ ~ ~ 3
 
 function aj:omegaflowey_tv_screen/as_node { \
   name: 'winner_player_head', \
