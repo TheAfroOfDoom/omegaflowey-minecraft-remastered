@@ -4,7 +4,7 @@ function omegaflowey:entity/directorial/boss_fight/summit-2026/origin/at/y { \
 }
 
 # Play animation if we just stopped falling
-execute unless entity @s[tag=is_done_falling] run function aj:omegaflowey_bomb/animations/omegaflowey_explode/play
+execute unless entity @s[tag=is_done_falling] run function aj:omegaflowey_bomb/animations/omegaflowey_explode/play_exclusive
 execute unless entity @s[tag=is_done_falling] run function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: \
   'execute at @s run function omegaflowey:entity/hostile/omega-flowey/attack/bomb/bullet/loop/stop_falling/as_player_once' \
 }

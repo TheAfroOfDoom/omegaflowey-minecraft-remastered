@@ -5,7 +5,7 @@ execute if score @s omegaflowey.attack.clock.i matches 0 run \
   }
 
 # Start animation
-execute if score @s omegaflowey.attack.clock.i matches 0 run function aj:omegaflowey_housefly/animations/omegaflowey_shrink/play
+execute if score @s omegaflowey.attack.clock.i matches 0 run function aj:omegaflowey_housefly/animations/omegaflowey_shrink/play_exclusive
 
 # Move forward until done shrinking
 execute if score @s omegaflowey.attack.clock.i matches ..3 run function omegaflowey:entity/hostile/omega-flowey/attack/flies/bullet/loop/move

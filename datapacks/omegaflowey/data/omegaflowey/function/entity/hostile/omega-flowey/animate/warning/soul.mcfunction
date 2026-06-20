@@ -1,1 +1,1 @@
-function aj:omegaflowey_soul/animations/omegaflowey_shake/play
+function aj:omegaflowey_soul/animations/omegaflowey_shake/play_exclusive

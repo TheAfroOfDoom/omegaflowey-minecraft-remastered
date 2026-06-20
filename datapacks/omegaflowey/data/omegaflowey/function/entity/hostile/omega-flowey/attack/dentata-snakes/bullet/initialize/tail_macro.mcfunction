@@ -1,5 +1,5 @@
 ## Begin animation
-$function aj:omegaflowey_dentata_snake_ball/animations/omegaflowey_roll_scale_$(scale_rounded)/play
+$function aj:omegaflowey_dentata_snake_ball/animations/omegaflowey_roll_scale_$(scale_rounded)/play_exclusive
 
 # Print error if there is no matching function (and as a result the animation tag isn't added)
 # animation tag is e.g.: `aj.omegaflowey_dentata_snake_ball.animation.omegaflowey_roll_scale_50.playing`

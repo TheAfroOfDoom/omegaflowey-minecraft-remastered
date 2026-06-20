@@ -1,5 +1,5 @@
 # Start animation
-function aj:omegaflowey_venus_fly_trap/animations/omegaflowey_chomp/play
+function aj:omegaflowey_venus_fly_trap/animations/omegaflowey_chomp/play_exclusive
 
 # Play sound (and stop old ones)
 function omegaflowey:entity/shared/run_as_active_player_or_spectator { command: \

@@ -1,2 +1,2 @@
-function aj:omegaflowey_petal_pipe_circle_simplified/animations/omegaflowey_float_disabled/play
+function aj:omegaflowey_petal_pipe_circle_simplified/animations/omegaflowey_float_disabled/play_exclusive
 function aj:omegaflowey_petal_pipe_circle_simplified/variants/disabled/apply
