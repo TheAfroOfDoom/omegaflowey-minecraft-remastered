@@ -6,4 +6,4 @@ execute store result score @s reef.zzzinternals.screen.slideshow.pages run data 
 scoreboard players set @s reef.zzzinternals.screen.slideshow.switch_to_page 0
 function reef:zzzinternals/screen/load_page
 function reef:zzzinternals/screen/transition_to_page
-tellraw @a[tag=reef.permissions.see_debug] [['', {'text': '[', 'color': '#6e3787'}, {'text': 'reef', 'color': '#ed2de3'}, {'text': '] ', 'color': '#6e3787'}], [{'text': '', 'color': '#77d6ff'}, 'Successfuly loaded slideshow data to screen ID #', {'score': {'name': '@s', 'objective': 'reef.zzzinternals.screen.id'}}]]
+tellraw @a[tag=reef.permissions.see_debug, tag=reef.player.remote_user.temp] [['', {'text': '[', 'color': '#6e3787'}, {'text': 'reef', 'color': '#ed2de3'}, {'text': '] ', 'color': '#6e3787'}], [{'text': '', 'color': '#77d6ff'}, 'Successfuly loaded slideshow data to screen ID #', {'score': {'name': '@s', 'objective': 'reef.zzzinternals.screen.id'}}, {'text': ' (hover for more info)', 'color': 'dark_gray', 'hover_event': {'action': 'show_text', 'value': ['Screen position: ', {'entity': '@s', 'nbt': 'Pos'}]}}]]

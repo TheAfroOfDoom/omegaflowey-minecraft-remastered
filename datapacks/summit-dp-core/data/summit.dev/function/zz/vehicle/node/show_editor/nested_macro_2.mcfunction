@@ -1,0 +1,1 @@
+$data modify storage summit.vehicles:temp dialog.body.contents[-1] append value {text: "[+]\n", color: "green", click_event: {action: "run_command", command: 'function summit.dev:zz/vehicle/node/add_entry {uuid: "$(uuid)", path: "node.effects", value: {type: "wait", duration: 20}}'}, hover_event: {action: "show_text", value: "Adds an effect"}}

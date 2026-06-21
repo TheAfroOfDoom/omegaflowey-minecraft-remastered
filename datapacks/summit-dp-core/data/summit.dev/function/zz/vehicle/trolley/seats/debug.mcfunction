@@ -1,0 +1,14 @@
+particle happy_villager ^0.5 ^1 ^1.5 0 0 0 0 1 force @a
+particle happy_villager ^1.5 ^1 ^1.5 0 0 0 0 1 force @a
+particle happy_villager ^0.5 ^1 ^3.4 0 0 0 0 1 force @a
+particle happy_villager ^1.5 ^1 ^3.4 0 0 0 0 1 force @a
+particle happy_villager ^-1.5 ^1 ^ 0 0 0 0 1 force @a
+particle happy_villager ^-1.5 ^1 ^1.0 0 0 0 0 1 force @a
+particle happy_villager ^-1.5 ^1 ^2.0 0 0 0 0 1 force @a
+particle happy_villager ^-0.5 ^1 ^-1.5 0 0 0 0 1 force @a
+particle happy_villager ^-1.5 ^1 ^-1.5 0 0 0 0 1 force @a
+particle happy_villager ^-0.5 ^1 ^-3.4 0 0 0 0 1 force @a
+particle happy_villager ^-1.5 ^1 ^-3.4 0 0 0 0 1 force @a
+particle happy_villager ^1.5 ^1 ^ 0 0 0 0 1 force @a
+particle happy_villager ^1.5 ^1 ^-1.0 0 0 0 0 1 force @a
+particle happy_villager ^1.5 ^1 ^-2.0 0 0 0 0 1 force @a

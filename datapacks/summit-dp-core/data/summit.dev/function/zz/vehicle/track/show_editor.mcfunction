@@ -1,4 +1,4 @@
-data modify storage summit.vehicles:temp dialog set value {type: "minecraft:multi_action", title: "", body: {type: "minecraft:plain_message", contents: [""]}, inputs: [], actions: [{label: "Close"}]}
+data modify storage summit.vehicles:temp dialog set value {type: "minecraft:multi_action", title: "", body: {type: "minecraft:plain_message", contents: [""], width: 350}, inputs: [], actions: [{label: "Close"}]}
 function summit.dev:zz/vehicle/track/show_editor/nested_macro_0 with storage summit.vehicles:temp track
 data modify storage summit.vehicles:temp dialog.body.contents append value [{text: "-----", bold: true, color: "gray"}, "\n\n", "Path\n\n"]
 execute store result score #len summit.temp run data get storage summit.vehicles:temp track.path

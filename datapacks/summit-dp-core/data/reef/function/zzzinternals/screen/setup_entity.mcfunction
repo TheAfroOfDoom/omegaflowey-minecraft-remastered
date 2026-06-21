@@ -1,6 +1,5 @@
 tag @s add reef.entity
 tag @s add reef.screen
-tag @s add summit.static
 function reef:zzzinternals/id/screen
 rotate @s ~ ~
 execute at @s summon item_display run function reef:zzzinternals/screen/display/transition/setup

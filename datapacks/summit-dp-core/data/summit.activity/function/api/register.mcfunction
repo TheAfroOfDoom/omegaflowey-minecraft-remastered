@@ -1,0 +1,3 @@
+$data modify storage summit.activity:temp data set value {id: "$(booth_id).$(activity_id)", booth_id: "$(booth_id)", booth_name: "$(booth_name)", activity_id: "$(activity_id)", activity_name: "$(activity_name)", player_count: $(player_count), start_function: "$(start_function)"}
+$execute as @n[tag=summit.activity.$(booth_id).$(activity_id), type=marker] run return run function summit.activity:zz/register/update with storage summit.activity:temp data
+execute summon marker run return run function summit.activity:zz/register/create with storage summit.activity:temp data
