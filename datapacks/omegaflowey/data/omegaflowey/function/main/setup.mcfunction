@@ -3,6 +3,7 @@
 function omegaflowey:main/setup/objectives
 function omegaflowey:main/setup/const
 # function omegaflowey:main/setup/gamerules
+function omegaflowey:main/setup/queue
 
 scoreboard players set #omegaflowey.telemetry.enabled omegaflowey.global.flag 1
 function omegaflowey:main/telemetry/setup

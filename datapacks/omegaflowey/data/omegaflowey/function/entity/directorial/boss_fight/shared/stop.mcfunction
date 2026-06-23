@@ -27,5 +27,7 @@ $execute as $(active_player_uuid) at @s run function omegaflowey:entity/director
 function omegaflowey:entity/directorial/boss_fight/summit-2026/phase/attack/initialize/disable_soul_event_3_barriers
 
 function omegaflowey:main/summit-2026/room/ruins/active_player_display/update_value with storage omegaflowey:bossfight
-# prompt next player in queue
-function omegaflowey:entity/directorial/boss_fight/summit-2026/player/queue/check_should_prompt
+# # prompt next player in queue
+# function omegaflowey:entity/directorial/boss_fight/summit-2026/player/queue/check_should_prompt
+
+function summit.activity:api/end_activity {booth_id: "omegaflowey", activity_id: "bossfight"}
