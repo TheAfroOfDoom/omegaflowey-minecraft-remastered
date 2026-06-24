@@ -31,7 +31,8 @@ summon minecraft:item_frame 97 48 -10 { Tags: ["omega-flowey-remastered", "decor
 execute positioned 98 33 -11 run \
   function summit.climbing:create_path/init { \
     camera_distance: 2.5, \
-    sound: "playsound omega-flowey:decorative.climb player @a[distance=..16] ~ ~ ~ 1 1.15" \
+    movement_cooldown: 6, \
+    sound: "playsound omega-flowey:decorative.climb player @a[distance=..16] ~ ~ ~ 1", \
   }
 
 kill @e[ \
@@ -59,7 +60,8 @@ summon minecraft:item_frame 100 30 -1 { Tags: ["omega-flowey-remastered", "decor
 execute positioned 101 21 0 run \
   function summit.climbing:create_path/init { \
     camera_distance: 3.5, \
-    sound: "playsound omega-flowey:decorative.climb player @a[distance=..16] ~ ~ ~ 1 1.15" \
+    movement_cooldown: 6, \
+    sound: "playsound omega-flowey:decorative.climb player @a[distance=..16] ~ ~ ~ 1" \
   }
 
 kill @e[ \
