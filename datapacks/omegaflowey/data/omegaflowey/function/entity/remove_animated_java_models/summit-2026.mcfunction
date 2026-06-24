@@ -1,5 +1,8 @@
 # Summit models
 function aj:omegaflowey_balloon_bundle/remove/all
+function aj:omegaflowey_climbing_hold_0/remove/all
+function aj:omegaflowey_climbing_hold_1/remove/all
+function aj:omegaflowey_climbing_hold_2/remove/all
 function aj:omegaflowey_flowercontributor/remove/all
 function aj:omegaflowey_red_ruins_leaves_0/remove/all
 function aj:omegaflowey_red_ruins_leaves_1/remove/all

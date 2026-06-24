@@ -7,3 +7,7 @@ execute positioned 98.5 33.0 -10.5 rotated 180 0 run \
 function aj:omegaflowey_climbing_hold_1/remove/all
 execute positioned 101.5 21.0 0.5 rotated -90 0 run \
   function aj:omegaflowey_climbing_hold_1/summon { args: {} }
+
+function aj:omegaflowey_climbing_hold_2/remove/all
+execute positioned 98.5 42.0 -9.5 rotated 180 0 run \
+  function aj:omegaflowey_climbing_hold_2/summon { args: {} }
