@@ -6,6 +6,7 @@ give @s carved_pumpkin[ \
   minecraft:item_name=[ { "text": "Survived Omega Flowey" } ], \
   minecraft:lore=[[ { "text": "Try wearing me as a hat!", "color": "yellow" } ]], \
   minecraft:max_stack_size=99, \
+  minecraft:custom_data={ summit: { persist: {} } }, \
 ]
 
 advancement grant @s only summit.sticker_book:omegaflowey/survive
