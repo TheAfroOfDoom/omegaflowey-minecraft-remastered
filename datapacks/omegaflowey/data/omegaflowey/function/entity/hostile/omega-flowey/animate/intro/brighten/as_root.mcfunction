@@ -12,6 +12,10 @@ execute if entity @s[tag=aj.omegaflowey_large_side_vine.root] run function omega
 
 execute if entity @s[tag=aj.omegaflowey_lower_eye.root] run function aj:omegaflowey_lower_eye/animations/omegaflowey_look_around/pause
 execute if entity @s[tag=aj.omegaflowey_lower_eye.root] run function aj:omegaflowey_lower_eye/variants/default/apply
+execute if entity @s[tag=aj.omegaflowey_lower_eye.root] \
+  on passengers \
+  if entity @s[tag=aj.omegaflowey_lower_eye.bone] \
+  run function omegaflowey:entity/hostile/omega-flowey/summon/initialize/shared/bone
 
 execute if entity @s[tag=aj.omegaflowey_petal_pipe_circle_simplified.root] run \
   function aj:omegaflowey_petal_pipe_circle_simplified/animations/omegaflowey_float_and_pulsate/pause
@@ -33,3 +37,7 @@ execute \
 
 execute if entity @s[tag=aj.omegaflowey_upper_eye.root] run function aj:omegaflowey_upper_eye/animations/omegaflowey_look_around/pause
 execute if entity @s[tag=aj.omegaflowey_upper_eye.root] run function aj:omegaflowey_upper_eye/variants/default/apply
+execute if entity @s[tag=aj.omegaflowey_upper_eye.root] \
+  on passengers \
+  if entity @s[tag=aj.omegaflowey_upper_eye.bone] \
+  run function omegaflowey:entity/hostile/omega-flowey/summon/initialize/shared/bone
