@@ -5,3 +5,5 @@ data modify storage omegaflowey:bossfight bossfight_tvscreen_uuid set from stora
 
 execute on passengers if entity @s[tag=aj.omegaflowey_tv_screen.bone.box] run \
   data merge entity @s { brightness: { block: 11, sky: 0 } }
+
+execute on passengers if entity @s[tag=decorative] run kill @s
