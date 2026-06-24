@@ -11,10 +11,8 @@ execute if score #omegaflowey.soul.3.summon_word_on_east omegaflowey.soul.flag m
 # execute if score #omegaflowey.soul.3.summon_word_on_east omegaflowey.soul.flag matches 1 run \
 #   data modify storage omegaflowey:soul.3 x set value 10.5f
 
-# TODO(297): finish the remaining soul-3 word models
-execute store result storage omegaflowey:soul.3 idx int 1 run random value 0..13
-# execute store result storage omegaflowey:soul.3 idx int 1 run random value 0..14
-# data modify storage omegaflowey:soul.3 idx set value 13
+execute store result storage omegaflowey:soul.3 idx int 1 run random value 0..14
+# data modify storage omegaflowey:soul.3 idx set value 14
 
 # if words have started shaking, start animation for any new words that are summoned
 data modify storage omegaflowey:soul.3 frame set value -1
