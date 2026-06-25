@@ -116,7 +116,11 @@ const getSummitDatapackPaths = () => {
   ]);
 
   const mainPaths = prefixPaths('omegaflowey/function/main/', [
-    ...prefixPaths('setup/', ['const.mcfunction', 'objectives.mcfunction']),
+    ...prefixPaths('setup/', [
+      'const.mcfunction',
+      'objectives.mcfunction',
+      'queue.mcfunction',
+    ]),
     'summit-2026',
     'telemetry',
     'setup.mcfunction',
@@ -141,6 +145,7 @@ const getSummitDatapackPaths = () => {
       ...mainPaths,
       ...utilsPaths,
       'summit/',
+      'summit.activity/',
       'summit.booth/',
     ]),
   ]);
@@ -213,6 +218,7 @@ const getSummitResourcepackPaths = () => {
 
   const modelPaths = prefixPaths('models/entity/decorative/', [
     'balloon_soul_red_summit_2026.json',
+    'balloon_soul_trans.json',
     'housefly.json',
     ...prefixPaths('picture/', [
       'animated-java-logo.json',
@@ -266,6 +272,7 @@ const getSummitResourcepackPaths = () => {
         'snd_shakerbreaker',
         'snd_spearrise',
         'snd_swallow',
+        'snd_wing',
       ],
       '.ogg',
     ),
@@ -306,6 +313,12 @@ const getSummitResourcepackPaths = () => {
         'blank_1',
         'blank_2',
         'blank_3',
+        'blank_4',
+        'blank_5',
+        'blank_6',
+        'blank_7',
+        'blank_8',
+        'blank_9',
         'finger-gun-laser',
         'flamethrower_tip',
         'flowery',
@@ -331,6 +344,7 @@ const getSummitResourcepackPaths = () => {
 
   const decorativeTexturePaths = prefixPaths('decorative/', [
     'stickers',
+    'tvscreen',
     ...suffixPaths(
       [
         'adahy',
@@ -342,6 +356,7 @@ const getSummitResourcepackPaths = () => {
         'sunflower_front_green',
         'sunflower_front_magenta',
         'theafroofdoom',
+        'trns',
         ...prefixPaths('picture/', [
           'flowey-build-scaled-min-2026',
           'legacy-command-blocks-scaled-min',
