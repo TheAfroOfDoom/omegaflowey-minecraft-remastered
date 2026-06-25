@@ -176,4 +176,7 @@ scoreboard objectives add omegaflowey.player.summit.has_fought_flowey dummy
 scoreboard objectives add omegaflowey.player.summit.has_finished_parkour dummy
 scoreboard objectives add omegaflowey.player.summit.has_joined_queue_before dummy
 scoreboard objectives add omegaflowey.player.summit.has_survived_flowey dummy
+scoreboard objectives add omegaflowey.player.summit.has_survived_flowey_basic dummy
+scoreboard objectives add omegaflowey.player.summit.has_survived_flowey_low_hits dummy
+scoreboard objectives add omegaflowey.player.summit.has_survived_flowey_heal_items dummy
 scoreboard objectives add omegaflowey.player.summit.has_visited_booth dummy

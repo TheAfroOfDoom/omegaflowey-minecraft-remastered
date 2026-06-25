@@ -55,3 +55,18 @@ execute unless score #omegaflowey.telemetry.stats.total_wins omegaflowey.global.
   scoreboard players set #omegaflowey.telemetry.stats.total_wins omegaflowey.global.flag 0
 execute unless score #omegaflowey.telemetry.stats.total_distinct_wins omegaflowey.global.flag matches 0.. run \
   scoreboard players set #omegaflowey.telemetry.stats.total_distinct_wins omegaflowey.global.flag 0
+
+execute unless score #omegaflowey.telemetry.stats.total_wins_survive omegaflowey.global.flag matches 0.. run \
+  scoreboard players set #omegaflowey.telemetry.stats.total_wins_survive omegaflowey.global.flag 0
+execute unless score #omegaflowey.telemetry.stats.total_distinct_wins_survive omegaflowey.global.flag matches 0.. run \
+  scoreboard players set #omegaflowey.telemetry.stats.total_distinct_wins_survive omegaflowey.global.flag 0
+
+execute unless score #omegaflowey.telemetry.stats.total_wins_low_hits omegaflowey.global.flag matches 0.. run \
+  scoreboard players set #omegaflowey.telemetry.stats.total_wins_low_hits omegaflowey.global.flag 0
+execute unless score #omegaflowey.telemetry.stats.total_distinct_wins_low_hits omegaflowey.global.flag matches 0.. run \
+  scoreboard players set #omegaflowey.telemetry.stats.total_distinct_wins_low_hits omegaflowey.global.flag 0
+
+execute unless score #omegaflowey.telemetry.stats.total_wins_heal_items omegaflowey.global.flag matches 0.. run \
+  scoreboard players set #omegaflowey.telemetry.stats.total_wins_heal_items omegaflowey.global.flag 0
+execute unless score #omegaflowey.telemetry.stats.total_distinct_wins_heal_items omegaflowey.global.flag matches 0.. run \
+  scoreboard players set #omegaflowey.telemetry.stats.total_distinct_wins_heal_items omegaflowey.global.flag 0

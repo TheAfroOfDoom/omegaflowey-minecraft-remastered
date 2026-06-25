@@ -27,10 +27,31 @@ function omegaflowey:utils/log/self { text_component: [ \
   { "text": ")", "color": "gold" }, \
   "\n", \
 \
-  { "text": "wins: ", "color": "yellow" }, \
+  { "text": "wins (total): ", "color": "yellow" }, \
   { "score": { "name": "#omegaflowey.telemetry.stats.total_wins", "objective": "omegaflowey.global.flag" } }, \
   { "text": " (distinct players: ", "color": "gold" }, \
   { "score": { "name": "#omegaflowey.telemetry.stats.total_distinct_wins", "objective": "omegaflowey.global.flag" } }, \
+  { "text": ")", "color": "gold" }, \
+  "\n", \
+\
+  { "text": "wins (survive): ", "color": "yellow" }, \
+  { "score": { "name": "#omegaflowey.telemetry.stats.total_wins_survive", "objective": "omegaflowey.global.flag" } }, \
+  { "text": " (distinct players: ", "color": "gold" }, \
+  { "score": { "name": "#omegaflowey.telemetry.stats.total_distinct_wins_survive", "objective": "omegaflowey.global.flag" } }, \
+  { "text": ")", "color": "gold" }, \
+  "\n", \
+\
+  { "text": "wins (low-hits): ", "color": "yellow" }, \
+  { "score": { "name": "#omegaflowey.telemetry.stats.total_wins_low_hits", "objective": "omegaflowey.global.flag" } }, \
+  { "text": " (distinct players: ", "color": "gold" }, \
+  { "score": { "name": "#omegaflowey.telemetry.stats.total_distinct_wins_low_hits", "objective": "omegaflowey.global.flag" } }, \
+  { "text": ")", "color": "gold" }, \
+  "\n", \
+\
+  { "text": "wins (heal-items): ", "color": "yellow" }, \
+  { "score": { "name": "#omegaflowey.telemetry.stats.total_wins_heal_items", "objective": "omegaflowey.global.flag" } }, \
+  { "text": " (distinct players: ", "color": "gold" }, \
+  { "score": { "name": "#omegaflowey.telemetry.stats.total_distinct_wins_heal_items", "objective": "omegaflowey.global.flag" } }, \
   { "text": ")", "color": "gold" }, \
   "\n", \
 \
