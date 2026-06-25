@@ -30,7 +30,7 @@ const main = async () => {
     const model = JSON.parse(content);
 
     let count = 0;
-    let nextBones = model.outliner.filter((bone) => bone.export);
+    let nextBones = model.groups.filter((bone) => bone.export);
 
     while (nextBones.length > 0) {
       count += nextBones.length;
