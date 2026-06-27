@@ -1743,37 +1743,6 @@
 		},
 		{
 			"name": "vine",
-			"uuid": "74ca7463-9ab1-c15c-cbc5-226ec928423e",
-			"export": true,
-			"locked": false,
-			"scope": 0,
-			"selected": false,
-			"_static": {
-				"properties": {},
-				"temp_data": {}
-			},
-			"origin": [0, 0, 0],
-			"rotation": [0, 0, 0],
-			"color": 0,
-			"onSummonFunction": "",
-			"configs": {
-				"default": {},
-				"variants": {}
-			},
-			"itemModelProperties": {
-				"tints": []
-			},
-			"children": [],
-			"reset": false,
-			"shade": true,
-			"mirror_uv": false,
-			"visibility": true,
-			"autouv": 0,
-			"isOpen": true,
-			"primary_selected": false
-		},
-		{
-			"name": "bone",
 			"uuid": "a715c830-7844-c0b9-9396-94412db7cf2f",
 			"export": true,
 			"locked": false,
@@ -1801,10 +1770,10 @@
 			"visibility": true,
 			"autouv": 0,
 			"isOpen": false,
-			"primary_selected": false
+			"primary_selected": true
 		},
 		{
-			"name": "bone1",
+			"name": "vine1",
 			"uuid": "8a2fc865-bde6-a67b-8b00-6cb1bd11a1c9",
 			"export": true,
 			"locked": false,
@@ -1835,7 +1804,7 @@
 			"primary_selected": false
 		},
 		{
-			"name": "bone2",
+			"name": "vine2",
 			"uuid": "dfb4732c-b75e-8c14-0b33-170be98c1cac",
 			"export": true,
 			"locked": false,
@@ -1866,7 +1835,7 @@
 			"primary_selected": false
 		},
 		{
-			"name": "bone3",
+			"name": "vine3",
 			"uuid": "0cd81a9e-687a-74ba-737e-395c3a23359d",
 			"export": true,
 			"locked": false,
@@ -1897,7 +1866,7 @@
 			"primary_selected": false
 		},
 		{
-			"name": "bone4",
+			"name": "vine4",
 			"uuid": "445b989f-9dc7-71b1-eefd-dc11d27785c9",
 			"export": true,
 			"locked": false,
@@ -1928,7 +1897,7 @@
 			"primary_selected": false
 		},
 		{
-			"name": "bone5",
+			"name": "vine5",
 			"uuid": "ae6f1d2c-2d94-46ba-76a1-60cb9214dbfe",
 			"export": true,
 			"locked": false,
@@ -1959,7 +1928,7 @@
 			"primary_selected": false
 		},
 		{
-			"name": "bone6",
+			"name": "vine6",
 			"uuid": "1c6a9118-42ba-7cf5-5417-91eb8a1f7351",
 			"export": true,
 			"locked": false,
@@ -1990,7 +1959,7 @@
 			"primary_selected": false
 		},
 		{
-			"name": "bone7",
+			"name": "vine7",
 			"uuid": "fbe3dd0f-b441-5509-bdfb-081aeb215ac8",
 			"export": true,
 			"locked": false,
@@ -2089,50 +2058,44 @@
 			"isOpen": true,
 			"children": [
 				{
-					"uuid": "74ca7463-9ab1-c15c-cbc5-226ec928423e",
-					"isOpen": true,
-					"children": [
-						{
-							"uuid": "a715c830-7844-c0b9-9396-94412db7cf2f",
-							"isOpen": false,
-							"children": ["22b396d8-db39-fa08-1aba-41f604434f99", "dcb2e14f-0331-bfb7-373f-78b209d3cf3e", "d43066b2-3cb7-7b1d-62ee-2c1c4b19128a"]
-						},
-						{
-							"uuid": "8a2fc865-bde6-a67b-8b00-6cb1bd11a1c9",
-							"isOpen": false,
-							"children": ["2863d076-93fe-09b3-f1a1-7d42fab96288"]
-						},
-						{
-							"uuid": "dfb4732c-b75e-8c14-0b33-170be98c1cac",
-							"isOpen": false,
-							"children": ["a91e2519-8e3f-bb66-1590-3e0616ff6f81"]
-						},
-						{
-							"uuid": "0cd81a9e-687a-74ba-737e-395c3a23359d",
-							"isOpen": false,
-							"children": ["a1c18d76-eb43-45bb-5dae-37e9bd4a14bd"]
-						},
-						{
-							"uuid": "445b989f-9dc7-71b1-eefd-dc11d27785c9",
-							"isOpen": false,
-							"children": ["4729d2ee-ab4d-14d2-a7ef-413b82832b23"]
-						},
-						{
-							"uuid": "ae6f1d2c-2d94-46ba-76a1-60cb9214dbfe",
-							"isOpen": false,
-							"children": ["c814dc1e-f9c3-77ed-addf-c15d6fd84d1e"]
-						},
-						{
-							"uuid": "1c6a9118-42ba-7cf5-5417-91eb8a1f7351",
-							"isOpen": false,
-							"children": ["e37f24bc-6b40-df32-0e16-67042e523d76"]
-						},
-						{
-							"uuid": "fbe3dd0f-b441-5509-bdfb-081aeb215ac8",
-							"isOpen": false,
-							"children": ["eb063749-9ee3-5ec7-6f62-d0ecdf66e2b3"]
-						}
-					]
+					"uuid": "fbe3dd0f-b441-5509-bdfb-081aeb215ac8",
+					"isOpen": false,
+					"children": ["eb063749-9ee3-5ec7-6f62-d0ecdf66e2b3"]
+				},
+				{
+					"uuid": "1c6a9118-42ba-7cf5-5417-91eb8a1f7351",
+					"isOpen": false,
+					"children": ["e37f24bc-6b40-df32-0e16-67042e523d76"]
+				},
+				{
+					"uuid": "ae6f1d2c-2d94-46ba-76a1-60cb9214dbfe",
+					"isOpen": false,
+					"children": ["c814dc1e-f9c3-77ed-addf-c15d6fd84d1e"]
+				},
+				{
+					"uuid": "445b989f-9dc7-71b1-eefd-dc11d27785c9",
+					"isOpen": false,
+					"children": ["4729d2ee-ab4d-14d2-a7ef-413b82832b23"]
+				},
+				{
+					"uuid": "0cd81a9e-687a-74ba-737e-395c3a23359d",
+					"isOpen": false,
+					"children": ["a1c18d76-eb43-45bb-5dae-37e9bd4a14bd"]
+				},
+				{
+					"uuid": "dfb4732c-b75e-8c14-0b33-170be98c1cac",
+					"isOpen": false,
+					"children": ["a91e2519-8e3f-bb66-1590-3e0616ff6f81"]
+				},
+				{
+					"uuid": "8a2fc865-bde6-a67b-8b00-6cb1bd11a1c9",
+					"isOpen": false,
+					"children": ["2863d076-93fe-09b3-f1a1-7d42fab96288"]
+				},
+				{
+					"uuid": "a715c830-7844-c0b9-9396-94412db7cf2f",
+					"isOpen": false,
+					"children": ["22b396d8-db39-fa08-1aba-41f604434f99", "dcb2e14f-0331-bfb7-373f-78b209d3cf3e", "d43066b2-3cb7-7b1d-62ee-2c1c4b19128a"]
 				},
 				{
 					"uuid": "86572ff8-472b-89ad-894e-61f0a0aaee71",
@@ -2729,7 +2692,7 @@
 					]
 				},
 				"fbe3dd0f-b441-5509-bdfb-081aeb215ac8": {
-					"name": "bone7",
+					"name": "vine7",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -3025,7 +2988,7 @@
 					]
 				},
 				"a715c830-7844-c0b9-9396-94412db7cf2f": {
-					"name": "bone",
+					"name": "vine",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -3241,7 +3204,7 @@
 					]
 				},
 				"8a2fc865-bde6-a67b-8b00-6cb1bd11a1c9": {
-					"name": "bone1",
+					"name": "vine1",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -3457,7 +3420,7 @@
 					]
 				},
 				"dfb4732c-b75e-8c14-0b33-170be98c1cac": {
-					"name": "bone2",
+					"name": "vine2",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -3785,7 +3748,7 @@
 					]
 				},
 				"0cd81a9e-687a-74ba-737e-395c3a23359d": {
-					"name": "bone3",
+					"name": "vine3",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -4065,7 +4028,7 @@
 					]
 				},
 				"445b989f-9dc7-71b1-eefd-dc11d27785c9": {
-					"name": "bone4",
+					"name": "vine4",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -4377,7 +4340,7 @@
 					]
 				},
 				"ae6f1d2c-2d94-46ba-76a1-60cb9214dbfe": {
-					"name": "bone5",
+					"name": "vine5",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -4673,7 +4636,7 @@
 					]
 				},
 				"1c6a9118-42ba-7cf5-5417-91eb8a1f7351": {
-					"name": "bone6",
+					"name": "vine6",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -4989,12 +4952,6 @@
 						}
 					]
 				},
-				"74ca7463-9ab1-c15c-cbc5-226ec928423e": {
-					"name": "vine",
-					"type": "bone",
-					"rotation_global": false,
-					"quaternion_interpolation": false
-				},
 				"b2f0d603-6bca-17f6-7554-b06aac57d785": {
 					"name": "flame",
 					"type": "bone",
@@ -5069,7 +5026,7 @@
 					]
 				},
 				"a715c830-7844-c0b9-9396-94412db7cf2f": {
-					"name": "bone",
+					"name": "vine",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -5413,7 +5370,7 @@
 					]
 				},
 				"8a2fc865-bde6-a67b-8b00-6cb1bd11a1c9": {
-					"name": "bone1",
+					"name": "vine1",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -5783,7 +5740,7 @@
 					]
 				},
 				"dfb4732c-b75e-8c14-0b33-170be98c1cac": {
-					"name": "bone2",
+					"name": "vine2",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -6175,7 +6132,7 @@
 					]
 				},
 				"0cd81a9e-687a-74ba-737e-395c3a23359d": {
-					"name": "bone3",
+					"name": "vine3",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -6567,7 +6524,7 @@
 					]
 				},
 				"445b989f-9dc7-71b1-eefd-dc11d27785c9": {
-					"name": "bone4",
+					"name": "vine4",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -6911,7 +6868,7 @@
 					]
 				},
 				"ae6f1d2c-2d94-46ba-76a1-60cb9214dbfe": {
-					"name": "bone5",
+					"name": "vine5",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -7207,7 +7164,7 @@
 					]
 				},
 				"1c6a9118-42ba-7cf5-5417-91eb8a1f7351": {
-					"name": "bone6",
+					"name": "vine6",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -7375,7 +7332,7 @@
 					]
 				},
 				"fbe3dd0f-b441-5509-bdfb-081aeb215ac8": {
-					"name": "bone7",
+					"name": "vine7",
 					"type": "bone",
 					"rotation_global": false,
 					"quaternion_interpolation": false,
@@ -7805,12 +7762,6 @@
 							"easingArgs": []
 						}
 					]
-				},
-				"74ca7463-9ab1-c15c-cbc5-226ec928423e": {
-					"name": "vine",
-					"type": "bone",
-					"rotation_global": false,
-					"quaternion_interpolation": false
 				}
 			}
 		}
