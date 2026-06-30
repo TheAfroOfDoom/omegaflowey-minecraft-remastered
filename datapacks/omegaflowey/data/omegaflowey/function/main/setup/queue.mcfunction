@@ -6,5 +6,6 @@ function summit.activity:api/register { \
   activity_name: "the bossfight", \
   activity_name_color: "green", \
   player_count: 1, \
-  start_function: "omegaflowey:entity/directorial/boss_fight/summit-2026/player/queue/prompt_next_player/show_prompt/confirm/as_summit_marker" \
+  start_function: "omegaflowey:entity/directorial/boss_fight/summit-2026/player/queue/prompt_next_player/show_prompt/confirm/as_summit_marker", \
+  abort_function: "omegaflowey:entity/directorial/boss_fight/shared/stop/macroless", \
 }
