@@ -1,7 +1,5 @@
-$tp @s ^$(x) ^1 ^$(z)
-execute unless entity @s[tag=summit.trolley.taken] run return 0
-execute if predicate summit.dev:zz/vehicle/trolley/has_player run return 1
-$data remove entity $(parent) data.taken_seats[{x: $(x), z: $(z)}]
-tag @s remove summit.trolley.taken
-$execute as $(parent) if entity @s[tag=summit.state.effects] run return 2
-execute at @s run kill @e[tag=summit.trolley.seat, distance=..0.1]
+$tp @s ^$(x) ^$(y) ^$(z)
+execute unless entity @s[tag=summit.vehicle.taken] run return 0
+execute if predicate summit.dev:vehicle/seats/has_player run return 1
+$execute as $(parent) if entity @s[tag=summit.vehicle.seats_spawned] run return run function summit.dev:zz/vehicle/trolley/tick/remove_taken
+$ride $(passenger) mount @s

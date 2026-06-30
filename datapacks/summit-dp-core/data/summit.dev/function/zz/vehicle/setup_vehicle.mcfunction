@@ -6,6 +6,6 @@ data modify storage summit.vehicles:temp second set from storage summit.vehicles
 tag @s add summit.vehicle
 scoreboard players set @s summit.vehicles.step 1
 scoreboard players set @s summit.vehicles.speed 100
-$data modify entity @s item.components."minecraft:custom_data".track_name set value "$(track_name)"
+$data modify entity @s data.track_name set value "$(track_name)"
 function summit.dev:zz/vehicle/setup_vehicle/nested_macro_0 with storage summit.vehicles:temp {}
 function summit.dev:zz/vehicle/setup_vehicle/nested_macro_1 with storage summit.vehicles:temp node.position
