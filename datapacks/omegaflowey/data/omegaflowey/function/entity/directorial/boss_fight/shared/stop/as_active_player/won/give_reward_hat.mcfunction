@@ -3,8 +3,16 @@ give @s carved_pumpkin[ \
   minecraft:damage_resistant={types:"#minecraft:is_fire"}, \
   minecraft:rarity=rare, \
   minecraft:enchantment_glint_override=false, \
-  minecraft:item_name=[ { "text": "Survived Omega Flowey" } ], \
-  minecraft:lore=[[ { "text": "Try wearing me as a hat!", "color": "yellow" } ]], \
+  minecraft:item_name=[ { "text": "Survived" } ], \
+  minecraft:lore=[ \
+    [ \
+      { "text": "\uf611", "color": "white", "italic": false, "font": "omega-flowey:custom" }, \
+      { "text": "OMEGA FLOWEY ", "color": "yellow", "italic": false, "font": "omega-flowey:determinationmono" }, \
+      { "text": "REMASTERED", "color": "aqua", "italic": false, "font": "omega-flowey:determinationmono" }, \
+    ], { "text": "" }, [ \
+      { "text": "Try wearing me as a hat!", "color": "yellow", "font": "minecraft:default" } \
+    ] \
+  ], \
   minecraft:max_stack_size=99, \
   minecraft:custom_data={ summit: { persist: {} } }, \
 ]
