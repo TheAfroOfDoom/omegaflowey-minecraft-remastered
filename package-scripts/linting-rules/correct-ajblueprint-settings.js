@@ -207,6 +207,18 @@ const checkTags = (model) => {
   return errors;
 };
 
+const checkTargetMinecraftVersion = (model) => {
+  const expected = '26.2';
+  const actual = model.blueprint_settings.target_minecraft_version;
+  if (actual === expected) {
+    return [];
+  }
+
+  let error = `incorrect ${chalk.blue('target_minecraft_version')}; `;
+  error += `was \`${actual ?? 'undefined'}\`, expected \`${expected}\``;
+  return [error];
+};
+
 const checkUseEntityStacking = (model) => {
   const errors = [];
   const { use_entity_stacking } = model.blueprint_settings;
@@ -263,6 +275,7 @@ const correctAjblueprintSettings = (file, argv, globals) => {
     checkRigItem,
     checkSummonCommands,
     checkTags,
+    checkTargetMinecraftVersion,
     checkUniqueUuids,
     checkUseEntityStacking,
   ];
