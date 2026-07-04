@@ -8,6 +8,8 @@ scoreboard objectives add summit.on_join minecraft.custom:minecraft.leave_game
 scoreboard players reset * summit.on_join
 scoreboard players set @a summit.on_join 0
 scoreboard objectives add spawn trigger
+scoreboard objectives add summit.below_name dummy "score"
+scoreboard objectives setdisplay below_name summit.below_name
 function summit.sticker_book:load
 function summit.elevator:load
 function summit.wind:load

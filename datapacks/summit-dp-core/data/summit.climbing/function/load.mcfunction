@@ -5,6 +5,7 @@ scoreboard objectives add summit.climbing.cooldown dummy
 scoreboard objectives add summit.climbing.max_cooldown dummy
 scoreboard objectives add summit.climbing.int dummy
 scoreboard players set 360 summit.climbing.int 360
+scoreboard players set 100000 summit.climbing.int 100000
 scoreboard players set neg_1 summit.climbing.int -1
 scoreboard players set 2 summit.climbing.int 2
 scoreboard objectives add summit.climbing.target_rotation dummy
