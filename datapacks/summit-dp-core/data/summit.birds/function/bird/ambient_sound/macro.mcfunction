@@ -1,1 +1,0 @@
-$execute as @e[tag=summit.stationary_bird,distance=..100,predicate=summit.birds:id_match,type=minecraft:item_display,limit=$(limit)] if predicate [{condition:"minecraft:random_chance",chance:$(sound_chance)}] at @s[tag=!summit.silence_birds] run playsound $(sound) neutral @a ~ ~ ~ 1 1

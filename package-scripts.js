@@ -26,7 +26,7 @@ const allAnimatedJavaExportFiles = [
 ];
 const allAnimatedJavaExportFilesFormatted =
   allAnimatedJavaExportFiles.join(',');
-const exclude = `${allAnimatedJavaExportFilesFormatted},datapacks/summit-dp-core/**/*`;
+const exclude = `${allAnimatedJavaExportFilesFormatted}`;
 
 const floweyWorldSyncPath = './world.zip';
 const minecraftPath = process.env.MINECRAFT_PATH;

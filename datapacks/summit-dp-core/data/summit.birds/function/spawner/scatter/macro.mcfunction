@@ -1,1 +1,0 @@
-$execute as @e[tag=summit.stationary_bird,distance=..100,predicate=summit.birds:id_match,type=minecraft:item_display,sort=nearest,limit=$(bird_count)] at @s run function summit.birds:spawner/scatter/on_bird

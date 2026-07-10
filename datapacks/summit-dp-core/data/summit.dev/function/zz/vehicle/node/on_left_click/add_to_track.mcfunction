@@ -1,2 +1,0 @@
-$data modify storage summit.vehicles:main tracks[{name: "$(track_name)"}].path append value $(node_id)
-$tellraw @p[tag=summit.interacted] [{text: "", click_event: {action: "run_command", command: 'function summit.dev:vehicle/track/edit {track_name: "$(track_name)"}'}, hover_event: {action: "show_text", value: "Click to edit track"}}, {text: "Added node ", color: "green"}, {text: "#$(node_id)"}, {text: " to track '", color: "green"}, {text: "$(track_name)"}, {text: "'", color: "green"}]

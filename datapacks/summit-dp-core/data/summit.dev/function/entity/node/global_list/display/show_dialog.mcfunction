@@ -1,1 +1,0 @@
-$dialog show @s {type:"minecraft:multi_action",title:"Task List - $(filter)",body:{type:"minecraft:plain_message",contents:"List of all $(task_type) tasks"},exit_action:{label:"Back",action:{type:"minecraft:show_dialog",dialog:"summit.dev:node/task_list"}},columns:1,actions:$(formatted_list)}

@@ -1,4 +1,0 @@
-$execute unless data storage $(storage_path) run return run function reef:zzzinternals/register/transition/errors/transition_not_found
-$data remove storage reef.zzzinternals:registry transition."$(identifier)"
-$data modify storage reef.zzzinternals:registry transition."$(identifier)" set from storage $(storage_path)
-tellraw @a[tag=reef.permissions.see_debug] [['', {'text': '[', 'color': '#6e3787'}, {'text': 'reef', 'color': '#ed2de3'}, {'text': '] ', 'color': '#6e3787'}], [{'text': '', 'color': '#77d6ff'}, {'text': 'Registered transition '}, {'storage': 'reef.zzzinternals:in', 'nbt': 'register.transition.identifier'}, {'text': ' (hover for more info)', 'color': 'dark_gray', 'hover_event': {'action': 'show_text', 'value': ['Location: ', {'storage': 'reef.zzzinternals:in', 'nbt': 'register.transition.storage_path'}, '\n', 'Identifier: ', {'storage': 'reef.zzzinternals:in', 'nbt': 'register.transition.identifier'}]}}]]

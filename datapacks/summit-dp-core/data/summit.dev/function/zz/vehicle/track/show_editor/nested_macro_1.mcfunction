@@ -1,1 +1,0 @@
-$data modify storage summit.vehicles:temp dialog.body.contents[-1] append value {text: "[+]\n", color: "green", click_event: {action: "run_command", command: 'function summit.dev:zz/vehicle/track/add_entry {name: "$(name)", path: "track.path", value: "0"}'}, hover_event: {action: "show_text", value: "Adds an node"}}

@@ -1,3 +1,0 @@
-summon item_display ~ ~ ~ {Tags: ["summit.balloon", "summit.vehicle.with_seats"], teleport_duration: 5, data: {taken_seats: [], uuid: "", tick: "summit.dev:zz/vehicle/balloon/tick"}}
-summon item_display ~ ~ ~ {Tags: ["summit.balloon.model"], item: {id: "minecraft:diamond", components: {"minecraft:item_model": "summit_transport:balloon"}}, transformation: {translation: [0, 5, 0], left_rotation: [0.0f, -0.7071068f, 0.0f, 0.7071068f], scale: [12, 12, 12], right_rotation: [0, 0, 0, 1]}, teleport_duration: 5}
-execute as @n[type=item_display, tag=summit.balloon] run function summit.dev:zz/vehicle/balloon/spawn/nested_execute_0

@@ -1,2 +1,0 @@
-$data modify storage summit:temp bird_spawner.data set value {name:"Bird Spawner",summit_bird:{model:"$(model)",variant_count:$(variant_count),scare_radius:$(scare_radius),spawn_radius:$(spawn_radius),ambient_sound:"$(ambient_sound)",ambient_sound_chance:$(ambient_sound_chance),fly_sound:"$(fly_sound)",scare_sound:"$(scare_sound)",max_birds:$(max_birds),bird_chance:$(bird_chance)}}
-execute align xyz positioned ~0.5 ~ ~0.5 summon minecraft:marker run function summit.birds:spawner/setup

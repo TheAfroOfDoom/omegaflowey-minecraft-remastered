@@ -1,2 +1,0 @@
-summon item_display ~ ~ ~ {Tags: ["summit.trolley", "summit.vehicle.with_seats"], transformation: {translation: [0, 0, 0], left_rotation: [0, 0, 0, 1], scale: [10, 10, 10], right_rotation: [0, 0, 0, 1]}, teleport_duration: 5, data: {taken_seats: [], uuid: "", tick: "summit.dev:zz/vehicle/trolley/tick"}}
-execute as @n[type=item_display, tag=summit.trolley] run function summit.dev:zz/vehicle/trolley/spawn/nested_execute_0

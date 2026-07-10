@@ -1,2 +1,0 @@
-execute if entity @s[tag=!reef.permissions.use_remote] run return run tellraw @s [['', {'text': '[', 'color': '#6e3787'}, {'text': 'reef', 'color': '#ed2de3'}, {'text': '] ', 'color': '#6e3787'}], [{'text': '', 'color': '#fa4267'}, 'You are not allowed to use this item. ', {'text': '(Missing permissions: reef.permissions.use_remote)', 'color': 'dark_gray'}]]
-item modify entity @s weapon.mainhand reef:item/remote/convert_to_unlinked_remote

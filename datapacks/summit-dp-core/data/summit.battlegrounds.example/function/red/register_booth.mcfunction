@@ -1,1 +1,0 @@
-function summit.battlegrounds:api/register_booth {booth_id: "red_booth", booth_name: "Red Booth", return_pos: "[43.40d, 148.00d, -96.39d]", return_rot: "[-297.83f, 0.77f]", struct_function: "summit.battlegrounds.example:red/set_structure", compatibility: "red_booth", kit_function: "summit.battlegrounds.example:red/give_kit_d"}
