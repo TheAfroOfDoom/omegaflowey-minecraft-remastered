@@ -13,7 +13,7 @@ const actions = globSync(
 }));
 
 const main = () => {
-  const datapackRootDir = './datapacks/animated_java/data/aj';
+  const datapackRootDir = './datapacks/omegaflowey/data/aj';
   const resourcePackRootDir = './resourcepack/assets/aj';
   for (const action of actions) {
     console.log();

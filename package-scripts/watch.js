@@ -197,8 +197,8 @@ const deleteExportedFiles = async (path) => {
 
   const pathsToDeleteEntirely = [
     // datapacks things
-    `datapacks/animated_java/data/aj/functions/${name}`,
-    `datapacks/animated_java/data/aj/tags/functions/${name}`,
+    `datapacks/omegaflowey/data/aj/functions/${name}`,
+    `datapacks/omegaflowey/data/aj/tags/functions/${name}`,
     // resourcepack things
     `resourcepack/assets/aj/models/item/${name}`,
   ];

@@ -17,8 +17,9 @@ assertEnvironmentVariables([
 ]);
 
 const allAnimatedJavaExportFiles = [
-  'datapacks/animated_java/data',
-  'datapacks/animated_java/data.ajmeta',
+  'datapacks/omegaflowey/data/aj',
+  'datapacks/omegaflowey/data/animated_java',
+  'datapacks/omegaflowey/data.ajmeta',
   'resourcepack/assets.ajmeta',
   'resourcepack/assets/aj',
   'resourcepack/assets/minecraft/models/item/pink_dye.json',
