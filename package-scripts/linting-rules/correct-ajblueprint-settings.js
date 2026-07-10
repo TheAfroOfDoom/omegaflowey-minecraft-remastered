@@ -100,7 +100,7 @@ const checkCustomModelDataOffset = (model) => {
 };
 
 const checkDatapack = (model) => {
-  const expected = /datapacks\/animated_java\/?$/;
+  const expected = /datapacks\/omegaflowey\/?$/;
   const actual = model.blueprint_settings.data_pack;
   const match = expected.test(actual.replaceAll('\\', '/'));
   if (match) {
@@ -109,7 +109,7 @@ const checkDatapack = (model) => {
 
   let error = `incorrect datapack ${chalk.blue('directory')}; `;
   error += 'it should target ';
-  error += `${chalk.yellow('datapacks/animated_java')}`;
+  error += `${chalk.yellow('datapacks/omegaflowey')}`;
   error += `\n\t\t found: ${chalk.red(actual)}`;
   return [error];
 };
