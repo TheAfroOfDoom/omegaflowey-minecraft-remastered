@@ -344,7 +344,6 @@ const getSummitResourcepackPaths = () => {
   ]);
 
   const decorativeTexturePaths = prefixPaths('decorative/', [
-    'stickers',
     'tvscreen',
     ...suffixPaths(
       [
@@ -381,21 +380,24 @@ const getSummitResourcepackPaths = () => {
     '_soul_5.png.mcmeta',
   ]);
 
-  const texturePaths = prefixPaths('textures/custom/', [
-    'arm_vine',
-    ...attackTexturePaths,
-    ...decorativeTexturePaths,
-    'dentata_snake_ball',
-    'font',
-    'lower_eye',
-    ...pipeTexturePaths,
-    'soul',
-    'tv_screen',
-    'x_bullets_shared',
-    'black.png',
-    'intro_flashing_red.png',
-    'intro_flashing_red.png.mcmeta',
-    'white.png',
+  const texturePaths = prefixPaths('textures/', [
+    'stickers/',
+    ...prefixPaths('custom/', [
+      'arm_vine',
+      ...attackTexturePaths,
+      ...decorativeTexturePaths,
+      'dentata_snake_ball',
+      'font',
+      'lower_eye',
+      ...pipeTexturePaths,
+      'soul',
+      'tv_screen',
+      'x_bullets_shared',
+      'black.png',
+      'intro_flashing_red.png',
+      'intro_flashing_red.png.mcmeta',
+      'white.png',
+    ]),
   ]);
 
   const deletePaintDotNetFiles = async ({ compiledPath }) => {
