@@ -3,6 +3,7 @@ const { copy, emptyDir, pathExists, readJson, writeJson } = require('fs-extra');
 const { glob } = require('glob');
 const parseArgs = require('minimist');
 const { rimraf } = require('rimraf');
+const { zip } = require('zip-a-folder');
 
 const buildDir = './build';
 
@@ -577,6 +578,8 @@ const compile = async ({
     );
     info(`Finished post-processing ${checkmark}`);
   }
+
+  await zip(compiledPath, `${compiledPath}.zip`);
 };
 
 const compileDatapack = async () =>
