@@ -149,9 +149,11 @@ const getSummitDatapackPaths = () => {
     'log.mcfunction',
   ]);
 
-  const primaryDatapackPaths = prefixPaths('omegaflowey/', [
+  const datapackPaths = prefixPaths('datapacks/omegaflowey/', [
     'pack.mcmeta',
     ...prefixPaths('data/', [
+      'aj',
+      'animated_java/tags/function/global/on_load.json',
       'daylight_cycle',
       'minecraft',
       'omegaflowey/function/admin/',
@@ -164,13 +166,6 @@ const getSummitDatapackPaths = () => {
     ]),
   ]);
 
-  const datapackPaths = prefixPaths('datapacks/', [
-    'animated_java/data',
-    'animated_java/pack.mcmeta',
-    'gu',
-    ...primaryDatapackPaths,
-  ]);
-
   const pruneMarkdownFiles = async ({ compiledPath }) => {
     const mdGlob = `${compiledPath}/datapacks/**/*.md`;
     await rimraf(mdGlob, { glob: true });
@@ -180,7 +175,7 @@ const getSummitDatapackPaths = () => {
   const pruneAnimatedJavaDatapackExports = async ({ compiledPath }) => {
     const prunePromises = [];
     for (const dir of animatedJavaExportsToPrune) {
-      const pruneFunctionDir = `${compiledPath}/datapacks/animated_java/data/aj/function/${dir}`;
+      const pruneFunctionDir = `${compiledPath}/datapacks/omegaflowey/data/aj/function/${dir}`;
       prunePromises.push(rimraf(pruneFunctionDir));
     }
     await Promise.all(prunePromises);
@@ -190,7 +185,7 @@ const getSummitDatapackPaths = () => {
   const pruneAnimatedJavaDatapackTags = async ({ compiledPath }) => {
     for (const [tagPath, suffix] of [
       [
-        `${compiledPath}/datapacks/animated_java/data/animated_java/tags/function/global/on_load.json`,
+        `${compiledPath}/datapacks/omegaflowey/data/animated_java/tags/function/global/on_load.json`,
         '/on_load',
       ],
     ]) {
