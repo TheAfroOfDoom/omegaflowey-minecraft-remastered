@@ -11,5 +11,6 @@ function omegaflowey:entity/player/death/check
 function omegaflowey:entity/player/room
 
 # TODO(264): fix admin menu for vanilla
-execute if entity @s[name=TheAfroOfDoom] run function omegaflowey:main/telemetry/admin/tick
+# TODO(324): re-enable this function call
+# execute if entity @s[name=TheAfroOfDoom] run function omegaflowey:main/telemetry/admin/tick
 execute if entity @s[tag=omegaflowey.admin, name=!TheAfroOfDoom] run function omegaflowey:main/telemetry/admin/tick
