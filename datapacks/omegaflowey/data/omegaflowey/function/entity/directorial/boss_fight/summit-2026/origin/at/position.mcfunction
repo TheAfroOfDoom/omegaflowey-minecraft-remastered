@@ -1,7 +1,2 @@
-$function omegaflowey:entity/directorial/boss_fight/summit-2026/origin/at/x { \
-  command: 'function omegaflowey:entity/directorial/boss_fight/summit-2026/origin/at/y { \
-    command: \'function omegaflowey:entity/directorial/boss_fight/summit-2026/origin/at/z { \
-      command: "$(command)" \
-    }\' \
-  }' \
-}
+# NOTE: TAG_SUMMIT_2026_HARDCODED
+$execute positioned 47.5 3.0 -14.5 $(command)
