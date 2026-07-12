@@ -5,9 +5,13 @@ execute if entity @s[tag=flamethrower] run return run function omegaflowey:entit
 execute if entity @s[tag=flies] run return run function omegaflowey:entity/hostile/omega-flowey/attack/flies/tick
 execute if entity @s[tag=friendliness-pellets] run return run function omegaflowey:entity/hostile/omega-flowey/attack/friendliness-pellets/tick
 execute if entity @s[tag=homing-vines] run return run function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines/tick
-execute if entity @s[tag=homing-vines-save-states] run return run function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines-save-states/tick
+# TODO(324): re-enable this function call
+# execute if entity @s[tag=homing-vines-save-states] run return run function omegaflowey:entity/hostile/omega-flowey/attack/homing-vines-save-states/tick
 execute if entity @s[tag=x-bullets-lower] run return run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower/tick
-execute if entity @s[tag=x-bullets-lower-weak] run return run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower-weak/tick
+# TODO(324): re-enable this function call
+# execute if entity @s[tag=x-bullets-lower-weak] run return run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-lower-weak/tick
 execute if entity @s[tag=x-bullets-upper] run return run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper/tick
-execute if entity @s[tag=x-bullets-upper-weak] run return run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper-weak/tick
-execute if entity @s[tag=x-bullets-upper-save-states] run return run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper-save-states/tick
+# TODO(324): re-enable this function call
+# execute if entity @s[tag=x-bullets-upper-weak] run return run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper-weak/tick
+# TODO(324): re-enable this function call
+# execute if entity @s[tag=x-bullets-upper-save-states] run return run function omegaflowey:entity/hostile/omega-flowey/attack/x-bullets-upper-save-states/tick

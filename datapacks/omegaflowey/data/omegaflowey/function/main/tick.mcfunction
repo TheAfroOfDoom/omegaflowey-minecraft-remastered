@@ -1,4 +1,5 @@
-function _:tick
+# TODO(324): re-enable this function call
+# function _:tick
 
 # Run heartbeat
 execute as @a at @s run function omegaflowey:entity/player/tick
