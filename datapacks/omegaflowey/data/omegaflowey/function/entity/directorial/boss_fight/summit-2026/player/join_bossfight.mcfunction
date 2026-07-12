@@ -14,6 +14,9 @@ function omegaflowey:entity/directorial/boss_fight/shared/player/join_bossfight
 # Required by summit to disable regen during the fight
 tag @s add summit.no_regen
 
+# Summit: suppress items that modify the player
+function summit.suppress:apply
+
 teleport @s ~27.0 ~-4.0 ~ ~180.0 -30.0
 # NOTE: TAG_SUMMIT_2026_HARDCODED
 spawnpoint @s 106 55 -7 135 0

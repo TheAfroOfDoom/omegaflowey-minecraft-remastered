@@ -9,6 +9,8 @@ execute \
   unless score #omegaflowey.bossfight.stop_reason omegaflowey.global.flag matches 4 \
   run teleport @s 106 55 -7 135 0
 
+function summit.suppress:remove
+
 function omegaflowey:entity/directorial/boss_fight/shared/stop/as_active_player/modify_health_and_tags
 
 function omegaflowey:entity/directorial/boss_fight/shared/stop/as_active_player/log_reason
