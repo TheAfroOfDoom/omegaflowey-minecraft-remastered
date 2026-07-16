@@ -5,6 +5,16 @@
 execute \
   unless score #omegaflowey.bossfight.show_death_message_globally omegaflowey.global.flag matches 1 \
 run tellraw @a[ \
+  predicate=summit.booth:omegaflowey/in_bounding_box/global, \
+  tag=omegaflowey.player \
+] [ \
+  { "selector": "@s"}, \
+  " was slain by ", \
+  { "text": "Omega Flowey", "color": "yellow" } \
+]
+# execute \
+  unless score #omegaflowey.bossfight.show_death_message_globally omegaflowey.global.flag matches 1 \
+run tellraw @a[ \
   x=25, dx=96, y=-10, dy=171, z=-47, dz=73, \
   tag=omegaflowey.player \
 ] [ \

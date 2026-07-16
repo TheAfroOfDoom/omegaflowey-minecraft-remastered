@@ -2,7 +2,8 @@
 # Only run more detailed room logic if the player is in the booth's bounds
 tag @s remove omegaflowey.room.is_within.global
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
-execute if entity @s[x=25, dx=96, y=-10, dy=171, z=-47, dz=73] run tag @s add omegaflowey.room.is_within.global
+execute if entity @s[predicate=summit.booth:omegaflowey/in_bounding_box/global] run tag @s add omegaflowey.room.is_within.global
+# execute if entity @s[x=25, dx=96, y=-10, dy=171, z=-47, dz=73] run tag @s add omegaflowey.room.is_within.global
 
 execute if entity @s[tag=!omegaflowey.player, tag=omegaflowey.room.is_within.global] run function omegaflowey:entity/player/room/enter
 execute if entity @s[tag=omegaflowey.player, tag=!omegaflowey.room.is_within.global] run function omegaflowey:entity/player/room/exit
