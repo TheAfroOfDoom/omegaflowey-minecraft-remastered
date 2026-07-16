@@ -199,6 +199,17 @@ const getSummitDatapackPaths = () => {
     }
   };
   postProcessors.push(pruneAnimatedJavaDatapackTags);
+
+  const pruneTickJson = async ({ compiledPath }) => {
+    const path = `${compiledPath}/datapacks/omegaflowey/data/minecraft/tags/function/tick.json`;
+    const tickTagJson = await readJson(path);
+    tickTagJson.values = tickTagJson.values.filter(
+      (functionLocation) => functionLocation !== 'omegaflowey:main/tick',
+    );
+    await writeJson(path, tickTagJson);
+  };
+  postProcessors.push(pruneTickJson);
+
   return { paths: datapackPaths, postProcessors };
 };
 
