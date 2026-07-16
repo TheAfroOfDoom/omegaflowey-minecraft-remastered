@@ -589,7 +589,7 @@ const compile = async ({
     info(`Finished post-processing ${checkmark}`);
   }
 
-  await zip(compiledPath, `${compiledPath}.zip`);
+  await zip(`${compiledPath}/datapacks/omegaflowey`, `${compiledPath}.zip`);
 };
 
 const compileDatapack = async () =>
