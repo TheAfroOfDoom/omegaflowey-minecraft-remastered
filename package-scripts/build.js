@@ -137,6 +137,7 @@ const getSummitDatapackPaths = () => {
     ]),
     'summit-2026',
     'telemetry',
+    'persistent_tick.mcfunction',
     'setup.mcfunction',
     'tick.mcfunction',
   ]);
