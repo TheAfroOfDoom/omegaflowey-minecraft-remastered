@@ -1,9 +1,9 @@
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 kill @e[ \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global, \
+  type=minecraft:item_frame, \
   tag=omega-flowey-remastered, \
   tag=climbing-hold-path-temp, \
-  type=minecraft:item_frame \
+  predicate=summit.booth:omegaflowey/in_bounding_box/global \
 ]
 # kill @e[ \
   x=25, dx=96, y=-10, dy=171, z=-47, dz=73, \
@@ -44,10 +44,10 @@ execute positioned 98 33 -11 run \
 
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 kill @e[ \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global, \
+  type=minecraft:item_frame, \
   tag=omega-flowey-remastered, \
   tag=climbing-hold-path-temp, \
-  type=minecraft:item_frame \
+  predicate=summit.booth:omegaflowey/in_bounding_box/global \
 ]
 # kill @e[ \
   x=25, dx=96, y=-10, dy=171, z=-47, dz=73, \
@@ -80,10 +80,10 @@ execute positioned 101 21 0 run \
 
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 kill @e[ \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global, \
+  type=minecraft:item_frame, \
   tag=omega-flowey-remastered, \
   tag=climbing-hold-path-temp, \
-  type=minecraft:item_frame \
+  predicate=summit.booth:omegaflowey/in_bounding_box/global \
 ]
 # kill @e[ \
   x=25, dx=96, y=-10, dy=171, z=-47, dz=73, \

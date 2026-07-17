@@ -2,9 +2,9 @@ function omegaflowey:entity/soul/shared/executor/terminate with storage omegaflo
 
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global, \
   tag=soul_3, \
-  tag=omega-flowey-remastered \
+  tag=omega-flowey-remastered, \
+  predicate=summit.booth:omegaflowey/in_bounding_box/global \
 ] run \
   function omegaflowey:entity/soul/soul_3/executor/terminate/as_root
 # execute as @e[ \

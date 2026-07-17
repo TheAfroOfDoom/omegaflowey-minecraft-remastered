@@ -7,11 +7,11 @@ tag @s remove boss_fight.phase.warn
 # if the timing works out. So we manually remove them here just in case
 # TAG_SUMMIT_2026_HARDCODED_ARENA_VOLUME
 execute as @e[ \
-  predicate=summit.booth:omegaflowey/in_bounding_box/arena, \
   type=minecraft:item_display, \
   tag=dentata-snakes, \
   tag=attack-bullet, \
-  tag=omega-flowey-remastered \
+  tag=omega-flowey-remastered, \
+  predicate=summit.booth:omegaflowey/in_bounding_box/arena \
 ] run function omegaflowey:entity/hostile/omega-flowey/attack/dentata-snakes/bullet/terminate
 
 # Next phase

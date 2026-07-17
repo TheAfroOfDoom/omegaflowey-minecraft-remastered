@@ -3,11 +3,11 @@ $effect give $(active_player_uuid) minecraft:blindness 1 0 true
 
 ### TAG_SUMMIT_2026_HARDCODED_ARENA_VOLUME (and -31 blocks in X direction)
 execute as @e[ \
-  predicate=summit.booth:omegaflowey/in_bounding_box/arena_stretched_negative_dx, \
   type=minecraft:item_display, \
   tag=aj.global.root, \
+  tag=omega-flowey-remastered, \
   tag=!aj.omegaflowey_arena_box.root, \
-  tag=omega-flowey-remastered \
+  predicate=summit.booth:omegaflowey/in_bounding_box/arena_stretched_negative_dx \
 ] run function omegaflowey:entity/hostile/omega-flowey/animate/intro/brighten/as_root
 
 $execute as $(arena_box_uuid) run function aj:omegaflowey_arena_box/variants/default/apply
