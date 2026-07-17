@@ -22,8 +22,5 @@ execute if entity @s[tag=!is_flipped] run \
 
 # guard against flies who move past the fly trap and outside the arena due to e.g. lag
 # NOTE: TAG_SUMMIT_2026_HARDCODED
-execute unless entity @s[\
-  x=52, dx=32, \
-  y=-30, dy=50, \
-  z=-34, dz=39 \
-] run tag @s add is_terminating
+execute unless entity @s[predicate=summit.booth:omegaflowey/in_bounding_box/arena_housefly_cleanup] run \
+  tag @s add is_terminating
