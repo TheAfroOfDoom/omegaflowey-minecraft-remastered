@@ -602,7 +602,11 @@ const compile = async ({
     info(`Finished post-processing ${checkmark}`);
   }
 
-  await zip(`${compiledPath}/datapacks/omegaflowey`, `${compiledPath}.zip`);
+  if (compiledPath.includes('omegaFloweyDatapack')) {
+    await zip(`${compiledPath}/datapacks/omegaflowey`, `${compiledPath}.zip`);
+  } else {
+    await zip(compiledPath, `${compiledPath}.zip`);
+  }
 };
 
 const compileDatapack = async () =>
