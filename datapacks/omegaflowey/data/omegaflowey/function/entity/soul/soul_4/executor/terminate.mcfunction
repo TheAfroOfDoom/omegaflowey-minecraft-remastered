@@ -2,6 +2,7 @@ function omegaflowey:entity/soul/shared/executor/terminate with storage omegaflo
 
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
+  type=minecraft:item_display, \
   tag=soul_4, \
   tag=omega-flowey-remastered, \
   predicate=summit.booth:omegaflowey/in_bounding_box/global \

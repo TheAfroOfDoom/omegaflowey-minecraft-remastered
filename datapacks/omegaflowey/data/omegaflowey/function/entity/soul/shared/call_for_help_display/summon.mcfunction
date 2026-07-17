@@ -29,6 +29,7 @@ summon block_display ~ ~ ~ { \
 execute \
   positioned ~-1.0 ~-1.0 ~-1.0 \
   as @e[ \
+    type=#omegaflowey:call_for_help_display, \
     dx=2, dy=2, dz=2, \
     tag=call-for-help-display-new, \
     tag=omega-flowey-remastered, \

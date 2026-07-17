@@ -5,6 +5,7 @@
 execute as @a at @s run function omegaflowey:entity/player/tick
 # # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
+  type=#omegaflowey:global, \
   tag=omega-flowey-remastered, \
   predicate=summit.booth:omegaflowey/in_bounding_box/global, \
 ] at @s run \

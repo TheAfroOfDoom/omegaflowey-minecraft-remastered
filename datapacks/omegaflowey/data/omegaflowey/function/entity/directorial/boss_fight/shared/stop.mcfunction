@@ -14,6 +14,7 @@ function omegaflowey:entity/directorial/boss_fight/shared/stop/macro_decorative 
 function omegaflowey:entity/remove_animated_java_models/boss_fight
 # TAG_SUMMIT_2026_HARDCODED_ARENA_VOLUME
 execute as @e[ \
+  type=#omegaflowey:bossfight, \
   tag=omega-flowey-remastered, \
   predicate=summit.booth:omegaflowey/in_bounding_box/arena_stretched_negative_dx \
 ] run function omegaflowey:entity/directorial/boss_fight/shared/stop/as_root

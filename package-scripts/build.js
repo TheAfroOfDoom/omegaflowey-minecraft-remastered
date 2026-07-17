@@ -161,6 +161,7 @@ const getSummitDatapackPaths = () => {
       ...entityPaths,
       ...mainPaths,
       ...utilsPaths,
+      'omegaflowey/tags/entity_type/',
       'summit/',
       'summit.activity/',
       'summit.booth/',

@@ -15,6 +15,7 @@ function omegaflowey:entity/directorial/boss_fight/shared/phase/soul/loop/saved 
 
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 execute as @e[ \
+  type=#omegaflowey:display, \
   tag=soul_3, \
   tag=omega-flowey-remastered, \
   predicate=summit.booth:omegaflowey/in_bounding_box/global \
