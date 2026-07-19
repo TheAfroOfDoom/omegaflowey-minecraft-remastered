@@ -3,4 +3,4 @@ function omegaflowey:entity/directorial/boss_fight/summit-2026/player/queue/prom
 
 schedule \
   function omegaflowey:entity/directorial/boss_fight/summit-2026/player/queue/prompt_next_player/show_prompt/confirm/after_delay \
-  6t replace
+  7t replace
