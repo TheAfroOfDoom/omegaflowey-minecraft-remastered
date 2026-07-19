@@ -170,7 +170,6 @@ scoreboard objectives add omegaflowey.util.bounce.yaw dummy
 # the initial yaw an entity starts with before running bounce calculations
 scoreboard objectives add omegaflowey.util.bounce.yaw.initial dummy
 
-## DEPRECATED
 scoreboard objectives add omegaflowey.player.summit.has_died_to_flowey dummy
 scoreboard objectives add omegaflowey.player.summit.has_fought_flowey dummy
 scoreboard objectives add omegaflowey.player.summit.has_finished_parkour dummy
