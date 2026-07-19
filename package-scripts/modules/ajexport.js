@@ -173,7 +173,10 @@ function injectModelPackPaths(modelContent, paths) {
   model.blueprint_settings.data_pack = paths.datapack;
   for (const texture of model.textures) {
     texture.path = texture.path.replaceAll('\\', '/');
-    if (texture.path.includes('.minecraft')) {
+    if (
+      texture.path.includes('.minecraft') ||
+      texture.path.includes('Application Support/minecraft')
+    ) {
       const relativePath = texture.path.split('assets')[1];
       const newPath = `${paths.assetsDir}/assets${relativePath}`;
       texture.path = newPath;
