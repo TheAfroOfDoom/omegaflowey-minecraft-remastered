@@ -7,7 +7,7 @@ execute as @a at @s run function omegaflowey:entity/player/tick
 execute as @e[ \
   type=#omegaflowey:global, \
   tag=omega-flowey-remastered, \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global, \
+  predicate=summit.booth:omegaflowey/in_bounding_box/global \
 ] at @s run \
   function omegaflowey:entity/tick
 # execute as @e[ \
