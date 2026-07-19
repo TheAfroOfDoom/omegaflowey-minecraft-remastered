@@ -155,7 +155,6 @@ const getSummitDatapackPaths = () => {
     ...prefixPaths('data/', [
       'aj',
       'animated_java/tags/function/global/on_load.json',
-      'daylight_cycle',
       'minecraft',
       'omegaflowey/function/admin/',
       ...entityPaths,
@@ -165,6 +164,7 @@ const getSummitDatapackPaths = () => {
       'summit/',
       'summit.activity/',
       'summit.booth/',
+      'summit.daylight_cycle',
     ]),
   ]);
 
