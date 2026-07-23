@@ -165,7 +165,6 @@ const getSummitDatapackPaths = () => {
       'summit/',
       'summit.activity/',
       'summit.booth/',
-      'summit.daylight_cycle',
     ]),
   ]);
 

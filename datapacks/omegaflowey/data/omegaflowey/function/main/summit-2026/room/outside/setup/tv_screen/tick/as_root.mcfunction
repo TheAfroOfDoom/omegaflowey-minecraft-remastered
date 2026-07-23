@@ -1,0 +1,20 @@
+# Don't switch to day/night variant if in the middle of another animation
+execute unless entity @s[tag=!is_active_death_animation, tag=!is_now_playing, tag=!is_winner_animation] run return 0
+
+execute unless score #omegaflowey.decorative.tvscreen.is_day_variant omegaflowey.global.flag matches 0..1 run \
+  function omegaflowey:main/summit-2026/room/outside/setup/tv_screen/reset_variant
+
+# Check current time of day and play set_variant_day/night accordingly
+execute store result score @s omegaflowey.math.0 run time query minecraft:day
+execute unless score @s omegaflowey.math.0 matches 13500..23000 run tag @s add is_daytime
+
+execute \
+  if entity @s[tag=!is_daytime] \
+  if score #omegaflowey.decorative.tvscreen.is_day_variant omegaflowey.global.flag matches 1 \
+  run function omegaflowey:main/summit-2026/room/outside/setup/tv_screen/set_variant_night
+execute \
+  if entity @s[tag=is_daytime] \
+  if score #omegaflowey.decorative.tvscreen.is_day_variant omegaflowey.global.flag matches 0 \
+  run function omegaflowey:main/summit-2026/room/outside/setup/tv_screen/set_variant_day
+
+tag @s remove is_daytime
