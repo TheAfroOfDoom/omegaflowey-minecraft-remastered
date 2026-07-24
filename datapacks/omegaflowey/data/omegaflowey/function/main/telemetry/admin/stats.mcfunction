@@ -62,10 +62,6 @@ function omegaflowey:utils/log/self { text_component: [ \
   { "text": ")", "color": "gold" }, \
   "\n", \
 \
-  { "text": "parkour finishes: ", "color": "yellow" }, \
-  { "score": { "name": "#omegaflowey.telemetry.stats.total_distinct_parkour_finishes", "objective": "omegaflowey.global.flag" } }, \
-  "\n", \
-\
   "\n", \
 \
   { "text": "booth telemetry pages: ", "color": "green" }, \

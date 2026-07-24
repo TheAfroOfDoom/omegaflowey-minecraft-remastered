@@ -43,7 +43,7 @@ execute unless score #omegaflowey.telemetry.stats.total_queue_joins omegaflowey.
 execute unless score #omegaflowey.telemetry.stats.total_distinct_queue_joins omegaflowey.global.flag matches 0.. run \
   scoreboard players set #omegaflowey.telemetry.stats.total_distinct_queue_joins omegaflowey.global.flag 0
 
-execute unless score #omegaflowey.telemetry.stats.total_distinct_parkour_finishes omegaflowey.global.flag matches 0.. run \
+# execute unless score #omegaflowey.telemetry.stats.total_distinct_parkour_finishes omegaflowey.global.flag matches 0.. run \
   scoreboard players set #omegaflowey.telemetry.stats.total_distinct_parkour_finishes omegaflowey.global.flag 0
 
 execute unless score #omegaflowey.telemetry.stats.total_visitors omegaflowey.global.flag matches 0.. run \
