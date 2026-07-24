@@ -1,8 +1,13 @@
-give @s carved_pumpkin[ \
+give @s minecraft:yellow_dye[ \
   minecraft:item_model="omega-flowey:decorative/reward-hat-green", \
   minecraft:damage_resistant={types:"#minecraft:is_fire"}, \
   minecraft:rarity=epic, \
   minecraft:enchantment_glint_override=true, \
+  minecraft:equippable={ \
+    slot: "head", \
+    damage_on_hurt: false, \
+    equip_sound: "minecraft:entity.item.pickup", \
+  },\
   minecraft:item_name=[ { "text": "Grabbed 7+ healing items", "color": "green" } ], \
   minecraft:lore=[ \
     [ \
