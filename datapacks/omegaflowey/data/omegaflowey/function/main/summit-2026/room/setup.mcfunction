@@ -1,4 +1,4 @@
-function omegaflowey:entity/decorative/remove
+# function omegaflowey:entity/decorative/remove
 
 function omegaflowey:main/summit-2026/room/outside/setup
 function omegaflowey:main/summit-2026/room/pit/setup
