@@ -18,5 +18,7 @@ execute if score @s omegaflowey.player.telemetry.trigger.show.bossfight matches 
   function omegaflowey:main/telemetry/admin/show/bossfight
 execute if score @s omegaflowey.player.telemetry.trigger.stats matches 1 run \
   function omegaflowey:main/telemetry/admin/stats
+execute if score @s omegaflowey.player.telemetry.trigger.dentata-snakes matches 1 run \
+  function omegaflowey:main/telemetry/admin/dentata-snakes
 
 function omegaflowey:main/telemetry/admin/reset_triggers

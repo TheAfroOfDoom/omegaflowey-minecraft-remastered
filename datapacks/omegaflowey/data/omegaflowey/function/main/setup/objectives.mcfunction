@@ -127,6 +127,7 @@ scoreboard objectives add omegaflowey.player.telemetry.trigger.show.bossfight tr
 scoreboard objectives add omegaflowey.player.telemetry.trigger.stats trigger
 scoreboard objectives add omegaflowey.player.trigger.bossfight.confirm trigger
 scoreboard objectives add omegaflowey.player.trigger.bossfight.deny trigger
+scoreboard objectives add omegaflowey.player.telemetry.trigger.dentata-snakes trigger
 
 # x/z spans of the bullet grid
 scoreboard objectives add omegaflowey.soul.bullet.position.dx dummy
