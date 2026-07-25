@@ -8,7 +8,6 @@ scoreboard players enable @s omegaflowey.player.telemetry.trigger.pop.bossfight
 scoreboard players enable @s omegaflowey.player.telemetry.trigger.show.booth
 scoreboard players enable @s omegaflowey.player.telemetry.trigger.show.bossfight
 scoreboard players enable @s omegaflowey.player.telemetry.trigger.stats
-scoreboard players enable @s omegaflowey.player.telemetry.trigger.dentata-snakes
 
 scoreboard players set @s omegaflowey.player.telemetry.trigger.disable 0
 scoreboard players set @s omegaflowey.player.telemetry.trigger.enable 0
@@ -20,4 +19,3 @@ scoreboard players set @s omegaflowey.player.telemetry.trigger.pop.bossfight 0
 scoreboard players set @s omegaflowey.player.telemetry.trigger.show.booth 0
 scoreboard players set @s omegaflowey.player.telemetry.trigger.show.bossfight 0
 scoreboard players set @s omegaflowey.player.telemetry.trigger.stats 0
-scoreboard players set @s omegaflowey.player.telemetry.trigger.dentata-snakes 0
