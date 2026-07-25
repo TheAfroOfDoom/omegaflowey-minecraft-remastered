@@ -1,5 +1,5 @@
 # if we are out of retries, save current score
-execute if score #omegaflowey.attack.dentata-snakes.indicator.remaining-retries omegaflowey.attack.flag matches 0 run \
+execute if score #omegaflowey.attack.dentata-snakes.indicator.remaining-retries omegaflowey.attack.flag matches 0 run return run \
   scoreboard players operation \
       #omegaflowey.attack.dentata-snakes.indicator.2.summon-coord omegaflowey.attack.flag = \
       @s omegaflowey.attack.bullets.position.z
