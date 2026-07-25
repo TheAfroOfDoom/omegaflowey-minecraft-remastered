@@ -369,15 +369,11 @@ const getSummitResourcepackPaths = () => {
     ...suffixPaths(
       [
         'adahy',
-        'balloon_rope_summit_2026',
         'grillbys-font',
-        'lead_knot',
         'ruins-red-leaves',
-        'soul_red_balloon',
         'sunflower_front_green',
         'sunflower_front_magenta',
         'theafroofdoom',
-        'trns',
         ...prefixPaths('picture/', [
           'flowey-build-scaled-min-2026',
           'legacy-command-blocks-scaled-min',
@@ -403,6 +399,7 @@ const getSummitResourcepackPaths = () => {
 
   const texturePaths = prefixPaths('textures/', [
     'stickers/',
+    'balloon/',
     ...prefixPaths('custom/', [
       'arm_vine',
       ...attackTexturePaths,
