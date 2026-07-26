@@ -842,7 +842,7 @@ summon minecraft:text_display 89.875 52.5 -26.9375 { \
   line_width: 200, \
   see_through: 0b, \
   shadow: 0b, \
-  text: { "text": "Grab 7 or more\nhealing items", "color": "green" }, \
+  text: { "text": "Grab 6 or more\nhealing items", "color": "green" }, \
   text_opacity: 255, \
   transformation: { \
     left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \

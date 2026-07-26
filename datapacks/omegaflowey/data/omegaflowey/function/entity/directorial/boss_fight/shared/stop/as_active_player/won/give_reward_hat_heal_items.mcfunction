@@ -8,7 +8,7 @@ give @s minecraft:yellow_dye[ \
     damage_on_hurt: false, \
     equip_sound: "minecraft:entity.item.pickup", \
   },\
-  minecraft:item_name=[ { "text": "Grabbed 7+ healing items", "color": "green" } ], \
+  minecraft:item_name=[ { "text": "Grabbed 6+ healing items", "color": "green" } ], \
   minecraft:lore=[ \
     [ \
       { "text": "\uf611", "color": "white", "italic": false, "font": "omega-flowey:custom" }, \
@@ -22,7 +22,7 @@ give @s minecraft:yellow_dye[ \
   minecraft:custom_data={ summit: { persist: {} } }, \
 ]
 
-advancement grant @s only summit.sticker_book:omegaflowey/heal-items
+advancement grant @s only summit.sticker_book:omegaflowey/heal_items
 
 scoreboard players add #omegaflowey.telemetry.stats.total_wins_heal_items omegaflowey.global.flag 1
 execute unless score @s omegaflowey.player.summit.has_survived_flowey_heal_items matches 1 run \
