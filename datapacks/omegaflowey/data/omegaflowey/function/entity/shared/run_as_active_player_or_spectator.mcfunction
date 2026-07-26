@@ -1,6 +1,6 @@
 # NOTE: TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 $execute \
-  as @a[predicate=summit.booth:omegaflowey/in_bounding_box/global] \
+  as @a[predicate=summit.booth:omegaflowey/in_booth] \
   unless entity @s[tag=!omegaflowey.player.fighting_flowey, tag=!omegaflowey.player.room.spectator_box] \
   run $(command)
 # $execute \

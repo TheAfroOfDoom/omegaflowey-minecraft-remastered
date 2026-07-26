@@ -18,7 +18,7 @@ execute as @e[ \
   type=#omegaflowey:display, \
   tag=soul_4, \
   tag=omega-flowey-remastered, \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global \
+  predicate=summit.booth:omegaflowey/in_booth \
 ] run function omegaflowey:entity/soul/soul_4/executor/initialize/saved/as_root
 # execute as @e[ \
   x=25, dx=96, y=-10, dy=171, z=-47, dz=73, \

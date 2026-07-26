@@ -3,7 +3,7 @@ kill @e[ \
   type=minecraft:item_frame, \
   tag=omega-flowey-remastered, \
   tag=climbing-hold-path-temp, \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global \
+  predicate=summit.booth:omegaflowey/in_booth \
 ]
 # kill @e[ \
   x=25, dx=96, y=-10, dy=171, z=-47, dz=73, \
@@ -47,7 +47,7 @@ kill @e[ \
   type=minecraft:item_frame, \
   tag=omega-flowey-remastered, \
   tag=climbing-hold-path-temp, \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global \
+  predicate=summit.booth:omegaflowey/in_booth \
 ]
 # kill @e[ \
   x=25, dx=96, y=-10, dy=171, z=-47, dz=73, \
@@ -83,7 +83,7 @@ kill @e[ \
   type=minecraft:item_frame, \
   tag=omega-flowey-remastered, \
   tag=climbing-hold-path-temp, \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global \
+  predicate=summit.booth:omegaflowey/in_booth \
 ]
 # kill @e[ \
   x=25, dx=96, y=-10, dy=171, z=-47, dz=73, \

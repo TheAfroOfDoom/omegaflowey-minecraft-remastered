@@ -7,6 +7,6 @@ kill @e[ \
   type=#omegaflowey:decorative, \
   tag=decorative, \
   tag=omega-flowey-remastered, \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global \
+  predicate=summit.booth:omegaflowey/in_booth \
 ]
 # kill @e[x=25, dx=96, y=-10, dy=171, z=-47, dz=73, tag=decorative, tag=omega-flowey-remastered]

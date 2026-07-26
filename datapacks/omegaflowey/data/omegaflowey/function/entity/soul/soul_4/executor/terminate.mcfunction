@@ -5,7 +5,7 @@ execute as @e[ \
   type=minecraft:item_display, \
   tag=soul_4, \
   tag=omega-flowey-remastered, \
-  predicate=summit.booth:omegaflowey/in_bounding_box/global \
+  predicate=summit.booth:omegaflowey/in_booth \
 ] run \
   function omegaflowey:entity/soul/soul_4/executor/terminate/as_root
 # execute as @e[ \
