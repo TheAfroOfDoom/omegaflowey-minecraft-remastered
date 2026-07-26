@@ -22,7 +22,7 @@ give @s minecraft:yellow_dye[ \
   minecraft:custom_data={ summit: { persist: {} } }, \
 ]
 
-advancement grant @s only summit.sticker_book:omegaflowey/low-hits
+# advancement grant @s only summit.sticker_book:omegaflowey/low-hits
 
 scoreboard players add #omegaflowey.telemetry.stats.total_wins_low_hits omegaflowey.global.flag 1
 execute unless score @s omegaflowey.player.summit.has_survived_flowey_low_hits matches 1 run \
