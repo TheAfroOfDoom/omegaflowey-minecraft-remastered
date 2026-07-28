@@ -23,7 +23,7 @@ scoreboard players set #omegaflowey.attack.random.id.x-bullets-upper omegaflowey
 scoreboard players set #omegaflowey.attack.random.id.x-bullets-upper-save-states omegaflowey.attack.flag 11
 
 execute unless score #omegaflowey.bossfight.show_death_message_globally omegaflowey.global.flag matches 0.. run \
-  scoreboard players set #omegaflowey.bossfight.show_death_message_globally omegaflowey.global.flag 1
+  scoreboard players set #omegaflowey.bossfight.show_death_message_globally omegaflowey.global.flag 0
 
 execute unless score #omegaflowey.telemetry.bossfight.basetime omegaflowey.global.flag matches 0.. run \
   scoreboard players set #omegaflowey.telemetry.bossfight.basetime omegaflowey.global.flag -1
