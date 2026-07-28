@@ -4,9 +4,10 @@
 # TAG_SUMMIT_2026_HARDCODED_GLOBAL_VOLUME
 execute \
   unless score #omegaflowey.bossfight.show_death_message_globally omegaflowey.global.flag matches 1 \
+  positioned 96.0 81.0 -15.0 \
 run tellraw @a[ \
-  tag=omegaflowey.player, \
-  predicate=summit.booth:omegaflowey/in_booth \
+  predicate=summit:located_in_welded_woodlands, \
+  distance=..75 \
 ] [ \
   { "selector": "@s"}, \
   " was slain by ", \
