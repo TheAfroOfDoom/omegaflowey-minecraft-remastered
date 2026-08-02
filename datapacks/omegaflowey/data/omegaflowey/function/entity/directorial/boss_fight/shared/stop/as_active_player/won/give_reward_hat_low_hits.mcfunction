@@ -8,7 +8,7 @@ give @s minecraft:yellow_dye[ \
     damage_on_hurt: false, \
     equip_sound: "minecraft:entity.item.pickup", \
   },\
-  minecraft:item_name=[ { "text": "Survived in 7 hits or less", "color": "light_purple" } ], \
+  minecraft:item_name=[ { "text": "Survived in 9 hits or less", "color": "light_purple" } ], \
   minecraft:lore=[ \
     [ \
       { "text": "\uf611", "color": "white", "italic": false, "font": "omega-flowey:custom" }, \
